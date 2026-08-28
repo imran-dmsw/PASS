@@ -1,0 +1,980 @@
+{
+  "ue_id": "ue4",
+  "ue_name": "Physique",
+  "icon": "⚛️",
+  "tint": "yellow",
+  "chapters": [
+    {
+      "id": "mecanique_forces_energie",
+      "title": "Mécanique : forces, énergie et travail",
+      "difficulty": 1,
+      "intro": "Newton, l'énergie et un peu de bon sens physique : on démarre en douceur avec les fondations de toute la mécanique ! 🍎⚡",
+      "course": [
+        {
+          "icon": "🔬",
+          "title": "Référentiel et mouvement",
+          "content": "Avant tout exercice de mécanique, il faut définir un système (la partie de l'univers étudiée) et un référentiel (l'objet par rapport auquel on observe ce système). Un référentiel est dit galiléen si tout corps qui n'est soumis à aucune force y décrit un mouvement rectiligne uniforme (MRU), c'est-à-dire une trajectoire rectiligne à vitesse constante (l'immobilité étant un cas particulier avec une vitesse nulle). Dans un repère (O, i, j), la position d'un système est repérée par le vecteur OM ; la vitesse v = d(OM)/dt en est la dérivée temporelle, et l'accélération a = dv/dt = d²(OM)/dt² en est la dérivée seconde."
+        },
+        {
+          "icon": "⭐",
+          "title": "Les deux premières lois de Newton",
+          "content": "La quantité de mouvement d'un système de masse m et de vitesse v est p = mv (en kg·m·s⁻¹). Le principe d'inertie (1ère loi) énonce que la somme des forces appliquées à un système immobile ou en MRU est nulle : ΣF = 0. Réciproquement, si ΣF = 0 le système est immobile ou en MRU. Le principe fondamental de la dynamique (2ème loi) relie la résultante des forces à la variation de quantité de mouvement : ΣF = dp/dt, ce qui donne, pour une masse constante, la relation la plus utilisée en physique : ΣF = m·a."
+        },
+        {
+          "icon": "➗",
+          "title": "Les énergies mécaniques",
+          "content": "L'énergie cinétique, liée au mouvement, vaut Ec = ½mv². L'énergie potentielle de pesanteur, liée à l'altitude z dans un champ de pesanteur g, vaut Epp = mgz. L'énergie potentielle élastique d'un ressort de raideur k, de longueur l et de longueur à vide l₀ (avec x = l − l₀ l'allongement), vaut Epe = ½kx². Cette énergie est associée à une force de rappel de norme F = k·x, toujours dirigée vers la position de repos du ressort. L'énergie mécanique totale est la somme de l'énergie cinétique et de toutes les énergies potentielles du système : Em = Ec + ΣEp."
+        },
+        {
+          "icon": "🔬",
+          "title": "Travail d'une force",
+          "content": "Le travail W d'une force mesure son action sur un système lors d'un déplacement ; il s'exprime en joules (J). Pour un déplacement infinitésimal dl formant un angle θ avec la force F, le travail élémentaire vaut dW = F·dl = F×dl×cos(θ). Un travail est moteur si dW > 0 (la force accélère le système), résistif si dW < 0 (elle le freine), et nul si dW = 0. Sur un trajet macroscopique entre A et B, le travail total s'obtient en sommant (intégrant) tous les travaux élémentaires : WAB = ∫[A→B] F·dl. Cas particulier utile en biophysique : le travail d'une force de pression exercée sur un volume qui varie de dV a pour valeur absolue |dW| = p×|dV|."
+        },
+        {
+          "icon": "⭐",
+          "title": "Puissance et théorème de l'énergie cinétique",
+          "content": "La puissance P est un travail (ou une énergie) échangé par unité de temps : P = dW/dt = F·v, exprimée en watts (1 W = 1 J·s⁻¹). Le théorème de l'énergie cinétique relie la variation d'énergie cinétique d'un système à la somme des travaux de toutes les forces qui s'exercent sur lui, qu'elles soient conservatives ou non : ΔEc = Ec,B − Ec,A = WAB(total). Attention à toujours calculer une variation dans le sens « valeur finale moins valeur initiale »."
+        },
+        {
+          "icon": "🧠",
+          "title": "Forces conservatives et énergie mécanique",
+          "content": "Une force est dite conservative lorsque le travail qu'elle produit ne dépend pas du chemin suivi ; elle dérive alors toujours d'une énergie potentielle selon F = −dEp/dx. Si un système n'est soumis qu'à des forces conservatives, son énergie mécanique se conserve : Em = Ec + Ep = constante, ce qui entraîne WAB = −ΔEp. C'est le cas idéal d'une chute libre sans frottement : toute l'énergie potentielle de pesanteur perdue se retrouve intégralement en énergie cinétique."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Pièges classiques",
+          "content": "Ne confondez pas le théorème de l'énergie cinétique (toujours vrai, quelle que soit la nature des forces) avec la conservation de l'énergie mécanique (valable uniquement si toutes les forces sont conservatives, donc jamais en présence de frottements). Attention également aux unités : le newton (N) est un kg·m·s⁻², le joule (J) un kg·m²·s⁻², le watt (W) un kg·m²·s⁻³. Enfin, l'analyse dimensionnelle permet de vérifier qu'une formule est homogène, mais ne garantit jamais l'exactitude de ses coefficients numériques sans dimension."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "La vitesse d'un système est reliée à sa position OM par la relation :",
+          "options": [
+            "v = d(OM)/dt",
+            "v = OM × t",
+            "v = d²(OM)/dt²",
+            "v = OM/t"
+          ],
+          "correct_index": 0,
+          "explanation": "Bien joué ! ⭐ La vitesse est par définition la dérivée temporelle du vecteur position : v = d(OM)/dt. L'accélération, elle, est la dérivée seconde de la position (ou la dérivée première de la vitesse)."
+        },
+        {
+          "question": "Le principe d'inertie (1ère loi de Newton) énonce que :",
+          "options": [
+            "tout système accélère nécessairement sous l'effet de son poids",
+            "un système immobile ou en mouvement rectiligne uniforme est soumis à une résultante des forces nulle",
+            "l'énergie cinétique d'un système se conserve toujours",
+            "la quantité de mouvement croît indéfiniment avec le temps"
+          ],
+          "correct_index": 1,
+          "explanation": "Exactement ! 🎯 Un système immobile ou en MRU voit les forces qui s'exercent sur lui se compenser parfaitement : ΣF = 0. C'est le cas particulier de la 2ème loi de Newton pour une accélération nulle."
+        },
+        {
+          "question": "La deuxième loi de Newton, pour un système de masse constante, s'écrit :",
+          "options": [
+            "ΣF = m·v",
+            "ΣF = ½m·v²",
+            "ΣF = m·a",
+            "ΣF = m·dv"
+          ],
+          "correct_index": 2,
+          "explanation": "Parfait ! 💪 Le principe fondamental de la dynamique donne ΣF = dp/dt = d(mv)/dt, qui se simplifie en ΣF = m·a pour une masse constante : c'est la relation la plus utilisée en mécanique."
+        },
+        {
+          "question": "La quantité de mouvement d'un système de masse m et de vitesse v est définie par :",
+          "options": [
+            "p = ½mv²",
+            "p = mgz",
+            "p = ma",
+            "p = mv"
+          ],
+          "correct_index": 3,
+          "explanation": "Tout juste ! ✨ La quantité de mouvement vaut p = mv, exprimée en kg·m·s⁻¹. Plus un objet est massif ou rapide, plus sa quantité de mouvement est grande, et plus il est difficile à arrêter."
+        },
+        {
+          "question": "Un système n'est soumis qu'à des forces conservatives. On peut alors affirmer que :",
+          "options": [
+            "son énergie mécanique totale se conserve",
+            "seule son énergie cinétique se conserve",
+            "sa quantité de mouvement diminue nécessairement",
+            "son énergie potentielle augmente indéfiniment"
+          ],
+          "correct_index": 0,
+          "explanation": "Bravo ! 🌟 Quand toutes les forces en jeu sont conservatives, l'énergie mécanique Em = Ec + Ep reste constante : toute perte d'énergie potentielle se traduit par un gain équivalent d'énergie cinétique, et inversement."
+        },
+        {
+          "question": "L'énergie potentielle de pesanteur d'un système de masse m à l'altitude z s'écrit :",
+          "options": [
+            "Epp = ½mv²",
+            "Epp = mgz",
+            "Epp = mg/z",
+            "Epp = ½kz²"
+          ],
+          "correct_index": 1,
+          "explanation": "Exact ! 🏔️ L'énergie potentielle de pesanteur vaut Epp = mgz : elle augmente avec l'altitude z et se convertit en énergie cinétique lors d'une chute."
+        },
+        {
+          "question": "La force de rappel d'un ressort de raideur k, allongé de x = l − l₀, a pour norme :",
+          "options": [
+            "F = ½k×x²",
+            "F = k×x²",
+            "F = k×x",
+            "F = k/x"
+          ],
+          "correct_index": 2,
+          "explanation": "Bien vu ! 🌀 La force de rappel élastique vaut F = k×x (en valeur absolue), et elle est toujours orientée pour ramener le ressort vers sa position de repos."
+        },
+        {
+          "question": "Le travail élémentaire dW d'une force F pour un déplacement dl formant un angle θ avec F vaut :",
+          "options": [
+            "dW = F × dl",
+            "dW = F/dl",
+            "dW = F×dl×sin(θ)",
+            "dW = F·dl = F×dl×cos(θ)"
+          ],
+          "correct_index": 3,
+          "explanation": "Parfait ! ➗ Le travail élémentaire est le produit scalaire de la force et du déplacement : dW = F·dl = F×dl×cos(θ), où θ est l'angle entre les deux vecteurs."
+        },
+        {
+          "question": "Un travail est dit « moteur » lorsque :",
+          "options": [
+            "dW > 0",
+            "dW < 0",
+            "dW = 0",
+            "la force ne dépend pas du déplacement"
+          ],
+          "correct_index": 0,
+          "explanation": "Exactement ! 🚀 Un travail moteur (dW > 0) signifie que la force favorise le mouvement et accélère le système, contrairement à un travail résistif (dW < 0) qui le freine."
+        },
+        {
+          "question": "Le théorème de l'énergie cinétique, entre deux points A et B, énonce que :",
+          "options": [
+            "ΔEc = WAB, valable uniquement pour les forces conservatives",
+            "ΔEc = WAB, valable pour toutes les forces, conservatives ou non",
+            "ΔEp = WAB dans tous les cas",
+            "Em reste constante quel que soit le système"
+          ],
+          "correct_index": 1,
+          "explanation": "Bravo ! 🎉 Contrairement à la conservation de l'énergie mécanique, le théorème de l'énergie cinétique est toujours valable, y compris en présence de frottements : ΔEc = somme des travaux de toutes les forces appliquées."
+        },
+        {
+          "question": "Pour une force conservative qui dérive d'une énergie potentielle Ep, on a la relation :",
+          "options": [
+            "F = dEp/dx",
+            "F = Ep/x",
+            "F = −dEp/dx",
+            "F = −Ep×x"
+          ],
+          "correct_index": 2,
+          "explanation": "Bien joué ! 🔗 Une force conservative dérive de son énergie potentielle par F = −dEp/dx : le signe négatif traduit le fait que le système est poussé vers les états de plus basse énergie potentielle."
+        },
+        {
+          "question": "La puissance d'une force est reliée à la vitesse du système par la relation :",
+          "options": [
+            "P = F/v",
+            "P = F + v",
+            "P = F/dt uniquement",
+            "P = F·v (produit scalaire)"
+          ],
+          "correct_index": 3,
+          "explanation": "Exact ! ⚡ On a P = dW/dt = F·(dl/dt) = F·v : la puissance d'une force est le produit scalaire de cette force par la vitesse du système sur lequel elle s'exerce."
+        },
+        {
+          "question": "Le watt (W), unité de puissance, est équivalent, en unités de base du système international, à :",
+          "options": [
+            "1 kg·m²·s⁻³",
+            "1 kg·m²·s⁻²",
+            "1 kg·m·s⁻²",
+            "1 kg·m⁻¹·s⁻²"
+          ],
+          "correct_index": 0,
+          "explanation": "Tout juste ! 🧠 1 W = 1 J·s⁻¹, et comme 1 J = 1 kg·m²·s⁻², on obtient 1 W = 1 kg·m²·s⁻³. C'est un bon réflexe de vérifier ce genre d'homogénéité par analyse dimensionnelle."
+        },
+        {
+          "question": "Un objet est immobile sur une table horizontale. D'après le principe d'inertie :",
+          "options": [
+            "aucune force ne s'exerce sur l'objet",
+            "le poids et la réaction du support se compensent exactement",
+            "la réaction du support est nécessairement nulle",
+            "le poids de l'objet est nul"
+          ],
+          "correct_index": 1,
+          "explanation": "Bien vu ! ⚖️ L'objet étant immobile, la résultante des forces est nulle : le poids (vers le bas) et la réaction du support (vers le haut) se compensent exactement, même s'ils ne sont pas nuls individuellement."
+        },
+        {
+          "question": "Le travail d'une force de pression exercée sur un volume qui varie de dV a pour valeur absolue :",
+          "options": [
+            "|dW| = p / dV",
+            "|dW| = p² × dV",
+            "|dW| = p × dV",
+            "|dW| = dV / p"
+          ],
+          "correct_index": 2,
+          "explanation": "Exactement ! 🔬 Comme dV = S×dl et que la force pressante est F = p×S, on obtient |dW| = |F×dl| = p×|dV| : c'est la formule à retenir pour le travail des forces de pression."
+        },
+        {
+          "question": "Lorsqu'une balle est en chute libre (sans frottement), l'énergie mécanique se conserve, ce qui signifie que :",
+          "options": [
+            "l'énergie cinétique se convertit progressivement en énergie potentielle de pesanteur",
+            "l'énergie mécanique totale se transforme intégralement en masse",
+            "la puissance se convertit directement en quantité de mouvement",
+            "l'énergie potentielle de pesanteur se convertit progressivement en énergie cinétique"
+          ],
+          "correct_index": 3,
+          "explanation": "Bravo ! 🍎 En chute libre sans frottement, l'énergie potentielle de pesanteur diminue (l'altitude diminue) tandis que l'énergie cinétique augmente d'autant (la vitesse augmente), l'énergie mécanique Em restant constante."
+        },
+        {
+          "question": "L'analyse dimensionnelle d'une formule physique permet de :",
+          "options": [
+            "vérifier son homogénéité, sans garantir l'exactitude de ses coefficients numériques sans dimension",
+            "démontrer que la formule est totalement exacte",
+            "calculer directement la valeur numérique exacte d'une grandeur",
+            "remplacer entièrement un calcul intégral"
+          ],
+          "correct_index": 0,
+          "explanation": "Exact ! 🧠 L'analyse dimensionnelle est un excellent outil de vérification (elle détecte les erreurs d'homogénéité), mais elle ne prouve jamais qu'un coefficient numérique sans dimension (comme le ½ de ½mv²) est correct."
+        },
+        {
+          "question": "Sur un trajet macroscopique entre A et B, le travail total d'une force variable F est donné par :",
+          "options": [
+            "WAB = F × AB",
+            "WAB = ∫[A→B] F·dl",
+            "WAB = F / AB",
+            "WAB toujours égal à ΔEp, quelle que soit la force"
+          ],
+          "correct_index": 1,
+          "explanation": "Bien vu ! ➗ Quand la force varie le long du trajet, il faut sommer (intégrer) tous les travaux élémentaires dW = F·dl entre A et B : WAB = ∫[A→B] F·dl."
+        },
+        {
+          "question": "Concernant les 4 interactions fondamentales, l'interaction gravitationnelle est :",
+          "options": [
+            "attractive ou répulsive selon le signe des masses",
+            "de très courte portée, de l'ordre du femtomètre",
+            "toujours attractive",
+            "identique en intensité à l'interaction électrostatique"
+          ],
+          "correct_index": 2,
+          "explanation": "Tout juste ! 🌍 Contrairement à l'interaction électrostatique (qui peut être attractive ou répulsive selon le signe des charges), l'interaction gravitationnelle entre deux masses est toujours attractive."
+        }
+      ]
+    },
+    {
+      "id": "electrostatique_biopotentiels",
+      "title": "Électrostatique et biopotentiels (ECG)",
+      "difficulty": 3,
+      "intro": "Champs, charges, dipôles... et un petit détour par le cœur avec l'électrocardiogramme : la physique rencontre la médecine ! ❤️⚡",
+      "course": [
+        {
+          "icon": "🔬",
+          "title": "Champ électrique et loi de Coulomb",
+          "content": "Une charge Q crée autour d'elle un champ électrique E, mesuré à une distance r par E = Q/(4πεr²), avec ε la permittivité du milieu. Une charge test q placée dans ce champ subit une force électrostatique Fe = q×E, soit Fe = qQ/(4πεr²) (loi de Coulomb). Cette force est attractive entre deux charges de signes opposés et répulsive entre deux charges de même signe. Toute charge est un multiple de la charge élémentaire e = 1,6×10⁻¹⁹ C, portée par le proton (+e) et l'électron (−e) : q = N×e."
+        },
+        {
+          "icon": "⭐",
+          "title": "Distributions de charges",
+          "content": "Quand une charge n'est pas ponctuelle mais répartie sur un objet, on définit une densité de charge : linéique λ = dq/dl (en C·m⁻¹) pour un objet à 1 dimension, surfacique σ = dq/dS (en C·m⁻²) pour un objet à 2 dimensions, et volumique ρ = dq/dV (en C·m⁻³) pour un objet à 3 dimensions. Moyen mnémotechnique : λ (lambda) pour linéique, σ (sigma) pour surfacique, ρ (rho) pour volumique (comme la masse volumique)."
+        },
+        {
+          "icon": "➗",
+          "title": "Énergie potentielle et potentiel électrostatiques",
+          "content": "L'énergie potentielle électrostatique d'une charge test q dans le champ d'une charge Q vaut Ep = qQ/(4πεr). Le potentiel électrostatique V, propriété d'un point de l'espace indépendante de la charge test, vaut V = Q/(4πεr) pour une charge ponctuelle. Les deux grandeurs sont reliées par Ep = qV. Le champ dérive du potentiel selon E = −dV/dr : le champ pointe toujours vers les potentiels décroissants."
+        },
+        {
+          "icon": "🔬",
+          "title": "Le dipôle électrique",
+          "content": "Un dipôle électrique est formé de deux charges opposées (+q et −q) séparées d'une distance a. Le vecteur moment dipolaire p, orienté de la charge négative vers la charge positive, a pour norme ||p|| = q×a et s'exprime en C·m. À grande distance (r ≫ a), le potentiel créé par le dipôle en un point M vaut V(r) = p×cos(θ)/(4πεr²), où θ est l'angle entre p et la direction du point M : il décroît en 1/r², contrairement au potentiel d'une charge ponctuelle qui décroît en 1/r."
+        },
+        {
+          "icon": "⭐",
+          "title": "Le condensateur plan",
+          "content": "Un condensateur plan est formé de deux plaques parallèles portant des charges opposées, chacune de densité surfacique σ = Q/S. Le champ électrique entre les plaques est uniforme et vaut E = σ/ε = Q/(εS), orienté de la plaque positive vers la négative ; il est nul à l'extérieur. Le potentiel décroît linéairement entre les plaques, avec une différence de potentiel |ΔV| = E×h (h étant la distance entre les plaques). La capacité C = |Q/ΔV| = εS/h ne dépend que de la géométrie du condensateur (surface, écartement, milieu isolant), jamais de la charge ou de la tension appliquées."
+        },
+        {
+          "icon": "🧠",
+          "title": "Membrane biologique et électrocardiogramme (ECG)",
+          "content": "Une membrane plasmique se comporte comme un condensateur : au repos, l'intérieur de la cellule (chargé négativement) et l'extérieur (chargé positivement) forment les deux « plaques ». La dépolarisation, qui inverse cette répartition de charges, se propage le long des neurones ou du muscle cardiaque ; la myéline accélère cette propagation en forçant le courant à sauter entre les zones non myélinisées (conduction saltatoire). Dans le cœur, la dépolarisation qui se propage définit à chaque instant un dipôle cardiaque de moment dipolaire p. L'ECG mesure, via des électrodes placées sur les poignets et la cheville (triangle d'Einthoven, sommets R, L, F), des différences de potentiel proportionnelles à la projection de p sur différents axes : par exemple VI = VL − VR est proportionnelle à la projection de p sur l'axe reliant les électrodes R et L."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Pièges classiques",
+          "content": "Ne confondez pas le potentiel d'une charge ponctuelle (en 1/r) et celui d'un dipôle (en 1/r²) : ce sont deux situations géométriques différentes. Ne confondez pas non plus le potentiel électrique (propriété d'un point de l'espace) et l'énergie potentielle électrostatique (propriété d'une charge placée en ce point). Enfin, gardez en tête que la capacité d'un condensateur est une grandeur purement géométrique : si on augmente la tension, la charge stockée augmente proportionnellement, mais la capacité, elle, ne change pas."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "La force électrostatique (loi de Coulomb) entre deux charges q1 et q2 séparées d'une distance r s'écrit :",
+          "options": [
+            "Fe = q1q2/(4πεr²)",
+            "Fe = q1q2/(4πεr)",
+            "Fe = 4πεr²/(q1q2)",
+            "Fe = (q1+q2)/r²"
+          ],
+          "correct_index": 0,
+          "explanation": "Bravo ! ⚡ La loi de Coulomb donne Fe = q1q2/(4πεr²) : la force diminue avec le carré de la distance, exactement comme la force gravitationnelle."
+        },
+        {
+          "question": "Deux charges électriques de même signe :",
+          "options": [
+            "s'attirent",
+            "se repoussent",
+            "n'interagissent pas entre elles",
+            "s'annulent mutuellement"
+          ],
+          "correct_index": 1,
+          "explanation": "Exact ! ⚡ Deux charges de même signe se repoussent, tandis que deux charges de signes opposés s'attirent : c'est la principale différence avec l'interaction gravitationnelle, toujours attractive."
+        },
+        {
+          "question": "La charge élémentaire e, portée par un proton, vaut environ :",
+          "options": [
+            "6,02×10²³ C",
+            "9×10⁹ C",
+            "1,6×10⁻¹⁹ C",
+            "8,85×10⁻¹² C"
+          ],
+          "correct_index": 2,
+          "explanation": "Tout juste ! 🔬 La charge élémentaire vaut e ≈ 1,6×10⁻¹⁹ C. Le proton porte une charge +e, l'électron une charge −e, et toute charge macroscopique est un multiple entier de e."
+        },
+        {
+          "question": "La densité surfacique de charge σ, utilisée par exemple pour une plaque chargée, s'exprime en :",
+          "options": [
+            "C·m⁻¹",
+            "C·m⁻³",
+            "C·m",
+            "C·m⁻²"
+          ],
+          "correct_index": 3,
+          "explanation": "Bien vu ! ⭐ La densité surfacique σ = dq/dS concerne un objet à 2 dimensions et s'exprime donc en C·m⁻² (charge par unité de surface)."
+        },
+        {
+          "question": "Le potentiel électrostatique créé par une charge ponctuelle Q à une distance r vaut :",
+          "options": [
+            "V = Q/(4πεr)",
+            "V = Q/(4πεr²)",
+            "V = 4πεQr",
+            "V = Qr/(4πε)"
+          ],
+          "correct_index": 0,
+          "explanation": "Exact ! ➗ Le potentiel d'une charge ponctuelle décroît en 1/r : V = Q/(4πεr), à ne pas confondre avec le champ électrique, qui lui décroît en 1/r²."
+        },
+        {
+          "question": "L'énergie potentielle Ep d'une charge test q placée à un potentiel V est reliée à V par :",
+          "options": [
+            "Ep = V/q",
+            "Ep = qV",
+            "Ep = q/V",
+            "Ep = q + V"
+          ],
+          "correct_index": 1,
+          "explanation": "Parfait ! 🔗 On a Ep = qV : l'énergie potentielle électrostatique dépend à la fois de la charge test q et du potentiel V du point où elle se trouve."
+        },
+        {
+          "question": "Le champ électrique dérive du potentiel selon la relation :",
+          "options": [
+            "E = dV/dr",
+            "E = V × r",
+            "E = −dV/dr",
+            "E = −V/r²"
+          ],
+          "correct_index": 2,
+          "explanation": "Bravo ! 🧠 On a E = −dV/dr : le signe négatif traduit le fait que le champ pointe toujours vers les potentiels décroissants, tout comme les forces conservatives pointent vers les énergies potentielles décroissantes."
+        },
+        {
+          "question": "Le vecteur moment dipolaire d'un dipôle électrique est orienté :",
+          "options": [
+            "de la charge positive vers la charge négative",
+            "perpendiculairement à l'axe reliant les deux charges",
+            "dans le sens du champ électrique extérieur appliqué",
+            "de la charge négative vers la charge positive"
+          ],
+          "correct_index": 3,
+          "explanation": "Exactement ! 🔋 Par convention, le moment dipolaire p est toujours orienté de la charge négative (−) vers la charge positive (+)."
+        },
+        {
+          "question": "Le potentiel créé par un dipôle électrique, à grande distance (r ≫ a), varie en fonction de r comme :",
+          "options": [
+            "1/r²",
+            "1/r",
+            "r²",
+            "il est indépendant de r"
+          ],
+          "correct_index": 0,
+          "explanation": "Tout juste ! 📐 Contrairement au potentiel d'une charge ponctuelle isolée (en 1/r), le potentiel d'un dipôle décroît plus vite, en 1/r², car les contributions des deux charges se compensent partiellement à distance."
+        },
+        {
+          "question": "Entre les plaques d'un condensateur plan, le champ électrique est :",
+          "options": [
+            "nul",
+            "uniforme et non nul",
+            "variable, décroissant en 1/r²",
+            "identique au champ mesuré à l'extérieur du condensateur"
+          ],
+          "correct_index": 1,
+          "explanation": "Bien joué ! ⭐ Entre les plaques, les champs créés par chacune des deux plaques s'additionnent pour donner un champ uniforme E = σ/ε ; à l'extérieur, ils se compensent exactement, donnant un champ nul."
+        },
+        {
+          "question": "La capacité C d'un condensateur plan :",
+          "options": [
+            "dépend uniquement de la charge Q stockée sur les plaques",
+            "dépend de la tension ΔV appliquée entre les plaques",
+            "ne dépend que de la géométrie du condensateur (surface, distance, milieu isolant)",
+            "augmente proportionnellement lorsque ΔV augmente"
+          ],
+          "correct_index": 2,
+          "explanation": "Bravo ! 🎯 La capacité C = εS/h est une grandeur purement géométrique. Si on augmente la tension, la charge stockée Q augmente proportionnellement, mais leur rapport C = Q/ΔV, lui, reste constant."
+        },
+        {
+          "question": "La capacité d'un condensateur plan de surface S des plaques et d'écartement h entre elles s'exprime :",
+          "options": [
+            "C = εh/S",
+            "C = S/(εh)",
+            "C = ε/(Sh)",
+            "C = εS/h"
+          ],
+          "correct_index": 3,
+          "explanation": "Exact ! ➗ On obtient C = |Q/ΔV| = |σS|/|σh/ε| = εS/h : la capacité augmente avec la surface des plaques et diminue quand on les éloigne."
+        },
+        {
+          "question": "Au repos (avant toute dépolarisation), une cellule myocardique est polarisée de sorte que :",
+          "options": [
+            "son extérieur est chargé positivement et son intérieur négativement",
+            "son extérieur est chargé négativement et son intérieur positivement",
+            "il n'existe aucune différence de potentiel transmembranaire",
+            "sa membrane est déjà totalement dépolarisée"
+          ],
+          "correct_index": 0,
+          "explanation": "Bien vu ! ❤️ Au repos, la membrane cellulaire cardiaque est polarisée avec un excès de charges positives à l'extérieur et un excès de charges négatives à l'intérieur, exactement comme les deux plaques d'un condensateur."
+        },
+        {
+          "question": "Dans le triangle d'Einthoven utilisé pour l'ECG, la dérivation VI correspond à la différence de potentiel :",
+          "options": [
+            "VF − VR",
+            "VL − VR",
+            "VF − VL",
+            "VR − VL"
+          ],
+          "correct_index": 1,
+          "explanation": "Tout juste ! 🫀 La dérivation VI est définie comme VI = VL − VR, où VR et VL sont les potentiels mesurés respectivement au bras droit et au bras gauche."
+        },
+        {
+          "question": "Le potentiel mesuré entre deux électrodes du triangle d'Einthoven est proportionnel :",
+          "options": [
+            "à la norme du moment dipolaire cardiaque uniquement, quelle que soit sa direction",
+            "à l'inverse du carré de la distance entre le cœur et l'électrode",
+            "à la projection du vecteur moment dipolaire cardiaque sur l'axe formé par les deux électrodes",
+            "à la fréquence cardiaque du patient"
+          ],
+          "correct_index": 2,
+          "explanation": "Exactement ! 📐 Chaque différence de potentiel mesurée est proportionnelle à la projection (produit scalaire avec un vecteur unitaire) du moment dipolaire cardiaque p sur l'axe reliant les deux électrodes concernées."
+        },
+        {
+          "question": "La gaine de myéline accélère la propagation de l'influx nerveux le long de l'axone car :",
+          "options": [
+            "elle augmente fortement la capacité électrique de la membrane",
+            "elle empêche toute dépolarisation le long de l'axone",
+            "elle diminue la résistance électrique du milieu extracellulaire environnant",
+            "elle force le courant à « sauter » entre les zones non myélinisées (conduction saltatoire)"
+          ],
+          "correct_index": 3,
+          "explanation": "Bravo ! 🧠 En épaississant la membrane, la myéline empêche la dépolarisation locale sous son épaisseur : le courant se propage donc par sauts successifs entre les zones dégarnies (nœuds de Ranvier), ce qui accélère fortement la conduction."
+        },
+        {
+          "question": "La densité linéique de charge λ caractérise :",
+          "options": [
+            "la charge par unité de longueur d'un objet à une dimension",
+            "la charge par unité de surface d'un objet à deux dimensions",
+            "la charge par unité de volume d'un objet à trois dimensions",
+            "la charge totale d'un système, quelle que soit sa géométrie"
+          ],
+          "correct_index": 0,
+          "explanation": "Exact ! 🧠 λ = dq/dl décrit la charge par unité de longueur, utile par exemple pour un fil électrique chargé (à ne pas confondre avec σ pour une surface et ρ pour un volume)."
+        }
+      ]
+    },
+    {
+      "id": "mecanique_fluides",
+      "title": "Mécanique des fluides : hydrostatique, hydrodynamique et viscosité",
+      "difficulty": 2,
+      "intro": "De la pression sanguine au débit du sang dans les artères, plongeons dans la mécanique des fluides, indispensable pour comprendre l'hémodynamique ! 🩸💧",
+      "course": [
+        {
+          "icon": "🔬",
+          "title": "Pression et hydrostatique",
+          "content": "La pression correspond à une force par unité de surface, p = F/S, exprimée en pascals (Pa). Pour un fluide immobile (incompressible, de masse volumique ρ constante), la loi de l'hydrostatique relie la pression en deux points A et B à leur différence d'altitude : pA − pB = ρg(zB − zA). Autrement dit, plus on descend en profondeur dans un fluide, plus la pression augmente ; à une interface air/liquide, la pression vaut la pression atmosphérique patm."
+        },
+        {
+          "icon": "⭐",
+          "title": "La tension artérielle",
+          "content": "En contexte médical, on définit la tension T comme la différence entre la pression du sang et la pression atmosphérique : T = psang − patm. Par exemple, une tension mesurée à 120 mmHg correspond en réalité à une pression sanguine absolue de 120 + 760 = 880 mmHg, puisque patm ≈ 760 mmHg au niveau de la mer."
+        },
+        {
+          "icon": "➗",
+          "title": "Débit et conservation dans un écoulement",
+          "content": "Le débit volumique Q (en m³·s⁻¹) d'un fluide s'écoulant dans un tuyau de section S à la vitesse v vaut Q = Sv. Dans un circuit en série, le débit se conserve : Q1 = Q2, soit S1v1 = S2v2 ; quand la section diminue, la vitesse augmente (effet Venturi). Dans un circuit en parallèle (comme le réseau artériel qui se subdivise en artérioles puis en capillaires), le débit total est la somme des débits de chaque branche : Qtot = ΣQi."
+        },
+        {
+          "icon": "🔬",
+          "title": "Loi de Bernoulli (fluide parfait)",
+          "content": "Pour un fluide parfait (sans frottement) en écoulement, l'énergie totale (pression + énergie potentielle de pesanteur + énergie cinétique, par unité de volume) se conserve entre deux points A et B : pA + ρgzA + ½ρvA² = pB + ρgzB + ½ρvB². Une pompe, qui apporte de l'énergie au fluide, introduit une surpression Δπ à ajouter du côté amont de l'écoulement ; sa puissance délivrée vaut Ppompe = Δπ×Q."
+        },
+        {
+          "icon": "⭐",
+          "title": "Fluides visqueux et loi de Poiseuille",
+          "content": "Contrairement à un fluide parfait (vitesse homogène sur toute la section), un fluide visqueux réel présente un profil de vitesse parabolique : la vitesse est maximale au centre du tuyau et nulle au contact des parois. La vitesse moyenne, utilisée pour calculer le débit (Q = S×v̄), vaut la moitié de la vitesse maximale : v̄ = vmax/2. Les frottements visqueux se traduisent par une résistance hydraulique R = 8ηL/(πa⁴) (avec η la viscosité, L la longueur et a le rayon du tuyau), à l'origine d'une perte de charge (chute de pression) donnée par la loi de Poiseuille : Δp = RQ."
+        },
+        {
+          "icon": "🧠",
+          "title": "Résistances hydrauliques en série et en parallèle",
+          "content": "La puissance dissipée par les frottements visqueux vaut Pdissipée = Δp×Q = RQ². Pour des tuyaux en série, les pertes de charge s'additionnent et la résistance équivalente est Req = ΣRi. Pour des tuyaux en parallèle (dérivation), c'est l'inverse des résistances qui s'additionne : 1/Req = Σ(1/Ri), ce qui diminue toujours la résistance équivalente par rapport à chaque branche individuelle. C'est exactement l'analogie utilisée pour modéliser la circulation sanguine dans le réseau vasculaire."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Pièges classiques",
+          "content": "Le rayon a du tuyau intervient à la puissance 4 dans la résistance hydraulique (R ∝ 1/a⁴) : une petite variation de rayon a donc un effet considérable sur la résistance à l'écoulement, ce qui est capital pour comprendre la vasoconstriction et la vasodilatation. Attention également à ne pas confondre la perte de charge Δp (toujours positive par convention) avec la variation réelle de pression totale, qui peut être modifiée par d'autres effets (vitesse, altitude) selon Bernoulli."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "La pression d'un fluide se définit comme :",
+          "options": [
+            "une force par unité de surface",
+            "une force par unité de volume",
+            "une énergie par unité de temps",
+            "une masse par unité de volume"
+          ],
+          "correct_index": 0,
+          "explanation": "Bravo ! 🔬 La pression p = F/S est une force exercée par unité de surface, exprimée en pascals (Pa)."
+        },
+        {
+          "question": "D'après la loi de l'hydrostatique, entre un point A situé en profondeur et un point B situé plus haut dans un même fluide au repos :",
+          "options": [
+            "pA < pB",
+            "pA > pB",
+            "pA = pB",
+            "la relation dépend uniquement de la vitesse du fluide"
+          ],
+          "correct_index": 1,
+          "explanation": "Exact ! ⭐ Plus on s'enfonce dans un fluide, plus la pression augmente à cause du poids de la colonne de fluide au-dessus : on a bien pA > pB si A est plus profond que B."
+        },
+        {
+          "question": "La loi de l'hydrostatique relie la pression et l'altitude par la relation :",
+          "options": [
+            "pA − pB = ρg(zA − zB)",
+            "pA + pB = ρg×zA×zB",
+            "pA − pB = ρg(zB − zA)",
+            "pA/pB = zA/zB"
+          ],
+          "correct_index": 2,
+          "explanation": "Tout juste ! ➗ On a pA − pB = ρg(zB − zA) : si B est plus haut que A (zB > zA), alors pA > pB, ce qui est cohérent avec l'augmentation de pression en profondeur."
+        },
+        {
+          "question": "Une tension artérielle mesurée à 120 mmHg correspond à une pression sanguine absolue d'environ :",
+          "options": [
+            "120 mmHg",
+            "640 mmHg",
+            "760 mmHg",
+            "880 mmHg"
+          ],
+          "correct_index": 3,
+          "explanation": "Bien vu ! 🩺 Comme T = psang − patm avec patm ≈ 760 mmHg, on obtient psang = T + patm = 120 + 760 = 880 mmHg."
+        },
+        {
+          "question": "Le débit volumique Q d'un fluide s'écoulant dans un tuyau de section S à la vitesse v s'écrit :",
+          "options": [
+            "Q = S×v",
+            "Q = S/v",
+            "Q = S + v",
+            "Q = v/S"
+          ],
+          "correct_index": 0,
+          "explanation": "Exactement ! 💧 Le débit correspond au volume de fluide qui traverse une section donnée par unité de temps : Q = S×v."
+        },
+        {
+          "question": "Dans un circuit en série, la conservation du débit implique que :",
+          "options": [
+            "la vitesse du fluide est identique partout, quelle que soit la section",
+            "quand la section diminue, la vitesse du fluide augmente (effet Venturi)",
+            "le débit total est la somme des débits de chaque segment",
+            "la pression reste rigoureusement constante partout"
+          ],
+          "correct_index": 1,
+          "explanation": "Bravo ! 🌊 En série, Q = S1v1 = S2v2 reste constant : si la section diminue, la vitesse doit augmenter pour compenser. C'est l'effet Venturi."
+        },
+        {
+          "question": "Dans un circuit en dérivation (parallèle), on a la relation :",
+          "options": [
+            "Q1 = Q2 = Q3 = ...",
+            "les débits de chaque branche sont indépendants du débit total",
+            "Qtot = Q1 + Q2 + ...",
+            "le débit total est nécessairement nul"
+          ],
+          "correct_index": 2,
+          "explanation": "Exact ! ➕ Dans un écoulement en parallèle, le débit total est la somme des débits circulant dans chaque branche : Qtot = ΣQi, exactement comme le sang qui se répartit entre plusieurs artérioles."
+        },
+        {
+          "question": "La loi de Bernoulli, pour un fluide parfait en écoulement, exprime la conservation :",
+          "options": [
+            "de la masse volumique seule",
+            "du débit uniquement",
+            "de la viscosité du fluide",
+            "de l'énergie totale du fluide (pression, énergie potentielle et énergie cinétique)"
+          ],
+          "correct_index": 3,
+          "explanation": "Parfait ! 🔬 La loi de Bernoulli traduit la conservation de l'énergie totale par unité de volume : pA + ρgzA + ½ρvA² = pB + ρgzB + ½ρvB²."
+        },
+        {
+          "question": "Une pompe placée sur un circuit hydraulique :",
+          "options": [
+            "apporte de l'énergie au fluide, créant une surpression",
+            "dissipe uniquement de l'énergie sous forme de chaleur",
+            "diminue toujours la vitesse du fluide qui la traverse",
+            "n'a aucun effet sur la pression du fluide"
+          ],
+          "correct_index": 0,
+          "explanation": "Bien joué ! ⚙️ Une pompe fournit de l'énergie au fluide sous forme d'une surpression Δπ, qui s'ajoute du côté amont de l'écoulement dans l'équation de Bernoulli modifiée."
+        },
+        {
+          "question": "La puissance délivrée par une pompe s'exprime, en fonction de la surpression Δπ et du débit Q, par :",
+          "options": [
+            "Ppompe = Δπ/Q",
+            "Ppompe = Δπ × Q",
+            "Ppompe = Δπ + Q",
+            "Ppompe = Q/Δπ"
+          ],
+          "correct_index": 1,
+          "explanation": "Exact ! ⚡ La puissance d'une pompe vaut Ppompe = Δπ × Q : plus la surpression générée et le débit sont importants, plus la pompe doit fournir de puissance."
+        },
+        {
+          "question": "Pour un fluide visqueux s'écoulant dans un tuyau cylindrique, le profil de vitesse observé est :",
+          "options": [
+            "uniforme sur toute la section",
+            "maximal aux parois et nul au centre",
+            "parabolique, maximal au centre et nul aux parois",
+            "strictement linéaire du centre vers les parois"
+          ],
+          "correct_index": 2,
+          "explanation": "Tout juste ! 🧠 Les frottements contre la paroi ralentissent le fluide au bord (vitesse nulle) alors que le centre s'écoule librement (vitesse maximale), donnant un profil parabolique caractéristique des fluides réels."
+        },
+        {
+          "question": "La vitesse moyenne v̄ d'un fluide visqueux dans un tuyau est reliée à sa vitesse maximale vmax par :",
+          "options": [
+            "v̄ = vmax",
+            "v̄ = 2×vmax",
+            "v̄ = vmax²",
+            "v̄ = vmax/2"
+          ],
+          "correct_index": 3,
+          "explanation": "Bravo ! ➗ Pour un profil de vitesse parabolique, la vitesse moyenne utilisée dans le calcul du débit vaut la moitié de la vitesse au centre du tuyau : v̄ = vmax/2."
+        },
+        {
+          "question": "La résistance hydraulique R d'un tuyau de longueur L et de rayon a s'exprime :",
+          "options": [
+            "R = 8ηL/(πa⁴)",
+            "R = 8ηL/(πa²)",
+            "R = πa⁴/(8ηL)",
+            "R = 8ηa⁴/(πL)"
+          ],
+          "correct_index": 0,
+          "explanation": "Exact ! 🔬 La loi de Poiseuille donne R = 8ηL/(πa⁴), avec η la viscosité du fluide : la résistance croît avec la longueur du tuyau et diminue très fortement quand le rayon augmente."
+        },
+        {
+          "question": "Si le rayon d'un tuyau est divisé par 2, la résistance hydraulique est multipliée par un facteur :",
+          "options": [
+            "2",
+            "16",
+            "4",
+            "8"
+          ],
+          "correct_index": 1,
+          "explanation": "Bien vu ! ⚠️ Comme R est inversement proportionnelle à a⁴, diviser le rayon par 2 multiplie la résistance par 2⁴ = 16. C'est pour cela que de petites variations de calibre vasculaire ont un effet énorme sur la circulation sanguine."
+        },
+        {
+          "question": "La loi de Poiseuille relie la perte de charge Δp, la résistance R et le débit Q par la relation :",
+          "options": [
+            "Δp = R/Q",
+            "Δp = R + Q",
+            "Δp = R×Q",
+            "Δp = Q/R"
+          ],
+          "correct_index": 2,
+          "explanation": "Exactement ! ➗ La loi de Poiseuille s'écrit Δp = R×Q : la chute de pression due aux frottements visqueux est proportionnelle à la fois à la résistance du tuyau et au débit qui le traverse."
+        },
+        {
+          "question": "La puissance dissipée par les frottements visqueux dans un tuyau s'écrit :",
+          "options": [
+            "Pdissipée = R×Q",
+            "Pdissipée = R/Q",
+            "Pdissipée = R²×Q",
+            "Pdissipée = R×Q²"
+          ],
+          "correct_index": 3,
+          "explanation": "Bravo ! ⚡ Comme Pdissipée = Δp×Q et Δp = RQ, on obtient Pdissipée = RQ² : l'énergie perdue par frottement croît avec le carré du débit."
+        },
+        {
+          "question": "Pour des résistances hydrauliques placées en série, la résistance équivalente vaut :",
+          "options": [
+            "Req = ΣRi",
+            "1/Req = Σ(1/Ri)",
+            "Req est le produit des Ri",
+            "Req est toujours inférieure à la plus petite des Ri"
+          ],
+          "correct_index": 0,
+          "explanation": "Tout juste ! ➕ En série, les résistances (et les pertes de charge) s'additionnent simplement : Req = R1 + R2 + ... , exactement comme pour des résistances électriques en série."
+        },
+        {
+          "question": "Pour des résistances hydrauliques placées en parallèle (dérivation), on a la relation :",
+          "options": [
+            "Req = ΣRi",
+            "1/Req = Σ(1/Ri)",
+            "Req est toujours supérieure à chaque Ri individuelle",
+            "le débit est nécessairement identique dans chaque branche"
+          ],
+          "correct_index": 1,
+          "explanation": "Parfait ! 🌿 En parallèle, ce sont les inverses des résistances qui s'additionnent : 1/Req = Σ(1/Ri), ce qui diminue toujours la résistance équivalente par rapport à chaque branche prise seule."
+        }
+      ]
+    },
+    {
+      "id": "gaz_ondes_acoustiques",
+      "title": "Gaz parfaits et ondes acoustiques",
+      "difficulty": 2,
+      "intro": "Des molécules de gaz qui s'agitent aux ondes sonores qui se propagent : deux mondes différents, mais les mêmes outils physiques pour les décrire ! 🎈🔊",
+      "course": [
+        {
+          "icon": "🔬",
+          "title": "Quantité de matière et nombre d'Avogadro",
+          "content": "Pour dénombrer les innombrables molécules d'un échantillon, on utilise la mole : un paquet de NA = 6,02×10²³ molécules (nombre d'Avogadro). La quantité de matière n (en mol) se calcule soit à partir du nombre de molécules N (n = N/NA), soit à partir de la masse m de l'échantillon et de la masse molaire M du matériau (n = m/M), en veillant à l'homogénéité des unités entre kg·mol⁻¹ et g·mol⁻¹."
+        },
+        {
+          "icon": "⭐",
+          "title": "Pression et unités usuelles",
+          "content": "La pression d'un gaz résulte des chocs incessants de ses molécules contre les parois du récipient : p = F/S. Plusieurs unités coexistent en pratique, en particulier en contexte médical : l'atmosphère (atm), le bar, et le millimètre de mercure (mmHg). On retient l'égalité fondamentale : 1 bar = 1 atm = 760 mmHg = 10⁵ Pa."
+        },
+        {
+          "icon": "➗",
+          "title": "Loi des gaz parfaits",
+          "content": "Un gaz parfait est un gaz suffisamment dilué pour que les interactions entre ses molécules soient négligeables. Il vérifie la loi des gaz parfaits : pV = nRT = NkT, avec p la pression (Pa), V le volume (m³), T la température en kelvins (K), n la quantité de matière (mol) et N le nombre de molécules. R = 8,314 J·K⁻¹·mol⁻¹ est la constante des gaz parfaits, et k = R/NA ≈ 1,38×10⁻²³ J·K⁻¹ est la constante de Boltzmann. Pour convertir une température en kelvins : T(K) = T(°C) + 273,15. À température constante entre deux états, pV reste constant : p1V1 = p2V2."
+        },
+        {
+          "icon": "🔬",
+          "title": "Loi de Dalton et pressions partielles",
+          "content": "Dans un mélange de plusieurs espèces gazeuses, chaque espèce i contribue à la pression totale à hauteur de sa proportion dans le mélange : c'est sa pression partielle pi. La loi de Dalton énonce que la pression totale est la somme des pressions partielles : ptot = Σpi, avec pi/ptot = ni/ntot = Ni/Ntot. Par exemple, l'air étant composé d'environ 20 % de dioxygène, la pression partielle du dioxygène vaut environ pO2 = 0,2×patm."
+        },
+        {
+          "icon": "⭐",
+          "title": "Ondes mécaniques et célérité",
+          "content": "Une onde mécanique est la propagation d'une perturbation (variation locale de pression, de vitesse...) qui transporte de l'énergie mais pas de matière. On distingue les ondes transversales (perturbation perpendiculaire à la direction de propagation) des ondes longitudinales (perturbation dans la même direction que la propagation) : les ondes sonores sont longitudinales. La célérité c d'une onde est reliée à sa longueur d'onde λ, sa période T et sa fréquence ν par c = λ/T = λν."
+        },
+        {
+          "icon": "🧠",
+          "title": "Intensité, atténuation et niveau sonore",
+          "content": "La puissance P d'une onde sonore correspond à l'énergie émise par unité de temps ; son intensité I = P/S (en W·m⁻²) est cette puissance rapportée à la surface traversée. Pour une source ponctuelle isotrope, l'onde se répartit sur une sphère de surface 4πr², d'où I = P/(4πr²) : l'intensité diminue en 1/r² avec la distance (atténuation géométrique). Comme l'oreille humaine ne perçoit pas linéairement l'intensité, on définit le niveau sonore L = 10×log(I/Iref) en décibels (dB), avec Iref = 10⁻¹² W·m⁻² le seuil d'audibilité. Pour des sons incohérents, on additionne les intensités (jamais directement les niveaux sonores en dB) avant de recalculer le niveau total."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Impédance acoustique et changement de milieu",
+          "content": "L'impédance acoustique d'un milieu, Z = ρc (avec ρ la masse volumique et c la célérité du son dans ce milieu), caractérise sa résistance au passage d'une onde sonore. À l'interface entre deux milieux d'impédances Z1 et Z2, une partie de l'onde est transmise (coefficient T = 4Z1Z2/(Z1+Z2)²) et une partie est réfléchie (coefficient R = (Z1−Z2)²/(Z1+Z2)²), avec toujours R + T = 1 (conservation de l'énergie). Attention : lors d'un changement de milieu, la fréquence de l'onde reste constante, mais sa célérité (et donc sa longueur d'onde) peut varier."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Une mole correspond à un nombre d'entités égal au nombre d'Avogadro, soit environ :",
+          "options": [
+            "6,02×10²³",
+            "8,314×10²³",
+            "1,6×10⁻¹⁹",
+            "1,38×10⁻²³"
+          ],
+          "correct_index": 0,
+          "explanation": "Bravo ! 🔬 Le nombre d'Avogadro vaut NA ≈ 6,02×10²³ mol⁻¹ : c'est le nombre d'entités élémentaires (atomes, molécules...) contenues dans une mole."
+        },
+        {
+          "question": "La quantité de matière n d'un échantillon de masse m et de masse molaire M se calcule par :",
+          "options": [
+            "n = m × M",
+            "n = m / M",
+            "n = M / m",
+            "n = m + M"
+          ],
+          "correct_index": 1,
+          "explanation": "Exact ! ➗ La quantité de matière s'obtient en divisant la masse totale de l'échantillon par la masse d'une mole (masse molaire) : n = m/M."
+        },
+        {
+          "question": "L'égalité correcte entre unités de pression est :",
+          "options": [
+            "1 bar = 100 atm = 76 mmHg",
+            "1 atm = 10³ Pa",
+            "1 bar = 1 atm = 760 mmHg = 10⁵ Pa",
+            "1 mmHg = 10⁵ Pa"
+          ],
+          "correct_index": 2,
+          "explanation": "Tout juste ! ⭐ On retient : 1 bar = 1 atm = 760 mmHg = 10⁵ Pa, une conversion très utile en contexte médical (tension artérielle) comme en physique des gaz."
+        },
+        {
+          "question": "La loi des gaz parfaits s'écrit :",
+          "options": [
+            "pV = nR/T",
+            "p = nRTV",
+            "V = nR/(pT)",
+            "pV = nRT"
+          ],
+          "correct_index": 3,
+          "explanation": "Parfait ! ➗ La loi des gaz parfaits relie pression, volume, quantité de matière et température par pV = nRT (ou de façon équivalente pV = NkT avec le nombre de molécules N)."
+        },
+        {
+          "question": "La constante des gaz parfaits R vaut environ :",
+          "options": [
+            "8,314 J·K⁻¹·mol⁻¹",
+            "6,02×10²³ J·K⁻¹·mol⁻¹",
+            "1,38×10⁻²³ J·K⁻¹·mol⁻¹",
+            "9×10⁹ J·K⁻¹·mol⁻¹"
+          ],
+          "correct_index": 0,
+          "explanation": "Exact ! 🧠 R ≈ 8,314 J·K⁻¹·mol⁻¹. Ne la confondez pas avec le nombre d'Avogadro (6,02×10²³ mol⁻¹) ni avec la constante de Boltzmann (1,38×10⁻²³ J·K⁻¹)."
+        },
+        {
+          "question": "La constante de Boltzmann k est reliée à la constante des gaz parfaits R et au nombre d'Avogadro NA par :",
+          "options": [
+            "k = R × NA",
+            "k = R / NA",
+            "k = R + NA",
+            "k = NA / R"
+          ],
+          "correct_index": 1,
+          "explanation": "Bien vu ! ⭐ On a k = R/NA ≈ 1,38×10⁻²³ J·K⁻¹ : c'est en quelque sorte la constante des gaz parfaits « ramenée » à une seule molécule plutôt qu'à une mole entière."
+        },
+        {
+          "question": "Pour convertir une température de degrés Celsius en kelvins, on utilise :",
+          "options": [
+            "T(K) = T(°C) × 273,15",
+            "T(K) = T(°C) − 273,15",
+            "T(K) = T(°C) + 273,15",
+            "T(K) = T(°C) / 273,15"
+          ],
+          "correct_index": 2,
+          "explanation": "Exactement ! 🌡️ On ajoute 273,15 à la température en degrés Celsius pour obtenir la température absolue en kelvins : T(K) = T(°C) + 273,15."
+        },
+        {
+          "question": "À température constante, pour un gaz parfait passant d'un état 1 à un état 2, on a la relation :",
+          "options": [
+            "p1/V1 = p2/V2",
+            "p1 + V1 = p2 + V2",
+            "p1V1² = p2V2²",
+            "p1V1 = p2V2"
+          ],
+          "correct_index": 3,
+          "explanation": "Bravo ! 🔬 À température constante, pV reste constant (loi de Boyle-Mariotte, cas particulier de la loi des gaz parfaits) : p1V1 = p2V2."
+        },
+        {
+          "question": "La loi de Dalton énonce que la pression totale d'un mélange de gaz est :",
+          "options": [
+            "la somme des pressions partielles de chaque espèce du mélange",
+            "égale à la pression partielle la plus élevée du mélange",
+            "indépendante de la composition du mélange",
+            "le produit des pressions partielles de chaque espèce"
+          ],
+          "correct_index": 0,
+          "explanation": "Exact ! ➕ La loi de Dalton énonce que ptot = Σpi : la pression totale d'un mélange gazeux est la somme des pressions partielles de chacune de ses composantes."
+        },
+        {
+          "question": "Si le dioxygène représente 20 % des molécules de l'air à la pression atmosphérique patm, sa pression partielle vaut :",
+          "options": [
+            "patm",
+            "0,2×patm",
+            "0,5×patm",
+            "0,8×patm"
+          ],
+          "correct_index": 1,
+          "explanation": "Tout juste ! 🔬 D'après pi/ptot = Ni/Ntot, si le dioxygène représente 20 % des molécules, il représente aussi 20 % des chocs contre la paroi, donc 20 % de la pression totale : pO2 = 0,2×patm."
+        },
+        {
+          "question": "Une onde sonore est, par nature, une onde :",
+          "options": [
+            "transversale",
+            "ni transversale ni longitudinale",
+            "longitudinale",
+            "électromagnétique"
+          ],
+          "correct_index": 2,
+          "explanation": "Exact ! 🔊 Les ondes sonores sont des ondes longitudinales : la perturbation (variation de pression) est dans la même direction que la propagation de l'onde."
+        },
+        {
+          "question": "La célérité c d'une onde est reliée à sa longueur d'onde λ et à sa fréquence ν par :",
+          "options": [
+            "c = λ/ν",
+            "c = ν/λ",
+            "c = λ+ν",
+            "c = λ×ν"
+          ],
+          "correct_index": 3,
+          "explanation": "Bravo ! ➗ On a c = λ/T = λ×ν, avec ν = 1/T la fréquence de l'onde exprimée en hertz (Hz)."
+        },
+        {
+          "question": "Pour une onde sonore isotrope émise par une source ponctuelle, l'intensité I mesurée à une distance r de la source :",
+          "options": [
+            "varie en 1/r² (atténuation géométrique)",
+            "reste constante quelle que soit la distance",
+            "est proportionnelle à r",
+            "augmente proportionnellement avec r²"
+          ],
+          "correct_index": 0,
+          "explanation": "Exactement ! 🌐 Comme I = P/(4πr²), l'intensité de l'onde diminue en 1/r² à mesure qu'elle se propage sur une surface sphérique de plus en plus grande : c'est l'atténuation géométrique."
+        },
+        {
+          "question": "Le niveau sonore L (en dB) se calcule à partir de l'intensité sonore I par la formule :",
+          "options": [
+            "L = I/Iref",
+            "L = 10×log(I/Iref)",
+            "L = 10×I×Iref",
+            "L = log(I) + Iref"
+          ],
+          "correct_index": 1,
+          "explanation": "Bien vu ! 🔊 Le niveau sonore s'exprime en décibels par L = 10×log(I/Iref), avec Iref = 10⁻¹² W·m⁻² le seuil d'audibilité de référence."
+        },
+        {
+          "question": "Pour combiner deux sons incohérents (sources indépendantes), il faut :",
+          "options": [
+            "additionner directement les niveaux sonores en dB",
+            "soustraire les niveaux sonores l'un de l'autre",
+            "additionner les intensités, puis recalculer le niveau sonore total à partir de cette somme",
+            "multiplier les niveaux sonores entre eux"
+          ],
+          "correct_index": 2,
+          "explanation": "Tout juste ! ⚠️ On ne peut jamais additionner directement des décibels : il faut d'abord sommer les intensités (Itot = ΣIi), puis calculer le niveau sonore résultant Ltot = 10×log(Itot/Iref)."
+        },
+        {
+          "question": "L'impédance acoustique Z d'un milieu se définit, en fonction de sa masse volumique ρ et de la célérité du son c, par :",
+          "options": [
+            "Z = ρ/c",
+            "Z = ρ+c",
+            "Z = c/ρ",
+            "Z = ρ×c"
+          ],
+          "correct_index": 3,
+          "explanation": "Exact ! 🔬 L'impédance acoustique vaut Z = ρ×c : elle caractérise la résistance d'un milieu au passage d'une onde sonore, et détermine la part d'onde transmise ou réfléchie à une interface."
+        },
+        {
+          "question": "Lors du passage d'une onde sonore d'un milieu à un autre d'impédance différente :",
+          "options": [
+            "la fréquence reste constante, mais la célérité (et donc la longueur d'onde) peut changer",
+            "la fréquence de l'onde change alors que sa célérité reste constante",
+            "ni la fréquence ni la célérité ne sont jamais modifiées",
+            "seule l'intensité change, toutes les autres grandeurs restent invariantes"
+          ],
+          "correct_index": 0,
+          "explanation": "Bravo ! ⚠️ La fréquence d'une onde reste toujours constante lors d'un changement de milieu, mais sa célérité peut varier ; comme c = λν, la longueur d'onde varie donc elle aussi."
+        },
+        {
+          "question": "Les coefficients de réflexion R et de transmission T à une interface acoustique entre deux milieux vérifient toujours :",
+          "options": [
+            "R − T = 1",
+            "R + T = 1",
+            "R × T = 1",
+            "R = T dans tous les cas"
+          ],
+          "correct_index": 1,
+          "explanation": "Exactement ! ⚡ On a toujours R + T = 1 : cela traduit la conservation de l'énergie totale de l'onde incidente, intégralement répartie entre l'onde réfléchie et l'onde transmise."
+        }
+      ]
+    }
+  ]
+}

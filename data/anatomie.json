@@ -1,0 +1,752 @@
+{
+  "ue_id": "anatomie",
+  "ue_name": "Anatomie et physiologie (bonus)",
+  "icon": "💮",
+  "tint": "pink",
+  "chapters": [
+    {
+      "id": "systeme_cardiovasculaire",
+      "title": "Le système cardiovasculaire",
+      "difficulty": 2,
+      "intro": "Prête à écouter battre le cœur de la physiologie ? Allons-y en douceur ! 💗🫀",
+      "course": [
+        {
+          "icon": "🔬",
+          "title": "Anatomie du cœur",
+          "content": "Le cœur est un muscle strié cardiaque creux, situé dans le médiastin, comportant quatre cavités : deux oreillettes (atriums) et deux ventricules, séparés par le septum interatrial et le septum interventriculaire. Les valves atrioventriculaires (tricuspide à droite, mitrale ou bicuspide à gauche) empêchent le reflux du sang des ventricules vers les oreillettes ; les valves sigmoïdes (pulmonaire et aortique) empêchent le reflux depuis les artères vers les ventricules."
+        },
+        {
+          "icon": "⭐",
+          "title": "Deux circulations",
+          "content": "La grande circulation (systémique) part du ventricule gauche, irrigue tout l'organisme via l'aorte, puis revient au cœur par les veines caves vers l'oreillette droite. La petite circulation (pulmonaire) part du ventricule droit, traverse les poumons via les artères pulmonaires (sang désoxygéné) pour s'oxygéner, puis revient à l'oreillette gauche par les veines pulmonaires (sang oxygéné)."
+        },
+        {
+          "icon": "➗",
+          "title": "Débit cardiaque",
+          "content": "Le débit cardiaque (Qc) est le volume de sang éjecté par le cœur par minute : Qc = FC x VES. Chez l'adulte au repos, la fréquence cardiaque (FC) est d'environ 60 à 80 battements/min et le volume d'éjection systolique (VES) d'environ 70 mL, soit un débit cardiaque d'environ 5 L/min."
+        },
+        {
+          "icon": "🔬",
+          "title": "Cycle cardiaque",
+          "content": "Le cycle cardiaque comprend trois phases : la systole atriale (contraction des oreillettes, remplissage final des ventricules), la systole ventriculaire (contraction des ventricules, éjection du sang vers les artères) et la diastole générale (relâchement complet, remplissage passif des cavités)."
+        },
+        {
+          "icon": "➗",
+          "title": "ECG normal",
+          "content": "L'électrocardiogramme enregistre l'activité électrique cardiaque : l'onde P correspond à la dépolarisation atriale, le complexe QRS à la dépolarisation ventriculaire (il masque la repolarisation atriale), et l'onde T à la repolarisation ventriculaire. L'intervalle PR normal est de 0,12 à 0,20 seconde."
+        },
+        {
+          "icon": "⭐",
+          "title": "Régulation de la pression artérielle",
+          "content": "La pression artérielle (PA = Qc x RVP, résistances vasculaires périphériques) est régulée à court terme par le baroréflexe (barorécepteurs aortiques et carotidiens sensibles à l'étirement de la paroi vasculaire) et à moyen/long terme par le système rénine-angiotensine-aldostérone (SRAA), qui agit sur la volémie et la vasoconstriction."
+        },
+        {
+          "icon": "🧠",
+          "title": "Astuce mémo valves",
+          "content": "Pour retenir la disposition des valves : à droite « Tricuspide puis Pulmonaire », à gauche « Mitrale puis Aortique ». Le sang traverse toujours une valve atrioventriculaire avant une valve sigmoïde (artérielle), jamais l'inverse."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Piège classique",
+          "content": "Erreur fréquente : penser que les artères transportent toujours du sang oxygéné et les veines du sang désoxygéné. C'est faux pour la circulation pulmonaire : l'artère pulmonaire transporte du sang désoxygéné (du ventricule droit vers les poumons) et les veines pulmonaires transportent du sang oxygéné (des poumons vers l'oreillette gauche)."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Combien de cavités possède le cœur humain ?",
+          "options": [
+            "4",
+            "2",
+            "3",
+            "6"
+          ],
+          "correct_index": 0,
+          "explanation": "Bien joué ! 🌸 Le cœur comporte quatre cavités : deux oreillettes (droite et gauche) et deux ventricules (droit et gauche), séparées par les septums interatrial et interventriculaire."
+        },
+        {
+          "question": "Quelle valve sépare l'oreillette droite du ventricule droit ?",
+          "options": [
+            "Valve aortique",
+            "Valve tricuspide",
+            "Valve mitrale",
+            "Valve pulmonaire"
+          ],
+          "correct_index": 1,
+          "explanation": "Exactement ! ✨ La valve tricuspide (trois valvules) est la valve atrioventriculaire droite ; à gauche, c'est la valve mitrale (bicuspide) qui joue ce rôle."
+        },
+        {
+          "question": "Quel vaisseau transporte du sang désoxygéné vers les poumons ?",
+          "options": [
+            "Veine pulmonaire",
+            "Aorte",
+            "Artère pulmonaire",
+            "Veine cave supérieure"
+          ],
+          "correct_index": 2,
+          "explanation": "Bravo, tu évites le piège classique ! 💕 L'artère pulmonaire part du ventricule droit et conduit le sang désoxygéné vers les poumons, contrairement à la majorité des artères qui transportent du sang oxygéné."
+        },
+        {
+          "question": "Que représente l'onde P sur l'ECG ?",
+          "options": [
+            "La dépolarisation ventriculaire",
+            "La repolarisation ventriculaire",
+            "La repolarisation atriale",
+            "La dépolarisation atriale"
+          ],
+          "correct_index": 3,
+          "explanation": "Tu assures ! 🌟 L'onde P correspond à la dépolarisation des oreillettes, qui précède leur contraction (systole atriale)."
+        },
+        {
+          "question": "Quelle est la formule du débit cardiaque ?",
+          "options": [
+            "Qc = FC x VES",
+            "Qc = PA / RVP",
+            "Qc = VES / FC",
+            "Qc = FC + VES"
+          ],
+          "correct_index": 0,
+          "explanation": "Parfait ! 🌸 Le débit cardiaque est le produit de la fréquence cardiaque (FC) par le volume d'éjection systolique (VES) : Qc = FC x VES."
+        },
+        {
+          "question": "Quel est le débit cardiaque moyen au repos chez l'adulte ?",
+          "options": [
+            "1 L/min",
+            "5 L/min",
+            "10 L/min",
+            "15 L/min"
+          ],
+          "correct_index": 1,
+          "explanation": "Bien vu ! 💫 Avec une FC d'environ 70/min et un VES d'environ 70 mL, on obtient un débit cardiaque proche de 5 L/min au repos."
+        },
+        {
+          "question": "Comment est aussi appelée la valve mitrale ?",
+          "options": [
+            "Valve tricuspide",
+            "Valve sigmoïde",
+            "Valve bicuspide",
+            "Valve pulmonaire"
+          ],
+          "correct_index": 2,
+          "explanation": "Exact ! ✨ La valve mitrale, ou valve bicuspide, possède deux valvules et sépare l'oreillette gauche du ventricule gauche."
+        },
+        {
+          "question": "Que se passe-t-il pendant la systole ventriculaire ?",
+          "options": [
+            "Les ventricules se relâchent et se remplissent",
+            "Les oreillettes seules se contractent",
+            "Le cœur est en phase de repos total",
+            "Les ventricules se contractent et éjectent le sang"
+          ],
+          "correct_index": 3,
+          "explanation": "Bravo ! 💗 Pendant la systole ventriculaire, les ventricules se contractent, la pression intraventriculaire dépasse celle des artères, les valves sigmoïdes s'ouvrent et le sang est éjecté vers l'aorte et l'artère pulmonaire."
+        },
+        {
+          "question": "Quel complexe de l'ECG correspond à la dépolarisation ventriculaire ?",
+          "options": [
+            "Complexe QRS",
+            "Onde P",
+            "Onde T",
+            "Segment ST"
+          ],
+          "correct_index": 0,
+          "explanation": "Bien joué ! 🌟 Le complexe QRS traduit la dépolarisation rapide des ventricules ; il masque électriquement la repolarisation atriale qui se produit au même moment."
+        },
+        {
+          "question": "Quelle structure sépare le ventricule gauche du ventricule droit ?",
+          "options": [
+            "Septum interatrial",
+            "Septum interventriculaire",
+            "Valve mitrale",
+            "Péricarde"
+          ],
+          "correct_index": 1,
+          "explanation": "Exactement ! ✨ Le septum interventriculaire sépare les deux ventricules, tandis que le septum interatrial sépare les deux oreillettes."
+        },
+        {
+          "question": "Le sang oxygéné revenant des poumons entre dans quelle cavité cardiaque ?",
+          "options": [
+            "Oreillette droite",
+            "Ventricule droit",
+            "Oreillette gauche",
+            "Ventricule gauche"
+          ],
+          "correct_index": 2,
+          "explanation": "Bravo ! 💕 Les veines pulmonaires ramènent le sang oxygéné vers l'oreillette gauche, qui le transmet ensuite au ventricule gauche pour l'éjecter dans la grande circulation."
+        },
+        {
+          "question": "Quels récepteurs interviennent principalement dans le baroréflexe ?",
+          "options": [
+            "Chimiorécepteurs rénaux",
+            "Propriocepteurs musculaires",
+            "Récepteurs olfactifs",
+            "Barorécepteurs aortiques et carotidiens"
+          ],
+          "correct_index": 3,
+          "explanation": "Tu maîtrises ! 🌸 Les barorécepteurs situés dans la crosse aortique et le sinus carotidien détectent l'étirement de la paroi vasculaire et déclenchent des ajustements rapides de la fréquence cardiaque et du tonus vasculaire."
+        },
+        {
+          "question": "Quelle valve empêche le reflux de sang de l'aorte vers le ventricule gauche ?",
+          "options": [
+            "Valve aortique",
+            "Valve tricuspide",
+            "Valve mitrale",
+            "Valve pulmonaire"
+          ],
+          "correct_index": 0,
+          "explanation": "Bien vu ! 💫 La valve aortique, une valve sigmoïde, se ferme en diastole pour empêcher le reflux du sang de l'aorte vers le ventricule gauche."
+        },
+        {
+          "question": "Quelle est la valeur normale approximative de la pression artérielle chez l'adulte sain ?",
+          "options": [
+            "90/60 mmHg",
+            "120/80 mmHg",
+            "160/100 mmHg",
+            "200/120 mmHg"
+          ],
+          "correct_index": 1,
+          "explanation": "Parfait ! ✨ La pression artérielle normale de référence est d'environ 120 mmHg (systolique) sur 80 mmHg (diastolique)."
+        },
+        {
+          "question": "Sur quel délai agit principalement le système rénine-angiotensine-aldostérone ?",
+          "options": [
+            "Quelques secondes",
+            "Quelques minutes seulement",
+            "Moyen à long terme (heures à jours)",
+            "Il n'agit pas sur la pression artérielle"
+          ],
+          "correct_index": 2,
+          "explanation": "Bravo ! 🌟 Contrairement au baroréflexe (rapide, en quelques secondes), le SRAA agit sur un délai plus long en modulant la volémie et la vasoconstriction via l'angiotensine II et l'aldostérone."
+        },
+        {
+          "question": "Quel terme désigne le volume de sang éjecté par le ventricule à chaque systole ?",
+          "options": [
+            "Débit cardiaque",
+            "Volume télédiastolique",
+            "Fraction d'éjection",
+            "Volume d'éjection systolique (VES)"
+          ],
+          "correct_index": 3,
+          "explanation": "Exact ! 💗 Le VES correspond au volume éjecté par chaque ventricule à chaque battement ; il diffère du débit cardiaque, qui intègre en plus la fréquence cardiaque."
+        },
+        {
+          "question": "Que se passe-t-il durant la diastole générale ?",
+          "options": [
+            "Relâchement complet et remplissage passif des cavités",
+            "Éjection du sang vers les artères",
+            "Contraction isovolumétrique des ventricules",
+            "Fermeture exclusive des valves sigmoïdes"
+          ],
+          "correct_index": 0,
+          "explanation": "Bien joué ! 🌸 En diastole générale, le myocarde est relâché, les valves atrioventriculaires sont ouvertes et le sang veineux remplit passivement les oreillettes puis les ventricules."
+        },
+        {
+          "question": "Quelle veine ramène le sang de la partie inférieure du corps vers l'oreillette droite ?",
+          "options": [
+            "Veine pulmonaire",
+            "Veine cave inférieure",
+            "Veine porte",
+            "Veine cave supérieure"
+          ],
+          "correct_index": 1,
+          "explanation": "Bravo ! ✨ La veine cave inférieure collecte le sang veineux de l'abdomen et des membres inférieurs et le ramène vers l'oreillette droite ; la veine cave supérieure fait de même pour la tête, le cou et les membres supérieurs."
+        }
+      ]
+    },
+    {
+      "id": "systeme_nerveux_neurone",
+      "title": "Le système nerveux et le neurone",
+      "difficulty": 3,
+      "intro": "Prête à faire des étincelles avec les neurones ? Zap zap, c'est parti ! ⚡🧠",
+      "course": [
+        {
+          "icon": "🔬",
+          "title": "Structure du neurone",
+          "content": "Le neurone est l'unité fonctionnelle du système nerveux. Il comprend un corps cellulaire (soma) contenant le noyau, des dendrites qui reçoivent les signaux, et un axone qui conduit l'influx nerveux jusqu'aux terminaisons synaptiques. Chez de nombreux neurones, l'axone est entouré d'une gaine de myéline (formée par les oligodendrocytes dans le SNC et les cellules de Schwann dans le SNP), interrompue régulièrement par les nœuds de Ranvier."
+        },
+        {
+          "icon": "➗",
+          "title": "Potentiel de repos",
+          "content": "Au repos, la membrane du neurone présente une différence de potentiel d'environ -70 mV (intérieur négatif par rapport à l'extérieur), maintenue grâce à la pompe Na+/K+ ATPase (qui expulse 3 Na+ pour 2 K+ importés à chaque cycle) et à une perméabilité membranaire plus élevée pour le K+ que pour le Na+ au repos."
+        },
+        {
+          "icon": "⭐",
+          "title": "Potentiel d'action",
+          "content": "Lorsque la dépolarisation atteint un seuil (environ -55 mV), un potentiel d'action est déclenché : ouverture des canaux Na+ voltage-dépendants (dépolarisation rapide jusqu'à environ +30 mV), puis ouverture des canaux K+ voltage-dépendants et fermeture des canaux Na+ (repolarisation), suivies souvent d'une brève hyperpolarisation. Le potentiel d'action obéit à la loi du tout ou rien : son amplitude ne dépend pas de l'intensité du stimulus."
+        },
+        {
+          "icon": "🔬",
+          "title": "La synapse chimique",
+          "content": "Au niveau de la synapse chimique, l'arrivée du potentiel d'action dans le bouton synaptique provoque l'entrée de Ca2+ et la libération de neurotransmetteurs (acétylcholine, glutamate, GABA, dopamine, sérotonine...) contenus dans des vésicules synaptiques, par exocytose dans la fente synaptique. Ces neurotransmetteurs se fixent sur des récepteurs post-synaptiques spécifiques, générant un potentiel post-synaptique excitateur ou inhibiteur."
+        },
+        {
+          "icon": "⭐",
+          "title": "Organisation SNC/SNP",
+          "content": "Le système nerveux central (SNC) comprend l'encéphale et la moelle épinière. Le système nerveux périphérique (SNP) comprend les nerfs crâniens et rachidiens ainsi que les ganglions. Le SNP se subdivise en système nerveux somatique (volontaire, muscles squelettiques) et système nerveux autonome ou végétatif (involontaire, subdivisé en sympathique et parasympathique)."
+        },
+        {
+          "icon": "➗",
+          "title": "Vitesse de conduction",
+          "content": "La vitesse de conduction de l'influx nerveux dépend du diamètre de l'axone et de la présence de myéline. Dans les fibres myélinisées, la conduction est saltatoire (le potentiel d'action « saute » d'un nœud de Ranvier à l'autre), ce qui accélère la conduction jusqu'à environ 100 m/s, contre moins de 2 m/s pour les fibres amyéliniques."
+        },
+        {
+          "icon": "🧠",
+          "title": "Astuce mémo",
+          "content": "Pour retenir les principaux neurotransmetteurs excitateur et inhibiteur du SNC : le glutamate est le principal neurotransmetteur excitateur, le GABA (acide gamma-aminobutyrique) est le principal neurotransmetteur inhibiteur — pense « GABA calme, Glutamate active »."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Piège classique",
+          "content": "Erreur fréquente : confondre le potentiel d'action (toujours de même amplitude, loi du tout ou rien, non décrémentiel) avec le potentiel post-synaptique ou le potentiel récepteur (graduables, sommables et décrémentiels avec la distance). Autre piège : le système parasympathique n'est pas « l'inverse anatomique » mais fonctionnel du sympathique — les deux coexistent en permanence et s'équilibrent."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Quelle partie du neurone reçoit les signaux provenant d'autres neurones ?",
+          "options": [
+            "Dendrites",
+            "Axone",
+            "Gaine de myéline",
+            "Corps cellulaire uniquement"
+          ],
+          "correct_index": 0,
+          "explanation": "Bravo ! 🌸 Les dendrites sont les prolongements courts et ramifiés qui reçoivent les signaux synaptiques provenant d'autres neurones."
+        },
+        {
+          "question": "Quelle est la valeur approximative du potentiel de repos d'un neurone ?",
+          "options": [
+            "0 mV",
+            "-70 mV",
+            "+30 mV",
+            "-150 mV"
+          ],
+          "correct_index": 1,
+          "explanation": "Exactement ! ✨ Le potentiel de repos avoisine -70 mV, l'intérieur de la cellule étant électriquement négatif par rapport au milieu extracellulaire."
+        },
+        {
+          "question": "Quelle pompe maintient le potentiel de repos membranaire ?",
+          "options": [
+            "Pompe Ca2+ ATPase",
+            "Pompe à protons",
+            "Pompe Na+/K+ ATPase",
+            "Canal chlore"
+          ],
+          "correct_index": 2,
+          "explanation": "Bien vu ! 💫 La pompe Na+/K+ ATPase expulse activement 3 ions Na+ et importe 2 ions K+ à chaque cycle, contribuant à la polarisation membranaire."
+        },
+        {
+          "question": "Quel ion entre massivement dans la cellule lors de la phase de dépolarisation du potentiel d'action ?",
+          "options": [
+            "K+",
+            "Cl-",
+            "Ca2+",
+            "Na+"
+          ],
+          "correct_index": 3,
+          "explanation": "Tu assures ! 🌟 L'ouverture des canaux Na+ voltage-dépendants permet une entrée massive et rapide de Na+, responsable de la dépolarisation."
+        },
+        {
+          "question": "Quelle loi régit l'amplitude du potentiel d'action ?",
+          "options": [
+            "La loi du tout ou rien",
+            "La loi de sommation graduelle",
+            "La loi de Starling",
+            "La loi de Fick"
+          ],
+          "correct_index": 0,
+          "explanation": "Parfait ! 🌸 Le potentiel d'action est un phénomène du tout ou rien : soit il atteint le seuil et se déclenche avec une amplitude fixe, soit il ne se produit pas du tout."
+        },
+        {
+          "question": "Dans le système nerveux central, quelles cellules forment la gaine de myéline ?",
+          "options": [
+            "Les cellules de Schwann",
+            "Les oligodendrocytes",
+            "Les astrocytes",
+            "Les microglies"
+          ],
+          "correct_index": 1,
+          "explanation": "Bien joué ! ✨ Dans le SNC, ce sont les oligodendrocytes qui myélinisent les axones ; dans le SNP, ce rôle revient aux cellules de Schwann."
+        },
+        {
+          "question": "Dans le système nerveux périphérique, quelles cellules forment la gaine de myéline ?",
+          "options": [
+            "Les oligodendrocytes",
+            "Les astrocytes",
+            "Les cellules de Schwann",
+            "Les microglies"
+          ],
+          "correct_index": 2,
+          "explanation": "Bravo ! 💕 Les cellules de Schwann myélinisent les axones du système nerveux périphérique, chaque cellule enveloppant un segment d'un seul axone."
+        },
+        {
+          "question": "Quel est le principal neurotransmetteur excitateur du système nerveux central ?",
+          "options": [
+            "GABA",
+            "Glycine",
+            "Sérotonine",
+            "Glutamate"
+          ],
+          "correct_index": 3,
+          "explanation": "Exact ! 🌟 Le glutamate est le principal neurotransmetteur excitateur du SNC, agissant notamment sur les récepteurs AMPA et NMDA."
+        },
+        {
+          "question": "Quel est le principal neurotransmetteur inhibiteur du système nerveux central ?",
+          "options": [
+            "GABA",
+            "Glutamate",
+            "Acétylcholine",
+            "Dopamine"
+          ],
+          "correct_index": 0,
+          "explanation": "Bien vu ! 💫 Le GABA (acide gamma-aminobutyrique) est le principal neurotransmetteur inhibiteur du SNC, hyperpolarisant la membrane post-synaptique."
+        },
+        {
+          "question": "Que se passe-t-il au niveau du bouton synaptique lors de l'arrivée d'un potentiel d'action ?",
+          "options": [
+            "Fermeture des canaux calciques",
+            "Entrée de Ca2+ et exocytose des vésicules synaptiques",
+            "Sortie massive de Na+",
+            "Hyperpolarisation immédiate du neurone présynaptique"
+          ],
+          "correct_index": 1,
+          "explanation": "Bravo ! 🌸 La dépolarisation du bouton synaptique ouvre des canaux Ca2+ voltage-dépendants ; l'entrée de calcium déclenche la fusion des vésicules synaptiques avec la membrane et la libération du neurotransmetteur par exocytose."
+        },
+        {
+          "question": "Le système nerveux central comprend :",
+          "options": [
+            "Les nerfs crâniens et rachidiens",
+            "Les ganglions nerveux",
+            "L'encéphale et la moelle épinière",
+            "Le système nerveux autonome uniquement"
+          ],
+          "correct_index": 2,
+          "explanation": "Exactement ! ✨ Le SNC regroupe l'encéphale (cerveau, tronc cérébral, cervelet) et la moelle épinière, contrairement au SNP qui comprend nerfs et ganglions."
+        },
+        {
+          "question": "Le système nerveux périphérique comprend notamment :",
+          "options": [
+            "Uniquement l'encéphale",
+            "Uniquement la moelle épinière",
+            "Le cervelet et le tronc cérébral",
+            "Les nerfs crâniens et rachidiens"
+          ],
+          "correct_index": 3,
+          "explanation": "Bien joué ! 💕 Le SNP comprend les nerfs crâniens (issus de l'encéphale) et les nerfs rachidiens (issus de la moelle épinière), ainsi que les ganglions associés."
+        },
+        {
+          "question": "Quel type de conduction se produit dans un axone myélinisé ?",
+          "options": [
+            "Conduction saltatoire",
+            "Conduction continue lente",
+            "Absence totale de conduction",
+            "Conduction uniquement chimique"
+          ],
+          "correct_index": 0,
+          "explanation": "Bravo ! 🌟 Dans un axone myélinisé, le potentiel d'action se régénère uniquement au niveau des nœuds de Ranvier, ce qui accélère la conduction : c'est la conduction saltatoire."
+        },
+        {
+          "question": "Quelle est approximativement la vitesse de conduction dans une fibre myélinisée de gros diamètre ?",
+          "options": [
+            "0,5 m/s",
+            "Jusqu'à environ 100 m/s",
+            "1000 m/s",
+            "10 000 m/s"
+          ],
+          "correct_index": 1,
+          "explanation": "Bien vu ! 💫 Les fibres myélinisées de gros diamètre peuvent conduire l'influx nerveux jusqu'à environ 100 m/s, contre moins de 2 m/s pour une fibre amyélinique fine."
+        },
+        {
+          "question": "Quel phénomène suit généralement la repolarisation du potentiel d'action ?",
+          "options": [
+            "Une nouvelle dépolarisation immédiate",
+            "Une contraction musculaire",
+            "Une brève hyperpolarisation",
+            "Une libération massive de calcium extracellulaire"
+          ],
+          "correct_index": 2,
+          "explanation": "Parfait ! 🌸 Après la repolarisation, la fermeture retardée des canaux K+ entraîne souvent une brève hyperpolarisation post-potentielle avant le retour au potentiel de repos."
+        },
+        {
+          "question": "Le système nerveux autonome (végétatif) se subdivise en :",
+          "options": [
+            "Système somatique et système central",
+            "Système afférent et système efférent uniquement",
+            "Système central et système périphérique",
+            "Système sympathique et système parasympathique"
+          ],
+          "correct_index": 3,
+          "explanation": "Exact ! ✨ Le système nerveux autonome comprend le système sympathique (souvent activateur, réponse « combat-fuite ») et le système parasympathique (souvent apaisant, « repos-digestion »), agissant de façon complémentaire."
+        },
+        {
+          "question": "Quel est le seuil approximatif de déclenchement d'un potentiel d'action ?",
+          "options": [
+            "Environ -55 mV",
+            "0 mV",
+            "-90 mV",
+            "+50 mV"
+          ],
+          "correct_index": 0,
+          "explanation": "Bravo ! 💗 Le seuil de dépolarisation se situe autour de -55 mV : au-delà de cette valeur, les canaux Na+ voltage-dépendants s'ouvrent massivement et le potentiel d'action se déclenche."
+        },
+        {
+          "question": "Que caractérise le potentiel post-synaptique, à la différence du potentiel d'action ?",
+          "options": [
+            "Il est toujours de même amplitude",
+            "Il est gradué (variable en amplitude) et sommable",
+            "Il ne peut jamais être inhibiteur",
+            "Il se propage sans décrément sur de longues distances"
+          ],
+          "correct_index": 1,
+          "explanation": "Bien joué ! 🌟 Contrairement au potentiel d'action (tout ou rien), le potentiel post-synaptique est gradué : son amplitude varie et plusieurs potentiels peuvent se sommer dans le temps ou l'espace."
+        }
+      ]
+    },
+    {
+      "id": "systeme_respiratoire",
+      "title": "Le système respiratoire",
+      "difficulty": 2,
+      "intro": "Inspire, expire, et découvrons ensemble le voyage de l'air dans le corps ! 🌬️🎈",
+      "course": [
+        {
+          "icon": "🔬",
+          "title": "Anatomie des voies respiratoires",
+          "content": "Les voies aériennes supérieures (fosses nasales, pharynx, larynx) réchauffent, humidifient et filtrent l'air inspiré. Les voies aériennes inférieures comprennent la trachée, qui se divise en bronches souches, puis en bronches lobaires et bronchioles, jusqu'aux bronchioles terminales et respiratoires, se terminant par les alvéoles pulmonaires, siège des échanges gazeux."
+        },
+        {
+          "icon": "⭐",
+          "title": "Mécanique ventilatoire",
+          "content": "L'inspiration est un phénomène actif : la contraction du diaphragme et des muscles intercostaux externes augmente le volume thoracique, ce qui abaisse la pression intrapleurale et intra-alvéolaire en dessous de la pression atmosphérique, permettant l'entrée d'air. L'expiration au repos est passive, liée au relâchement musculaire et au retour élastique du poumon et de la cage thoracique."
+        },
+        {
+          "icon": "➗",
+          "title": "Volumes et capacités pulmonaires",
+          "content": "Le volume courant (VT) représente environ 500 mL par cycle respiratoire au repos. Le volume de réserve inspiratoire (VRI) et le volume de réserve expiratoire (VRE) permettent respectivement d'inspirer et d'expirer davantage. Le volume résiduel (VR, environ 1200 mL) reste dans les poumons après une expiration forcée. La capacité vitale (CV = VT + VRI + VRE) est d'environ 3,5 à 5 L, et la capacité pulmonaire totale (CPT = CV + VR) avoisine 5 à 6 L."
+        },
+        {
+          "icon": "🔬",
+          "title": "Échanges gazeux alvéolo-capillaires",
+          "content": "Les échanges gazeux se font par diffusion simple à travers la membrane alvéolo-capillaire, très fine (environ 0,5 à 1 µm), selon les gradients de pression partielle : l'O2 diffuse de l'alvéole (PAO2 ≈ 100 mmHg) vers le capillaire pulmonaire, et le CO2 diffuse en sens inverse, du sang veineux vers l'alvéole."
+        },
+        {
+          "icon": "⭐",
+          "title": "Transport de l'oxygène",
+          "content": "L'oxygène est transporté dans le sang majoritairement lié à l'hémoglobine (environ 98 %), sous forme d'oxyhémoglobine, et une faible fraction est dissoute dans le plasma. La courbe de dissociation de l'hémoglobine a une forme sigmoïde ; le P50 (pression partielle en O2 pour une saturation de 50 %) est d'environ 26-27 mmHg."
+        },
+        {
+          "icon": "➗",
+          "title": "Transport du CO2",
+          "content": "Le CO2 est transporté sous trois formes : dissous dans le plasma (environ 7 %), lié à l'hémoglobine sous forme de composés carbaminés (environ 20-23 %), et surtout sous forme de bicarbonate (HCO3-, environ 70 %), après hydratation par l'anhydrase carbonique dans les globules rouges."
+        },
+        {
+          "icon": "🧠",
+          "title": "Astuce mémo effets Bohr/Haldane",
+          "content": "Effet Bohr : plus de CO2/H+ (pH plus bas) diminue l'affinité de l'hémoglobine pour l'O2, ce qui favorise la libération d'O2 dans les tissus actifs. Effet Haldane : l'oxygénation de l'hémoglobine au niveau pulmonaire diminue son affinité pour le CO2, favorisant sa libération vers les alvéoles. Retiens : « Bohr aide à lâcher l'O2 dans les tissus, Haldane aide à lâcher le CO2 dans les poumons »."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Piège classique",
+          "content": "Ne pas confondre l'espace mort anatomique (volume des voies aériennes de conduction ne participant pas aux échanges gazeux, environ 150 mL) et l'espace mort physiologique (espace mort anatomique + alvéoles ventilées mais non ou mal perfusées). Autre piège : la capacité vitale (CV) ne comprend PAS le volume résiduel, contrairement à la capacité pulmonaire totale (CPT = CV + VR)."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Quelle structure marque la fin des voies de conduction et le début de la zone d'échanges gazeux ?",
+          "options": [
+            "Les alvéoles pulmonaires",
+            "La trachée",
+            "Le larynx",
+            "Les bronches souches"
+          ],
+          "correct_index": 0,
+          "explanation": "Bravo ! 🌸 Les alvéoles pulmonaires, entourées d'un dense réseau de capillaires, constituent le site des échanges gazeux entre l'air et le sang."
+        },
+        {
+          "question": "Quel volume d'air est mobilisé lors d'une respiration calme au repos (volume courant) ?",
+          "options": [
+            "150 mL",
+            "Environ 500 mL",
+            "2000 mL",
+            "5000 mL"
+          ],
+          "correct_index": 1,
+          "explanation": "Exactement ! ✨ Le volume courant (VT) correspond à environ 500 mL d'air mobilisés à chaque cycle respiratoire calme."
+        },
+        {
+          "question": "Quels muscles sont principalement responsables de l'inspiration au repos ?",
+          "options": [
+            "Les muscles abdominaux",
+            "Les intercostaux internes seuls",
+            "Le diaphragme et les intercostaux externes",
+            "Les muscles du cou uniquement"
+          ],
+          "correct_index": 2,
+          "explanation": "Bien vu ! 💫 Le diaphragme et les muscles intercostaux externes se contractent pour augmenter le volume de la cage thoracique lors de l'inspiration."
+        },
+        {
+          "question": "Comment est définie la capacité vitale (CV) ?",
+          "options": [
+            "CV = VT + VR",
+            "CV = CPT + VR",
+            "CV = VRI seul",
+            "CV = VT + VRI + VRE"
+          ],
+          "correct_index": 3,
+          "explanation": "Tu assures ! 🌟 La capacité vitale regroupe le volume courant, le volume de réserve inspiratoire et le volume de réserve expiratoire, mais exclut le volume résiduel."
+        },
+        {
+          "question": "Quel volume reste dans les poumons après une expiration forcée maximale ?",
+          "options": [
+            "Le volume résiduel (VR)",
+            "Le volume courant (VT)",
+            "Le volume de réserve inspiratoire (VRI)",
+            "La capacité vitale (CV)"
+          ],
+          "correct_index": 0,
+          "explanation": "Parfait ! 🌸 Le volume résiduel (environ 1200 mL) ne peut pas être expulsé, même lors d'une expiration forcée maximale, ce qui évite le collapsus alvéolaire."
+        },
+        {
+          "question": "Comment se définit la capacité pulmonaire totale (CPT) ?",
+          "options": [
+            "VT + VRI",
+            "CV + VR",
+            "VRE + VR",
+            "VT seul"
+          ],
+          "correct_index": 1,
+          "explanation": "Bien joué ! ✨ La capacité pulmonaire totale correspond à la somme de la capacité vitale et du volume résiduel : CPT = CV + VR."
+        },
+        {
+          "question": "Par quel mécanisme les gaz traversent-ils la membrane alvéolo-capillaire ?",
+          "options": [
+            "Transport actif",
+            "Diffusion simple selon les gradients de pression partielle",
+            "Exocytose",
+            "Transport vésiculaire actif"
+          ],
+          "correct_index": 1,
+          "explanation": "Bravo ! 💕 L'O2 et le CO2 traversent la fine membrane alvéolo-capillaire par simple diffusion passive, des zones de haute vers les zones de basse pression partielle."
+        },
+        {
+          "question": "Sous quelle forme la majorité du CO2 est-elle transportée dans le sang ?",
+          "options": [
+            "Dissous dans le plasma",
+            "Lié à l'hémoglobine sous forme carbaminée",
+            "Sous forme de CO2 gazeux libre",
+            "Sous forme de bicarbonate (HCO3-)"
+          ],
+          "correct_index": 3,
+          "explanation": "Exact ! 🌟 Environ 70 % du CO2 sanguin est transporté sous forme de bicarbonate, formé dans les globules rouges grâce à l'anhydrase carbonique."
+        },
+        {
+          "question": "Sous quelle forme l'oxygène est-il majoritairement transporté dans le sang ?",
+          "options": [
+            "Lié à l'hémoglobine (oxyhémoglobine)",
+            "Dissous dans le plasma",
+            "Sous forme de bicarbonate",
+            "Lié à l'albumine"
+          ],
+          "correct_index": 0,
+          "explanation": "Bien vu ! 💫 Environ 98 % de l'oxygène sanguin est transporté sous forme d'oxyhémoglobine, seule une faible fraction restant dissoute dans le plasma."
+        },
+        {
+          "question": "Que décrit l'effet Bohr ?",
+          "options": [
+            "L'augmentation de l'affinité de l'hémoglobine pour l'O2 quand le pH baisse",
+            "La diminution de l'affinité de l'hémoglobine pour l'O2 quand le CO2/H+ augmente (pH baisse)",
+            "L'effet du CO2 sur la fréquence cardiaque",
+            "L'absence d'effet du pH sur l'hémoglobine"
+          ],
+          "correct_index": 1,
+          "explanation": "Bravo ! 🌸 L'effet Bohr décrit la diminution de l'affinité de l'hémoglobine pour l'O2 lorsque le CO2 et les ions H+ augmentent (pH plus acide), ce qui favorise la libération d'O2 dans les tissus actifs."
+        },
+        {
+          "question": "Que décrit l'effet Haldane ?",
+          "options": [
+            "L'oxygénation de l'hémoglobine augmente son affinité pour le CO2",
+            "Le CO2 n'a aucun transporteur sanguin",
+            "L'oxygénation de l'hémoglobine diminue son affinité pour le CO2, favorisant sa libération pulmonaire",
+            "La désoxygénation de l'hémoglobine n'a aucun effet sur le CO2"
+          ],
+          "correct_index": 2,
+          "explanation": "Exactement ! ✨ L'effet Haldane traduit le fait que l'hémoglobine oxygénée fixe moins bien le CO2, ce qui facilite sa libération au niveau des poumons."
+        },
+        {
+          "question": "Qu'est-ce que l'espace mort anatomique ?",
+          "options": [
+            "Le volume total des poumons",
+            "Le volume des alvéoles non perfusées",
+            "La capacité résiduelle fonctionnelle",
+            "Le volume des voies aériennes de conduction ne participant pas aux échanges gazeux"
+          ],
+          "correct_index": 3,
+          "explanation": "Bien joué ! 💕 L'espace mort anatomique correspond à l'air contenu dans les voies de conduction (nez, pharynx, trachée, bronches) qui ne participe pas aux échanges gazeux, environ 150 mL."
+        },
+        {
+          "question": "Quelle est la fréquence respiratoire normale au repos chez l'adulte ?",
+          "options": [
+            "12 à 16 cycles/min",
+            "1 à 3 cycles/min",
+            "30 à 40 cycles/min",
+            "60 à 80 cycles/min"
+          ],
+          "correct_index": 0,
+          "explanation": "Bravo ! 🌟 Au repos, la fréquence respiratoire normale de l'adulte se situe entre 12 et 16 cycles par minute."
+        },
+        {
+          "question": "Quelle est la pression partielle en oxygène approximative dans l'air alvéolaire (PAO2) ?",
+          "options": [
+            "40 mmHg",
+            "Environ 100 mmHg",
+            "250 mmHg",
+            "760 mmHg"
+          ],
+          "correct_index": 1,
+          "explanation": "Bien vu ! 💫 La PAO2 alvéolaire est d'environ 100 mmHg, ce qui crée un gradient favorable à la diffusion de l'O2 vers le sang capillaire (dont la PO2 veineuse est plus basse, autour de 40 mmHg)."
+        },
+        {
+          "question": "Quelle enzyme catalyse l'hydratation du CO2 en bicarbonate dans les globules rouges ?",
+          "options": [
+            "La lactate déshydrogénase",
+            "L'ATP synthase",
+            "L'anhydrase carbonique",
+            "La pepsine"
+          ],
+          "correct_index": 2,
+          "explanation": "Parfait ! 🌸 L'anhydrase carbonique catalyse la réaction CO2 + H2O <-> H2CO3 <-> HCO3- + H+ dans les hématies, permettant le transport majoritaire du CO2 sous forme de bicarbonate."
+        },
+        {
+          "question": "Quelle est la forme de la courbe de dissociation de l'hémoglobine ?",
+          "options": [
+            "Linéaire",
+            "Exponentielle décroissante",
+            "Hyperbolique",
+            "Sigmoïde"
+          ],
+          "correct_index": 3,
+          "explanation": "Exact ! ✨ La courbe de dissociation de l'hémoglobine a une forme sigmoïde, traduisant la coopérativité de fixation de l'O2 sur les quatre sous-unités de l'hémoglobine."
+        },
+        {
+          "question": "Que se passe-t-il au niveau de la pression intrapleurale pendant l'inspiration ?",
+          "options": [
+            "Elle diminue (devient plus négative), favorisant l'entrée d'air",
+            "Elle augmente fortement au-dessus de la pression atmosphérique",
+            "Elle reste strictement constante",
+            "Elle devient nulle"
+          ],
+          "correct_index": 0,
+          "explanation": "Bravo ! 💗 L'expansion de la cage thoracique diminue la pression intrapleurale (déjà négative au repos), ce qui abaisse la pression intra-alvéolaire en dessous de la pression atmosphérique et permet l'entrée d'air."
+        },
+        {
+          "question": "L'expiration au repos est-elle un phénomène actif ou passif ?",
+          "options": [
+            "Toujours activement générée par les intercostaux internes",
+            "Passive, liée au relâchement musculaire et au retour élastique pulmonaire",
+            "Impossible sans contraction abdominale",
+            "Active uniquement grâce au diaphragme"
+          ],
+          "correct_index": 1,
+          "explanation": "Bien joué ! 🌟 Au repos, l'expiration est un phénomène passif : le relâchement du diaphragme et des muscles inspiratoires, associé au retour élastique du poumon et de la cage thoracique, suffit à chasser l'air."
+        }
+      ]
+    }
+  ]
+}

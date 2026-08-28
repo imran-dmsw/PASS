@@ -1,0 +1,995 @@
+{
+  "ue_id": "ue3",
+  "ue_name": "Biologie Cellulaire",
+  "icon": "🧠",
+  "tint": "lavender",
+  "chapters": [
+    {
+      "id": "organisation_cellule_eucaryote",
+      "title": "L'organisation de la cellule eucaryote",
+      "difficulty": 2,
+      "intro": "Prête à visiter l'intérieur d'une cellule eucaryote, organite par organite ? 🔬✨",
+      "course": [
+        {
+          "icon": "🔬",
+          "title": "Définition",
+          "content": "La cellule est l'unité fondamentale du vivant, capable de vie autonome et de reproduction. On distingue les cellules procaryotes (sans noyau individualisé) des cellules eucaryotes (avec un noyau), ces dernières regroupant toutes les cellules humaines. Une cellule eucaryote correspond à un cytosol dans lequel baignent des organites, l'ensemble étant délimité par une membrane plasmique."
+        },
+        {
+          "icon": "⭐",
+          "title": "La membrane plasmique",
+          "content": "Épaisse de 7 à 8 nm, elle délimite la cellule, participe aux interactions intercellulaires et contrôle les entrées et sorties. Elle est composée majoritairement de lipides amphiphiles (phospholipides, cholestérol, glycolipides) organisés en bicouche auto-assemblée à surfaces hydrophiles et cœur hydrophobe, jamais exposé grâce à sa propriété d'auto-fermeture. Des protéines s'y associent de façon transmembranaire (protéines intégrales), via une autre protéine (protéines périphériques) ou via un lipide. Sur sa face externe, des chaînes d'oligosaccharides portées par des lipides ou des protéines forment le glycocalyx, un manteau de sucres impliqué dans la protection cellulaire et la reconnaissance entre cellules."
+        },
+        {
+          "icon": "⭐",
+          "title": "Le noyau et la mitochondrie",
+          "content": "Le noyau, propre aux cellules eucaryotes, est entouré d'une double membrane (enveloppe nucléaire) et contient l'ADN et l'ARN dans son nucléoplasme, ainsi que le nucléole (lieu de production des ribosomes). Un système de lamines tapisse sa face interne. La mitochondrie, entourée de deux membranes (interne et externe), produit l'énergie cellulaire via le cycle de Krebs suivi de la chaîne respiratoire, joue un rôle dans l'apoptose, possède son propre ADN mitochondrial et synthétise elle-même 13 protéines de la chaîne respiratoire."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Le peroxysome",
+          "content": "Sac membraneux rempli d'enzymes (catalase et oxydase à activité redox), présent chez tous les eucaryotes, le peroxysome assure la détoxification de la cellule. Il est formé à partir du réticulum endoplasmique lisse, mais ATTENTION : contrairement à une idée reçue très piégeuse, il ne fait PAS partie du système endomembranaire."
+        },
+        {
+          "icon": "⭐",
+          "title": "Le système endomembranaire",
+          "content": "Il organise la cellule en compartiments et assure la synthèse, le stockage, le tri et le transport intracellulaire des molécules via le trafic vésiculaire, acheminé le long des rails du cytosquelette. Il regroupe le réticulum endoplasmique lisse (REL, synthèse des lipides), le réticulum endoplasmique granuleux (REG, ribosomes en surface, synthèse des protéines), l'appareil de Golgi (modification et adressage des macromolécules), les endosomes (transport intracellulaire) et les lysosomes (digestion intracellulaire et recyclage cytosolique)."
+        },
+        {
+          "icon": "🔬",
+          "title": "Cytosquelette et communication intercellulaire",
+          "content": "Le cytosquelette, ensemble de protéines intracellulaires en remaniement permanent (sauf les filaments intermédiaires), assure la structure, la mobilité et l'activité métabolique de la cellule. Les cellules communiquent entre elles par des messagers extracellulaires selon quatre modes de signalisation : endocrine (voie sanguine, longue distance), paracrine (diffusion locale), autocrine (sur la cellule elle-même) et neuronale (très rapide, faible dispersion). Les récepteurs cibles peuvent être nucléaires, couplés à un canal ionique (ionotropiques), couplés à une protéine G (métabotropiques) ou couplés à une enzyme."
+        },
+        {
+          "icon": "🧠",
+          "title": "Astuce mémo",
+          "content": "Pour ne jamais confondre : le peroxysome vient du REL mais n'est PAS dans le système endomembranaire, alors que le RE (lisse et granuleux), le Golgi, les endosomes et les lysosomes, eux, en font bien partie. Retiens le moyen mnémotechnique « RE-GO-END-LY » pour la liste du système endomembranaire !"
+        },
+        {
+          "icon": "⚠️",
+          "title": "Piège classique",
+          "content": "Ne confonds pas les médiateurs solubles (hydrophiles), qui se lient à des récepteurs membranaires sans entrer dans la cellule et agissent vite, et les médiateurs non solubles (hydrophobes, comme les hormones stéroïdiennes), qui traversent la membrane, se lient à des récepteurs intracellulaires et modifient l'expression génique sur un temps long."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Une cellule eucaryote se distingue d'une cellule procaryote par :",
+          "options": [
+            "la présence d'un noyau individualisé",
+            "l'absence d'ADN",
+            "la présence obligatoire d'un flagelle",
+            "l'absence de membrane plasmique"
+          ],
+          "correct_index": 0,
+          "explanation": "Bravo ! 🎉 Le critère distinctif majeur est la présence d'un noyau individualisé chez les eucaryotes, alors que les procaryotes n'en possèdent pas."
+        },
+        {
+          "question": "La membrane plasmique a une épaisseur d'environ :",
+          "options": [
+            "70 à 80 nm",
+            "7 à 8 nm",
+            "7 à 8 µm",
+            "7 à 8 mm"
+          ],
+          "correct_index": 1,
+          "explanation": "Bien joué ! 🌟 La membrane plasmique mesure environ 7 à 8 nanomètres d'épaisseur, une échelle typiquement moléculaire."
+        },
+        {
+          "question": "Les lipides de la membrane plasmique sont organisés en :",
+          "options": [
+            "réseau tridimensionnel sans polarité",
+            "monocouche hydrophile",
+            "bicouche avec surfaces hydrophiles et cœur hydrophobe",
+            "bicouche avec surfaces hydrophobes et cœur hydrophile"
+          ],
+          "correct_index": 2,
+          "explanation": "Exact, tu maîtrises bien ! ✨ La bicouche lipidique présente ses surfaces hydrophiles tournées vers l'eau et un cœur hydrophobe protégé, jamais exposé au milieu aqueux."
+        },
+        {
+          "question": "Le glycocalyx, situé sur la face extracellulaire de la membrane, est formé par :",
+          "options": [
+            "des filaments intermédiaires",
+            "du cholestérol pur",
+            "des protéines périphériques uniquement",
+            "des chaînes d'oligosaccharides portées par des lipides ou des protéines"
+          ],
+          "correct_index": 3,
+          "explanation": "Super, continue comme ça ! 🌸 Le glycocalyx est ce manteau de sucres porté par des glycolipides et des glycoprotéines, impliqué dans la reconnaissance cellulaire."
+        },
+        {
+          "question": "Une protéine transmembranaire associée à la membrane plasmique est aussi appelée :",
+          "options": [
+            "protéine intégrale",
+            "protéine soluble",
+            "protéine chaperonne",
+            "protéine périphérique"
+          ],
+          "correct_index": 0,
+          "explanation": "Bravo ! 🎯 Une protéine qui traverse la bicouche lipidique est dite intégrale (ou transmembranaire), par opposition aux protéines périphériques qui restent en surface."
+        },
+        {
+          "question": "Concernant le noyau des cellules eucaryotes :",
+          "options": [
+            "il ne contient pas d'ARN",
+            "il est entouré d'une double membrane formant l'enveloppe nucléaire",
+            "il est absent dans toutes les cellules différenciées",
+            "il est entouré d'une simple membrane"
+          ],
+          "correct_index": 1,
+          "explanation": "Bien vu ! 🔍 Le noyau est délimité par une enveloppe nucléaire formée de deux membranes, et contient à la fois l'ADN et l'ARN."
+        },
+        {
+          "question": "Le nucléole, situé dans le noyau, est le lieu :",
+          "options": [
+            "de la dégradation des protéines par le protéasome",
+            "de la réplication de l'ADN mitochondrial",
+            "de la production des ribosomes",
+            "de la synthèse des lipides membranaires"
+          ],
+          "correct_index": 2,
+          "explanation": "Exactement ! 🌟 Le nucléole est une zone dense et arrondie du noyau, spécialisée dans la production des ribosomes."
+        },
+        {
+          "question": "La mitochondrie se distingue par :",
+          "options": [
+            "une seule membrane délimitante",
+            "son incapacité à produire de l'ATP",
+            "l'absence totale d'ADN propre",
+            "la présence d'un ADN mitochondrial et de deux membranes"
+          ],
+          "correct_index": 3,
+          "explanation": "Bravo, bien vu ! 💪 La mitochondrie possède deux membranes (interne et externe) et un ADN mitochondrial propre lui permettant de synthétiser certaines de ses protéines."
+        },
+        {
+          "question": "Le peroxysome contient notamment les enzymes suivantes :",
+          "options": [
+            "catalase et oxydase",
+            "hélicase et ligase",
+            "ATP synthase et cytochrome oxydase",
+            "ADN polymérase et ARN polymérase"
+          ],
+          "correct_index": 0,
+          "explanation": "Bien joué ! 🧠 Le peroxysome agit via une catalase et une oxydase, deux enzymes impliquées dans des réactions d'oxydoréduction de détoxification."
+        },
+        {
+          "question": "Concernant le peroxysome, il faut retenir que :",
+          "options": [
+            "il fait partie intégrante du système endomembranaire",
+            "il ne fait PAS partie du système endomembranaire bien qu'il dérive du REL",
+            "il est absent des cellules eucaryotes",
+            "il produit l'ATP de la cellule"
+          ],
+          "correct_index": 1,
+          "explanation": "Bravo, piège classique évité ! 🎉 Bien que formé à partir du réticulum endoplasmique lisse, le peroxysome n'appartient pas au système endomembranaire."
+        },
+        {
+          "question": "Le réticulum endoplasmique granuleux (REG) doit son aspect granuleux à la présence de :",
+          "options": [
+            "mitochondries associées",
+            "glycocalyx",
+            "ribosomes fixés à sa surface",
+            "cholestérol"
+          ],
+          "correct_index": 2,
+          "explanation": "Exact, bien vu ! ✨ Les ribosomes accrochés à la surface cytosolique du REG lui donnent son aspect granuleux et lui permettent de synthétiser des protéines."
+        },
+        {
+          "question": "Le réticulum endoplasmique lisse (REL) est principalement impliqué dans :",
+          "options": [
+            "la synthèse des protéines",
+            "la digestion intracellulaire",
+            "la production des ribosomes",
+            "la synthèse des lipides"
+          ],
+          "correct_index": 3,
+          "explanation": "Bravo ! 🎯 Le REL, dépourvu de ribosomes, est spécialisé dans la synthèse des lipides."
+        },
+        {
+          "question": "Les lysosomes assurent principalement :",
+          "options": [
+            "la digestion intracellulaire et le recyclage cytosolique",
+            "la production d'ATP",
+            "la réplication de l'ADN",
+            "la synthèse des protéines"
+          ],
+          "correct_index": 0,
+          "explanation": "Bien joué ! 🌟 Les lysosomes transforment les macromolécules en sous-unités de base, permettant leur recyclage dans le cytosol."
+        },
+        {
+          "question": "Le trafic vésiculaire du système endomembranaire s'effectue grâce à :",
+          "options": [
+            "la diffusion passive dans le cytosol",
+            "les rails du cytosquelette",
+            "le pore nucléaire",
+            "la membrane plasmique uniquement"
+          ],
+          "correct_index": 1,
+          "explanation": "Bravo, tu progresses bien ! 💪 Les vésicules se déplacent d'un compartiment à l'autre en empruntant le cytosquelette, qui joue le rôle de rails intracellulaires."
+        },
+        {
+          "question": "Un messager libéré à distance et transporté par le sang jusqu'à sa cible caractérise une signalisation :",
+          "options": [
+            "autocrine",
+            "paracrine",
+            "endocrine",
+            "neuronale"
+          ],
+          "correct_index": 2,
+          "explanation": "Exact, bien joué ! 🌸 La signalisation endocrine repose sur des hormones véhiculées par le courant sanguin sur de grandes distances, avec une action relativement lente."
+        },
+        {
+          "question": "La signalisation la plus rapide, avec une concentration élevée de messager sur une faible distance, est la signalisation :",
+          "options": [
+            "endocrine",
+            "paracrine",
+            "autocrine",
+            "neuronale"
+          ],
+          "correct_index": 3,
+          "explanation": "Bravo ! 🎉 La signalisation neuronale, via les neurotransmetteurs, agit en quelques millisecondes sur une distance très réduite."
+        },
+        {
+          "question": "Un médiateur hydrophobe comme une hormone stéroïdienne :",
+          "options": [
+            "traverse la membrane plasmique et se lie à un récepteur intracellulaire modulant l'expression génique",
+            "ne peut jamais atteindre le noyau",
+            "se lie à un récepteur membranaire sans entrer dans la cellule",
+            "agit très rapidement, en quelques millisecondes"
+          ],
+          "correct_index": 0,
+          "explanation": "Bien vu ! 🔍 Les médiateurs hydrophobes pénètrent dans la cellule et agissent sur l'expression des gènes via des récepteurs intracellulaires, avec une action plus lente mais durable."
+        },
+        {
+          "question": "Un récepteur couplé à une protéine G, à l'origine d'une cascade de signalisation intracellulaire, est dit :",
+          "options": [
+            "ionotropique",
+            "métabotropique",
+            "nucléaire",
+            "enzymatique pur"
+          ],
+          "correct_index": 1,
+          "explanation": "Bravo ! 🎯 Les récepteurs métabotropiques sont couplés à une protéine G et déclenchent une cascade de signalisation intracellulaire, contrairement aux récepteurs ionotropiques qui ouvrent directement un canal ionique."
+        }
+      ]
+    },
+    {
+      "id": "cytosquelette",
+      "title": "Le cytosquelette",
+      "difficulty": 3,
+      "intro": "En piste pour explorer les rails, câbles et poutres qui charpentent la cellule ! 🕸️💪",
+      "course": [
+        {
+          "icon": "🔬",
+          "title": "Définition et rôles",
+          "content": "Le cytosquelette est l'ensemble des protéines intracellulaires assurant le maintien de la structure tridimensionnelle, le transport intracellulaire et la mobilité de la cellule. C'est un squelette en perpétuel mouvement, qui se réorganise selon les besoins et l'activité de la cellule (par exemple, formation d'un lamellipode par l'actine lors de la migration cellulaire). Il coordonne l'organisation des organites, participe aux mouvements intracellulaires, au transport des ARNm, et joue un rôle essentiel pendant la mitose (mouvements des chromosomes, disparition de l'enveloppe nucléaire)."
+        },
+        {
+          "icon": "⭐",
+          "title": "Les filaments intermédiaires (FI)",
+          "content": "De diamètre intermédiaire (8 à 10 nm) entre l'actine et les microtubules, ils sont formés de protéines monomériques fibreuses s'assemblant en dimères, puis tétramères antiparallèles, puis protofilaments, huit protofilaments constituant un filament intermédiaire. Ce sont les SEULS filaments du cytosquelette non polarisés et non soumis à des cycles permanents de polymérisation/dépolymérisation une fois assemblés. Leur composition est spécifique du type cellulaire : cytokératine (épithéliums), neurofilaments (neurones), vimentine (tissu conjonctif), desmine (muscle strié), GFAP (cellules gliales) ; les lamines, spécifiques du noyau, en font également partie. Leur rôle est essentiellement architectural et mécanique."
+        },
+        {
+          "icon": "⭐",
+          "title": "Les microtubules (MT)",
+          "content": "Tubes creux de 25 nm de diamètre, formés d'hétérodimères de tubuline α et β liés au GTP, émanant du centrosome (2 centrioles perpendiculaires entourés de la zone péricentriolaire, zone de nucléation). Seul le GTP de la tubuline β est hydrolysable ; son hydrolyse en GDP favorise la dépolymérisation. Treize protofilaments forment un microtubule polarisé : extrémité (-) stable côté centrosome (tubuline α exposée), extrémité (+) dynamique côté périphérie (tubuline β exposée) : c'est l'instabilité dynamique. Des protéines associées (MAPs) les stabilisent (MAP2, tau), les déstabilisent (stathmine, MCAK, katanine) ou assurent le transport moteur (kinésines, dynéines). Des poisons mitotiques agissent dessus : le paclitaxel bloque l'extrémité (+), tandis que la colchicine et la vincristine empêchent la polymérisation de la tubuline libre."
+        },
+        {
+          "icon": "⭐",
+          "title": "Les microfilaments d'actine",
+          "content": "Cylindres pleins de 5 à 7 nm de diamètre, polarisés, n'émanant PAS d'un centre organisateur. L'actine G (globulaire, monomérique, liée à l'ATP) polymérise en actine F (filamenteuse) selon un phénomène de « tapis roulant » : l'extrémité barbue (+) polymérise plus vite que l'extrémité pointue (-), qui a tendance à se dépolymériser. De nombreuses protéines régulent ce réseau : thymosine (bloque la polymérisation), profiline (la favorise), gelsoline (fragmente en présence de calcium), tropomyosine, nébuline et caldesmone (organisent/stabilisent le réseau), et myosines (protéines motrices à activité ATPasique responsables de la contraction musculaire)."
+        },
+        {
+          "icon": "➗",
+          "title": "Tableau comparatif",
+          "content": "Filaments intermédiaires : diamètre 10 nm, réseau non polarisé, sans instabilité dynamique, rôle architectural. Microtubules : diamètre 25 nm, réseau polarisé rayonnant depuis le centrosome, en instabilité dynamique, rôle de trafic intracellulaire et de mouvements cellulaires (mitose+++). Microfilaments d'actine : diamètre 5-7 nm, réseau sous-membranaire (cortex) polarisé, en instabilité dynamique, rôle dans la mobilité, l'adhérence, la phagocytose et l'endo/exocytose."
+        },
+        {
+          "icon": "🧠",
+          "title": "Astuce mémo",
+          "content": "Pour retenir les diamètres croissants : Actine (5-7 nm, la plus fine) < Filaments Intermédiaires (8-10 nm, entre les deux, d'où leur nom) < Microtubules (25 nm, les plus épais). Et seuls les FI ne sont ni polarisés ni en instabilité dynamique permanente !"
+        },
+        {
+          "icon": "⚠️",
+          "title": "Piège classique",
+          "content": "Ne confonds pas les inhibiteurs des microtubules : le paclitaxel stabilise et paralyse les microtubules déjà formés (bloque à la fois polymérisation ET dépolymérisation), tandis que la colchicine et la vincristine séquestrent la tubuline libre, empêchant la polymérisation mais laissant la dépolymérisation se poursuivre, ce qui raccourcit les microtubules."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Le cytosquelette est décrit comme :",
+          "options": [
+            "un squelette en perpétuel mouvement, s'adaptant aux besoins de la cellule",
+            "présent uniquement pendant la mitose",
+            "exclusivement composé d'actine",
+            "une structure figée et immuable"
+          ],
+          "correct_index": 0,
+          "explanation": "Bravo ! 🎉 Le cytosquelette se réorganise en permanence, notamment via la polymérisation/dépolymérisation, pour répondre aux besoins changeants de la cellule."
+        },
+        {
+          "question": "Parmi les trois réseaux du cytosquelette, celui qui n'est PAS polarisé est :",
+          "options": [
+            "les microfilaments d'actine",
+            "les filaments intermédiaires",
+            "aucun, ils sont tous polarisés",
+            "les microtubules"
+          ],
+          "correct_index": 1,
+          "explanation": "Bien joué ! 🌟 Les filaments intermédiaires sont les seuls filaments du cytosquelette à ne pas être polarisés, et les seuls à ne pas subir de cycles permanents de polymérisation/dépolymérisation une fois assemblés."
+        },
+        {
+          "question": "La cytokératine, en tant que filament intermédiaire, est spécifique des :",
+          "options": [
+            "cellules gliales",
+            "cellules musculaires striées",
+            "cellules épithéliales",
+            "neurones"
+          ],
+          "correct_index": 2,
+          "explanation": "Exact, tu maîtrises bien ! ✨ La cytokératine est le type de filament intermédiaire caractéristique des cellules épithéliales."
+        },
+        {
+          "question": "La desmine, filament intermédiaire du groupe des vimentines, est retrouvée dans :",
+          "options": [
+            "les axones",
+            "les cellules épithéliales",
+            "les cellules gliales",
+            "les cellules musculaires striées"
+          ],
+          "correct_index": 3,
+          "explanation": "Bravo ! 🎯 La desmine est spécifique des cellules musculaires striées, tandis que la GFAP marque les cellules gliales et les neurofilaments les neurones."
+        },
+        {
+          "question": "Le centrosome, centre organisateur des microtubules, est constitué de :",
+          "options": [
+            "deux centrioles perpendiculaires entourés de la zone péricentriolaire",
+            "quatre centrioles parallèles",
+            "un unique centriole entouré d'actine",
+            "un réseau de lamines"
+          ],
+          "correct_index": 0,
+          "explanation": "Bien vu ! 🔍 Le centrosome comprend deux centrioles perpendiculaires l'un à l'autre, entourés de la zone péricentriolaire riche en tubuline où naissent les microtubules."
+        },
+        {
+          "question": "Concernant le GTP porté par les tubulines α et β :",
+          "options": [
+            "seul le GTP de la tubuline α est hydrolysable",
+            "seul le GTP de la tubuline β est hydrolysable",
+            "aucun des deux GTP n'est hydrolysable",
+            "les deux GTP sont hydrolysés simultanément et systématiquement"
+          ],
+          "correct_index": 1,
+          "explanation": "Exactement ! 🌟 Le GTP de la tubuline α est piégé dans l'hétérodimère et non hydrolysable, alors que celui de la tubuline β peut être hydrolysé en GDP, ce qui favorise la dépolymérisation."
+        },
+        {
+          "question": "L'extrémité (+) d'un microtubule, la plus dynamique, est localisée :",
+          "options": [
+            "elle n'existe pas, seul le pôle (-) est défini",
+            "au niveau du centrosome",
+            "à la périphérie de la cellule",
+            "au niveau du noyau uniquement"
+          ],
+          "correct_index": 2,
+          "explanation": "Bravo, bien vu ! 💪 L'extrémité (+), plus dynamique, se trouve vers la périphérie de la cellule, tandis que l'extrémité (-), plus stable, est ancrée au centrosome."
+        },
+        {
+          "question": "Les MAPs motrices, comme les dynéines et les kinésines, ont pour fonction :",
+          "options": [
+            "de former les hétérodimères de tubuline",
+            "de constituer le centrosome",
+            "de dépolymériser systématiquement les microtubules",
+            "de transporter des vésicules ou organites le long des microtubules grâce à leur activité ATPasique"
+          ],
+          "correct_index": 3,
+          "explanation": "Bien joué ! 🧠 Les MAPs motrices utilisent l'hydrolyse de l'ATP pour se déplacer le long des microtubules et transporter leur cargaison intracellulaire."
+        },
+        {
+          "question": "Le paclitaxel, poison des microtubules utilisé en chimiothérapie, agit en :",
+          "options": [
+            "se fixant à l'extrémité (+) et paralysant toute activité de polymérisation/dépolymérisation",
+            "empêchant uniquement la polymérisation, sans bloquer la dépolymérisation",
+            "détruisant directement l'ADN",
+            "favorisant la dépolymérisation des microtubules"
+          ],
+          "correct_index": 0,
+          "explanation": "Exact, bien joué ! ✨ Le paclitaxel se fixe à l'extrémité (+) du microtubule et bloque à la fois sa polymérisation et sa dépolymérisation."
+        },
+        {
+          "question": "La colchicine et la vincristine agissent sur les microtubules en :",
+          "options": [
+            "stabilisant les microtubules déjà formés",
+            "se fixant sur la tubuline libre et empêchant sa polymérisation, sans bloquer la dépolymérisation",
+            "activant les MAPs de stabilisation",
+            "empêchant l'hydrolyse du GTP de la tubuline α"
+          ],
+          "correct_index": 1,
+          "explanation": "Bravo ! 🎯 En séquestrant la tubuline libre, ces drogues empêchent la polymérisation, alors que la dépolymérisation continue, ce qui raccourcit progressivement les microtubules."
+        },
+        {
+          "question": "Un microfilament d'actine a un diamètre approximatif de :",
+          "options": [
+            "25 nm",
+            "10 nm",
+            "5 à 7 nm",
+            "100 nm"
+          ],
+          "correct_index": 2,
+          "explanation": "Bien vu ! 🌸 Les microfilaments d'actine sont les plus fins du cytosquelette, avec un diamètre de 5 à 7 nm."
+        },
+        {
+          "question": "L'actine G se distingue de l'actine F car :",
+          "options": [
+            "l'actine F ne contient pas d'ATP",
+            "l'actine G ne se trouve que dans le muscle strié",
+            "l'actine G est la forme filamenteuse polymérisée",
+            "l'actine G est la forme monomérique globulaire liée à l'ATP"
+          ],
+          "correct_index": 3,
+          "explanation": "Bravo, tu progresses bien ! 💪 L'actine G est le monomère globulaire porteur d'un site de fixation à l'ATP, qui polymérise pour donner l'actine F filamenteuse."
+        },
+        {
+          "question": "Le phénomène de « tapis roulant » des microfilaments d'actine s'explique par :",
+          "options": [
+            "l'absence de tout centre organisateur et une polymérisation plus rapide à l'extrémité barbue (+)",
+            "la présence d'un centrosome dédié à l'actine",
+            "une polymérisation identique aux deux extrémités",
+            "l'intervention exclusive de la myosine"
+          ],
+          "correct_index": 0,
+          "explanation": "Exactement ! 🌟 En l'absence de centre organisateur, l'extrémité (+) polymérise plus vite que l'extrémité (-), qui tend à se dépolymériser, créant cet effet de tapis roulant."
+        },
+        {
+          "question": "La protéine qui bloque la polymérisation de l'actine en séquestrant l'actine G est :",
+          "options": [
+            "la profiline",
+            "la thymosine",
+            "la gelsoline",
+            "la tropomyosine"
+          ],
+          "correct_index": 1,
+          "explanation": "Bravo ! 🎉 La thymosine séquestre les monomères d'actine G, empêchant leur polymérisation, à l'inverse de la profiline qui la favorise."
+        },
+        {
+          "question": "La gelsoline agit sur le réseau d'actine en :",
+          "options": [
+            "recrutant les kinésines",
+            "stabilisant les filaments",
+            "fragmentant les microfilaments d'actine en présence de calcium",
+            "déterminant la longueur du filament dans le muscle strié"
+          ],
+          "correct_index": 2,
+          "explanation": "Bien joué ! 🧠 La gelsoline est une protéine de coiffe qui fragmente les microfilaments d'actine en présence de calcium."
+        },
+        {
+          "question": "Le réseau d'actine sous-membranaire, appelé cortex, participe notamment à :",
+          "options": [
+            "la réplication de l'ADN",
+            "la production d'ATP mitochondrial",
+            "la synthèse des ribosomes",
+            "la mobilité cellulaire, la phagocytose et l'endo/exocytose"
+          ],
+          "correct_index": 3,
+          "explanation": "Bravo ! 🎯 Le cortex d'actine sous-membranaire est central pour l'organisation du cytosquelette, la mobilité, l'adhérence et les phénomènes d'endo/exocytose."
+        },
+        {
+          "question": "Parmi les trois réseaux du cytosquelette, celui qui émane d'un centre organisateur (le centrosome) est :",
+          "options": [
+            "les microtubules",
+            "aucun des trois",
+            "les microfilaments d'actine",
+            "les filaments intermédiaires"
+          ],
+          "correct_index": 0,
+          "explanation": "Exact, bien vu ! ✨ Seuls les microtubules rayonnent depuis un centre organisateur, le centrosome ; ni l'actine ni les filaments intermédiaires n'en possèdent."
+        },
+        {
+          "question": "La myosine, protéine motrice associée à l'actine, nécessite pour agir :",
+          "options": [
+            "l'absence totale de calcium",
+            "l'hydrolyse de l'ATP par son activité ATPasique",
+            "l'hydrolyse du GTP uniquement",
+            "la présence de tubuline"
+          ],
+          "correct_index": 1,
+          "explanation": "Bravo, bien vu ! 💪 La myosine possède une activité ATPasique : l'hydrolyse de l'ATP permet le glissement du filament d'actine et la contraction cellulaire."
+        }
+      ]
+    },
+    {
+      "id": "noyau_et_apoptose",
+      "title": "Le noyau et l'apoptose",
+      "difficulty": 3,
+      "intro": "Direction le centre de contrôle de la cellule, avant d'apprendre comment elle sait s'auto-détruire proprement ! 🧬💫",
+      "course": [
+        {
+          "icon": "🔬",
+          "title": "Structure du noyau interphasique",
+          "content": "Le noyau interphasique désigne le noyau pendant toute la période du cycle cellulaire où la cellule n'est pas en division. Il est délimité par l'enveloppe nucléaire (membrane externe et membrane interne) et contient le nucléoplasme (ADN, ARN, matrice de lamines et protéines de charpente) ainsi que le nucléole, lieu de synthèse des ribosomes. Le noyau contient toute l'information génétique de la cellule, à l'exception de l'ADN mitochondrial."
+        },
+        {
+          "icon": "⭐",
+          "title": "Pores nucléaires et lamines",
+          "content": "Les pores nucléaires sont de gros complexes constitués de nucléoporines glycosylées, formant un canal central permettant le transport nucléocytoplasmique ; plus la transcription est active, plus le noyau comporte de pores. Les lamines, protéines fibreuses appartenant à la famille des filaments intermédiaires, forment un réseau soutenant l'enveloppe nucléaire (lamines B ancrées à l'enveloppe ; lamines A et C également présentes dans le nucléoplasme). Leur phosphorylation, qui a lieu en mitose, provoque la rupture du réseau et l'effondrement de l'enveloppe nucléaire."
+        },
+        {
+          "icon": "🔬",
+          "title": "Transport nucléocytoplasmique",
+          "content": "Les petites molécules (< 10 nm) traversent le pore par transport passif bidirectionnel, tandis que les grosses protéines (facteurs de transcription, enzymes) nécessitent un import actif faisant intervenir une séquence de localisation nucléaire (SLN/NLS, non clivée après import), la petite protéine G Ran (majoritairement liée au GTP dans le noyau, au GDP dans le cytoplasme) et des importines α et β. L'exportation des ARN et des protéines nécessite, quant à elle, des exportines associées à Ran-GTP."
+        },
+        {
+          "icon": "⭐",
+          "title": "Chromatine et niveaux de compaction",
+          "content": "La chromatine (ADN + protéines de régulation de l'empaquetage) doit être compactée car l'ADN déroulé mesurerait plus d'1 mètre, pour un noyau de 1 à 2 µm de diamètre. Le niveau 1 est le nucléosome (fibre de 10 nm) : deux tours d'ADN (147 pb) autour d'un octamère de 2 copies des histones H2A, H2B, H3 et H4, sans faire obstacle à la réplication ni à la transcription. Le niveau 2 est le solénoïde (30 nm), regroupant 6 nucléosomes grâce aux histones H1. Le niveau 3 forme des boucles de compaction (300 nm) via les SMAR. Le niveau 4, maximal (1400 nm), correspond aux chromosomes visibles en mitose. On distingue l'euchromatine (non condensée, ADN codant), l'hétérochromatine constitutive (toujours condensée, ADN jamais codant : télomères, centromères) et l'hétérochromatine facultative (condensation variable, régulée épigénétiquement)."
+        },
+        {
+          "icon": "⭐",
+          "title": "Épigénétique",
+          "content": "L'épigénétique contrôle l'expression des gènes sans modifier la séquence nucléotidique, par des modifications réversibles : la méthylation de l'ADN au niveau des cytosines des îlots CpG (par les ADN-méthyltransférases DNMT), qui réprime la transcription ; et les modifications post-traductionnelles des histones sur leur extrémité N-terminale. L'acétylation par les HAT (coactivateurs) diminue la liaison ADN-histone et augmente la transcription ; la désacétylation par les HDAC (corépresseurs) fait l'inverse. La méthylation/déméthylation des histones peut favoriser ou défavoriser la transcription selon le résidu concerné, et la phosphorylation de l'histone H1 en mitose entraîne une forte compaction."
+        },
+        {
+          "icon": "🔬",
+          "title": "L'apoptose",
+          "content": "L'apoptose est une mort cellulaire programmée, ordonnée (contrairement à la nécrose, mort accidentelle par éclatement), qui maintient l'homéostasie tissulaire et élimine les cellules endommagées sans réaction inflammatoire. Elle se déroule en plusieurs étapes : condensation de la chromatine et du cytoplasme, bourgeonnement de l'enveloppe nucléaire, fragmentation de l'ADN (par une DNase dépendante des caspases, CAD), formation de corps apoptotiques phagocytés par les cellules voisines, et externalisation de la phosphatidylsérine à la membrane plasmique (détectable par l'Annexine V en cytométrie en flux)."
+        },
+        {
+          "icon": "⭐",
+          "title": "Les deux voies de l'apoptose",
+          "content": "Les caspases, protéases activées par clivage de leur forme inactive (pro-caspase), exécutent l'apoptose. La voie extrinsèque est déclenchée par un signal extracellulaire (FAS-ligand, TNF, TRAIL) activant un récepteur de mort, formant le complexe DISC, puis activant en cascade des caspases. La voie intrinsèque (mitochondriale) est déclenchée par des protéines comme BAX, entraînant la libération du cytochrome c, la formation de l'apoptosome avec APAF-1, puis l'activation successive des caspases 9 et 3. Les deux voies convergent sur la caspase 3, commune aux deux, et sont régulées par l'équilibre entre les protéines pro-apoptotiques (BAX, p53) et anti-apoptotiques (BCL2)."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Piège classique",
+          "content": "Ne confonds jamais apoptose et nécrose : l'apoptose est une mort cellulaire programmée et ordonnée, sans réaction inflammatoire, alors que la nécrose est une mort accidentelle par éclatement de la cellule, qui déclenche une inflammation. De même, BCL2 est anti-apoptotique (favorise la survie) tandis que p53 est pro-apoptotique : une diminution de p53 ou une augmentation de BCL2 favorise donc la survie des cellules cancéreuses."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Le noyau interphasique correspond à :",
+          "options": [
+            "le noyau pendant toute la période du cycle où la cellule n'est pas en division",
+            "le noyau des seules cellules cancéreuses",
+            "un noyau dépourvu d'ADN",
+            "le noyau uniquement pendant la mitose"
+          ],
+          "correct_index": 0,
+          "explanation": "Bravo ! 🎉 Le terme « interphasique » désigne le noyau tel qu'il se présente durant l'interphase, c'est-à-dire en dehors des phases de division cellulaire."
+        },
+        {
+          "question": "Le noyau contient toute l'information génétique de la cellule, à l'exception de :",
+          "options": [
+            "l'ADN nucléaire",
+            "l'ADN mitochondrial",
+            "l'ARN ribosomique",
+            "l'ARN messager"
+          ],
+          "correct_index": 1,
+          "explanation": "Bien joué ! 🌟 L'ADN mitochondrial, propre aux mitochondries, échappe au noyau, qui contient tout le reste du patrimoine génétique."
+        },
+        {
+          "question": "Les pores nucléaires sont constitués de :",
+          "options": [
+            "cyclines",
+            "histones",
+            "nucléoporines glycosylées",
+            "tubulines"
+          ],
+          "correct_index": 2,
+          "explanation": "Exact, tu maîtrises bien ! ✨ Les pores nucléaires sont formés de nucléoporines, des protéines glycosylées organisant un canal de transport."
+        },
+        {
+          "question": "Les lamines appartiennent à la famille des :",
+          "options": [
+            "protéines G",
+            "microtubules",
+            "microfilaments d'actine",
+            "filaments intermédiaires"
+          ],
+          "correct_index": 3,
+          "explanation": "Bravo ! 🎯 Les lamines font partie des filaments intermédiaires, spécifiquement associées à la face interne de l'enveloppe nucléaire."
+        },
+        {
+          "question": "La phosphorylation des lamines, qui a lieu durant la mitose, provoque :",
+          "options": [
+            "l'effondrement du réseau de lamines et de l'enveloppe nucléaire",
+            "la condensation de la chromatine uniquement",
+            "l'export des ARNm",
+            "le renforcement de l'enveloppe nucléaire"
+          ],
+          "correct_index": 0,
+          "explanation": "Bien vu ! 🔍 La phosphorylation des lamines rompt leur réseau, entraînant l'effondrement de l'enveloppe nucléaire nécessaire à la mitose."
+        },
+        {
+          "question": "L'import actif d'une protéine dans le noyau nécessite notamment :",
+          "options": [
+            "l'ADN polymérase",
+            "une séquence de localisation nucléaire (SLN), la protéine Ran et des importines",
+            "uniquement une diffusion passive",
+            "des exportines et Ran-GTP"
+          ],
+          "correct_index": 1,
+          "explanation": "Exactement ! 🌟 L'import actif fait intervenir une SLN reconnue par les importines α et β, ainsi que la petite protéine G Ran."
+        },
+        {
+          "question": "Concernant la protéine G Ran :",
+          "options": [
+            "elle est majoritairement sous forme Ran-GTP dans le cytoplasme",
+            "elle est majoritairement sous forme Ran-GDP dans le noyau",
+            "elle est majoritairement sous forme Ran-GTP dans le noyau",
+            "elle ne lie jamais le GTP"
+          ],
+          "correct_index": 2,
+          "explanation": "Bravo, bien vu ! 💪 Dans le noyau, les GEF favorisent l'échange GDP-GTP, rendant Ran-GTP majoritaire, alors que dans le cytoplasme les GAP hydrolysent le GTP, rendant Ran-GDP majoritaire."
+        },
+        {
+          "question": "Le nucléosome, premier niveau de compaction de la chromatine, est constitué de :",
+          "options": [
+            "1 seule histone H1",
+            "4 copies de l'histone H2A uniquement",
+            "aucune protéine, uniquement de l'ADN",
+            "2 copies de 4 histones formant un octamère"
+          ],
+          "correct_index": 3,
+          "explanation": "Bien joué ! 🧠 Le nucléosome associe un octamère de 2 copies chacune des histones H2A, H2B, H3 et H4, autour duquel s'enroule l'ADN sur environ 147 paires de bases."
+        },
+        {
+          "question": "L'histone H1, qui solidarise les nucléosomes entre eux pour former le solénoïde, est :",
+          "options": [
+            "une histone non nucléosomique et globulaire",
+            "une composante des microtubules",
+            "absente de la chromatine",
+            "une histone nucléosomique"
+          ],
+          "correct_index": 0,
+          "explanation": "Exact, bien joué ! ✨ Contrairement aux histones du cœur du nucléosome, l'histone H1 est non nucléosomique et assure l'agrafage entre nucléosomes voisins."
+        },
+        {
+          "question": "L'hétérochromatine constitutive correspond à :",
+          "options": [
+            "l'ADN mitochondrial exclusivement",
+            "un ADN toujours condensé et jamais codant (télomères, centromères)",
+            "un ADN toujours décondensé et codant",
+            "un ADN dont la condensation varie selon le type cellulaire"
+          ],
+          "correct_index": 1,
+          "explanation": "Bravo ! 🎉 L'hétérochromatine constitutive reste toujours condensée et ne code jamais, à la différence de l'hétérochromatine facultative dont la condensation est régulée."
+        },
+        {
+          "question": "La méthylation de l'ADN au niveau des îlots CpG, réalisée par les DNMT :",
+          "options": [
+            "détruit la séquence d'ADN",
+            "active systématiquement la transcription du gène",
+            "réprime la transcription du gène",
+            "n'a aucun effet sur la transcription"
+          ],
+          "correct_index": 2,
+          "explanation": "Bien joué ! 🌟 La méthylation des cytosines des îlots CpG, régions souvent promotrices, réprime la transcription du gène concerné."
+        },
+        {
+          "question": "L'acétylation des histones par les HAT a pour conséquence :",
+          "options": [
+            "aucun effet sur la chromatine",
+            "la dégradation complète des histones",
+            "une augmentation de la liaison ADN-histone et une répression de la transcription",
+            "une diminution de la liaison ADN-histone et une augmentation de la transcription"
+          ],
+          "correct_index": 3,
+          "explanation": "Exactement ! 🌸 Les groupes acétyles, chargés négativement, diminuent l'affinité entre l'ADN et les histones, ce qui favorise l'accès des facteurs de transcription."
+        },
+        {
+          "question": "L'apoptose se distingue de la nécrose car :",
+          "options": [
+            "elle est une mort cellulaire programmée et ordonnée, sans réaction inflammatoire",
+            "elle provoque systématiquement une inflammation",
+            "elle ne concerne jamais les cellules cancéreuses",
+            "elle est une mort accidentelle par éclatement de la cellule"
+          ],
+          "correct_index": 0,
+          "explanation": "Bravo, tu progresses bien ! 💪 L'apoptose est un processus contrôlé et ordonné, contrairement à la nécrose qui est une mort accidentelle entraînant une inflammation."
+        },
+        {
+          "question": "L'externalisation de la phosphatidylsérine lors de l'apoptose est classiquement mise en évidence par :",
+          "options": [
+            "l'iodure de propidium",
+            "l'Annexine V marquée par un fluorochrome",
+            "l'ADN polymérase",
+            "l'immunoprécipitation"
+          ],
+          "correct_index": 1,
+          "explanation": "Bien vu ! 🔍 L'Annexine V se lie spécifiquement à la phosphatidylsérine externalisée, ce qui permet de détecter les cellules en apoptose par cytométrie en flux."
+        },
+        {
+          "question": "Les caspases sont des protéases qui clivent leurs substrats après un résidu :",
+          "options": [
+            "arginine",
+            "sérine",
+            "acide aspartique",
+            "lysine"
+          ],
+          "correct_index": 2,
+          "explanation": "Bravo ! 🎯 Les caspases clivent spécifiquement leurs cibles après un résidu acide aspartique (Asp), d'où leur nom."
+        },
+        {
+          "question": "La voie extrinsèque de l'apoptose est initiée par :",
+          "options": [
+            "la formation de l'apoptosome",
+            "l'action de BAX sur la mitochondrie",
+            "la libération du cytochrome c mitochondrial",
+            "l'activation d'un récepteur de mort par FAS-ligand, TNF ou TRAIL"
+          ],
+          "correct_index": 3,
+          "explanation": "Exact, bien joué ! ✨ La voie extrinsèque part d'un signal extracellulaire qui active un récepteur membranaire de mort, formant le complexe DISC."
+        },
+        {
+          "question": "Dans la voie intrinsèque de l'apoptose, la caspase 9 est activée après :",
+          "options": [
+            "la formation de l'apoptosome, suite à la libération du cytochrome c et sa fixation sur APAF-1",
+            "l'externalisation de la phosphatidylsérine",
+            "la phosphorylation des lamines",
+            "la formation du complexe DISC"
+          ],
+          "correct_index": 0,
+          "explanation": "Bien joué ! 🧠 Le cytochrome c libéré par la mitochondrie se fixe sur APAF-1, formant l'apoptosome qui recrute et active la pro-caspase 9."
+        },
+        {
+          "question": "Concernant les protéines régulant la voie intrinsèque de l'apoptose :",
+          "options": [
+            "BCL2 est pro-apoptotique et p53 est anti-apoptotique",
+            "BCL2 est anti-apoptotique et p53 est pro-apoptotique",
+            "BAX et BCL2 ont toujours le même effet",
+            "p53 est toujours anti-apoptotique quel que soit le contexte"
+          ],
+          "correct_index": 1,
+          "explanation": "Bravo ! 🎉 BCL2 favorise la survie cellulaire (anti-apoptotique) alors que p53 favorise la mort cellulaire (pro-apoptotique) ; leur dérégulation est fréquente dans les cancers."
+        }
+      ]
+    },
+    {
+      "id": "cycle_cellulaire",
+      "title": "Le cycle cellulaire",
+      "difficulty": 3,
+      "intro": "Prêt(e) à chronométrer les phases G1, S, G2 et M jusqu'à la division cellulaire ? ⏱️🧫",
+      "course": [
+        {
+          "icon": "🔬",
+          "title": "Définition et phases",
+          "content": "Le cycle cellulaire est un ensemble de phénomènes régulés et complexes qui synchronisent la réplication de l'ADN et la division cellulaire par mitose, impliquant des centaines de protéines. Sa durée varie fortement selon le type cellulaire (cellules sanguines médullaires : moins de 24h ; cellules épithéliales cutanées : 5-6 jours ; hépatocytes : quelques mois ; certaines cellules comme les neurones ne se renouvellent quasiment pas). En phase G1 (8h dans les cellules HeLa), la cellule possède 23 paires de chromosomes à une chromatide et décide d'entrer en phase S ou de passer en G0 (quiescence, parfois irréversible). La phase S (6h) réplique l'ADN de façon semi-conservative, aboutissant à 23 paires de chromosomes à deux chromatides ; sa durée est caractéristique de l'espèce. La phase G2 (5h) prépare la mitose."
+        },
+        {
+          "icon": "⭐",
+          "title": "Les étapes de la mitose",
+          "content": "La mitose (durée environ 1h) divise la cellule mère en deux cellules filles identiques, après réplication préalable de l'ADN en phase S : prophase (condensation de la chromatine, fragilisation de l'enveloppe nucléaire), prémétaphase (rupture de l'enveloppe nucléaire, déplacement des chromosomes vers l'équateur), métaphase (alignement des chromosomes au maximum de condensation sur la plaque équatoriale), anaphase (séparation des chromatides sœurs au niveau du centromère, migration vers les pôles), télophase (reconstruction de l'enveloppe nucléaire, décondensation) et cytodiérèse (division du cytoplasme par le sillon de clivage). Attention à ne pas confondre avec la méiose, qui divise les cellules germinales en réduisant de moitié le nombre de chromosomes pour produire des gamètes génétiquement différents de la cellule mère."
+        },
+        {
+          "icon": "⭐",
+          "title": "Régulation par les cyclines et CDK",
+          "content": "La progression du cycle est coordonnée par des complexes cycline-CDK (kinases dépendantes des cyclines), spécifiques de chaque phase et activés par la CAK. En G1, un facteur de croissance active un récepteur membranaire, déclenchant une cascade de phosphorylation limitée dans le temps (arrêtée par la protéine GAP, l'internalisation du récepteur ou des phosphatases). À la transition G1-S, le complexe Cycline D-CDK4/6 phosphoryle la protéine Rb, la dissociant des gènes de phase S qu'elle réprimait : les protéines de phase S (dont Cycline E-CDK2) sont alors synthétisées jusqu'à un seuil de non-retour déclenchant irréversiblement la phase S. En phase S, le complexe Cycline E-CDK2 active les origines de réplication, puis Cycline A-CDK2 permet la progression des fourches, empêchant toute re-réplication dans le même cycle."
+        },
+        {
+          "icon": "⭐",
+          "title": "Transition G2-M et métaphase-anaphase",
+          "content": "En fin de G2, PLK1 phosphoryle la phosphatase CDC25C, qui migre alors dans le noyau et déphosphoryle le pré-MPF (complexe Cycline B-CDK1 triplement phosphorylé formé en G2), l'activant en MPF, ce qui déclenche l'entrée en mitose. À la transition métaphase-anaphase, les chromatides sœurs restent liées par les cohésines au centromère ; la séparase, qui les cliverait, est inhibée par la sécurine. Le MPF phosphoryle le complexe APC/C, qui ubiquitine et dégrade la sécurine par le protéasome, libérant la séparase et permettant la séparation des chromatides sœurs."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Les trois points de contrôle",
+          "content": "Trois points de contrôle vérifient l'absence d'anomalies, bloquant le cycle en cas de problème (correction puis reprise, ou apoptose si irréparable). Au point G1-S, une cassure de l'ADN active ATM, qui phosphoryle p53 (normalement dégradée via MDM2) : p53 activée entre dans le noyau et induit la transcription de p21, qui bloque tous les complexes cycline-CDK. Au point G2-M, une réplication incomplète active ATR puis Chk1, qui phosphoryle CDC25C de façon à l'empêcher de migrer dans le noyau (bloquant ainsi le MPF) ; une anomalie du centrosome ou une cassure de l'ADN peuvent aussi l'activer. Au point métaphase-anaphase (point de contrôle du fuseau mitotique), un chromosome mal attaché aux microtubules via CENP-E active la cascade Bub1-Mad1-Mad2, Mad2 inhibant APC/C et bloquant ainsi la dégradation des cohésines : ce point de contrôle prévient les aneuploïdies."
+        },
+        {
+          "icon": "🧠",
+          "title": "Astuce mémo",
+          "content": "Retiens l'ordre logique des complexes cycline-CDK au fil du cycle : Cycline D-CDK4/6 (entrée en G1/S) → Cycline E-CDK2 (initiation de la phase S) → Cycline A-CDK2 (progression de la phase S) → Cycline B-CDK1 = MPF (entrée en mitose). Et pour les trois points de contrôle : G1-S et G2-M font intervenir p53/p21 en cas de dommage à l'ADN, tandis que le point métaphase-anaphase (fuseau mitotique) mobilise Mad2 pour éviter les aneuploïdies."
+        },
+        {
+          "icon": "🔬",
+          "title": "Méthode : la cytométrie en flux (CMF)",
+          "content": "La cytométrie en flux mesure la quantité d'ADN par cellule grâce à un agent intercalant fluorescent (iodure de propidium) après perméabilisation membranaire, permettant d'identifier la phase du cycle : les cellules en G0/G1 ont une quantité d'ADN de référence « 1 » (premier pic), celles en phase S une quantité intermédiaire (plateau), et celles en G2/M une quantité doublée « 2 » (second pic). Cette méthode permet d'évaluer l'effet d'un médicament sur la prolifération cellulaire, par exemple un blocage en G2/M révélé par la diminution du premier pic et l'augmentation du second."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Piège classique",
+          "content": "Ne confonds pas anaphase mitotique (séparation des chromatides sœurs) avec les événements de la méiose. Retiens aussi que la sécurine INHIBE la séparase (elle ne l'active pas) : c'est sa dégradation par APC/C-ubiquitine-protéasome qui libère la séparase et permet la séparation des chromatides. Enfin, une cellule cancéreuse n'est pas dérégulée en devenant « plus contrôlée » : au contraire, elle perd sa capacité de régulation du cycle et prolifère de façon anarchique."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Le cycle cellulaire synchronise principalement :",
+          "options": [
+            "la réplication de l'ADN et la division cellulaire par mitose",
+            "l'apoptose et la nécrose",
+            "la transcription et la traduction uniquement",
+            "la phagocytose et l'endocytose"
+          ],
+          "correct_index": 0,
+          "explanation": "Bravo ! 🎉 Le cycle cellulaire coordonne la réplication du matériel génétique (phase S) avec sa répartition équitable entre deux cellules filles lors de la mitose."
+        },
+        {
+          "question": "Pendant la phase S du cycle cellulaire :",
+          "options": [
+            "la cellule se divise en deux cellules filles",
+            "l'ADN est répliqué de façon semi-conservative",
+            "la chromatine se condense au maximum",
+            "l'enveloppe nucléaire se reforme"
+          ],
+          "correct_index": 1,
+          "explanation": "Bien joué ! 🌟 La phase S est dédiée à la réplication de l'ADN, chaque brin ancien servant de matrice pour la synthèse d'un nouveau brin complémentaire."
+        },
+        {
+          "question": "À la sortie de la phase G1, une cellule qui n'entre pas en phase S peut :",
+          "options": [
+            "entrer directement en anaphase",
+            "passer directement en mitose",
+            "entrer en phase G0, un état de quiescence",
+            "dupliquer immédiatement son ADN"
+          ],
+          "correct_index": 2,
+          "explanation": "Exact, tu maîtrises bien ! ✨ La phase G0 correspond à un arrêt du cycle cellulaire (quiescence), parfois irréversible comme chez les neurones."
+        },
+        {
+          "question": "À la fin de la phase S, une cellule humaine possède :",
+          "options": [
+            "46 paires de chromosomes",
+            "aucun chromosome, seulement de la chromatine",
+            "23 chromosomes à 1 chromatide",
+            "23 paires de chromosomes à 2 chromatides chacun"
+          ],
+          "correct_index": 3,
+          "explanation": "Bravo ! 🎯 La réplication double le nombre de chromatides : chaque chromosome passe de 1 à 2 chromatides, sans changer le nombre de chromosomes (23 paires)."
+        },
+        {
+          "question": "L'alignement des chromosomes au maximum de leur condensation sur la plaque équatoriale caractérise :",
+          "options": [
+            "la métaphase",
+            "l'anaphase",
+            "la télophase",
+            "la prophase"
+          ],
+          "correct_index": 0,
+          "explanation": "Bien vu ! 🔍 La métaphase se définit par cet alignement précis des chromosomes bichromatidiens à l'équateur de la cellule, condition préalable à leur séparation correcte."
+        },
+        {
+          "question": "La séparation des chromatides sœurs au niveau du centromère a lieu en :",
+          "options": [
+            "métaphase",
+            "anaphase",
+            "télophase",
+            "prophase"
+          ],
+          "correct_index": 1,
+          "explanation": "Exactement ! 🌟 L'anaphase correspond à la séparation des chromatides sœurs, qui migrent ensuite vers les pôles opposés de la cellule."
+        },
+        {
+          "question": "La mitose se différencie de la méiose car :",
+          "options": [
+            "elle ne nécessite pas de réplication préalable de l'ADN",
+            "elle réduit le nombre de chromosomes de moitié",
+            "elle produit deux cellules filles identiques entre elles et à la cellule mère",
+            "elle ne concerne que les cellules germinales"
+          ],
+          "correct_index": 2,
+          "explanation": "Bravo, bien vu ! 💪 La mitose produit deux cellules filles génétiquement identiques à la cellule mère, contrairement à la méiose qui réduit le nombre de chromosomes de moitié pour former des gamètes."
+        },
+        {
+          "question": "Le complexe Cycline D-CDK4/6, impliqué dans la transition G1-S, agit en phosphorylant :",
+          "options": [
+            "APC/C",
+            "CDC25C",
+            "p53",
+            "la protéine Rb, ce qui lève la répression sur les gènes de phase S"
+          ],
+          "correct_index": 3,
+          "explanation": "Bien joué ! 🧠 En phosphorylant Rb, le complexe Cycline D-CDK4/6 la dissocie des gènes de phase S, permettant leur transcription."
+        },
+        {
+          "question": "En phase S, la progression des fourches de réplication et l'empêchement d'une re-réplication de l'ADN sont assurés par le complexe :",
+          "options": [
+            "Cycline A-CDK2",
+            "Cycline E-CDK1",
+            "Cycline D-CDK4/6",
+            "Cycline B-CDK1"
+          ],
+          "correct_index": 0,
+          "explanation": "Exact, bien joué ! ✨ Le complexe Cycline A-CDK2 dissocie les complexes de pré-réplication au fur et à mesure de l'avancée des fourches, garantissant qu'un même segment d'ADN ne soit répliqué qu'une fois."
+        },
+        {
+          "question": "Le pré-MPF, formé en phase G2, correspond au complexe :",
+          "options": [
+            "Cycline E-CDK2",
+            "Cycline B-CDK1 triplement phosphorylé",
+            "Cycline D-CDK4/6",
+            "Cycline A-CDK2"
+          ],
+          "correct_index": 1,
+          "explanation": "Bravo ! 🎉 Le pré-MPF est le complexe Cycline B-CDK1, maintenu inactif par triple phosphorylation jusqu'à sa déphosphorylation par CDC25C."
+        },
+        {
+          "question": "La phosphatase CDC25C, activée par PLK1, permet l'entrée en mitose en :",
+          "options": [
+            "activant APC/C directement",
+            "phosphorylant le pré-MPF dans le cytoplasme",
+            "déphosphorylant le pré-MPF après sa migration dans le noyau, l'activant en MPF",
+            "dégradant la sécurine"
+          ],
+          "correct_index": 2,
+          "explanation": "Bien joué ! 🌸 CDC25C, une fois phosphorylée par PLK1, migre dans le noyau où elle déphosphoryle le pré-MPF, générant le MPF actif qui déclenche la mitose."
+        },
+        {
+          "question": "À la transition métaphase-anaphase, les chromatides sœurs sont maintenues associées par :",
+          "options": [
+            "les lamines",
+            "les histones H1 uniquement",
+            "les cyclines",
+            "les cohésines"
+          ],
+          "correct_index": 3,
+          "explanation": "Exactement ! 🌟 Les cohésines relient les chromatides sœurs au niveau du centromère jusqu'à leur clivage par la séparase, qui déclenche l'anaphase."
+        },
+        {
+          "question": "La séparase, enzyme qui clive les cohésines, est normalement inhibée en métaphase par :",
+          "options": [
+            "la sécurine",
+            "p53",
+            "CDK1",
+            "APC/C"
+          ],
+          "correct_index": 0,
+          "explanation": "Bravo, bien vu ! 💪 La sécurine séquestre et inhibe la séparase ; sa dégradation par APC/C-ubiquitine-protéasome libère la séparase et permet la séparation des chromatides."
+        },
+        {
+          "question": "Au point de contrôle G1-S, une cassure double brin de l'ADN active :",
+          "options": [
+            "ATR puis Chk1",
+            "ATM, qui aboutit à l'activation de p53 et à la transcription de p21",
+            "PLK1 uniquement",
+            "la séparase"
+          ],
+          "correct_index": 1,
+          "explanation": "Bien joué ! 🧠 ATM phosphoryle p53, qui s'accumule dans le noyau et active la transcription de p21, bloquant l'ensemble des complexes cycline-CDK."
+        },
+        {
+          "question": "Une réplication incomplète de l'ADN active, au point de contrôle G2-M, la voie :",
+          "options": [
+            "Mad1-Mad2 exclusivement",
+            "MDM2-p53 uniquement",
+            "ATR-Chk1, qui empêche CDC25C de migrer dans le noyau",
+            "APC/C-sécurine"
+          ],
+          "correct_index": 2,
+          "explanation": "Exact, bien joué ! ✨ ATR active Chk1, qui phosphoryle CDC25C sur un site différent de celui de PLK1, empêchant sa migration nucléaire et donc l'activation du MPF."
+        },
+        {
+          "question": "Le point de contrôle du fuseau mitotique (transition métaphase-anaphase) vérifie :",
+          "options": [
+            "la présence de mutations ponctuelles",
+            "la taille de la cellule",
+            "l'intégrité de la réplication de l'ADN",
+            "le bon attachement de tous les chromosomes aux microtubules via CENP-E"
+          ],
+          "correct_index": 3,
+          "explanation": "Bravo ! 🎯 Ce point de contrôle bloque l'anaphase tant que tous les kinétochores ne sont pas correctement fixés aux microtubules, prévenant ainsi les aneuploïdies."
+        },
+        {
+          "question": "En cytométrie en flux, les cellules en phase G2/M présentent une intensité de fluorescence à l'iodure de propidium :",
+          "options": [
+            "doublée par rapport aux cellules en G0/G1",
+            "nulle",
+            "intermédiaire entre G0/G1 et S",
+            "identique à celle des cellules en G0/G1"
+          ],
+          "correct_index": 0,
+          "explanation": "Bien vu ! 🔍 Ayant répliqué leur ADN, les cellules en G2/M possèdent deux fois plus d'ADN que les cellules en G0/G1, d'où une fluorescence doublée."
+        },
+        {
+          "question": "Les cellules cancéreuses se caractérisent, concernant le cycle cellulaire, par :",
+          "options": [
+            "une régulation renforcée du cycle",
+            "une perte de la capacité de régulation du cycle, aboutissant à une prolifération anarchique",
+            "un arrêt permanent en phase G0",
+            "l'absence totale de division cellulaire"
+          ],
+          "correct_index": 1,
+          "explanation": "Bravo, tu progresses bien ! 💪 Les cellules cancéreuses perdent le contrôle normal du cycle cellulaire, ce qui permet une division autonome et anarchique."
+        }
+      ]
+    }
+  ]
+}

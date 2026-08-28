@@ -1,0 +1,1039 @@
+{
+  "ue_id": "ue2",
+  "ue_name": "Biochimie",
+  "icon": "🧬",
+  "tint": "pink",
+  "chapters": [
+    {
+      "id": "glucides_lipides",
+      "title": "Glucides et lipides",
+      "difficulty": 1,
+      "intro": "Direction les sucres et les graisses : des molécules essentielles à apprivoiser en douceur ! 🍬🧈",
+      "course": [
+        {
+          "icon": "🔬",
+          "title": "Les oses : définition et formule",
+          "content": "Les glucides (ou hydrates de carbone) répondent à la formule brute générale Cn(H2O)n. On distingue les oses (monosaccharides), unités élémentaires non hydrolysables, des osides (polysaccharides), formés de plusieurs oses reliés entre eux et donc hydrolysables par addition d'eau. Un ose comporte au moins 3 carbones (n ≥ 3), un squelette carboné porteur de groupements hydroxyle (-OH), et une fonction carbonyle caractéristique : aldéhyde pour les aldoses, cétone pour les cétoses."
+        },
+        {
+          "icon": "⭐",
+          "title": "Origine des oses : glycéraldéhyde et dihydroxyacétone",
+          "content": "Tous les oses dérivent structurellement de deux trioses de référence : le glycéraldéhyde (fonction aldéhyde), à l'origine de la famille des aldoses, et la dihydroxyacétone (fonction cétone), à l'origine de la famille des cétoses. Le glucose est l'aldose de référence, le fructose le cétose de référence."
+        },
+        {
+          "icon": "🔬",
+          "title": "Les glycoprotéines",
+          "content": "Une glycoprotéine est une protéine sur laquelle sont greffés de façon covalente un ou plusieurs oligosaccharides. La N-glycosylation fixe la chaîne glucidique sur la chaîne latérale d'une asparagine (liaison N-glycosidique) ; la O-glycosylation la fixe sur celle d'une sérine ou d'une thréonine (liaison O-glycosidique)."
+        },
+        {
+          "icon": "⭐",
+          "title": "Les lipides : généralités",
+          "content": "Les lipides sont des molécules hydrophobes ou amphipathiques (une partie hydrophobe, une partie hydrophile). On distingue les lipides simples, constitués uniquement de C, H et O — ce sont des esters d'un acide gras et d'un alcool — des lipides complexes, qui comportent en plus d'autres atomes ou groupements. Le type d'alcool estérifié détermine la classe du lipide."
+        },
+        {
+          "icon": "➗",
+          "title": "Structure et nomenclature des acides gras",
+          "content": "Un acide gras est une molécule amphipathique formée d'une longue chaîne hydrocarbonée (nombre pair de carbones, de 4 à 24) portant une fonction acide carboxylique terminale. Les acides gras saturés ne comportent aucune double liaison (ex. acide palmitique en C16, acide stéarique en C18). Les acides gras insaturés comportent une ou plusieurs doubles liaisons, numérotées soit depuis le carboxyle (nomenclature Δ), soit depuis le méthyle terminal (nomenclature ω, qui définit les familles ω3 et ω6)."
+        },
+        {
+          "icon": "🧠",
+          "title": "Astuce mémo : acides gras essentiels",
+          "content": "Les acides gras insaturés des familles ω3 et ω6 ne peuvent pas être synthétisés par l'organisme humain : ce sont des acides gras essentiels, qui doivent obligatoirement provenir de l'alimentation. Retenez : « oméga = obligatoirement mangé » !"
+        },
+        {
+          "icon": "⚠️",
+          "title": "Piège classique",
+          "content": "Ne confondez pas ose (monosaccharide simple, non hydrolysable) et oside (polysaccharide, hydrolysable en plusieurs oses). De même, la N-glycosylation se fait toujours sur une asparagine, jamais sur une lysine : c'est la O-glycosylation qui concerne la sérine et la thréonine."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Quelle est la formule brute générale des oses ?",
+          "options": [
+            "CnH2nOn",
+            "CnH2On",
+            "Cn(H2O)n",
+            "Cn(H2O)2n"
+          ],
+          "correct_index": 2,
+          "explanation": "Bien joué si tu as retenu la formule empirique ! Les oses répondent à la formule brute Cn(H2O)n avec n ≥ 3, d'où leur ancien nom d'« hydrates de carbone »."
+        },
+        {
+          "question": "Une molécule glucidique élémentaire, non hydrolysable, est appelée :",
+          "options": [
+            "un oside",
+            "un polysaccharide",
+            "un glycoside",
+            "un ose"
+          ],
+          "correct_index": 3,
+          "explanation": "Exactement ! L'ose est l'unité de base, non hydrolysable, contrairement à l'oside (polysaccharide) qui est composé de plusieurs oses reliés entre eux."
+        },
+        {
+          "question": "La fonction chimique qui caractérise un cétose est :",
+          "options": [
+            "une fonction cétone",
+            "une fonction aldéhyde",
+            "une fonction acide carboxylique",
+            "une fonction alcool"
+          ],
+          "correct_index": 0,
+          "explanation": "Tout juste ! Les cétoses portent une fonction cétone, tandis que les aldoses portent une fonction aldéhyde sur leur squelette carboné."
+        },
+        {
+          "question": "Tous les cétoses dérivent structurellement de :",
+          "options": [
+            "le glycéraldéhyde",
+            "le ribose",
+            "la dihydroxyacétone",
+            "le glucose"
+          ],
+          "correct_index": 2,
+          "explanation": "Bravo ! La dihydroxyacétone, molécule à fonction cétone, est la molécule de référence dont dérivent tous les cétoses (dont le fructose)."
+        },
+        {
+          "question": "Tous les aldoses dérivent structurellement de :",
+          "options": [
+            "la dihydroxyacétone",
+            "le glycéraldéhyde",
+            "le glycérol",
+            "le fructose"
+          ],
+          "correct_index": 1,
+          "explanation": "Exact ! Le glycéraldéhyde, triose à fonction aldéhyde, est la molécule de référence dont dérivent tous les aldoses (dont le glucose)."
+        },
+        {
+          "question": "Le nombre minimal de carbones (n) que doit comporter un ose est :",
+          "options": [
+            "2",
+            "4",
+            "5",
+            "3"
+          ],
+          "correct_index": 3,
+          "explanation": "Bien vu ! Un ose répond à Cn(H2O)n avec n ≥ 3 : les plus petits monosaccharides sont donc des trioses à 3 carbones (glycéraldéhyde, dihydroxyacétone)."
+        },
+        {
+          "question": "La liaison N-glycosidique d'une glycoprotéine se forme sur la chaîne latérale d'un(e) :",
+          "options": [
+            "sérine",
+            "thréonine",
+            "asparagine",
+            "lysine"
+          ],
+          "correct_index": 2,
+          "explanation": "Parfait ! La N-glycosylation fixe l'oligosaccharide sur l'azote de la chaîne latérale d'une asparagine, donnant une protéine N-glycosylée."
+        },
+        {
+          "question": "La O-glycosylation d'une protéine se fait par liaison covalente sur :",
+          "options": [
+            "l'asparagine exclusivement",
+            "la sérine ou la thréonine",
+            "la cystéine",
+            "l'arginine"
+          ],
+          "correct_index": 1,
+          "explanation": "Bravo ! La O-glycosylation concerne l'oxygène du groupement hydroxyle de la sérine ou de la thréonine, contrairement à la N-glycosylation qui concerne l'asparagine."
+        },
+        {
+          "question": "L'hydrolyse d'un oside correspond à :",
+          "options": [
+            "l'élimination d'une molécule d'eau",
+            "la rupture d'une liaison covalente par addition d'eau",
+            "une oxydoréduction",
+            "une réaction obligatoirement enzymatique"
+          ],
+          "correct_index": 1,
+          "explanation": "Exact ! L'hydrolyse rompt une liaison covalente grâce à l'ajout d'une molécule d'eau ; c'est la réaction inverse de la condensation qui a formé la liaison osidique."
+        },
+        {
+          "question": "Un lipide « simple » est, par définition, exclusivement composé de :",
+          "options": [
+            "C, H, O, N",
+            "C, H, N, S",
+            "C, H, O",
+            "C, H, O, P"
+          ],
+          "correct_index": 2,
+          "explanation": "Bien joué ! Un lipide simple ne comporte que du carbone, de l'hydrogène et de l'oxygène. Dès qu'un autre atome (N, P...) s'ajoute, on parle de lipide complexe."
+        },
+        {
+          "question": "Chimiquement, un lipide simple correspond à :",
+          "options": [
+            "un amide d'acide gras et d'amine",
+            "un éther d'acide gras et de glycérol",
+            "un anhydride mixte d'acides gras",
+            "un ester d'acide gras et d'alcool"
+          ],
+          "correct_index": 3,
+          "explanation": "Tout juste ! Un lipide simple est un ester formé entre un acide gras et un alcool ; le type d'alcool estérifié détermine ensuite la classe précise du lipide."
+        },
+        {
+          "question": "Un acide gras est une molécule amphipathique constituée :",
+          "options": [
+            "d'une queue hydrocarbonée et d'une fonction acide carboxylique terminale",
+            "de deux fonctions acide carboxylique aux deux extrémités",
+            "uniquement d'une chaîne hydrocarbonée saturée",
+            "d'une tête hydrophobe et d'une queue hydrophile"
+          ],
+          "correct_index": 0,
+          "explanation": "Exactement ! La queue hydrocarbonée est hydrophobe tandis que la fonction acide carboxylique terminale (-COOH) constitue la tête hydrophile."
+        },
+        {
+          "question": "Les acides gras naturels de l'organisme comportent typiquement :",
+          "options": [
+            "un nombre impair de carbones",
+            "toujours exactement 16 carbones",
+            "un nombre pair de carbones, de 4 à 24",
+            "un nombre pair de carbones, de 2 à 10"
+          ],
+          "correct_index": 2,
+          "explanation": "Bravo ! Les acides gras possèdent un nombre pair de carbones compris entre 4 et 24 (ex. acide butyrique en C4, acide palmitique en C16, acide stéarique en C18)."
+        },
+        {
+          "question": "Un acide gras est dit « saturé » lorsque :",
+          "options": [
+            "il comporte au moins une double liaison",
+            "il est entièrement soluble dans l'eau",
+            "il est d'origine exclusivement alimentaire",
+            "sa chaîne carbonée ne comporte aucune double liaison"
+          ],
+          "correct_index": 3,
+          "explanation": "Exact ! L'absence de double liaison définit un acide gras saturé ; la présence d'une ou plusieurs doubles liaisons définit au contraire un acide gras insaturé."
+        },
+        {
+          "question": "Dans la nomenclature ω d'un acide gras insaturé, on numérote la position de la première double liaison en partant :",
+          "options": [
+            "du carbone du carboxyle",
+            "du carbone méthyle terminal",
+            "du carbone α",
+            "du milieu de la chaîne"
+          ],
+          "correct_index": 1,
+          "explanation": "Bien vu ! La nomenclature ω part du méthyle terminal (dernier carbone), à l'inverse de la nomenclature Δ qui part du carboxyle : c'est ce qui définit les familles ω3 et ω6."
+        },
+        {
+          "question": "La notation 18:2 (Δ9,12) désigne un acide gras qui possède :",
+          "options": [
+            "2 carbones et 18 doubles liaisons",
+            "une seule double liaison, en position 9",
+            "18 carbones et 2 doubles liaisons, en positions 9 et 12",
+            "18 doubles liaisons réparties sur 2 carbones"
+          ],
+          "correct_index": 2,
+          "explanation": "Parfait ! Le premier nombre indique le nombre de carbones (18), le second le nombre de doubles liaisons (2), et les indices Δ précisent leur position depuis le carboxyle (ici l'acide linoléique)."
+        },
+        {
+          "question": "On qualifie un acide gras d'« essentiel » lorsque :",
+          "options": [
+            "il ne peut pas être synthétisé par l'organisme et doit être apporté par l'alimentation",
+            "il est indispensable à la formation des glycoprotéines",
+            "il s'agit obligatoirement d'un acide gras saturé",
+            "il constitue l'unique source d'énergie cellulaire"
+          ],
+          "correct_index": 0,
+          "explanation": "Exactement ! Les acides gras essentiels (comme certains ω3 et ω6) ne sont pas synthétisables par notre métabolisme : ils sont dits exogènes obligatoires."
+        },
+        {
+          "question": "En dehors de leur rôle énergétique et structural, les glucides peuvent aussi jouer un rôle de :",
+          "options": [
+            "catalyseur enzymatique exclusif",
+            "signal de reconnaissance cellulaire et de déterminant antigénique",
+            "support exclusif de l'information génétique",
+            "transporteur d'oxygène dans le sang"
+          ],
+          "correct_index": 1,
+          "explanation": "Bravo ! Les glucides, notamment via les glycoprotéines et glycolipides membranaires, participent à la communication intercellulaire comme signaux de reconnaissance et déterminants antigéniques."
+        }
+      ]
+    },
+    {
+      "id": "acides_amines_proteines",
+      "title": "Acides aminés et structure des protéines",
+      "difficulty": 2,
+      "intro": "Prêt·e à empiler les acides aminés comme des briques pour construire des protéines ? 🧱🧬",
+      "course": [
+        {
+          "icon": "🔬",
+          "title": "Structure générale d'un acide aminé",
+          "content": "Un acide aminé possède un carbone central, le carbone α, lié à quatre groupements : une fonction amine (-NH2), une fonction acide carboxylique (-COOH), un atome d'hydrogène, et une chaîne latérale R (le radical) qui varie d'un acide aminé à l'autre et détermine son identité. Sur les 21 acides aminés retrouvés dans les protéines, l'un d'eux, la sélénocystéine, est un dérivé sélénié de la méthionine, spécifique de certaines sélénoprotéines."
+        },
+        {
+          "icon": "⭐",
+          "title": "Ampholyte et zwitterion",
+          "content": "Un acide aminé est un ampholyte : il porte à la fois une fonction acide (le carboxyle) et une fonction basique (l'amine). À pH physiologique, il existe sous forme de zwitterion, c'est-à-dire qu'il porte deux charges opposées (-NH3+ et -COO-) pour une charge globale neutre. Certains acides aminés, comme l'histidine, portent en plus une fonction ionisable sur leur chaîne latérale et ne sont donc plus de simples zwitterions à pH physiologique."
+        },
+        {
+          "icon": "⭐",
+          "title": "Critères de classification des acides aminés",
+          "content": "Les acides aminés se classent selon l'encombrement stérique de la chaîne latérale (masse moléculaire moyenne d'environ 110 Da), sa polarité (apolaires/hydrophobes ou polaires/hydrophiles, neutres ou chargés), et la présence d'un cycle aromatique. Trois acides aminés (phénylalanine, tyrosine, tryptophane) absorbent les UV : la phénylalanine autour de 260 nm, la tyrosine et le tryptophane autour de 280 nm — ce qui permet de doser les protéines par spectrophotométrie à 280 nm (on préfère 260 nm pour les acides nucléiques)."
+        },
+        {
+          "icon": "🧠",
+          "title": "Acides aminés essentiels",
+          "content": "Les acides aminés essentiels ne peuvent pas être synthétisés par l'organisme humain et doivent être apportés par l'alimentation : leucine, thréonine, lysine, tryptophane, phénylalanine, valine, méthionine, isoleucine. L'histidine et l'arginine sont dits semi-essentiels."
+        },
+        {
+          "icon": "🔬",
+          "title": "La liaison peptidique",
+          "content": "La liaison peptidique unit le carboxyle d'un acide aminé à l'amine du suivant par une réaction de condensation, avec libération d'une molécule d'eau. Elle possède un caractère partiel de double liaison (résonance), ce qui la rend rigide (pas de libre rotation), plane (les quatre atomes de la liaison et les deux carbones α voisins sont coplanaires) et polaire. Une chaîne se lit toujours de l'extrémité N-terminale (amine libre) vers l'extrémité C-terminale (carboxyle libre)."
+        },
+        {
+          "icon": "⭐",
+          "title": "Structures secondaires : hélice α et feuillet β",
+          "content": "La structure secondaire décrit l'agencement tridimensionnel local d'un segment de chaîne, stabilisé par des liaisons hydrogène entre groupements de la liaison peptidique. L'hélice α est une structure périodique (3,6 résidus par tour) stabilisée par des liaisons hydrogène intracaténaires, les chaînes latérales étant orientées vers l'extérieur. Le feuillet β est formé de plusieurs brins reliés par des liaisons hydrogène interbrins, parallèles ou antiparallèles (ces dernières étant plus stables) ; les chaînes latérales de résidus consécutifs alternent de part et d'autre du plan du feuillet."
+        },
+        {
+          "icon": "⭐",
+          "title": "Structures tertiaire et quaternaire",
+          "content": "La structure tertiaire est le repliement tridimensionnel global d'une chaîne polypeptidique, organisée en domaines (unités structurales et fonctionnelles de 30 à 500 résidus), stabilisés par des liaisons faibles et par des liaisons covalentes comme les ponts disulfure entre cystéines. La structure quaternaire est l'assemblage de plusieurs chaînes polypeptidiques (sous-unités), identiques (homomère) ou différentes (hétéromère) ; un pont disulfure entre deux sous-unités distinctes est dit intercaténaire, par opposition à un pont intracaténaire au sein d'une même chaîne."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Piège classique",
+          "content": "Ne confondez pas domaine (notion structurale : ensemble organisé de structures secondaires ayant souvent une fonction propre) et sous-unité/monomère (notion liée à la continuité de la chaîne polypeptidique) : une sous-unité peut contenir plusieurs domaines de fonctions différentes. Attention aussi : le pont disulfure est une liaison covalente forte, alors que les liaisons hydrogène qui stabilisent surtout les structures secondaires sont des liaisons faibles."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Sur le carbone α d'un acide aminé standard sont fixés :",
+          "options": [
+            "une fonction amine, une fonction acide carboxylique, un hydrogène et une chaîne latérale R",
+            "deux fonctions amine et une fonction acide carboxylique",
+            "uniquement une chaîne latérale et un hydrogène",
+            "deux chaînes latérales différentes"
+          ],
+          "correct_index": 0,
+          "explanation": "Exactement ! Le carbone α porte ces quatre groupements ; c'est la nature de la chaîne latérale R qui distingue les différents acides aminés entre eux."
+        },
+        {
+          "question": "Le 21e acide aminé protéique, absent du tableau classique des 20 acides aminés, est :",
+          "options": [
+            "l'histidine",
+            "la sélénocystéine",
+            "l'hydroxyproline",
+            "la carnitine"
+          ],
+          "correct_index": 1,
+          "explanation": "Bravo ! La sélénocystéine, dérivé sélénié de la méthionine, n'est incorporée que dans les sélénoprotéines, ce qui explique qu'elle soit souvent oubliée."
+        },
+        {
+          "question": "Un acide aminé est qualifié de « zwitterion » car, à pH physiologique :",
+          "options": [
+            "il ne porte aucune charge",
+            "il porte deux charges de même signe",
+            "il porte deux charges opposées pour une charge globale nulle",
+            "il porte une seule charge positive"
+          ],
+          "correct_index": 2,
+          "explanation": "Tout juste ! La fonction amine protonée (-NH3+) et la fonction carboxyle déprotonée (-COO-) coexistent, donnant une charge globale neutre malgré la présence de charges locales."
+        },
+        {
+          "question": "La masse moléculaire moyenne d'un résidu d'acide aminé, à connaître par cœur, est d'environ :",
+          "options": [
+            "50 Da",
+            "250 Da",
+            "500 Da",
+            "110 Da"
+          ],
+          "correct_index": 3,
+          "explanation": "Exact ! Cette valeur de 110 Da permet d'estimer rapidement le nombre de résidus d'une protéine à partir de sa masse moléculaire, ou inversement."
+        },
+        {
+          "question": "Parmi les acides aminés suivants, lequel absorbe la lumière UV vers 260 nm alors que la tyrosine et le tryptophane absorbent plutôt vers 280 nm ?",
+          "options": [
+            "la phénylalanine",
+            "la glycine",
+            "la lysine",
+            "l'alanine"
+          ],
+          "correct_index": 0,
+          "explanation": "Bien vu ! La phénylalanine, la tyrosine et le tryptophane sont les trois acides aminés aromatiques capables d'absorber dans l'UV, chacun avec un maximum d'absorption légèrement différent."
+        },
+        {
+          "question": "Le dosage d'une protéine par spectrophotométrie se fait classiquement à une longueur d'onde de :",
+          "options": [
+            "260 nm",
+            "280 nm",
+            "340 nm",
+            "220 nm"
+          ],
+          "correct_index": 1,
+          "explanation": "Exactement ! Une protéine contenant en général plusieurs résidus aromatiques, l'absorption à 280 nm permet de la détecter et de la quantifier facilement."
+        },
+        {
+          "question": "Parmi les propositions suivantes concernant la glycine, laquelle est exacte ?",
+          "options": [
+            "C'est un acide aminé aromatique",
+            "C'est un acide aminé essentiel",
+            "Sa chaîne latérale est un simple atome d'hydrogène, elle est apolaire mais n'est pas considérée comme hydrophobe",
+            "Elle porte une charge négative à pH physiologique"
+          ],
+          "correct_index": 2,
+          "explanation": "Bravo, c'est un piège classique ! La glycine a la chaîne latérale la plus simple (un hydrogène) : elle est apolaire par défaut de polarité, mais on ne la classe pas parmi les acides aminés hydrophobes."
+        },
+        {
+          "question": "Parmi les acides aminés suivants, lequel est considéré comme semi-essentiel ?",
+          "options": [
+            "la lysine",
+            "le tryptophane",
+            "la valine",
+            "l'histidine"
+          ],
+          "correct_index": 3,
+          "explanation": "Exact ! L'histidine (avec l'arginine) est semi-essentielle, contrairement à la lysine, au tryptophane et à la valine qui figurent parmi les huit acides aminés essentiels stricts."
+        },
+        {
+          "question": "La liaison peptidique se forme par une réaction de :",
+          "options": [
+            "condensation, avec libération d'une molécule d'eau",
+            "oxydoréduction",
+            "hydrolyse",
+            "phosphorylation"
+          ],
+          "correct_index": 0,
+          "explanation": "Tout juste ! La condensation entre le carboxyle d'un acide aminé et l'amine du suivant libère une molécule d'eau ; la réaction inverse (hydrolyse) romprait la liaison peptidique."
+        },
+        {
+          "question": "Le caractère de double liaison partielle de la liaison peptidique lui confère les propriétés suivantes, SAUF une. Laquelle ?",
+          "options": [
+            "rigidité (pas de libre rotation)",
+            "grande flexibilité rotationnelle",
+            "planéité",
+            "polarité"
+          ],
+          "correct_index": 1,
+          "explanation": "Bien vu, c'est l'inverse qui est vrai ! La délocalisation électronique fige au contraire la liaison peptidique : elle est rigide, plane et polaire, mais absolument pas flexible."
+        },
+        {
+          "question": "Par convention, une chaîne polypeptidique est toujours représentée depuis :",
+          "options": [
+            "l'extrémité C-terminale vers l'extrémité N-terminale",
+            "le milieu de la chaîne vers les deux extrémités",
+            "l'extrémité N-terminale vers l'extrémité C-terminale",
+            "le carbone α le plus encombré vers le moins encombré"
+          ],
+          "correct_index": 2,
+          "explanation": "Exactement ! Le sens N-ter vers C-ter (NH2 → COOH) est la convention universelle de lecture et d'écriture d'une séquence peptidique."
+        },
+        {
+          "question": "L'hélice α est une structure secondaire stabilisée par :",
+          "options": [
+            "des ponts disulfure exclusivement",
+            "des liaisons hydrogène intracaténaires entre groupements de la liaison peptidique",
+            "des interactions hydrophobes uniquement",
+            "des liaisons ioniques entre chaînes latérales"
+          ],
+          "correct_index": 1,
+          "explanation": "Bravo ! Ce sont les liaisons hydrogène formées entre les groupements C=O et N-H de la liaison peptidique, au sein d'une même chaîne, qui maintiennent la structure en hélice."
+        },
+        {
+          "question": "Le nombre de résidus d'acides aminés par tour de l'hélice α est d'environ :",
+          "options": [
+            "3,6",
+            "2",
+            "5",
+            "10"
+          ],
+          "correct_index": 0,
+          "explanation": "Exact ! Il y a 3,6 résidus par tour de spire dans l'hélice α, avec un pas d'hélice d'environ 5,4 Å."
+        },
+        {
+          "question": "Dans un feuillet β, les liaisons hydrogène qui stabilisent la structure se forment :",
+          "options": [
+            "entre les chaînes latérales de résidus consécutifs",
+            "entre groupements de la liaison peptidique de brins différents",
+            "entre les carbones α de résidus consécutifs",
+            "uniquement au sein d'un même brin"
+          ],
+          "correct_index": 1,
+          "explanation": "Bien vu ! Contrairement à l'hélice α, les liaisons hydrogène du feuillet β relient les groupements de la liaison peptidique de brins différents (interbrins)."
+        },
+        {
+          "question": "Concernant les feuillets β, quelle proposition est exacte ?",
+          "options": [
+            "Les feuillets antiparallèles sont moins stables que les parallèles",
+            "Un feuillet ne peut jamais être mixte",
+            "Les feuillets antiparallèles sont plus stables que les parallèles",
+            "Les chaînes latérales sont toutes orientées du même côté du plan"
+          ],
+          "correct_index": 2,
+          "explanation": "Exactement ! Les feuillets antiparallèles, dont la géométrie des liaisons hydrogène est optimale, sont plus stables que les feuillets parallèles ; il existe aussi des feuillets mixtes."
+        },
+        {
+          "question": "Un domaine protéique, unité fondamentale de la structure tertiaire, correspond en général à une région d'environ :",
+          "options": [
+            "5 à 10 acides aminés",
+            "1000 à 2000 acides aminés",
+            "exactement 110 acides aminés",
+            "30 à 500 acides aminés"
+          ],
+          "correct_index": 3,
+          "explanation": "Bravo ! Un domaine forme une unité structurale et fonctionnelle compacte, de taille intermédiaire entre celle d'une structure secondaire et celle d'une sous-unité entière."
+        },
+        {
+          "question": "Un pont disulfure formé entre deux cystéines appartenant à deux chaînes polypeptidiques différentes est qualifié de :",
+          "options": [
+            "intercaténaire",
+            "intracaténaire",
+            "covalent faible",
+            "réversible"
+          ],
+          "correct_index": 0,
+          "explanation": "Exact ! On parle de pont intercaténaire lorsqu'il relie deux chaînes différentes (structure quaternaire), et de pont intracaténaire lorsqu'il relie deux cystéines d'une même chaîne."
+        },
+        {
+          "question": "Une protéine formée de l'assemblage de 4 sous-unités polypeptidiques identiques est appelée :",
+          "options": [
+            "un hétérodimère",
+            "un homotétramère",
+            "un monomère",
+            "un hétérotétramère"
+          ],
+          "correct_index": 1,
+          "explanation": "Tout juste ! Le préfixe homo- indique des sous-unités identiques et tétra- qu'elles sont au nombre de quatre : c'est un homotétramère."
+        }
+      ]
+    },
+    {
+      "id": "enzymologie",
+      "title": "Enzymologie : catalyse, cinétique et inhibition",
+      "difficulty": 3,
+      "intro": "Accroche-toi, on plonge dans la cinétique enzymatique : Km, Vmax et compagnie n'auront plus de secrets ! ⚗️📈",
+      "course": [
+        {
+          "icon": "🔬",
+          "title": "Qu'est-ce qu'une enzyme ?",
+          "content": "Une enzyme est une protéine qui catalyse une réaction chimique, c'est-à-dire qu'elle accélère (ou rend possible) une réaction dans des conditions physiologiques (37°C, pression atmosphérique, pH neutre). Elle se caractérise par un immense pouvoir catalytique, une grande spécificité vis-à-vis de son substrat, et une capacité de régulation de son activité selon les besoins de la cellule."
+        },
+        {
+          "icon": "⭐",
+          "title": "Catalyse : un effet cinétique, pas thermodynamique",
+          "content": "La catalyse enzymatique accélère l'atteinte de l'équilibre réactionnel (effet cinétique) mais ne déplace jamais cet équilibre : l'enzyme ne modifie pas la thermodynamique de la réaction. Elle agit en abaissant l'enthalpie libre d'activation, c'est-à-dire la barrière énergétique à franchir pour passer du substrat au produit."
+        },
+        {
+          "icon": "🔬",
+          "title": "Classification des enzymes et cofacteurs",
+          "content": "Les enzymes sont réparties en 7 classes selon le type de réaction catalysée, numérotées de 1 à 7 : oxydoréductases, transférases, hydrolases, lyases, isomérases, ligases, translocases (nomenclature EC à 4 chiffres, ex. EC 3.1.1.3). Certaines enzymes nécessitent un cofacteur pour être actives : sans lui, on parle d'apoenzyme (inactive) ; avec lui, d'holoenzyme (active). Les cofacteurs organiques (coenzymes) se distinguent en co-substrats (liaison faible, dissociable) et groupements prosthétiques (liaison covalente)."
+        },
+        {
+          "icon": "➗",
+          "title": "Modèle de Michaelis-Menten et courbes",
+          "content": "Le modèle de Michaelis-Menten décrit la réaction E + S ⇌ ES → E + P, avec les constantes de vitesse k1, k-1 et k2. La courbe primaire représente [P] = f(t) pour une concentration de substrat donnée (phase pré-stationnaire courte, puis phase stationnaire où la vitesse est linéaire, puis plateau à l'équilibre). La courbe secondaire représente la vitesse initiale Vi = f([S]) : c'est une hyperbole qui tend vers un plateau, la Vmax, atteinte à concentration saturante de substrat (environ 10 × Km)."
+        },
+        {
+          "icon": "➗",
+          "title": "Km, kcat et efficacité catalytique",
+          "content": "Le Km (constante de Michaelis) est la concentration de substrat pour laquelle v = Vmax/2 ; c'est un reflet de l'affinité enzyme-substrat, indépendant des concentrations d'enzyme et de substrat : plus le Km est faible, plus l'affinité est grande. Le kcat (constante catalytique) est le nombre de molécules de produit formées par molécule d'enzyme et par unité de temps à saturation en substrat (Vmax = kcat × [E]totale). Le rapport kcat/Km, appelé efficacité catalytique, permet de comparer différents couples enzyme-substrat lorsque [S] << Km."
+        },
+        {
+          "icon": "🔬",
+          "title": "Le site actif",
+          "content": "Le site actif regroupe le site de liaison (fixation du substrat) et le site catalytique (transformation du substrat), pouvant être confondus ou distincts selon les enzymes. Deux modèles expliquent la fixation du substrat : le modèle clé-serrure de Fischer (complémentarité rigide préexistante) et le modèle de l'ajustement induit de Koshland (remodelage du site actif lors de l'interaction, plus réaliste). Le site actif ne représente qu'une faible fraction du volume de l'enzyme et ne forme que des liaisons faibles (non covalentes) avec le substrat."
+        },
+        {
+          "icon": "⭐",
+          "title": "Les inhibiteurs réversibles",
+          "content": "L'inhibiteur compétitif se fixe sur le site de liaison du substrat, sur l'enzyme libre : il augmente le Km apparent (affinité apparente diminuée) sans changer la Vmax ; son effet est levé par excès de substrat. L'inhibiteur non compétitif se fixe sur un site distinct, sur l'enzyme libre ou sur le complexe ES : il diminue la Vmax apparente sans changer le Km. L'inhibiteur incompétitif se fixe uniquement sur le complexe ES : il diminue à la fois le Km apparent (affinité apparente augmentée) et la Vmax apparente."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Piège classique",
+          "content": "Ne confondez pas l'inhibition réversible (liaisons faibles, levée possible par dialyse, installation rapide) et l'inhibition irréversible (liaison covalente, complexe indissociable, installation lente sur plusieurs minutes — exemple : l'aspirine). Attention aussi : un Km faible signifie une AFFINITÉ FORTE, et la Vmax dépend de la concentration totale d'enzyme, contrairement au Km qui en est indépendant."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Une enzyme agit sur la réaction qu'elle catalyse en modifiant :",
+          "options": [
+            "l'équilibre thermodynamique de la réaction",
+            "uniquement la stœchiométrie de la réaction",
+            "la vitesse (cinétique) de la réaction, sans modifier son équilibre",
+            "la spontanéité de la réaction"
+          ],
+          "correct_index": 2,
+          "explanation": "Exactement ! Une enzyme est un catalyseur cinétique : elle accélère l'atteinte de l'équilibre mais ne déplace jamais cet équilibre thermodynamique."
+        },
+        {
+          "question": "La catalyse enzymatique augmente la vitesse de réaction en :",
+          "options": [
+            "augmentant la concentration de substrat",
+            "déplaçant l'équilibre vers les produits",
+            "augmentant l'enthalpie libre d'activation",
+            "diminuant l'enthalpie libre d'activation"
+          ],
+          "correct_index": 3,
+          "explanation": "Bravo ! En abaissant la barrière énergétique (enthalpie libre d'activation) à franchir, l'enzyme rend la transformation du substrat en produit beaucoup plus rapide."
+        },
+        {
+          "question": "Le numéro EC 3.1.1.3 indique que l'enzyme correspondante appartient à la classe des :",
+          "options": [
+            "hydrolases",
+            "transférases",
+            "isomérases",
+            "ligases"
+          ],
+          "correct_index": 0,
+          "explanation": "Tout juste ! Le premier chiffre de la nomenclature EC donne la classe : ici 3 correspond aux hydrolases (exemple donné en cours : la triacylglycérol lipase)."
+        },
+        {
+          "question": "Parmi les classes suivantes, laquelle correspond aux réactions de transfert de groupement utilisant de l'énergie (ex. ATP) ?",
+          "options": [
+            "les hydrolases",
+            "les ligases (synthétases)",
+            "les lyases",
+            "les oxydoréductases"
+          ],
+          "correct_index": 1,
+          "explanation": "Exact ! Les ligases (ou synthétases), classe 6, couplent le transfert d'un groupement à la consommation d'énergie, typiquement issue de l'ATP."
+        },
+        {
+          "question": "Une enzyme dépourvue de son cofacteur, donc inactive, est appelée :",
+          "options": [
+            "une holoenzyme",
+            "une coenzyme",
+            "une apoenzyme",
+            "une isoenzyme"
+          ],
+          "correct_index": 2,
+          "explanation": "Bien vu ! L'apoenzyme est la chaîne peptidique seule, inactive ; elle devient une holoenzyme active une fois associée à son cofacteur."
+        },
+        {
+          "question": "Un cofacteur organique lié à l'enzyme par une liaison covalente est appelé :",
+          "options": [
+            "un co-substrat",
+            "un ion métallique",
+            "une holoenzyme",
+            "un groupement prosthétique"
+          ],
+          "correct_index": 3,
+          "explanation": "Exactement ! Le groupement prosthétique est fixé de façon covalente et stable, à la différence du co-substrat qui ne forme que des liaisons faibles, aisément dissociables."
+        },
+        {
+          "question": "Dans le modèle de Michaelis-Menten E + S ⇌ ES → E + P, la constante k2 correspond à :",
+          "options": [
+            "la constante de vitesse de formation du produit à partir du complexe ES",
+            "la constante de dissociation du complexe ES en E + S",
+            "la constante de formation du complexe ES",
+            "la constante de la réaction retour de P vers ES"
+          ],
+          "correct_index": 0,
+          "explanation": "Bravo ! k2 est la constante de vitesse de la transformation du complexe ES en produit P avec régénération de l'enzyme E."
+        },
+        {
+          "question": "Sur la courbe primaire [P] = f(t), la phase stationnaire correspond à :",
+          "options": [
+            "l'équilibre final de la réaction",
+            "une augmentation linéaire de la concentration de produit, la réaction retour étant négligeable",
+            "la phase la plus courte, souvent négligée",
+            "une diminution de la concentration de substrat vers zéro"
+          ],
+          "correct_index": 1,
+          "explanation": "Exact ! C'est pendant cette phase stationnaire, où la vitesse de formation de produit est constante, que le modèle de Michaelis-Menten étudie la cinétique enzymatique."
+        },
+        {
+          "question": "La courbe secondaire Vi = f([S]) a la forme d'une :",
+          "options": [
+            "droite passant par l'origine",
+            "sinusoïde",
+            "hyperbole tendant vers un plateau",
+            "parabole"
+          ],
+          "correct_index": 2,
+          "explanation": "Tout juste ! La vitesse initiale augmente avec [S] sans proportionnalité directe, jusqu'à atteindre un plateau (Vmax) : c'est une hyperbole caractéristique."
+        },
+        {
+          "question": "La Vmax d'une réaction enzymatique est atteinte lorsque :",
+          "options": [
+            "la concentration de substrat est nulle",
+            "le Km est égal à zéro",
+            "la concentration d'enzyme est nulle",
+            "la concentration de substrat est saturante, toutes les enzymes étant sous forme de complexe ES"
+          ],
+          "correct_index": 3,
+          "explanation": "Bien vu ! À saturation, la totalité de l'enzyme est engagée dans le complexe ES, ce qui rend la vitesse indépendante de toute augmentation supplémentaire de [S]."
+        },
+        {
+          "question": "Le Km d'une enzyme pour son substrat est défini comme :",
+          "options": [
+            "la concentration de substrat pour laquelle v = Vmax/2",
+            "la vitesse maximale de la réaction",
+            "le nombre de tours catalytiques par seconde",
+            "la concentration d'enzyme totale"
+          ],
+          "correct_index": 0,
+          "explanation": "Exactement ! Cette définition permet de déterminer graphiquement le Km par simple lecture de l'abscisse correspondant à la demi-saturation."
+        },
+        {
+          "question": "Plus le Km d'un couple enzyme-substrat est faible, plus :",
+          "options": [
+            "l'affinité de l'enzyme pour son substrat est faible",
+            "l'affinité de l'enzyme pour son substrat est grande",
+            "la Vmax est élevée",
+            "la kcat est faible"
+          ],
+          "correct_index": 1,
+          "explanation": "Bravo ! Km et affinité sont inversement proportionnels : un faible Km signifie qu'une faible concentration de substrat suffit à atteindre la moitié de la vitesse maximale."
+        },
+        {
+          "question": "La relation liant la Vmax, le kcat et la concentration totale d'enzyme est :",
+          "options": [
+            "Vmax = Km × [E]tot",
+            "Vmax = kcat / [E]tot",
+            "Vmax = kcat × [E]tot",
+            "Vmax = kcat + [E]tot"
+          ],
+          "correct_index": 2,
+          "explanation": "Exact ! Vmax est directement proportionnelle à la concentration totale d'enzyme, le facteur de proportionnalité étant la constante catalytique kcat."
+        },
+        {
+          "question": "L'efficacité catalytique d'une enzyme, utilisée pour comparer différents couples enzyme-substrat, est donnée par le rapport :",
+          "options": [
+            "Vmax/Km",
+            "Km/kcat",
+            "Vmax × Km",
+            "kcat/Km"
+          ],
+          "correct_index": 3,
+          "explanation": "Tout juste ! Le rapport kcat/Km combine performance catalytique et affinité, ce qui en fait un excellent critère de comparaison entre couples enzyme-substrat."
+        },
+        {
+          "question": "Dans la représentation de Lineweaver-Burk (double inverse), la droite obtenue coupe l'axe des ordonnées en :",
+          "options": [
+            "1/Vmax",
+            "Km",
+            "-1/Km",
+            "Vmax"
+          ],
+          "correct_index": 0,
+          "explanation": "Bien vu ! La représentation double inverse trace 1/v en fonction de 1/[S] ; l'ordonnée à l'origine vaut 1/Vmax et l'abscisse à l'origine vaut -1/Km."
+        },
+        {
+          "question": "Le modèle de l'ajustement induit de Koshland propose que :",
+          "options": [
+            "le substrat s'emboîte parfaitement dans un site actif rigide et préformé",
+            "le site actif se remodèle lors de l'interaction avec le substrat pour permettre sa fixation",
+            "l'enzyme et le substrat ne forment jamais de liaisons",
+            "le site actif représente la totalité du volume de l'enzyme"
+          ],
+          "correct_index": 1,
+          "explanation": "Exactement ! Contrairement au modèle clé-serrure de Fischer (rigide), Koshland propose un remodelage moléculaire du site actif au moment de la fixation du substrat."
+        },
+        {
+          "question": "Un inhibiteur compétitif se fixe :",
+          "options": [
+            "uniquement sur le complexe enzyme-substrat",
+            "sur un site distinct du site de liaison du substrat",
+            "sur le site de liaison du substrat, sur l'enzyme libre",
+            "de façon covalente sur l'enzyme"
+          ],
+          "correct_index": 2,
+          "explanation": "Bravo ! L'inhibiteur compétitif entre en compétition directe avec le substrat pour le même site de liaison sur l'enzyme libre."
+        },
+        {
+          "question": "En présence d'un inhibiteur compétitif, comparé à l'enzyme seule :",
+          "options": [
+            "la Vmax diminue et le Km augmente",
+            "la Vmax diminue et le Km reste inchangé",
+            "la Vmax et le Km restent tous deux inchangés",
+            "la Vmax reste inchangée et le Km apparent augmente"
+          ],
+          "correct_index": 3,
+          "explanation": "Exact ! L'inhibition compétitive peut être levée par un excès de substrat, ce qui explique que la Vmax reste atteignable, seul le Km apparent augmentant (affinité apparente diminuée)."
+        },
+        {
+          "question": "Un inhibiteur non compétitif se caractérise par :",
+          "options": [
+            "une Vmax apparente diminuée et un Km inchangé",
+            "un Km apparent augmenté et une Vmax inchangée",
+            "un Km apparent diminué et une Vmax augmentée",
+            "l'absence de tout effet sur la cinétique enzymatique"
+          ],
+          "correct_index": 0,
+          "explanation": "Tout juste ! L'inhibiteur non compétitif ralentit l'enzyme sans modifier son affinité pour le substrat : la Vmax apparente diminue, le Km reste identique."
+        },
+        {
+          "question": "Un inhibiteur irréversible, comme l'aspirine sur certaines enzymes, se distingue d'un inhibiteur réversible car :",
+          "options": [
+            "il ne forme que des liaisons faibles avec l'enzyme",
+            "il forme une liaison covalente avec l'enzyme, rendant le complexe indissociable",
+            "son action est immédiate, en quelques millisecondes",
+            "il peut être séparé de l'enzyme par dialyse"
+          ],
+          "correct_index": 1,
+          "explanation": "Bravo ! L'inhibition irréversible repose sur une liaison covalente enzyme-inhibiteur, indissociable, et s'installe lentement (plusieurs minutes), à l'inverse de l'inhibition réversible."
+        }
+      ]
+    },
+    {
+      "id": "expression_genome_biologie_moleculaire",
+      "title": "Expression du génome et méthodes de biologie moléculaire",
+      "difficulty": 3,
+      "intro": "De l'ADN à la protéine, puis retour au labo pour observer tout ça : suis le fil sans perdre le cadre de lecture ! 🧫🔬",
+      "course": [
+        {
+          "icon": "🔬",
+          "title": "Le nucléotide, brique des acides nucléiques",
+          "content": "Un nucléotide est composé de trois éléments : une base azotée, un sucre en C5 (le désoxyribose dans l'ADN, le ribose dans l'ARN) et un groupement phosphate. Les bases puriques (adénine, guanine) possèdent un double cycle ; les bases pyrimidiques (cytosine, thymine, uracile) un seul cycle. La thymine est exclusive à l'ADN, l'uracile exclusif à l'ARN. Les bases s'apparient par liaisons hydrogène : guanine-cytosine (3 liaisons hydrogène) et adénine-thymine ou adénine-uracile (2 liaisons hydrogène)."
+        },
+        {
+          "icon": "⭐",
+          "title": "La double hélice d'ADN",
+          "content": "L'ADN est formé de deux brins antiparallèles et complémentaires, enroulés en double hélice droite, stabilisée par les liaisons hydrogène entre bases appariées et par des interactions hydrophobes. Un tour d'hélice mesure environ 34 Å de haut, comporte 10 paires de bases, pour un diamètre de 20 Å. Au sein d'un même brin, les nucléotides sont reliés par des liaisons phosphodiester entre le carbone 3' d'un sucre et le phosphate porté par le carbone 5' du suivant."
+        },
+        {
+          "icon": "🔬",
+          "title": "La transcription : de l'ADN à l'ARN pré-messager",
+          "content": "La transcription se déroule dans le noyau en 4 étapes. L'initiation implique la fixation de facteurs de transcription sur la séquence promotrice (TATA box, îlots CpG) qui recrutent l'ARN polymérase II. L'élongation se fait toujours dans le sens 5'→3' à partir du brin matrice (antisens), produisant un ARN de séquence identique au brin codant (sens), à ceci près que la thymine est remplacée par l'uracile. La terminaison a lieu au niveau du signal AATAAA, qui déclenche le clivage et l'ajout d'une queue poly-A par la poly-A polymérase (PAP), stabilisée par les protéines PABP."
+        },
+        {
+          "icon": "⭐",
+          "title": "La maturation de l'ARN : coiffe et épissage",
+          "content": "La maturation transforme l'ARN pré-messager, instable, en ARNm mature. Elle comprend l'ajout d'une coiffe de guanosine méthylée en 5' (stabilisation et reconnaissance par le ribosome) et l'épissage, réalisé par le spliceosome, qui élimine les introns (séquences non codantes) et rassemble les exons (séquences codantes). L'épissage alternatif permet à un même gène de produire plusieurs ARNm matures différents."
+        },
+        {
+          "icon": "➗",
+          "title": "La traduction et le code génétique",
+          "content": "La traduction a lieu dans le cytosol, sur les ribosomes, et permet de synthétiser une protéine à partir de l'ARNm. Le code génétique est lu par triplets de nucléotides (codons) ; il est dégénéré (64 codons pour 20 acides aminés, un acide aminé pouvant être codé par plusieurs codons) mais non ambigu (un codon ne code jamais qu'un seul acide aminé). Le codon AUG initie la traduction (méthionine) ; UAA, UAG et UGA sont des codons stop. Le ribosome possède trois sites : A (accueil d'un nouvel ARNt-aminoacyl), P (portage de la chaîne peptidique en formation) et E (sortie de l'ARNt déchargé)."
+        },
+        {
+          "icon": "⭐",
+          "title": "Mutations et systèmes de réparation",
+          "content": "Une mutation peut être une insertion, une délétion ou un mésappariement (transition : purine-purine ou pyrimidine-pyrimidine ; transversion : purine-pyrimidine). Selon son effet sur la protéine, elle peut être silencieuse (même acide aminé), faux-sens (acide aminé différent) ou non-sens (codon stop prématuré, protéine tronquée). Trois systèmes de réparation principaux corrigent ces erreurs : le MMR (mismatch repair, mésappariements de réplication), le NER (nucleotide excision repair, dimères de thymine et grosses lésions), et le BER (base excision repair, bases désaminées, via une ADN glycosylase)."
+        },
+        {
+          "icon": "🔬",
+          "title": "Techniques d'étude : hybridation, électrophorèse et blots",
+          "content": "L'hybridation exploite la complémentarité des bases entre une sonde marquée (radioactive ou fluorescente) et une séquence cible simple brin, après dénaturation de l'ADN double brin (chaleur, pH acide, solvants organiques). L'électrophorèse sur gel d'agarose sépare les fragments d'ADN selon leur taille (migration vers l'anode, révélation au bromure d'éthidium, non spécifique). Le Southern blot détecte spécifiquement une séquence d'ADN d'intérêt après digestion enzymatique, électrophorèse, transfert sur membrane puis hybridation avec une sonde ; le Northern blot fait de même pour l'ARN, sans digestion enzymatique préalable et en conditions dénaturantes."
+        },
+        {
+          "icon": "➗",
+          "title": "PCR, RT-PCR, PCR-RFLP et séquençage de Sanger",
+          "content": "La PCR amplifie exponentiellement une séquence d'ADN cible (×2 par cycle) grâce à une ADN polymérase, deux amorces (forward et reverse) délimitant la région, et un cycle en 3 étapes : dénaturation (95°C), hybridation des amorces (50-60°C) et élongation (72°C). La RT-PCR ajoute une étape préalable de reverse transcription pour obtenir un ADNc à partir d'un ARN matrice. La PCR-RFLP utilise des enzymes de restriction pour détecter une mutation ponctuelle connue en comparant les profils de digestion. Le séquençage de Sanger utilise des ddNTP marqués, dépourvus du groupement 3'-OH, qui interrompent la synthèse dès leur incorporation, permettant de reconstituer la séquence nucléotidique."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Un nucléotide est composé de trois constituants : une base azotée, un sucre et :",
+          "options": [
+            "un groupement phosphate",
+            "un acide aminé",
+            "une chaîne latérale",
+            "une molécule d'eau"
+          ],
+          "correct_index": 0,
+          "explanation": "Exactement ! Base azotée + sucre en C5 + phosphate forment un nucléotide, l'unité de base des acides nucléiques."
+        },
+        {
+          "question": "La base azotée exclusivement présente dans l'ARN (et absente de l'ADN) est :",
+          "options": [
+            "la thymine",
+            "l'uracile",
+            "la guanine",
+            "l'adénine"
+          ],
+          "correct_index": 1,
+          "explanation": "Bravo ! L'uracile remplace la thymine dans l'ARN ; à l'inverse, la thymine est exclusive à l'ADN."
+        },
+        {
+          "question": "L'appariement entre guanine et cytosine se fait grâce à :",
+          "options": [
+            "2 liaisons hydrogène",
+            "1 liaison covalente",
+            "3 liaisons hydrogène",
+            "une liaison phosphodiester"
+          ],
+          "correct_index": 2,
+          "explanation": "Tout juste ! G-C forme 3 liaisons hydrogène, contre seulement 2 pour A-T ou A-U, ce qui rend les régions riches en GC plus stables thermiquement."
+        },
+        {
+          "question": "Les deux brins de la double hélice d'ADN sont :",
+          "options": [
+            "identiques et parallèles",
+            "complémentaires et parallèles",
+            "identiques et antiparallèles",
+            "complémentaires et antiparallèles"
+          ],
+          "correct_index": 3,
+          "explanation": "Exact ! Les deux brins sont complémentaires (appariement des bases) et antiparallèles (l'extrémité 5' de l'un fait face à l'extrémité 3' de l'autre)."
+        },
+        {
+          "question": "Dans un tour de l'hélice d'ADN, on compte environ :",
+          "options": [
+            "10 paires de bases",
+            "3,6 paires de bases",
+            "20 paires de bases",
+            "34 paires de bases"
+          ],
+          "correct_index": 0,
+          "explanation": "Bien vu ! Un tour d'hélice comporte environ 10 paires de bases, pour une hauteur de 34 Å et un diamètre de 20 Å."
+        },
+        {
+          "question": "Au cours de la transcription, l'ARN polymérase II synthétise le nouvel ARN dans le sens :",
+          "options": [
+            "3' vers 5'",
+            "5' vers 3'",
+            "indifféremment dans les deux sens",
+            "du milieu vers les deux extrémités"
+          ],
+          "correct_index": 1,
+          "explanation": "Exactement ! L'élongation se fait toujours dans le sens 5'→3', comme pour toutes les polymérases (ADN ou ARN polymérases)."
+        },
+        {
+          "question": "Le brin d'ADN qui est physiquement lu (transcrit) par l'ARN polymérase est appelé :",
+          "options": [
+            "le brin sens ou brin codant",
+            "le brin non transcrit",
+            "le brin matrice ou brin antisens",
+            "le brin poly-A"
+          ],
+          "correct_index": 2,
+          "explanation": "Bravo ! Le brin matrice (antisens) sert de modèle à la lecture, produisant un ARN dont la séquence est identique au brin sens (codant), sauf T remplacée par U."
+        },
+        {
+          "question": "La terminaison de la transcription est déclenchée par la reconnaissance, sur le brin sens, de la séquence :",
+          "options": [
+            "TATA box",
+            "séquence Kozak",
+            "codon AUG",
+            "AATAAA"
+          ],
+          "correct_index": 3,
+          "explanation": "Exact ! Le signal AATAAA déclenche le recrutement d'une endonucléase puis de la poly-A polymérase pour terminer et stabiliser le transcrit."
+        },
+        {
+          "question": "L'ajout de la queue poly-A à l'extrémité 3' de l'ARNm est réalisé par :",
+          "options": [
+            "la poly-A polymérase (PAP)",
+            "l'ARN polymérase II",
+            "le spliceosome",
+            "la reverse transcriptase"
+          ],
+          "correct_index": 0,
+          "explanation": "Tout juste ! La PAP ajoute une succession d'adénines en 3', queue qui sera ensuite protégée par les protéines PABP."
+        },
+        {
+          "question": "L'épissage de l'ARN pré-messager consiste à :",
+          "options": [
+            "ajouter une coiffe de guanosine en 5'",
+            "éliminer les introns et rassembler les exons",
+            "ajouter une queue poly-A en 3'",
+            "initier la traduction sur le ribosome"
+          ],
+          "correct_index": 1,
+          "explanation": "Bravo ! L'épissage, réalisé par le spliceosome, retire les introns non codants et assemble les exons codants pour former l'ARNm mature."
+        },
+        {
+          "question": "Le codon AUG a la particularité de :",
+          "options": [
+            "être un codon stop",
+            "coder pour la glycine",
+            "initier la traduction en codant pour une méthionine",
+            "ne jamais apparaître dans un ARNm mature"
+          ],
+          "correct_index": 2,
+          "explanation": "Exactement ! AUG est le codon START universel, reconnu en premier par le ribosome, et code pour une méthionine initiatrice."
+        },
+        {
+          "question": "On dit que le code génétique est « dégénéré » car :",
+          "options": [
+            "un codon peut coder plusieurs acides aminés différents",
+            "certains acides aminés ne sont codés par aucun codon",
+            "le cadre de lecture peut varier librement",
+            "plusieurs codons différents peuvent coder le même acide aminé"
+          ],
+          "correct_index": 3,
+          "explanation": "Bien vu ! Avec 64 codons possibles pour seulement 20 acides aminés, la dégénérescence signifie qu'un même acide aminé peut être codé par plusieurs codons — mais un codon donné ne code jamais qu'un seul acide aminé."
+        },
+        {
+          "question": "Sur le ribosome, le site qui porte l'ARNt relié à la chaîne polypeptidique en cours de formation est le site :",
+          "options": [
+            "P",
+            "A",
+            "E",
+            "T"
+          ],
+          "correct_index": 0,
+          "explanation": "Exact ! Le site P (pour Porte/Peptidyl) retient l'ARNt lié à la chaîne peptidique naissante, tandis que le site A accueille le nouvel ARNt et le site E permet la sortie de l'ARNt déchargé."
+        },
+        {
+          "question": "Une mutation qui remplace un nucléotide sans changer l'acide aminé codé, grâce à la dégénérescence du code génétique, est dite :",
+          "options": [
+            "faux-sens",
+            "silencieuse",
+            "non-sens",
+            "une transversion obligatoire"
+          ],
+          "correct_index": 1,
+          "explanation": "Tout juste ! La mutation silencieuse ne modifie pas la protéine produite, car le nouveau codon code encore pour le même acide aminé."
+        },
+        {
+          "question": "Une mutation qui fait apparaître un codon stop prématuré, aboutissant à une protéine tronquée, est dite :",
+          "options": [
+            "silencieuse",
+            "faux-sens",
+            "non-sens",
+            "synonyme"
+          ],
+          "correct_index": 2,
+          "explanation": "Bravo ! La mutation non-sens introduit un codon stop là où il n'y en avait pas, interrompant prématurément la traduction et produisant une protéine tronquée."
+        },
+        {
+          "question": "Le système de réparation principalement impliqué dans la correction des dimères de thymine est :",
+          "options": [
+            "le MMR",
+            "le BER",
+            "la reverse transcription",
+            "le NER"
+          ],
+          "correct_index": 3,
+          "explanation": "Exactement ! Le NER (nucleotide excision repair) excise un fragment d'une vingtaine de nucléotides autour de la lésion, typiquement des dimères de thymine."
+        },
+        {
+          "question": "Lors d'une PCR, l'étape de dénaturation de l'ADN matrice se déroule à une température d'environ :",
+          "options": [
+            "95°C",
+            "37°C",
+            "72°C",
+            "55°C"
+          ],
+          "correct_index": 0,
+          "explanation": "Bien vu ! La dénaturation à 95°C sépare les deux brins d'ADN, avant l'hybridation des amorces (50-60°C) puis l'élongation par la polymérase (72°C)."
+        },
+        {
+          "question": "Le nombre de fragments d'ADN obtenus après n cycles de PCR, à partir d'une molécule initiale, suit une progression :",
+          "options": [
+            "arithmétique (×n)",
+            "exponentielle (×2^n)",
+            "constante",
+            "logarithmique"
+          ],
+          "correct_index": 1,
+          "explanation": "Exact ! Chaque cycle double le nombre de copies de la séquence d'intérêt, d'où une amplification exponentielle en 2 puissance n."
+        },
+        {
+          "question": "La RT-PCR se distingue de la PCR classique par l'ajout préalable d'une étape de :",
+          "options": [
+            "digestion par une enzyme de restriction",
+            "hybridation avec une sonde marquée",
+            "reverse transcription, générant un ADNc à partir d'un ARN matrice",
+            "séquençage de Sanger"
+          ],
+          "correct_index": 2,
+          "explanation": "Tout juste ! Comme la PCR ne fonctionne que sur une matrice ADN, il faut d'abord rétrotranscrire l'ARN en ADN complémentaire (ADNc) grâce à une reverse transcriptase."
+        },
+        {
+          "question": "Dans le séquençage de Sanger, l'incorporation d'un ddNTP interrompt la synthèse du brin d'ADN car :",
+          "options": [
+            "il porte un groupement phosphate supplémentaire",
+            "il est trop volumineux pour s'insérer dans la double hélice",
+            "il n'est pas reconnu par l'ADN polymérase",
+            "il est dépourvu du groupement hydroxyle en 3', empêchant la formation de la liaison phosphodiester suivante"
+          ],
+          "correct_index": 3,
+          "explanation": "Bravo ! L'absence du -OH en 3' du ddNTP empêche toute liaison phosphodiester ultérieure : la synthèse s'arrête net à chaque incorporation, ce qui permet de reconstituer la séquence."
+        }
+      ]
+    }
+  ]
+}

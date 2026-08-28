@@ -1,0 +1,535 @@
+{
+  "ue_id": "ue1",
+  "ue_name": "Chimie",
+  "icon": "🧪",
+  "tint": "sky",
+  "chapters": [
+    {
+      "id": "atomistique",
+      "title": "Atomistique : structure et configuration électronique",
+      "difficulty": 1,
+      "intro": "Direction l'infiniment petit pour percer les secrets de l'atome, un(e) pehun averti(e) en vaut deux ! ⚛️✨",
+      "course": [
+        {"icon": "🔬", "title": "L'atome et ses nucléons", "content": "Un atome neutre est composé d'un noyau (protons chargés +, neutrons neutres) entouré d'un nuage électronique (électrons chargés −). On le note ᴬZX où Z est le numéro atomique (nombre de protons = nombre d'électrons à l'état neutre) et A le nombre de masse (A = Z + N, N étant le nombre de neutrons). Deux nucléides de même Z mais de A différent sont des isotopes : ils ont les mêmes propriétés chimiques mais des masses différentes."},
+        {"icon": "⭐", "title": "Les quatre nombres quantiques", "content": "L'état quantique d'un électron est décrit par quatre nombres. Le nombre quantique principal n (entier ≥ 1) définit la couche et le volume de l'orbitale. Le nombre quantique secondaire l (0 ≤ l ≤ n−1) définit la sous-couche et la forme de l'orbitale (l=0 → s, l=1 → p, l=2 → d, l=3 → f). Le nombre quantique magnétique m (−l ≤ m ≤ l, soit 2l+1 valeurs) définit l'orientation de l'orbitale dans l'espace. Enfin, le nombre de spin s (+1/2 ou −1/2) caractérise le sens de rotation propre de l'électron."},
+        {"icon": "➗", "title": "Les trois règles de remplissage", "content": "La configuration électronique à l'état fondamental obéit à trois règles. La règle de Klechkowski impose de remplir les sous-couches par valeur croissante de (n+l), puis par n croissant en cas d'égalité (d'où le fait que la 4s se remplit avant la 3d). Le principe d'exclusion de Pauli interdit à deux électrons d'un même atome de partager les quatre mêmes nombres quantiques, ce qui limite chaque orbitale à deux électrons de spins opposés. La règle de Hund impose, pour des orbitales dégénérées (même énergie), de placer un électron par orbitale (spins parallèles) avant tout appariement."},
+        {"icon": "🧠", "title": "Astuce mémo : les exceptions du chrome et du cuivre", "content": "Le chrome (Z=24) et le cuivre (Z=29) ne suivent pas Klechkowski à la lettre : un électron de la sous-couche 4s bascule vers la 3d pour obtenir une sous-couche d à moitié remplie (Cr : [Ar]4s¹3d⁵) ou totalement remplie (Cu : [Ar]4s¹3d¹⁰), configurations plus stables. Autre piège : pour former un cation, on retire toujours les électrons de la couche externe la plus élevée en n, et non de la dernière sous-couche remplie. Ainsi Fe : [Ar]4s²3d⁶ donne Fe²⁺ : [Ar]3d⁶ (on vide d'abord la 4s, pas la 3d)."},
+        {"icon": "⭐", "title": "Électrons de valence et de cœur", "content": "Les électrons de valence sont ceux de la couche externe (plus les sous-couches en cours de remplissage) ; ce sont eux, et eux seuls, qui participent aux liaisons et réactions chimiques. Les autres sont des électrons de cœur. Pour les éléments des blocs s et p, le nombre d'électrons de valence correspond aux électrons en excès par rapport au gaz rare précédent. Pour les métaux de transition (colonnes 3 à 12), on compte tous les électrons au-delà du gaz rare précédent, y compris ceux de la sous-couche d en cours de remplissage."},
+        {"icon": "➗", "title": "Classification périodique et électronégativité", "content": "Dans le tableau périodique, une ligne (période) regroupe les atomes dont la couche de valence a le même n ; une colonne (famille) regroupe les atomes ayant la même organisation de couche de valence, donc des propriétés chimiques voisines. L'électronégativité, grandeur sans unité qui traduit l'aptitude d'un atome à attirer les électrons d'une liaison vers lui, croît de gauche à droite sur une période et du bas vers le haut dans une colonne : le fluor est l'élément le plus électronégatif du tableau."},
+        {"icon": "⚠️", "title": "Piège classique", "content": "Ne confondez pas Z (nombre de protons, fixe pour un élément donné) et A (nombre de masse, qui varie selon l'isotope). Attention également à l'ordre de remplissage : Klechkowski donne l'ordre énergétique de remplissage (4s avant 3d), mais lors de l'ionisation, ce sont les électrons de la couche de plus grand n qui partent en premier, quelle que soit la sous-couche."}
+      ],
+      "quiz": [
+        {
+          "question": "Que représente le nombre de masse A d'un noyau atomique ?",
+          "options": ["La somme des protons et des neutrons (nucléons)", "Le nombre de protons uniquement", "Le nombre d'électrons dans l'atome neutre", "La charge totale du noyau"],
+          "correct_index": 0,
+          "explanation": "Bien joué ! 🎯 A = Z + N, la somme du nombre de protons (Z) et de neutrons (N) : c'est le nombre de nucléons, souvent proche (en unités) de la masse molaire de l'atome."
+        },
+        {
+          "question": "Le potassium ³⁹₁₉K et l'atome ⁴⁰₁₉K sont :",
+          "options": ["Des isobares (même A, Z différent)", "Des isotopes du potassium", "Des isotones (même N, Z différent)", "Deux éléments chimiques différents"],
+          "correct_index": 1,
+          "explanation": "Exact ! ⚛️ Même Z (19 protons) mais A différent (39 vs 40) : ce sont deux isotopes du même élément, avec des propriétés chimiques identiques mais des masses différentes."
+        },
+        {
+          "question": "Quel nombre quantique définit la forme de l'orbitale atomique (s, p, d, f) ?",
+          "options": ["Le nombre quantique principal n", "Le nombre de spin s", "Le nombre quantique secondaire l", "Le nombre quantique magnétique m"],
+          "correct_index": 2,
+          "explanation": "Parfait ! 🔬 Le nombre quantique secondaire l détermine la sous-couche et donc la forme de l'orbitale : l=0 pour une orbitale s (sphérique), l=1 pour p, l=2 pour d, l=3 pour f."
+        },
+        {
+          "question": "Pour une sous-couche p (l = 1), combien d'orbitales atomiques distinctes existe-t-il ?",
+          "options": ["1", "5", "2", "3"],
+          "correct_index": 3,
+          "explanation": "Bravo ! 📐 m peut prendre 2l+1 valeurs, soit 3 valeurs (−1, 0, +1) pour l=1 : il y a donc 3 orbitales p, pouvant accueillir jusqu'à 6 électrons."
+        },
+        {
+          "question": "D'après le principe d'exclusion de Pauli, une orbitale atomique donnée peut contenir au maximum :",
+          "options": ["2 électrons de spins opposés", "1 électron, de spin quelconque", "2 électrons de même spin", "4 électrons"],
+          "correct_index": 0,
+          "explanation": "Exact ! ⚖️ Deux électrons d'un même atome ne peuvent partager les quatre mêmes nombres quantiques ; une orbitale (n, l, m fixés) ne peut donc accueillir que deux électrons, nécessairement de spins opposés (+1/2 et −1/2)."
+        },
+        {
+          "question": "Selon la règle de Hund, le remplissage d'une sous-couche p contenant 2 électrons se fait :",
+          "options": ["En plaçant les 2 électrons dans la même orbitale, spins opposés", "En plaçant un électron dans deux orbitales différentes, avec des spins parallèles", "En laissant toutes les orbitales vides le plus longtemps possible", "Selon l'ordre alphabétique des orbitales"],
+          "correct_index": 1,
+          "explanation": "Bien vu ! 🧲 Pour minimiser la répulsion électronique, les électrons occupent d'abord des orbitales distinctes de même énergie avec des spins parallèles, avant de s'apparier."
+        },
+        {
+          "question": "Quelle est la configuration électronique correcte de l'atome de soufre S (Z = 16) ?",
+          "options": ["1s² 2s² 2p⁶ 3s² 3p⁶", "1s² 2s² 2p⁶ 3s² 3p²", "1s² 2s² 2p⁶ 3s² 3p⁴", "1s² 2s² 2p⁶ 3s² 3d⁴"],
+          "correct_index": 2,
+          "explanation": "Bravo ! 🧮 16 électrons à répartir en suivant Klechkowski : 1s² 2s² 2p⁶ 3s² 3p⁴ (2+2+6+2+4 = 16)."
+        },
+        {
+          "question": "Quel élément présente une exception à la règle de Klechkowski, avec une configuration en [Ar]4s¹3d⁵ ?",
+          "options": ["Le fer (Fe, Z=26)", "Le zinc (Zn, Z=30)", "Le manganèse (Mn, Z=25)", "Le chrome (Cr, Z=24)"],
+          "correct_index": 3,
+          "explanation": "Exact ! ⭐ Le chrome (Z=24) place un seul électron en 4s et cinq en 3d ([Ar]4s¹3d⁵) car une sous-couche d à moitié remplie est particulièrement stable."
+        },
+        {
+          "question": "Pour former le cation Fe²⁺ à partir de Fe ([Ar]4s²3d⁶), on retire :",
+          "options": ["2 électrons de la sous-couche 4s", "2 électrons de la sous-couche 3d", "1 électron de 4s et 1 de 3d", "2 électrons de la couche de cœur"],
+          "correct_index": 0,
+          "explanation": "Bien joué ! 🔋 Lors de la formation d'un cation, ce sont les électrons de la couche externe de plus grand n (ici 4s) qui partent en premier, même si la 3d a été remplie après la 4s : Fe²⁺ = [Ar]3d⁶."
+        },
+        {
+          "question": "Les électrons de valence d'un atome sont, par définition :",
+          "options": ["Tous les électrons de l'atome", "Les électrons de la couche externe et des sous-couches en cours de remplissage", "Uniquement les électrons de la sous-couche s", "Les électrons de cœur, les plus proches du noyau"],
+          "correct_index": 1,
+          "explanation": "Parfait ! ✨ Ce sont les électrons de la couche la plus externe (plus les sous-couches sous-jacentes en cours de remplissage) qui participent aux liaisons et réactions chimiques."
+        },
+        {
+          "question": "Combien d'électrons de valence possède le brome Br (Z=35, configuration [Ar]4s²3d¹⁰4p⁵) ?",
+          "options": ["5", "17", "7", "35"],
+          "correct_index": 2,
+          "explanation": "Exact ! 🧪 Le brome n'est pas un métal de transition : ses électrons de valence sont ceux de la couche n=4 hors sous-couche d pleine, soit 4s²4p⁵ = 7 électrons de valence."
+        },
+        {
+          "question": "Pour un métal de transition comme le cuivre (Cu, Z=29, [Ar]4s¹3d¹⁰), le nombre d'électrons de valence se compte :",
+          "options": ["Uniquement sur la sous-couche 4s", "En ignorant systématiquement la sous-couche d", "En comptant uniquement les électrons de cœur", "En comptant tous les électrons en excès par rapport au gaz rare précédent, y compris la 3d"],
+          "correct_index": 3,
+          "explanation": "Bien vu ! 🥇 Pour les métaux de transition, on inclut les électrons de la sous-couche d en cours de remplissage : le cuivre a donc 11 électrons de valence (4s¹3d¹⁰)."
+        },
+        {
+          "question": "Dans le tableau périodique, deux éléments d'une même colonne (famille) partagent :",
+          "options": ["La même organisation de leur couche de valence", "Le même nombre de neutrons", "Le même nombre de couches électroniques", "La même masse atomique"],
+          "correct_index": 0,
+          "explanation": "Bravo ! 🎯 Une même colonne regroupe des éléments ayant la même structure de couche de valence (même représentation de Lewis), d'où des propriétés chimiques voisines."
+        },
+        {
+          "question": "L'électronégativité d'un atome :",
+          "options": ["Se mesure en Joules", "Croît de gauche à droite dans une période et du bas vers le haut dans une colonne", "Décroît de gauche à droite dans une période", "Ne dépend pas de la position dans le tableau périodique"],
+          "correct_index": 1,
+          "explanation": "Exact ! ⚡ L'électronégativité, grandeur sans unité, augmente vers la droite d'une période et vers le haut d'une colonne : le fluor, en haut à droite (hors gaz rares), est l'élément le plus électronégatif."
+        },
+        {
+          "question": "La liaison Na–Cl est qualifiée d'ionique plutôt que de covalente car :",
+          "options": ["Les deux atomes ont une électronégativité identique", "Le sodium est un gaz rare", "La différence d'électronégativité entre Na et Cl est très importante", "Le chlore ne possède pas d'électrons de valence"],
+          "correct_index": 2,
+          "explanation": "Bien joué ! 🧂 Lorsque la différence d'électronégativité entre deux atomes est très grande, les électrons de liaison sont quasi entièrement transférés vers l'atome le plus électronégatif : on parle de liaison ionique plutôt que covalente."
+        },
+        {
+          "question": "Le nombre quantique magnétique m d'une orbitale renseigne sur :",
+          "options": ["Son niveau d'énergie principal", "Sa forme générale (s, p, d...)", "Le spin des électrons qu'elle contient", "Son orientation dans l'espace au sein d'une sous-couche donnée"],
+          "correct_index": 3,
+          "explanation": "Parfait ! 🧭 À l et n fixés, m définit l'orientation spatiale de l'orbitale : par exemple, les trois orbitales p (m = −1, 0, +1) sont orientées selon les trois axes de l'espace."
+        },
+        {
+          "question": "Combien d'électrons au maximum une couche électronique de nombre quantique principal n peut-elle contenir ?",
+          "options": ["2n²", "n", "2n", "n²"],
+          "correct_index": 0,
+          "explanation": "Bravo ! 🧮 La capacité maximale d'une couche n est de 2n² électrons (2 pour n=1, 8 pour n=2, 18 pour n=3...), ce qui découle directement du nombre de sous-couches et d'orbitales disponibles."
+        },
+        {
+          "question": "Que stipule le principe de Pauli concernant les 4 nombres quantiques ?",
+          "options": ["Ils doivent tous être identiques pour deux électrons d'un même atome", "Deux électrons d'un même atome ne peuvent pas avoir les quatre mêmes nombres quantiques", "Ils ne s'appliquent qu'aux orbitales s", "Ils déterminent uniquement la masse de l'électron"],
+          "correct_index": 1,
+          "explanation": "Exact ! 🔑 C'est la formulation générale du principe d'exclusion : dans un même atome, l'ensemble (n, l, m, s) est unique pour chaque électron, ce qui limite le peuplement de chaque orbitale à deux électrons de spins opposés."
+        }
+      ]
+    },
+    {
+      "id": "liaisons_chimiques",
+      "title": "Liaisons chimiques : Lewis, VSEPR, hybridation et mésomérie",
+      "difficulty": 2,
+      "intro": "Assemble les atomes comme des LEGO quantiques : à nous les liaisons covalentes et leurs secrets ! 🔗⚛️",
+      "course": [
+        {"icon": "🔬", "title": "Structure de Lewis et règle de l'octet", "content": "La structure de Lewis représente les électrons de valence d'un atome ou d'une molécule : un trait (ou deux points) figure un doublet non liant, un point un électron célibataire, une case vide une lacune électronique. Une liaison covalente naît de la mise en commun d'une paire d'électrons de valence entre deux atomes, ce qui abaisse l'énergie du système. Les éléments de la 2ᵉ période cherchent à atteindre la configuration du gaz rare voisin en s'entourant de 8 électrons (règle de l'octet) ; l'hydrogène se contente de 2 électrons (règle du duet)."},
+        {"icon": "⭐", "title": "La théorie VSEPR", "content": "La théorie VSEPR (Valence Shell Electron Pair Repulsion) prédit la géométrie 3D d'une molécule à partir de la répulsion entre paires d'électrons de la couche de valence de l'atome central. On note la molécule ALₙEₘ, où A est l'atome central, L le nombre d'atomes voisins (paires liantes) et E le nombre de doublets non liants. La géométrie dépend de la somme (n+m) : 2 → linéaire (180°), 3 → trigonale plane (120°), 4 → tétraédrique (109°28'), 5 → bipyramide trigonale, 6 → octaédrique. Cette théorie ne s'applique qu'aux blocs s et p."},
+        {"icon": "➗", "title": "Orbitales moléculaires σ et π", "content": "La combinaison linéaire de deux orbitales atomiques (OA) compatibles en symétrie et proches en énergie donne naissance à deux orbitales moléculaires (OM) : une OM liante, plus basse en énergie (recouvrement en phase), et une OM antiliante notée avec un astérisque (*), plus haute en énergie (opposition de phase). Un recouvrement axial donne une liaison σ, un recouvrement latéral (entre deux OA p) donne une liaison π, plus faible car moins efficace. L'ordre de liaison OL = (électrons liants − électrons antiliants)/2 indique le nombre de liaisons effectives : une liaison n'existe que si OL > 0."},
+        {"icon": "⭐", "title": "L'hybridation des orbitales atomiques", "content": "Pour expliquer des géométries incompatibles avec l'orthogonalité naturelle des orbitales p (comme les 109°28' du méthane), le carbone, l'azote et l'oxygène combinent linéairement leurs orbitales de valence 2s et 2p en orbitales hybrides de même énergie. L'hybridation sp³ (1 OA s + 3 OA p) donne une géométrie tétraédrique ; l'hybridation sp² (1 OA s + 2 OA p, avec 1 OA p pure restante) donne une géométrie trigonale plane ; l'hybridation sp (1 OA s + 1 OA p, avec 2 OA p pures restantes) donne une géométrie linéaire. Le nombre d'orbitales est conservé : l'hybridation ne fait que réorganiser leur orientation. Les OA p pures restantes servent à former des liaisons π."},
+        {"icon": "🧠", "title": "Mésomérie et conjugaison", "content": "Un motif de conjugaison est une alternance ininterrompue de liaison multiple / liaison simple / (liaison multiple, doublet non liant, lacune ou électron célibataire). Dans une telle molécule, les électrons π peuvent se délocaliser : on représente ce phénomène par plusieurs structures de Lewis, dites formes mésomères, sans jamais déplacer les atomes ni dépasser la règle de l'octet. La forme la plus représentative de la réalité est celle qui a le plus d'atomes à octet complet, le moins de charges, et des charges les plus éloignées possible portées par les atomes les plus électronégatifs."},
+        {"icon": "⭐", "title": "Aromaticité : la règle de Hückel", "content": "Une molécule est aromatique si elle vérifie simultanément quatre critères : posséder un ou plusieurs cycles, avoir un squelette σ plan (typiquement des carbones hybridés sp²), présenter une conjugaison sans discontinuité sur tout le cycle, et compter 4n+2 électrons π délocalisables (n entier positif). Une molécule aromatique est très stable et donc peu réactive ; si une forme mésomère d'une molécule est aromatique, toutes le sont."},
+        {"icon": "➗", "title": "L'effet inductif", "content": "L'effet inductif décrit la polarisation d'une liaison σ transmise de proche en proche via les électrons de liaison, sous l'effet d'une différence d'électronégativité. Un substituant plus électronégatif que le carbone exerce un effet inductif attracteur (−I) ; un substituant moins électronégatif exerce un effet inductif donneur (+I). Cet effet s'atténue rapidement (au-delà de 3 liaisons il devient négligeable) et est additif. Il est toujours dominé par l'effet mésomère, sauf dans le cas des halogènes."},
+        {"icon": "⚠️", "title": "Piège classique", "content": "La théorie VSEPR ne s'applique pas telle quelle aux atomes engagés dans un système conjugué : il faut d'abord identifier la forme mésomère la plus représentative pour en déduire la géométrie réelle. Attention aussi à ne pas confondre lacune électronique (déficit par rapport à l'octet) et charge formelle (déficit ou excès d'électrons propres par rapport à l'atome neutre isolé) : les deux notions sont indépendantes."}
+      ],
+      "quiz": [
+        {
+          "question": "Dans la structure de Lewis, un trait entre deux atomes (ou une paire de points sur un même atome) représente :",
+          "options": ["Un doublet d'électrons (liant ou non liant)", "Un seul électron célibataire", "Une lacune électronique", "Une charge positive"],
+          "correct_index": 0,
+          "explanation": "Bien joué ! ✏️ En représentation de Lewis, un trait ou deux points figurent toujours un doublet de deux électrons, qu'il soit liant (entre deux atomes) ou non liant (porté par un seul atome)."
+        },
+        {
+          "question": "L'hydrogène tend à respecter, dans ses liaisons :",
+          "options": ["La règle de l'octet", "La règle du duet (2 électrons)", "La règle des 18 électrons", "Aucune règle particulière"],
+          "correct_index": 1,
+          "explanation": "Exact ! 🎯 L'hydrogène n'a qu'une orbitale 1s à saturer : il cherche à s'entourer de 2 électrons pour ressembler à l'hélium, c'est la règle du duet."
+        },
+        {
+          "question": "Dans la notation VSEPR ALₙEₘ, la lettre E représente :",
+          "options": ["Le nombre d'atomes voisins de l'atome central", "Le numéro atomique de l'atome central", "Le nombre de doublets non liants sur l'atome central", "L'électronégativité de la molécule"],
+          "correct_index": 2,
+          "explanation": "Parfait ! 🧩 E désigne le nombre de doublets non liants portés par l'atome central ; c'est la somme (n+m) qui détermine la géométrie globale de la molécule."
+        },
+        {
+          "question": "Une molécule de type AL₂E₂ (comme H₂O) adopte une géométrie de répulsion électronique :",
+          "options": ["Linéaire", "Trigonale plane", "Bipyramide trigonale", "Tétraédrique"],
+          "correct_index": 3,
+          "explanation": "Bravo ! 💧 Avec n+m = 4, la géométrie de répulsion électronique est tétraédrique (109°28' théorique) ; la forme observée de la molécule (coudée pour H₂O) ne prend en compte que les atomes, pas les doublets non liants."
+        },
+        {
+          "question": "Une orbitale moléculaire liante, par rapport aux orbitales atomiques qui la composent, est :",
+          "options": ["Plus basse en énergie, ce qui stabilise le système", "Plus haute en énergie", "De même énergie exactement", "Toujours vide d'électrons"],
+          "correct_index": 0,
+          "explanation": "Exact ! ⚡ L'interaction en phase de deux OA donne une OM liante d'énergie plus basse que la somme des OA de départ, ce qui stabilise la molécule lorsqu'elle est peuplée d'électrons."
+        },
+        {
+          "question": "Un recouvrement latéral entre deux orbitales p perpendiculaires à l'axe internucléaire forme une liaison :",
+          "options": ["σ (sigma)", "π (pi)", "Ionique", "Hydrogène"],
+          "correct_index": 1,
+          "explanation": "Bien vu ! 🔗 Le recouvrement latéral, moins efficace que le recouvrement axial, forme une liaison π, plus faible et plus facilement rompue qu'une liaison σ."
+        },
+        {
+          "question": "Si une orbitale moléculaire présente un ordre de liaison OL = 0, cela signifie que :",
+          "options": ["Il existe une liaison triple", "Il existe une liaison simple", "Il n'existe pas de liaison entre les deux atomes", "La molécule est aromatique"],
+          "correct_index": 2,
+          "explanation": "Exact ! 🚫 Un ordre de liaison nul signifie que les électrons liants sont exactement compensés par les électrons antiliants : aucune liaison covalente stable ne subsiste entre les deux atomes."
+        },
+        {
+          "question": "Dans le méthane CH₄, l'hybridation du carbone permettant d'expliquer l'angle de 109°28' est :",
+          "options": ["sp", "sp²", "Non hybridé (2s et 2p pures)", "sp³"],
+          "correct_index": 3,
+          "explanation": "Bravo ! 🧪 Le carbone du méthane est hybridé sp³ (1 OA s + 3 OA p), ce qui donne 4 orbitales équivalentes orientées selon une géométrie tétraédrique, compatible avec l'angle de 109°28'."
+        },
+        {
+          "question": "Un atome de carbone impliqué dans une double liaison C=C est généralement hybridé :",
+          "options": ["sp²", "sp³", "sp", "d²sp³"],
+          "correct_index": 0,
+          "explanation": "Exact ! ⭐ La double liaison nécessite une orbitale p pure disponible pour former la liaison π : le carbone est donc hybridé sp² (3 orbitales hybrides + 1 p pure), avec une géométrie trigonale plane."
+        },
+        {
+          "question": "Les orbitales hybrides sp d'un atome laissent disponibles, pour des liaisons π :",
+          "options": ["Aucune orbitale p pure", "2 orbitales p pures", "3 orbitales p pures", "1 orbitale p pure"],
+          "correct_index": 1,
+          "explanation": "Bien joué ! 🎯 L'hybridation sp utilise 1 OA s et 1 OA p, laissant 2 OA p pures orthogonales entre elles, disponibles pour former deux liaisons π perpendiculaires (cas des alcynes)."
+        },
+        {
+          "question": "Un motif de conjugaison ininterrompu est nécessaire pour observer :",
+          "options": ["La règle du duet", "L'effet inductif", "La mésomérie (délocalisation électronique)", "La règle de Klechkowski"],
+          "correct_index": 2,
+          "explanation": "Parfait ! 🌀 La mésomérie ne peut avoir lieu que si une alternance sans interruption de liaisons multiples et simples (éventuellement associées à un doublet non liant, une lacune ou un électron célibataire) permet la délocalisation des électrons π."
+        },
+        {
+          "question": "Parmi ces critères, lequel n'est PAS nécessaire pour qu'une molécule soit aromatique selon la règle de Hückel ?",
+          "options": ["Un squelette cyclique", "Un squelette σ plan", "Une conjugaison sans discontinuité sur le cycle", "Un nombre pair d'atomes de carbone dans le cycle"],
+          "correct_index": 3,
+          "explanation": "Bravo, tu as repéré le piège ! 🕵️ La règle de Hückel n'exige pas un nombre pair de carbones, mais un nombre d'électrons π délocalisables égal à 4n+2 (n entier positif) sur un cycle plan et conjugué sans interruption."
+        },
+        {
+          "question": "Le benzène (C₆H₆) compte, sur son cycle, un nombre d'électrons π délocalisables égal à :",
+          "options": ["6 (soit 4n+2 avec n=1)", "8", "4", "12"],
+          "correct_index": 0,
+          "explanation": "Exact ! 💍 Le benzène possède 3 liaisons π conjuguées, soit 6 électrons délocalisables : 6 = 4×1+2, ce qui correspond bien à la règle de Hückel (n=1)."
+        },
+        {
+          "question": "L'effet inductif attracteur (−I) est exercé par un substituant :",
+          "options": ["Moins électronégatif que le carbone", "Plus électronégatif que le carbone", "De même électronégativité que le carbone", "Uniquement par les atomes d'hydrogène"],
+          "correct_index": 1,
+          "explanation": "Bien vu ! ➖ Un substituant plus électronégatif que le carbone attire vers lui les électrons de la liaison σ, exerçant un effet inductif attracteur, noté −I."
+        },
+        {
+          "question": "L'effet inductif se transmet le long d'une chaîne carbonée :",
+          "options": ["Sans jamais s'atténuer, quelle que soit la distance", "Uniquement à travers les liaisons π", "En s'atténuant, et devient négligeable au-delà d'environ trois liaisons", "Seulement entre atomes de même électronégativité"],
+          "correct_index": 2,
+          "explanation": "Exact ! 📉 L'effet inductif s'affaiblit rapidement de proche en proche et devient négligeable au-delà de la troisième liaison, contrairement à l'effet mésomère qui peut se propager sur tout un système conjugué."
+        },
+        {
+          "question": "Entre effet mésomère et effet inductif d'un même groupement, c'est en général :",
+          "options": ["L'effet inductif qui l'emporte toujours", "Les deux effets qui s'annulent systématiquement", "Aucun des deux effets qui n'a d'influence réelle", "L'effet mésomère qui l'emporte, sauf pour les halogènes"],
+          "correct_index": 3,
+          "explanation": "Bravo ! 🏆 L'effet mésomère domine généralement l'effet inductif, à l'exception notable des halogènes, dont l'effet inductif attracteur (−I) l'emporte sur leur faible effet mésomère donneur (+M)."
+        },
+        {
+          "question": "La théorie VSEPR ne permet pas, à elle seule, de déterminer la géométrie réelle d'un atome :",
+          "options": ["Engagé dans un système conjugué où d'autres formes mésomères existent", "Isolé et non lié à d'autres atomes", "Appartenant au bloc s du tableau périodique", "Portant uniquement des doublets liants"],
+          "correct_index": 0,
+          "explanation": "Exact ! ⚠️ Si l'atome appartient à un système conjugué, sa géométrie réelle peut correspondre à une forme mésomère différente de celle représentée : il faut alors identifier la forme la plus représentative avant d'appliquer VSEPR."
+        },
+        {
+          "question": "Une lacune électronique sur un atome correspond à :",
+          "options": ["Un excès d'électrons par rapport à l'octet", "Une orbitale atomique de valence inoccupée, l'atome n'atteignant pas la règle de l'octet", "Toujours une charge positive sur cet atome", "Un doublet non liant supplémentaire"],
+          "correct_index": 1,
+          "explanation": "Bien joué ! 🔲 Une lacune électronique traduit le fait que l'atome n'a pas atteint son octet (ou son duet) : attention, elle n'implique pas nécessairement une charge, ces deux notions étant indépendantes."
+        }
+      ]
+    },
+    {
+      "id": "stereochimie",
+      "title": "Stéréochimie : isomérie, chiralité et représentations",
+      "difficulty": 3,
+      "intro": "Entre miroirs, rotations et petites mains chirales, la stéréochimie n'aura bientôt plus de secret pour toi ! 🪞🧬",
+      "course": [
+        {"icon": "🔬", "title": "Isomérie de constitution", "content": "Deux isomères de constitution ont la même formule brute mais un enchaînement d'atomes différent, et donc des propriétés physico-chimiques différentes. On distingue les isomères de fonction (groupes fonctionnels différents, ex. alcool/éther), les isomères de squelette (chaîne carbonée différente, linéaire vs ramifiée) et les isomères de position (même fonction et même squelette, mais position différente de la fonction)."},
+        {"icon": "⭐", "title": "Stéréoisomérie : configuration vs conformation", "content": "Les stéréoisomères ont la même formule brute et le même enchaînement d'atomes, mais un arrangement spatial différent. On distingue les stéréoisomères de configuration, qui ne peuvent s'interconvertir que par rupture de liaisons (mnémo : conf-IG-uration = rupture), des stéréoisomères de conformation, qui s'interconvertissent librement par simple rotation autour de liaisons simples (mnémo : conf-OR-mation = rotation), sans jamais rompre de liaison."},
+        {"icon": "➗", "title": "Chiralité et carbone asymétrique", "content": "Un objet est chiral s'il n'est pas superposable à son image dans un miroir. Un carbone asymétrique (noté C*) porte quatre substituants tous différents. Une molécule possédant un seul C* est toujours chirale ; une molécule dévie le plan de la lumière polarisée (pouvoir rotatoire) uniquement si elle est chirale. Un mélange racémique, en proportions égales de deux énantiomères, est optiquement inactif car les pouvoirs rotatoires s'annulent."},
+        {"icon": "⭐", "title": "Énantiomères, diastéréoisomères et composés méso", "content": "Deux énantiomères sont des stéréoisomères de configuration, images l'un de l'autre dans un miroir et non superposables : ils partagent toutes leurs propriétés physico-chimiques sauf celles liées à la chiralité (pouvoir rotatoire opposé). Deux diastéréoisomères ne sont pas images l'un de l'autre dans un miroir : ils ont des propriétés physico-chimiques différentes et sont séparables physiquement. Un composé méso, malgré la présence de plusieurs C*, est achiral car il possède un plan de symétrie interne."},
+        {"icon": "🧠", "title": "La règle de Cahn-Ingold-Prelog (CIP)", "content": "Pour déterminer la configuration absolue R (rectus) ou S (sinister) d'un carbone asymétrique : on classe les 4 substituants par ordre de priorité décroissante selon le numéro atomique Z de l'atome directement lié (en cas d'égalité, on compare les atomes suivants ; une liaison double compte comme deux liaisons simples). On place ensuite le substituant de plus faible priorité (n°4) à l'arrière, puis on lit le sens de rotation 1→2→3 : sens horaire = R, sens antihoraire = S. Si le n°4 est placé à l'avant, il faut inverser le résultat obtenu."},
+        {"icon": "⭐", "title": "Isomérie Z/E des alcènes", "content": "Autour d'une double liaison C=C, si chacun des deux carbones porte deux substituants différents, deux configurations géométriques existent. On classe les substituants de chaque côté selon la règle CIP : si les deux substituants prioritaires sont du même côté de la double liaison, la configuration est Z (zusammen, ensemble) ; s'ils sont de part et d'autre, elle est E (entgegen, opposé). Les isomères Z et E d'une même molécule sont des diastéréoisomères."},
+        {"icon": "➗", "title": "Représentations : Cram, Newman, Fischer", "content": "La représentation de Cram donne une vue 3D d'un centre stéréogène (traits pleins dans le plan, pointillés vers l'arrière, coins gras vers l'avant). La projection de Newman s'observe dans l'axe d'une liaison simple entre deux carbones, utile pour étudier la conformation. La projection de Fischer place la chaîne carbonée verticalement (carbone le plus oxydé en haut), avec des conventions strictes : les traits verticaux représentent des liaisons vers l'arrière, les traits horizontaux des liaisons vers l'avant. Chaque stéréoisomère possède une unique représentation de Fischer."},
+        {"icon": "⚠️", "title": "Piège classique", "content": "Les notations (+)/(−) (pouvoir rotatoire mesuré expérimentalement), (R)/(S) (configuration absolue déterminée par CIP) et (D)/(L) (position du groupement de référence en projection de Fischer, utilisée pour les oses et acides aminés) sont trois échelles totalement indépendantes : on ne peut déduire l'une à partir d'une autre. Attention aussi à la lecture de Fischer : si la chaîne carbonée verticale se retrouve en avant du plan (cas fréquent), il faut inverser la configuration lue directement sur le papier."}
+      ],
+      "quiz": [
+        {
+          "question": "Deux isomères de constitution ont :",
+          "options": ["La même formule brute mais un enchaînement d'atomes différent", "Un enchaînement d'atomes identique mais un arrangement spatial différent", "Des formules brutes différentes", "Toujours les mêmes propriétés physico-chimiques"],
+          "correct_index": 0,
+          "explanation": "Bien joué ! 🧩 Les isomères de constitution partagent la même formule brute, mais l'ordre dans lequel les atomes sont reliés diffère, ce qui change leurs propriétés physico-chimiques."
+        },
+        {
+          "question": "L'éthanol (CH₃CH₂OH) et le diméthyléther (CH₃OCH₃), de même formule brute C₂H₆O, sont des isomères :",
+          "options": ["De position", "De fonction", "De configuration", "De conformation"],
+          "correct_index": 1,
+          "explanation": "Exact ! ⚗️ L'un porte une fonction alcool, l'autre une fonction éther : ce sont des groupes fonctionnels différents, on parle donc d'isomères de fonction."
+        },
+        {
+          "question": "Les stéréoisomères de conformation s'interconvertissent :",
+          "options": ["Par rupture puis reformation de liaisons covalentes", "Uniquement par réaction chimique", "Par simple rotation autour de liaisons simples, sans rupture de liaison", "Ils ne peuvent jamais s'interconvertir"],
+          "correct_index": 2,
+          "explanation": "Parfait ! 🔄 conf-OR-mation = ROtation : le passage d'un conformère à l'autre se fait librement par rotation autour d'une liaison simple, sans casser aucune liaison."
+        },
+        {
+          "question": "Pour passer d'un stéréoisomère de configuration à un autre, il faut :",
+          "options": ["Simplement tourner la molécule dans l'espace", "Changer la formule brute de la molécule", "Chauffer légèrement la molécule", "Rompre puis reformer au moins une liaison"],
+          "correct_index": 3,
+          "explanation": "Bravo ! ✂️ conf-IG-uration = RUpture : contrairement aux conformères, les stéréoisomères de configuration ne peuvent s'interconvertir qu'en rompant une liaison, ce qui nécessite un apport d'énergie important ou une réaction chimique."
+        },
+        {
+          "question": "Un carbone asymétrique (C*) est un carbone :",
+          "options": ["Portant quatre substituants tous différents", "Portant deux substituants identiques", "Engagé dans une liaison double", "Toujours situé en bout de chaîne"],
+          "correct_index": 0,
+          "explanation": "Exact ! ⭐ Le carbone asymétrique porte quatre groupements différents, ce qui rend la molécule non superposable à son image dans un miroir : c'est la source la plus fréquente de chiralité."
+        },
+        {
+          "question": "Un mélange racémique est :",
+          "options": ["Un mélange de deux diastéréoisomères en proportions quelconques", "Un mélange équimolaire de deux énantiomères, optiquement inactif", "Un composé méso pur", "Un mélange de deux isomères de constitution"],
+          "correct_index": 1,
+          "explanation": "Bien vu ! ⚖️ Un mélange racémique contient des quantités égales de deux énantiomères ; leurs pouvoirs rotatoires opposés s'annulent exactement, rendant le mélange optiquement inactif."
+        },
+        {
+          "question": "Deux énantiomères ont, à l'exception des propriétés liées à la chiralité :",
+          "options": ["Des propriétés physico-chimiques différentes", "Des formules brutes différentes", "Des propriétés physico-chimiques identiques", "Des enchaînements d'atomes différents"],
+          "correct_index": 2,
+          "explanation": "Exact ! 🪞 Deux énantiomères ont exactement les mêmes propriétés physiques et chimiques (point de fusion, solubilité, réactivité...), sauf celles impliquant la chiralité, comme le pouvoir rotatoire ou l'interaction avec d'autres molécules chirales."
+        },
+        {
+          "question": "Un composé méso :",
+          "options": ["Ne possède aucun carbone asymétrique", "Est nécessairement optiquement actif", "N'existe jamais dans la nature", "Possède plusieurs C* mais est achiral grâce à un plan de symétrie interne"],
+          "correct_index": 3,
+          "explanation": "Bravo ! 🔍 Un composé méso possède plusieurs carbones asymétriques, mais un plan de symétrie interne le rend superposable à son image dans un miroir : il est donc achiral et optiquement inactif, comme l'acide méso-tartrique."
+        },
+        {
+          "question": "Selon la règle de Cahn-Ingold-Prelog, la priorité d'un substituant est d'abord déterminée par :",
+          "options": ["Le numéro atomique Z de l'atome directement lié au centre stéréogène", "La masse molaire globale du substituant", "La couleur du groupement", "Sa position dans la formule brute"],
+          "correct_index": 0,
+          "explanation": "Exact ! 🥇 On compare d'abord le numéro atomique Z des atomes directement liés au carbone asymétrique ; en cas d'égalité, on compare ensuite les atomes de rang suivant."
+        },
+        {
+          "question": "Pour déterminer la configuration R ou S d'un carbone asymétrique, on place le substituant classé n°4 (le moins prioritaire) :",
+          "options": ["Au premier plan, vers l'observateur", "À l'arrière, loin de l'observateur", "Toujours à gauche de la molécule", "Peu importe sa position, cela ne change rien"],
+          "correct_index": 1,
+          "explanation": "Bien joué ! 👀 Le substituant de plus faible priorité doit être placé à l'arrière du plan d'observation ; s'il se trouve par erreur à l'avant, il faut inverser le résultat obtenu (R devient S et inversement)."
+        },
+        {
+          "question": "Dans une double liaison C=C, la configuration Z (zusammen) correspond au cas où :",
+          "options": ["Les deux substituants prioritaires sont sur des carbones différents mais sans lien de position", "Les deux substituants les moins prioritaires sont du même côté", "Les deux substituants prioritaires sont du même côté de la double liaison", "Les deux substituants prioritaires sont de part et d'autre de la double liaison"],
+          "correct_index": 2,
+          "explanation": "Parfait ! 🎯 Zusammen signifie « ensemble » : la configuration Z place les deux substituants prioritaires (selon CIP) du même côté de la double liaison."
+        },
+        {
+          "question": "Les isomères Z et E d'un même alcène sont, l'un par rapport à l'autre, des :",
+          "options": ["Énantiomères", "Isomères de constitution", "Conformères", "Diastéréoisomères"],
+          "correct_index": 3,
+          "explanation": "Bravo ! 🧬 Les isomères Z et E ne sont pas des images l'un de l'autre dans un miroir : ce sont des diastéréoisomères, avec des propriétés physico-chimiques différentes (point de fusion, polarité...)."
+        },
+        {
+          "question": "Dans la projection de Fischer, un trait horizontal représente une liaison :",
+          "options": ["Orientée vers l'avant du plan (vers l'observateur)", "Orientée vers l'arrière du plan", "Dans le plan exact de la feuille", "Sans signification stéréochimique"],
+          "correct_index": 0,
+          "explanation": "Exact ! 📐 Par convention, en projection de Fischer, les traits horizontaux pointent vers l'observateur (avant du plan) et les traits verticaux s'éloignent de lui (arrière du plan)."
+        },
+        {
+          "question": "Dans une projection de Fischer, le groupement carboné le plus oxydé (le plus lié à des atomes électronégatifs) se place conventionnellement :",
+          "options": ["Au centre de la chaîne", "En haut de la chaîne verticale", "En bas de la chaîne verticale", "Indifféremment en haut ou en bas"],
+          "correct_index": 1,
+          "explanation": "Bien vu ! ⬆️ La convention de Fischer place le carbone le plus oxydé (par exemple un aldéhyde ou un acide carboxylique) en haut de la chaîne verticale, et le groupement le plus réduit/hydrogéné en bas."
+        },
+        {
+          "question": "Pour un ose (sucre) représenté en projection de Fischer, la série D ou L est déterminée par la position de l'hydroxyle porté par :",
+          "options": ["Le premier carbone de la chaîne", "Un carbone choisi arbitrairement", "Le dernier carbone asymétrique de la chaîne", "Le carbone anomérique uniquement"],
+          "correct_index": 2,
+          "explanation": "Exact ! 🍬 On regarde la position (droite = D, gauche = L) de l'OH porté par le dernier carbone asymétrique de la molécule ; tous les oses naturels appartiennent à la série D."
+        },
+        {
+          "question": "Pour un acide aminé en projection de Fischer, la série D ou L dépend de la position du groupement amine porté par :",
+          "options": ["Le carbone portant le groupement carboxyle", "Le dernier carbone de la chaîne", "La chaîne latérale R uniquement", "Le premier carbone asymétrique (le carbone α)"],
+          "correct_index": 3,
+          "explanation": "Bravo ! 🧬 C'est la position du groupement NH₂ (ou NH₃⁺) sur le premier carbone asymétrique, le carbone α, qui détermine la série D ou L ; chez les eucaryotes, les acides aminés naturels sont de série L."
+        },
+        {
+          "question": "Les notations (R)/(S) et (+)/(−) d'une même molécule chirale :",
+          "options": ["Ne sont pas corrélées : on ne peut pas déduire l'une de l'autre", "Sont toujours identiques (R = +)", "Sont toujours opposées (R = −)", "Désignent la même chose sous deux noms différents"],
+          "correct_index": 0,
+          "explanation": "Exact ! ⚠️ La configuration absolue (R/S, déterminée par la règle CIP) et le pouvoir rotatoire (+/−, mesuré expérimentalement) sont deux notions totalement indépendantes : il n'existe aucune règle générale reliant l'une à l'autre."
+        },
+        {
+          "question": "Un composé possédant n carbones asymétriques distincts possède, au maximum :",
+          "options": ["n stéréoisomères de configuration", "2ⁿ stéréoisomères de configuration", "n² stéréoisomères de configuration", "2n stéréoisomères de configuration"],
+          "correct_index": 1,
+          "explanation": "Bien joué ! 🧮 Pour n carbones asymétriques, il existe au maximum 2ⁿ stéréoisomères de configuration possibles (ce nombre peut être réduit en cas de symétrie interne, comme pour un composé méso)."
+        },
+        {
+          "question": "La projection de Newman est particulièrement adaptée pour étudier :",
+          "options": ["La formule brute d'une molécule", "La configuration absolue R/S d'un carbone asymétrique", "La conformation d'une molécule selon l'axe d'une liaison simple C–C", "La série D/L d'un ose"],
+          "correct_index": 2,
+          "explanation": "Parfait ! 👁️ La projection de Newman s'observe dans l'axe d'une liaison C–C particulière : elle permet de visualiser directement l'arrangement relatif (éclipsé, décalé...) des substituants portés par les deux carbones, donc l'étude des conformères."
+        },
+        {
+          "question": "Une molécule achirale est, par définition, une molécule :",
+          "options": ["Ne possédant aucun atome de carbone", "Optiquement toujours très active", "Ne possédant aucun carbone asymétrique dans tous les cas", "Superposable à son image dans un miroir"],
+          "correct_index": 3,
+          "explanation": "Bravo ! 🪞 L'achiralité se définit par la superposition possible avec son image miroir (souvent grâce à un plan ou un centre de symétrie) ; attention, un composé méso possède des C* mais reste achiral, la présence de C* n'implique donc pas toujours la chiralité."
+        }
+      ]
+    },
+    {
+      "id": "thermodynamique",
+      "title": "Thermodynamique chimique : enthalpie, entropie et équilibre",
+      "difficulty": 3,
+      "intro": "Prêt(e) à dompter l'énergie des réactions chimiques ? En route vers l'équilibre thermodynamique ! 🔥⚖️",
+      "course": [
+        {"icon": "🔬", "title": "Système thermodynamique et fonctions d'état", "content": "Un système thermodynamique est une portion de l'univers isolée par la pensée du reste de l'univers (le milieu extérieur). Il peut être ouvert (échange matière et énergie), fermé (échange seulement de l'énergie) ou isolé (aucun échange). Une fonction d'état (comme U, H, S ou G) décrit l'état d'équilibre du système et ne dépend que de cet état, jamais du chemin suivi pour l'atteindre : sa variation ΔF = F_final − F_initial est donc indépendante du trajet réactionnel, ce qui permet d'utiliser des cycles de calcul (loi de Hess)."},
+        {"icon": "⭐", "title": "Enthalpie standard de réaction ΔrH°", "content": "L'enthalpie de réaction ΔrH représente l'énergie thermique échangée avec le milieu extérieur à pression constante. Une réaction est exothermique si ΔrH < 0 (le système cède de l'énergie), endothermique si ΔrH > 0 (le système en reçoit), et athermique si ΔrH = 0. L'état standard correspond à un corps pur sous P = 1 atm, à température constante (souvent 298 K par convention). L'enthalpie standard de formation ΔfH° d'un corps simple pris dans son état de référence est nulle par convention, pour toute température."},
+        {"icon": "➗", "title": "Calculer une enthalpie de réaction : la loi de Hess", "content": "H étant une fonction d'état, on peut calculer ΔrH° par un cycle thermodynamique reliant réactifs et produits via les corps simples (loi de Hess) : ΔrH° = Σ ΔfH°(produits) − Σ ΔfH°(réactifs). On peut également passer par les enthalpies de liaison : ΔrH° = Σ ΔlH°(liaisons rompues) − Σ ΔlH°(liaisons formées), car rompre une liaison consomme de l'énergie (processus endothermique) tandis qu'en former libère de l'énergie."},
+        {"icon": "⭐", "title": "Entropie et second principe", "content": "L'entropie S traduit le degré de désordre microscopique d'un système ; c'est une fonction d'état extensive. Le second principe de la thermodynamique énonce que dans un système isolé, toute transformation spontanée s'accompagne d'une variation d'entropie positive (création de désordre). Le troisième principe (principe de Nernst) postule qu'un cristal parfait à 0 K possède une entropie nulle, ce qui permet de définir des entropies absolues standards S° pour chaque substance à une température donnée."},
+        {"icon": "🧠", "title": "Enthalpie libre de Gibbs et critère d'évolution", "content": "L'enthalpie libre G = H − T×S combine les effets énergétique et entropique pour prédire le sens spontané d'une réaction à température et pression constantes : ΔrG = ΔrH − T×ΔrS. Si ΔrG < 0, la réaction est exergonique et évolue spontanément dans le sens direct ; si ΔrG > 0, elle est endergonique et évolue dans le sens indirect ; si ΔrG = 0, le système est à l'équilibre. Une réaction sera d'autant plus favorisée qu'elle libère de l'énergie (ΔrH < 0) et qu'elle crée du désordre (ΔrS > 0)."},
+        {"icon": "➗", "title": "Constante d'équilibre et quotient réactionnel", "content": "À l'équilibre chimique, ΔrG = 0 et on définit la constante d'équilibre K par ΔrG° = −RT×ln(K), avec R = 8,314 J·mol⁻¹·K⁻¹ la constante des gaz parfaits. À un instant donné, on définit de même le quotient réactionnel Γ, qui permet d'écrire ΔrG = RT×ln(Γ/K). Si Γ < K, la réaction évolue dans le sens direct (ΔrG < 0) ; si Γ > K, elle évolue dans le sens indirect (ΔrG > 0) ; si Γ = K, le système est à l'équilibre."},
+        {"icon": "⭐", "title": "Loi de Van't Hoff et principe de Le Chatelier", "content": "La constante d'équilibre K ne dépend que de la température. La loi de Van't Hoff, ln(K_T2/K_T1) = (ΔrH°/R)×(1/T2 − 1/T1), permet de calculer K à une nouvelle température à partir de sa valeur à une température connue, en supposant ΔrH° constant sur l'intervalle considéré. Le principe de Le Chatelier énonce quant à lui que tout système à l'équilibre soumis à une perturbation (ajout de réactif, changement de température, de pression...) évolue de façon à s'opposer partiellement à cette perturbation, jusqu'à atteindre un nouvel état d'équilibre."},
+        {"icon": "⚠️", "title": "Piège classique", "content": "Ne confondez pas ΔrG (variation d'enthalpie libre dans les conditions réelles de la réaction, qui détermine le sens d'évolution à un instant donné) et ΔrG° (variation d'enthalpie libre standard, liée uniquement à la constante d'équilibre K). Attention également aux signes : une enthalpie de liaison ΔlH est toujours négative (énergie libérée à la formation), alors que l'énergie à fournir pour rompre cette même liaison est positive et de même valeur absolue."}
+      ],
+      "quiz": [
+        {
+          "question": "Un système thermodynamique qui échange de l'énergie mais pas de matière avec le milieu extérieur est dit :",
+          "options": ["Fermé", "Ouvert", "Isolé", "Homogène"],
+          "correct_index": 0,
+          "explanation": "Bien joué ! 🔒 Un système fermé échange de l'énergie (chaleur, travail) avec l'extérieur, mais pas de matière ; un système ouvert échange les deux, un système isolé n'échange rien."
+        },
+        {
+          "question": "Une fonction d'état, comme l'enthalpie H, a pour propriété fondamentale :",
+          "options": ["De dépendre uniquement du chemin suivi lors de la transformation", "De ne dépendre que de l'état initial et final du système, pas du chemin suivi", "D'être toujours négative", "De ne jamais pouvoir être calculée"],
+          "correct_index": 1,
+          "explanation": "Exact ! ⭐ C'est précisément la définition d'une fonction d'état : sa variation ΔF ne dépend que des états initial et final, ce qui autorise l'usage de cycles thermodynamiques (loi de Hess) pour la calculer."
+        },
+        {
+          "question": "Une réaction pour laquelle ΔrH° < 0 est qualifiée de :",
+          "options": ["Endothermique", "Athermique", "Exothermique", "Isotherme"],
+          "correct_index": 2,
+          "explanation": "Parfait ! 🔥 Un ΔrH° négatif signifie que le système cède de l'énergie thermique au milieu extérieur : la réaction est exothermique (ex. combustion)."
+        },
+        {
+          "question": "L'enthalpie standard de formation ΔfH° d'un corps simple pris dans son état de référence (ex. O₂ gazeux, C graphite) vaut :",
+          "options": ["−393,5 kJ/mol par convention", "Une valeur qui dépend de la pression uniquement", "Une valeur toujours positive", "0 J/mol, par convention, à toute température"],
+          "correct_index": 3,
+          "explanation": "Bravo ! 0️⃣ Par convention, l'enthalpie standard de formation d'un corps simple dans son état de référence est nulle, quelle que soit la température considérée."
+        },
+        {
+          "question": "D'après la loi de Hess, l'enthalpie standard de réaction se calcule par :",
+          "options": ["ΔrH° = Σ ΔfH°(produits) − Σ ΔfH°(réactifs)", "ΔrH° = Σ ΔfH°(réactifs) − Σ ΔfH°(produits)", "ΔrH° = Σ ΔfH°(produits) + Σ ΔfH°(réactifs)", "ΔrH° = ΔfH°(produits) × ΔfH°(réactifs)"],
+          "correct_index": 0,
+          "explanation": "Exact ! 🔄 La loi de Hess découle du caractère de fonction d'état de H : on calcule ΔrH° comme la différence entre la somme des enthalpies de formation des produits et celle des réactifs."
+        },
+        {
+          "question": "La formation d'une liaison covalente à partir de deux atomes gazeux isolés est un processus :",
+          "options": ["Systématiquement athermique", "Toujours exothermique (ΔlH < 0)", "Toujours endothermique (ΔlH > 0)", "Sans effet énergétique mesurable"],
+          "correct_index": 1,
+          "explanation": "Bien vu ! 🔗 La formation d'une liaison stabilise le système : elle libère de l'énergie, donc l'enthalpie de liaison ΔlH est toujours négative. Rompre cette même liaison nécessite au contraire un apport d'énergie égal en valeur absolue."
+        },
+        {
+          "question": "L'entropie S d'un système traduit :",
+          "options": ["L'énergie totale échangée avec l'extérieur", "La quantité de matière du système", "Le degré de désordre microscopique du système", "La température absolue du système"],
+          "correct_index": 2,
+          "explanation": "Exact ! 🌪️ L'entropie mesure le désordre microscopique : plus un système est désordonné (gaz plutôt que solide, grand nombre de molécules plutôt que peu...), plus son entropie est élevée."
+        },
+        {
+          "question": "D'après le second principe de la thermodynamique, dans un système isolé, toute transformation spontanée s'accompagne d'une variation d'entropie :",
+          "options": ["Nulle", "Négative", "Qui dépend uniquement de la pression", "Positive"],
+          "correct_index": 3,
+          "explanation": "Bravo ! ↗️ Le second principe impose ΔS > 0 pour toute transformation spontanée dans un système isolé : l'univers évolue naturellement vers plus de désordre."
+        },
+        {
+          "question": "Selon le principe de Nernst (troisième principe), l'entropie d'un cristal parfait au zéro absolu (0 K) vaut :",
+          "options": ["0 J·K⁻¹", "1 J·K⁻¹", "Une valeur infinie", "Une valeur qui dépend de la nature du corps"],
+          "correct_index": 0,
+          "explanation": "Exact ! ❄️ Au zéro absolu, un cristal parfait présente un ordre total, donc une entropie nulle : c'est cette référence qui permet de définir des entropies absolues standards S° pour chaque substance."
+        },
+        {
+          "question": "L'enthalpie libre de Gibbs se définit par la relation :",
+          "options": ["G = U + PV", "G = H − T×S", "G = H + T×S", "G = S − T×H"],
+          "correct_index": 1,
+          "explanation": "Bien joué ! ⚖️ L'enthalpie libre combine le terme énergétique (H) et le terme entropique (T×S) : G = H − T×S, ce qui permet de prédire le sens d'évolution spontanée d'un système à T et P constantes."
+        },
+        {
+          "question": "Si ΔrG < 0 pour une réaction, celle-ci est dite :",
+          "options": ["Endothermique", "Athermique", "Exergonique, et évolue spontanément dans le sens direct", "Endergonique"],
+          "correct_index": 2,
+          "explanation": "Parfait ! ➡️ Un ΔrG négatif signifie que la réaction est exergonique : elle évolue spontanément dans le sens direct, en libérant de l'énergie utilisable jusqu'à atteindre l'équilibre (ΔrG = 0)."
+        },
+        {
+          "question": "À l'équilibre chimique, on a toujours :",
+          "options": ["ΔrG° = 0 quelle que soit la réaction", "ΔrH = 0", "ΔrS = 0", "ΔrG = 0"],
+          "correct_index": 3,
+          "explanation": "Bravo ! 🎯 À l'équilibre, l'avancement de la réaction n'évolue plus : cela correspond exactement à ΔrG = 0 (et non ΔrG°, qui reste une grandeur standard fixe pour une température donnée)."
+        },
+        {
+          "question": "La relation reliant l'enthalpie libre standard de réaction à la constante d'équilibre K est :",
+          "options": ["ΔrG° = −RT × ln(K)", "ΔrG° = RT × K", "ΔrG° = RT / ln(K)", "ΔrG° = −RT / K"],
+          "correct_index": 0,
+          "explanation": "Exact ! 🧮 ΔrG° = −RT·ln(K), avec R = 8,314 J·mol⁻¹·K⁻¹ : plus K est grand (réaction très favorable dans le sens direct), plus ΔrG° est négatif."
+        },
+        {
+          "question": "Si le quotient réactionnel Γ est inférieur à la constante d'équilibre K (Γ < K), la réaction évolue :",
+          "options": ["Dans le sens direct (ΔrG < 0)", "Dans le sens indirect (ΔrG > 0)", "Elle est déjà à l'équilibre", "Elle s'arrête immédiatement"],
+          "correct_index": 0,
+          "explanation": "Bien vu ! ➡️ Lorsque Γ < K, on a ΔrG = RT×ln(Γ/K) < 0 : le système n'a pas encore atteint l'équilibre et la réaction se poursuit dans le sens direct pour augmenter Γ jusqu'à K."
+        },
+        {
+          "question": "La constante d'équilibre K d'une réaction chimique dépend :",
+          "options": ["De la concentration initiale des réactifs uniquement", "De la pression totale du système uniquement", "Uniquement de la température", "Du volume du récipient réactionnel"],
+          "correct_index": 2,
+          "explanation": "Exact ! 🌡️ K est une grandeur qui ne dépend que de la température ; c'est justement ce qui permet d'utiliser la loi de Van't Hoff pour calculer K à une nouvelle température."
+        },
+        {
+          "question": "La loi de Van't Hoff permet de :",
+          "options": ["Calculer directement le pH d'une solution", "Déterminer la géométrie d'une molécule", "Calculer l'entropie absolue d'un corps pur", "Calculer la constante d'équilibre K à une température T2 à partir de sa valeur à T1"],
+          "correct_index": 3,
+          "explanation": "Bravo ! 🔁 La loi de Van't Hoff, ln(K_T2/K_T1) = (ΔrH°/R)×(1/T2 − 1/T1), relie les constantes d'équilibre à deux températures différentes, en supposant ΔrH° constant sur l'intervalle considéré."
+        },
+        {
+          "question": "D'après le principe de Le Chatelier, si l'on augmente la température d'un système à l'équilibre, celui-ci évolue :",
+          "options": ["Dans le sens qui consomme de la chaleur, c'est-à-dire le sens endothermique", "Toujours dans le sens exothermique", "Il n'évolue jamais suite à un changement de température", "Dans un sens totalement imprévisible"],
+          "correct_index": 0,
+          "explanation": "Exact ! 🌡️ Le système s'oppose à la perturbation : une augmentation de température favorise le sens qui absorbe de la chaleur, c'est-à-dire le sens endothermique de la réaction."
+        },
+        {
+          "question": "Dans la loi de Van't Hoff et le calcul de ΔrG°, la constante des gaz parfaits R vaut, en unités du système international :",
+          "options": ["8,314 J·mol⁻¹·K⁻¹", "0,082 J·mol⁻¹·K⁻¹", "273 J·mol⁻¹·K⁻¹", "14 J·mol⁻¹·K⁻¹"],
+          "correct_index": 0,
+          "explanation": "Bien joué ! 🔢 R = 8,314 J·mol⁻¹·K⁻¹ dans le système international (on utilise aussi 0,082 L·atm·mol⁻¹·K⁻¹ selon les unités de pression et de volume choisies)."
+        },
+        {
+          "question": "Une activité aᵢ égale à 1, quelle que soit sa concentration, est attribuée par convention :",
+          "options": ["À tout gaz parfait", "À tout soluté en solution diluée", "À un solide pur ou à un solvant", "À toute espèce chargée"],
+          "correct_index": 2,
+          "explanation": "Exact ! 1️⃣ Par convention, un solide pur ou un solvant (comme l'eau, lorsqu'elle est en large excès) a une activité fixée à 1, ce qui simplifie l'expression du quotient réactionnel et de la constante d'équilibre."
+        },
+        {
+          "question": "Si l'on retire un produit d'une réaction à l'équilibre, d'après le principe de Le Chatelier, le système évolue :",
+          "options": ["Vers un nouvel équilibre sans changer l'avancement", "Dans le sens de la consommation de ce produit encore présent", "De façon imprévisible", "Dans le sens qui reproduit ce produit, c'est-à-dire le sens direct"],
+          "correct_index": 3,
+          "explanation": "Bravo ! ⚖️ En retirant un produit, on diminue Γ en dessous de K : le système réagit en produisant à nouveau ce produit (sens direct) pour tendre vers un nouvel état d'équilibre, conformément au principe de Le Chatelier."
+        }
+      ]
+    }
+  ]
+}

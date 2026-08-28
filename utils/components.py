@@ -5,10 +5,14 @@ tout texte indenté de 4+ espaces en bloc de code, ce qui casserait le rendu
 si on gardait l'indentation Python habituelle à l'intérieur des f-strings.
 """
 
+import streamlit as st
+
 from utils.html import html
 from utils.mascot import mascot_svg
 from utils.progress import mastery_ratio, render_hearts, render_stars
 from utils.theme import TINTS
+
+LEVEL_LABELS = {"facile": "🟢 Facile", "moyen": "🟡 Moyen", "difficile": "🔴 Difficile"}
 
 
 def render_mascot_bubble(title: str, message: str, mood: str = "happy", style: str = "") -> None:
@@ -70,6 +74,31 @@ def render_resource(resource: dict) -> None:
 <p style="margin:0 0 .6rem; font-size:.92rem; line-height:1.6; color:var(--text-soft);">{resource['description']}</p>
 {link_html}
 </div>""")
+
+
+def render_exercises_section(exercises: dict, section_key: str) -> None:
+    """exercises: {"facile": [...], "moyen": [...], "difficile": [...]}"""
+    if not exercises:
+        st.info("Pas encore d'exercices ici, reviens bientôt ! 🌸")
+        return
+
+    level = st.radio(
+        "Niveau de difficulté :",
+        options=["facile", "moyen", "difficile"],
+        format_func=lambda lvl: LEVEL_LABELS.get(lvl, lvl),
+        horizontal=True,
+        key=f"{section_key}_level",
+    )
+
+    items = exercises.get(level, [])
+    for i, ex in enumerate(items):
+        html(f"""<div class="kawaii-card">
+<div class="kawaii-icon" style="background:var(--lavender-tint); color:#8862C7;">✏️</div>
+<h4 style="margin:0 0 .5rem;">Exercice {i + 1}</h4>
+<p style="margin:0; font-size:.98rem; line-height:1.6;">{ex['statement']}</p>
+</div>""")
+        with st.expander("💡 Voir la correction"):
+            st.markdown(ex["solution"])
 
 
 def render_ue_home_card(ue_data: dict) -> None:

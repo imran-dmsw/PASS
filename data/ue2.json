@@ -9,6 +9,7 @@
       "title": "Glucides et lipides",
       "difficulty": 1,
       "intro": "Direction les sucres et les graisses : des molécules essentielles à apprivoiser en douceur ! 🍬🧈",
+      "diagram": "flowchart TD\n    A[Glucides et lipides] --> B[Oses]\n    A --> C[Osides]\n    A --> D[Lipides simples]\n    A --> E[Lipides complexes]\n    A --> F[Roles biologiques]\n    B --> B1[Aldose vs cetose]\n    B --> B2[Serie D et L]\n    B --> B3[Epimeres et enantiomeres]\n    B --> B4[Cyclisation et anomerie]\n    C --> C1[Maltose lactose saccharose]\n    C --> C2[Glycogene et amidon]\n    C --> C3[Cellulose]\n    C --> C4[Glycoproteines N et O]\n    D --> D1[Acides gras satures insatures]\n    D --> D2[Triglycerides]\n    E --> E1[Glycerophospholipides]\n    E --> E2[Cholesterol]\n    F --> F1[Energie et reserve]\n    F --> F2[Structure et reconnaissance]",
       "course": [
         {
           "icon": "🔬",
@@ -329,13 +330,142 @@
           "correct_index": 1,
           "explanation": "Bravo ! Les glucides, notamment via les glycoprotéines et glycolipides membranaires, participent à la communication intercellulaire comme signaux de reconnaissance et déterminants antigéniques."
         }
-      ]
+      ],
+      "exercises": {
+        "facile": [
+          {
+            "statement": "Donnez la formule brute générale d'un ose comportant 6 atomes de carbone.",
+            "solution": "La formule générale d'un ose est Cn(H2O)n. Pour n = 6, on obtient C6(H2O)6, soit C6H12O6 (formule du glucose, du fructose, du galactose, etc.)."
+          },
+          {
+            "statement": "Le ribulose porte une fonction cétone. À quelle famille d'oses appartient-il, et de quel triose de référence dérive-t-il ?",
+            "solution": "Une fonction cétone définit un cétose. Tous les cétoses dérivent structurellement de la dihydroxyacétone, le triose à fonction cétone de référence. Le ribulose est donc un cétose de la famille dérivée de la dihydroxyacétone."
+          },
+          {
+            "statement": "Un ose est-il hydrolysable ? Justifiez votre réponse en une phrase.",
+            "solution": "Non, un ose (monosaccharide) n'est pas hydrolysable : c'est l'unité glucidique élémentaire, qui ne peut pas être scindée en plus petits fragments par addition d'eau. Seuls les osides (assemblages de plusieurs oses) sont hydrolysables."
+          },
+          {
+            "statement": "Citez les deux disaccharides parmi maltose, lactose et saccharose qui possèdent un pouvoir réducteur, et expliquez pourquoi le troisième n'en a pas.",
+            "solution": "Le maltose et le lactose sont réducteurs car chacun conserve un carbone anomérique libre (non engagé dans la liaison osidique). Le saccharose n'est pas réducteur car sa liaison α1-β2 engage simultanément les deux carbones anomériques du glucose et du fructose, ne laissant aucun carbone anomérique libre."
+          },
+          {
+            "statement": "Quel est le nombre de carbones minimal que doit posséder un ose, et pourquoi ce seuil ?",
+            "solution": "Un ose doit comporter au minimum 3 carbones (n ≥ 3). En dessous de ce seuil, il est impossible de porter à la fois un squelette hydroxylé et une fonction carbonyle distincte (aldéhyde ou cétone) : les plus petits oses sont donc des trioses (glycéraldéhyde, dihydroxyacétone)."
+          },
+          {
+            "statement": "Un triglycéride porte-t-il une tête polaire ? Quelle conséquence cela a-t-il sur sa fonction biologique ?",
+            "solution": "Non, un triglycéride est formé de glycérol dont les trois hydroxyles sont estérifiés par des acides gras : il est totalement dépourvu de tête polaire, donc totalement hydrophobe. Cette absence d'amphipathie en fait une molécule de stockage énergétique pur (accumulée dans les adipocytes), incapable de participer à la formation des membranes."
+          },
+          {
+            "statement": "Nommez l'alcool commun aux triglycérides et aux glycérophospholipides.",
+            "solution": "C'est le glycérol, un trialcool à 3 carbones. C'est la nature de l'alcool estérifié par les acides gras (ici le glycérol) qui détermine ces deux classes de lipides simples ou complexes."
+          },
+          {
+            "statement": "Un acide gras possède 18 carbones et aucune double liaison. Est-il saturé ou insaturé ? Donnez un exemple d'acide gras correspondant à cette description.",
+            "solution": "L'absence de toute double liaison définit un acide gras saturé. Avec 18 carbones et 0 double liaison, il s'agit par exemple de l'acide stéarique."
+          },
+          {
+            "statement": "Sur quel acide aminé, parmi ceux étudiés en glycosylation, se fixe la N-glycosylation ?",
+            "solution": "La N-glycosylation se fixe sur l'atome d'azote de la chaîne latérale de l'asparagine (jamais sur la lysine ni l'arginine)."
+          },
+          {
+            "statement": "Le cholestérol appartient-il à la famille des glycérides ? Justifiez.",
+            "solution": "Non, le cholestérol n'est pas un glycéride : c'est un stérol, bâti sur un noyau tétracyclique (cyclopentanoperhydrophénanthrène) porteur d'un seul hydroxyle, une famille chimique totalement distincte des esters de glycérol (glycérides et glycérophospholipides)."
+          }
+        ],
+        "moyen": [
+          {
+            "statement": "Le glucose et le mannose sont dits épimères en C2, tandis que le glucose et le galactose sont épimères en C4. Expliquez ce que signifie « épimère » et pourquoi cette relation implique une parenté structurale plus étroite qu'entre deux énantiomères.",
+            "solution": "Deux oses épimères ne diffèrent que par la configuration d'un seul carbone asymétrique parmi plusieurs (ici C2 pour glucose/mannose, C4 pour glucose/galactose) ; toutes les autres configurations restent identiques. Cette proximité structurale limitée à un seul centre chiral fait que des enzymes peuvent parfois interconvertir ces molécules (épimérases) ou les reconnaître partiellement. À l'inverse, deux énantiomères (comme D-glucose et L-glucose) diffèrent sur la TOTALITÉ de leurs carbones asymétriques : ce sont des images en miroir complètes, biologiquement quasi étrangères l'une à l'autre car la plupart des enzymes sont stéréospécifiques."
+          },
+          {
+            "statement": "Un étudiant affirme : « Le maltose et le lactose sont tous deux formés de deux molécules de glucose reliées en β1-4 ». Identifiez les deux erreurs de cette phrase et corrigez-les.",
+            "solution": "Deux erreurs : (1) le maltose est bien glucose-glucose mais relié en α1-4, pas en β1-4 (c'est la cellulose et le lactose qui utilisent des liaisons β) ; (2) le lactose n'est pas glucose-glucose mais galactose-glucose, relié en β1-4. Correction : maltose = glc-glc en α1-4 (issu de la digestion de l'amidon) ; lactose = gal-glc en β1-4 (sucre du lait, digéré par la lactase)."
+          },
+          {
+            "statement": "Expliquez pourquoi le glycogène, malgré sa composition chimique identique à celle de la cellulose (uniquement des unités glucose), remplit une fonction biologique radicalement différente.",
+            "solution": "Le glycogène est un polymère de glucose relié par des liaisons α1-4 (chaîne) et α1-6 (branchements), une architecture ramifiée dégradable rapidement par les enzymes de la glycogénolyse grâce à la multiplicité des extrémités non réductrices : c'est une réserve énergétique mobilisable. La cellulose, elle, est reliée exclusivement par des liaisons β1-4, ce qui impose une conformation étirée permettant un assemblage rigide en fibres résistantes (rôle structural) mais rend la molécule indigeste pour l'homme, dépourvu de cellulase. La nature de la liaison osidique (α vs β), et non la composition en glucose, explique donc cette divergence fonctionnelle totale."
+          },
+          {
+            "statement": "Une protéine possède un site de N-glycosylation sur une asparagine et un site de O-glycosylation sur une thréonine voisine. Décrivez, pour chacun de ces deux sites, le compartiment cellulaire où débute la glycosylation.",
+            "solution": "La N-glycosylation débute majoritairement dans le réticulum endoplasmique, puis se poursuit dans l'appareil de Golgi où la chaîne glucidique est remaniée (contrôle qualité du repliement). La O-glycosylation, elle, se déroule presque exclusivement dans l'appareil de Golgi (elle concerne notamment les mucines du mucus digestif et respiratoire)."
+          },
+          {
+            "statement": "Un patient présente une intolérance au lactose à l'âge adulte. Expliquez le mécanisme biochimique de ce trouble en identifiant précisément l'enzyme en cause et la liaison qu'elle doit hydrolyser.",
+            "solution": "Le lactose est un disaccharide galactose-glucose relié par une liaison β1-4. Sa digestion nécessite une enzyme spécifique, la lactase, qui hydrolyse cette liaison. En cas de déficit en lactase (fréquent chez l'adulte), le lactose non digéré n'est pas absorbé au niveau de l'intestin grêle et parvient intact jusqu'au côlon, où il subit une fermentation bactérienne, provoquant les symptômes digestifs caractéristiques de l'intolérance (ballonnements, diarrhée)."
+          },
+          {
+            "statement": "Comparez, sur le plan de l'amphipathie et de l'organisation membranaire, un triglycéride et un glycérophospholipide.",
+            "solution": "Le triglycéride porte 3 acides gras estérifiés sur le glycérol : il est totalement hydrophobe, sans tête polaire, et ne peut donc pas s'organiser en bicouche (il forme au contraire des gouttelettes lipidiques). Le glycérophospholipide ne porte que 2 acides gras sur le glycérol, la troisième position portant un phosphate lié à une tête polaire (choline, sérine...) : il est amphipathique (queue hydrophobe + tête hydrophile), ce qui lui permet de s'auto-organiser en bicouche lipidique, structure de base des membranes biologiques."
+          },
+          {
+            "statement": "Un acide gras présente la notation 16:1 (Δ9). Précisez son nombre de carbones, son nombre de doubles liaisons, et la position de cette double liaison depuis le carboxyle.",
+            "solution": "16:1 (Δ9) signifie 16 carbones, 1 seule double liaison, positionnée entre les carbones 9 et 10 en comptant depuis le carbone du carboxyle (C1). Il s'agit d'un acide gras mono-insaturé (par exemple apparenté à l'acide palmitoléique)."
+          },
+          {
+            "statement": "Expliquez pourquoi les huiles végétales, riches en acides gras insaturés, sont liquides à température ambiante alors que les graisses animales, riches en acides gras saturés, sont solides.",
+            "solution": "Chaque double liaison (généralement en configuration cis chez les acides gras naturels) introduit une coudure géométrique dans la chaîne carbonée. Cette coudure diminue la capacité des molécules à s'empiler étroitement les unes contre les autres, ce qui abaisse leur température de fusion. Les acides gras saturés, à chaîne linéaire sans coudure, s'empilent au contraire de façon compacte et ont une température de fusion plus élevée, d'où leur état solide à température ambiante."
+          },
+          {
+            "statement": "Un étudiant confond micelle et liposome. Distinguez ces deux structures en précisant leur nombre de couches lipidiques et un exemple physiologique ou pharmacologique pour chacune.",
+            "solution": "La micelle est constituée d'une seule couche de molécules amphipathiques disposées en sphère, têtes polaires à l'extérieur, cœur hydrophobe central : elle est formée par exemple par les sels biliaires lors de la digestion intestinale des lipides, pour solubiliser acides gras et cholestérol alimentaires. Le liposome est une vésicule fermée à BICOUCHE (donc deux couches), qui piège un compartiment aqueux interne : il est utilisé en pharmacologie/cosmétique comme vecteur pour encapsuler et transporter un principe actif à travers les membranes biologiques."
+          },
+          {
+            "statement": "Expliquez le rôle des chaînes oligosaccharidiques portées par les glycoprotéines membranaires dans la détermination des groupes sanguins du système ABO.",
+            "solution": "Les groupes sanguins ABO résultent de petites différences structurales dans les chaînes oligosaccharidiques portées par des glycoprotéines (et glycolipides) de la membrane des globules rouges : l'ajout d'un résidu N-acétylgalactosamine définit le groupe A, l'ajout d'un galactose définit le groupe B, et l'absence des deux définit le groupe O. Ces structures glucidiques constituent des déterminants antigéniques de surface, reconnus par le système immunitaire, ce qui explique pourquoi une transfusion incompatible (par exemple du sang A chez un receveur de groupe B) déclenche une réaction immunitaire majeure."
+          }
+        ],
+        "difficile": [
+          {
+            "statement": "Un chercheur isole un ose inconnu et observe, en projection de Fischer, que son hydroxyle porté par le carbone asymétrique le plus éloigné du carbonyle pointe vers la gauche. Il en conclut hâtivement que cet ose ne peut pas exister naturellement chez l'homme. Discutez la validité de ce raisonnement.",
+            "solution": "L'hydroxyle pointant vers la gauche sur le carbone asymétrique le plus éloigné du carbonyle définit un ose de série L. Or la quasi-totalité des oses du métabolisme humain sont de série D (à l'inverse des acides aminés protéiques, tous de série L) : un ose de série L serait donc effectivement très inhabituel dans le métabolisme glucidique humain courant. Cependant, le raisonnement du chercheur n'est pas absolument généralisable : il ne faut pas conclure à une impossibilité totale, seulement à une rareté physiologique, car des oses ou dérivés de série L peuvent exister marginalement dans certains contextes biologiques particuliers (comme certains acides aminés de série D existent chez les bactéries). La règle de la série D dominante est une règle très majoritaire, pas une loi absolue sans aucune exception biologique."
+          },
+          {
+            "statement": "Le fructose peut se cycliser sous forme furanose (5 atomes) ou pyranose (6 atomes). Expliquez pourquoi, contrairement au glucose qui adopte presque exclusivement une forme pyranose, le fructose peut adopter les deux formes cycliques, et précisez laquelle prédomine en solution libre par rapport à celle engagée dans le saccharose.",
+            "solution": "Le fructose porte sa fonction cétone sur le carbone C2, ce qui permet une cyclisation avec l'hydroxyle du C5 (formant un cycle furanose à 5 sommets) ou avec l'hydroxyle du C6 (formant un cycle pyranose à 6 sommets), les deux étant géométriquement accessibles. En solution aqueuse libre, le fructose existe majoritairement sous forme pyranose (la plus stable). En revanche, lorsqu'il est engagé dans le saccharose (lié au glucose via une liaison α1-β2 engageant son carbone anomérique C2), le fructose est fixé sous sa forme furanose. Le glucose, lui, porte sa fonction aldéhyde en C1 : la cyclisation privilégiée avec l'hydroxyle du C5 forme presque exclusivement un cycle pyranose à 6 sommets, beaucoup plus stable pour cette géométrie."
+          },
+          {
+            "statement": "Une protéine possède deux ponts disulfure : l'un relie deux cystéines de la même chaîne polypeptidique, l'autre relie une cystéine de cette chaîne à une cystéine d'une chaîne voisine. Cette question, en apparence sur les protéines, permet de tester une notion du chapitre glucides/lipides : quel est le point commun chimique entre la formation d'un pont disulfure et celle d'une liaison osidique, et quelle est la différence fondamentale de mécanisme ?",
+            "solution": "Le point commun est que les deux réactions relient deux monomères par une liaison covalente formée entre deux fonctions chimiques portées par chacun des deux partenaires. La différence fondamentale est le mécanisme chimique : la liaison osidique se forme par une réaction de condensation (déshydratation, avec libération d'une molécule d'eau) entre un hydroxyle anomérique et un hydroxyle d'un second ose ; le pont disulfure, lui, se forme par une réaction d'oxydation des groupements thiol (-SH) de deux cystéines, sans libération d'eau. Ce sont donc deux logiques chimiques distinctes (condensation hydrolysable vs oxydoréduction), bien qu'aboutissant toutes deux à une liaison covalente forte stable."
+          },
+          {
+            "statement": "On vous donne un triglycéride mixte estérifié par de l'acide palmitique (C16:0), de l'acide oléique (C18:1 Δ9) et de l'acide alpha-linolénique (C18:3, ω3). Un seul de ces trois acides gras est qualifié d'« essentiel ». Identifiez-le et justifiez rigoureusement pourquoi les deux autres ne le sont pas, même si l'un d'eux est insaturé.",
+            "solution": "Seul l'acide alpha-linolénique (ω3) est essentiel. L'acide palmitique (C16:0) est saturé et parfaitement synthétisable de novo par l'organisme (voie de la synthèse des acides gras à partir de l'acétyl-CoA), donc non essentiel — cela ne pose pas de piège particulier. L'acide oléique (C18:1 Δ9, famille ω9) EST insaturé mais reste non essentiel : sa double liaison est positionnée en Δ9, et l'organisme humain possède justement la désaturase Δ9 nécessaire pour l'introduire (à partir de l'acide stéarique), donc il peut le synthétiser lui-même. Seuls les acides gras des familles ω3 et ω6, dont la première double liaison se situe au-delà du carbone 9 depuis le carboxyle, nécessitent des désaturases (Δ12, Δ15) que l'organisme humain ne possède pas : c'est cette limitation enzymatique précise, et non le simple fait d'être insaturé, qui définit l'essentialité."
+          },
+          {
+            "statement": "Une glycoprotéine perd sa fonction biologique après traitement par une endoglycosidase qui clive spécifiquement la liaison entre l'oligosaccharide et l'asparagine, sans toucher aux liaisons O-glycosidiques. Que pouvez-vous en déduire sur le(s) type(s) de glycosylation initialement présent(s), et pourquoi cette expérience ne permet pas d'exclure la présence simultanée d'O-glycosylation fonctionnellement neutre ?",
+            "solution": "L'endoglycosidase clive spécifiquement les liaisons N-glycosidiques (asparagine-oligosaccharide) : la perte de fonction observée indique donc que la N-glycosylation joue un rôle fonctionnel important pour cette protéine (adressage, repliement, reconnaissance). Cependant, cette expérience ne dit rien sur une éventuelle O-glycosylation présente par ailleurs sur des sérines/thréonines de la même protéine : si celle-ci existe mais n'est pas clivée par cette enzyme spécifique des liaisons N, elle pourrait très bien persister intacte après le traitement sans que l'expérience ne le révèle, car on n'a testé ni son existence ni sa contribution fonctionnelle propre — il faudrait un second traitement par une enzyme spécifique des liaisons O-glycosidiques pour trancher cette question."
+          },
+          {
+            "statement": "Expliquez pourquoi la mutarotation du glucose en solution aqueuse peut être suivie expérimentalement par polarimétrie, et pourquoi cette variation du pouvoir rotatoire finit par se stabiliser au bout d'un certain temps plutôt que de continuer indéfiniment.",
+            "solution": "Les anomères α et β du glucose, ainsi que sa forme linéaire minoritaire, possèdent des pouvoirs rotatoires optiques différents car ce sont des stéréoisomères distincts au niveau du carbone anomérique. En solution, ces formes s'interconvertissent en permanence par réouverture et refermeture du cycle (mutarotation) : au départ (si l'on dissout par exemple un cristal d'anomère α pur), le pouvoir rotatoire mesuré évolue donc progressivement puisque la proportion des différentes formes change. Cette évolution se stabilise avec le temps car le système atteint un équilibre thermodynamique entre les formes α, β et linéaire : à l'équilibre, les vitesses de conversion α→linéaire→β et β→linéaire→α se compensent exactement, si bien que les proportions relatives de chaque forme, et donc le pouvoir rotatoire global mesuré, cessent de varier — ce n'est pas un arrêt du phénomène mais un état stationnaire dynamique."
+          },
+          {
+            "statement": "Un lipide est extrait et analysé : il contient du carbone, de l'hydrogène, de l'oxygène et de l'azote, mais pas de phosphate. Peut-il s'agir d'un glycérophospholipide ? Proposez une famille de lipides complexes plus cohérente avec cette composition et justifiez à partir de la nature de l'alcool estérifié.",
+            "solution": "Non, ce ne peut pas être un glycérophospholipide, car cette famille comporte obligatoirement un groupement phosphate (d'où son nom), or l'analyse ne révèle aucun phosphate. La présence d'azote sans phosphate oriente plutôt vers la famille des sphingolipides : ces lipides complexes sont bâtis non pas sur le glycérol mais sur la sphingosine, un amino-alcool qui porte lui-même l'azote caractéristique de cette famille, particulièrement représentée dans le tissu nerveux. C'est bien la nature de l'alcool estérifié (ici la sphingosine plutôt que le glycérol) qui détermine la classe précise du lipide obtenu, conformément au principe organisateur général de la classification lipidique."
+          },
+          {
+            "statement": "Un polysaccharide de réserve et un polysaccharide structural sont tous deux constitués exclusivement de résidus de glucose. Un étudiant propose de les différencier uniquement en mesurant leur masse moléculaire totale. Critiquez cette approche et proposez le critère structural réellement discriminant.",
+            "solution": "La masse moléculaire totale n'est pas un critère fiable : glycogène/amidon (réserve) et cellulose (structure) peuvent tous deux exister sous des tailles de polymères très variables selon la source biologique, et rien n'empêche deux polymères de tailles comparables d'appartenir à des familles fonctionnelles différentes. Le critère réellement discriminant est le type de liaison osidique reliant les résidus de glucose : les polysaccharides de réserve (glycogène, amidon) combinent des liaisons α1-4 (chaîne linéaire) et α1-6 (branchements), une configuration qui permet une dégradation enzymatique rapide et de multiples points d'accès ; la cellulose, elle, n'utilise que des liaisons β1-4, qui imposent une conformation étirée et un assemblage rigide en fibres, indigeste pour l'homme faute de cellulase. C'est donc l'anomérie de la liaison osidique (α vs β), et non la taille du polymère, qui détermine la fonction biologique."
+          },
+          {
+            "statement": "Un extrait contient un disaccharide non réducteur composé de deux hexoses. Un étudiant conclut immédiatement qu'il s'agit forcément de saccharose. Discutez la validité logique de cette conclusion.",
+            "solution": "La conclusion est trop hâtive. Le caractère non réducteur d'un disaccharide résulte du fait qu'aucun carbone anomérique n'est libre, c'est-à-dire que les deux oses sont reliés par une liaison qui engage simultanément leurs deux carbones anomériques respectifs (comme dans le saccharose, liaison α1-β2 entre glucose et fructose). Or, ce critère structural (absence de carbone anomérique libre) pourrait en théorie être satisfait par d'autres combinaisons d'oses reliés de façon similaire (deux carbones anomériques engagés), sans que la nature exacte des deux oses ni le type précis de liaison ne soit fixé pour autant. Le saccharose est effectivement l'exemple classique et le plus connu de disaccharide non réducteur en biochimie humaine, mais l'observation seule du caractère non réducteur ne permet pas, en toute rigueur logique, d'identifier avec certitude absolue la nature précise du disaccharide sans analyse structurale complémentaire (identification des deux oses et de leur liaison exacte)."
+          },
+          {
+            "statement": "Expliquez pourquoi la chitine, polymère apparenté à la cellulose et présent chez les insectes et les champignons, n'est pas classée parmi les lipides ni parmi les glycoprotéines, et rattachez-la précisément à l'une des quatre grandes fonctions biologiques des glucides.",
+            "solution": "La chitine n'est pas un lipide car elle n'est ni hydrophobe ni amphipathique et ne résulte pas de l'estérification d'un acide gras par un alcool : c'est un polysaccharide, comme la cellulose, composé d'unités glucidiques (N-acétylglucosamine) reliées par des liaisons covalentes de type osidique. Elle n'est pas non plus une glycoprotéine, car il ne s'agit pas d'une protéine portant une chaîne glucidique greffée, mais d'un polymère purement glucidique. Elle se rattache donc au rôle STRUCTURAL des glucides (au même titre que la cellulose végétale), en formant l'exosquelette rigide des insectes et crustacés ainsi que la paroi de nombreux champignons — et non aux rôles énergétique, de réserve, ou de reconnaissance cellulaire."
+          }
+        ]
+      }
     },
     {
       "id": "acides_amines_proteines",
       "title": "Acides aminés et structure des protéines",
       "difficulty": 2,
       "intro": "Prêt·e à empiler les acides aminés comme des briques pour construire des protéines ? 🧱🧬",
+      "diagram": "flowchart TD\n    A[Acides amines et proteines] --> B[Structure de l acide amine]\n    A --> C[Proprietes physico chimiques]\n    A --> D[Liaison peptidique]\n    A --> E[Structures secondaires]\n    A --> F[Structures superieures]\n    B --> B1[Carbone alpha et chaine R]\n    B --> B2[Serie L et glycine]\n    C --> C1[Zwitterion ampholyte]\n    C --> C2[pHi et titration]\n    C --> C3[Classification et AA essentiels]\n    D --> D1[Condensation et H2O]\n    D --> D2[Rigide plane polaire]\n    D --> D3[Angles phi et psi]\n    E --> E1[Helice alpha]\n    E --> E2[Feuillet beta]\n    F --> F1[Structure tertiaire et domaines]\n    F --> F2[Structure quaternaire]\n    F --> F3[Denaturation et repliement]",
       "course": [
         {
           "icon": "🔬",
@@ -651,13 +781,142 @@
           "correct_index": 1,
           "explanation": "Tout juste ! Le préfixe homo- indique des sous-unités identiques et tétra- qu'elles sont au nombre de quatre : c'est un homotétramère."
         }
-      ]
+      ],
+      "exercises": {
+        "facile": [
+          {
+            "statement": "Citez les quatre groupements chimiques fixés sur le carbone α d'un acide aminé standard.",
+            "solution": "Sur le carbone α sont fixés : une fonction amine (-NH2), une fonction acide carboxylique (-COOH), un atome d'hydrogène, et une chaîne latérale R, qui varie selon l'acide aminé et détermine son identité biochimique."
+          },
+          {
+            "statement": "Quel est le seul acide aminé protéique non chiral, et pourquoi ?",
+            "solution": "C'est la glycine, car sa chaîne latérale R se réduit à un simple atome d'hydrogène : le carbone α porte alors deux hydrogènes identiques, ce qui abolit toute asymétrie et rend la molécule non chirale."
+          },
+          {
+            "statement": "À quelle série stéréochimique (D ou L) appartiennent tous les acides aminés protéiques naturels ?",
+            "solution": "Ils appartiennent tous à la série L, par opposition aux oses du métabolisme humain qui sont majoritairement de série D."
+          },
+          {
+            "statement": "Définissez le pH isoélectrique (pHi) d'un acide aminé en une phrase.",
+            "solution": "Le pHi est la valeur de pH pour laquelle la charge électrique globale nette portée par l'acide aminé est exactement nulle, ce qui signifie qu'à ce pH il ne migre pas sous l'effet d'un champ électrique."
+          },
+          {
+            "statement": "Nommez les trois acides aminés protéiques porteurs d'un cycle aromatique dans leur chaîne latérale.",
+            "solution": "Il s'agit de la phénylalanine, de la tyrosine et du tryptophane, les trois seuls acides aminés capables d'absorber la lumière ultraviolette grâce à leur cycle aromatique."
+          },
+          {
+            "statement": "Quelle réaction chimique forme la liaison peptidique, et quel sous-produit est libéré ?",
+            "solution": "La liaison peptidique se forme par une réaction de condensation entre le carboxyle d'un acide aminé et l'amine du suivant, avec libération d'une molécule d'eau."
+          },
+          {
+            "statement": "Une chaîne polypeptidique se lit-elle de l'extrémité C-terminale vers l'extrémité N-terminale, ou l'inverse ?",
+            "solution": "Par convention universelle, une chaîne polypeptidique se lit et s'écrit toujours de l'extrémité N-terminale (amine libre) vers l'extrémité C-terminale (carboxyle libre)."
+          },
+          {
+            "statement": "Combien de résidus d'acides aminés compte, en moyenne, un tour complet d'hélice α ?",
+            "solution": "Un tour d'hélice α comporte environ 3,6 résidus, pour un pas d'hélice d'environ 5,4 Å."
+          },
+          {
+            "statement": "La dénaturation d'une protéine détruit-elle sa structure primaire ? Répondez et justifiez brièvement.",
+            "solution": "Non. La dénaturation ne rompt que les liaisons faibles qui stabilisent les structures secondaire, tertiaire et quaternaire. La structure primaire, maintenue par des liaisons peptidiques covalentes fortes, reste intacte."
+          },
+          {
+            "statement": "Qu'est-ce qu'un homodimère ?",
+            "solution": "Un homodimère est une protéine de structure quaternaire formée de l'assemblage de deux sous-unités polypeptidiques identiques."
+          }
+        ],
+        "moyen": [
+          {
+            "statement": "On vous donne un acide aminé neutre dont le pKa du groupement carboxyle vaut 2,3 et celui du groupement amine vaut 9,7. Calculez son pHi.",
+            "solution": "Pour un acide aminé neutre (2 fonctions ionisables seulement), pHi = (pKa1 + pKa2) / 2 = (2,3 + 9,7) / 2 = 12 / 2 = 6. Le pHi de cet acide aminé est donc 6."
+          },
+          {
+            "statement": "Pour un acide aminé acide comme l'aspartate, quels pKa doit-on utiliser pour calculer le pHi, et pourquoi le résultat est-il inférieur à 6 ?",
+            "solution": "Pour un acide aminé acide, on prend la moyenne des deux pKa les plus BAS, c'est-à-dire ceux qui encadrent la forme parfaitement neutre de la molécule (le pKa du carboxyle α et celui du carboxyle de la chaîne latérale), en laissant de côté le pKa de l'amine α (le plus élevé). Comme ces deux pKa bas sont tous deux inférieurs à ceux d'un acide aminé neutre standard, la moyenne obtenue est déplacée vers des valeurs nettement inférieures à 6 (autour de 3), ce qui traduit le caractère globalement acide de la molécule."
+          },
+          {
+            "statement": "Expliquez pourquoi le dosage d'une protéine par spectrophotométrie se fait à 280 nm alors que celui des acides nucléiques se fait à 260 nm, en reliant cette différence à la structure chimique des molécules concernées.",
+            "solution": "L'absorption UV à 280 nm est due aux résidus aromatiques (tyrosine, tryptophane principalement) présents dans la plupart des protéines : leur cycle aromatique absorbe à cette longueur d'onde. L'absorption à 260 nm est due aux bases azotées des acides nucléiques (ADN, ARN), dont les cycles aromatiques absorbent préférentiellement à cette longueur d'onde légèrement différente. Chaque dosage cible donc la longueur d'onde d'absorption maximale propre à la catégorie de molécule recherchée."
+          },
+          {
+            "statement": "Un peptide comporte 220 résidus d'acides aminés. Estimez sa masse moléculaire approximative, en indiquant la valeur de référence utilisée.",
+            "solution": "La masse moléculaire moyenne d'un résidu d'acide aminé au sein d'une protéine est d'environ 110 Da. Pour 220 résidus, la masse moléculaire estimée est donc 220 × 110 = 24 200 Da, soit environ 24,2 kDa."
+          },
+          {
+            "statement": "Expliquez pourquoi la liaison peptidique est rigide et plane, en citant le phénomène électronique responsable.",
+            "solution": "La liaison peptidique possède un caractère partiel de double liaison du fait d'un phénomène de résonance électronique qui délocalise le doublet libre de l'azote vers le carbonyle voisin. Cette délocalisation fige la rotation autour de la liaison C-N (d'où sa rigidité) et impose que les six atomes impliqués (les deux Cα voisins, C et O du carbonyle, N et son H) soient coplanaires (d'où sa planéité)."
+          },
+          {
+            "statement": "Un peptide adopte une structure en hélice α. Décrivez le type de liaison hydrogène stabilisatrice en précisant entre quels résidus (en numérotation relative) elle s'établit.",
+            "solution": "L'hélice α est stabilisée par des liaisons hydrogène intracaténaires, c'est-à-dire formées au sein d'une même chaîne, entre le carbonyle du résidu n et l'azote (N-H) du résidu n+4. Cette périodicité régulière donne à l'hélice sa géométrie compacte caractéristique de 3,6 résidus par tour."
+          },
+          {
+            "statement": "Comparez la stabilité relative des feuillets β parallèles et antiparallèles, et expliquez l'origine de cette différence.",
+            "solution": "Les feuillets β antiparallèles (brins orientés en sens opposés) sont plus stables que les feuillets parallèles (brins orientés dans le même sens N-ter → C-ter), car la géométrie des liaisons hydrogène interbrins y est plus régulière et plus favorable dans la configuration antiparallèle."
+          },
+          {
+            "statement": "Distinguez un domaine protéique d'une sous-unité, et expliquez pourquoi une seule sous-unité peut contenir plusieurs domaines.",
+            "solution": "Le domaine est une notion structurale et fonctionnelle : c'est une unité compacte de structures secondaires repliées, formant souvent un site fonctionnel autonome, sans lien nécessaire avec la continuité de la chaîne. La sous-unité, elle, est une notion de continuité physique : c'est une chaîne polypeptidique entière, ininterrompue du N-terminal au C-terminal. Une même sous-unité peut donc parfaitement regrouper plusieurs domaines distincts le long de sa séquence, chacun assurant une fonction propre (par exemple un domaine de liaison au substrat et un domaine de régulation) au sein de la même chaîne continue."
+          },
+          {
+            "statement": "Un pont disulfure relie deux cystéines appartenant à deux chaînes polypeptidiques différentes d'un même complexe protéique. Comment qualifie-t-on ce pont, et à quel niveau de structure protéique participe-t-il ?",
+            "solution": "Ce pont est qualifié d'intercaténaire (entre chaînes différentes), par opposition à un pont intracaténaire (au sein d'une même chaîne). Un pont disulfure intercaténaire participe au maintien de la structure quaternaire, puisqu'il relie physiquement deux sous-unités distinctes de la protéine multimérique."
+          },
+          {
+            "statement": "Justifiez pourquoi un régime alimentaire végétalien doit combiner plusieurs sources de protéines végétales différentes pour couvrir les besoins en acides aminés essentiels.",
+            "solution": "Les 8 acides aminés essentiels (leucine, thréonine, lysine, tryptophane, phénylalanine, valine, méthionine, isoleucine) ne sont pas synthétisables par l'organisme humain et doivent être apportés par l'alimentation. Or, aucune source végétale isolée n'apporte l'ensemble de ces acides aminés essentiels en proportions optimales (certaines légumineuses sont par exemple pauvres en méthionine, certaines céréales pauvres en lysine) : il faut donc combiner différentes sources protéiques végétales complémentaires pour couvrir l'ensemble du profil en acides aminés essentiels."
+          }
+        ],
+        "difficile": [
+          {
+            "statement": "On souhaite calculer le pHi de la lysine, dont les trois pKa sont : pKa(COOH) = 2,2 ; pKa(NH3+ α) = 9,0 ; pKa(NH3+ chaîne latérale) = 10,5. Déterminez le pHi en justifiant le choix des pKa utilisés.",
+            "solution": "La lysine est un acide aminé basique : sa chaîne latérale porte une fonction amine supplémentaire ionisable. Pour un acide aminé basique, le pHi se calcule à partir des DEUX pKa les plus ÉLEVÉS, ceux qui encadrent la forme neutre de la molécule (ici les deux fonctions amine, α et de chaîne latérale), en excluant le pKa du carboxyle (le plus bas, qui n'encadre pas la forme neutre pour ce type d'acide aminé). pHi = (9,0 + 10,5) / 2 = 19,5 / 2 = 9,75. Ce résultat, nettement supérieur à 6, est cohérent avec le caractère basique de la lysine."
+          },
+          {
+            "statement": "Une protéine dénaturée par la chaleur récupère spontanément son activité biologique après refroidissement progressif, sans intervention d'aucune autre molécule. Expliquez ce phénomène en le rattachant à un principe fondamental de la biochimie des protéines, et discutez une limite de ce principe pour les protéines de grande taille.",
+            "solution": "Ce phénomène illustre le dogme d'Anfinsen : toute l'information nécessaire au repliement correct d'une protéine est contenue dans sa seule séquence primaire d'acides aminés, ce qui permet dans certains cas un repliement spontané (renaturation) sans aide extérieure après suppression de l'agent dénaturant. Cependant, ce principe se heurte à une limite pratique pour les protéines de grande taille ou de conformation complexe : in vivo, leur repliement est en général assisté par des protéines chaperonnes, qui n'imposent pas la conformation finale mais empêchent les agrégations non spécifiques entre chaînes partiellement repliées exposant des surfaces hydrophobes, le temps que le repliement correct s'achève spontanément selon l'information portée par la séquence."
+          },
+          {
+            "statement": "Un QCM propose l'affirmation suivante : « La dénaturation d'une protéine par un pH extrême rompt les liaisons peptidiques, ce qui explique la perte de fonction. » Évaluez cette affirmation et proposez une reformulation correcte.",
+            "solution": "Cette affirmation est fausse. La dénaturation, quel que soit l'agent dénaturant (température, pH extrême, urée), ne rompt jamais les liaisons peptidiques covalentes de la structure primaire : elle romptseulement les liaisons FAIBLES (hydrogène, ioniques, hydrophobes, van der Waals) qui stabilisent les structures secondaire, tertiaire et quaternaire. Reformulation correcte : « La dénaturation d'une protéine par un pH extrême rompt les liaisons faibles stabilisant les structures d'ordre supérieur (secondaire, tertiaire, quaternaire), ce qui provoque la perte de la conformation native et, généralement, de la fonction biologique, sans toucher à la séquence primaire d'acides aminés. »"
+          },
+          {
+            "statement": "Un peptide synthétique est constitué exclusivement de résidus de proline consécutifs. Sachant que la proline possède une chaîne latérale qui se referme sur l'azote de la fonction amine (structure cyclique particulière), prédisez qualitativement l'effet probable sur la capacité de ce segment à former une hélice α classique, en vous appuyant sur le mécanisme de stabilisation de l'hélice.",
+            "solution": "L'hélice α est stabilisée par des liaisons hydrogène intracaténaires entre le carbonyle du résidu n et le N-H du résidu n+4, ainsi que par une géométrie régulière des angles phi/psi. Or, la proline a une structure cyclique particulière où l'azote de son groupement amine est engagé dans le cycle latéral : elle ne possède donc pas d'hydrogène N-H disponible pour participer à une liaison hydrogène stabilisatrice de l'hélice, et sa géométrie rigide impose des angles phi/psi incompatibles avec la conformation hélicoïdale régulière. Un segment riche en prolines consécutives est donc structurellement incapable de former une hélice α classique stable : la proline est un « briseur d'hélice » bien connu en structure protéique."
+          },
+          {
+            "statement": "Un acide aminé est décrit comme portant, à pH physiologique, une charge globale nette de -1. Sachant que cet acide aminé possède trois fonctions ionisables (carboxyle α, amine α, et une fonction supplémentaire sur la chaîne latérale), déduisez la nature probable (acide ou basique) de cette chaîne latérale et expliquez votre raisonnement.",
+            "solution": "À pH physiologique, le carboxyle α est déprotoné (-COO⁻, charge -1) et l'amine α est protonée (-NH3+, charge +1) : ces deux charges s'annulent, comme pour tout zwitterion standard. Pour obtenir une charge NETTE de -1 au total, il faut donc qu'une charge négative supplémentaire soit apportée par la chaîne latérale. Cela signifie que la chaîne latérale porte une fonction acide supplémentaire (typiquement un second groupement carboxylique, comme chez l'aspartate ou le glutamate), déprotonée à pH physiologique et apportant cette charge -1 additionnelle. La chaîne latérale est donc de nature acide."
+          },
+          {
+            "statement": "Comparez, en les opposant systématiquement, les liaisons stabilisant la structure secondaire (hélice α) et celles stabilisant potentiellement la structure tertiaire par un pont disulfure, en termes de nature chimique, de force, et de réversibilité lors d'une dénaturation.",
+            "solution": "L'hélice α est stabilisée par des liaisons hydrogène, des liaisons FAIBLES de nature non covalente, aisément rompues par la chaleur ou un changement de pH : ce sont ces liaisons faibles qui sont détruites en priorité lors d'une dénaturation classique, rendant ce processus généralement réversible (renaturation possible selon Anfinsen). Le pont disulfure, à l'inverse, est une liaison COVALENTE forte (formée par oxydation entre deux thiols de cystéine), comparable en énergie à une liaison peptidique : il résiste à la plupart des agents dénaturants usuels (chaleur modérée, pH, urée) et ne peut être rompu que par des agents réducteurs spécifiques (comme le DTT ou le β-mercaptoéthanol) qui cassent la liaison S-S elle-même. La dénaturation d'une protéine riche en ponts disulfure est donc souvent moins complètement réversible que celle d'une protéine stabilisée uniquement par des liaisons faibles."
+          },
+          {
+            "statement": "Une protéine tétramérique est composée de deux sous-unités de type A et deux sous-unités de type B, identiques deux à deux mais différentes entre elles. Qualifiez précisément cette structure quaternaire et expliquez pourquoi elle ne peut pas être qualifiée d'homotétramère.",
+            "solution": "Cette structure est un hétérotétramère (parfois précisé hétérotétramère de type A2B2) : elle comporte 4 sous-unités au total (tétramère) mais de deux natures différentes (hétéro-), par opposition à l'homotétramère qui exigerait que les 4 sous-unités soient rigoureusement identiques. Le préfixe homo- ne s'applique que lorsque TOUTES les sous-unités assemblées sont de nature strictement identique ; dès qu'au moins deux types de chaînes distincts coexistent dans l'assemblage, on doit obligatoirement employer le préfixe hétéro-, quel que soit le nombre relatif de chaque type de sous-unité."
+          },
+          {
+            "statement": "Le tryptophane et la tyrosine absorbent tous deux vers 280 nm, mais un mélange de protéines contenant beaucoup de tryptophane et peu de tyrosine donnera un spectre d'absorption légèrement différent d'un mélange inverse. Expliquez pourquoi le dosage protéique par spectrophotométrie UV à 280 nm reste néanmoins une méthode largement utilisée malgré cette variabilité de composition en résidus aromatiques.",
+            "solution": "Le dosage à 280 nm reste utile car la plupart des protéines contiennent une proportion suffisante de résidus aromatiques (tryptophane, tyrosine, et dans une moindre mesure phénylalanine) pour produire un signal d'absorption exploitable, permettant une estimation rapide et non destructive de la concentration protéique totale d'un échantillon. Cependant, cette méthode reste approximative précisément parce que le coefficient d'extinction molaire réel dépend de la composition exacte en résidus aromatiques de chaque protéine particulière : deux protéines de même concentration massique mais de composition différente en tryptophane/tyrosine ne donneront pas rigoureusement la même absorbance. C'est pourquoi, pour un dosage précis d'une protéine purifiée et connue, on utilise un coefficient d'extinction molaire spécifique calculé à partir de sa composition exacte en résidus aromatiques, plutôt qu'une valeur générique."
+          },
+          {
+            "statement": "Justifiez pourquoi l'histidine est qualifiée de semi-essentielle plutôt que de simplement essentielle ou non essentielle, en évoquant une situation physiologique précise où cette nuance devient cliniquement pertinente.",
+            "solution": "L'histidine possède une voie de biosynthèse endogène chez l'adulte, ce qui la distingue des 8 acides aminés strictement essentiels (dont la synthèse endogène est totalement absente). Cependant, cette synthèse endogène reste insuffisante pour couvrir intégralement les besoins dans certaines situations physiologiques à forte demande, notamment chez l'enfant en pleine croissance, dont les besoins protéiques et le renouvellement tissulaire sont proportionnellement bien plus élevés que chez l'adulte. Dans ce contexte pédiatrique, un apport alimentaire complémentaire en histidine devient nécessaire pour éviter une carence fonctionnelle, ce qui justifie sa classification intermédiaire de « semi-essentielle » plutôt qu'une classification tranchée essentielle/non essentielle."
+          },
+          {
+            "statement": "Deux protéines de même longueur (même nombre de résidus) mais de composition en acides aminés très différente ont des masses moléculaires légèrement différentes, bien qu'on utilise pour les deux la même valeur moyenne de 110 Da par résidu. Expliquez cette apparente contradiction.",
+            "solution": "La valeur de 110 Da par résidu est une MOYENNE statistique calculée sur l'ensemble des 20 acides aminés protéiques, dont les masses réelles varient très largement (de 75 Da environ pour la glycine, la plus légère, à plus de 200 Da pour le tryptophane, le plus lourd). Deux protéines de même longueur mais de composition différente (par exemple l'une riche en glycine, l'autre riche en tryptophane) auront donc des masses moléculaires réelles légèrement différentes, la valeur de 110 Da ne donnant qu'une ESTIMATION approximative valable en moyenne sur un grand nombre de résidus, et d'autant plus fiable que la protéine est longue (effet de lissage statistique), mais jamais rigoureusement exacte pour une séquence donnée."
+          }
+        ]
+      }
     },
     {
       "id": "enzymologie",
       "title": "Enzymologie : catalyse, cinétique et inhibition",
       "difficulty": 3,
       "intro": "Accroche-toi, on plonge dans la cinétique enzymatique : Km, Vmax et compagnie n'auront plus de secrets ! ⚗️📈",
+      "diagram": "flowchart TD\n    A[Enzymologie] --> B[Nature de l enzyme]\n    A --> C[Cinetique Michaelis Menten]\n    A --> D[Site actif]\n    A --> E[Inhibition]\n    A --> F[Regulation]\n    B --> B1[Catalyse cinetique non thermodynamique]\n    B --> B2[Classes EC et cofacteurs]\n    C --> C1[Km et Vmax]\n    C --> C2[Kcat et efficacite catalytique]\n    C --> C3[Lineweaver Burk]\n    D --> D1[Cle serrure Fischer]\n    D --> D2[Ajustement induit Koshland]\n    E --> E1[Inhibition competitive]\n    E --> E2[Inhibition non competitive]\n    E --> E3[Inhibition incompetitive]\n    E --> E4[Inhibition irreversible]\n    F --> F1[Retro inhibition]\n    F --> F2[Modification covalente]\n    F --> F3[Regulation allosterique]",
       "course": [
         {
           "icon": "🔬",
@@ -990,13 +1249,142 @@
           "correct_index": 1,
           "explanation": "Bravo ! L'inhibition irréversible repose sur une liaison covalente enzyme-inhibiteur, indissociable, et s'installe lentement (plusieurs minutes), à l'inverse de l'inhibition réversible."
         }
-      ]
+      ],
+      "exercises": {
+        "facile": [
+          {
+            "statement": "La catalyse enzymatique modifie-t-elle la constante d'équilibre thermodynamique d'une réaction ? Justifiez.",
+            "solution": "Non. La catalyse enzymatique est un phénomène purement cinétique : elle accélère la vitesse à laquelle la réaction atteint son équilibre, mais la constante d'équilibre thermodynamique (et donc la position finale de l'équilibre) reste strictement identique, catalysée ou non."
+          },
+          {
+            "statement": "Donnez la classe EC (numéro de 1 à 7) des enzymes qui catalysent une coupure de liaison par addition d'eau.",
+            "solution": "Il s'agit de la classe 3, celle des hydrolases."
+          },
+          {
+            "statement": "Qu'appelle-t-on holoenzyme ?",
+            "solution": "L'holoenzyme est l'ensemble fonctionnel actif formé par l'association de l'apoenzyme (partie protéique seule, inactive) avec son cofacteur nécessaire."
+          },
+          {
+            "statement": "Définissez le Km d'une enzyme en une phrase.",
+            "solution": "Le Km, ou constante de Michaelis, est la concentration de substrat pour laquelle la vitesse initiale de réaction atteint exactement la moitié de la vitesse maximale (v = Vmax/2)."
+          },
+          {
+            "statement": "Un Km faible traduit-il une affinité forte ou faible de l'enzyme pour son substrat ?",
+            "solution": "Un Km faible traduit une affinité FORTE : moins il faut de substrat pour atteindre la demi-saturation, plus l'enzyme et le substrat s'associent facilement."
+          },
+          {
+            "statement": "Sur une droite de Lineweaver-Burk (1/v en fonction de 1/[S]), que représente l'ordonnée à l'origine ?",
+            "solution": "L'ordonnée à l'origine représente 1/Vmax."
+          },
+          {
+            "statement": "Nommez les deux modèles historiques décrivant la fixation du substrat sur le site actif d'une enzyme.",
+            "solution": "Il s'agit du modèle clé-serrure de Fischer (complémentarité rigide et préformée) et du modèle de l'ajustement induit de Koshland (remodelage dynamique du site actif lors de la fixation du substrat)."
+          },
+          {
+            "statement": "Un inhibiteur compétitif se fixe-t-il sur l'enzyme libre, sur le complexe ES, ou sur les deux ?",
+            "solution": "Un inhibiteur compétitif se fixe exclusivement sur l'enzyme libre (jamais sur le complexe ES), en entrant en compétition directe avec le substrat pour le site de liaison."
+          },
+          {
+            "statement": "Quel effet un inhibiteur non compétitif a-t-il sur le Km apparent d'une enzyme ?",
+            "solution": "Aucun : le Km apparent reste inchangé en présence d'un inhibiteur non compétitif, seule la Vmax apparente diminue."
+          },
+          {
+            "statement": "Citez un exemple d'inhibiteur irréversible cité dans le cours et l'enzyme qu'il inhibe.",
+            "solution": "L'aspirine inhibe de façon irréversible la cyclo-oxygénase, par acétylation covalente d'un résidu sérine du site actif de cette enzyme."
+          }
+        ],
+        "moyen": [
+          {
+            "statement": "Une enzyme présente un Km de 2 mmol/L pour son substrat. On dispose de deux concentrations de substrat : 0,2 mmol/L et 20 mmol/L. Pour chacune, indiquez qualitativement si la vitesse de réaction est proche de zéro, proche de Vmax/2, ou proche de Vmax, en justifiant.",
+            "solution": "À [S] = 0,2 mmol/L, soit 10 fois moins que le Km : la concentration de substrat est très inférieure au Km, la vitesse est donc faible, nettement inférieure à Vmax/2 (l'enzyme est très majoritairement libre, peu de complexe ES formé). À [S] = 20 mmol/L, soit 10 fois le Km : cette concentration est considérée comme saturante (règle pratique : environ 10 × Km suffit à s'approcher de la Vmax), donc la vitesse est proche de Vmax, la quasi-totalité de l'enzyme étant engagée sous forme de complexe ES."
+          },
+          {
+            "statement": "Expliquez pourquoi le Km est indépendant de la concentration d'enzyme utilisée expérimentalement, alors que la Vmax, elle, en dépend directement.",
+            "solution": "Le Km est une constante intrinsèque au couple enzyme-substrat, qui reflète l'affinité relative entre les deux molécules (rapport de constantes de vitesse propres à leur interaction) : elle ne dépend donc pas de la quantité totale d'enzyme présente dans le milieu. La Vmax, en revanche, est définie par la relation Vmax = kcat × [E]totale : elle est directement proportionnelle à la concentration totale d'enzyme, car plus il y a de molécules d'enzyme, plus le nombre total de transformations catalytiques par unité de temps, à saturation, est élevé."
+          },
+          {
+            "statement": "On mesure, en présence d'un inhibiteur X, une augmentation du Km apparent sans changement de la Vmax. De quel type d'inhibition réversible s'agit-il, et par quel moyen expérimental simple peut-on lever cette inhibition ?",
+            "solution": "Il s'agit d'une inhibition compétitive : le Km apparent augmente (affinité apparente diminuée) tandis que la Vmax reste inchangée, car à concentration suffisamment élevée de substrat, celui-ci finit par déplacer complètement l'inhibiteur du site actif. On peut donc lever cette inhibition par un simple excès de substrat."
+          },
+          {
+            "statement": "Distinguez, en une phrase chacune, l'effet cinétique d'un inhibiteur incompétitif et celui d'un inhibiteur non compétitif sur le couple (Km apparent, Vmax apparente).",
+            "solution": "L'inhibiteur incompétitif (fixé uniquement sur le complexe ES) diminue SIMULTANÉMENT le Km apparent ET la Vmax apparente. L'inhibiteur non compétitif (fixé sur E libre ou ES, sur un site distinct) diminue SEULEMENT la Vmax apparente, en laissant le Km inchangé."
+          },
+          {
+            "statement": "Un chercheur veut savoir si un composé inhibe une enzyme de façon réversible ou irréversible. Il propose de dialyser le mélange enzyme-inhibiteur puis de mesurer l'activité enzymatique résiduelle. Expliquez le principe de cette expérience et le résultat attendu dans chaque cas.",
+            "solution": "La dialyse élimine par diffusion à travers une membrane semi-perméable les petites molécules non liées de façon covalente, mais ne peut pas séparer un complexe lié par liaison covalente forte. Si l'inhibition est réversible (liaisons faibles), la dialyse élimine l'inhibiteur libre et l'activité enzymatique sera restaurée après dialyse. Si l'inhibition est irréversible (liaison covalente), l'inhibiteur reste fixé de façon indissociable à l'enzyme malgré la dialyse, et l'activité enzymatique restera diminuée ou nulle même après ce traitement."
+          },
+          {
+            "statement": "Expliquez pourquoi la pepsine et la trypsine, deux enzymes protéolytiques digestives, possèdent des pH optimaux d'activité radicalement différents, en reliant cela à leur site anatomique d'action.",
+            "solution": "Chaque enzyme possède un pH optimal adapté à son environnement physiologique naturel d'exercice. La pepsine agit dans l'estomac, milieu très acide (pH ≈ 1,5-2) du fait de la sécrétion d'acide chlorhydrique gastrique : son pH optimal est donc lui-même très acide. La trypsine agit dans l'intestin grêle, après neutralisation du bol alimentaire par les sécrétions pancréatiques et biliaires alcalines : son pH optimal est donc basique (autour de 8). Cette adaptation du pH optimal au milieu physiologique d'action illustre la co-évolution structurale de chaque enzyme avec son contexte fonctionnel réel."
+          },
+          {
+            "statement": "Un cofacteur métallique (ion zinc) est indispensable à l'activité d'une enzyme donnée. En son absence, l'apoenzyme est-elle capable de fixer le substrat et de le transformer en produit ? Justifiez.",
+            "solution": "En l'absence du cofacteur, l'enzyme se trouve sous sa forme apoenzyme, définie précisément comme totalement inactive tant que le cofacteur n'est pas fixé. Même en présence de substrat en quantité suffisante, l'apoenzyme ne peut pas catalyser la transformation en produit : seule l'association avec le cofacteur (formant l'holoenzyme) restaure l'activité catalytique complète."
+          },
+          {
+            "statement": "Expliquez pourquoi la représentation de Lineweaver-Burk est préférée, en pratique expérimentale, à la courbe hyperbolique classique de Michaelis-Menten pour déterminer le Km et la Vmax d'une enzyme.",
+            "solution": "La courbe hyperbolique de Michaelis-Menten (Vi = f([S])) tend asymptotiquement vers la Vmax, qui n'est donc jamais réellement atteinte expérimentalement : sa détermination graphique directe est imprécise. La transformation en double inverse (1/v = f(1/[S])) donne au contraire une droite, dont l'ordonnée à l'origine (1/Vmax) et l'abscisse à l'origine (-1/Km) peuvent être obtenues par simple extrapolation linéaire à partir de points expérimentaux, une méthode beaucoup plus précise et reproductible qu'une estimation visuelle d'asymptote sur une hyperbole."
+          },
+          {
+            "statement": "Décrivez le mécanisme de la rétro-inhibition (feedback inhibition) dans une voie métabolique linéaire à plusieurs étapes.",
+            "solution": "Dans la rétro-inhibition, le produit final d'une voie métabolique se fixe sur une enzyme régulatrice précoce de cette même voie (souvent la première enzyme, dite limitante) et en diminue l'activité lorsque sa concentration devient suffisante. Ce mécanisme d'auto-régulation freine automatiquement toute la production ultérieure de la voie dès que le produit final s'accumule, évitant un gaspillage métabolique ; il fait souvent intervenir des enzymes de nature allostérique."
+          },
+          {
+            "statement": "Expliquez pourquoi la coopérativité positive entre sous-unités d'une enzyme allostérique multimérique donne une courbe de saturation sigmoïde plutôt qu'hyperbolique.",
+            "solution": "Dans une enzyme allostérique multimérique à coopérativité positive, la fixation du substrat (ou d'un effecteur) sur une sous-unité facilite la fixation sur les sous-unités voisines, par transmission d'un changement de conformation à travers la structure de l'enzyme. Cela signifie qu'à faible concentration de substrat, la fixation initiale est difficile (affinité apparente faible), mais qu'elle s'accélère fortement une fois quelques sites déjà occupés (affinité apparente croissante) : cette variation de l'affinité apparente en fonction du taux d'occupation donne une courbe en S (sigmoïde), très différente de l'hyperbole classique obtenue avec une enzyme michaelienne simple, sans coopérativité entre sous-unités."
+          }
+        ],
+        "difficile": [
+          {
+            "statement": "Un chercheur trace la droite de Lineweaver-Burk d'une enzyme en présence de concentrations croissantes d'un inhibiteur X, et observe des droites qui convergent toutes vers le même point sur l'axe des abscisses, mais avec des pentes différentes. Identifiez le type d'inhibition, expliquez le raisonnement graphique complet, et précisez l'effet sur Km et Vmax apparents.",
+            "solution": "Des droites convergeant vers le même point sur l'axe des abscisses signifient que l'abscisse à l'origine (-1/Km) est identique quelle que soit la concentration d'inhibiteur : le Km apparent reste donc inchangé. Les pentes différentes (Km/Vmax) avec un Km constant impliquent que c'est la Vmax apparente qui varie (elle diminue quand la pente augmente, car l'ordonnée à l'origine 1/Vmax augmente également). Cette signature (Km inchangé, Vmax apparente diminuée) est caractéristique d'une inhibition NON compétitive : l'inhibiteur se fixe sur un site distinct du site de liaison du substrat, sur l'enzyme libre ou sur le complexe ES indifféremment, sans modifier l'affinité résiduelle pour le substrat mais en réduisant l'efficacité catalytique globale."
+          },
+          {
+            "statement": "Une enzyme suit une cinétique de Michaelis-Menten classique avec un Km de 5 mmol/L. En présence d'un inhibiteur incompétitif à une concentration donnée, on observe un Km apparent de 2 mmol/L et une Vmax apparente réduite de moitié par rapport à la Vmax native. Expliquez pourquoi le Km apparent DIMINUE ici (et non augmente), ce qui semble à première vue contre-intuitif pour un inhibiteur.",
+            "solution": "L'inhibiteur incompétitif se fixe exclusivement sur le complexe ES déjà formé, jamais sur l'enzyme libre. En stabilisant ce complexe ES (en le rendant moins susceptible de se dissocier en retour vers E + S), l'inhibiteur déplace l'équilibre de fixation E + S ⇌ ES vers la formation de ES : cela revient, du point de vue cinétique apparent, à augmenter paradoxalement l'affinité APPARENTE de l'enzyme pour son substrat (Km apparent diminué), même si le complexe ainsi stabilisé devient catalytiquement moins productif (d'où la diminution simultanée de la Vmax apparente, car ce complexe stabilisé se transforme moins efficacement en produit). Ce double effet simultané dans le même sens (Km↓ et Vmax↓) est la signature caractéristique et souvent piégeuse de l'inhibition incompétitive, à ne pas confondre avec l'inhibition non compétitive (Vmax↓ seule, Km inchangé)."
+          },
+          {
+            "statement": "Un métabolite M inhibe l'enzyme E1, première enzyme d'une voie de biosynthèse à 4 étapes (E1 → E2 → E3 → E4) aboutissant à la synthèse de M lui-même. On observe que l'ajout expérimental d'un excès de substrat initial de la voie restaure partiellement, mais pas totalement, l'activité de E1. Cette observation est-elle compatible avec une rétro-inhibition de type allostérique classique ? Discutez.",
+            "solution": "Oui, cette observation est parfaitement compatible avec une rétro-inhibition allostérique. Contrairement à une inhibition compétitive stricte (où un excès de substrat suffit à déplacer complètement un inhibiteur du site actif, restaurant totalement l'activité), un effecteur allostérique comme M se fixe sur un site de régulation distinct du site actif, ce qui signifie qu'un excès de substrat au site actif ne peut pas entrer en compétition directe avec M sur son propre site. L'augmentation partielle de l'activité observée peut s'expliquer par le fait qu'un fort excès de substrat au site actif peut malgré tout partiellement contrebalancer l'effet allostérique en stabilisant une conformation plus active de l'enzyme (phénomène de compétition indirecte entre états conformationnels), mais sans jamais restaurer complètement l'activité tant que M reste fixé sur son site allostérique propre — ce qui est cohérent avec le mécanisme classique de rétro-inhibition allostérique décrit en cours."
+          },
+          {
+            "statement": "Deux enzymes catalysent la même réaction sur le même substrat. L'enzyme A a un Km de 10 μmol/L et un kcat de 50 s⁻¹ ; l'enzyme B a un Km de 1 μmol/L et un kcat de 2 s⁻¹. Laquelle est la plus efficace catalytiquement dans des conditions physiologiques où [S] est très inférieure au Km des deux enzymes ? Justifiez par le calcul.",
+            "solution": "Dans ces conditions ([S] << Km), le paramètre pertinent pour comparer l'efficacité catalytique est le rapport kcat/Km (efficacité catalytique ou constante de spécificité). Pour l'enzyme A : kcat/Km = 50 / 10 = 5 s⁻¹·μmol⁻¹·L. Pour l'enzyme B : kcat/Km = 2 / 1 = 2 s⁻¹·μmol⁻¹·L. L'enzyme A, malgré un Km plus élevé (affinité apparemment moins bonne), est donc plus efficace catalytiquement dans ces conditions physiologiques de substrat non saturant, car son rapport kcat/Km est supérieur : elle combine un excellent turnover catalytique (kcat élevé) qui compense largement sa moindre affinité apparente."
+          },
+          {
+            "statement": "Un composé se lie de façon covalente et irréversible au site actif d'une enzyme, mais uniquement lorsque celle-ci est déjà engagée sous forme de complexe ES (jamais sur l'enzyme libre). Ce composé peut-il être qualifié à la fois d'inhibiteur incompétitif et d'inhibiteur irréversible ? Discutez la cohérence de cette double qualification.",
+            "solution": "Oui, ces deux qualifications ne sont pas mutuellement exclusives et peuvent parfaitement coexister, car elles décrivent deux aspects différents du mécanisme d'inhibition. Le terme « incompétitif » décrit la SPÉCIFICITÉ DE FIXATION de l'inhibiteur (ici : exclusivement sur le complexe ES, jamais sur E libre), un critère structural indépendant de la nature de la liaison formée. Le terme « irréversible » décrit la NATURE CHIMIQUE de la liaison formée entre l'inhibiteur et l'enzyme (ici : covalente, donc indissociable), un critère cinétique et thermodynamique distinct. Un même composé peut donc très bien présenter une spécificité de fixation de type incompétitif (se lie seulement à ES) tout en formant, une fois fixé, une liaison covalente irréversible : ce n'est pas contradictoire, ce sont simplement deux axes de classification orthogonaux qu'il ne faut pas confondre."
+          },
+          {
+            "statement": "On observe qu'une enzyme perd totalement son activité après chauffage à 90°C pendant 10 minutes, alors qu'elle conservait une activité optimale à 37°C. Expliquez ce phénomène en deux temps, en distinguant l'effet de la température sur la vitesse de réaction aux températures physiologiques et son effet délétère à haute température.",
+            "solution": "Entre les basses températures et l'optimum (37°C pour la plupart des enzymes humaines), l'augmentation de température accélère l'activité enzymatique en augmentant l'énergie cinétique moléculaire, donc la fréquence des collisions efficaces entre enzyme et substrat : c'est un effet cinétique classique, favorable, similaire à celui observé pour toute réaction chimique. Au-delà de l'optimum, et de façon marquée à 90°C, l'agitation thermique devient suffisante pour rompre les liaisons faibles (hydrogène, hydrophobes, ioniques) qui maintiennent la conformation tridimensionnelle native de l'enzyme : celle-ci se dénature, perdant sa structure fonctionnelle et donc son activité catalytique, de façon le plus souvent irréversible à une température aussi élevée et pour une durée aussi prolongée. Le comportement observé (perte totale d'activité) illustre donc la bascule entre l'effet cinétique favorable aux températures modérées et l'effet dénaturant destructeur aux températures excessives."
+          },
+          {
+            "statement": "Une réaction enzymatique thermodynamiquement très défavorable (ΔG très positif) est catalysée par une enzyme spécifique in vivo. Un étudiant en déduit que l'enzyme a rendu la réaction spontanée. Réfutez cette affirmation en vous appuyant sur la distinction cinétique/thermodynamique.",
+            "solution": "Cette déduction est incorrecte. Une enzyme ne modifie jamais le ΔG global de la réaction (différence d'énergie libre entre l'état initial et l'état final), qui seul détermine si une réaction est thermodynamiquement spontanée ou non : l'enzyme abaisse uniquement l'enthalpie libre d'ACTIVATION (ΔG‡), c'est-à-dire la barrière énergétique cinétique à franchir pour atteindre l'état de transition, ce qui accélère la VITESSE d'atteinte de l'équilibre sans jamais changer la POSITION de cet équilibre. Si la réaction est réellement très défavorable thermodynamiquement (ΔG très positif), elle reste non spontanée même en présence de l'enzyme : dans ce cas, la cellule doit généralement coupler cette réaction à une autre réaction fortement exergonique (comme l'hydrolyse de l'ATP) pour la rendre globalement favorable, ce qui est un mécanisme de couplage énergétique totalement distinct de la catalyse enzymatique elle-même."
+          },
+          {
+            "statement": "Le site actif d'une enzyme protéase comporte une triade catalytique sérine-histidine-aspartate. Expliquez pourquoi ce type de site actif est cohérent avec le modèle de l'ajustement induit de Koshland plutôt qu'avec le modèle clé-serrure rigide de Fischer, en particulier concernant la nécessité d'un positionnement précis des résidus catalytiques.",
+            "solution": "Le modèle clé-serrure de Fischer suppose une complémentarité géométrique rigide et préexistante, sans réorganisation lors de la fixation du substrat. Or, une triade catalytique comme sérine-histidine-aspartate nécessite un positionnement tridimensionnel extrêmement précis de ces trois résidus les uns par rapport aux autres pour permettre le relais de charge catalytique (transfert de proton en cascade) qui active le résidu sérine nucléophile lors de la catalyse. Le modèle de l'ajustement induit de Koshland est plus cohérent avec cette exigence : la fixation initiale du substrat induit un changement conformationnel de l'enzyme qui achève de positionner correctement ces résidus catalytiques dans leur géométrie optimale, un remodelage dynamique bien plus compatible avec la complexité fonctionnelle réelle des sites actifs enzymatiques que ne le permettrait un modèle purement rigide et statique."
+          },
+          {
+            "statement": "Un inhibiteur est décrit comme se fixant sur l'enzyme libre E avec la même affinité que sur le complexe ES, sur un site totalement distinct du site actif. Prédisez, sans consulter le cours, l'effet attendu sur le Km apparent et la Vmax apparente, en justifiant votre raisonnement à partir de la définition du mécanisme.",
+            "solution": "Se fixant indifféremment sur E libre ou sur ES, sur un site distinct du site actif, cet inhibiteur correspond par définition à un inhibiteur non compétitif. Puisqu'il ne rentre pas en compétition avec le substrat pour le site actif, l'affinité résiduelle de l'enzyme non inhibée pour son substrat n'est pas modifiée : le Km apparent reste donc INCHANGÉ. En revanche, une fraction de l'enzyme totale se retrouve piégée dans un complexe enzyme-inhibiteur (ou enzyme-substrat-inhibiteur) catalytiquement inactif ou moins actif, quel que soit le niveau de saturation en substrat : cela réduit la quantité effective d'enzyme fonctionnelle disponible, ce qui diminue la Vmax apparente, sans qu'aucun excès de substrat ne puisse compenser cette perte (car l'inhibiteur ne rentre justement pas en compétition sur le site actif)."
+          },
+          {
+            "statement": "Une enzyme allostérique tétramérique présente une courbe de saturation sigmoïde en présence de son substrat seul. On ajoute un effecteur allostérique négatif : la courbe reste sigmoïde mais se déplace vers la droite (il faut davantage de substrat pour atteindre une même vitesse). Expliquez ce déplacement en termes de coopérativité et d'affinité apparente, sans invoquer le vocabulaire michaelien classique de Km/Vmax qui ne s'applique pas strictement ici.",
+            "solution": "Pour une enzyme allostérique à cinétique sigmoïde, on ne parle pas de Km au sens strict michaelien mais d'une constante apparente traduisant la concentration de substrat nécessaire pour atteindre la demi-saturation (parfois notée K0,5). L'effecteur allostérique négatif se fixe sur un site de régulation distinct du site actif et stabilise une conformation de l'enzyme moins favorable à la fixation du substrat sur l'ensemble des sous-unités (déplacement de l'équilibre conformationnel vers un état de moindre affinité globale) : cela revient à diminuer l'affinité apparente de l'enzyme pour son substrat sans nécessairement changer la coopérativité elle-même (la courbe reste sigmoïde, donc la coopérativité positive entre sous-unités persiste), mais l'ensemble de la courbe se décale vers des concentrations de substrat plus élevées pour atteindre un même niveau de vitesse : c'est ce déplacement vers la droite qui traduit cette diminution d'affinité apparente induite par l'effecteur négatif."
+          }
+        ]
+      }
     },
     {
       "id": "expression_genome_biologie_moleculaire",
       "title": "Expression du génome et méthodes de biologie moléculaire",
       "difficulty": 3,
       "intro": "De l'ADN à la protéine, puis retour au labo pour observer tout ça : suis le fil sans perdre le cadre de lecture ! 🧫🔬",
+      "diagram": "flowchart TD\n    A[Expression du genome] --> B[Structure de l ADN]\n    A --> C[Replication]\n    A --> D[Transcription]\n    A --> E[Traduction]\n    A --> F[Mutations et reparation]\n    A --> G[Techniques de laboratoire]\n    B --> B1[Nucleotide et bases azotees]\n    B --> B2[Double helice antiparallele]\n    C --> C1[Semi conservative]\n    C --> C2[Brin precoce et brin tardif]\n    D --> D1[Promoteur et ARN pol II]\n    D --> D2[Maturation coiffe et epissage]\n    E --> E1[Code genetique et codons]\n    E --> E2[Sites A P E du ribosome]\n    F --> F1[Transitions et transversions]\n    F --> F2[Decalage du cadre de lecture]\n    F --> F3[MMR NER BER]\n    G --> G1[PCR et RT PCR]\n    G --> G2[Southern Northern Western]",
       "course": [
         {
           "icon": "🔬",
@@ -1334,7 +1722,135 @@
           "correct_index": 3,
           "explanation": "Bravo ! L'absence du -OH en 3' du ddNTP empêche toute liaison phosphodiester ultérieure : la synthèse s'arrête net à chaque incorporation, ce qui permet de reconstituer la séquence."
         }
-      ]
+      ],
+      "exercises": {
+        "facile": [
+          {
+            "statement": "Citez les trois constituants d'un nucléotide.",
+            "solution": "Un nucléotide est composé d'une base azotée, d'un sucre en C5 (désoxyribose pour l'ADN, ribose pour l'ARN) et d'un groupement phosphate."
+          },
+          {
+            "statement": "Quelle base azotée est exclusive à l'ADN, et laquelle est exclusive à l'ARN ?",
+            "solution": "La thymine est exclusive à l'ADN ; l'uracile est exclusive à l'ARN, où elle remplace fonctionnellement la thymine."
+          },
+          {
+            "statement": "Combien de liaisons hydrogène stabilisent l'appariement G-C, et combien pour l'appariement A-T ?",
+            "solution": "L'appariement G-C est stabilisé par 3 liaisons hydrogène ; l'appariement A-T (ou A-U) par seulement 2 liaisons hydrogène."
+          },
+          {
+            "statement": "Dans quel sens (5'→3' ou 3'→5') une ADN polymérase synthétise-t-elle toujours le nouveau brin ?",
+            "solution": "Une ADN polymérase synthétise toujours le nouveau brin dans le sens 5' vers 3', et est incapable de synthétiser dans le sens inverse."
+          },
+          {
+            "statement": "Qu'appelle-t-on un codon ?",
+            "solution": "Un codon est un groupe de trois nucléotides consécutifs et non chevauchants sur l'ARN messager, qui spécifie soit un acide aminé, soit un signal d'arrêt de la traduction."
+          },
+          {
+            "statement": "Quel acide aminé est codé par le codon AUG, et quelle est sa particularité fonctionnelle ?",
+            "solution": "AUG code pour la méthionine, et il a la particularité supplémentaire d'être le codon d'initiation (START) de la traduction chez la quasi-totalité des ARNm."
+          },
+          {
+            "statement": "Nommez les trois sites fonctionnels du ribosome impliqués dans la traduction.",
+            "solution": "Il s'agit du site A (aminoacyl, entrée du nouvel ARNt), du site P (peptidyl, retient l'ARNt portant la chaîne en cours d'élongation) et du site E (exit, sortie de l'ARNt déchargé)."
+          },
+          {
+            "statement": "Une mutation transforme un codon codant en un codon stop prématuré. Comment qualifie-t-on ce type de mutation ?",
+            "solution": "Il s'agit d'une mutation non-sens, qui aboutit à une protéine tronquée, généralement non fonctionnelle."
+          },
+          {
+            "statement": "À quelle température se déroule classiquement l'étape de dénaturation lors d'un cycle de PCR ?",
+            "solution": "L'étape de dénaturation se déroule à environ 95°C, température qui sépare les deux brins d'ADN matrice."
+          },
+          {
+            "statement": "À l'aide du moyen mnémotechnique SNOW DROP, associez chaque technique de blot (Southern, Northern, Western) à la molécule qu'elle permet de détecter.",
+            "solution": "Southern = ADN (DNA), Northern = ARN (RNA), Western = Protéine (Protein), selon l'ordre alphabétique South-North-West associé successivement aux trois grandes familles de macromolécules."
+          }
+        ],
+        "moyen": [
+          {
+            "statement": "Expliquez pourquoi les régions d'ADN riches en paires GC résistent mieux à la dénaturation thermique que les régions riches en paires AT.",
+            "solution": "L'appariement G-C est stabilisé par 3 liaisons hydrogène, contre seulement 2 pour l'appariement A-T. Une région riche en GC nécessite donc de rompre un plus grand nombre total de liaisons hydrogène par unité de longueur pour séparer les deux brins, ce qui exige davantage d'énergie thermique et se traduit par une température de fusion (dénaturation) plus élevée que pour une région équivalente riche en paires AT."
+          },
+          {
+            "statement": "Expliquez pourquoi la réplication de l'ADN est dite semi-conservative, en citant l'expérience historique qui l'a démontrée.",
+            "solution": "La réplication est semi-conservative car chacune des deux molécules d'ADN filles résultant de la réplication est constituée d'un brin ancien (parental, conservé intact) et d'un brin entièrement nouveau (néosynthétisé) : aucune des deux molécules filles ne conserve donc les deux brins parentaux ensemble, ni ne reçoit deux brins entièrement nouveaux. Ce modèle a été démontré expérimentalement par Meselson et Stahl, grâce à un marquage isotopique de l'azote (15N/14N) permettant de distinguer par densité les brins anciens des brins nouveaux au fil des générations de réplication."
+          },
+          {
+            "statement": "Expliquez pourquoi le brin tardif est synthétisé sous forme de fragments d'Okazaki alors que le brin précoce est synthétisé de façon continue.",
+            "solution": "L'ADN polymérase ne peut synthétiser que dans le sens 5'→3'. Comme les deux brins matrices sont antiparallèles, le brin précoce peut être synthétisé en continu car son sens de synthèse (5'→3') coïncide avec le sens de progression de la fourche de réplication. Le brin tardif, lui, devrait théoriquement être synthétisé dans le sens 3'→5' pour suivre directement la fourche, ce qui est impossible : il est donc synthétisé de façon discontinue, par courts fragments (fragments d'Okazaki) chacun réalisé dans le sens correct 5'→3' mais en s'éloignant de la fourche, ces fragments étant ensuite reliés entre eux par une ADN ligase."
+          },
+          {
+            "statement": "Un gène possède 3 introns et 4 exons. Après épissage complet et sans épissage alternatif, combien de segments de la séquence pré-ARNm initiale se retrouvent dans l'ARNm mature, et quels segments ont été éliminés ?",
+            "solution": "Les 4 exons (segments codants) sont conservés et assemblés bout à bout dans l'ARNm mature ; les 3 introns (segments non codants) sont éliminés par le spliceosome. L'ARNm mature final ne contient donc que les 4 exons, dans leur ordre d'origine, sans aucun intron."
+          },
+          {
+            "statement": "Expliquez comment l'épissage alternatif permet à un même gène de produire plusieurs protéines différentes, et pourquoi ce mécanisme est essentiel pour expliquer la diversité protéique du génome humain.",
+            "solution": "L'épissage alternatif permet, selon le type cellulaire ou le contexte physiologique, de combiner différemment les exons retenus dans l'ARNm mature final (certains exons pouvant être inclus ou exclus selon les circonstances), produisant ainsi plusieurs variantes d'ARNm matures à partir d'un même gène et d'un même pré-ARNm initial. Ce mécanisme explique en grande partie pourquoi le nombre de protéines différentes produites par le génome humain dépasse très largement le nombre de gènes qui le composent : chaque gène peut ainsi coder pour plusieurs variantes protéiques distinctes selon la combinaison d'exons retenue."
+          },
+          {
+            "statement": "Une insertion de 2 nucléotides survient au milieu d'une séquence codante. Prédisez la conséquence probable sur la protéine traduite, en expliquant le mécanisme.",
+            "solution": "2 n'étant pas un multiple de 3, cette insertion provoque un décalage complet du cadre de lecture (frameshift) à partir du point de la mutation. Tous les codons situés en aval se retrouvent décalés, ce qui modifie de façon quasi aléatoire l'intégralité de la séquence d'acides aminés traduite en aval, aboutissant très souvent, par hasard statistique, à l'apparition prématurée d'un codon stop qui tronque sévèrement la protéine. Les conséquences fonctionnelles sont donc généralement bien plus graves qu'une simple substitution ponctuelle isolée."
+          },
+          {
+            "statement": "Distinguez le rôle du système MMR et celui du système NER dans la réparation de l'ADN, en précisant le type de lésion pris en charge par chacun.",
+            "solution": "Le MMR (mismatch repair) corrige spécifiquement les mésappariements de bases survenus lors de la réplication et ayant échappé à la relecture (proofreading) de l'ADN polymérase : il s'agit d'erreurs ponctuelles d'appariement, sans déformation majeure de la double hélice. Le NER (nucleotide excision repair), lui, excise un fragment relativement large d'ADN autour de lésions volumineuses qui déforment localement la double hélice, comme les dimères de thymine induits par les rayonnements ultraviolets : il prend donc en charge un type de dommage structural différent, plus étendu, que le MMR."
+          },
+          {
+            "statement": "Expliquez pourquoi le Northern blot nécessite des conditions dénaturantes lors de l'électrophorèse, contrairement à ce qui pourrait être fait pour une simple séparation d'ADN double brin par taille.",
+            "solution": "L'ARN étant simple brin, il peut spontanément se replier sur lui-même en formant des structures secondaires (appariements internes partiels, boucles) qui modifieraient sa forme et sa compacité de façon imprévisible. Or l'électrophorèse sépare normalement les molécules selon leur taille réelle : si l'ARN conservait ses structures secondaires repliées, sa migration ne refléterait plus fidèlement sa taille réelle (une molécule très repliée migrerait différemment d'une molécule dépliée de même taille). Les conditions dénaturantes empêchent la formation de ces structures secondaires, garantissant que la migration électrophorétique dépend uniquement de la longueur de la molécule d'ARN, comme souhaité."
+          },
+          {
+            "statement": "Lors d'un séquençage de Sanger, on utilise des ddNTP marqués en plus des dNTP classiques. Expliquez pourquoi l'incorporation aléatoire de ddNTP à différentes positions le long de la matrice permet finalement de reconstituer toute la séquence.",
+            "solution": "Les ddNTP sont dépourvus du groupement hydroxyle en position 3' du sucre, indispensable à la formation de la liaison phosphodiester suivante : leur incorporation, lorsqu'elle survient, interrompt donc définitivement la synthèse à cet endroit précis. Comme les ddNTP sont incorporés de façon aléatoire en compétition avec les dNTP classiques (en proportion contrôlée), on obtient, sur l'ensemble des nombreuses molécules matrices traitées en parallèle, une population de fragments de toutes les tailles possibles, chacun se terminant par un ddNTP marqué à une position différente. En triant ces fragments par taille (électrophorèse ou séquenceur automatique) et en identifiant le marquage terminal de chacun, on peut reconstituer, position par position, la séquence complète de la matrice d'origine."
+          },
+          {
+            "statement": "Une PCR standard échoue à amplifier une séquence à partir d'un échantillon d'ARN viral. Quelle modification technique faut-il apporter au protocole, et pourquoi ?",
+            "solution": "Il faut réaliser une RT-PCR (reverse transcription PCR), en ajoutant une étape préalable de transcription inverse : une enzyme reverse transcriptase synthétise un ADN complémentaire (ADNc) à partir de la matrice ARN virale, cet ADNc pouvant ensuite servir de matrice classique pour une PCR standard. Cette étape est indispensable car l'ADN polymérase de la PCR classique ne peut utiliser qu'une matrice ADN, jamais directement une matrice ARN."
+          }
+        ],
+        "difficile": [
+          {
+            "statement": "Une mutation ponctuelle remplace une adénine par une guanine sur le brin codant d'un gène, au sein d'un codon qui codait initialement pour la leucine. Sachant que le code génétique est dégénéré mais non ambigu, expliquez pourquoi cette mutation peut être silencieuse, faux-sens ou non-sens selon la position exacte du changement dans le codon, en illustrant chaque cas de figure sur le plan du principe (sans exiger un tableau de codons complet).",
+            "solution": "Le code génétique est dégénéré (plusieurs codons peuvent coder le même acide aminé) mais non ambigu (un codon donné ne code jamais que pour un seul acide aminé). Si le changement A→G touche la 3e position du codon (position dite « wobble », souvent tolérante), il est probable que le nouveau codon fasse toujours partie de la famille des codons synonymes de la leucine : la mutation serait alors silencieuse (même acide aminé). Si le changement touche la 1re ou la 2e position du codon, il a beaucoup plus de chances de faire basculer le codon vers un triplet codant pour un acide aminé différent : la mutation serait alors faux-sens (acide aminé différent). Si, par un hasard de séquence, le nouveau triplet correspond à l'un des trois codons stop (UAA, UAG, UGA), la mutation serait non-sens, provoquant une troncature prématurée de la protéine. La position du nucléotide substitué au sein du triplet est donc déterminante pour prédire la catégorie fonctionnelle de la mutation, en plus de la nature du changement lui-même."
+          },
+          {
+            "statement": "Une délétion de 6 nucléotides survient dans la région codante d'un gène. Comparez les conséquences probables de cette délétion à celles d'une délétion de 7 nucléotides au même endroit, en justifiant la différence radicale de gravité attendue malgré un écart d'un seul nucléotide.",
+            "solution": "6 est un multiple de 3 : la délétion de 6 nucléotides retire exactement 2 codons complets, sans décaler le cadre de lecture en aval. La conséquence se limite à la perte de 2 acides aminés consécutifs au site de la mutation, tout le reste de la séquence protéique en amont et en aval restant inchangé — un effet potentiellement modéré selon l'importance fonctionnelle des 2 résidus perdus. 7, en revanche, n'est pas un multiple de 3 : la délétion de 7 nucléotides provoque un décalage complet du cadre de lecture (frameshift) à partir du site de la mutation, ce qui modifie de façon quasi aléatoire l'intégralité de la séquence d'acides aminés traduite en aval, aboutissant très souvent à un codon stop prématuré et à une protéine tronquée et non fonctionnelle. Un écart d'un seul nucléotide (6 vs 7) peut donc faire basculer d'une conséquence mineure et localisée à une conséquence catastrophique et généralisée, uniquement parce que le critère pertinent est la divisibilité par 3, et non la taille absolue de la délétion."
+          },
+          {
+            "statement": "On séquence un gène et l'on trouve, sur le brin codant, la séquence 5'-ATG-GAA-TTT-TAA-3'. Un étudiant affirme que la protéine correspondante comporte 4 acides aminés. Évaluez cette affirmation.",
+            "solution": "Cette affirmation est incorrecte. Le brin codant transcrit donnerait un ARNm de séquence 5'-AUG-GAA-UUU-UAA-3'. Le premier codon AUG est le codon START, codant pour une méthionine initiatrice. Le deuxième codon GAA code pour un acide aminé (acide glutamique). Le troisième codon UUU code pour un acide aminé (phénylalanine). Le quatrième codon UAA, en revanche, est un codon STOP : il ne code pour AUCUN acide aminé, il signale l'arrêt de la traduction. La protéine finale comporte donc seulement 3 acides aminés (méthionine-acide glutamique-phénylalanine), et non 4 : il ne faut jamais compter le codon stop comme codant pour un acide aminé supplémentaire."
+          },
+          {
+            "statement": "Une expérience de Southern blot est réalisée sur de l'ADN génomique, mais le chercheur omet par erreur l'étape de digestion par une enzyme de restriction avant l'électrophorèse. Prédisez le résultat probable de cette expérience et expliquez pourquoi cette omission compromet l'interprétation.",
+            "solution": "Sans digestion préalable par une enzyme de restriction, l'ADN génomique reste sous forme de très longues molécules intactes (des chromosomes entiers ou de très grands fragments), qui ne migrent pratiquement pas dans le gel d'agarose lors de l'électrophorèse (elles restent bloquées près des puits de dépôt, car l'électrophorèse sépare les fragments selon leur taille, et des molécules trop grandes ne pénètrent pas efficacement le maillage du gel). Le signal d'hybridation obtenu après transfert et sonde spécifique serait donc concentré en un point unique mal résolu, sans permettre de déterminer la taille précise du fragment contenant la séquence d'intérêt, ce qui est pourtant l'un des objectifs principaux du Southern blot. La digestion par une enzyme de restriction est donc indispensable pour fragmenter l'ADN en morceaux de taille exploitable par l'électrophorèse, permettant une séparation et une analyse de taille interprétables."
+          },
+          {
+            "statement": "Un ARNm mature est isolé et analysé : il possède une coiffe en 5' et une queue poly-A en 3', mais un chercheur constate qu'il contient encore des séquences introniques non éliminées. Ce transcrit peut-il être traduit normalement en une protéine fonctionnelle correspondant à la protéine native ? Discutez.",
+            "solution": "La présence d'introns non éliminés indique un défaut d'épissage, indépendant de la coiffe et de la queue poly-A (qui sont ajoutées à des étapes distinctes de la maturation). Or les introns contiennent en général des séquences qui ne respectent pas le cadre de lecture des exons codants : leur persistance dans l'ARNm mature provoquerait très probablement un décalage du cadre de lecture (si leur longueur n'est pas un multiple de 3) et/ou l'introduction de codons stop prématurés présents par hasard dans la séquence intronique non traduite normalement. Ce transcrit anormalement épissé, même correctement coiffé et polyadénylé, produirait donc très probablement, une fois traduit, une protéine tronquée et/ou de séquence aberrante, non fonctionnelle et ne correspondant pas à la protéine native attendue : la coiffe et la queue poly-A n'assurent que la stabilité et l'export/traduction du transcrit, elles ne garantissent en rien la conformité de sa séquence codante."
+          },
+          {
+            "statement": "Expliquez pourquoi une mutation touchant l'ADN mitochondrial pourrait, en théorie, avoir des conséquences cliniques très différentes d'une mutation équivalente touchant l'ADN nucléaire, en vous appuyant sur les mécanismes de réplication et de transcription vus en cours (réponse argumentée, au-delà du simple rappel de cours).",
+            "solution": "Bien que les mécanismes fondamentaux de réplication (semi-conservative, ADN polymérase 5'→3') et de transcription (ARN polymérase, appariement Watson-Crick) s'appliquent en principe à tout ADN, l'ADN mitochondrial présente des particularités qui amplifient l'impact d'une mutation : il est présent en de multiples copies par mitochondrie et de multiples mitochondries par cellule (hétéroplasmie possible, où une mutation ne touche qu'une fraction des copies), contrairement à l'ADN nucléaire généralement présent en 2 copies par cellule (une par allèle). Une mutation mitochondriale peut donc coexister avec des copies non mutées au sein de la même cellule, et ses conséquences phénotypiques dépendront de la PROPORTION de copies mutées dépassant un seuil critique de dysfonction (effet de seuil), un phénomène sans équivalent direct pour une mutation nucléaire simple, qui elle affecte de façon binaire chaque allèle. De plus, la transmission de l'ADN mitochondrial est exclusivement maternelle, ce qui modifie complètement les schémas de transmission héréditaire attendus par rapport à une mutation nucléaire classique, bien que les mécanismes moléculaires de réplication et transcription restent, eux, similaires dans leur principe biochimique de base."
+          },
+          {
+            "statement": "Un chercheur souhaite détecter, dans un échantillon, la présence spécifique d'un ARN messager particulier (et non de l'ADN génomique correspondant). Il hésite entre un Southern blot et un Northern blot. Justifiez le choix correct et expliquez ce qui se passerait s'il utilisait par erreur la mauvaise technique.",
+            "solution": "Il doit utiliser un Northern blot, spécifiquement conçu pour détecter et analyser l'ARN (par opposition au Southern blot, dédié à l'ADN). S'il utilisait par erreur un protocole de Southern blot sur un échantillon d'ARN, plusieurs problèmes surviendraient : l'étape de digestion par enzyme de restriction, propre au Southern blot et adaptée à l'ADN double brin, n'a pas de sens sur de l'ARN simple brin (les enzymes de restriction reconnaissent des séquences d'ADN double brin spécifiques) ; de plus, sans les conditions dénaturantes nécessaires à l'électrophorèse de l'ARN (pour éviter les structures secondaires internes), la migration de l'ARN ne refléterait pas sa taille réelle. Le résultat serait donc ininterprétable ou trompeur, avec un profil de migration ne correspondant à aucune information exploitable sur la taille réelle de l'ARNm recherché."
+          },
+          {
+            "statement": "On observe qu'une protéine mutante, issue d'une mutation faux-sens touchant un résidu situé loin du site actif de l'enzyme, perd totalement son activité catalytique. Un étudiant s'étonne : « Puisque ce n'est pas le site actif qui est touché, l'activité ne devrait pas être affectée. » Discutez cette objection en vous appuyant sur les notions de structure protéique.",
+            "solution": "Cette objection est erronée car elle repose sur une vision trop locale de la structure protéique. Un résidu situé loin du site actif dans la structure PRIMAIRE (séquence linéaire) peut néanmoins se retrouver, après repliement tridimensionnel, à proximité immédiate du site actif dans la structure TERTIAIRE (repliement global), ou jouer un rôle architectural essentiel dans le maintien de la conformation générale de la protéine (par exemple en participant à un réseau de liaisons faibles stabilisatrices, ou en étant impliqué dans un pont disulfure structural). Un changement d'acide aminé à cette position peut donc perturber le repliement tridimensionnel global de la protéine, déformant indirectement la géométrie du site actif situé ailleurs dans la séquence linéaire mais rapproché spatialement après repliement, ce qui explique la perte d'activité catalytique malgré l'éloignement apparent dans la séquence primaire."
+          },
+          {
+            "statement": "Un gène humain comporte une TATA box intacte mais une mutation détruit la séquence AATAAA en aval de la région codante. Prédisez les conséquences probables sur la maturation du transcrit correspondant, en distinguant l'effet sur l'initiation et l'effet sur la terminaison/maturation.",
+            "solution": "La TATA box intacte permet un recrutement normal des facteurs de transcription généraux et de l'ARN polymérase II : l'INITIATION de la transcription ne devrait pas être affectée par cette mutation. En revanche, la destruction du signal AATAAA compromet la reconnaissance de ce signal par l'endonucléase responsable du clivage de l'ARN naissant et le recrutement subséquent de la poly-A polymérase : la maturation en 3' (ajout de la queue poly-A) serait donc perturbée ou absente. Un ARN dépourvu de queue poly-A fonctionnelle serait probablement instable (protection insuffisante contre les exonucléases cytoplasmiques, en l'absence des protéines PABP normalement recrutées sur cette queue) et son export nucléaire ainsi que sa traduction pourraient être significativement compromis, même si la coiffe en 5' et l'initiation de la transcription restent normales."
+          },
+          {
+            "statement": "Comparez, sur le plan mécanistique, la manière dont le séquençage de Sanger et la PCR utilisent tous deux le principe de synthèse 5'→3' de l'ADN polymérase, tout en aboutissant à des résultats totalement différents (une séquence complète pour l'un, une amplification massive pour l'autre). Expliquez la différence-clé qui explique cette divergence de résultat.",
+            "solution": "Les deux techniques reposent effectivement sur une ADN polymérase qui synthétise un nouveau brin dans le sens 5'→3' à partir d'une amorce hybridée sur une matrice. La différence-clé réside dans la composition en nucléotides fournis à la réaction : la PCR utilise exclusivement des dNTP normaux (porteurs d'un hydroxyle en 3'), permettant une synthèse continue et complète à chaque cycle, ce qui, combiné à la répétition de cycles thermiques (dénaturation-hybridation-élongation), amplifie exponentiellement la quantité totale de la séquence ciblée sans jamais interrompre la synthèse. Le séquençage de Sanger, lui, ajoute délibérément une faible proportion de ddNTP (dépourvus du 3'-OH) en compétition avec les dNTP normaux : chaque incorporation aléatoire d'un ddNTP termine définitivement la synthèse à cet endroit précis, générant une population de fragments de tailles variées se terminant chacun par un nucléotide marqué identifiable. C'est cette présence calculée de terminateurs de chaîne (ddNTP) qui transforme un mécanisme de synthèse en continu (PCR, amplification) en un outil de lecture position par position de la séquence (Sanger, séquençage)."
+          }
+        ]
+      }
     }
   ]
 }

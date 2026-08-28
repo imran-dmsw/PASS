@@ -93,6 +93,134 @@
         "Impulsion : Δp = F×Δt (utile pour les chocs et l'effet amortisseur)",
         "Unités : N = kg·m·s⁻² ; J = kg·m²·s⁻² ; W = kg·m²·s⁻³"
       ],
+      "exercises": {
+        "facile": [
+          {
+            "statement": "Un objet de masse m = 2 kg est soumis à une résultante des forces de norme F = 10 N. Calculer son accélération a.",
+            "solution": "D'après le PFD : ΣF = m·a, donc a = F/m = 10/2 = 5 m·s⁻²."
+          },
+          {
+            "statement": "Une voiture de masse m = 1000 kg roule à v = 20 m·s⁻¹. Calculer son énergie cinétique Ec.",
+            "solution": "Ec = ½mv² = ½×1000×20² = ½×1000×400 = 2×10⁵ J."
+          },
+          {
+            "statement": "Un objet de masse m = 5 kg est situé à l'altitude z = 3 m (référence au sol). Calculer son énergie potentielle de pesanteur Epp (g = 9,8 m·s⁻²).",
+            "solution": "Epp = mgz = 5×9,8×3 = 147 J."
+          },
+          {
+            "statement": "Un ressort de raideur k = 200 N·m⁻¹ est allongé de x = 0,10 m. Calculer son énergie potentielle élastique Epe.",
+            "solution": "Epe = ½kx² = ½×200×0,10² = ½×200×0,01 = 1 J."
+          },
+          {
+            "statement": "Un ressort de raideur k = 150 N·m⁻¹ est étiré de x = 5 cm. Calculer la norme de la force de rappel F.",
+            "solution": "F = k×x, avec x = 0,05 m. F = 150×0,05 = 7,5 N."
+          },
+          {
+            "statement": "Un patient de masse m = 70 kg marche à v = 2 m·s⁻¹. Calculer la norme de sa quantité de mouvement p.",
+            "solution": "p = m×v = 70×2 = 140 kg·m·s⁻¹."
+          },
+          {
+            "statement": "Un objet de masse m = 2 kg descend verticalement d'une hauteur h = 4 m (zA − zB = 4 m). Calculer le travail du poids W(poids) sur ce trajet (g = 9,8 m·s⁻²).",
+            "solution": "W(poids) = mg(zA − zB) = 2×9,8×4 = 78,4 J (travail moteur car le système descend)."
+          },
+          {
+            "statement": "Une force constante F = 100 N, parallèle à la vitesse, s'exerce sur un système se déplaçant à v = 3 m·s⁻¹. Calculer la puissance P développée par cette force.",
+            "solution": "P = F·v = F×v×cos(0°) = 100×3×1 = 300 W."
+          },
+          {
+            "statement": "Un objet est lâché sans vitesse initiale (chute libre, g = 9,8 m·s⁻²). Calculer sa vitesse v après t = 2 s de chute.",
+            "solution": "v(t) = v₀ + gt avec v₀ = 0. v = 9,8×2 = 19,6 m·s⁻¹."
+          },
+          {
+            "statement": "Un objet est lâché sans vitesse initiale. Calculer la distance parcourue en chute libre après t = 1 s (g = 9,8 m·s⁻²).",
+            "solution": "d = ½gt² = ½×9,8×1² = 4,9 m."
+          }
+        ],
+        "moyen": [
+          {
+            "statement": "Un objet de masse m est lâché sans vitesse initiale d'une hauteur h = 20 m, sans frottement. Calculer sa vitesse v à l'arrivée au sol, en utilisant la conservation de l'énergie mécanique (g = 9,8 m·s⁻²).",
+            "solution": "Conservation de Em : mgh = ½mv² (la masse s'élimine). v = √(2gh) = √(2×9,8×20) = √392 ≈ 19,8 m·s⁻¹."
+          },
+          {
+            "statement": "Un ressort de raideur k = 300 N·m⁻¹, comprimé de x = 0,20 m, propulse horizontalement un bloc de masse m = 0,5 kg sans frottement. Calculer sa vitesse v en sortie du ressort.",
+            "solution": "Conservation de l'énergie : ½kx² = ½mv². v = √(kx²/m) = √(300×0,04/0,5) = √24 ≈ 4,9 m·s⁻¹."
+          },
+          {
+            "statement": "Un objet de masse m = 10 kg se déplace à v₀ = 5 m·s⁻¹. Une force F = 20 N, dans le sens du mouvement, agit sur une distance d = 10 m. Calculer la vitesse finale vf grâce au théorème de l'énergie cinétique.",
+            "solution": "W = F×d = 20×10 = 200 J. ΔEc = W ⟹ ½m·vf² − ½m·v₀² = 200. ½×10×vf² = ½×10×25 + 200 = 125 + 200 = 325 ⟹ vf² = 65 ⟹ vf ≈ 8,06 m·s⁻¹."
+          },
+          {
+            "statement": "Une balle est lancée horizontalement à v₀ = 15 m·s⁻¹ depuis une hauteur h = 20 m (g = 9,8 m·s⁻²). Calculer la portée horizontale x au moment où elle touche le sol.",
+            "solution": "Temps de chute (mouvement vertical indépendant) : h = ½gt² ⟹ t = √(2h/g) = √(40/9,8) ≈ 2,02 s. Portée : x = v₀×t = 15×2,02 ≈ 30,3 m."
+          },
+          {
+            "statement": "Un projectile est lancé verticalement vers le haut à v₀ = 10 m·s⁻¹ (g = 9,8 m·s⁻²). Calculer la hauteur maximale atteinte.",
+            "solution": "Au sommet, v = 0. Conservation de l'énergie (ou v² = v₀² − 2gh) : h = v₀²/(2g) = 100/19,6 ≈ 5,1 m."
+          },
+          {
+            "statement": "Un bloc de masse m = 4 kg glisse à v₀ = 6 m·s⁻¹ sur une surface horizontale exerçant une force de frottement f = 8 N sur une distance d = 5 m. Calculer sa vitesse finale.",
+            "solution": "ΔEc = W(frottement) = −f×d = −8×5 = −40 J. Ec,initiale = ½×4×36 = 72 J. Ec,finale = 72 − 40 = 32 J = ½×4×v² ⟹ v² = 16 ⟹ v = 4 m·s⁻¹."
+          },
+          {
+            "statement": "Une voiture de masse m = 1200 kg décélère de v₀ = 20 m·s⁻¹ à l'arrêt en Δt = 4 s. Calculer la force moyenne de freinage.",
+            "solution": "Δp = m(vf − v₀) = 1200×(0 − 20) = −24000 kg·m·s⁻¹. F = Δp/Δt = −24000/4 = −6000 N (soit 6000 N en norme)."
+          },
+          {
+            "statement": "Un moteur fournit un travail W = 5000 J en un temps t = 10 s. Calculer la puissance moyenne P développée.",
+            "solution": "P = W/t = 5000/10 = 500 W."
+          },
+          {
+            "statement": "Un bloc de masse m = 2 kg, initialement au repos en haut d'un plan, glisse et atteint le bas (dénivelé h = 3 m) avec une vitesse v = 6 m·s⁻¹ (frottements présents, g = 9,8 m·s⁻²). Calculer l'énergie dissipée par les frottements.",
+            "solution": "Em,initiale = mgh = 2×9,8×3 = 58,8 J (Ec initiale nulle). Em,finale = ½×2×6² = 36 J. ΔEm = W(non conservatives) = 36 − 58,8 = −22,8 J : 22,8 J ont été dissipés par frottement."
+          },
+          {
+            "statement": "Un ressort vertical de raideur k = 400 N·m⁻¹ soutient un objet de masse m = 2 kg à l'équilibre. Calculer l'allongement x du ressort à l'équilibre (g = 9,8 m·s⁻²).",
+            "solution": "À l'équilibre, la force de rappel compense exactement le poids : k×x = mg ⟹ x = mg/k = 2×9,8/400 = 19,6/400 = 0,049 m ≈ 4,9 cm."
+          }
+        ],
+        "difficile": [
+          {
+            "statement": "Un projectile est lancé avec v₀ = 20 m·s⁻¹ à θ = 30° au-dessus de l'horizontale, sur un sol plat (g = 9,8 m·s⁻²). Calculer sa portée horizontale R.",
+            "solution": "R = v₀²sin(2θ)/g = 400×sin(60°)/9,8 = 400×0,866/9,8 ≈ 35,4 m."
+          },
+          {
+            "statement": "Reprendre le projectile précédent (v₀ = 20 m·s⁻¹, θ = 30°). Calculer la hauteur maximale atteinte.",
+            "solution": "La composante verticale initiale est v₀sinθ = 20×0,5 = 10 m·s⁻¹. h = (v₀sinθ)²/(2g) = 100/19,6 ≈ 5,1 m."
+          },
+          {
+            "statement": "Un bloc de masse m = 5 kg part sans vitesse du haut d'un plan incliné faisant un angle α = 30° avec l'horizontale, de longueur L = 10 m, avec un coefficient de frottement μ = 0,2. Calculer sa vitesse en bas du plan (g = 9,8 m·s⁻²).",
+            "solution": "Travail moteur du poids le long du plan : mgL sinα = 5×9,8×10×0,5 = 245 J. Force de frottement N = mg cosα, travail résistif = μmg cosα×L = 0,2×5×9,8×0,866×10 ≈ 84,9 J. Théorème de l'énergie cinétique : ½mv² = 245 − 84,9 = 160,1 J ⟹ v² = 2×160,1/5 = 64,0 ⟹ v ≈ 8,0 m·s⁻¹."
+          },
+          {
+            "statement": "Un étudiant applique par erreur la conservation de l'énergie mécanique (Em = cste) au problème précédent (plan incliné avec frottement, m = 5 kg, α = 30°, L = 10 m, μ = 0,2) et obtient v = √(2gL sinα). Montrer que ce raisonnement est faux et donner la valeur correcte de v.",
+            "solution": "La conservation de Em n'est valable qu'en l'absence de forces non conservatives : ici le frottement dissipe de l'énergie, donc Em n'est PAS constante. Le calcul erroné donnerait v = √(2×9,8×10×0,5) = √98 ≈ 9,9 m·s⁻¹, une valeur surestimée car elle ignore la perte d'énergie. Il faut utiliser le théorème de l'énergie cinétique (ΔEc = W total, en incluant le travail résistif du frottement), ce qui donne la valeur correcte v ≈ 8,0 m·s⁻¹ (cf. exercice précédent)."
+          },
+          {
+            "statement": "Un ressort de raideur k = 500 N·m⁻¹, comprimé de x = 0,15 m, propulse un bloc de masse m = 1 kg le long d'un plan incliné sans frottement faisant un angle θ = 20° avec l'horizontale. Calculer la distance d parcourue par le bloc le long du plan avant de s'arrêter (g = 9,8 m·s⁻²).",
+            "solution": "Conservation de l'énergie : ½kx² = mgd sinθ. ½×500×0,15² = 5,625 J. d = 5,625/(1×9,8×sin20°) = 5,625/(9,8×0,342) = 5,625/3,35 ≈ 1,68 m."
+          },
+          {
+            "statement": "Un objet de masse m = 2 kg est lâché sans vitesse initiale d'une hauteur h = 1 m au-dessus d'un ressort vertical de raideur k = 2000 N·m⁻¹. Calculer la compression maximale x du ressort (g = 9,8 m·s⁻²), en négligeant tout frottement.",
+            "solution": "Conservation de l'énergie entre le point de lâcher et le point de compression maximale (vitesse nulle aux deux instants) : mg(h+x) = ½kx² ⟹ 19,6(1+x) = 1000x² ⟹ 1000x² − 19,6x − 19,6 = 0. Δ = 19,6² + 4×1000×19,6 = 384,2 + 78400 ≈ 78784, √Δ ≈ 280,7. x = (19,6 + 280,7)/2000 ≈ 0,150 m."
+          },
+          {
+            "statement": "Un passager de masse m = 70 kg, roulant à v = 30 m·s⁻¹ (108 km·h⁻¹), est arrêté lors d'un choc. Comparer la force moyenne subie si l'arrêt dure Δt₁ = 0,01 s (sans airbag) ou Δt₂ = 0,1 s (avec airbag).",
+            "solution": "Δp = m×Δv = 70×30 = 2100 kg·m·s⁻¹ (identique dans les deux cas). Sans airbag : F₁ = Δp/Δt₁ = 2100/0,01 = 210000 N. Avec airbag : F₂ = Δp/Δt₂ = 2100/0,1 = 21000 N. L'airbag allonge la durée de l'impact d'un facteur 10, ce qui divise la force moyenne subie par 10, alors que l'énergie cinétique à dissiper (donc les dégâts potentiels sans amortisseur) reste la même."
+          },
+          {
+            "statement": "Un bloc de masse m = 3 kg est lancé vers le haut d'un plan incliné faisant un angle θ = 25° avec l'horizontale, avec une vitesse initiale v₀ = 8 m·s⁻¹, avec un coefficient de frottement μ = 0,15. Calculer la distance d parcourue avant l'arrêt (g = 9,8 m·s⁻²).",
+            "solution": "Le poids et le frottement s'opposent tous deux au mouvement montant. Théorème de l'énergie cinétique : 0 − ½mv₀² = −(mg sinθ + μmg cosθ)×d ⟹ d = v₀²/(2g(sinθ + μcosθ)). sin25° ≈ 0,423, cos25° ≈ 0,906. sinθ+μcosθ = 0,423+0,15×0,906 ≈ 0,559. d = 64/(2×9,8×0,559) ≈ 64/10,96 ≈ 5,84 m."
+          },
+          {
+            "statement": "Une bille roule et quitte le bord d'une table horizontale de hauteur h = 1,2 m, et retombe à une distance horizontale de 2 m du pied de la table (g = 9,8 m·s⁻²). Calculer sa vitesse initiale v₀ et sa vitesse totale à l'impact au sol.",
+            "solution": "Temps de chute : t = √(2h/g) = √(2,4/9,8) ≈ 0,495 s. v₀ = x/t = 2/0,495 ≈ 4,04 m·s⁻¹ (composante horizontale, constante). Composante verticale à l'impact : vy = gt = 9,8×0,495 ≈ 4,85 m·s⁻¹. Vitesse totale : v = √(v₀² + vy²) = √(16,3+23,5) = √39,8 ≈ 6,31 m·s⁻¹."
+          },
+          {
+            "statement": "Deux masses m1 = 5 kg et m2 = 3 kg sont reliées par un fil inextensible passant sur une poulie idéale (système d'Atwood), sans frottement. Calculer l'accélération du système et la tension du fil (g = 9,8 m·s⁻²).",
+            "solution": "PFD appliqué à chaque masse : m1g − T = m1a et T − m2g = m2a. En combinant : a = (m1−m2)g/(m1+m2) = (2×9,8)/8 = 2,45 m·s⁻². Tension : T = m2(g+a) = 3×(9,8+2,45) = 3×12,25 = 36,75 N (vérification : m1(g−a) = 5×(9,8−2,45) = 5×7,35 = 36,75 N, cohérent)."
+          }
+        ]
+      },
       "resources": [
         {
           "icon": "📘",
@@ -335,7 +463,8 @@
           "correct_index": 2,
           "explanation": "Tout juste ! 🌍 Contrairement à l'interaction électrostatique (qui peut être attractive ou répulsive selon le signe des charges), l'interaction gravitationnelle entre deux masses est toujours attractive."
         }
-      ]
+      ],
+      "diagram": "flowchart TD\n    A[Mecanique forces et energie] --> B[Cinematique]\n    A --> C[Lois de Newton]\n    A --> D[Energies mecaniques]\n    A --> E[Travail et puissance]\n    A --> F[Applications chocs]\n    B --> B1[Position vitesse acceleration]\n    C --> C1[Principe d inertie]\n    C --> C2[PFD Somme F = m a]\n    C --> C3[Action reaction]\n    D --> D1[Energie cinetique Ec]\n    D --> D2[Energie potentielle pesanteur]\n    D --> D3[Energie potentielle elastique]\n    D --> D4[Energie mecanique Em]\n    E --> E1[Travail d une force]\n    E --> E2[Puissance P = F fois v]\n    E --> E3[Theoreme energie cinetique]\n    F --> F1[Impulsion Delta p = F Delta t]\n    F --> F2[Role des amortisseurs]\n"
     },
     {
       "id": "electrostatique_biopotentiels",
@@ -421,6 +550,134 @@
         "Loi d'Einthoven : DII = DI + DIII",
         "Dérivations ECG ∝ projection du moment dipolaire cardiaque p sur l'axe des électrodes"
       ],
+      "exercises": {
+        "facile": [
+          {
+            "statement": "Deux charges q1 = 2×10⁻6 C et q2 = 3×10⁻6 C sont séparées de r = 0,1 m dans le vide. Calculer la force de Coulomb Fe entre elles (k = 9×10⁹ N·m²·C⁻²).",
+            "solution": "Fe = k×q1×q2/r² = 9×10⁹×(2×10⁻6×3×10⁻6)/0,1² = 9×10⁹×6×10⁻12/0,01 = 0,054/0,01 = 5,4 N."
+          },
+          {
+            "statement": "Calculer le champ électrique E créé par une charge ponctuelle Q = 5×10⁻9 C à une distance r = 0,2 m (k = 9×10⁹ N·m²·C⁻²).",
+            "solution": "E = kQ/r² = 9×10⁹×5×10⁻9/0,04 = 45/0,04 = 1125 V·m⁻¹."
+          },
+          {
+            "statement": "Calculer le potentiel électrostatique V créé par une charge ponctuelle Q = 1×10⁻8 C à une distance r = 0,5 m (k = 9×10⁹ N·m²·C⁻²).",
+            "solution": "V = kQ/r = 9×10⁹×1×10⁻8/0,5 = 90/0,5 = 180 V."
+          },
+          {
+            "statement": "Une charge test q = 2×10⁻6 C est placée en un point où le potentiel vaut V = 100 V. Calculer son énergie potentielle électrostatique Ep.",
+            "solution": "Ep = qV = 2×10⁻6×100 = 2×10⁻4 J."
+          },
+          {
+            "statement": "Un dipôle est formé de deux charges +q et −q avec q = 1,5×10⁻9 C, séparées d'une distance a = 2×10⁻10 m. Calculer la norme du moment dipolaire.",
+            "solution": "||p|| = q×a = 1,5×10⁻9×2×10⁻10 = 3×10⁻19 C·m."
+          },
+          {
+            "statement": "Un condensateur plan a des plaques de surface S = 0,01 m² séparées de h = 1 mm, avec un isolant de permittivité ε = 8,85×10⁻12 F·m⁻¹. Calculer sa capacité C.",
+            "solution": "C = εS/h = 8,85×10⁻12×0,01/0,001 = 8,85×10⁻11 F = 88,5 pF."
+          },
+          {
+            "statement": "Un condensateur de capacité C = 100 µF est chargé sous une tension ΔV = 12 V. Calculer l'énergie électrostatique Ee stockée.",
+            "solution": "Ee = ½CΔV² = ½×100×10⁻6×12² = ½×10⁻4×144 = 7,2×10⁻3 J."
+          },
+          {
+            "statement": "Les plaques d'un condensateur portent une densité surfacique de charge σ = 4×10⁻6 C·m⁻², avec ε = 8,85×10⁻12 F·m⁻¹. Calculer le champ électrique E entre les plaques.",
+            "solution": "E = σ/ε = 4×10⁻6/8,85×10⁻12 ≈ 4,52×10⁵ V·m⁻¹."
+          },
+          {
+            "statement": "Sur un ECG, on mesure DI = 0,5 mV et DIII = 0,3 mV. En utilisant la loi d'Einthoven, calculer DII.",
+            "solution": "Loi d'Einthoven : DII = DI + DIII = 0,5 + 0,3 = 0,8 mV."
+          },
+          {
+            "statement": "Une charge q = 3,2×10⁻18 C est-elle physiquement plausible ? Si oui, combien d'électrons excédentaires porte-t-elle (e = 1,6×10⁻19 C) ?",
+            "solution": "Toute charge est un multiple entier de e. N = q/e = 3,2×10⁻18/1,6×10⁻19 = 20 : la charge correspond à 20 électrons excédentaires, c'est bien plausible."
+          }
+        ],
+        "moyen": [
+          {
+            "statement": "Deux charges q1 = +2 µC et q2 = −2 µC sont placées respectivement en x = 0 et x = 0,2 m. Calculer le champ électrique résultant au point milieu M (x = 0,1 m) (k = 9×10⁹ N·m²·C⁻²).",
+            "solution": "Au point milieu, le champ créé par q1 (positif) pointe de q1 vers M, donc vers q2 ; le champ créé par q2 (négatif) pointe vers q2 également : les deux champs sont dans le même sens et s'additionnent (superposition vectorielle). Chaque champ : E = k|q|/r² = 9×10⁹×2×10⁻6/0,01 = 1,8×10⁶ V·m⁻¹. Champ total : E_tot = 2×1,8×10⁶ = 3,6×10⁶ V·m⁻¹, dirigé de q1 vers q2."
+          },
+          {
+            "statement": "Une charge q1 = +1 µC est à 0,1 m d'un point M, et une charge q2 = −1 µC est à 0,2 m de M. Calculer le potentiel total en M (k = 9×10⁹ N·m²·C⁻²).",
+            "solution": "Superposition scalaire (avec signes) : V1 = kq1/r1 = 9×10⁹×10⁻6/0,1 = 9×10⁴ V. V2 = kq2/r2 = 9×10⁹×(−10⁻6)/0,2 = −4,5×10⁴ V. V_tot = V1+V2 = 9×10⁴ − 4,5×10⁴ = 4,5×10⁴ V."
+          },
+          {
+            "statement": "Une molécule d'eau a un moment dipolaire p = 3,3×10⁻30 C·m. Calculer le potentiel qu'elle crée à une distance r = 1 nm dans l'axe du dipôle (θ = 0°, k = 9×10⁹ N·m²·C⁻²).",
+            "solution": "V = kp×cos(θ)/r² = 9×10⁹×3,3×10⁻30×1/(10⁻9)² = 9×10⁹×3,3×10⁻30/10⁻18 = 2,97×10⁻2 V."
+          },
+          {
+            "statement": "Un dipôle de moment p = 6×10⁻30 C·m est placé dans un champ externe uniforme E = 1×10⁵ V·m⁻¹ avec un angle θ = 60° entre p et E. Calculer l'énergie potentielle d'interaction Ep.",
+            "solution": "Ep = −p×E×cos(θ) = −6×10⁻30×10⁵×cos(60°) = −6×10⁻25×0,5 = −3×10⁻25 J."
+          },
+          {
+            "statement": "Un condensateur de capacité C = 200 pF est chargé sous une tension ΔV = 9 V. Calculer la charge Q stockée.",
+            "solution": "Q = CΔV = 200×10⁻12×9 = 1,8×10⁻9 C = 1,8 nC."
+          },
+          {
+            "statement": "Le condensateur d'un défibrillateur, de capacité C = 200 µF, est chargé sous une tension ΔV = 5000 V. Calculer l'énergie stockée disponible pour le choc.",
+            "solution": "Ee = ½CΔV² = ½×200×10⁻6×5000² = ½×200×10⁻6×2,5×10⁷ = ½×5000 = 2500 J."
+          },
+          {
+            "statement": "Un condensateur plan de surface S = 0,02 m² a une capacité C = 50 pF, avec ε = 8,85×10⁻12 F·m⁻¹. Calculer l'écartement h entre les plaques.",
+            "solution": "C = εS/h ⟹ h = εS/C = 8,85×10⁻12×0,02/50×10⁻12 = 1,77×10⁻13/5×10⁻11 = 3,54×10⁻3 m ≈ 3,54 mm."
+          },
+          {
+            "statement": "Sur un tracé ECG, on relève DI = 0,4 mV, DII = 1,0 mV et DIII = 0,7 mV. Vérifier la cohérence de ces mesures avec la loi d'Einthoven.",
+            "solution": "La loi d'Einthoven impose DII = DI + DIII = 0,4 + 0,7 = 1,1 mV. Or la valeur mesurée est DII = 1,0 mV : il y a un écart de 0,1 mV, ce qui suggère une erreur de placement d'électrode ou un artefact technique de l'enregistrement."
+          },
+          {
+            "statement": "Un électron est placé dans un champ électrique uniforme E = 1×10⁴ V·m⁻¹ entre les plaques d'un condensateur. Calculer la force électrique subie et l'accélération de l'électron (e = 1,6×10⁻19 C, masse de l'électron mₑ = 9,11×10⁻31 kg).",
+            "solution": "F = e×E = 1,6×10⁻19×10⁴ = 1,6×10⁻15 N. a = F/mₑ = 1,6×10⁻15/9,11×10⁻31 ≈ 1,76×10¹⁵ m·s⁻²."
+          },
+          {
+            "statement": "Une membrane cellulaire assimilée à un condensateur de capacité C = 1×10⁻11 F présente une différence de potentiel de repos ΔV = 70 mV. Calculer la charge Q stockée sur la membrane.",
+            "solution": "Q = C×ΔV = 1×10⁻11×0,070 = 7×10⁻13 C."
+          }
+        ],
+        "difficile": [
+          {
+            "statement": "Une charge q1 = +4 µC est en x = 0 et q2 = +1 µC est en x = 0,3 m. Trouver le point M sur l'axe, entre les deux charges, où le champ électrique total est nul.",
+            "solution": "Entre deux charges positives, les champs créés sont opposés et peuvent s'annuler. Soit x la distance à q1 : k×q1/x² = k×q2/(0,3−x)². √q1/x = √q2/(0,3−x) ⟹ 2/x = 1/(0,3−x) ⟹ 2(0,3−x) = x ⟹ 0,6 = 3x ⟹ x = 0,2 m. Le champ est nul à 0,2 m de q1 (soit 0,1 m de q2)."
+          },
+          {
+            "statement": "Une charge ponctuelle Q = 2×10⁻9 C et un dipôle de moment p = 5×10⁻30 C·m (θ = 0°) créent chacun un potentiel. Comparer le rapport V(r=2cm)/V(r=4cm) pour la charge ponctuelle et pour le dipôle.",
+            "solution": "Pour la charge ponctuelle, V ∝ 1/r, donc le rapport vaut r2/r1 = 4/2 = 2. Pour le dipôle, V ∝ 1/r², donc le rapport vaut (r2/r1)² = 2² = 4. Le potentiel dipolaire décroît donc deux fois plus vite (en rapport) que celui d'une charge ponctuelle : c'est un piège classique à ne pas confondre."
+          },
+          {
+            "statement": "Un condensateur plan de capacité initiale C0 = 10 nF voit la surface de ses plaques doubler et l'écartement de ses plaques diviser par deux (même isolant). Calculer la nouvelle capacité.",
+            "solution": "C = εS/h. Si S → 2S et h → h/2 : C_new = ε(2S)/(h/2) = 4×(εS/h) = 4×C0 = 4×10 = 40 nF."
+          },
+          {
+            "statement": "Un défibrillateur stocke une énergie Ee = 200 J et la délivre en Δt = 4 ms lors du choc. Calculer la puissance moyenne délivrée.",
+            "solution": "P = Ee/Δt = 200/0,004 = 50000 W = 50 kW."
+          },
+          {
+            "statement": "Le dipôle cardiaque est aligné exactement sur l'axe de la dérivation DI, avec une projection équivalente DI = 1,2 mV. L'axe DII fait un angle de 60° avec l'axe DI (triangle d'Einthoven). Calculer DII et DIII, puis vérifier la loi d'Einthoven.",
+            "solution": "La projection sur DII vaut DII = DI×cos(60°) = 1,2×0,5 = 0,6 mV. Par la loi d'Einthoven, DIII = DII − DI = 0,6 − 1,2 = −0,6 mV. Vérification : DI + DIII = 1,2 + (−0,6) = 0,6 mV = DII ✓."
+          },
+          {
+            "statement": "Un point de l'espace est à un potentiel V = 500 V. On y place successivement une charge q1 = 1 µC puis une charge q2 = −3 µC. Calculer l'énergie potentielle électrostatique de chacune, et commenter la différence avec le potentiel V, qui lui reste identique.",
+            "solution": "Ep1 = q1×V = 1×10⁻6×500 = 5×10⁻4 J. Ep2 = q2×V = −3×10⁻6×500 = −1,5×10⁻3 J. Le potentiel V = 500 V est une propriété du point, identique pour les deux charges ; l'énergie potentielle Ep = qV, elle, dépend de la charge placée et diffère donc totalement entre les deux cas (piège classique V vs Ep)."
+          },
+          {
+            "statement": "Une gouttelette d'huile de masse m = 9,6×10⁻15 kg, portant une charge égale à celle d'un électron (e = 1,6×10⁻19 C), est en équilibre dans un champ électrique vertical E (expérience de Millikan). Calculer E nécessaire pour compenser le poids (g = 9,8 m·s⁻²).",
+            "solution": "À l'équilibre : qE = mg ⟹ E = mg/q = 9,6×10⁻15×9,8/1,6×10⁻19 = 9,408×10⁻14/1,6×10⁻19 = 5,88×10⁵ V·m⁻¹."
+          },
+          {
+            "statement": "Un condensateur de capacité C = 2 µF est chargé sous ΔV = 6 V. Calculer le nombre d'électrons excédentaires N transférés sur l'une des plaques (e = 1,6×10⁻19 C).",
+            "solution": "Q = CΔV = 2×10⁻6×6 = 1,2×10⁻5 C. N = Q/e = 1,2×10⁻5/1,6×10⁻19 = 7,5×10¹³ électrons."
+          },
+          {
+            "statement": "Un dipôle de moment p = 4×10⁻30 C·m est placé dans un champ E = 2×10⁵ V·m⁻¹ avec un angle θ = 30° entre p et E. Calculer le moment du couple de forces (torque) τ = p×E×sin(θ) exercé sur le dipôle.",
+            "solution": "τ = p×E×sin(θ) = 4×10⁻30×2×10⁵×sin(30°) = 8×10⁻25×0,5 = 4×10⁻25 N·m."
+          },
+          {
+            "statement": "À quelle distance r le potentiel créé (dans l'axe, θ = 0°) par un dipôle de moment p = 8×10⁻30 C·m est-il égal au potentiel créé par une charge ponctuelle Q = 4×10⁻19 C à une distance r₀ = 1 nm ?",
+            "solution": "On égalise kp/r² = kQ/r₀ ⟹ r² = p×r₀/Q = 8×10⁻30×10⁻9/4×10⁻19 = 8×10⁻39/4×10⁻19 = 2×10⁻20 m² ⟹ r = √(2×10⁻20) ≈ 1,41×10⁻10 m = 0,141 nm."
+          }
+        ]
+      },
       "resources": [
         {
           "icon": "📘",
@@ -641,7 +898,8 @@
           "correct_index": 0,
           "explanation": "Exact ! 🧠 λ = dq/dl décrit la charge par unité de longueur, utile par exemple pour un fil électrique chargé (à ne pas confondre avec σ pour une surface et ρ pour un volume)."
         }
-      ]
+      ],
+      "diagram": "flowchart TD\n    A[Electrostatique et biopotentiels] --> B[Champ et force]\n    A --> C[Potentiel electrique]\n    A --> D[Dipole electrique]\n    A --> E[Condensateur]\n    A --> F[Coeur et ECG]\n    B --> B1[Loi de Coulomb]\n    B --> B2[Densites de charge]\n    C --> C1[V = Q sur 4 pi epsilon r]\n    C --> C2[Energie potentielle Ep = qV]\n    D --> D1[Moment dipolaire p]\n    D --> D2[Potentiel en 1 sur r carre]\n    D --> D3[Dipole dans un champ externe]\n    E --> E1[Champ uniforme entre plaques]\n    E --> E2[Capacite C = epsilon S sur h]\n    E --> E3[Energie stockee defibrillateur]\n    F --> F1[Membrane comme condensateur]\n    F --> F2[Potentiel de repos et action]\n    F --> F3[Triangle d Einthoven]\n"
     },
     {
       "id": "mecanique_fluides",
@@ -727,6 +985,134 @@
         "Turbulence = pertes de charge accrues + bruits (souffles, bruits de Korotkoff)",
         "Viscosité η (Pa·s) intervient aussi dans la sédimentation (ex : vitesse de sédimentation)"
       ],
+      "exercises": {
+        "facile": [
+          {
+            "statement": "Une force F = 200 N est répartie sur une surface S = 0,05 m². Calculer la pression p exercée.",
+            "solution": "p = F/S = 200/0,05 = 4000 Pa."
+          },
+          {
+            "statement": "De l'eau (ρ = 1000 kg·m⁻³) est au repos. Calculer la différence de pression Δp entre deux points séparés d'une différence d'altitude de 2 m (g = 9,8 m·s⁻²).",
+            "solution": "Loi de l'hydrostatique : Δp = ρ×g×Δz = 1000×9,8×2 = 19600 Pa."
+          },
+          {
+            "statement": "Une tension artérielle T = 100 mmHg est mesurée, avec patm = 760 mmHg. Calculer la pression sanguine absolue psang.",
+            "solution": "T = psang − patm ⟹ psang = T + patm = 100 + 760 = 860 mmHg."
+          },
+          {
+            "statement": "Un fluide s'écoule à v = 0,5 m·s⁻¹ dans un tuyau de section S = 2×10⁻4 m². Calculer le débit volumique Q.",
+            "solution": "Q = S×v = 2×10⁻4×0,5 = 1×10⁻4 m³·s⁻¹."
+          },
+          {
+            "statement": "Dans un écoulement horizontal de fluide parfait (ρ = 1000 kg·m⁻³), on a p1 = 1×10⁵ Pa et v1 = 1 m·s⁻¹ en un point, et v2 = 2 m·s⁻¹ en un autre point de même altitude. Calculer p2 par la loi de Bernoulli.",
+            "solution": "p1 + ½ρv1² = p2 + ½ρv2² (altitude constante). p2 = p1 + ½ρ(v1²−v2²) = 100000 + 500×(1−4) = 100000 − 1500 = 98500 Pa."
+          },
+          {
+            "statement": "Calculer la résistance hydraulique R (loi de Poiseuille) d'un tuyau de longueur L = 0,5 m et de rayon a = 0,005 m, pour un fluide de viscosité η = 0,001 Pa·s.",
+            "solution": "R = 8ηL/(πa⁴) = 8×0,001×0,5/(π×0,005⁴) = 0,004/(π×6,25×10⁻10) = 0,004/1,9635×10⁻9 ≈ 2,04×10⁶ Pa·s·m⁻³."
+          },
+          {
+            "statement": "Un tuyau a une résistance hydraulique R = 1×10⁸ Pa·s·m⁻³ et un débit Q = 2×10⁻6 m³·s⁻¹. Calculer la perte de charge Δp.",
+            "solution": "Loi de Poiseuille : Δp = R×Q = 1×10⁸×2×10⁻6 = 200 Pa."
+          },
+          {
+            "statement": "Le sang (ρ = 1050 kg·m⁻³, η = 0,003 Pa·s) s'écoule à v = 0,3 m·s⁻¹ dans un vaisseau de diamètre D = 0,005 m. Calculer le nombre de Reynolds Re.",
+            "solution": "Re = ρvD/η = 1050×0,3×0,005/0,003 = 1,575/0,003 = 525 (écoulement laminaire, Re < 2000)."
+          },
+          {
+            "statement": "Deux résistances hydrauliques en série valent R1 = 2×10⁷ Pa·s·m⁻³ et R2 = 3×10⁷ Pa·s·m⁻³. Calculer la résistance équivalente Req.",
+            "solution": "En série : Req = R1 + R2 = 2×10⁷ + 3×10⁷ = 5×10⁷ Pa·s·m⁻³."
+          },
+          {
+            "statement": "Deux résistances hydrauliques égales R1 = R2 = 4×10⁸ Pa·s·m⁻³ sont placées en parallèle. Calculer la résistance équivalente Req.",
+            "solution": "En parallèle : 1/Req = 1/R1 + 1/R2 = 1/(4×10⁸) + 1/(4×10⁸) = 2/(4×10⁸) = 5×10⁻9 ⟹ Req = 2×10⁸ Pa·s·m⁻³."
+          }
+        ],
+        "moyen": [
+          {
+            "statement": "Le sang (ρ = 1060 kg·m⁻³) doit remonter une différence d'altitude h = 1,3 m entre le pied et le cœur, en position debout (g = 9,8 m·s⁻²). Calculer la différence de pression hydrostatique correspondante.",
+            "solution": "Δp = ρ×g×h = 1060×9,8×1,3 ≈ 13504 Pa ≈ 13,5 kPa."
+          },
+          {
+            "statement": "Un fluide incompressible s'écoule d'une section S1 = 4×10⁻4 m² (v1 = 0,5 m·s⁻¹) vers une section S2 = 1×10⁻4 m² (rétrécissement). Calculer la vitesse v2 dans le rétrécissement.",
+            "solution": "Conservation du débit (série) : S1v1 = S2v2 ⟹ v2 = S1v1/S2 = 4×10⁻4×0,5/1×10⁻4 = 2 m·s⁻¹."
+          },
+          {
+            "statement": "Reprendre l'écoulement précédent (v1 = 0,5 m·s⁻¹, v2 = 2 m·s⁻¹, ρ = 1000 kg·m⁻³, tuyau horizontal) avec p1 = 1,2×10⁵ Pa. Calculer p2 par la loi de Bernoulli.",
+            "solution": "p2 = p1 + ½ρ(v1²−v2²) = 120000 + 500×(0,25−4) = 120000 − 1875 = 118125 Pa."
+          },
+          {
+            "statement": "On souhaite qu'un tuyau de longueur L = 0,2 m, avec un fluide de viscosité η = 0,002 Pa·s, ait une résistance hydraulique R = 5×10⁸ Pa·s·m⁻³. Calculer le rayon a nécessaire.",
+            "solution": "R = 8ηL/(πa⁴) ⟹ a⁴ = 8ηL/(πR) = 8×0,002×0,2/(π×5×10⁸) = 0,0032/1,5708×10⁹ ≈ 2,04×10⁻12 m⁴ ⟹ a = (2,04×10⁻12)^(1/4) ≈ 1,2×10⁻3 m = 1,2 mm."
+          },
+          {
+            "statement": "Un tuyau de résistance R = 2×10⁸ Pa·s·m⁻³ est traversé par un débit Q = 5×10⁻6 m³·s⁻¹. Calculer la puissance dissipée par frottement visqueux.",
+            "solution": "Pdissipée = R×Q² = 2×10⁸×(5×10⁻6)² = 2×10⁸×2,5×10⁻11 = 5×10⁻3 W = 5 mW."
+          },
+          {
+            "statement": "Une pompe crée une surpression Δπ = 5000 Pa dans un circuit où le débit est Q = 2×10⁻4 m³·s⁻¹. Calculer la puissance fournie par la pompe.",
+            "solution": "Ppompe = Δπ×Q = 5000×2×10⁻4 = 1 W."
+          },
+          {
+            "statement": "Dans un vaisseau de diamètre D = 0,008 m, avec ρ = 1050 kg·m⁻³ et η = 0,0035 Pa·s, calculer la vitesse critique v pour laquelle Re = 2000 (transition laminaire-turbulent).",
+            "solution": "Re = ρvD/η ⟹ v = Re×η/(ρ×D) = 2000×0,0035/(1050×0,008) = 7/8,4 ≈ 0,833 m·s⁻¹."
+          },
+          {
+            "statement": "Un circuit comporte un segment en série de résistance 1×10⁸ Pa·s·m⁻³, suivi de deux branches identiques en parallèle de résistance 6×10⁸ Pa·s·m⁻³ chacune. Calculer la résistance équivalente totale.",
+            "solution": "Résistance des deux branches en parallèle : 1/Rp = 1/(6×10⁸)+1/(6×10⁸) = 2/(6×10⁸) ⟹ Rp = 3×10⁸ Pa·s·m⁻³. Résistance totale (en série avec le premier segment) : Req = 1×10⁸ + 3×10⁸ = 4×10⁸ Pa·s·m⁻³."
+          },
+          {
+            "statement": "Un tube en U ouvert (vases communicants) contient de l'eau (ρ = 1000 kg·m⁻³) sur une hauteur H = 0,4 m au-dessus de sa base commune, avec patm = 101325 Pa. Calculer la pression au fond du tube (g = 9,8 m·s⁻²).",
+            "solution": "p_bas = patm + ρgH = 101325 + 1000×9,8×0,4 = 101325 + 3920 = 105245 Pa."
+          },
+          {
+            "statement": "D'après la loi de Stokes, la vitesse de sédimentation v d'une particule est inversement proportionnelle à la viscosité η du fluide. Si la vitesse de sédimentation initiale est v0 = 2 mm·h⁻¹ et que la viscosité du plasma double, calculer la nouvelle vitesse de sédimentation.",
+            "solution": "v ∝ 1/η, donc si η double, v est divisée par 2 : v_new = v0/2 = 1 mm·h⁻¹."
+          }
+        ],
+        "difficile": [
+          {
+            "statement": "Une artère de rayon a0 = 2 mm se rétrécit à a = 1 mm (sténose), pour un même débit Q. La perte de charge normale était Δp0 = 500 Pa. Calculer le facteur d'augmentation de la résistance hydraulique et la nouvelle perte de charge.",
+            "solution": "R ∝ 1/a⁴, donc le facteur d'augmentation est (a0/a)⁴ = 2⁴ = 16. La résistance (et donc la perte de charge à débit Q constant, Δp = R×Q) est multipliée par 16 : Δp = 500×16 = 8000 Pa."
+          },
+          {
+            "statement": "Un fluide parfait (ρ = 1060 kg·m⁻³) s'écoule à v1 = 0,3 m·s⁻¹ dans une section S1 = 1×10⁻5 m², puis traverse une sténose de section S2 = S1/4. Calculer la vitesse v2 dans la sténose et la variation de pression Δp = p2 − p1 associée (altitude constante).",
+            "solution": "Conservation du débit : S1v1 = S2v2 ⟹ v2 = v1×(S1/S2) = 0,3×4 = 1,2 m·s⁻¹. Bernoulli : Δp = p2 − p1 = ½ρ(v1²−v2²) = ½×1060×(0,09−1,44) = 530×(−1,35) ≈ −715,5 Pa : chute de pression d'environ 716 Pa au niveau de la sténose, favorisant un risque de collapsus vasculaire."
+          },
+          {
+            "statement": "Un circuit comprend un segment série R1 = 2×10⁸ Pa·s·m⁻³, puis deux branches identiques en parallèle R2 = R3 = 6×10⁸ Pa·s·m⁻³, puis un segment série R4 = 1×10⁸ Pa·s·m⁻³. Pour un débit total Q = 3×10⁻6 m³·s⁻¹, calculer la perte de charge totale.",
+            "solution": "Résistance des branches parallèles : 1/Rp = 1/(6×10⁸)+1/(6×10⁸) ⟹ Rp = 3×10⁸ Pa·s·m⁻³. Résistance totale : Req = R1 + Rp + R4 = 2×10⁸+3×10⁸+1×10⁸ = 6×10⁸ Pa·s·m⁻³. Δp = Req×Q = 6×10⁸×3×10⁻6 = 1800 Pa."
+          },
+          {
+            "statement": "Un tuyau a une entrée (p1 = 2×10⁵ Pa, v1 = 1 m·s⁻¹, z1 = 0) et une sortie de même section et même altitude (v2 = 1 m·s⁻¹, z2 = 0), mais le fluide est visqueux avec une perte de charge Δp = 3000 Pa sur le trajet. Un étudiant applique Bernoulli sans tenir compte du frottement et conclut p2 = p1. Corriger son erreur et donner la valeur correcte de p2.",
+            "solution": "Comme la vitesse et l'altitude ne changent pas, la loi de Bernoulli seule (fluide parfait) donnerait effectivement p2 = p1, mais elle ne s'applique pas ici car le fluide est visqueux : il faut retrancher la perte de charge due aux frottements. p2 = p1 − Δp = 200000 − 3000 = 197000 Pa."
+          },
+          {
+            "statement": "Une pompe fournit une surpression Δπ = 1×10⁴ Pa pour maintenir un débit Q = 4×10⁻5 m³·s⁻¹ à travers une résistance hydraulique R = 2×10⁸ Pa·s·m⁻³. Calculer la perte de charge par frottement, la puissance fournie par la pompe, et la puissance non dissipée par frottement (utilisée par exemple pour une variation d'énergie cinétique).",
+            "solution": "Perte de charge par frottement : Δp = R×Q = 2×10⁸×4×10⁻5 = 8000 Pa (< Δπ = 10000 Pa fourni). Puissance de la pompe : Ppompe = Δπ×Q = 10000×4×10⁻5 = 0,4 W. Puissance dissipée par frottement : Pdiss = Δp×Q = 8000×4×10⁻5 = 0,32 W. Puissance restante (non dissipée par frottement) : 0,4 − 0,32 = 0,08 W."
+          },
+          {
+            "statement": "Pour une résistance hydraulique R = 8ηL/(πa⁴), si le rayon a double à Δp constant (et non à Q constant), calculer le facteur multiplicatif du débit Q.",
+            "solution": "Q = Δp/R et R ∝ 1/a⁴, donc Q ∝ a⁴ à Δp constant. Si a double, Q est multiplié par 2⁴ = 16."
+          },
+          {
+            "statement": "Dans un vaisseau où Re0 = 3000 initialement (turbulent), le rayon double à débit Q constant. Sachant que v = Q/S et S ∝ a², puis Re = ρvD/η avec D = 2a, déterminer le nouveau régime d'écoulement.",
+            "solution": "À Q constant, si a double, S = πa² est multipliée par 4, donc v = Q/S est divisée par 4. D double également. Re = ρvD/η est donc multiplié par (1/4)×2 = 1/2. Re_new = 3000/2 = 1500 < 2000 : l'écoulement redevient laminaire."
+          },
+          {
+            "statement": "Le réseau vasculaire comprend un segment aortique de résistance R0 = 1×10⁶ Pa·s·m⁻³ en série avec deux artères identiques de résistance 1×10⁷ Pa·s·m⁻³ chacune en parallèle, puis 1000 capillaires identiques de résistance 1×10¹⁰ Pa·s·m⁻³ chacun, également en parallèle. Pour un débit total Q = 8×10⁻5 m³·s⁻¹, calculer la perte de charge totale.",
+            "solution": "Deux artères en parallèle : 1/Rart = 1/(1×10⁷)+1/(1×10⁷) ⟹ Rart = 5×10⁶ Pa·s·m⁻³. 1000 capillaires en parallèle : Rcap = (1×10¹⁰)/1000 = 1×10⁷ Pa·s·m⁻³. Résistance totale en série : Rtot = R0 + Rart + Rcap = 1×10⁶+5×10⁶+1×10⁷ ≈ 1,6×10⁷ Pa·s·m⁻³. Δp = Rtot×Q = 1,6×10⁷×8×10⁻5 = 1280 Pa."
+          },
+          {
+            "statement": "Le sang circule à débit et section constants (v = 0,4 m·s⁻¹ dans tout le circuit, fluide supposé parfait) entre le cœur (p1 = 1,3×10⁴ Pa, z1 = 0) et la tête (z2 = 0,5 m plus haut, ρ = 1060 kg·m⁻³, g = 9,8 m·s⁻²). Calculer la pression p2 au niveau de la tête.",
+            "solution": "Comme v1 = v2, le terme cinétique disparaît de Bernoulli. p1 + ρgz1 = p2 + ρgz2 ⟹ p2 = p1 − ρg(z2−z1) = 13000 − 1060×9,8×0,5 = 13000 − 5194 = 7806 Pa."
+          },
+          {
+            "statement": "Le rayon d'un vaisseau diminue de 20 % (a_new = 0,8×a0), le reste étant inchangé. Calculer le pourcentage de variation de la résistance hydraulique.",
+            "solution": "R ∝ 1/a⁴ ⟹ R_new/R0 = (a0/a_new)⁴ = (1/0,8)⁴ = 1/0,4096 ≈ 2,441 : la résistance augmente d'environ 144 % pour une simple diminution de 20 % du rayon, illustrant la très forte sensibilité de R au rayon (piège classique)."
+          }
+        ]
+      },
       "resources": [
         {
           "icon": "🔗",
@@ -958,7 +1344,8 @@
           "correct_index": 1,
           "explanation": "Parfait ! 🌿 En parallèle, ce sont les inverses des résistances qui s'additionnent : 1/Req = Σ(1/Ri), ce qui diminue toujours la résistance équivalente par rapport à chaque branche prise seule."
         }
-      ]
+      ],
+      "diagram": "flowchart TD\n    A[Mecanique des fluides] --> B[Hydrostatique]\n    A --> C[Hydrodynamique]\n    A --> D[Viscosite]\n    A --> E[Regime d ecoulement]\n    B --> B1[Pression p = F sur S]\n    B --> B2[Loi fondamentale hydrostatique]\n    B --> B3[Principe de Pascal]\n    B --> B4[Tension arterielle]\n    C --> C1[Debit Q = S fois v]\n    C --> C2[Loi de Bernoulli]\n    C --> C3[Effet Venturi]\n    D --> D1[Profil parabolique Poiseuille]\n    D --> D2[Resistance hydraulique R]\n    D --> D3[Puissance dissipee]\n    D --> D4[Association serie et parallele]\n    E --> E1[Nombre de Reynolds]\n    E --> E2[Ecoulement laminaire]\n    E --> E3[Ecoulement turbulent]\n"
     },
     {
       "id": "gaz_ondes_acoustiques",
@@ -1044,6 +1431,134 @@
         "À une interface : R + T = 1 (R et T = coefficients de réflexion/transmission en énergie)",
         "Changement de milieu : fréquence constante, célérité et longueur d'onde peuvent varier"
       ],
+      "exercises": {
+        "facile": [
+          {
+            "statement": "Un échantillon de CO2 a une masse m = 44 g, avec une masse molaire M = 44 g·mol⁻¹. Calculer la quantité de matière n.",
+            "solution": "n = m/M = 44/44 = 1 mol."
+          },
+          {
+            "statement": "Un échantillon contient N = 3,01×10²³ molécules (NA ≈ 6,02×10²³ mol⁻¹). Calculer la quantité de matière n.",
+            "solution": "n = N/NA = 3,01×10²³/6,02×10²³ = 0,5 mol."
+          },
+          {
+            "statement": "Convertir une pression p = 2 atm en pascals (1 atm = 10⁵ Pa).",
+            "solution": "p = 2×10⁵ Pa."
+          },
+          {
+            "statement": "Un gaz parfait occupe un volume V = 0,0224 m³, à la quantité de matière n = 1 mol et à la température T = 273 K (R = 8,314 J·K⁻¹·mol⁻¹). Calculer la pression p.",
+            "solution": "pV = nRT ⟹ p = nRT/V = 1×8,314×273/0,0224 ≈ 2269,4/0,0224 ≈ 1,013×10⁵ Pa (soit environ 1 atm, conditions standards)."
+          },
+          {
+            "statement": "Convertir une température de T = 25 °C en kelvins.",
+            "solution": "T(K) = T(°C) + 273,15 = 25 + 273,15 = 298,15 K."
+          },
+          {
+            "statement": "Un gaz subit une transformation isotherme : état 1 (p1 = 1×10⁵ Pa, V1 = 2 L), état 2 (p2 = 2×10⁵ Pa). Calculer V2.",
+            "solution": "Loi de Boyle-Mariotte : p1V1 = p2V2 ⟹ V2 = p1V1/p2 = 1×10⁵×2/2×10⁵ = 1 L."
+          },
+          {
+            "statement": "L'air a une pression totale ptot = 1×10⁵ Pa et contient 21 % de dioxygène. Calculer la pression partielle pO2.",
+            "solution": "pO2 = 0,21×ptot = 0,21×10⁵ = 21000 Pa."
+          },
+          {
+            "statement": "Une onde sonore a une longueur d'onde λ = 0,34 m et une fréquence ν = 1000 Hz. Calculer sa célérité c.",
+            "solution": "c = λ×ν = 0,34×1000 = 340 m·s⁻¹."
+          },
+          {
+            "statement": "Une source sonore ponctuelle isotrope de puissance P = 1 W est mesurée à une distance r = 2 m. Calculer l'intensité sonore I à cette distance.",
+            "solution": "I = P/(4πr²) = 1/(4π×4) = 1/50,27 ≈ 2,0×10⁻2 W·m⁻²."
+          },
+          {
+            "statement": "Un milieu a une masse volumique ρ = 1000 kg·m⁻³ et une célérité du son c = 1500 m·s⁻¹. Calculer son impédance acoustique Z.",
+            "solution": "Z = ρ×c = 1000×1500 = 1,5×10⁶ kg·m⁻²·s⁻¹."
+          }
+        ],
+        "moyen": [
+          {
+            "statement": "Un échantillon de dioxygène (M = 32 g·mol⁻¹) a une masse m = 8 g. Il occupe un volume V à la température T = 300 K sous une pression p = 1×10⁵ Pa (R = 8,314 J·K⁻¹·mol⁻¹). Calculer d'abord n, puis V.",
+            "solution": "n = m/M = 8/32 = 0,25 mol. V = nRT/p = 0,25×8,314×300/1×10⁵ = 623,55/100000 ≈ 6,24×10⁻3 m³ = 6,24 L."
+          },
+          {
+            "statement": "Un gaz enfermé à volume constant est à p1 = 1×10⁵ Pa et T1 = 300 K. Il est chauffé jusqu'à T2 = 400 K. Calculer p2 (transformation isochore).",
+            "solution": "Isochore : p/T = cste ⟹ p2 = p1×T2/T1 = 1×10⁵×400/300 ≈ 1,333×10⁵ Pa."
+          },
+          {
+            "statement": "Un gaz à pression constante occupe V1 = 2 L à T1 = 290 K. Il est chauffé jusqu'à V2 = 2,5 L. Calculer T2 (transformation isobare).",
+            "solution": "Isobare : V/T = cste ⟹ T2 = T1×V2/V1 = 290×2,5/2 = 362,5 K."
+          },
+          {
+            "statement": "L'air (ptot = 1×10⁵ Pa) est composé de 21 % de O2, 5 % de CO2 et le reste de N2. Calculer les trois pressions partielles.",
+            "solution": "pO2 = 0,21×10⁵ = 21000 Pa. pCO2 = 0,05×10⁵ = 5000 Pa. Le reste (74 %) est N2 : pN2 = 0,74×10⁵ = 74000 Pa (on vérifie pO2+pCO2+pN2 = 100000 Pa = ptot, loi de Dalton)."
+          },
+          {
+            "statement": "Une onde sonore a une intensité I = 1×10⁻6 W·m⁻² (Iref = 1×10⁻12 W·m⁻²). Calculer le niveau sonore L en décibels.",
+            "solution": "L = 10×log(I/Iref) = 10×log(1×10⁻6/1×10⁻12) = 10×log(10⁶) = 10×6 = 60 dB."
+          },
+          {
+            "statement": "Deux sources sonores incohérentes émettent chacune une intensité I = 1×10⁻6 W·m⁻² au même point (Iref = 1×10⁻12 W·m⁻²). Calculer le niveau sonore total.",
+            "solution": "Il faut additionner les intensités : Itot = 2×1×10⁻6 = 2×10⁻6 W·m⁻². Ltot = 10×log(2×10⁻6/1×10⁻12) = 10×log(2×10⁶) = 10×(log2+6) ≈ 10×6,301 ≈ 63,0 dB."
+          },
+          {
+            "statement": "Une interface sépare deux tissus d'impédances Z1 = 1,5×10⁶ kg·m⁻²·s⁻¹ et Z2 = 1,38×10⁶ kg·m⁻²·s⁻¹. Calculer les coefficients de réflexion R et de transmission T en énergie.",
+            "solution": "R = (Z1−Z2)²/(Z1+Z2)² = (0,12×10⁶)²/(2,88×10⁶)² = 1,44×10¹⁰/8,29×10¹² ≈ 1,74×10⁻3. T = 1−R ≈ 0,998 (0,9983) : très peu d'énergie est réfléchie entre deux tissus d'impédances proches."
+          },
+          {
+            "statement": "Une sonde d'échographie émet à ν = 2 MHz dans un tissu où la célérité du son est c = 1540 m·s⁻¹. Calculer la longueur d'onde λ correspondante.",
+            "solution": "λ = c/ν = 1540/2×10⁶ = 7,7×10⁻4 m = 0,77 mm."
+          },
+          {
+            "statement": "Au niveau de la mer, pO2 = 21000 Pa (21 % de patm = 1×10⁵ Pa). En altitude, patm chute à 0,6×10⁵ Pa, la proportion de O2 restant identique. Calculer pO2 en altitude et commenter le risque d'hypoxie.",
+            "solution": "pO2(altitude) = 0,21×0,6×10⁵ = 12600 Pa, contre 21000 Pa au niveau de la mer : le gradient de diffusion de l'oxygène disponible pour l'oxygénation du sang est fortement réduit, expliquant l'hypoxie d'altitude malgré une proportion d'O2 inchangée."
+          },
+          {
+            "statement": "Un échantillon de gaz de quantité de matière n = 2 mol a une masse totale m = 64 g. Calculer sa masse molaire M et identifier le gaz.",
+            "solution": "M = m/n = 64/2 = 32 g·mol⁻¹ : il s'agit très probablement de dioxygène O2 (M(O2) = 2×16 = 32 g·mol⁻¹)."
+          }
+        ],
+        "difficile": [
+          {
+            "statement": "Un gaz parfait passe de l'état 1 (p1 = 1×10⁵ Pa, V1 = 3 L, T1 = 290 K) à l'état 2 (p2 = 1,5×10⁵ Pa, V2 = 2 L). Un étudiant pense que, comme p et V ont tous deux changé, la température a nécessairement changé aussi. Calculer T2 et commenter.",
+            "solution": "Loi générale : p1V1/T1 = p2V2/T2 ⟹ T2 = p2V2T1/(p1V1) = (1,5×10⁵×2×290)/(1×10⁵×3) = 8,7×10⁷/3×10⁵ = 290 K. On trouve T2 = T1 : bien que p et V aient tous deux changé, le produit pV est resté identique (3×10⁵ Pa·L dans les deux états), donc la température n'a en réalité pas varié. Ce piège illustre qu'il ne faut jamais présumer qu'une grandeur varie sans vérifier explicitement le calcul."
+          },
+          {
+            "statement": "Un échantillon de CO2 (M = 44 g·mol⁻¹) a une masse m = 500 mg. Calculer la quantité de matière n, puis le volume V qu'il occuperait à T = 273 K et p = 1,013×10⁵ Pa (R = 8,314 J·K⁻¹·mol⁻¹).",
+            "solution": "Attention à l'unité : m = 500 mg = 0,5 g (piège classique mg/g, facteur 1000). n = m/M = 0,5/44 ≈ 0,01136 mol. V = nRT/p = 0,01136×8,314×273/1,013×10⁵ ≈ 25,79/101300 ≈ 2,55×10⁻4 m³ = 254,6 mL."
+          },
+          {
+            "statement": "En altitude, la pression atmosphérique chute à patm = 5×10⁴ Pa (contre 1×10⁵ Pa au niveau de la mer), la proportion de O2 restant à 21 %. Calculer pO2 en altitude, le comparer à la valeur au niveau de la mer, et exprimer la réduction en pourcentage.",
+            "solution": "pO2(altitude) = 0,21×5×10⁴ = 10500 Pa. Au niveau de la mer : pO2 = 0,21×10⁵ = 21000 Pa. Rapport : 10500/21000 = 0,5, soit une réduction de 50 % de la pression partielle en oxygène disponible, malgré une composition de l'air inchangée : c'est cette chute qui provoque l'hypoxie d'altitude."
+          },
+          {
+            "statement": "Trois sons incohérents de niveaux L1 = 50 dB, L2 = 53 dB et L3 = 50 dB se combinent au même point (Iref = 1×10⁻12 W·m⁻²). Calculer le niveau sonore total, en évitant le piège d'additionner directement les dB.",
+            "solution": "On convertit d'abord chaque niveau en intensité : I1 = Iref×10^(L1/10) = 10⁻¹²×10⁵ = 10⁻⁷ W·m⁻². I2 = 10⁻¹²×10^5,3 ≈ 10⁻¹²×1,995×10⁵ ≈ 1,995×10⁻⁷ W·m⁻². I3 = 10⁻⁷ W·m⁻². Itot = 10⁻⁷+1,995×10⁻⁷+10⁻⁷ ≈ 3,995×10⁻⁷ W·m⁻². Ltot = 10×log(3,995×10⁻⁷/10⁻¹²) = 10×log(3,995×10⁵) ≈ 10×5,60 ≈ 56,0 dB (bien inférieur à la somme naïve 50+53+50 = 153 dB, physiquement absurde)."
+          },
+          {
+            "statement": "À l'interface entre l'air (Zair ≈ 415 kg·m⁻²·s⁻¹) et un tissu mou (Ztissu = 1,5×10⁶ kg·m⁻²·s⁻¹), calculer le coefficient de réflexion R en énergie, et commenter l'intérêt du gel d'échographie.",
+            "solution": "R = (Zair−Ztissu)²/(Zair+Ztissu)². Comme Zair est négligeable devant Ztissu : R ≈ (Ztissu)²/(Ztissu)² ≈ 1, plus précisément R = (415−1,5×10⁶)²/(415+1,5×10⁶)² ≈ (1,5×10⁶)²/(1,5×10⁶)² ≈ 0,9994 (soit environ 99,9 % de l'énergie réfléchie). Sans gel, la fine couche d'air entre la sonde et la peau réfléchirait donc la quasi-totalité des ultrasons, empêchant l'exploration en profondeur : le gel, d'impédance proche de celle des tissus mous, élimine cette interface très réfléchissante."
+          },
+          {
+            "statement": "Une sonde d'échographie émet à ν = 5 MHz dans un tissu de célérité c = 1540 m·s⁻¹. Calculer la longueur d'onde λ, puis la résolution spatiale minimale estimée à λ/2.",
+            "solution": "λ = c/ν = 1540/5×10⁶ = 3,08×10⁻4 m = 0,308 mm. Résolution ≈ λ/2 ≈ 0,154 mm : plus la fréquence est élevée, plus la résolution spatiale est fine (mais la pénétration en profondeur est réduite)."
+          },
+          {
+            "statement": "Un mélange gazeux dans un volume V = 10 L à T = 300 K contient m(O2) = 32 g (M = 32 g·mol⁻¹) et m(N2) = 56 g (M = 28 g·mol⁻¹). Calculer la pression totale et les pressions partielles de chaque gaz (R = 8,314 J·K⁻¹·mol⁻¹).",
+            "solution": "n(O2) = 32/32 = 1 mol. n(N2) = 56/28 = 2 mol. ntot = 3 mol. ptot = ntotRT/V = 3×8,314×300/0,01 = 7482,6/0,01 = 748260 Pa. Par la loi de Dalton, pO2 = ptot×(n(O2)/ntot) = 748260×(1/3) ≈ 249420 Pa, et pN2 = 748260×(2/3) ≈ 498840 Pa."
+          },
+          {
+            "statement": "Un gaz est initialement à T = 27 °C, p1 = 1×10⁵ Pa, chauffé à volume constant jusqu'à T2 = 54 °C. Un étudiant calcule p2 = p1×54/27 = 2×10⁵ Pa. Identifier son erreur et donner le résultat correct.",
+            "solution": "L'erreur est d'utiliser directement les températures en degrés Celsius dans le rapport, alors que la loi des gaz parfaits exige des températures absolues en kelvins. En kelvins : T1 = 300 K, T2 = 327,15 K (≈327 K). Isochore : p2 = p1×T2/T1 = 1×10⁵×327/300 ≈ 1,09×10⁵ Pa, très différent du résultat erroné de 2×10⁵ Pa."
+          },
+          {
+            "statement": "Une onde ultrasonore incidente d'intensité I0 = 1×10⁻2 W·m⁻² rencontre une interface où le coefficient de réflexion en énergie est R = 0,1. Calculer l'intensité réfléchie et son niveau sonore équivalent en dB (Iref = 1×10⁻12 W·m⁻²).",
+            "solution": "Ireflechie = R×I0 = 0,1×1×10⁻2 = 1×10⁻3 W·m⁻². L = 10×log(1×10⁻3/1×10⁻12) = 10×log(10⁹) = 90 dB."
+          },
+          {
+            "statement": "Un plongeur descend à h = 30 m sous l'eau de mer (ρ = 1025 kg·m⁻³, g = 9,8 m·s⁻²), avec patm = 101325 Pa en surface. Calculer la pression totale à cette profondeur, puis la pression partielle en O2 (21 % de l'air respiré) à cette profondeur, et comparer au pO2 en surface.",
+            "solution": "Loi de l'hydrostatique : p = patm + ρgh = 101325 + 1025×9,8×30 = 101325 + 301350 = 402675 Pa ≈ 4,03×10⁵ Pa (environ 4 atm). pO2(profondeur) = 0,21×402675 ≈ 84562 Pa ≈ 0,834 atm, contre pO2(surface) = 0,21×101325 ≈ 21278 Pa ≈ 0,21 atm : la pression partielle en O2 est donc environ 4 fois plus élevée en profondeur, ce qui explique le risque de toxicité de l'oxygène en plongée à grande profondeur, alors même que la composition de l'air respiré (21 % O2) reste inchangée."
+          }
+        ]
+      },
       "resources": [
         {
           "icon": "📘",
@@ -1275,7 +1790,8 @@
           "correct_index": 1,
           "explanation": "Exactement ! ⚡ On a toujours R + T = 1 : cela traduit la conservation de l'énergie totale de l'onde incidente, intégralement répartie entre l'onde réfléchie et l'onde transmise."
         }
-      ]
+      ],
+      "diagram": "flowchart TD\n    A[Gaz parfaits et ondes acoustiques] --> B[Quantite de matiere]\n    A --> C[Loi des gaz parfaits]\n    A --> D[Transformations et melanges]\n    A --> E[Ondes sonores]\n    A --> F[Propagation et interfaces]\n    B --> B1[n = N sur NA]\n    B --> B2[n = m sur M]\n    C --> C1[pV = nRT]\n    C --> C2[Conversion Kelvin Celsius]\n    D --> D1[Isotherme isobare isochore]\n    D --> D2[Loi de Dalton]\n    D --> D3[Echanges gazeux alveolaires]\n    E --> E1[Onde mecanique longitudinale]\n    E --> E2[Celerite c = lambda fois nu]\n    E --> E3[Intensite et niveau sonore dB]\n    F --> F1[Impedance acoustique Z]\n    F --> F2[Reflexion et transmission]\n"
     }
   ]
 }

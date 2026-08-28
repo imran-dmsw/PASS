@@ -9,6 +9,7 @@
       "title": "Atomistique : structure et configuration électronique",
       "difficulty": 1,
       "intro": "Direction l'infiniment petit pour percer les secrets de l'atome, un(e) pehun averti(e) en vaut deux ! ⚛️✨",
+      "diagram": "flowchart TD\n    A[Atomistique] --> B[Structure de l atome]\n    A --> C[Nombres quantiques]\n    A --> D[Regles de remplissage]\n    A --> E[Classification periodique]\n    A --> F[Pieges classiques]\n    B --> B1[Protons neutrons electrons]\n    B --> B2[Numero atomique Z et masse A]\n    B --> B3[Isotopes isobares isotones]\n    C --> C1[n couche principale]\n    C --> C2[l sous-couche forme]\n    C --> C3[m orientation spatiale]\n    C --> C4[s spin electronique]\n    D --> D1[Klechkowski n plus l croissant]\n    D --> D2[Pauli deux electrons max]\n    D --> D3[Hund spins paralleles]\n    D --> D4[Exceptions chrome et cuivre]\n    E --> E1[Blocs s p d f]\n    E --> E2[Electronegativite et rayon atomique]\n    E --> E3[Electrons de valence et de coeur]\n    F --> F1[Confusion Z et A]\n    F --> F2[Ordre ionisation vs remplissage]",
       "course": [
         {
           "icon": "🔬",
@@ -324,13 +325,142 @@
           "correct_index": 1,
           "explanation": "Exact ! 🔑 C'est la formulation générale du principe d'exclusion : dans un même atome, l'ensemble (n, l, m, s) est unique pour chaque électron, ce qui limite le peuplement de chaque orbitale à deux électrons de spins opposés."
         }
-      ]
+      ],
+      "exercises": {
+        "facile": [
+          {
+            "statement": "Un atome de sodium possède 11 protons. Combien d'électrons possède-t-il à l'état neutre, et quel est son numéro atomique Z ?",
+            "solution": "Un atome neutre possède autant d'électrons que de protons. Le sodium a 11 protons, donc il possède 11 électrons à l'état neutre. Le numéro atomique Z est par définition le nombre de protons, donc Z = 11."
+          },
+          {
+            "statement": "Donnez les valeurs possibles du nombre quantique secondaire l pour une couche de nombre quantique principal n = 3.",
+            "solution": "Le nombre quantique secondaire l peut prendre toute valeur entière comprise entre 0 et n−1. Pour n = 3, l peut donc valoir 0, 1 ou 2, correspondant respectivement aux sous-couches 3s, 3p et 3d."
+          },
+          {
+            "statement": "Combien d'orbitales atomiques compte une sous-couche d (l = 2) ? Combien d'électrons au maximum peut-elle contenir ?",
+            "solution": "Le nombre d'orbitales d'une sous-couche vaut 2l+1. Pour l = 2, cela donne 2×2+1 = 5 orbitales. Chaque orbitale pouvant accueillir 2 électrons (principe de Pauli), la sous-couche d peut contenir au maximum 5×2 = 10 électrons."
+          },
+          {
+            "statement": "Calculez la capacité maximale en électrons de la couche n = 4.",
+            "solution": "La capacité maximale d'une couche de nombre quantique principal n est donnée par la formule 2n². Pour n = 4, on obtient 2×4² = 2×16 = 32 électrons au maximum."
+          },
+          {
+            "statement": "Écrivez la configuration électronique fondamentale de l'atome de silicium (Z = 14) en appliquant la règle de Klechkowski.",
+            "solution": "On remplit les sous-couches par ordre de (n+l) croissant : 1s (2) → 2s (2) → 2p (6) → 3s (2) → 3p (2), soit un total de 2+2+6+2+2 = 14 électrons. La configuration est donc 1s² 2s² 2p⁶ 3s² 3p²."
+          },
+          {
+            "statement": "Deux noyaux ont pour notation ³⁵₁₇Cl et ³⁷₁₇Cl. Quelle relation ces deux noyaux entretiennent-ils entre eux ?",
+            "solution": "Les deux noyaux ont le même numéro atomique Z = 17 (même élément, le chlore) mais un nombre de masse A différent (35 et 37), donc un nombre de neutrons différent (18 et 20). Ce sont donc deux isotopes du chlore : ils ont les mêmes propriétés chimiques mais des masses différentes."
+          },
+          {
+            "statement": "Quelle est la différence entre un cation et un anion, du point de vue du nombre d'électrons par rapport à l'atome neutre ?",
+            "solution": "Un cation est un atome (ou groupe d'atomes) qui a perdu un ou plusieurs électrons par rapport à l'atome neutre : il possède donc moins d'électrons que de protons, d'où sa charge positive. Un anion, à l'inverse, a gagné un ou plusieurs électrons : il possède plus d'électrons que de protons, d'où sa charge négative. Dans les deux cas, le nombre de protons (donc Z) ne change pas."
+          },
+          {
+            "statement": "Sur une même période du tableau périodique, comment évolue l'électronégativité de gauche à droite ? Justifiez brièvement.",
+            "solution": "L'électronégativité augmente de gauche à droite sur une période. En effet, à nombre de couches constant (n identique), la charge nucléaire (nombre de protons) augmente progressivement, ce qui attire plus fortement les électrons de valence vers le noyau."
+          },
+          {
+            "statement": "À quel bloc du tableau périodique appartient un élément dont la configuration électronique se termine par ...3d⁵ ? Justifiez.",
+            "solution": "Un élément dont la dernière sous-couche occupée lors du remplissage est une sous-couche d appartient au bloc d, celui des métaux de transition (colonnes 3 à 12 du tableau périodique)."
+          },
+          {
+            "statement": "Un atome de magnésium (Z = 12) perd 2 électrons pour former un ion. Écrivez la configuration électronique de cet ion et donnez sa charge.",
+            "solution": "Le magnésium neutre a pour configuration 1s² 2s² 2p⁶ 3s². En perdant 2 électrons, il retire les 2 électrons de sa couche la plus externe (n=3, sous-couche 3s), ce qui donne l'ion Mg²⁺ de configuration 1s² 2s² 2p⁶, chargé +2."
+          }
+        ],
+        "moyen": [
+          {
+            "statement": "Un atome possède la configuration électronique 1s² 2s² 2p⁶ 3s² 3p⁶ 4s². Identifiez cet élément (donnez Z), le bloc auquel il appartient, et le nombre d'électrons de valence.",
+            "solution": "En sommant les électrons : 2+2+6+2+6+2 = 20, donc Z = 20, il s'agit du calcium. La dernière sous-couche remplie est une sous-couche s (4s), l'élément appartient donc au bloc s. Le calcium n'étant pas un métal de transition, ses électrons de valence sont ceux de la couche externe n=4, soit les 2 électrons de la sous-couche 4s² : il possède donc 2 électrons de valence."
+          },
+          {
+            "statement": "Le chrome a pour numéro atomique Z = 24. Écrivez sa configuration électronique fondamentale en tenant compte de l'exception connue pour cet élément, puis expliquez pourquoi cette exception existe.",
+            "solution": "L'application stricte de Klechkowski donnerait [Ar]4s²3d⁴ (18+2+4=24). Mais le chrome déroge à cette règle : un électron de 4s bascule vers 3d pour donner [Ar]4s¹3d⁵. Cette configuration est plus stable car elle permet d'obtenir une sous-couche d exactement à moitié remplie (5 électrons dans 5 orbitales, tous de spins parallèles selon Hund), ce qui maximise la symétrie de répartition électronique et l'énergie d'échange favorable entre orbitales dégénérées, compensant le léger surcoût du transfert d'un électron de 4s vers 3d."
+          },
+          {
+            "statement": "Le fer a pour configuration fondamentale [Ar]4s²3d⁶. Écrivez la configuration électronique de l'ion Fe³⁺ et expliquez la méthode utilisée.",
+            "solution": "Pour former un cation à partir d'un métal de transition, on ne retire pas les électrons de la dernière sous-couche remplie selon Klechkowski (ici 3d), mais toujours ceux de la couche de plus grand nombre quantique principal n, c'est-à-dire ici la sous-couche 4s (n=4, contre n=3 pour 3d). On retire donc d'abord les 2 électrons de 4s, puis, pour atteindre la charge +3, un électron supplémentaire de la sous-couche 3d. On obtient ainsi Fe³⁺ : [Ar]3d⁵."
+          },
+          {
+            "statement": "Comparez le rayon atomique du sodium (Na, Z=11) et du chlore (Cl, Z=17), tous deux sur la 3e période. Lequel est le plus grand, et pourquoi ?",
+            "solution": "Sodium et chlore appartiennent à la même période (n=3 pour la couche de valence des deux), mais le chlore a un numéro atomique plus élevé (17 contre 11), donc une charge nucléaire plus forte. Sur une période, le rayon atomique diminue de gauche à droite car l'augmentation de la charge nucléaire, à n constant, attire plus fortement les électrons de valence vers le noyau. Le sodium, situé à gauche du chlore sur la même période, possède donc un rayon atomique plus grand que celui du chlore."
+          },
+          {
+            "statement": "Le brome (Br, Z=35) a pour configuration [Ar]4s²3d¹⁰4p⁵. Combien possède-t-il d'électrons de valence, et combien d'électrons de cœur ? Détaillez le raisonnement.",
+            "solution": "Le brome n'est pas un métal de transition (le bloc d, ici la sous-couche 3d, est totalement rempli, donc n'est plus 'en cours de remplissage'). Ses électrons de valence sont donc uniquement ceux de la couche externe n=4 hors sous-couche d pleine : 4s²4p⁵, soit 2+5 = 7 électrons de valence. Le brome comptant 35 électrons au total, il possède donc 35−7 = 28 électrons de cœur (correspondant à la configuration de l'argon [Ar] plus la sous-couche 3d¹⁰ pleine, qui est ici considérée comme cœur puisqu'elle n'est plus en cours de remplissage)."
+          },
+          {
+            "statement": "Deux noyaux X et Y ont respectivement pour notation ¹⁴₆X et ¹⁴₇Y. Quelle relation entretiennent-ils, et ont-ils les mêmes propriétés chimiques ?",
+            "solution": "X a Z=6 et A=14, donc N = 14−6 = 8 neutrons. Y a Z=7 et A=14, donc N = 14−7 = 7 neutrons. Les deux noyaux ont le même nombre de masse A=14 mais un Z différent : ce sont des isobares. Étant des éléments chimiques différents (carbone pour X, azote pour Y), ils n'ont pas du tout les mêmes propriétés chimiques, contrairement à des isotopes qui partageraient un Z identique."
+          },
+          {
+            "statement": "Sans écrire la configuration complète, indiquez si l'élément de numéro atomique Z=33 (arsenic) appartient au bloc s, p, d ou f. Justifiez votre méthode.",
+            "solution": "On peut situer l'élément par blocs de gaz rares : après l'argon (Z=18), on remplit 4s (2 e⁻, Z=20), puis 3d (10 e⁻, Z=30), puis 4p. Z=33 correspond donc à 3 électrons dans la sous-couche 4p (30+3=33) : la dernière sous-couche occupée est 4p, l'arsenic appartient donc au bloc p."
+          },
+          {
+            "statement": "Un ion X²⁻ possède 18 électrons. Sachant que cet ion provient d'un atome neutre X, déterminez le numéro atomique Z de l'atome X et identifiez l'élément.",
+            "solution": "L'ion X²⁻ a gagné 2 électrons par rapport à l'atome neutre X : l'atome neutre possède donc 18−2 = 16 électrons, donc Z=16. Il s'agit du soufre (S), dont l'ion S²⁻ (isoélectronique de l'argon) a pour configuration 1s² 2s² 2p⁶ 3s² 3p⁶."
+          },
+          {
+            "statement": "Expliquez pourquoi la sous-couche 4s se remplit avant la sous-couche 3d, alors que n=3 est plus proche du noyau que n=4.",
+            "solution": "La règle de Klechkowski précise que l'ordre de remplissage suit la valeur croissante de la somme (n+l), et non celle de n seul. Pour 4s, n+l = 4+0 = 4 ; pour 3d, n+l = 3+2 = 5. Comme 4 < 5, la sous-couche 4s, d'énergie plus basse dans l'atome polyélectronique (du fait des effets d'écran et de pénétration), se remplit avant la 3d, même si géométriquement n=3 est 'plus proche' du noyau que n=4."
+          },
+          {
+            "statement": "Placez par ordre d'électronégativité croissante les trois éléments suivants : le potassium K (période 4, colonne 1), le brome Br (période 4, colonne 17) et le fluor F (période 2, colonne 17). Justifiez.",
+            "solution": "L'électronégativité croît de gauche à droite sur une période et du bas vers le haut sur une colonne. K, en colonne 1 (métal alcalin), est le moins électronégatif. Br et F sont dans la même colonne 17, mais F est en période 2 (plus haut) donc plus électronégatif que Br (période 4). Ordre croissant : K < Br < F."
+          }
+        ],
+        "difficile": [
+          {
+            "statement": "Le manganèse a pour numéro atomique Z=25. Sa configuration électronique fondamentale suit-elle Klechkowski sans exception ? Écrivez-la, puis déterminez la configuration de l'ion Mn²⁺.",
+            "solution": "Contrairement au chrome et au cuivre, le manganèse ne présente pas d'exception : sa configuration suit Klechkowski normalement, [Ar]4s²3d⁵ (18+2+5=25). Il se trouve que cette configuration atteint déjà naturellement une sous-couche d à moitié remplie sans besoin d'exception, contrairement au chrome voisin (Z=24) qui doit transférer un électron pour l'atteindre. Pour former Mn²⁺, on retire les 2 électrons de plus grand n, soit les 2 électrons de 4s : Mn²⁺ = [Ar]3d⁵, qui garde ainsi sa sous-couche d à moitié remplie, une configuration particulièrement stable."
+          },
+          {
+            "statement": "Classez, en justifiant chaque étape, les quatre espèces suivantes par ordre de rayon croissant : Na (Z=11), Na⁺, Mg²⁺ (Z=12), et F⁻ (Z=9). On précise que Na⁺, Mg²⁺ et F⁻ sont isoélectroniques (10 électrons chacun).",
+            "solution": "Na (atome neutre, 11 électrons, 3 couches occupées n=1,2,3) a un rayon bien plus grand que les trois ions isoélectroniques, car il possède une couche électronique supplémentaire. Pour les trois ions isoélectroniques (10 électrons chacun, configuration de type néon), c'est le nombre de protons qui différencie leur rayon : plus Z est élevé, plus l'attraction nucléaire sur ce même nuage électronique de 10 électrons est forte, et plus le rayon est petit. On a Z(F⁻)=9 < Z(Na⁺)=11 < Z(Mg²⁺)=12, donc le rayon décroît dans cet ordre : F⁻ > Na⁺ > Mg²⁺. Ordre croissant de rayon global : Mg²⁺ < Na⁺ < F⁻ < Na."
+          },
+          {
+            "statement": "Un élève affirme : « Le cuivre Cu (Z=29) a pour configuration [Ar]4s²3d⁹, donc l'ion Cu⁺ a pour configuration [Ar]3d⁹ après le retrait d'un électron de la sous-couche externe. » Cette affirmation contient deux erreurs. Identifiez-les et corrigez.",
+            "solution": "Première erreur : la configuration fondamentale du cuivre n'est pas [Ar]4s²3d⁹ (celle attendue par Klechkowski strict) mais [Ar]4s¹3d¹⁰, car le cuivre est une exception classique : un électron de 4s bascule vers 3d pour obtenir une sous-couche d totalement remplie, plus stable. Seconde erreur : pour former Cu⁺, on retire l'électron de plus grand n, c'est-à-dire l'unique électron de la sous-couche 4s (n=4), et non un électron de 3d (n=3). La configuration correcte de Cu⁺ est donc [Ar]3d¹⁰, une sous-couche d pleine, et non [Ar]3d⁹."
+          },
+          {
+            "statement": "Un ion M³⁺ possède la configuration électronique [Ar]3d³. Déterminez le numéro atomique Z de l'élément M, en identifiant d'abord le nombre d'électrons de M³⁺ puis en reconstituant celui de M.",
+            "solution": "[Ar]3d³ correspond à 18 (Ar) + 3 = 21 électrons pour l'ion M³⁺. L'atome neutre M possède 3 électrons de plus (puisque M³⁺ a perdu 3 électrons), soit 21+3 = 24 électrons, donc Z=24 : il s'agit du chrome. Vérification : le chrome neutre a pour configuration [Ar]4s¹3d⁵ (exception de Klechkowski). Pour former M³⁺, on retire d'abord l'électron de 4s (plus grand n), puis 2 électrons de 3d, ce qui donne bien [Ar]3d³ (5−2=3). Ce cas illustre bien qu'il faut partir de la configuration fondamentale réelle (avec son exception) et non de la configuration Klechkowski naïve pour raisonner correctement sur l'ion."
+          },
+          {
+            "statement": "Pourquoi l'hélium (Z=2), bien que situé dans la même colonne que les autres gaz rares (colonne 18, configuration ns²np⁶), a-t-il pour configuration 1s² et non 1s²1p⁶ ?",
+            "solution": "Pour n=1, le nombre quantique secondaire l ne peut prendre que la valeur 0 (car 0 ≤ l ≤ n−1 = 0) : il n'existe donc pas de sous-couche 1p, seule la sous-couche 1s existe pour n=1. L'hélium sature donc sa seule couche disponible (1s²) avec 2 électrons, ce qui suffit à lui conférer la même inertie chimique que les autres gaz rares malgré une couche de valence différente en apparence (ns² au lieu de ns²np⁶) : c'est une exception structurelle liée aux contraintes des nombres quantiques, non une anomalie énergétique comme pour Cr ou Cu."
+          },
+          {
+            "statement": "On considère un atome hypothétique dont la configuration électronique fondamentale se termine par ...5s²4d¹⁰5p³. En utilisant la méthode de comptage rapide (au-delà du gaz rare précédent), déterminez son nombre d'électrons de valence, en expliquant pourquoi la sous-couche 4d, bien que de n inférieur à 5, doit être incluse ou exclue selon le cas.",
+            "solution": "La méthode de comptage veut qu'on inclue toutes les électrons situés au-delà du gaz rare précédent y compris une sous-couche d en cours de remplissage. Ici, la sous-couche 4d est totalement remplie (4d¹⁰), donc elle n'est plus 'en cours de remplissage' : elle doit être considérée comme cœur, et non comme valence, exactement comme pour le brome (3d¹⁰ non compté). Les électrons de valence sont donc uniquement ceux de la couche externe n=5 hors sous-couche d pleine : 5s²5p³, soit 2+3 = 5 électrons de valence (il s'agit en réalité de l'antimoine, Sb, Z=51)."
+          },
+          {
+            "statement": "Deux atomes A et B ont pour configurations respectives [Ne]3s²3p⁴ et [Ne]3s²3p⁵. Comparez leur électronégativité et leur rayon atomique, en justifiant à partir de leur position relative dans le tableau périodique.",
+            "solution": "Les deux atomes appartiennent à la même période (n=3 pour la couche de valence). A a 6 électrons de valence (3s²3p⁴, c'est le soufre, colonne 16) et B en a 7 (3s²3p⁵, c'est le chlore, colonne 17) : B est donc situé une colonne plus à droite que A sur la même période. Sur une période, l'électronégativité croît de gauche à droite : B (chlore) est donc plus électronégatif que A (soufre). Symétriquement, le rayon atomique diminue de gauche à droite sur une période : B a donc un rayon atomique plus petit que A."
+          },
+          {
+            "statement": "Un élève doit déterminer la configuration électronique de Fe²⁺ à partir de celle de Fe ([Ar]4s²3d⁶). Il propose deux méthodes contradictoires : (1) retirer 2 électrons de la sous-couche remplie en dernier selon Klechkowski (donc 3d), donnant [Ar]4s²3d⁴ ; (2) retirer 2 électrons de la couche de plus grand n (donc 4s), donnant [Ar]3d⁶. Laquelle est correcte, et pourquoi la mauvaise méthode est-elle un piège si répandu ?",
+            "solution": "La méthode (2) est correcte : Fe²⁺ = [Ar]3d⁶. Le piège de la méthode (1) vient d'une confusion entre l'ordre de remplissage (Klechkowski, qui dicte l'ordre dans lequel les sous-couches se peuplent lors de la construction de l'atome neutre) et l'ordre de dépeuplement lors de l'ionisation, qui obéit à une logique différente. Une fois les orbitales occupées, les électrons de la sous-couche 3d, plus proches du noyau et mieux stabilisés par la charge nucléaire effective (moins écrantés), deviennent en réalité plus bas en énergie que ceux de la 4s : ce sont donc toujours les électrons de plus grand n (ici 4s) qui partent en premier lors de la formation d'un cation, quel que soit l'ordre dans lequel ils ont été ajoutés à l'origine."
+          },
+          {
+            "statement": "Sachant que le numéro atomique du potassium est Z=19 et que sa configuration fondamentale est [Ar]4s¹ (et non [Ar]3d¹), expliquez pourquoi Klechkowski impose de remplir 4s avant 3d à ce stade précis du tableau, et pourquoi cela n'est pas une exception contrairement au cas du chrome.",
+            "solution": "Pour le potassium (Z=19, 19e électron après l'argon), Klechkowski impose de comparer (n+l) pour 4s (4+0=4) et pour 3d (3+2=5) : 4 étant inférieur à 5, la sous-couche 4s se remplit avant la 3d de façon parfaitement conforme à la règle, sans aucune exception. Ce n'est donc pas comparable au cas du chrome, où l'exception consiste précisément à *déroger* à l'ordre attendu par Klechkowski (qui prédirait [Ar]4s²3d⁴ pour Cr) en faveur d'une configuration plus stable ([Ar]4s¹3d⁵). Pour le potassium, [Ar]4s¹ est au contraire exactement ce que prédit Klechkowski sans aucun ajustement : il n'y a ici aucune exception à invoquer."
+          },
+          {
+            "statement": "Un composé contient un cation M²⁺ isoélectronique du gaz rare argon (18 électrons) et dont l'élément M appartient à la 4e période du tableau périodique. Déterminez Z pour M, identifiez l'élément, et précisez s'il s'agit d'un élément du bloc s ou du bloc d.",
+            "solution": "M²⁺ possède 18 électrons ; comme M²⁺ a perdu 2 électrons par rapport à M neutre, M possède 18+2 = 20 électrons, donc Z=20 : il s'agit du calcium. Sa configuration neutre est [Ar]4s², se terminant par une sous-couche s : le calcium appartient donc au bloc s (colonne 2, métaux alcalino-terreux), et non au bloc d. En perdant ses 2 électrons de valence (4s²), il retrouve la configuration stable de l'argon, ce qui explique la forte tendance du calcium à former l'ion Ca²⁺."
+          }
+        ]
+      }
     },
     {
       "id": "liaisons_chimiques",
       "title": "Liaisons chimiques : Lewis, VSEPR, hybridation et mésomérie",
       "difficulty": 2,
       "intro": "Assemble les atomes comme des LEGO quantiques : à nous les liaisons covalentes et leurs secrets ! 🔗⚛️",
+      "diagram": "flowchart TD\n    A[Liaisons chimiques] --> B[Structure de Lewis]\n    A --> C[Geometrie VSEPR]\n    A --> D[Orbitales moleculaires]\n    A --> E[Hybridation]\n    A --> F[Mesomerie et effets electroniques]\n    B --> B1[Regle octet et duet]\n    B --> B2[Charge formelle]\n    C --> C1[Notation ALnEm]\n    C --> C2[Geometries selon n plus m]\n    C --> C3[Doublet non liant plus encombrant]\n    D --> D1[Liaison sigma axiale]\n    D --> D2[Liaison pi laterale]\n    D --> D3[Ordre de liaison]\n    E --> E1[sp3 tetraedrique]\n    E --> E2[sp2 trigonal plan]\n    E --> E3[sp lineaire]\n    F --> F1[Formes mesomeres et flechage]\n    F --> F2[Aromaticite regle de Huckel]\n    F --> F3[Effet inductif]\n    F --> F4[Effet mesomere donneur attracteur]",
       "course": [
         {
           "icon": "🔬",
@@ -646,13 +776,142 @@
           "correct_index": 1,
           "explanation": "Bien joué ! 🔲 Une lacune électronique traduit le fait que l'atome n'a pas atteint son octet (ou son duet) : attention, elle n'implique pas nécessairement une charge, ces deux notions étant indépendantes."
         }
-      ]
+      ],
+      "exercises": {
+        "facile": [
+          {
+            "statement": "Combien d'électrons de valence doit-on comptabiliser au total pour construire la structure de Lewis de la molécule d'ammoniac NH₃ (N possède 5 électrons de valence, H en possède 1) ?",
+            "solution": "On additionne les électrons de valence de chaque atome : l'azote apporte 5 électrons, et chacun des 3 hydrogènes apporte 1 électron, soit 3×1=3. Le total est donc 5+3 = 8 électrons de valence à répartir dans la molécule NH₃."
+          },
+          {
+            "statement": "Quelle règle de stabilité électronique s'applique à l'hydrogène dans ses liaisons, et combien d'électrons cherche-t-il à atteindre autour de lui ?",
+            "solution": "L'hydrogène obéit à la règle du duet : ne disposant que d'une orbitale de valence 1s, il cherche à s'entourer de seulement 2 électrons au total (contre 8 pour la règle de l'octet des éléments de la 2e période), afin de ressembler à la configuration stable de l'hélium."
+          },
+          {
+            "statement": "Une molécule est de type VSEPR AL₃E₀ (aucun doublet non liant sur l'atome central). Quelle est sa géométrie ?",
+            "solution": "La somme n+m vaut ici 3+0 = 3. Une somme de 3 doublets autour de l'atome central conduit à une géométrie de répulsion trigonale plane, avec des angles théoriques de 120°."
+          },
+          {
+            "statement": "Un carbone forme 4 liaisons σ simples avec 4 atomes différents (aucun doublet non liant). Quelle est son hybridation ?",
+            "solution": "On compte le nombre total de directions autour du carbone : 4 liaisons σ + 0 doublet non liant = 4 directions. Un total de 4 directions correspond à une hybridation sp³, de géométrie tétraédrique (cas typique du carbone dans les alcanes)."
+          },
+          {
+            "statement": "Quel type de recouvrement orbitalaire (axial ou latéral) forme une liaison σ ? Et une liaison π ?",
+            "solution": "Une liaison σ résulte d'un recouvrement axial, c'est-à-dire selon l'axe internucléaire qui relie les deux atomes. Une liaison π résulte d'un recouvrement latéral, entre deux orbitales p orientées perpendiculairement à cet axe internucléaire."
+          },
+          {
+            "statement": "Un doublet d'électrons occupe une orbitale moléculaire antiliante. Cette occupation stabilise-t-elle ou déstabilise-t-elle la molécule ? Pourquoi ?",
+            "solution": "L'occupation d'une orbitale antiliante déstabilise la molécule. En effet, une orbitale antiliante résulte d'une combinaison en opposition de phase des orbitales atomiques de départ (interférence destructive), et se situe à une énergie plus haute que les orbitales atomiques isolées ; sa population par des électrons augmente donc l'énergie du système plutôt que de le stabiliser."
+          },
+          {
+            "statement": "Le méthanal (formaldéhyde) H₂C=O possède une double liaison C=O. Quelle est l'hybridation du carbone dans cette molécule ?",
+            "solution": "Le carbone forme une double liaison avec l'oxygène (comptant pour 1 direction σ, avec la liaison π associée mobilisant l'orbitale p pure non hybridée) et deux liaisons σ simples avec les deux hydrogènes, soit un total de 3 directions autour du carbone. Cela correspond à une hybridation sp², de géométrie trigonale plane."
+          },
+          {
+            "statement": "Un cycle aromatique délocalise 6 électrons π. Vérifiez que ce nombre respecte bien la règle de Hückel, en précisant la valeur de n utilisée.",
+            "solution": "La règle de Hückel impose un nombre d'électrons π délocalisables égal à 4n+2, avec n entier positif ou nul. Pour 6 électrons : 4n+2 = 6, soit 4n = 4, donc n = 1, qui est bien un entier positif. Le nombre 6 respecte donc la règle de Hückel (c'est le cas du benzène)."
+          },
+          {
+            "statement": "Un substituant est plus électronégatif que le carbone auquel il est lié. Quel type d'effet inductif exerce-t-il, et comment le note-t-on ?",
+            "solution": "Un substituant plus électronégatif que le carbone attire vers lui les électrons de la liaison σ qui l'unit au carbone, appauvrissant ce dernier en densité électronique : il exerce un effet inductif attracteur, noté −I."
+          },
+          {
+            "statement": "Qu'est-ce qu'un système conjugué, en une phrase, et quel type de recouvrement orbitalaire le caractérise ?",
+            "solution": "Un système conjugué est une succession ininterrompue, le long du squelette moléculaire, d'une alternance de liaisons multiples et de liaisons simples (éventuellement associée à un doublet non liant, une lacune ou un électron célibataire adjacent). Il est caractérisé par le recouvrement latéral continu des orbitales p pures non hybridées de tous les atomes concernés, permettant la délocalisation des électrons π."
+          }
+        ],
+        "moyen": [
+          {
+            "statement": "Construisez la structure de Lewis de l'ion carbonate CO₃²⁻ (C : 4 e⁻ de valence, O : 6 e⁻ de valence chacun) et vérifiez la cohérence en calculant la somme des charges formelles. On admet que la structure la plus stable comporte une liaison double C=O et deux liaisons simples C–O⁻.",
+            "solution": "Nombre total d'électrons de valence : C (4) + 3×O (6 chacun, soit 18) + 2 électrons pour la charge 2− = 4+18+2 = 24 électrons, soit 12 doublets. On place le carbone au centre, lié aux 3 oxygènes : une liaison C=O (2 doublets) et deux liaisons C–O simples (1 doublet chacune), soit 4 doublets utilisés en liaison, restant 8 doublets à répartir en non-liants. On complète l'octet de l'oxygène doublement lié (2 doublets non liants) et celui des deux oxygènes simplement liés (3 doublets non liants chacun), soit 2+3+3=8 doublets non liants, ce qui correspond exactement. Vérification des charges formelles : C (CF = 4−0−4=0), O double liaison (CF = 6−4−2=0), chaque O simple liaison (CF = 6−6−1=−1). Somme des charges formelles : 0+0−1−1 = −2, cohérente avec la charge globale de l'ion CO₃²⁻."
+          },
+          {
+            "statement": "Dans la molécule d'eau H₂O (type AL₂E₂), l'angle H–O–H mesuré expérimentalement est de 104,5°, inférieur à l'angle tétraédrique théorique de 109°28'. Expliquez cet écart.",
+            "solution": "La géométrie de répulsion électronique de base pour une somme n+m=4 est tétraédrique (109°28'), mais les doublets non liants et les doublets liants n'ont pas le même encombrement spatial. Un doublet non liant, attiré uniquement par le noyau qui le porte, est plus proche de ce noyau et statistiquement plus étalé angulairement qu'un doublet liant (attiré par deux noyaux, donc plus resserré). Il exerce donc une répulsion plus forte sur ses voisins. Dans H₂O, les deux doublets non liants de l'oxygène repoussent fortement les deux doublets liants O–H l'un vers l'autre, ce qui contracte l'angle H–O–H de 109°28' théorique à 104,5° mesuré."
+          },
+          {
+            "statement": "On considère le cation allylique CH₂=CH–CH₂⁺. Dessinez (décrivez) la seconde forme mésomère obtenue en déplaçant la liaison π vers la lacune, et indiquez la flèche courbe utilisée.",
+            "solution": "Dans la forme de départ, la liaison π C=C est adjacente à un carbone porteur d'une lacune électronique (CH₂⁺). Une flèche courbe part du milieu de la liaison π (C=C) et pointe vers la liaison entre le carbone central et le carbone terminal portant la lacune, formant une nouvelle liaison π à cet endroit. Le résultat est CH₂⁺–CH=CH₂ : la lacune s'est déplacée sur l'ancien carbone terminal de la double liaison, et la double liaison s'est déplacée d'un cran. Les deux formes mésomères sont équivalentes par symétrie, ce qui traduit la délocalisation de la charge positive sur les deux carbones terminaux du système allylique."
+          },
+          {
+            "statement": "Comparez, en justifiant, l'effet mésomère du groupement –NH₂ et celui du groupement –NO₂ lorsqu'ils sont fixés sur un cycle benzénique.",
+            "solution": "Le groupement –NH₂ porte un doublet non liant sur l'azote, aisément délocalisable dans le système π du cycle aromatique adjacent : c'est un groupement mésomère donneur (+M), qui enrichit le cycle en densité électronique, l'active vis-à-vis de la substitution électrophile aromatique, et oriente cette substitution en positions ortho et para. Le groupement –NO₂, à l'inverse, comporte une liaison multiple N=O fortement polarisée vers l'oxygène électronégatif : c'est un groupement mésomère attracteur (−M), qui appauvrit le cycle en électrons π, le désactive vis-à-vis de la substitution électrophile, et oriente celle-ci en position méta."
+          },
+          {
+            "statement": "Un carbone porte une triple liaison C≡C. Combien de liaisons π et combien de liaisons σ cette triple liaison comporte-t-elle, et quelle est l'hybridation de chacun des deux carbones concernés ?",
+            "solution": "Une triple liaison est constituée d'une liaison σ (recouvrement axial) et de deux liaisons π (deux recouvrements latéraux, perpendiculaires l'un à l'autre). Chaque carbone engagé dans cette triple liaison ne présente que 2 directions σ distinctes (1 vers l'autre carbone de la triple liaison, 1 vers son autre substituant), ce qui correspond à une hybridation sp, laissant 2 orbitales p pures disponibles pour former les deux liaisons π."
+          },
+          {
+            "statement": "L'acide chloroacétique (ClCH₂–COOH) est plus acide que l'acide acétique (CH₃–COOH). Expliquez cette différence à l'aide de la notion d'effet inductif.",
+            "solution": "Le chlore, plus électronégatif que le carbone, exerce un effet inductif attracteur (−I) qui se propage à travers les liaisons σ de la chaîne carbonée, appauvrissant en densité électronique le groupement carboxyle voisin. Cet appauvrissement stabilise la base conjuguée (l'ion carboxylate formé après perte du proton acide), en dispersant mieux la charge négative de l'ion. Cette stabilisation accrue de la forme déprotonée rend l'acide chloroacétique plus acide que l'acide acétique, qui ne bénéficie pas de cet effet inductif attracteur supplémentaire."
+          },
+          {
+            "statement": "Un ion possède un ordre de liaison OL = 1,5 entre deux atomes. Que peut-on en déduire sur la nature de cette liaison, et pourquoi une telle valeur non entière est-elle possible ?",
+            "solution": "Un ordre de liaison de 1,5 signifie que la liaison est intermédiaire entre une liaison simple (OL=1) et une liaison double (OL=2) : cela traduit généralement une délocalisation électronique (mésomérie) qui répartit une densité électronique de liaison intermédiaire entre les deux atomes considérés, comme c'est le cas pour chaque liaison C–C du cycle benzénique (OL=1,5), où les électrons π sont délocalisés uniformément sur l'ensemble du cycle plutôt que localisés en liaisons simples et doubles alternées fixes."
+          },
+          {
+            "statement": "Deux formes mésomères sont proposées pour une même molécule. La forme A comporte 2 charges formelles non nulles, la forme B n'en comporte aucune, et toutes deux ont un octet complet sur tous les atomes de la 2e période. Laquelle est la plus représentative de la réalité, et pourquoi ?",
+            "solution": "La forme B est la plus représentative. Parmi les critères hiérarchisés utilisés pour évaluer la représentativité d'une forme mésomère (nombre maximal d'octets complets, puis minimum de charges formelles, puis bon placement des charges), les deux formes sont à égalité sur le premier critère (octets tous complets), mais la forme B, dépourvue de charges formelles, est favorisée par le deuxième critère par rapport à la forme A qui en porte deux : une structure sans charge formelle est généralement plus stable et donc plus représentative de la répartition électronique réelle."
+          },
+          {
+            "statement": "Justifiez pourquoi le pyrrole (cycle à 5 atomes contenant un azote portant un doublet non liant, avec 2 doubles liaisons C=C dans le cycle) est considéré comme aromatique, en comptant précisément les électrons π délocalisables.",
+            "solution": "Le pyrrole possède un cycle plan, une conjugaison ininterrompue, et chaque atome du cycle est hybridé sp². Les 2 doubles liaisons C=C apportent chacune 2 électrons π, soit 4 électrons, et le doublet non liant de l'azote, situé dans une orbitale p pure parallèle au système π (et non engagé dans une liaison σ supplémentaire), se délocalise également dans le cycle, apportant 2 électrons supplémentaires. Le total est donc 4+2 = 6 électrons π délocalisables, ce qui correspond à 4n+2 avec n=1 : le pyrrole respecte la règle de Hückel et est donc aromatique."
+          },
+          {
+            "statement": "Un atome de bore dans BF₃ ne respecte pas la règle de l'octet (il ne possède que 6 électrons autour de lui). Expliquez pourquoi cette situation est possible malgré la règle de l'octet énoncée pour les éléments de la 2e période, et donnez la géométrie VSEPR de cette molécule.",
+            "solution": "La règle de l'octet est un principe directeur très général mais non absolu : le bore, ne disposant que de 3 électrons de valence, ne peut former que 3 liaisons covalentes simples avec 3 atomes de fluor sans disposer d'électrons supplémentaires pour compléter un octet complet (il lui manquerait un doublet non liant qu'il ne possède pas). BF₃ est donc une exception fréquente à la règle de l'octet, l'atome central présentant une lacune électronique. En VSEPR, BF₃ est de type AL₃E₀ (3 liaisons, aucun doublet non liant sur B) : sa géométrie est trigonale plane, avec des angles de 120°."
+          }
+        ],
+        "difficile": [
+          {
+            "statement": "L'ion énolate CH₂=CH–O⁻ possède deux formes mésomères principales. Décrivez la seconde forme (obtenue par déplacement du doublet non liant de l'oxygène), classez les deux formes par ordre de représentativité, et précisez sur quel(s) atome(s) se répartit réellement la charge négative.",
+            "solution": "Dans la forme de départ, la charge négative est localisée sur l'oxygène, qui porte un doublet non liant adjacent à la liaison π C=C. Une flèche courbe part de ce doublet non liant de l'oxygène et pointe vers la liaison entre l'oxygène et le carbone adjacent, formant une nouvelle liaison π C=O, tandis que l'ancienne liaison π C=C se déplace (par une seconde flèche) vers le carbone terminal, qui devient porteur de la charge négative : on obtient ainsi ⁻CH₂–CH=O. La première forme (charge sur l'oxygène, l'atome le plus électronégatif) est la plus représentative selon le critère du bon placement des charges (charge négative sur l'atome le plus électronégatif), mais la seconde forme contribue également à l'hybride de résonance. En réalité, la charge négative est partiellement délocalisée entre l'oxygène et le carbone terminal, avec une contribution majoritaire sur l'oxygène."
+          },
+          {
+            "statement": "Un étudiant affirme : « Puisque le méthane CH₄ et l'ammoniac NH₃ sont tous deux de géométrie de répulsion tétraédrique (AL₄E₀ et AL₃E₁ respectivement), leurs angles de liaison réels doivent être identiques. » Réfutez cette affirmation en expliquant précisément pourquoi les angles diffèrent malgré une même géométrie de répulsion électronique de base.",
+            "solution": "L'affirmation est fausse. Bien que les deux molécules partagent la même somme n+m=4 (donc la même géométrie de répulsion électronique tétraédrique de base, 109°28' théorique), elles diffèrent par la nature de leurs doublets : CH₄ ne comporte que des doublets liants (4 liaisons σ C–H, aucun doublet non liant), tandis que NH₃ comporte 3 doublets liants et 1 doublet non liant sur l'azote. Un doublet non liant, plus étalé angulairement et plus proche du noyau qui le porte qu'un doublet liant, exerce une répulsion plus forte sur ses voisins. Dans NH₃, l'unique doublet non liant de l'azote repousse les trois liaisons N–H, contractant l'angle H–N–H réel à environ 107°, contre exactement 109°28' pour CH₄ où tous les doublets sont équivalents (liants) et où aucune dissymétrie de répulsion ne vient déformer l'angle théorique."
+          },
+          {
+            "statement": "On considère l'anion phénolate (cycle benzénique portant un O⁻ en position 1). En utilisant les flèches courbes, montrez que la charge négative peut se délocaliser en positions ortho et para du cycle, mais pas en position méta, et reliez ce résultat à l'effet mésomère donneur du groupement O⁻.",
+            "solution": "Le groupement O⁻ porte un doublet non liant qui se délocalise dans le système π aromatique adjacent (effet +M). Une première flèche courbe part de ce doublet vers la liaison C–O, formant une double liaison C=O et déplaçant la double liaison adjacente du cycle (C1–C2, par exemple) vers le carbone en position 2 (ortho), qui devient porteur de la charge négative. En répétant l'opération de proche en proche à travers le système conjugué du cycle, on peut faire migrer la charge négative vers la position 4 (para) en passant par une nouvelle série de déplacements de doublets π. En revanche, aucune succession de flèches courbes respectant la conjugaison continue du cycle ne permet de faire apparaître la charge négative en position méta (position 3 ou 5) : la conjugaison alternée du cycle benzénique ne connecte topologiquement le substituant qu'aux positions ortho et para, ce qui explique pourquoi les groupements mésomères donneurs orientent systématiquement la réactivité électrophile vers ces positions."
+          },
+          {
+            "statement": "Une molécule cyclique plane et totalement conjuguée comporte 4 électrons π délocalisables (cas du cyclobutadiène). Est-elle aromatique selon la règle de Hückel ? Que peut-on dire de sa stabilité relative par rapport à un polyène non cyclique de même conjugaison ?",
+            "solution": "Pour être aromatique, le nombre d'électrons π délocalisables doit être de la forme 4n+2 (n entier positif ou nul), soit 2, 6, 10... Avec 4 électrons, on aurait 4n+2=4, ce qui donnerait n=0,5, qui n'est pas un entier : la molécule ne respecte donc pas la règle de Hückel et n'est pas aromatique. En réalité, un composé cyclique conjugué et plan possédant un nombre d'électrons π de la forme 4n (ici 4, avec n=1) est qualifié d'antiaromatique : loin d'être stabilisé par la délocalisation comme le serait une molécule aromatique, il est au contraire déstabilisé par rapport à un système de référence non cyclique de même conjugaison, ce qui explique l'instabilité et la haute réactivité expérimentalement observées du cyclobutadiène."
+          },
+          {
+            "statement": "Comparez, en argumentant précisément, l'effet global (somme des effets inductif et mésomère) du chlore lorsqu'il est fixé sur un cycle aromatique, sachant que le chlore possède à la fois un effet inductif attracteur (−I, du fait de sa forte électronégativité) et un effet mésomère donneur (+M, du fait de ses doublets non liants délocalisables dans le cycle).",
+            "solution": "Le chlore, très électronégatif, exerce un effet inductif attracteur (−I) fort mais qui s'atténue rapidement avec la distance (négligeable au-delà de 3 liaisons σ). Il possède également des doublets non liants susceptibles de se délocaliser dans le système π du cycle aromatique, ce qui constitue un effet mésomère donneur (+M) transmis sans atténuation à travers la conjugaison. Cependant, contrairement à l'azote ou l'oxygène des amines et alcools, le recouvrement entre l'orbitale du doublet non liant du chlore (orbitale 3p, de taille et d'énergie assez différentes des orbitales 2p du cycle) et le système π du cycle est peu efficace : l'effet +M du chlore est donc faible en intensité. Il en résulte que, pour les halogènes, c'est exceptionnellement l'effet inductif attracteur (−I) qui l'emporte globalement sur l'effet mésomère donneur (+M) : le chlore désactive globalement le cycle aromatique (le rend moins réactif vis-à-vis de la substitution électrophile), tout en orientant néanmoins la réactivité résiduelle en positions ortho et para (orientation dictée par le +M, même faible, qui reste malgré tout le mécanisme dominant pour la question de l'orientation, la désactivation globale étant elle dictée par le −I dominant)."
+          },
+          {
+            "statement": "Une structure de Lewis proposée pour l'ion nitrate NO₃⁻ présente un azote central avec 3 liaisons simples N–O et une charge formelle de +1 sur l'azote, ainsi que 2 charges −1 sur deux des oxygènes et 0 sur le troisième (comportant une charge formelle nulle malgré 3 doublets non liants). Cette structure est-elle correcte selon les critères de représentativité ? Proposez et justifiez une structure plus représentative.",
+            "solution": "La structure décrite est chimiquement incohérente sur le plan du calcul (un oxygène avec 3 doublets non liants et une simple liaison porterait CF = 6−6−1 = −1, pas 0), mais au-delà de cette incohérence, une structure comportant trois liaisons N–O simples uniquement ne permet pas à l'azote (5 électrons de valence, CF = 5−0−3 = +2 avec 3 liaisons simples, ou +1 selon la répartition) d'atteindre son octet avec un minimum de charges formelles. La structure la plus représentative de NO₃⁻ comporte en réalité une liaison N=O (double) et deux liaisons N–O simples, avec délocalisation de la charge négative (via mésomérie) sur les deux oxygènes simplement liés : cette structure minimise le nombre et la valeur des charges formelles (N : CF=5−0−4=+1 ; O double liaison : CF=6−4−2=0 ; chaque O simple liaison : CF=6−6−1=−1) et respecte le critère de charge formelle minimale ainsi que celui du bon placement des charges négatives sur les atomes les plus électronégatifs (l'oxygène). Les trois formes mésomères équivalentes (la double liaison N=O migrant successivement vers chacun des 3 oxygènes) rendent compte de la délocalisation réelle et de l'équivalence des trois liaisons N–O observée expérimentalement (ordre de liaison 4/3 pour chacune)."
+          },
+          {
+            "statement": "Un carbone central d'un allène (H₂C=C=CH₂) est engagé dans deux doubles liaisons consécutives. Déterminez son hybridation, et montrez que les deux orbitales p pures restantes sont orthogonales entre elles, ce qui a une conséquence géométrique importante sur la molécule globale (les deux plans des groupes CH₂ terminaux sont perpendiculaires).",
+            "solution": "Le carbone central, engagé dans deux liaisons doubles consécutives, ne présente que 2 directions σ distinctes (une vers chaque CH₂ terminal) : il est donc hybridé sp, laissant deux orbitales p pures disponibles, par définition orthogonales entre elles (comme toute paire d'orbitales p d'un même atome, orientées selon deux axes perpendiculaires). Chacune de ces deux orbitales p pures forme une liaison π avec l'orbitale p pure correspondante de l'un des deux carbones terminaux (eux-mêmes hybridés sp²). Comme les deux liaisons π du carbone central utilisent des orbitales p orthogonales entre elles, les deux plans contenant chacun des groupements CH₂ terminaux (plans déterminés par l'hybridation sp² de ces carbones et l'orbitale p qu'ils utilisent pour leur propre liaison π) se retrouvent nécessairement perpendiculaires l'un à l'autre : c'est cette perpendicularité qui confère aux allènes substitués une chiralité axiale particulière, sans nécessiter de carbone asymétrique classique."
+          },
+          {
+            "statement": "Deux molécules A et B ont pour formule brute identique C₄H₈ mais A est un alcène tandis que B est un cyclane (cyclobutane). Sont-elles des isomères de constitution ? Justifiez en reliant la réponse aux notions de liaisons chimiques (nombre de liaisons σ et π, degrés d'insaturation).",
+            "solution": "Oui, A et B sont des isomères de constitution : ils partagent la même formule brute C₄H₈ mais un enchaînement d'atomes différent (l'un comporte une liaison double C=C dans une chaîne ouverte, l'autre un cycle saturé fermé). Le degré d'insaturation, qui se calcule à partir de la formule brute, est identique pour les deux (1 dans les deux cas), ce qui est cohérent : une insaturation peut correspondre soit à une liaison π supplémentaire (double liaison, cas de l'alcène A), soit à un cycle fermé supplémentaire (cas du cyclane B), les deux structures consommant le même nombre de degrés de liberté en termes de liaisons σ par rapport à un alcane linéaire totalement saturé. Cela illustre que le calcul du degré d'insaturation seul ne permet pas de distinguer entre ces deux types de structures : il faut examiner la nature exacte des liaisons présentes."
+          },
+          {
+            "statement": "On considère un système conjugué comportant, dans l'ordre : un doublet non liant sur un azote, suivi d'une liaison π C=C, suivie d'un carbone portant une lacune électronique. Décrivez, en une seule série cohérente de flèches courbes, comment la totalité de la densité électronique peut se réorganiser d'un bout à l'autre du système, et donnez la structure finale.",
+            "solution": "Le mouvement s'effectue en cascade, la conjugaison permettant une délocalisation continue. Une première flèche courbe part du doublet non liant de l'azote et pointe vers la liaison N–C adjacente, y créant une nouvelle liaison π (l'azote devient alors chargé positivement, ayant cédé son doublet, sauf s'il portait déjà par ailleurs les substituants adéquats). Simultanément (deuxième flèche), l'ancienne liaison π C=C se déplace vers le carbone terminal porteur de la lacune, comblant celle-ci et neutralisant la charge positive qui y était localisée. Le résultat global est donc : N devient N⁺ (ayant perdu son doublet non liant au profit d'une nouvelle liaison π), la liaison π s'est translatée d'un cran vers le carbone qui portait initialement la lacune, laquelle est désormais comblée. Ce mécanisme illustre concrètement comment un système pleinement conjugué permet à un doublet non liant initial de stabiliser, à distance et sans atténuation, une lacune électronique éloignée de plusieurs liaisons, contrairement à ce que permettrait un simple effet inductif limité à environ 3 liaisons σ."
+          },
+          {
+            "statement": "Un carbone central présente une géométrie VSEPR de type AL₂E₀ (deux liaisons σ, aucun doublet non liant). Un étudiant en déduit directement que ce carbone est hybridé sp et qu'il est nécessairement engagé dans au moins une liaison multiple. Ce raisonnement est-il valide en toute généralité ? Discutez le lien entre géométrie VSEPR (nombre de directions) et hybridation, et précisez si une liaison multiple est réellement obligatoire ici.",
+            "solution": "Le raisonnement est correct dans ce cas précis, mais il faut bien comprendre pourquoi. La méthode de comptage rapide de l'hybridation (liaisons σ + doublets non liants) donne ici 2+0=2 directions, ce qui correspond effectivement à une hybridation sp, de géométrie linéaire. Or, un carbone tétravalent (4 liaisons au total à établir) qui n'a que 2 directions σ distinctes doit nécessairement compléter sa valence par des liaisons π supplémentaires : avec seulement 2 substituants σ, il ne peut satisfaire sa tétravalence qu'en formant soit deux liaisons doubles (cas de l'allène central, deux liaisons π vers deux atomes différents), soit une liaison triple (une liaison σ et deux liaisons π vers un seul atome), les deux orbitales p pures restantes de l'hybridation sp étant alors nécessairement engagées dans ces liaisons π. Il n'existe donc, pour un carbone tétravalent en AL₂E₀, aucune configuration possible sans liaison multiple : le raisonnement de l'étudiant est donc valide, mais uniquement parce que la tétravalence du carbone impose cette conséquence — ce ne serait pas nécessairement le cas pour un atome d'une autre valence, ou si l'atome central pouvait rester sous-valent sans règle de valence stricte à respecter."
+          }
+        ]
+      }
     },
     {
       "id": "stereochimie",
       "title": "Stéréochimie : isomérie, chiralité et représentations",
       "difficulty": 3,
       "intro": "Entre miroirs, rotations et petites mains chirales, la stéréochimie n'aura bientôt plus de secret pour toi ! 🪞🧬",
+      "diagram": "flowchart TD\n    A[Stereochimie] --> B[Isomerie de constitution]\n    A --> C[Configuration vs conformation]\n    A --> D[Chiralite]\n    A --> E[Nomenclature CIP]\n    A --> F[Representations graphiques]\n    B --> B1[Isomeres de fonction]\n    B --> B2[Isomeres de squelette]\n    B --> B3[Isomeres de position]\n    C --> C1[Configuration rupture de liaison]\n    C --> C2[Conformation simple rotation]\n    C --> C3[Eclipsee vs decalee anti gauche]\n    D --> D1[Carbone asymetrique C etoile]\n    D --> D2[Elements de symetrie]\n    D --> D3[Enantiomeres et diastereoisomeres]\n    D --> D4[Composes meso]\n    D --> D5[Melange racemique]\n    E --> E1[Priorite par numero atomique]\n    E --> E2[Configuration R ou S]\n    E --> E3[Isomerie Z E des alcenes]\n    F --> F1[Representation de Cram]\n    F --> F2[Projection de Newman]\n    F --> F3[Projection de Fischer]",
       "course": [
         {
           "icon": "🔬",
@@ -985,13 +1244,142 @@
           "correct_index": 3,
           "explanation": "Bravo ! 🪞 L'achiralité se définit par la superposition possible avec son image miroir (souvent grâce à un plan ou un centre de symétrie) ; attention, un composé méso possède des C* mais reste achiral, la présence de C* n'implique donc pas toujours la chiralité."
         }
-      ]
+      ],
+      "exercises": {
+        "facile": [
+          {
+            "statement": "Le butan-1-ol et le butan-2-ol ont la même formule brute C₄H₁₀O et la même fonction alcool. À quelle sous-catégorie d'isomérie de constitution appartiennent-ils ?",
+            "solution": "Les deux molécules partagent la même fonction chimique (alcool) et le même squelette carboné (chaîne à 4 carbones), mais la position du groupement hydroxyle diffère (carbone 1 contre carbone 2) : ce sont donc des isomères de position."
+          },
+          {
+            "statement": "Expliquez, à l'aide du moyen mnémotechnique des syllabes, comment ne pas confondre stéréoisomérie de configuration et de conformation.",
+            "solution": "On retient conf-IG-uration pour la rupture de liaison (IG évoquant une cassure, comme dans 'rIGide') et conf-OR-mation pour la rotation (OR comme dans 'ROtation'). Les stéréoisomères de configuration ne s'interconvertissent qu'en rompant une liaison covalente (processus qui demande un fort apport d'énergie), tandis que les conformères s'interconvertissent librement et spontanément par simple rotation autour d'une liaison simple, sans rupture."
+          },
+          {
+            "statement": "Parmi les conformations éclipsée et décalée d'une liaison σ C–C, laquelle est la plus stable, et pourquoi ?",
+            "solution": "La conformation décalée est la plus stable. Dans cette conformation, les substituants portés par les deux carbones sont éloignés au maximum les uns des autres, ce qui minimise les répulsions électroniques entre leurs doublets liants. La conformation éclipsée, où les substituants sont alignés, maximise au contraire cette répulsion, ce qui en fait la conformation la plus haute en énergie."
+          },
+          {
+            "statement": "Qu'est-ce qu'un carbone asymétrique (noté C*) ? Une molécule ne possédant qu'un seul C* est-elle nécessairement chirale ?",
+            "solution": "Un carbone asymétrique est un atome de carbone tétraédrique portant quatre substituants tous différents les uns des autres. Une molécule ne possédant qu'un unique carbone asymétrique est toujours chirale, sans exception possible : elle n'est jamais superposable à son image dans un miroir."
+          },
+          {
+            "statement": "Un mélange contient 50% d'un énantiomère et 50% de l'autre énantiomère d'une même molécule chirale. Comment appelle-t-on ce mélange, et quel est son pouvoir rotatoire global ?",
+            "solution": "Un tel mélange, en proportions rigoureusement égales, est appelé mélange racémique. Son pouvoir rotatoire global est nul, car les rotations de sens opposé induites par chacun des deux énantiomères s'annulent exactement l'une l'autre, bien que chaque molécule individuelle reste chirale."
+          },
+          {
+            "statement": "Deux molécules sont énantiomères l'une de l'autre. Ont-elles le même point de fusion ? Justifiez.",
+            "solution": "Oui, deux énantiomères ont exactement le même point de fusion (ainsi que le même point d'ébullition et la même solubilité), car ces propriétés physico-chimiques usuelles ne dépendent pas de la chiralité en elle-même. Seules les propriétés directement liées à la chiralité diffèrent entre les deux énantiomères, à savoir le sens du pouvoir rotatoire et l'interaction avec d'autres molécules chirales."
+          },
+          {
+            "statement": "Selon la règle CIP, pour classer deux substituants portés par un carbone asymétrique, quel est le premier critère de comparaison appliqué ?",
+            "solution": "Le premier critère de comparaison est le numéro atomique Z de l'atome directement lié au centre stéréogène : plus cet atome a un numéro atomique élevé, plus le substituant qu'il représente est considéré comme prioritaire."
+          },
+          {
+            "statement": "Dans une projection de Fischer, un trait vertical représente-t-il une liaison orientée vers l'avant ou vers l'arrière du plan de la feuille ?",
+            "solution": "Par convention, dans une projection de Fischer, tout trait vertical représente une liaison orientée vers l'arrière du plan (s'éloignant de l'observateur), tandis que tout trait horizontal représente une liaison orientée vers l'avant (se rapprochant de l'observateur)."
+          },
+          {
+            "statement": "Deux diastéréoisomères ont-ils, en général, le même point d'ébullition ? Justifiez en une phrase.",
+            "solution": "Non, deux diastéréoisomères n'ont en général pas les mêmes propriétés physico-chimiques (donc pas nécessairement le même point d'ébullition), car, contrairement aux énantiomères, ils ne sont pas image l'un de l'autre dans un miroir : leurs arrangements spatiaux réellement différents entraînent des différences réelles de polarité, d'encombrement et donc de propriétés physiques."
+          },
+          {
+            "statement": "La projection de Newman est-elle adaptée pour étudier la configuration R/S d'un carbone asymétrique, ou plutôt les conformations d'une molécule ? Justifiez.",
+            "solution": "La projection de Newman est spécifiquement conçue pour étudier les conformations (éclipsée, décalée, anti, gauche) d'une molécule observée dans l'axe d'une liaison simple C–C donnée. Elle n'est pas adaptée à l'étude de la configuration R/S, pour laquelle on utilise plutôt la représentation de Cram, qui montre directement la géométrie tétraédrique du centre stéréogène."
+          }
+        ],
+        "moyen": [
+          {
+            "statement": "On considère un carbone portant les quatre substituants suivants : –OH, –CH₃, –H et –Cl. Classez ces quatre substituants par ordre de priorité décroissante selon la règle CIP.",
+            "solution": "On compare le numéro atomique Z de l'atome directement lié au carbone asymétrique pour chaque substituant : Cl (Z=17), O de –OH (Z=8), C de –CH₃ (Z=6), H (Z=1). Classement par priorité décroissante : –Cl (1er, Z=17) > –OH (2e, Z=8) > –CH₃ (3e, Z=6) > –H (4e, Z=1)."
+          },
+          {
+            "statement": "Une molécule possède un carbone portant les substituants –CHO (aldéhyde), –CH₂OH, –OH et –H. Sachant que le carbone du groupement –CHO est considéré, par la convention de l'atome dupliqué, comme lié à deux atomes d'oxygène (un réel, un fictif), classez ces quatre substituants par priorité CIP décroissante.",
+            "solution": "Le premier atome lié au centre stéréogène est, pour chaque substituant : O (pour –OH, Z=8) ; C (pour –CHO et –CH₂OH, Z=6 chacun, égalité au premier rang) ; H (Z=1). L'oxygène de -OH est donc prioritaire sur les deux groupes carbonés, lui-même prioritaire sur H. Pour départager les deux groupes carbonés (–CHO et –CH₂OH), on compare les atomes liés à ce premier carbone : pour –CHO, le carbone est lié (par la convention de l'atome dupliqué) à (O, O fictif, H) ; pour –CH₂OH, le carbone est lié à (O, H, H). Le groupe –CHO, comportant deux oxygènes (un réel, un fictif) contre un seul pour –CH₂OH, est donc prioritaire. Classement final : –OH (1er) > –CHO (2e) > –CH₂OH (3e) > –H (4e)."
+          },
+          {
+            "statement": "Une molécule possède 2 carbones asymétriques distincts. Combien de stéréoisomères de configuration possède-t-elle au maximum ? Sous quelle condition ce nombre peut-il être réduit ?",
+            "solution": "Pour n carbones asymétriques distincts, le nombre maximal de stéréoisomères de configuration est 2ⁿ. Avec n=2, cela donne 2²=4 stéréoisomères au maximum. Ce nombre peut être réduit si la molécule présente une symétrie interne qui rend deux de ces stéréoisomères identiques (superposables) : c'est le cas des composés méso, où l'un des stéréoisomères attendus se révèle en réalité achiral et identique à son propre 'énantiomère' théorique, réduisant le nombre total de stéréoisomères distincts à 3 au lieu de 4."
+          },
+          {
+            "statement": "On donne une projection de Fischer d'un carbone asymétrique où le substituant classé n°4 selon CIP se trouve porté par un trait horizontal. On lit directement, en suivant l'ordre 1→2→3, un sens de rotation horaire. Quelle est la configuration réelle (R ou S) de ce carbone ? Justifiez.",
+            "solution": "En projection de Fischer, un trait horizontal représente une liaison orientée vers l'avant du plan (vers l'observateur), et non vers l'arrière comme l'exige la méthode standard de détermination R/S (qui impose de placer le substituant n°4 à l'arrière). Puisque le substituant n°4 se trouve ici à l'avant plutôt qu'à l'arrière, il faut inverser le sens de rotation lu directement : un sens horaire apparent correspond donc, une fois corrigé, à un sens antihoraire réel, c'est-à-dire à une configuration S (et non R comme la lecture directe le suggérerait)."
+          },
+          {
+            "statement": "Deux alcènes de formule C₄H₈Cl₂ ont chacun deux substituants différents sur chaque carbone de la double liaison. L'un est noté (Z) et l'autre (E). Ces deux molécules sont-elles des énantiomères, des diastéréoisomères, ou des isomères de constitution ? Justifiez.",
+            "solution": "Les isomères Z et E d'un même alcène partagent exactement le même enchaînement d'atomes (donc ce ne sont pas des isomères de constitution) et ne sont pas images l'un de l'autre dans un miroir (donc ce ne sont pas des énantiomères). Ce sont des stéréoisomères de configuration qui diffèrent par l'arrangement spatial relatif des substituants de part et d'autre de la double liaison bloquée : ce sont donc des diastéréoisomères, aux propriétés physico-chimiques réellement différentes (point de fusion, polarité, réactivité)."
+          },
+          {
+            "statement": "Une molécule possède un plan de symétrie interne malgré la présence de deux carbones asymétriques. Est-elle chirale ? Comment appelle-t-on ce type de composé, et quel est son pouvoir rotatoire ?",
+            "solution": "Non, cette molécule n'est pas chirale : la présence d'un plan de symétrie interne (élément de symétrie impropre) la rend superposable à son image dans un miroir, malgré la présence de carbones asymétriques qui pourrait a priori laisser penser à une chiralité automatique. Un tel composé est appelé composé méso ; il est achiral et donc optiquement inactif (pouvoir rotatoire nul), bien que différent d'un mélange racémique (le composé méso est une seule espèce chimique pure, non un mélange de deux énantiomères)."
+          },
+          {
+            "statement": "On effectue, sur une projection de Fischer donnée, une rotation de 90° dans le plan de la feuille. La configuration représentée est-elle conservée ou inversée ? Et si l'on effectue à la place une rotation de 180° ?",
+            "solution": "Une rotation de 90° dans le plan de la feuille inverse la configuration représentée : elle échange le rôle des directions horizontale et verticale (donc des liaisons avant et arrière) sans que cela corresponde à un mouvement réel de la molécule dans l'espace, ce qui constitue une manipulation interdite. En revanche, une rotation de 180° dans le plan de la feuille conserve rigoureusement la configuration d'origine : c'est une manipulation autorisée qui ne modifie pas la molécule représentée."
+          },
+          {
+            "statement": "Sur une même projection de Fischer, on échange la position de deux substituants portés par un même carbone asymétrique. Quel est l'effet de cette opération sur la configuration, et combien de tels échanges successifs faudrait-il pour retrouver la configuration d'origine ?",
+            "solution": "L'échange de deux substituants sur un même carbone inverse la configuration représentée (l'opération transforme la molécule en son énantiomère), exactement comme échanger deux doigts d'une main la transformerait en son image miroir. Il faudrait donc effectuer un second échange de deux substituants (deux opérations au total) pour retrouver la configuration d'origine, chaque échange inversant alternativement la configuration."
+          },
+          {
+            "statement": "Expliquez pourquoi la rotation autour d'une liaison double carbone-carbone est bloquée, contrairement à celle autour d'une liaison simple, en reliant votre explication à la notion de recouvrement orbitalaire.",
+            "solution": "Une liaison double C=C est constituée d'une liaison σ (recouvrement axial) et d'une liaison π (recouvrement latéral des orbitales p pures perpendiculaires à l'axe internucléaire). Une rotation autour de l'axe de la liaison romprait le recouvrement latéral nécessaire à l'existence de la liaison π, ce qui reviendrait à rompre cette liaison : la rotation est donc bloquée, sauf apport d'énergie suffisant pour rompre effectivement la liaison π. À l'inverse, une liaison simple C–C est une liaison σ pure, à symétrie de révolution autour de l'axe internucléaire : sa rotation ne rompt aucun recouvrement orbitalaire et se produit donc librement et spontanément."
+          },
+          {
+            "statement": "Deux molécules ont la même formule brute et le même enchaînement d'atomes, mais l'une comporte un carbone asymétrique de configuration R et l'autre de configuration S, tout le reste étant identique. Quelle relation entretiennent-elles, et quelles propriétés partagent-elles ?",
+            "solution": "Ces deux molécules sont énantiomères l'une de l'autre : elles sont l'image exacte l'une de l'autre dans un miroir plan (inversion du seul centre stéréogène présent), sans être superposables. Elles partagent donc toutes leurs propriétés physico-chimiques usuelles (point de fusion, point d'ébullition, solubilité, réactivité vis-à-vis de réactifs achiraux), à l'exception du sens de leur pouvoir rotatoire, qui est opposé, et de leur interaction avec d'autres molécules chirales (récepteurs biologiques, enzymes, autres énantiomères)."
+          }
+        ],
+        "difficile": [
+          {
+            "statement": "Une molécule possède 3 carbones asymétriques (C1, C2, C3), et l'on sait que l'un des 8 stéréoisomères théoriques possibles est en réalité identique à un autre par symétrie interne (cas d'un composé partiellement méso). Combien de stéréoisomères distincts cette molécule possède-t-elle réellement, et cette réduction affecte-t-elle nécessairement tous les stéréoisomères ou seulement certains d'entre eux ?",
+            "solution": "Le nombre maximal théorique est 2³=8 stéréoisomères. Si un plan de symétrie interne rend deux de ces stéréoisomères identiques (un cas de composé méso partiel, ne concernant typiquement qu'une paire précise de configurations sur les 3 carbones qui présente cette symétrie particulière), le nombre réel de stéréoisomères distincts est réduit à 8−1=7. Cette réduction n'affecte que la paire spécifique de stéréoisomères qui présente effectivement la symétrie interne requise (souvent liée à une combinaison précise des configurations sur les carbones symétriques de la molécule, comme C1 et C3 si la molécule est symétrique autour de C2) : les autres stéréoisomères de la molécule, dépourvus de cette symétrie particulière, restent tous distincts et chiraux comme attendu."
+          },
+          {
+            "statement": "On dispose de deux projections de Fischer d'une même molécule à un seul carbone asymétrique, obtenues par deux étudiants différents à partir de manipulations différentes de la représentation de départ. L'étudiant A a effectué une rotation de 180° dans le plan suivie d'une permutation circulaire de 3 substituants. L'étudiant B a effectué un échange de 2 substituants suivi d'une rotation de 90°. Les deux projections finales représentent-elles la même configuration que la molécule de départ ?",
+            "solution": "Il faut évaluer l'effet cumulé de chaque séquence de manipulations en fonction de leur caractère 'conservateur' ou 'inverseur' de configuration. Pour l'étudiant A : une rotation de 180° dans le plan conserve la configuration, et une permutation circulaire de 3 substituants (le 4e restant fixe) conserve également la configuration ; l'effet cumulé de deux opérations conservatrices est conservateur : la projection de A représente donc la même configuration que la molécule de départ. Pour l'étudiant B : un échange de 2 substituants inverse la configuration, et une rotation de 90° dans le plan inverse également la configuration ; l'effet cumulé de deux opérations inverseuses successives est cependant conservateur (une double inversion redonne la configuration de départ, comme deux réflexions successives dans un miroir redonnent l'image initiale) : la projection de B représente donc, elle aussi, la même configuration que la molécule de départ. Les deux projections finales, bien qu'obtenues par des chemins de manipulation différents, représentent donc en réalité la même configuration, ce qui illustre bien qu'il faut compter la parité (nombre pair ou impair d'opérations inverseuses) plutôt que d'évaluer chaque opération isolément."
+          },
+          {
+            "statement": "Une molécule chirale possède un pouvoir rotatoire mesuré expérimentalement de +15°, et sa configuration absolue déterminée par CIP est S. Un second composé, isomère de constitution du premier (donc de formule brute identique mais d'enchaînement différent), possède également une configuration S sur son unique centre stéréogène. Peut-on en déduire le signe du pouvoir rotatoire de ce second composé ? Justifiez rigoureusement.",
+            "solution": "Non, on ne peut absolument rien déduire. La configuration absolue R/S, déterminée par un raisonnement purement structural (règle CIP), et le pouvoir rotatoire (+/−), une grandeur physique mesurée expérimentalement au polarimètre, sont deux notions totalement indépendantes, sans aucune règle générale permettant de déduire l'une à partir de l'autre. Cette indépendance est d'autant plus vraie ici que les deux composés sont des isomères de constitution différents (formule brute identique mais enchaînement différent) : leur environnement électronique global autour du centre stéréogène, qui détermine le pouvoir rotatoire réel, diffère significativement malgré une même étiquette de configuration S, ce qui rend toute déduction impossible sans mesure expérimentale directe sur chacun des deux composés."
+          },
+          {
+            "statement": "On considère le 2,3-dibromobutane, qui possède deux carbones asymétriques (C2 et C3), chacun portant les substituants Br, CH₃, H et le reste de la chaîne. Expliquez pourquoi le stéréoisomère (2R,3S) de cette molécule est un composé méso, alors que les stéréoisomères (2R,3R) et (2S,3S) forment une paire d'énantiomères authentiques.",
+            "solution": "Dans le 2,3-dibromobutane, les deux carbones asymétriques C2 et C3 portent des substituants strictement identiques par symétrie de la molécule (chacun porte Br, H, CH₃ et l'autre moitié de la chaîne, qui est elle-même identique de part et d'autre par symétrie du squelette butane). Le stéréoisomère (2R,3S) possède un plan de symétrie interne qui passe entre C2 et C3 et qui échange exactement les deux moitiés de la molécule l'une avec l'autre par réflexion : la molécule est donc superposable à son image miroir malgré ses deux C*, ce qui en fait un composé méso, achiral. Les stéréoisomères (2R,3R) et (2S,3S), en revanche, ne possèdent pas cette symétrie interne (les deux configurations R,R ou S,S ne sont pas 'image l'une de l'autre à l'intérieur de la même molécule'), et sont bien l'image miroir exacte l'un de l'autre : ils constituent donc une authentique paire d'énantiomères, chirale et optiquement active."
+          },
+          {
+            "statement": "Un mélange contient 75% d'un énantiomère (+) et 25% de l'énantiomère opposé (−) d'une même molécule pure par ailleurs. Ce mélange est-il un mélange racémique ? Est-il optiquement actif, et si oui, dans quel sens ? Justifiez.",
+            "solution": "Ce mélange n'est pas un mélange racémique, car un mélange racémique exige une proportion rigoureusement égale (50/50) des deux énantiomères ; ici, la proportion est de 75/25, donc déséquilibrée. Ce mélange est optiquement actif : contrairement au cas racémique où les deux contributions s'annulent exactement, ici l'excès d'énantiomère (+) (75%−25%=50% d'excès énantiomérique) n'est pas compensé par l'énantiomère (−) minoritaire, ce qui laisse subsister un pouvoir rotatoire net et mesurable. Le sens de rotation résultant est celui de l'énantiomère majoritaire, c'est-à-dire dans le sens (+), bien que l'amplitude de rotation mesurée soit inférieure à celle d'un échantillon pur à 100% de l'énantiomère (+) (elle serait proportionnelle à l'excès énantiomérique de 50%)."
+          },
+          {
+            "statement": "On demande de déterminer la configuration Z ou E d'un alcène trisubstitué de type R₁R₂C=CR₃H, où R₁ a priorité CIP supérieure à R₂ sur le premier carbone, et où R₃ est prioritaire sur H (trivialement) sur le second carbone. Sachant que R₁ et R₃ se trouvent du même côté du plan de la double liaison, donnez la configuration, puis expliquez pourquoi cette molécule pourrait malgré tout être qualifiée de 'cis' ou 'trans' de façon potentiellement trompeuse selon l'ancienne nomenclature.",
+            "solution": "Puisque R₁ (prioritaire sur R₂) et R₃ (prioritaire sur H) sont les deux substituants prioritaires de chaque côté de la double liaison, et qu'ils se trouvent du même côté du plan, la configuration est Z (zusammen, 'ensemble'). Cependant, si l'on appliquait l'ancienne nomenclature cis/trans en se basant naïvement sur la position des groupes 'les plus gros' ou les plus intuitivement similaires plutôt que sur un classement CIP rigoureux, on pourrait qualifier à tort cette molécule de 'trans' si, par exemple, R₂ et R₃ étaient perçus comme les groupements 'de référence' visuellement comparables alors que ce ne sont pas eux les groupes prioritaires selon CIP. C'est précisément ce risque de confusion entre l'ancienne nomenclature cis/trans (fondée sur une comparaison intuitive et non systématique de similarité) et la nomenclature Z/E rigoureuse (fondée sur un classement de priorité CIP sans ambiguïté) qui justifie l'abandon progressif de cis/trans au profit de Z/E pour les alcènes trisubstitués ou tétrasubstitués, où l'intuition peut conduire à des erreurs."
+          },
+          {
+            "statement": "Une molécule organique possède un axe de symétrie propre C₂ mais ne possède aucun plan de symétrie, aucun centre d'inversion, ni aucun axe de symétrie impropre Sn. Est-elle chirale ? Cette même molécule peut-elle néanmoins présenter un pouvoir rotatoire nul dans certaines conditions expérimentales, sans pour autant être achiral ? Expliquez.",
+            "solution": "Oui, cette molécule est chirale : le critère rigoureux de chiralité est l'absence totale de tout élément de symétrie impropre (plan σ, centre i, axe Sn), et la présence d'un axe de symétrie propre C₂ (un élément de symétrie directe, sans réflexion) est parfaitement compatible avec la chiralité, ne l'empêchant en rien. Cette molécule chirale peut néanmoins présenter un pouvoir rotatoire mesuré nul dans certaines conditions expérimentales sans être achiral : c'est le cas si l'échantillon mesuré est en réalité un mélange racémique (quantités égales des deux énantiomères de cette molécule chirale), auquel cas les rotations opposées s'annulent globalement bien que chaque molécule individuelle du mélange reste parfaitement chirale — un pouvoir rotatoire nul mesuré à l'échelle macroscopique du mélange n'implique donc jamais que les molécules qui le composent sont individuellement achirales."
+          },
+          {
+            "statement": "Deux molécules de configuration identique sur tous leurs centres stéréogènes sauf un seul (parmi trois carbones asymétriques) sont-elles des énantiomères ou des diastéréoisomères ? Justifiez précisément, et donnez la relation générale entre nombre de centres stéréogènes inversés et type de relation stéréochimique.",
+            "solution": "Deux stéréoisomères qui diffèrent sur un seul centre stéréogène parmi plusieurs (ici 1 centre sur 3) sont des diastéréoisomères, et non des énantiomères. En effet, pour que deux molécules soient de véritables énantiomères, il faut que la configuration de la totalité de leurs centres stéréogènes soit inversée simultanément (image miroir complète) ; si seule une partie des centres est inversée, la relation entre les deux molécules n'est plus une relation de symétrie miroir globale mais une relation de diastéréoisomérie. Règle générale : pour une molécule à n centres stéréogènes, deux stéréoisomères sont énantiomères si et seulement si les n configurations sont toutes inversées simultanément entre eux ; ils sont diastéréoisomères dès lors qu'au moins un centre stéréogène (mais pas la totalité) diffère entre les deux structures comparées."
+          },
+          {
+            "statement": "On considère une projection de Fischer d'un ose à 2 carbones asymétriques. En appliquant les règles de manipulation autorisées et interdites, montrez comment obtenir, à partir de cette projection, celle de son diastéréoisomère (et non de son énantiomère), en une seule opération.",
+            "solution": "Pour obtenir un diastéréoisomère à partir d'une projection de Fischer à 2 carbones asymétriques, il suffit d'inverser la configuration d'un seul des deux centres stéréogènes, en laissant l'autre inchangé : concrètement, on échange la position des deux substituants portés par un seul des deux carbones asymétriques (par exemple, on échange OH et H sur le carbone du bas uniquement), tout en laissant le carbone du haut totalement intact. Cette opération, bien qu'elle constitue une manipulation 'interdite' au sens où elle change formellement la molécule représentée (elle inverse la configuration du centre concerné), est ici volontairement recherchée : elle transforme la molécule de départ en son diastéréoisomère, car un seul des deux centres stéréogènes est inversé et non les deux simultanément (ce qui donnerait l'énantiomère). Pour obtenir l'énantiomère complet, il aurait fallu inverser les deux carbones asymétriques simultanément (ou, de façon équivalente, effectuer une rotation de 90° de la projection entière, qui inverse tous les centres à la fois)."
+          },
+          {
+            "statement": "Justifiez pourquoi deux molécules Z et E d'un même alcène, bien qu'étant des diastéréoisomères et non des énantiomères, peuvent malgré tout être séparées par une simple distillation, contrairement à une paire d'énantiomères classiques qui nécessite un dédoublement chiral spécifique.",
+            "solution": "Les isomères Z et E, étant des diastéréoisomères, possèdent des propriétés physico-chimiques réellement différentes : leurs polarités globales, leurs points d'ébullition et leurs interactions intermoléculaires (notamment les forces de Van der Waals, qui dépendent fortement de la forme géométrique globale de la molécule) diffèrent significativement entre la configuration Z (souvent plus compacte, parfois plus polaire selon les substituants) et la configuration E (souvent plus étendue). Cette différence réelle de propriétés physiques permet de les séparer par des méthodes physiques usuelles telles que la distillation fractionnée, qui exploite justement les différences de point d'ébullition. À l'inverse, une paire d'énantiomères partage rigoureusement toutes les propriétés physico-chimiques usuelles (identiques point de fusion, point d'ébullition, polarité globale), ce qui rend la distillation totalement inefficace pour les séparer : seule une interaction avec un environnement lui-même chiral (dédoublement chiral, par exemple via un agent de résolution chiral ou une colonne chromatographique chirale) permet de discriminer et de séparer deux énantiomères."
+          }
+        ]
+      }
     },
     {
       "id": "thermodynamique",
       "title": "Thermodynamique chimique : enthalpie, entropie et équilibre",
       "difficulty": 3,
       "intro": "Prêt(e) à dompter l'énergie des réactions chimiques ? En route vers l'équilibre thermodynamique ! 🔥⚖️",
+      "diagram": "flowchart TD\n    A[Thermodynamique chimique] --> B[Systeme et fonctions d etat]\n    A --> C[Premier principe]\n    A --> D[Enthalpie de reaction]\n    A --> E[Entropie et second principe]\n    A --> F[Enthalpie libre de Gibbs]\n    A --> G[Equilibre chimique]\n    B --> B1[Systeme ouvert ferme isole]\n    B --> B2[Fonction d etat independante du chemin]\n    C --> C1[Delta U egale W plus Q]\n    C --> C2[Enthalpie H egale U plus PV]\n    D --> D1[Exothermique endothermique athermique]\n    D --> D2[Loi de Hess]\n    D --> D3[Enthalpies de liaison]\n    E --> E1[Desordre microscopique]\n    E --> E2[Transformation spontanee]\n    F --> F1[G egale H moins TS]\n    F --> F2[Exergonique endergonique]\n    F --> F3[Quatre cas de spontaneite]\n    G --> G1[Constante d equilibre K]\n    G --> G2[Quotient reactionnel Gamma]\n    G --> G3[Loi de Van t Hoff]\n    G --> G4[Principe de Le Chatelier]",
       "course": [
         {
           "icon": "🔬",
@@ -1329,7 +1717,135 @@
           "correct_index": 3,
           "explanation": "Bravo ! ⚖️ En retirant un produit, on diminue Γ en dessous de K : le système réagit en produisant à nouveau ce produit (sens direct) pour tendre vers un nouvel état d'équilibre, conformément au principe de Le Chatelier."
         }
-      ]
+      ],
+      "exercises": {
+        "facile": [
+          {
+            "statement": "Un système chimique échange de la matière et de l'énergie avec le milieu extérieur. Comment qualifie-t-on ce système ?",
+            "solution": "Un système qui échange à la fois de la matière et de l'énergie avec le milieu extérieur est appelé système ouvert (par opposition au système fermé, qui n'échange que de l'énergie, et au système isolé, qui n'échange rien)."
+          },
+          {
+            "statement": "Pourquoi peut-on utiliser la loi de Hess pour calculer une enthalpie de réaction à partir d'un cycle thermodynamique fictif ?",
+            "solution": "On peut utiliser la loi de Hess car l'enthalpie H est une fonction d'état : sa variation ΔH ne dépend que des états initial et final du système, jamais du chemin ou de la succession d'étapes empruntée pour aller de l'un à l'autre. On peut donc construire un chemin détourné mais commode (un cycle) pour calculer ΔH, le résultat étant rigoureusement identique à celui obtenu par le chemin réel direct."
+          },
+          {
+            "statement": "Une réaction a pour enthalpie standard ΔrH° = −180 kJ/mol. Cette réaction est-elle exothermique, endothermique ou athermique ?",
+            "solution": "Une enthalpie de réaction négative (ΔrH° < 0) signifie que le système cède de la chaleur au milieu extérieur : la réaction est exothermique."
+          },
+          {
+            "statement": "Quelle est, par convention, la valeur de l'enthalpie standard de formation ΔfH° du dioxygène gazeux O₂ à 298 K ?",
+            "solution": "Par convention, l'enthalpie standard de formation d'un corps simple pris dans son état de référence (le dioxygène gazeux O₂ en fait partie) est fixée à zéro, et ce à toute température, y compris à 298 K."
+          },
+          {
+            "statement": "L'entropie d'un système traduit son degré de désordre microscopique. Le gaz a-t-il, en général, une entropie plus élevée ou plus faible que le solide correspondant, à substance identique ?",
+            "solution": "Le gaz possède une entropie bien plus élevée que le solide correspondant. L'état gazeux offre en effet beaucoup plus de configurations microscopiques possibles (positions et vitesses des molécules, largement libres de se déplacer) que l'état solide, où les particules sont figées dans un réseau ordonné : plus un système offre de possibilités de réarrangement interne, plus son entropie est élevée."
+          },
+          {
+            "statement": "Donnez la formule de définition de l'enthalpie libre de Gibbs G en fonction de H, T et S.",
+            "solution": "L'enthalpie libre de Gibbs se définit par la relation G = H − T×S, où H est l'enthalpie, T la température absolue et S l'entropie du système."
+          },
+          {
+            "statement": "Une réaction a un ΔrG négatif. Est-elle exergonique ou endergonique ? Évolue-t-elle spontanément dans le sens direct ou indirect ?",
+            "solution": "Un ΔrG négatif caractérise une réaction exergonique, qui évolue spontanément dans le sens direct (celui de l'équation-bilan telle qu'écrite), en libérant de l'énergie utilisable jusqu'à atteindre l'équilibre."
+          },
+          {
+            "statement": "Quelle relation relie l'enthalpie libre standard de réaction ΔrG° à la constante d'équilibre K, à une température T donnée ?",
+            "solution": "La relation fondamentale est ΔrG° = −RT×ln(K), où R = 8,314 J·mol⁻¹·K⁻¹ est la constante des gaz parfaits et T la température absolue en kelvins."
+          },
+          {
+            "statement": "À l'équilibre chimique, quelle relation existe-t-il entre le quotient réactionnel Γ et la constante d'équilibre K ?",
+            "solution": "À l'équilibre chimique, le quotient réactionnel Γ est exactement égal à la constante d'équilibre K (Γ = K), ce qui correspond à ΔrG = RT×ln(Γ/K) = 0 : le système n'évolue alors plus macroscopiquement."
+          },
+          {
+            "statement": "Selon le principe de Le Chatelier, si l'on augmente la pression totale d'un système gazeux à l'équilibre (à température constante), dans quel sens ce système évolue-t-il en général, en termes de nombre de moles gazeuses ?",
+            "solution": "Le système évolue dans le sens qui tend à réduire le nombre total de moles de gaz présentes, ce sens permettant au système de s'opposer partiellement à l'augmentation de pression imposée, conformément au principe de modération de Le Chatelier."
+          }
+        ],
+        "moyen": [
+          {
+            "statement": "On donne les enthalpies standard de formation suivantes : ΔfH°(CO₂,g) = −393,5 kJ/mol, ΔfH°(H₂O,l) = −285,8 kJ/mol, ΔfH°(CH₄,g) = −74,8 kJ/mol, et ΔfH°(O₂,g) = 0. Calculez l'enthalpie standard de combustion du méthane : CH₄(g) + 2 O₂(g) → CO₂(g) + 2 H₂O(l).",
+            "solution": "On applique la loi de Hess : ΔrH° = Σ ΔfH°(produits) − Σ ΔfH°(réactifs). Produits : 1×ΔfH°(CO₂) + 2×ΔfH°(H₂O) = 1×(−393,5) + 2×(−285,8) = −393,5 − 571,6 = −965,1 kJ/mol. Réactifs : 1×ΔfH°(CH₄) + 2×ΔfH°(O₂) = 1×(−74,8) + 2×0 = −74,8 kJ/mol. ΔrH° = −965,1 − (−74,8) = −890,3 kJ/mol. La réaction est donc fortement exothermique, ce qui est cohérent avec une réaction de combustion."
+          },
+          {
+            "statement": "Une réaction a pour caractéristiques ΔrH° = +50 kJ/mol et ΔrS° = +120 J·K⁻¹·mol⁻¹. Déterminez, sans calcul de ΔrG, si cette réaction est spontanée à toute température, jamais spontanée, ou spontanée seulement au-delà d'une certaine température. Calculez cette température si elle existe.",
+            "solution": "ΔrH°>0 (défavorable) et ΔrS°>0 (favorable) : c'est le cas où la spontanéité dépend de la température, la réaction étant spontanée à haute température (le terme entropique −TΔrS finissant par l'emporter). La température d'inversion s'obtient en résolvant ΔrG°=0, soit T = ΔrH°/ΔrS° = 50000 J/mol ÷ 120 J·K⁻¹·mol⁻¹ ≈ 416,7 K. Au-delà de cette température, la réaction devient spontanée dans le sens direct."
+          },
+          {
+            "statement": "Une réaction possède une constante d'équilibre K = 10⁻⁵ à 298 K. Que peut-on en déduire qualitativement sur le signe et l'ordre de grandeur de ΔrG°, et sur l'état d'avancement de la réaction à l'équilibre ?",
+            "solution": "Puisque K est très inférieur à 1, ΔrG° = −RT×ln(K) sera positif (car ln(K) est négatif pour K<1, donc −RT×ln(K) est positif). On peut estimer sa valeur : ΔrG° = −8,314×298×ln(10⁻⁵) = −2477×(−11,5) ≈ +28500 J/mol ≈ +28,5 kJ/mol. Ce ΔrG° positif traduit une réaction peu favorable dans le sens direct à l'équilibre : la réaction n'est que très peu avancée, la majorité du système restant sous forme de réactifs à l'équilibre."
+          },
+          {
+            "statement": "Pour la réaction de synthèse de l'ammoniac N₂(g) + 3 H₂(g) → 2 NH₃(g), prédisez qualitativement le signe de ΔrS° et justifiez à partir du nombre de moles de gaz.",
+            "solution": "On compte les moles de gaz de chaque côté : 1+3=4 moles de gaz côté réactifs, contre 2 moles de gaz côté produits. Le nombre de moles gazeuses diminue au cours de la réaction (de 4 à 2), ce qui correspond à une diminution du désordre global du système (moins d'entités gazeuses indépendantes) : on prédit donc qualitativement ΔrS° < 0 pour cette réaction, ce qui est en effet confirmé expérimentalement."
+          },
+          {
+            "statement": "Une réaction en phase gazeuse à l'équilibre comporte autant de moles de gaz du côté des réactifs que du côté des produits. Quel est l'effet d'une augmentation de la pression totale sur la position de cet équilibre ? Justifiez.",
+            "solution": "Dans ce cas particulier où le nombre de moles gazeuses est rigoureusement identique de part et d'autre de l'équation-bilan, la pression n'a strictement aucun effet sur la position de l'équilibre. En effet, l'équilibre ne peut se déplacer dans aucun sens (ni direct ni indirect) sans changer le nombre total de moles gazeuses, or celui-ci est déjà identique des deux côtés : aucun déplacement ne permettrait donc au système de s'opposer à la perturbation de pression, et le principe de Le Chatelier ne prédit alors aucun déplacement observable."
+          },
+          {
+            "statement": "On connaît la constante d'équilibre K₁ = 2,0×10⁻³ à T₁ = 300 K pour une réaction dont ΔrH° = +40 kJ/mol (supposée constante sur l'intervalle de température). Calculez K₂ à T₂ = 350 K à l'aide de la loi de Van't Hoff.",
+            "solution": "La loi de Van't Hoff s'écrit ln(K₂/K₁) = (ΔrH°/R)×(1/T₁ − 1/T₂). On calcule : 1/T₁ − 1/T₂ = 1/300 − 1/350 = 0,003333 − 0,002857 = 0,000476 K⁻¹. Donc ln(K₂/K₁) = (40000/8,314)×0,000476 ≈ 4811×0,000476 ≈ 2,29. On en déduit K₂/K₁ = e^2,29 ≈ 9,9, donc K₂ ≈ 9,9×2,0×10⁻³ ≈ 2,0×10⁻². La constante d'équilibre a donc fortement augmenté avec la température, ce qui est cohérent avec une réaction endothermique (ΔrH°>0), favorisée par une élévation de température."
+          },
+          {
+            "statement": "Une dissolution d'un sel dans l'eau est endothermique (elle refroidit le milieu) mais se produit spontanément à température ambiante. Expliquez ce paradoxe apparent à l'aide de l'enthalpie libre de Gibbs.",
+            "solution": "Bien que ΔrH°>0 (processus endothermique, donc défavorable du point de vue énergétique seul), la dissolution s'accompagne généralement d'une forte augmentation de l'entropie (ΔrS°>0), car les ions du solide, initialement bien ordonnés dans un réseau cristallin, se retrouvent dispersés et solvatés de façon beaucoup plus désordonnée en solution. Si le terme entropique −T×ΔrS° (négatif et de valeur absolue suffisamment grande) l'emporte sur le terme enthalpique positif ΔrH°, alors ΔrG° = ΔrH° − T×ΔrS° devient négatif malgré le caractère endothermique du processus : c'est exactement le quatrième cas de spontanéité (ΔH>0, ΔS>0, spontané à haute température, et souvent déjà spontané à température ambiante si le gain entropique est suffisamment important)."
+          },
+          {
+            "statement": "On souhaite calculer l'enthalpie d'une réaction de rupture homolytique impliquant la rupture de 2 liaisons C–H (ΔlH = +414 kJ/mol chacune) et la formation d'une liaison C=C (ΔlH = −614 kJ/mol) et d'une liaison H–H (ΔlH = −436 kJ/mol). Calculez ΔrH° pour cette transformation.",
+            "solution": "On applique la formule ΔrH° = Σ liaisons rompues − Σ liaisons formées (en valeur absolue, rompre consomme de l'énergie donc contribution positive, former en libère donc contribution soustraite). Liaisons rompues : 2×414 = 828 kJ/mol. Liaisons formées (en valeur absolue) : 614+436 = 1050 kJ/mol. ΔrH° = 828 − 1050 = −222 kJ/mol. La réaction est donc exothermique."
+          },
+          {
+            "statement": "Une réaction a pour caractéristiques ΔrH° = −80 kJ/mol et ΔrS° = −150 J·K⁻¹·mol⁻¹. Est-elle spontanée à 298 K ? Justifiez par le calcul de ΔrG°.",
+            "solution": "On calcule ΔrG° = ΔrH° − T×ΔrS° = −80000 − 298×(−150) = −80000 + 44700 = −35300 J/mol = −35,3 kJ/mol. Puisque ΔrG° est négatif à 298 K, la réaction est spontanée (exergonique) dans le sens direct à cette température, bien qu'il s'agisse du cas 'ΔH<0/ΔS<0', qui n'est spontané qu'en dessous d'une certaine température (ici 298 K est suffisamment bas pour rester dans la zone de spontanéité)."
+          },
+          {
+            "statement": "Expliquez pourquoi l'activité d'un solvant en large excès (comme l'eau dans une réaction en solution aqueuse diluée) est conventionnellement fixée à 1 dans l'expression du quotient réactionnel Γ, et quelle simplification cela apporte au calcul.",
+            "solution": "Par convention, l'activité d'un solide pur ou d'un solvant en large excès est fixée à 1, car sa concentration (ou plus rigoureusement son activité) reste pratiquement constante et très proche de sa valeur à l'état pur tout au long de la réaction, la quantité consommée ou produite étant négligeable devant la quantité totale présente. Cette convention simplifie considérablement l'expression du quotient réactionnel Γ (et de la constante K), puisque le terme correspondant au solvant disparaît purement et simplement du rapport, ne laissant apparaître que les activités des espèces dont la concentration varie réellement de façon significative au cours de la réaction (solutés dissous, gaz)."
+          }
+        ],
+        "difficile": [
+          {
+            "statement": "On construit un cycle de Born-Haber pour calculer l'enthalpie réticulaire du chlorure de sodium NaCl(s), en passant par les étapes suivantes : sublimation de Na(s) en Na(g) (+108 kJ/mol), ionisation de Na(g) en Na⁺(g) (+496 kJ/mol), dissociation de ½Cl₂(g) en Cl(g) (+121 kJ/mol), fixation d'un électron sur Cl(g) pour former Cl⁻(g) (−349 kJ/mol), et l'enthalpie standard de formation de NaCl(s) à partir des corps simples (ΔfH° = −411 kJ/mol). Calculez l'enthalpie réticulaire ΔrétH° de NaCl (énergie de la réaction Na⁺(g) + Cl⁻(g) → NaCl(s)).",
+            "solution": "Le cycle de Born-Haard relie, via la fonction d'état H (indépendante du chemin), le chemin direct (formation de NaCl(s) à partir des corps simples, ΔfH°) au chemin détourné en 5 étapes (sublimation, ionisation, dissociation, fixation d'électron, puis formation du réseau cristallin ΔrétH°). On écrit : ΔfH°(NaCl,s) = ΔsublH°(Na) + ΔionH°(Na) + ½ΔdissH°(Cl₂) + ΔfixH°(Cl) + ΔrétH°(NaCl). On isole ΔrétH° : ΔrétH° = ΔfH°(NaCl,s) − [ΔsublH°(Na) + ΔionH°(Na) + ½ΔdissH°(Cl₂) + ΔfixH°(Cl)] = −411 − [108+496+121+(−349)] = −411 − 376 = −787 kJ/mol. L'enthalpie réticulaire est donc de −787 kJ/mol, fortement exothermique, ce qui est cohérent avec la forte stabilité électrostatique du réseau cristallin ionique de NaCl."
+          },
+          {
+            "statement": "Une réaction possède ΔrH° = −25 kJ/mol et ΔrS° = −80 J·K⁻¹·mol⁻¹, supposés constants sur l'intervalle de température étudié. Déterminez l'intervalle de température sur lequel cette réaction est spontanée dans le sens direct, puis expliquez la signification physique de la borne trouvée.",
+            "solution": "On est dans le cas ΔH<0 et ΔS<0 : la réaction n'est spontanée qu'en dessous d'une température critique T*, obtenue en résolvant ΔrG°=0, soit T* = ΔrH°/ΔrS° = (−25000)/(−80) = 312,5 K. La réaction est donc spontanée (ΔrG°<0) pour toute température T < 312,5 K, et devient non spontanée (ΔrG°>0) au-delà. Physiquement, en dessous de cette température, le terme enthalpique favorable (ΔrH°<0) domine largement le terme entropique défavorable −TΔrS° (qui reste faible en valeur absolue à basse température), tandis qu'au-delà de 312,5 K, le terme entropique défavorable, proportionnel à T, finit par l'emporter et rendre ΔrG° positif, bloquant la spontanéité dans le sens direct."
+          },
+          {
+            "statement": "On mesure, pour une réaction, K₁ = 4,0 à T₁ = 350 K et K₂ = 0,50 à T₂ = 450 K. Déterminez le signe de ΔrH° pour cette réaction sans effectuer le calcul complet, uniquement par analyse qualitative de la variation de K avec T, puis vérifiez par un calcul numérique.",
+            "solution": "Analyse qualitative : K diminue lorsque T augmente (de 4,0 à 350 K vers 0,50 à 450 K) : la réaction devient moins favorisée dans le sens direct à haute température. Or, d'après le principe de Le Chatelier, une élévation de température favorise toujours le sens endothermique de la réaction : si le sens direct est défavorisé par une hausse de T, c'est donc que le sens direct est exothermique, donc ΔrH°<0. Vérification par calcul (Van't Hoff) : ln(K₂/K₁) = ln(0,50/4,0) = ln(0,125) ≈ −2,08. On a ln(K₂/K₁) = (ΔrH°/R)(1/T₁−1/T₂) = (ΔrH°/8,314)×(1/350−1/450) = (ΔrH°/8,314)×0,000635. Donc ΔrH° = −2,08×8,314/0,000635 ≈ −27230 J/mol ≈ −27,2 kJ/mol, qui est bien négatif, confirmant l'analyse qualitative."
+          },
+          {
+            "statement": "Un étudiant affirme : « Puisque ΔrG° est positif pour une réaction donnée, cette réaction ne peut jamais se produire, quel que soit l'état d'avancement initial du système. » Réfutez cette affirmation en vous appuyant sur la distinction entre ΔrG° et ΔrG.",
+            "solution": "Cette affirmation est fausse et repose sur une confusion classique entre ΔrG° (grandeur standard, fixe pour une réaction et une température données, uniquement reliée à K par ΔrG°=−RT ln K) et ΔrG (grandeur réelle et instantanée, qui seule gouverne le sens d'évolution spontanée à un instant donné, via ΔrG = RT ln(Γ/K)). Un ΔrG° positif signifie seulement que K<1, c'est-à-dire que la réaction est peu avancée à l'équilibre (majoritairement sous forme de réactifs). Mais si le système de départ contient une quantité de produits inférieure à celle de l'équilibre (c'est-à-dire si le quotient réactionnel initial Γ_initial est inférieur à K, même si K<1), alors ΔrG = RT ln(Γ/K) est négatif à cet instant, et la réaction évolue bel et bien spontanément dans le sens direct, au moins jusqu'à ce que Γ atteigne K. La réaction peut donc parfaitement se produire (partiellement) même avec un ΔrG°>0 : seul le sens et l'ampleur de l'évolution dépendent de la comparaison entre Γ et K, jamais de ΔrG° seul seul."
+          },
+          {
+            "statement": "On considère la réaction de dissociation N₂O₄(g) ⇌ 2 NO₂(g), à l'équilibre dans un récipient fermé de volume variable. Prédisez, en justifiant par le principe de Le Chatelier et le raisonnement sur le nombre de moles gazeuses, l'effet d'une compression isotherme (diminution du volume à température constante) sur l'avancement de cette réaction.",
+            "solution": "La réaction directe (dissociation) fait passer de 1 mole de gaz (N₂O₄) à 2 moles de gaz (2 NO₂) : le nombre de moles gazeuses augmente dans le sens direct. Une compression isotherme équivaut à une augmentation de la pression totale du système (à quantité de matière et température constantes, diminuer le volume augmente la pression). D'après le principe de Le Chatelier, le système s'oppose à cette augmentation de pression en évoluant dans le sens qui réduit le nombre total de moles gazeuses, c'est-à-dire ici le sens indirect (formation de N₂O₄ à partir de NO₂, qui réduit le nombre de moles de 2 à 1). L'équilibre se déplace donc dans le sens de la recombinaison de NO₂ en N₂O₄, diminuant l'avancement de la réaction de dissociation par rapport à l'état d'équilibre initial avant compression."
+          },
+          {
+            "statement": "Une réaction possède un ΔrH° positif et un ΔrS° positif. On sait par ailleurs que sa température d'inversion (température à laquelle ΔrG°=0) vaut 500 K. Le système est initialement à 400 K, hors équilibre, avec un quotient réactionnel Γ égal à la constante d'équilibre K mesurée à 500 K. Cette réaction va-t-elle évoluer spontanément dans le sens direct ou indirect à 400 K ? Justifiez en distinguant bien le rôle de la température sur ΔrG° (donc sur K) de celui du rapport Γ/K à température fixée.",
+            "solution": "À 400 K, qui est inférieure à la température d'inversion de 500 K, et sachant que ΔrH°>0 et ΔrS°>0 (réaction spontanée uniquement à haute température, au-delà de 500 K), on a ΔrG°(400K) = ΔrH° − 400×ΔrS°, qui reste positif à cette température (puisque 400<500, le terme entropique ne compense pas encore suffisamment le terme enthalpique). Cela signifie que la constante d'équilibre K(400K) est inférieure à 1 et surtout inférieure à K(500K) (K augmente avec T pour une réaction endothermique). Or l'énoncé précise que le quotient réactionnel Γ mesuré à 400 K est égal numériquement à K(500K), qui est une valeur plus grande que K(400K) (la véritable constante d'équilibre à la température réelle du système, 400 K). On a donc Γ > K(400K), ce qui donne ΔrG(400K) = RT×ln(Γ/K(400K)) > 0 : le système évolue donc spontanément dans le sens indirect à 400 K, bien que ce même Γ aurait correspondu exactement à l'équilibre si la température avait été de 500 K. Cet exercice illustre bien qu'il faut toujours comparer Γ à la constante K évaluée à la température réelle du système, et non à une constante d'équilibre tabulée à une autre température."
+          },
+          {
+            "statement": "On souhaite vérifier la cohérence de deux méthodes de calcul de ΔrH° pour la réaction d'hydrogénation de l'éthylène CH₂=CH₂(g) + H₂(g) → CH₃–CH₃(g). Par la méthode des enthalpies de liaison, on trouve ΔrH° = −137 kJ/mol. Par la méthode des enthalpies de formation, on trouve ΔrH° = −136 kJ/mol. Ces deux valeurs, bien que très proches, ne sont pas parfaitement identiques : expliquez pourquoi un léger écart entre les deux méthodes est attendu et ne remet pas en cause la loi de Hess.",
+            "solution": "La loi de Hess elle-même est rigoureusement exacte, puisqu'elle découle directement du caractère de fonction d'état de l'enthalpie H. L'écart observé entre les deux méthodes ne provient donc pas d'un défaut de la loi de Hess, mais du fait que les enthalpies de liaison tabulées (ΔlH) sont elles-mêmes des valeurs moyennes approximatives, calculées à partir de nombreuses molécules différentes contenant le même type de liaison : elles supposent implicitement que l'énergie d'une liaison C–H, par exemple, est rigoureusement identique dans toutes les molécules, ce qui n'est en réalité qu'une approximation (l'environnement électronique exact autour de chaque liaison influence légèrement son énergie réelle). Les enthalpies de formation ΔfH°, en revanche, sont des grandeurs mesurées expérimentalement de façon spécifique pour chaque composé, sans cette approximation de transférabilité des liaisons. Le léger écart entre les deux méthodes (−137 contre −136 kJ/mol) reflète donc simplement l'imprécision inhérente aux valeurs tabulées d'enthalpies de liaison moyennes, et non une incohérence de la loi de Hess elle-même, qui reste un principe exact."
+          },
+          {
+            "statement": "Un système à l'équilibre contient un gaz A et un solide B en équilibre selon A(g) ⇌ B(s), avec une constante d'équilibre K ne dépendant que de la pression partielle de A (l'activité de B, solide pur, valant 1). On ajoute une quantité supplémentaire de solide B au système, sans changer le volume ni la température. Le système va-t-il évoluer ? Justifiez rigoureusement en distinguant l'effet d'un ajout de solide pur de celui d'un ajout d'un soluté ou d'un gaz.",
+            "solution": "Le système n'évolue pas : ajouter du solide B pur, dont l'activité est fixée conventionnellement à 1 quelle que soit la quantité présente (tant qu'il en reste au moins une quantité non nulle), ne modifie en rien l'expression du quotient réactionnel Γ, qui ne dépend ici que de la pression partielle du gaz A. Puisque ni la pression partielle de A, ni la température, ni le volume ne sont modifiés par cet ajout, Γ reste rigoureusement égal à K : le système demeure exactement à l'équilibre, sans aucun déplacement. Ce résultat contraste fortement avec l'ajout d'un soluté en solution ou d'un gaz supplémentaire, dont l'activité (ou la pression partielle, ou la concentration) varie effectivement avec la quantité ajoutée et modifie donc Γ, provoquant un déplacement réel de l'équilibre selon Le Chatelier : c'est la spécificité des phases condensées pures (solides, ou solvants en large excès) de ne jamais influencer la position d'un équilibre par simple variation de leur quantité."
+          },
+          {
+            "statement": "On étudie une réaction pour laquelle ΔrH°=0 (réaction athermique) mais ΔrS°>0. Cette réaction est-elle spontanée, et si oui, sous quelle condition sur la température ? La température joue-t-elle ici un rôle qualitativement différent que dans les 4 cas usuels vus en cours ?",
+            "solution": "Avec ΔrH°=0, l'expression ΔrG° = ΔrH° − T×ΔrS° se simplifie en ΔrG° = −T×ΔrS°. Puisque ΔrS°>0 et que la température absolue T est toujours strictement positive, le produit T×ΔrS° est toujours positif, donc ΔrG° = −T×ΔrS° est toujours négatif, à toute température strictement positive (sauf la limite T→0, où ΔrG°→0). Cette réaction est donc spontanée à toute température non nulle, ce qui la rapproche du premier cas usuel (ΔH<0, ΔS>0, spontané à toute température), mais pour une raison légèrement différente : ici, c'est le terme entropique seul, non contrebalancé par aucun terme enthalpique (ni favorable ni défavorable), qui pilote entièrement la spontanéité, alors que dans le premier cas usuel, les deux termes (enthalpique et entropique) sont favorables et se renforcent mutuellement. Le rôle qualitatif de la température reste cependant le même : plus T est élevée, plus le terme −T×ΔrS° devient négatif en valeur absolue, renforçant d'autant la spontanéité de la réaction à haute température, bien que celle-ci reste déjà spontanée dès que T>0."
+          },
+          {
+            "statement": "Deux réactions A et B ont exactement le même ΔrH° = −60 kJ/mol, mais des entropies de réaction différentes : ΔrS°(A) = −40 J·K⁻¹·mol⁻¹ et ΔrS°(B) = +40 J·K⁻¹·mol⁻¹. Comparez leur spontanéité respective à très basse température (T→0⁺) puis à très haute température (T très grand), et expliquez pourquoi l'écart entre les deux réactions se creuse ou se réduit selon la zone de température considérée.",
+            "solution": "À très basse température (T→0⁺), le terme −T×ΔrS° tend vers 0 pour les deux réactions quel que soit le signe de ΔrS°, donc ΔrG°(A) et ΔrG°(B) tendent tous deux vers ΔrH° = −60 kJ/mol : les deux réactions sont alors également très spontanées et quasiment indiscernables en termes de ΔrG°, la contribution entropique devenant négligeable face au terme enthalpique commun. À très haute température, en revanche, le terme −T×ΔrS° domine largement : pour A (ΔrS°<0), ce terme devient très positif et finit par l'emporter sur ΔrH°<0, rendant ΔrG°(A) positif au-delà d'une température critique T*(A) = ΔrH°/ΔrS°(A) = (−60000)/(−40) = 1500 K — la réaction A cesse d'être spontanée au-delà de 1500 K. Pour B (ΔrS°>0), ce terme devient au contraire de plus en plus négatif avec T, renforçant la spontanéité déjà acquise de B à toute température (cas ΔH<0/ΔS>0, toujours spontané). L'écart de spontanéité entre A et B, nul à très basse température, se creuse donc considérablement à haute température : B reste favorable indéfiniment tandis que A devient défavorable au-delà de 1500 K, illustrant que le terme entropique, négligeable à basse T, devient le facteur décisif et différenciant à haute température."
+          }
+        ]
+      }
     }
   ]
 }

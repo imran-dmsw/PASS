@@ -5,9 +5,16 @@ d'ajouter data/ueX.json et un fichier pages/X_emoji_Nom.py de quelques lignes
 
 import streamlit as st
 
-from utils.components import render_course_block, render_fiche, render_mascot_bubble, render_resource
+from utils.components import (
+    render_course_block,
+    render_exercises_section,
+    render_fiche,
+    render_mascot_bubble,
+    render_resource,
+)
 from utils.config import STUDENT_NAME
 from utils.data_loader import load_ue
+from utils.diagrams import render_diagram
 from utils.html import html
 from utils.progress import mastery_ratio, record_quiz_result, render_hearts, render_stars
 from utils.quiz_engine import run_quiz
@@ -43,8 +50,8 @@ def render_ue_page(ue_id: str) -> None:
     if chapter.get("intro"):
         render_mascot_bubble(f"Dr. Mochi te souffle, {STUDENT_NAME} 🐱", chapter["intro"], mood="happy")
 
-    tab_cours, tab_fiche, tab_quiz, tab_ressources = st.tabs(
-        ["📖 Cours", "📝 Fiche", "🧠 Quiz", "🔗 Ressources"]
+    tab_cours, tab_fiche, tab_exercices, tab_quiz, tab_ressources = st.tabs(
+        ["📖 Cours", "📝 Fiche", "✏️ Exercices", "🧠 Quiz", "🔗 Ressources"]
     )
 
     with tab_cours:
@@ -52,7 +59,13 @@ def render_ue_page(ue_id: str) -> None:
             render_course_block(block)
 
     with tab_fiche:
+        if chapter.get("diagram"):
+            st.markdown("#### 🗺️ Carte mentale")
+            render_diagram(chapter["diagram"])
         render_fiche(chapter.get("fiche", []))
+
+    with tab_exercices:
+        render_exercises_section(chapter.get("exercises", {}), section_key=f"ex_{ue_id}_{chapter['id']}")
 
     with tab_quiz:
         quiz_key = f"quiz_{ue_id}_{chapter['id']}"

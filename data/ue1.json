@@ -1846,6 +1846,1805 @@
           }
         ]
       }
+    },
+    {
+      "id": "acide_base",
+      "title": "Réactions acide-base",
+      "difficulty": 2,
+      "intro": "Prépare ton diagramme de prédominance et viens dompter les pKa avec moi, tu vas voir ça se passe très bien 🧪✨",
+      "diagram": "flowchart TD\nA[Reactions acide base] --> B[Definitions]\nB --> B1[Bronsted acide donneur H plus]\nB --> B2[Lewis acide accepteur electrons]\nA --> C[Couples et Ka]\nC --> C1[Ka et pKa]\nC --> C2[Force acide base]\nC --> C3[Ampholyte et zwitterion]\nA --> D[Echelle des pKa]\nD --> D1[Diagramme predominance]\nD --> D2[Regle du gamma]\nA --> E[Calcul du pH]\nE --> E1[Acide fort base forte]\nE --> E2[Acide faible base faible]\nE --> E3[Henderson Hasselbalch]\nA --> F[Reaction preponderante]\nF --> F1[Tableau avancement]\nF --> F2[Reaction totale ou limitee]\nA --> G[Applications]\nG --> G1[Tampons]\nG --> G2[Dosages]",
+      "course": [
+        {
+          "icon": "🔬",
+          "title": "Acides et bases selon Bronsted et Lewis",
+          "content": "Deux visions coexistent en PASS et il faut savoir jongler entre elles. Bronsted définit l'acide comme un donneur de proton H+ et la base comme un accepteur de proton. C'est la définition utilisée pour tous les calculs de pH et les équilibres en solution aqueuse. Lewis, plus général, définit l'acide comme un accepteur de doublet électronique et la base comme un donneur de doublet électronique : cette définition englobe des espèces qui n'ont pas de proton à échanger, comme BF3 (acide de Lewis) ou NH3 agissant par son doublet libre. Un couple acide-base au sens de Bronsted s'écrit AH/A-, relié par la demi-réaction AH = A- + H+. Comme le proton libre n'existe quasiment pas en solution aqueuse (il est immédiatement capté), on écrit toujours la réaction avec l'eau comme partenaire : AH + H2O = A- + H3O+. Piège classique : ne pas confondre l'acide au sens large (Lewis) qui n'a pas forcément de proton, avec l'acide au sens de Bronsted qui en a obligatoirement un à céder. En pratique, dès qu'on vous parle de pH, de pKa ou de dosage, c'est la vision de Bronsted qui s'applique. Retenez aussi qu'un couple acide-base n'a de sens que si l'acide et la base ne diffèrent que par un unique proton : c'est la conjugaison acide-base."
+        },
+        {
+          "icon": "🔬",
+          "title": "Ampholytes et zwitterions : ne pas confondre",
+          "content": "Un ampholyte (ou espèce amphotère) appartient à deux couples acide-base différents et peut donc se comporter tantôt comme un acide, tantôt comme une base, selon le partenaire avec lequel il réagit. L'exemple emblématique est l'eau, qui appartient au couple H3O+/H2O (où elle joue le rôle de base) et au couple H2O/HO- (où elle joue le rôle d'acide). Cette double nature permet à l'eau de réagir avec elle-même : c'est l'autoprotolyse, 2 H2O = H3O+ + HO-, caractérisée par le produit ionique Ke = [H3O+][HO-] = 10^-14 à 298 K. Ke dépend de la température (il augmente si T augmente, comme une constante d'équilibre classique). D'autres espèces sont amphotères, comme les acides aminés (via leurs fonctions -COOH et -NH2) ou les ions carbonate/hydrogénocarbonate. Le zwitterion est un concept différent : c'est une molécule globalement neutre qui porte simultanément une charge positive et une charge négative en nombre égal, qui s'annulent. Un acide aminé sous sa forme dipolaire (NH3+ - CHR - COO-) est un zwitterion. Attention au piège classé 'incontournable' : zwitterion et ampholyte ne sont pas synonymes. Un zwitterion peut ne pas être amphotère, et un ampholyte peut ne porter aucune charge nette particulière tant qu'il n'a pas réagi. Il faut vérifier les deux propriétés indépendamment sur chaque molécule proposée en QCM."
+        },
+        {
+          "icon": "⭐",
+          "title": "Constante d'acidité Ka et pKa",
+          "content": "La constante d'acidité Ka quantifie la force d'un acide, c'est-à-dire sa capacité à céder son proton à l'eau. Pour un couple AH/A-, Ka = [A-][H3O+] / [AH], exprimée à l'équilibre. Plus Ka est grand, plus l'acide est dissocié, plus il est fort, et plus sa base conjuguée est stable (donc peu réactive, c'est-à-dire faible). Comme manipuler des valeurs de Ka souvent minuscules est peu pratique, on utilise le pKa = -log(Ka), qui inverse l'échelle : un pKa petit correspond à un acide fort, un pKa grand correspond à un acide faible (et donc une base conjuguée forte). Ka (et donc pKa) dépend de la température, exactement comme une constante d'équilibre K, car il s'agit bien d'une constante thermodynamique d'équilibre (l'activité de l'eau, solvant, étant prise égale à 1). Repères à connaître par coeur : un acide de pKa ≤ 0 est un acide fort (base conjuguée très faible, comme HCl ou H3O+ lui-même) ; un pKa entre 0 et 14 correspond à un couple faible/faible (la majorité des acides organiques : COOH/COO- autour de pKa 4, parfois 2 dans une molécule complexe comme un acide aminé) ; un pKa ≥ 14 correspond à une base forte associée à un acide très faible (OH/O- autour de 16-18, HO- étant la base forte de référence). Piège fréquent : le pKa caractérise un couple, pas une espèce isolée ; ne jamais parler du pKa d'un acide sans préciser implicitement sa base conjuguée."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Acides forts et bases fortes : la réaction est totale",
+          "content": "Un acide fort (pKa ≤ 0) se dissocie totalement dans l'eau : il n'existe quasiment plus sous forme AH en solution, tout est converti en A- et H3O+. C'est pourquoi dans l'eau, il n'existe pas d'acide plus fort que H3O+ ni de base plus forte que HO- : si vous introduisez un acide encore plus fort que H3O+, il réagit intégralement avec l'eau (qui joue le rôle de base) pour donner H3O+ en totalité, l'acide initial étant le réactif limitant totalement consommé. Symétriquement, une base forte introduite dans l'eau est totalement protonée en HO-. Cette propriété, appelée nivellement du solvant, explique pourquoi on ne peut pas distinguer par simple mesure de pH la force relative de deux acides forts très différents dans l'eau : ils apparaissent tous 'nivelés' au niveau de H3O+. Les valeurs à connaître impérativement : HCl et H3O+ sont des acides forts de référence, HO- est la base forte de référence. Sauf indication contraire dans l'énoncé, toute espèce non mentionnée comme forte doit être considérée comme faible. Ce réflexe est indispensable pour la suite du raisonnement (recherche de la réaction prépondérante), car un acide fort domine systématiquement l'échelle des pKa, tout en bas, et une base forte domine tout en haut."
+        },
+        {
+          "icon": "🔬",
+          "title": "Les formules de calcul du pH selon la nature de l'espèce",
+          "content": "Le pH d'une solution se définit toujours par pH = -log[H3O+], mais en pratique on utilise des formules simplifiées selon le type d'espèce dominante, valables seulement sous certaines conditions de validité. Pour un acide fort (AF) de concentration C : pH = -log[AF], valable si pH ≤ 6,5 (l'autoprotolyse de l'eau reste négligeable). Pour une base forte (BF) : pH = 14 + log[BF], valable si pH ≥ 7,5. Pour un acide faible (Af) : pH = (pKa - log[Af]) / 2, valable si pH ≤ 6,5 ET pH ≤ pKa - 1 (il faut vérifier les deux conditions simultanément, sinon la simplification n'est plus légitime). Pour une base faible (Bf) : pH = 7 + (pKa + log[Bf]) / 2, valable si pH ≥ 7,5 ET pH ≥ pKa + 1. Ces formules viennent toutes d'une approximation qui néglige soit l'autoprotolyse de l'eau, soit la dissociation partielle de l'espèce faible (on suppose alors que la concentration à l'équilibre est proche de la concentration initiale C). Piège très classique en QCM : si l'une des conditions n'est pas vérifiée après calcul, on ne peut PAS garder le résultat obtenu par la formule simplifiée ; il faut alors résoudre l'équation exacte (souvent quadratique) en tenant compte de l'autoprotolyse de l'eau ou de la dissociation réelle de l'espèce."
+        },
+        {
+          "icon": "⭐",
+          "title": "La relation de Henderson-Hasselbalch",
+          "content": "Cette relation est l'outil central pour calculer le pH d'un mélange contenant à la fois un acide faible et sa base conjuguée (par exemple une solution tampon) : pH = pKa + log([A-]eq / [AH]eq). Elle dérive directement de l'expression de Ka en prenant le logarithme et en isolant le pH. Une conséquence immédiate et très utilisée : quand [A-] = [AH] (mélange équimolaire du couple), le rapport vaut 1, log(1) = 0, donc pH = pKa exactement. C'est le principe même de la demi-équivalence dans un dosage acide faible/base forte : au volume de demi-équivalence, pH = pKa du couple dosé, ce qui permet de lire directement le pKa sur une courbe de titrage. Cette relation permet aussi de comprendre le pouvoir tampon d'une solution : tant que le rapport [A-]/[AH] reste proche de 1 (grosso modo entre 1/10 et 10, soit pH compris entre pKa - 1 et pKa + 1), une addition modérée d'acide ou de base fort ne fait varier le pH que très peu, car le couple absorbe la perturbation en déplaçant l'équilibre. En dehors de cette zone, le pouvoir tampon s'effondre et le pH varie brutalement. Cette relation ne s'applique qu'aux concentrations à l'équilibre, mais en zone tampon on les assimile souvent aux concentrations apportées, car la dissociation reste limitée."
+        },
+        {
+          "icon": "⭐",
+          "title": "Cas particulier : le pH d'un ampholyte",
+          "content": "Pour un ampholyte pur en solution (une espèce qui appartient à deux couples acide-base successifs, comme l'ion hydrogénocarbonate HCO3- entre les couples CO2,H2O/HCO3- et HCO3-/CO3(2-)), le pH se calcule simplement comme la moyenne arithmétique des deux pKa encadrants : pH = (pKa1 + pKa2) / 2. Ce résultat est remarquable car il ne dépend d'aucune condition de validité contrairement aux formules précédentes : il est toujours applicable dès qu'on est en présence d'un ampholyte pur (sans excès d'acide ou de base ajouté). L'intuition physique est que l'ampholyte se dismute très légèrement : une petite fraction se comporte en acide (donnant un peu de la base pKa2), une autre petite fraction se comporte en base (donnant un peu de l'acide pKa1), et l'équilibre global se stabilise exactement entre les deux pKa. Cette formule est redoutée en QCM car les étudiants oublient souvent de l'appliquer et tentent à tort d'utiliser Henderson-Hasselbalch ou les formules acide faible/base faible, qui ne s'appliquent pas ici puisqu'il n'y a qu'une seule espèce introduite, pas un mélange de deux espèces conjuguées en proportions variables."
+        },
+        {
+          "icon": "🧠",
+          "title": "Construire l'échelle des pKa et repérer la réaction prépondérante",
+          "content": "Dès qu'un exercice mélange plusieurs couples acide-base, la première étape indispensable est de construire une échelle verticale des pKa allant de 0 (couple H3O+/H2O) à 14 (couple H2O/HO-), en plaçant chaque couple introduit à la hauteur de son pKa, avec la base à gauche et l'acide à droite. La règle d'or à retenir : l'acide le plus fort présent en solution réagira avec la base la plus forte présente en solution. Sur l'échelle, l'acide le plus fort est celui situé le plus bas (pKa le plus petit), la base la plus forte est celle située le plus haut (pKa le plus grand). On trace alors ce qu'on appelle la règle du gamma : une flèche en diagonale reliant l'acide fort choisi vers la base forte choisie (les réactifs), puis on complète le schéma en croix vers les produits correspondants (l'acide donne sa base conjuguée, la base donne son acide conjugué). Cette méthode fonctionne aussi bien avec deux couples qu'avec plusieurs couples en présence : on identifie la première réaction prépondérante (le couple acide le plus fort avec le couple base le plus forte), on suppose qu'elle est totale si les espèces sont suffisamment éloignées en pKa, on regarde les espèces restantes en solution, et on répète le raisonnement pour une éventuelle deuxième réaction prépondérante avec les espèces qui subsistent."
+        },
+        {
+          "icon": "➗",
+          "title": "Le tableau d'avancement pour une réaction acido-basique",
+          "content": "Une fois la réaction prépondérante identifiée (par exemple A- + BH = AH + B-), on construit un tableau d'avancement classique avec les lignes t0 (état initial, en quantités de matière n0) et teq (état final, avec l'avancement xeq). Si la réaction est totale (ce qui est le cas général en acido-basique dès que Delta pKa > 2, voir plus loin), le réactif limitant est entièrement consommé à l'équilibre : sa quantité de matière finale est nulle, ce qui permet de déterminer directement xeq (il est égal à la quantité initiale du réactif limitant, à condition qu'aucun autre réactif ne soit en quantité inférieure). On calcule ensuite les quantités de matière finales de toutes les espèces, puis on convertit en concentrations en divisant par le volume total de la solution (C = n/V), une étape que beaucoup oublient sous la pression du temps en concours. Avec trois réactifs ou plus (par exemple A-, BH et CH), il peut y avoir plusieurs réactions successives : on traite d'abord la réaction la plus favorisée (acide le plus fort avec base la plus forte), on identifie le réactif limitant de cette première étape, puis on regarde s'il reste des espèces pouvant encore réagir entre elles pour une deuxième réaction prépondérante, et on construit alors un second tableau d'avancement à partir des quantités restantes après la première étape."
+        },
+        {
+          "icon": "🧠",
+          "title": "Réaction totale ou équilibrée : le critère du Delta pKa",
+          "content": "Pour savoir si une réaction acido-basique peut être considérée comme totale (donc traitée avec un tableau d'avancement simple où le réactif limitant disparaît complètement) ou si elle reste un équilibre partiel (nécessitant de résoudre l'expression de la constante d'équilibre K), on dispose de deux critères strictement équivalents, il suffit d'en vérifier un seul. Premier critère : Delta pKa = pKa(base) - pKa(acide) > 2, où pKa(base) et pKa(acide) sont les pKa des couples respectifs des réactifs engagés (pas des produits). Deuxième critère, équivalent : K = Ka(acide) / Ka(base) > 10^Delta pKa, ce qui revient à dire que la constante d'équilibre de la réaction doit dépasser environ 100 (10^2) pour être considérée comme totale. Plus Delta pKa est grand, plus la réaction est déplacée vers les produits et plus l'approximation 'réaction totale' est fiable. À l'inverse, si Delta pKa est petit (les deux couples ont des pKa proches), la réaction reste un équilibre authentique et il faut alors écrire l'expression complète de K et résoudre une équation du second degré (ou une approximation avec x petit) pour trouver l'avancement réel à l'équilibre. Ce critère est très demandé en QCM car il permet de trancher rapidement, sans calcul complet, si une simplification est légitime."
+        },
+        {
+          "icon": "⭐",
+          "title": "Déterminer le pH final après réaction : les trois situations classiques",
+          "content": "Une fois le tableau d'avancement résolu et les concentrations finales connues, il reste à déterminer quelle formule de pH appliquer, selon la nature des espèces restant majoritairement en solution. Trois cas de figure couvrent la quasi-totalité des situations rencontrées en PASS. Premier cas : il reste deux espèces acides en excès (ou deux espèces basiques) qui ne sont pas conjuguées entre elles ; c'est alors l'espèce la plus forte qui impose seule le pH (le pKa le plus petit pour des acides en compétition, le pKa le plus grand pour des bases en compétition), les autres espèces plus faibles étant négligeables devant elle. Deuxième cas : il reste un couple acide faible/base faible conjugué en solution (typiquement après une réaction acido-basique partielle ou lors d'un dosage à mi-chemin) ; on applique alors directement Henderson-Hasselbalch avec les concentrations finales de l'acide et de la base du même couple. Troisième cas : il reste un mélange équimolaire d'un acide faible et d'une base faible qui ne sont PAS conjugués entre eux (par exemple après une double réaction de dismutation) ; on utilise alors la même formule que pour les ampholytes, pH = (pKa1 + pKa2) / 2, en prenant les pKa des deux couples concernés."
+        },
+        {
+          "icon": "🔬",
+          "title": "Applications médicales : tampons physiologiques et dosages",
+          "content": "Les notions d'acide-base ne sont pas qu'un exercice de calcul, elles ont une importance physiologique majeure abordée en PASS. Le sang est maintenu à un pH remarquablement stable autour de 7,4 grâce à des systèmes tampons, dont le principal est le couple CO2,H2O/HCO3- (acide carbonique / bicarbonate), dont le pKa apparent avoisine 6,1 mais dont l'efficacité tampon repose sur la régulation couplée de la ventilation pulmonaire (qui élimine le CO2) et de l'excrétion rénale (qui régule le bicarbonate). D'autres couples tampons interviennent, comme les protéines plasmatiques (via leurs fonctions acides aminées) ou le couple phosphate H2PO4-/HPO4(2-), pertinent notamment dans le tampon intracellulaire et urinaire. Sur le plan analytique, les dosages acido-basiques permettent de déterminer la concentration inconnue d'un acide ou d'une base en suivant l'évolution du pH lors de l'ajout progressif d'un titrant de concentration connue : on repère l'équivalence (saut de pH, changement de couleur d'un indicateur coloré adapté) et, pour un acide faible dosé par une base forte, la demi-équivalence permet de lire le pKa du couple dosé grâce à Henderson-Hasselbalch. Ces notions relient directement la théorie du chapitre (échelle de pKa, formules de pH, réaction prépondérante) à des situations cliniques concrètes comme l'acidose ou l'alcalose métabolique et respiratoire."
+        }
+      ],
+      "fiche": [
+        "Bronsted : acide = donneur de H+, base = accepteur de H+. Lewis : acide = accepteur de doublet, base = donneur de doublet.",
+        "Un couple acide-base AH/A- est relié par AH + H2O = A- + H3O+ (le proton libre n'existe pas seul en solution).",
+        "Ampholyte : appartient à deux couples acide-base (peut être acide ou base). Zwitterion : charge globale nulle avec charges + et - égales. Ce ne sont PAS des synonymes.",
+        "L'eau est amphotère : autoprotolyse 2 H2O = H3O+ + HO-, avec Ke = [H3O+][HO-] = 10^-14 à 298 K, Ke dépend de T.",
+        "Ka = [A-][H3O+]/[AH] ; pKa = -log(Ka). Plus Ka est grand (pKa petit), plus l'acide est fort et sa base conjuguée est faible.",
+        "pKa ≤ 0 : acide fort. 0 < pKa < 14 : couple faible/faible. pKa ≥ 14 : base forte.",
+        "Acides forts à connaître : HCl, H3O+. Base forte à connaître : HO-. Sans indication contraire, une espèce est faible.",
+        "Dans l'eau, aucun acide n'est plus fort que H3O+, aucune base n'est plus forte que HO- (effet de nivellement).",
+        "Formules pH : AF pH=-log[AF] (pH≤6,5) ; BF pH=14+log[BF] (pH≥7,5) ; Af pH=(pKa-log[Af])/2 (pH≤6,5 et pH≤pKa-1) ; Bf pH=7+(pKa+log[Bf])/2 (pH≥7,5 et pH≥pKa+1). Toujours vérifier les conditions.",
+        "Henderson-Hasselbalch : pH = pKa + log([A-]/[AH]). Si [A-]=[AH], alors pH = pKa (zone tampon).",
+        "pH d'un ampholyte pur : pH = (pKa1 + pKa2)/2, sans condition de validité.",
+        "Réaction prépondérante : l'acide le plus fort réagit avec la base la plus forte (règle du gamma sur l'échelle des pKa).",
+        "Réaction totale si Delta pKa = pKa(base) - pKa(acide) > 2, équivalent à K = Ka(acide)/Ka(base) > 10^Delta pKa > 100.",
+        "Tableau d'avancement : si réaction totale, le réactif limitant disparaît (n final = 0) ; ne pas oublier de repasser en concentrations avec C = n/V.",
+        "Après réaction : 2 espèces acides/basiques en excès non conjuguées → la plus forte impose le pH ; couple conjugué restant → Henderson-Hasselbalch ; mélange équimolaire non conjugué → moyenne des pKa comme un ampholyte."
+      ],
+      "resources": [
+        {
+          "icon": "🎥",
+          "title": "Vidéo sur les couples acide-base et le pKa",
+          "description": "Cherche sur YouTube 'couple acide base pKa PASS' pour une explication visuelle claire de la construction de l'échelle des pKa et de la notion de force d'un acide.",
+          "url": "https://www.youtube.com/results?search_query=couple%20acide%20base%20pKa%20PASS"
+        },
+        {
+          "icon": "🎥",
+          "title": "Vidéo sur le tableau d'avancement",
+          "description": "Cherche sur YouTube 'tableau avancement réaction acido-basique' pour voir un exemple complet résolu pas à pas, avec passage des quantités de matière aux concentrations.",
+          "url": "https://www.youtube.com/results?search_query=tableau%20avancement%20r%C3%A9action%20acido-basique"
+        },
+        {
+          "icon": "📚",
+          "title": "Fiche formules de calcul du pH",
+          "description": "Recopie sur une fiche unique toutes les formules de pH (AF, BF, Af, Bf, ampholyte, Henderson-Hasselbalch) avec leurs conditions de validité, et entraîne-toi à vérifier ces conditions systématiquement avant de conclure.",
+          "url": "https://www.google.com/search?q=Fiche%20formules%20de%20calcul%20du%20pH%20R%C3%A9actions%20acide-base%20PASS"
+        },
+        {
+          "icon": "🧪",
+          "title": "Simulateur de dosage acido-basique en ligne",
+          "description": "Cherche 'simulation titrage acide base pH-metrie' pour visualiser une courbe de dosage interactive et repérer le point d'équivalence ainsi que la demi-équivalence où pH = pKa.",
+          "url": "https://www.google.com/search?q=Simulateur%20de%20dosage%20acido-basique%20en%20ligne%20R%C3%A9actions%20acide-base%20PASS"
+        },
+        {
+          "icon": "📝",
+          "title": "Annales de la fac sur l'acide-base",
+          "description": "Reprends les annales UE1 chimie des années précédentes de ta fac pour t'entraîner spécifiquement sur les exercices avec 2 ou 3 couples en présence et la recherche de la réaction prépondérante.",
+          "url": "https://www.google.com/search?q=Annales%20de%20la%20fac%20sur%20l%27acide-base%20R%C3%A9actions%20acide-base%20PASS"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Selon Bronsted, un acide est :",
+          "options": [
+            "Un accepteur de doublet électronique",
+            "Un donneur de proton H+",
+            "Un donneur de doublet électronique",
+            "Un accepteur de proton H+"
+          ],
+          "correct_index": 1,
+          "explanation": "Bien joué si tu as trouvé ! 🎉 Bronsted définit l'acide comme donneur de H+, la base comme accepteur de H+. La vision de Lewis (accepteur/donneur de doublet) est différente et plus générale."
+        },
+        {
+          "question": "Quelle est la différence essentielle entre un ampholyte et un zwitterion ?",
+          "options": [
+            "Ce sont des synonymes stricts",
+            "L'ampholyte appartient à deux couples acide-base, le zwitterion est une molécule neutre avec charges + et - égales : ce ne sont pas les mêmes propriétés",
+            "Le zwitterion est toujours un acide fort",
+            "L'ampholyte n'existe qu'en phase gazeuse"
+          ],
+          "correct_index": 1,
+          "explanation": "Piège classique évité, bravo ! 🐾 Un ampholyte peut réagir en acide ou en base ; un zwitterion a une charge globale nulle par compensation de charges. Une molécule peut être l'un sans être l'autre."
+        },
+        {
+          "question": "Le produit ionique de l'eau Ke à 298 K vaut :",
+          "options": [
+            "10^-7",
+            "10^-14",
+            "14",
+            "7"
+          ],
+          "correct_index": 1,
+          "explanation": "Parfait ! 💧 Ke = [H3O+][HO-] = 10^-14 à 298 K, ce qui donne pH=pOH=7 dans l'eau pure à cette température (mais Ke change avec T)."
+        },
+        {
+          "question": "Si le pKa d'un couple augmente, alors :",
+          "options": [
+            "Le Ka augmente et l'acide est plus fort",
+            "Le Ka diminue et l'acide est plus faible",
+            "Cela n'a aucun rapport avec la force de l'acide",
+            "La base conjuguée devient plus faible"
+          ],
+          "correct_index": 1,
+          "explanation": "Exactement ! 🌸 pKa = -log(Ka), donc pKa grand veut dire Ka petit, donc acide faible (et sa base conjuguée est alors relativement forte)."
+        },
+        {
+          "question": "Un acide de pKa égal à -3 est considéré comme :",
+          "options": [
+            "Un acide faible classique",
+            "Un ampholyte",
+            "Un acide fort, totalement dissocié dans l'eau",
+            "Une base forte"
+          ],
+          "correct_index": 2,
+          "explanation": "Oui oui oui ! ⚡ pKa ≤ 0 correspond à un acide fort : sa dissociation dans l'eau est considérée comme totale."
+        },
+        {
+          "question": "Dans l'eau, peut-on avoir un acide plus fort que H3O+ à l'état dissous ?",
+          "options": [
+            "Oui, HCl reste sous forme moléculaire",
+            "Non, un tel acide réagit totalement avec l'eau et se retrouve sous forme H3O+ (effet de nivellement)",
+            "Oui, si la concentration est très diluée",
+            "Non, car l'eau ne peut pas réagir avec un acide"
+          ],
+          "correct_index": 1,
+          "explanation": "Tout juste ! 🌊 C'est l'effet de nivellement : dans l'eau, aucun acide n'est 'plus fort' que H3O+ car il réagit totalement avec le solvant pour donner H3O+."
+        },
+        {
+          "question": "Quelle formule utilise-t-on pour un acide faible de concentration [Af] si les conditions pH ≤ 6,5 et pH ≤ pKa - 1 sont vérifiées ?",
+          "options": [
+            "pH = -log[Af]",
+            "pH = 14 + log[Af]",
+            "pH = (pKa - log[Af]) / 2",
+            "pH = pKa + log[Af]"
+          ],
+          "correct_index": 2,
+          "explanation": "Bravo ! 📐 pH = (pKa - log[Af]) / 2 est la formule spécifique de l'acide faible, valable uniquement sous ces deux conditions cumulatives."
+        },
+        {
+          "question": "La relation de Henderson-Hasselbalch s'écrit :",
+          "options": [
+            "pH = pKa + log([AH]/[A-])",
+            "pH = pKa + log([A-]/[AH])",
+            "pH = pKa - log([A-]/[AH])",
+            "pH = 14 - pKa - log([A-]/[AH])"
+          ],
+          "correct_index": 1,
+          "explanation": "Exact ! ⭐ pH = pKa + log([A-]/[AH]), avec les concentrations à l'équilibre. Quand [A-]=[AH], pH=pKa."
+        },
+        {
+          "question": "Le pH d'un ampholyte pur en solution se calcule par :",
+          "options": [
+            "pH = pKa1 - pKa2",
+            "pH = pKa1 + log([base]/[acide])",
+            "pH = (pKa1 + pKa2) / 2",
+            "pH = 14 - (pKa1 + pKa2)"
+          ],
+          "correct_index": 2,
+          "explanation": "Nickel ! 🧠 pH = (pKa1+pKa2)/2 est valable sans aucune condition pour un ampholyte pur, contrairement aux autres formules de pH."
+        },
+        {
+          "question": "Sur une échelle de pKa, quelle réaction est prépondérante entre plusieurs couples en présence ?",
+          "options": [
+            "Celle entre l'acide le plus faible et la base la plus faible",
+            "Celle entre l'acide le plus fort et la base la plus forte",
+            "Celle entre les deux couples ayant le même pKa",
+            "Il n'y a jamais de réaction prépondérante possible"
+          ],
+          "correct_index": 1,
+          "explanation": "Yes ! 🎯 La règle du gamma : l'acide le plus fort (pKa le plus bas parmi les acides présents) réagit avec la base la plus forte (pKa le plus haut parmi les bases présentes)."
+        },
+        {
+          "question": "Une réaction acido-basique est considérée comme totale si :",
+          "options": [
+            "Delta pKa = pKa(base) - pKa(acide) < 2",
+            "Delta pKa = pKa(base) - pKa(acide) > 2",
+            "Le volume de la solution est supérieur à 1 L",
+            "La température est inférieure à 0°C"
+          ],
+          "correct_index": 1,
+          "explanation": "Parfait ! 🔥 Si Delta pKa > 2 (équivalent à K > 100), on considère que la réaction va totalement vers les produits."
+        },
+        {
+          "question": "Dans un tableau d'avancement pour une réaction totale, comment identifie-t-on l'avancement final xeq ?",
+          "options": [
+            "Il est toujours égal à zéro",
+            "Il correspond à la quantité de matière initiale du réactif en excès",
+            "Il correspond à la quantité de matière initiale du réactif limitant, entièrement consommé",
+            "Il ne peut pas être calculé sans connaître le volume"
+          ],
+          "correct_index": 2,
+          "explanation": "Exactement ! ➗ Pour une réaction totale, le réactif limitant disparaît complètement (n final = 0), ce qui donne directement xeq = n0 du réactif limitant."
+        },
+        {
+          "question": "S'il reste, après réaction, deux espèces basiques non conjuguées en solution, quel pH observe-t-on ?",
+          "options": [
+            "La moyenne des deux pKa des couples",
+            "Celui imposé par la base la plus forte (pKa le plus grand), l'autre étant négligeable",
+            "Celui imposé par la base la plus faible",
+            "Le pH ne peut pas être déterminé dans ce cas"
+          ],
+          "correct_index": 1,
+          "explanation": "Tout à fait ! 🧠 Quand deux bases non conjuguées coexistent, c'est la plus forte (pKa le plus élevé) qui impose le pH, l'autre restant négligeable devant elle."
+        },
+        {
+          "question": "Quel est le pKa approximatif du couple COOH/COO- isolé (hors molécule complexe) ?",
+          "options": [
+            "Environ 4",
+            "Environ 9,5",
+            "Environ 0",
+            "Environ 14"
+          ],
+          "correct_index": 0,
+          "explanation": "Bien vu ! ⭐ pKa(COOH/COO-) est de l'ordre de 4 pour un acide carboxylique isolé, souvent plus proche de 2 dans un acide aminé du fait de l'environnement électronique."
+        },
+        {
+          "question": "À la demi-équivalence d'un dosage d'un acide faible par une base forte, on a :",
+          "options": [
+            "pH = 7 toujours",
+            "pH = pKa du couple dosé",
+            "pH = 14 - pKa",
+            "Le pH n'a aucune signification particulière"
+          ],
+          "correct_index": 1,
+          "explanation": "Exact ! 🎥 À la demi-équivalence, [A-] = [AH], donc d'après Henderson-Hasselbalch, pH = pKa : c'est une méthode classique pour lire un pKa sur une courbe de titrage."
+        },
+        {
+          "question": "Quelle espèce est le principal tampon physiologique du sang, avec un pKa apparent voisin de 6,1 ?",
+          "options": [
+            "Le couple NH4+/NH3",
+            "Le couple CO2,H2O/HCO3-",
+            "Le couple H3PO4/H2PO4-",
+            "Le couple H3O+/H2O"
+          ],
+          "correct_index": 1,
+          "explanation": "Bravo ! 🩸 Le couple acide carbonique/bicarbonate régule le pH sanguin, avec une élimination du CO2 par les poumons et une régulation du bicarbonate par les reins."
+        },
+        {
+          "question": "Pourquoi doit-on toujours vérifier les conditions de validité (pH≤6,5, pH≤pKa-1, etc.) après avoir appliqué une formule simplifiée de pH ?",
+          "options": [
+            "Par simple habitude, cela n'a pas d'impact réel",
+            "Parce que si elles ne sont pas vérifiées, l'autoprotolyse de l'eau n'est plus négligeable et la formule simplifiée devient invalide",
+            "Parce que ces conditions ne s'appliquent qu'aux bases",
+            "Parce que le volume de la solution change ces conditions"
+          ],
+          "correct_index": 1,
+          "explanation": "Oui exactement ! ⚠️ Si les conditions ne sont pas remplies, l'autoprotolyse de l'eau devient significative et il faut résoudre le problème exactement, pas avec la formule approchée."
+        },
+        {
+          "question": "Sur l'échelle des pKa (de 0 à 14), où se situe le couple HO-/H2O ?",
+          "options": [
+            "Au pKa = 0",
+            "Au pKa = 7",
+            "Au pKa = 14 (borne supérieure)",
+            "Il n'apparaît pas sur cette échelle"
+          ],
+          "correct_index": 2,
+          "explanation": "Bien joué ! 🧠 Le couple H2O/HO- se situe au pKa=14, en haut de l'échelle : HO- y est donc la base la plus forte possible dans l'eau."
+        }
+      ],
+      "exercises": {
+        "facile": [
+          {
+            "statement": "Définir un acide et une base selon Bronsted.",
+            "solution": "Un acide est un donneur de proton H+, une base est un accepteur de proton H+."
+          },
+          {
+            "statement": "Écrire la réaction de dissociation d'un acide AH dans l'eau.",
+            "solution": "AH + H2O = A- + H3O+ (le proton n'existant pas libre en solution, on écrit la réaction avec l'eau comme partenaire)."
+          },
+          {
+            "statement": "Donner la valeur du produit ionique de l'eau Ke à 298 K.",
+            "solution": "Ke = [H3O+][HO-] = 10^-14 à 298 K."
+          },
+          {
+            "statement": "Le pKa d'un couple est de -2. Cet acide est-il fort ou faible ?",
+            "solution": "pKa ≤ 0 donc l'acide est fort, sa dissociation dans l'eau est totale."
+          },
+          {
+            "statement": "Citer un acide fort et une base forte à connaître par coeur.",
+            "solution": "Acides forts : HCl, H3O+. Base forte : HO-."
+          },
+          {
+            "statement": "Écrire l'expression de la constante d'acidité Ka pour le couple AH/A-.",
+            "solution": "Ka = [A-][H3O+] / [AH] (concentrations à l'équilibre)."
+          },
+          {
+            "statement": "Quelle formule utilise-t-on pour calculer le pH d'un ampholyte pur ?",
+            "solution": "pH = (pKa1 + pKa2) / 2, sans condition de validité particulière."
+          },
+          {
+            "statement": "Vrai ou faux : un zwitterion est toujours un ampholyte.",
+            "solution": "Faux. Ce sont deux notions distinctes, un zwitterion n'est pas nécessairement amphotère et inversement."
+          },
+          {
+            "statement": "Écrire la relation entre pKa et Ka.",
+            "solution": "pKa = -log(Ka), soit Ka = 10^(-pKa)."
+          },
+          {
+            "statement": "Un couple a un pKa de 16. Est-ce une base forte ou faible ?",
+            "solution": "pKa ≥ 14 signifie que la base du couple est forte (et son acide conjugué très faible)."
+          }
+        ],
+        "moyen": [
+          {
+            "statement": "On mélange une solution d'acide fort AF de concentration 10^-2 mol/L. Calculer le pH en vérifiant la condition de validité.",
+            "solution": "pH = -log(10^-2) = 2. Condition pH ≤ 6,5 vérifiée (2 ≤ 6,5), la formule est donc valide."
+          },
+          {
+            "statement": "Un acide faible Af de concentration 10^-2 mol/L a un pKa de 4,8. Calculer le pH et vérifier les conditions.",
+            "solution": "pH = (4,8 - log(10^-2))/2 = (4,8+2)/2 = 3,4. Conditions : pH ≤ 6,5 (oui) et pH ≤ pKa-1 = 3,8 (3,4 ≤ 3,8, oui). Formule valide, pH = 3,4."
+          },
+          {
+            "statement": "On a un couple acide-base faible en solution avec [A-] = 2x[AH] et pKa = 5. Calculer le pH avec Henderson-Hasselbalch.",
+            "solution": "pH = pKa + log([A-]/[AH]) = 5 + log(2) = 5 + 0,3 = 5,3."
+          },
+          {
+            "statement": "Deux couples sont en solution : BH/B- (pKa=5) et AH/A- (pKa=9). On mélange B- et AH. Identifier la réaction prépondérante.",
+            "solution": "Il faut comparer les couples introduits : B- (base du couple pKa=5) et AH (acide du couple pKa=9). L'acide le plus fort réagissant avec la base la plus forte présentes : ici seuls B- et AH sont en présence, la réaction est B- + AH = BH + A- (B- capte le proton de AH)."
+          },
+          {
+            "statement": "Calculer Delta pKa pour la réaction précédente et dire si elle est totale.",
+            "solution": "Delta pKa = pKa(base) - pKa(acide) = pKa(BH/B-, ici B- est la base) - pKa(AH/A-, acide) = 5 - 9 = -4, donc négatif, donc la réaction n'est PAS totale (elle est même défavorisée dans ce sens ; c'est en fait la réaction inverse A- + BH qui serait totale avec Delta pKa = 9-5 = 4 > 2)."
+          },
+          {
+            "statement": "On dose 20 mL d'un acide faible de concentration inconnue par de la soude à 0,1 mol/L. L'équivalence est atteinte à 15 mL. Calculer la concentration initiale de l'acide.",
+            "solution": "À l'équivalence, n(acide) = n(soude versée) : Ca × 20e-3 = 0,1 × 15e-3, donc Ca = (0,1×15)/20 = 0,075 mol/L."
+          },
+          {
+            "statement": "Pour le dosage précédent, on lit à la demi-équivalence (7,5 mL versés) un pH de 4,2. Que représente cette valeur ?",
+            "solution": "À la demi-équivalence, pH = pKa du couple acide faible/base conjuguée dosé, donc pKa = 4,2."
+          },
+          {
+            "statement": "On mélange un acide fort AF de concentration 5.10^-3 mol/L et une base forte BF de même concentration en volumes égaux. Calculer le pH final.",
+            "solution": "Les deux réagissent totalement l'un avec l'autre (réaction de neutralisation totale) en quantités égales, il ne reste ni excès d'acide ni excès de base : le pH final est celui de l'eau pure, soit pH = 7 (à 298K)."
+          },
+          {
+            "statement": "Un ampholyte HCO3- est en solution pure, encadré par les couples pKa1 = 6,4 et pKa2 = 10,3. Calculer son pH.",
+            "solution": "pH = (pKa1+pKa2)/2 = (6,4+10,3)/2 = 8,35."
+          },
+          {
+            "statement": "Une base faible Bf de concentration 10^-2 mol/L a un pKa de 9,2. Calculer le pH et vérifier les conditions.",
+            "solution": "pH = 7 + (pKa+log[Bf])/2 = 7 + (9,2 + (-2))/2 = 7 + 3,6 = 10,6. Conditions : pH ≥ 7,5 (oui, 10,6) et pH ≥ pKa+1 = 10,2 (10,6 ≥ 10,2, oui). Formule valide."
+          }
+        ],
+        "difficile": [
+          {
+            "statement": "On met en solution trois couples : A-/AH (pKa=9), BH/B- (pKa=5) et CH/C- (pKa=2), avec n0(A-)=n0(BH)=n0(CH)=0,01 mol. Déterminer les réactions successives et les espèces finales.",
+            "solution": "Échelle : CH (pKa=2, acide le plus fort) réagit d'abord avec A- (base la plus forte, pKa=9) : A- + CH = AH + C-, Delta pKa=9-2=7>2, totale. CH limitant (0,01 mol) donc consommé totalement, produisant 0,01 mol AH et 0,01 mol C-, il reste 0 mol A-. Il reste alors AH (0,01), BH (0,01), C- (0,01). Deuxième réaction possible : l'acide le plus fort restant est AH (pKa=9) contre BH (pKa=5) : mais AH a un pKa plus élevé que BH donc AH est l'acide le PLUS FAIBLE des deux restants, c'est en fait BH qui est le plus fort, et la base la plus forte restante est C- (pKa du couple CH/C-=2, donc C- est une base très forte car son acide conjugué CH est très faible... en réalité il faut comparer B- serait la base, mais on a BH pas B-). BH (acide, pKa=5) peut réagir avec C- (base du couple pKa=2) : BH + C- = B- + CH, Delta pKa = 2-5 = -3 <0, non favorisée. Donc aucune deuxième réaction significative : les espèces finales sont AH, BH, C- en solution, il ne reste qu'un acide faible AH et une base plutôt faible C-, on regarde alors quelle formule appliquer selon les concentrations restantes (ici un mélange d'espèces non conjuguées, l'espèce la plus indicatrice du pH dépend des concentrations finales)."
+          },
+          {
+            "statement": "Démontrer que Delta pKa > 2 est équivalent à K > 10^2 pour une réaction A- + BH = AH + B-.",
+            "solution": "K = ([AH][B-])/([A-][BH]) = (Ka(BH)/Ka(AH)) car en multipliant/divisant par [H3O+] on retrouve K = Ka(acide reactif, BH)/Ka(acide produit associé, AH). En prenant le log : log(K) = pKa(AH) - pKa(BH) = Delta pKa (différence base moins acide, ici AH est associé à la base A- réactif). Donc K = 10^(Delta pKa), et Delta pKa>2 équivaut directement à K>10^2."
+          },
+          {
+            "statement": "On verse progressivement de la soude (0,1 mol/L) dans 20 mL d'une solution d'acide faible AH de pKa=4,8 et de concentration 0,1 mol/L. Calculer le pH après ajout de 5 mL de soude (avant l'équivalence qui est à 20 mL).",
+            "solution": "n0(AH)=0,1×20e-3=2e-3 mol. n(soude ajoutée)=0,1×5e-3=5e-4 mol, totalement consommée (réaction totale acide faible/base forte, Delta pKa=14-4,8=9,2>2). n(AH restant)=2e-3-5e-4=1,5e-3 mol, n(A- formé)=5e-4 mol. Henderson-Hasselbalch : pH=pKa+log(nA-/nAH)=4,8+log(5e-4/1,5e-3)=4,8+log(1/3)=4,8-0,48=4,32."
+          },
+          {
+            "statement": "Un mélange contient un acide faible A1H (pKa=5) à 0,02 mol/L et une base faible B2 (pKa=9, non conjuguée à A1H) à 0,02 mol/L. En admettant que la réaction entre eux est totale, déterminer le pH final.",
+            "solution": "Réaction : A1H + B2 = A1- + B2H (Delta pKa=9-5=4>2, totale). Étant en quantités égales, les deux réactifs sont consommés simultanément (aucun excès), on se retrouve avec un mélange équimolaire de A1- (base faible du couple pKa=5) et B2H (acide faible du couple pKa=9), qui sont deux espèces faibles non conjuguées entre elles : on applique la formule de type ampholyte, pH=(pKa1+pKa2)/2=(5+9)/2=7."
+          },
+          {
+            "statement": "Calculer le pH d'une solution obtenue en mélangeant 10 mL d'acide fort à 0,05 mol/L et 30 mL d'eau pure.",
+            "solution": "Par dilution, [AF] finale = (0,05×10)/(10+30) = 0,5/40 = 0,0125 mol/L. pH=-log(0,0125)=1,9. Condition pH≤6,5 vérifiée."
+          },
+          {
+            "statement": "Justifier pourquoi, en présence d'un excès d'acide fort et d'un acide faible dans la même solution, c'est l'acide fort qui impose le pH.",
+            "solution": "L'acide fort est totalement dissocié et fournit directement du H3O+ en grande quantité, alors que l'acide faible en présence d'un excès de H3O+ voit son propre équilibre de dissociation fortement déplacé vers la forme AH non dissociée (effet d'ion commun), le rendant négligeable comme source de H3O+ supplémentaire. Le pH est donc quasi entièrement fixé par la concentration de l'acide fort."
+          },
+          {
+            "statement": "Deux acides faibles A1H (pKa=4, C1=0,01 mol/L) et A2H (pKa=6, C2=0,1 mol/L) sont en solution sans réagir entre eux (couples non liés directement). Quel critère utiliser pour savoir lequel impose le pH, et pourquoi ne peut-on pas simplement comparer les pKa seuls ?",
+            "solution": "Il faut comparer les concentrations en H3O+ que chacun génère isolément (via la formule pH=(pKa-logC)/2), pas seulement les pKa, car la concentration influence aussi la dissociation. Calcul : pH1=(4-log(0,01))/2=(4+2)/2=3 ; pH2=(6-log(0,1))/2=(6+1)/2=3,5. L'espèce donnant le pH le plus bas (le plus acide) domine : ici A1H impose le pH d'environ 3, car il produit davantage de H3O+ malgré un pKa proche."
+          },
+          {
+            "statement": "On veut préparer un tampon acétique/acétate de pH=5 avec un couple de pKa=4,8. Déterminer le rapport [A-]/[AH] nécessaire.",
+            "solution": "Henderson-Hasselbalch : 5=4,8+log([A-]/[AH]), donc log([A-]/[AH])=0,2, donc [A-]/[AH]=10^0,2=1,585. Il faut environ 1,6 fois plus de base conjuguée que d'acide."
+          },
+          {
+            "statement": "Expliquer pourquoi, lors d'un dosage pH-métrique d'un diacide (deux pKa bien séparés, Delta pKa>2 entre les deux acidités), on observe deux sauts de pH successifs.",
+            "solution": "Chaque acidité du diacide est neutralisée successivement par la base forte titrante : la première acidité (pKa le plus bas) réagit en premier de façon quasi totale avant que la seconde ne commence à réagir significativement, car les deux pKa sont suffisamment séparés (Delta pKa>2) pour que les deux réactions de neutralisation soient distinctement séquentielles, produisant deux points d'équivalence et donc deux sauts de pH sur la courbe."
+          },
+          {
+            "statement": "Un mélange de deux bases fortes de concentrations C1=0,01 mol/L et C2=0,02 mol/L (base forte égale HO- totalement dissocié) est réalisé en volumes égaux. Calculer le pH final.",
+            "solution": "Les deux bases fortes se comportent comme deux sources de HO-, leurs concentrations s'additionnent après dilution par mélange : [HO-] finale = (C1×V+C2×V)/(2V) = (0,01+0,02)/2 = 0,015 mol/L. pH=14+log(0,015)=14-1,82=12,18."
+          }
+        ]
+      }
+    },
+    {
+      "id": "redox",
+      "title": "Oxydoréduction",
+      "difficulty": 2,
+      "intro": "Prête à échanger des électrons comme des petits cadeaux invisibles ? Cette fiche va faire briller tes couples redox ✨🔋",
+      "diagram": "flowchart TD\nA[Oxydoreduction] --> B[Couple redox]\nB --> B1[Oxydant accepteur electrons]\nB --> B2[Reducteur donneur electrons]\nB --> B3[Equilibrage demi equation]\nA --> C[Reaction entre couples]\nC --> C1[Echange electrons]\nC --> C2[Constante equilibre K]\nC --> C3[Facteur multiplicatif electrons]\nA --> D[Pile et fem]\nD --> D1[Formule delta G egale moins nFE]\nD --> D2[Equation de Nernst globale]\nD --> D3[Sens spontane selon signe E]\nA --> E[Potentiel standard couple]\nE --> E1[Reference H plus sur H2]\nE --> E2[Equation de Nernst couple]\nE --> E3[Depend de la temperature]\nA --> F[Classement des couples]\nF --> F1[Methode du gamma]\nF --> F2[Oxydant fort en haut]\nF --> F3[Reducteur fort en bas]",
+      "course": [
+        {
+          "icon": "🔬",
+          "title": "Oxydant, réducteur et couple redox",
+          "content": "Une réaction d'oxydoréduction repose sur un principe simple : un transfert d'électrons entre deux espèces chimiques. L'oxydant est l'espèce qui capte des électrons (elle se réduit), le réducteur est celle qui en cède (elle s'oxyde). On les associe toujours par paires appelées couples redox, notées Ox/Red, reliées par la demi-équation générale Ox + n e- = Red. Attention au sens : une oxydation correspond à une perte d'électrons, une réduction à un gain. Un moyen mnémotechnique classique consiste à retenir que le Réducteur Réduit (il fait perdre des électrons à l'autre en lui en donnant) tandis que l'Oxydant Oxyde. Dans une copie, il faut absolument savoir écrire la demi-équation propre d'un couple donné, car c'est la base de tout exercice de chimie des solutions en PASS. Prenons un exemple différent de celui du cours : le couple Cr2O7 2-/Cr3+, très classique en dosage. On équilibre d'abord le chrome, puis l'oxygène avec des molécules d'eau, puis l'hydrogène avec des protons H+, et enfin la charge avec des électrons, qui se placent toujours du côté de l'oxydant. Le piège fréquent est d'oublier que les électrons figurent uniquement dans la demi-équation, jamais dans l'équation bilan finale une fois les deux demi-équations combinées et simplifiées."
+        },
+        {
+          "icon": "🔬",
+          "title": "Méthode d'équilibrage d'une demi-équation",
+          "content": "La méthode se déroule toujours dans le même ordre, à appliquer sans réfléchir tellement elle doit devenir un réflexe automatique. Premièrement, équilibrer les atomes autres que l'oxygène et l'hydrogène (carbone, azote, métaux de transition) à l'aide des coefficients stœchiométriques. Deuxièmement, équilibrer les atomes d'oxygène en ajoutant des molécules d'eau H2O du côté qui en manque. Troisièmement, équilibrer les atomes d'hydrogène en ajoutant des ions H+ du côté qui en manque. Quatrièmement, équilibrer les charges électriques totales de part et d'autre en ajoutant des électrons e-, qui se retrouvent systématiquement du côté de l'oxydant. Un exemple utile à s'entraîner soi-même : le couple NO3-/NO en milieu acide, qui donne après équilibrage NO3- + 4H+ + 3e- = NO + 2H2O. Le piège classique est d'inverser l'ordre (équilibrer H avant O) ou d'oublier que le nombre d'électrons doit rendre les charges strictement égales des deux côtés, pas seulement les atomes. Il est aussi essentiel de vérifier son équation à la fin en comptant séparément les charges à gauche et à droite : c'est la meilleure façon de repérer une erreur avant de rendre sa copie."
+        },
+        {
+          "icon": "⭐",
+          "title": "Combiner deux couples en une réaction globale",
+          "content": "Une réaction d'oxydoréduction met en jeu deux couples : le réducteur d'un couple cède ses électrons à l'oxydant de l'autre couple, sans qu'il en reste de libres à la fin. On écrit a Red1 + b Ox2 → c Red2 + d Ox1. Pour équilibrer cette réaction globale, on écrit d'abord séparément les deux demi-équations de couple, puis on cherche un facteur multiplicatif commun pour que le nombre d'électrons échangés soit identique dans les deux demi-équations (comme trouver un plus petit commun multiple). On additionne ensuite les deux équations en respectant le sens : le couple qui joue son rôle d'oxydant doit avoir son oxydant à gauche, et le couple qui joue son rôle de réducteur doit avoir son réducteur à gauche. Enfin, on simplifie pour faire disparaître totalement les électrons, et éventuellement les H+ et H2O en commun des deux côtés. Un exemple original : le couple Fe3+/Fe2+ (n=1) face au couple I2/I- (n=2) ; il faut multiplier la demi-équation du fer par 2 pour équilibrer les électrons avant de sommer, ce qui donne 2 Fe3+ + 2 I- → 2 Fe2+ + I2. Le piège récurrent est d'additionner les équations sans avoir égalisé le nombre d'électrons au préalable, ce qui rend le bilan faux même si chaque demi-équation est correcte individuellement."
+        },
+        {
+          "icon": "🧠",
+          "title": "Constante d'équilibre et avancement",
+          "content": "Toute réaction d'oxydoréduction possède une constante d'équilibre K qui caractérise l'état final atteint dans un système fermé, à ne pas confondre avec l'avancement à un instant t noté Γ (gamma). Pour la réaction a Red1 + b Ox2 → c Red2 + d Ox1, la constante s'écrit K = [Ox1]^d[Red2]^c / ([Red1]^a[Ox2]^b), c'est-à-dire produits sur réactifs à l'équilibre, chaque concentration étant élevée à la puissance de son coefficient stœchiométrique. Cette constante ne dépend que de la température, jamais des concentrations initiales : elle traduit une propriété thermodynamique intrinsèque de la réaction. Plus K est grand, plus la réaction est déplacée vers la formation des produits, donc plus elle est thermodynamiquement favorable dans le sens direct. Un piège classique en QCM consiste à inverser numérateur et dénominateur, ou à oublier les exposants stœchiométriques. Il faut aussi bien distinguer Γ, qui varie au cours du temps tant que la réaction n'a pas atteint son état final, de K qui est une valeur fixe atteinte uniquement à l'équilibre thermodynamique, quand ΔrG = 0 et donc quand la force électromotrice E de la pile associée est nulle."
+        },
+        {
+          "icon": "🔬",
+          "title": "Force électromotrice et enthalpie libre",
+          "content": "La force électromotrice (f.e.m.) E d'une pile relie directement la chimie à la thermodynamique via la relation ΔrG(T,P) = -nFE, où n est le nombre d'électrons échangés dans la réaction bilan, F la constante de Faraday (96500 C/mol, valeur toujours fournie en énoncé) et E la f.e.m. exprimée en volts. Dans les conditions standards, cette relation devient ΔrG°(T,P) = -nFE°. Physiquement, E est la différence entre le potentiel de l'électrode positive (le pôle où a lieu la réduction, la cathode) et celui de l'électrode négative (le pôle où a lieu l'oxydation, l'anode) : E = E+ - E-. Cette formule permet de faire le pont entre un critère purement électrochimique (le signe de E) et un critère thermodynamique (le signe de ΔrG), sachant qu'une réaction spontanée correspond toujours à ΔrG négatif, donc à E positif. Le piège fréquent est d'oublier le signe négatif dans la formule ou de confondre n (nombre d'électrons échangés dans la réaction globale équilibrée) avec le nombre d'électrons d'une seule demi-équation non multipliée. Il faut toujours vérifier son n en reprenant l'équation bilan finalement équilibrée, après avoir appliqué les facteurs multiplicatifs nécessaires."
+        },
+        {
+          "icon": "🔬",
+          "title": "Équation de Nernst pour une réaction entre deux couples",
+          "content": "L'équation de Nernst relie la f.e.m. réelle E à la f.e.m. standard E° et à l'avancement de la réaction via le quotient réactionnel Γ. Dans sa forme générale : E(T,P) = E° - (RT/nF) ln Γ, et à 298 K on utilise l'expression numérique simplifiée E = E° - (0,06/n) log Γ, avec E° = (0,06/n) log K à cette même température. Il est essentiel de bien distinguer le ln, utilisé dans la formule générale à toute température, du log en base 10 utilisé uniquement dans l'approximation numérique à 298 K avec le fameux facteur 0,06. Une réaction est à l'équilibre exactement quand ΔrG = 0, ce qui équivaut à E = 0 : à ce moment, Γ atteint la valeur particulière K. Si E de la pile est positif, la réaction évolue spontanément dans le sens direct (sens 1) jusqu'à l'équilibre ; si E est négatif, elle évolue spontanément dans le sens indirect (sens 2). Le piège classique en QCM est de confondre le signe de E avec le signe de K (K n'a pas de signe, c'est toujours un nombre positif, c'est son ordre de grandeur par rapport à 1 qui renseigne sur le sens favorisé) et d'oublier que le facteur 0,06 n'est valable qu'à 298 K précisément, pas à une température quelconque."
+        },
+        {
+          "icon": "⭐",
+          "title": "Potentiel standard d'un couple redox et référence H+/H2",
+          "content": "Pour caractériser un couple redox indépendamment de tout autre couple, on l'associe fictivement à une pile de référence face au couple H+/H2 (aussi noté H3O+/H2 en solution aqueuse, car le proton libre n'existe jamais seul en solution). Par convention internationale, le potentiel standard de ce couple de référence est fixé à E°(H+/H2) = 0 V à toute température. Le potentiel standard E°(Ox/Red) d'un couple quelconque est alors la f.e.m. standard de la pile formée par ce couple face à cette référence, dans le sens où l'oxydant du couple étudié est réduit (c'est cette convention de sens qui fixe le signe de E°, pas le sens réel spontané de la réaction). C'est une grandeur thermodynamique caractéristique du couple qui varie avec la température. Retenir que plus E° est positif, plus l'oxydant du couple est un oxydant fort (il capte facilement les électrons) ; plus E° est négatif, plus c'est le réducteur du couple qui est fort (il cède facilement ses électrons). Exemple concret : E°(F2/F-) est très positif (environ +2,87 V), F2 est donc un oxydant redoutable, tandis que E°(Li+/Li) est très négatif (environ -3,04 V), Li est donc un réducteur extrêmement puissant. Le piège est de croire que le potentiel standard dépend des concentrations : non, c'est justement une valeur de référence fixée dans les conditions standards (activités unitaires)."
+        },
+        {
+          "icon": "🔬",
+          "title": "Équation de Nernst appliquée à un couple isolé",
+          "content": "Pour un couple Ox/Red seul, écrit sous forme générale a Ox + n e- = b Red, l'équation de Nernst donne le potentiel réel E en fonction des concentrations : E = E° + (RT/nF) ln([Ox]^a/[Red]^b), soit à 298 K, E = E° + (0,06/n) log([Ox]^a/[Red]^b). Le point crucial à ne jamais confondre avec la formule précédente pour une réaction entre deux couples : ici c'est un signe plus devant le terme logarithmique, alors que pour la f.e.m. d'une réaction entre deux couples c'était un signe moins. Cette distinction est l'un des pièges les plus classiques des QCM de chimie PASS. Une façon de s'en souvenir : pour un couple isolé, on regarde le rapport oxydant sur réducteur (Ox au numérateur, comme l'ordre alphabétique Ox avant Red rappelle le signe plus), alors que pour une réaction entre deux couples, on manipule un quotient réactionnel global Γ construit à partir des produits et réactifs de la réaction, avec un signe moins. Une conséquence importante : plus la concentration en oxydant augmente par rapport au réducteur, plus E augmente (le couple devient plus oxydant en pratique), ce qui est cohérent avec le principe de Le Chatelier appliqué à l'équilibre électrochimique."
+        },
+        {
+          "icon": "🧠",
+          "title": "Comparer un couple au couple de référence H+/H2",
+          "content": "Pour déterminer si un oxydant donné est plus fort ou plus faible que H+, on raisonne sur le signe du potentiel standard du couple étudié comparé à zéro. Si E°(Ox/Red) est positif, alors ΔrG de la réaction entre ce couple et H+/H2 est négatif dans le sens où Ox oxyde H2 : Ox est donc un oxydant plus fort que H+, et symétriquement H2 est un réducteur plus fort que Red. À l'inverse, si E°(Ox/Red) est négatif, c'est Red qui réduit spontanément H3O+ : Red est un réducteur plus fort que H2, et H+ est un oxydant plus fort qu'Ox. La règle mnémotechnique à retenir absolument : un potentiel standard positif signale un oxydant puissant, un potentiel standard négatif signale un réducteur puissant. Cette logique se généralise à la comparaison de deux couples quelconques entre eux, pas seulement face à H+/H2 : le couple avec le E° le plus élevé possède l'oxydant le plus fort, celui avec le E° le plus bas possède le réducteur le plus fort. Le piège est d'oublier que cette comparaison ne concerne que les formes correspondantes (l'oxydant d'un côté, le réducteur de l'autre) et non les deux formes du même couple, qui elles sont toujours en équilibre l'une avec l'autre par définition du couple."
+        },
+        {
+          "icon": "➗",
+          "title": "La méthode du gamma pour classer les couples",
+          "content": "Pour déterminer rapidement le sens spontané d'une réaction entre deux couples dont on connaît les potentiels standards, on utilise la méthode du gamma, calquée sur celle des couples acide-base. On trace un axe vertical gradué en E° croissant, on place chaque couple à sa hauteur correspondante avec l'oxydant à gauche et le réducteur à droite. Le couple avec le E° le plus haut porte l'oxydant le plus fort (en haut à droite du gamma), le couple avec le E° le plus bas porte le réducteur le plus fort (en bas à gauche). On trace ensuite une forme en gamma reliant l'oxydant du couple du haut au réducteur du couple du bas, en passant par le milieu : la réaction spontanée est celle qui part du couple du haut à gauche et rejoint le couple du bas à droite, c'est-à-dire l'oxydant fort (en haut) qui réagit avec le réducteur fort (en bas). Exemple numérique classique : entre Cu2+/Cu (E°=+0,34 V) et Zn2+/Zn (E°=-0,76 V), le couple du cuivre est au-dessus, celui du zinc en-dessous ; la réaction spontanée est donc Cu2+ + Zn → Cu + Zn2+, cohérente avec le fait que le zinc est plus facilement oxydable que le cuivre (utilisé en pratique dans la protection cathodique des coques de bateaux). Le piège est d'inverser le sens du gamma ou de mal placer les couples sur l'axe si on confond E° et E réel (en conditions non standards, c'est E qu'il faut utiliser, pas E°)."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Pièges classiques et erreurs fréquentes",
+          "content": "Premier piège : confondre le signe de l'équation de Nernst entre un couple isolé (plus) et une réaction entre deux couples (moins) — toujours vérifier de quelle situation il s'agit avant d'écrire la formule. Deuxième piège : oublier que n dans la formule ΔrG = -nFE doit correspondre au nombre d'électrons de la réaction bilan globale équilibrée, après application des facteurs multiplicatifs, et non au nombre d'électrons d'une seule demi-équation non ajustée. Troisième piège : confondre Γ (avancement à un instant t quelconque, qui varie) et K (avancement uniquement à l'équilibre, valeur fixe à température donnée) — la réaction n'est à l'équilibre que si Γ=K, ce qui correspond exactement à E=0. Quatrième piège : croire que le potentiel standard dépend des concentrations, alors qu'il s'agit justement d'une valeur fixée dans les conditions standards, indépendante de la composition réelle du milieu ; seul E (potentiel réel, via Nernst) dépend des concentrations. Cinquième piège, très fréquent en équilibrage : oublier de replacer les électrons du bon côté (toujours du côté de l'oxydant dans une demi-équation) ou de ne pas vérifier l'égalité des charges de part et d'autre après ajout des H+ et des H2O. Sixième piège : dans la méthode du gamma, inverser l'ordre de soustraction E°(oxydant) moins E°(réducteur) au lieu de l'ordre inverse, ce qui change le signe final de la f.e.m. calculée."
+        },
+        {
+          "icon": "⭐",
+          "title": "Applications concrètes : piles et dosages redox",
+          "content": "Les couples redox et leurs potentiels standards trouvent des applications directes très testées en PASS. La pile Daniell, exemple historique, associe une électrode de zinc plongée dans une solution de Zn2+ à une électrode de cuivre plongée dans une solution de Cu2+, séparées par un pont salin qui assure l'électroneutralité sans permettre le mélange direct des solutions. Le zinc, réducteur le plus fort des deux, constitue l'anode (pôle négatif, siège de l'oxydation), le cuivre constitue la cathode (pôle positif, siège de la réduction). En pratique médicale et biologique, les réactions redox interviennent notamment dans les dosages en chimie analytique (par exemple le dosage de Fe2+ par MnO4- en milieu acide, très classique en TP), où l'équivalence est repérée par un changement de couleur ou un saut brutal de potentiel. Le potentiel d'un couple biologique important à connaître pour la suite du programme est celui de la chaîne respiratoire mitochondriale, où des transferts d'électrons en cascade entre couples de potentiels croissants permettent la synthèse d'ATP : c'est une application directe du principe vu ici, où chaque transfert d'électrons se fait spontanément d'un couple à E° plus bas vers un couple à E° plus haut."
+        }
+      ],
+      "fiche": [
+        "Oxydant = accepteur d'électrons (il se réduit) ; Réducteur = donneur d'électrons (il s'oxyde).",
+        "Couple redox noté Ox/Red, demi-équation générale : Ox + n e- = Red.",
+        "Équilibrage d'une demi-équation dans l'ordre : atomes autres que O/H, puis O avec H2O, puis H avec H+, puis charges avec e-.",
+        "Les électrons se placent toujours du côté de l'oxydant dans une demi-équation.",
+        "Pour combiner deux couples : égaliser le nombre d'électrons échangés avant d'additionner les deux demi-équations, puis simplifier les e-, H+ et H2O.",
+        "K (constante d'équilibre) ne dépend que de T ; Γ (quotient réactionnel) varie à chaque instant t.",
+        "ΔrG(T,P) = -nFE et ΔrG°(T,P) = -nFE°, avec F = 96 500 C/mol.",
+        "E = E° - (RT/nF) ln Γ, soit à 298 K : E = E° - (0,06/n) log Γ ; et E° = (0,06/n) log K à 298 K.",
+        "Réaction à l'équilibre ⇔ ΔrG = 0 ⇔ E = 0 ⇔ Γ = K.",
+        "Si E(pile) > 0 : réaction spontanée dans le sens direct (sens 1) ; si E(pile) < 0 : spontanée dans le sens indirect (sens 2).",
+        "Potentiel standard d'un couple = f.e.m. standard face au couple de référence H+/H2, avec convention E°(H+/H2) = 0 V.",
+        "Équation de Nernst d'un couple isolé : E = E° + (0,06/n) log([Ox]^a/[Red]^b) — signe PLUS, à ne pas confondre avec le signe moins de la réaction entre deux couples.",
+        "E° positif = oxydant fort du couple ; E° négatif = réducteur fort du couple.",
+        "F.e.m. d'une réaction entre 2 couples : E = E1 - E2 = (E°1 - E°2) - (0,06/n) log Γ, avec toujours E°(oxydant) - E°(réducteur).",
+        "Méthode du gamma : classer les couples par E° croissant sur un axe vertical ; la réaction spontanée relie l'oxydant fort (en haut) au réducteur fort (en bas)."
+      ],
+      "resources": [
+        {
+          "icon": "🎥",
+          "title": "Vidéo sur l'équilibrage des demi-équations redox",
+          "description": "Cherche une vidéo qui déroule l'équilibrage pas à pas sur plusieurs couples différents (MnO4-/Mn2+, Cr2O7 2-/Cr3+, NO3-/NO) pour automatiser la méthode en 4 étapes.",
+          "url": "https://www.youtube.com/results?search_query=Vid%C3%A9o%20sur%20l%27%C3%A9quilibrage%20des%20demi-%C3%A9quations%20redox%20Oxydor%C3%A9duction"
+        },
+        {
+          "icon": "📘",
+          "title": "Fiche récapitulative sur l'équation de Nernst",
+          "description": "Prépare toi-même un tableau comparatif avec les deux formes de l'équation de Nernst (couple isolé vs réaction entre 2 couples) pour ne plus jamais confondre les signes plus et moins.",
+          "url": "https://www.google.com/search?q=Fiche%20r%C3%A9capitulative%20sur%20l%27%C3%A9quation%20de%20Nernst%20Oxydor%C3%A9duction%20PASS"
+        },
+        {
+          "icon": "🧮",
+          "title": "Exercices d'application sur la méthode du gamma",
+          "description": "Entraîne-toi à classer 4 à 5 couples redox connus sur un même axe de potentiels standards et à en déduire systématiquement le sens spontané de toutes les réactions possibles entre eux.",
+          "url": "https://www.google.com/search?q=Exercices%20d%27application%20sur%20la%20m%C3%A9thode%20du%20gamma%20Oxydor%C3%A9duction%20PASS"
+        },
+        {
+          "icon": "🗂️",
+          "title": "Fiches de dosages redox classiques",
+          "description": "Revois les dosages typiques du programme (permanganate, dichromate, iode) pour relier la théorie du potentiel standard à des situations expérimentales concrètes de dosage.",
+          "url": "https://www.google.com/search?q=Fiches%20de%20dosages%20redox%20classiques%20Oxydor%C3%A9duction%20PASS"
+        },
+        {
+          "icon": "🧠",
+          "title": "Flashcards couples redox et potentiels standards",
+          "description": "Crée-toi des flashcards avec couple redox recto et demi-équation équilibrée + signe attendu du potentiel verso, pour muscler ta mémoire avant l'épreuve.",
+          "url": "https://www.google.com/search?q=Flashcards%20couples%20redox%20et%20potentiels%20standards%20Oxydor%C3%A9duction%20PASS"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Que définit-on comme oxydant dans un couple redox ?",
+          "options": [
+            "L'espèce qui capte des électrons",
+            "L'espèce qui donne des électrons",
+            "L'espèce qui donne des protons",
+            "L'espèce qui capte des protons"
+          ],
+          "correct_index": 0,
+          "explanation": "Bien joué ! 🎉 L'oxydant est l'accepteur d'électrons, il se réduit en captant des électrons."
+        },
+        {
+          "question": "Dans une demi-équation Ox + n e- = Red, de quel côté se placent toujours les électrons ?",
+          "options": [
+            "Du côté du réducteur",
+            "Du côté de l'oxydant",
+            "Au milieu de l'équation",
+            "Ça dépend du couple"
+          ],
+          "correct_index": 1,
+          "explanation": "Exact ! Les électrons figurent toujours du côté de l'oxydant, puisque c'est lui qui les capte."
+        },
+        {
+          "question": "Quel est l'ordre correct de la méthode d'équilibrage d'une demi-équation ?",
+          "options": [
+            "H+, H2O, atomes, électrons",
+            "Électrons, atomes, H2O, H+",
+            "Atomes, H2O, H+, électrons",
+            "H2O, électrons, atomes, H+"
+          ],
+          "correct_index": 2,
+          "explanation": "Parfait, tu maîtrises la méthode ! On équilibre d'abord les atomes, puis l'oxygène avec H2O, puis l'hydrogène avec H+, puis les charges avec des électrons."
+        },
+        {
+          "question": "Pour combiner deux demi-équations en une réaction bilan, il faut d'abord :",
+          "options": [
+            "Additionner directement les deux équations",
+            "Simplifier les H2O uniquement",
+            "Inverser le sens d'une des deux équations au hasard",
+            "Égaliser le nombre d'électrons échangés dans les deux couples"
+          ],
+          "correct_index": 3,
+          "explanation": "Bravo ! Il faut multiplier chaque demi-équation par un facteur pour avoir le même nombre d'électrons avant de les additionner."
+        },
+        {
+          "question": "La constante d'équilibre K d'une réaction redox dépend :",
+          "options": [
+            "Uniquement de la température",
+            "Des concentrations initiales",
+            "Du volume du système",
+            "Du sens dans lequel on écrit la réaction"
+          ],
+          "correct_index": 0,
+          "explanation": "Exactement, K est une grandeur thermodynamique qui ne dépend que de la température, pas des concentrations initiales."
+        },
+        {
+          "question": "Que vaut la relation entre ΔrG et la force électromotrice E ?",
+          "options": [
+            "ΔrG = nFE",
+            "ΔrG = -nFE",
+            "ΔrG = -E/nF",
+            "ΔrG = nF/E"
+          ],
+          "correct_index": 1,
+          "explanation": "Bien vu ! ΔrG(T,P) = -nFE, avec F la constante de Faraday (96 500 C/mol)."
+        },
+        {
+          "question": "À 298 K, l'équation de Nernst d'une réaction entre 2 couples s'écrit E = E° - ... :",
+          "options": [
+            "(0,06/n) ln Γ",
+            "n × 0,06 × log Γ",
+            "(0,06/n) log Γ",
+            "(n/0,06) log Γ"
+          ],
+          "correct_index": 2,
+          "explanation": "Exact, à 298 K on utilise le log en base 10 avec le facteur 0,06 divisé par n."
+        },
+        {
+          "question": "Une réaction redox est à l'équilibre lorsque :",
+          "options": [
+            "Γ = 0",
+            "K = 0",
+            "n = 0",
+            "E = 0"
+          ],
+          "correct_index": 3,
+          "explanation": "Bravo, une réaction est à l'équilibre quand ΔrG = 0, ce qui équivaut exactement à E = 0."
+        },
+        {
+          "question": "Si la f.e.m. E(pile) d'une réaction est positive, alors :",
+          "options": [
+            "La réaction évolue spontanément dans le sens direct",
+            "La réaction n'a jamais lieu",
+            "La réaction évolue spontanément dans le sens indirect",
+            "Le système est nécessairement à l'équilibre"
+          ],
+          "correct_index": 0,
+          "explanation": "Exact ! Si E(pile) > 0, ΔrG < 0 donc la réaction évolue spontanément dans le sens direct jusqu'à l'équilibre."
+        },
+        {
+          "question": "Par convention, quel est le potentiel standard du couple H+/H2 ?",
+          "options": [
+            "1 V",
+            "0 V",
+            "-1 V",
+            "0,06 V"
+          ],
+          "correct_index": 1,
+          "explanation": "Bien joué, c'est la convention de référence : E°(H+/H2) = 0 V à toute température."
+        },
+        {
+          "question": "Un potentiel standard E° très positif pour un couple signifie que :",
+          "options": [
+            "Le réducteur du couple est très fort",
+            "Le couple n'a aucune activité redox",
+            "L'oxydant du couple est très fort",
+            "Le potentiel dépend des concentrations"
+          ],
+          "correct_index": 2,
+          "explanation": "Exact ! Plus E° est positif, plus l'oxydant du couple est puissant (il capte facilement les électrons)."
+        },
+        {
+          "question": "L'équation de Nernst pour un couple isolé Ox/Red comporte quel signe devant le terme logarithmique ?",
+          "options": [
+            "Un signe moins",
+            "Aucun signe, il est absent",
+            "Cela dépend du couple étudié",
+            "Un signe plus"
+          ],
+          "correct_index": 3,
+          "explanation": "Bravo, pour un couple isolé c'est un signe PLUS, contrairement à la f.e.m. d'une réaction entre deux couples qui comporte un signe moins."
+        },
+        {
+          "question": "Dans la méthode du gamma, où se situe l'oxydant le plus fort ?",
+          "options": [
+            "En haut de l'axe des potentiels",
+            "En bas de l'axe des potentiels",
+            "Au centre de l'axe",
+            "Cela dépend du sens de lecture"
+          ],
+          "correct_index": 0,
+          "explanation": "Exact ! Le couple avec le E° le plus élevé, placé en haut de l'axe, porte l'oxydant le plus fort."
+        },
+        {
+          "question": "Entre les couples Cu2+/Cu (E°=+0,34 V) et Zn2+/Zn (E°=-0,76 V), quelle réaction est spontanée ?",
+          "options": [
+            "Zn2+ + Cu → Zn + Cu2+",
+            "Cu2+ + Zn → Cu + Zn2+",
+            "Aucune réaction n'est possible",
+            "Les deux sens sont équiprobables"
+          ],
+          "correct_index": 1,
+          "explanation": "Bravo ! Le cuivre a le E° le plus élevé, son oxydant Cu2+ réagit spontanément avec le réducteur fort Zn."
+        },
+        {
+          "question": "Dans la formule E° = E°(couple ox) - E°(couple red), cette soustraction correspond à :",
+          "options": [
+            "Le potentiel réel de l'un des deux couples seulement",
+            "La constante d'équilibre K directement",
+            "La f.e.m. standard de la réaction entre les deux couples",
+            "Une erreur de méthode, il faut toujours additionner"
+          ],
+          "correct_index": 2,
+          "explanation": "Exact ! On soustrait toujours E° du couple mettant en jeu son oxydant moins E° du couple mettant en jeu son réducteur pour obtenir la f.e.m. standard."
+        },
+        {
+          "question": "Que représente Γ dans l'équation de Nernst, par opposition à K ?",
+          "options": [
+            "L'avancement à l'équilibre uniquement",
+            "La constante de Faraday",
+            "Le nombre d'électrons échangés",
+            "L'avancement à un instant t quelconque"
+          ],
+          "correct_index": 3,
+          "explanation": "Bien vu ! Γ est le quotient réactionnel à un instant t donné, alors que K est sa valeur particulière atteinte à l'équilibre."
+        },
+        {
+          "question": "Dans la relation ΔrG = -nFE, que représente n ?",
+          "options": [
+            "Le nombre d'électrons échangés dans la réaction bilan équilibrée",
+            "Le nombre de couples redox impliqués",
+            "Le nombre de moles de solvant",
+            "La valence de l'oxydant uniquement"
+          ],
+          "correct_index": 0,
+          "explanation": "Exact ! n est le nombre total d'électrons échangés dans la réaction globale équilibrée, après application des facteurs multiplicatifs nécessaires."
+        },
+        {
+          "question": "Le potentiel standard d'un couple redox dépend de :",
+          "options": [
+            "La concentration des espèces en solution",
+            "La température",
+            "Le volume de la solution",
+            "Le sens d'écriture de la demi-équation"
+          ],
+          "correct_index": 1,
+          "explanation": "Bravo ! Le potentiel standard est une caractéristique thermodynamique qui ne dépend que de la température, pas des concentrations réelles."
+        }
+      ],
+      "exercises": {
+        "facile": [
+          {
+            "statement": "Définir en une phrase ce qu'est un oxydant et un réducteur.",
+            "solution": "L'oxydant est l'espèce qui accepte des électrons (elle se réduit) ; le réducteur est l'espèce qui donne des électrons (elle s'oxyde)."
+          },
+          {
+            "statement": "Écrire la demi-équation générale d'un couple Ox/Red faisant intervenir n électrons.",
+            "solution": "Ox + n e- = Red."
+          },
+          {
+            "statement": "Dans la demi-équation d'un couple, de quel côté se trouvent toujours les électrons ?",
+            "solution": "Les électrons sont toujours écrits du côté de l'oxydant."
+          },
+          {
+            "statement": "Donner la formule reliant ΔrG et la force électromotrice E d'une réaction, avec les unités des grandeurs.",
+            "solution": "ΔrG(T,P) = -nFE, avec ΔrG en J/mol, n sans unité, F = 96 500 C/mol et E en volts."
+          },
+          {
+            "statement": "Quelle est par convention la valeur du potentiel standard du couple H+/H2 ?",
+            "solution": "E°(H+/H2) = 0 V, à toute température, par convention internationale."
+          },
+          {
+            "statement": "Une réaction redox est-elle à l'équilibre quand E est positif, négatif ou nul ? Justifier brièvement.",
+            "solution": "Elle est à l'équilibre quand E = 0, ce qui correspond à ΔrG = 0, donc à Γ = K."
+          },
+          {
+            "statement": "Écrire l'équation de Nernst à 298 K pour un couple isolé Ox/Red avec les coefficients a et b (a Ox + n e- = b Red).",
+            "solution": "E = E° + (0,06/n) log([Ox]^a/[Red]^b)."
+          },
+          {
+            "statement": "Si E°(couple A) > E°(couple B), lequel des deux porte l'oxydant le plus fort ?",
+            "solution": "Le couple A, celui dont le potentiel standard est le plus élevé, porte l'oxydant le plus fort."
+          },
+          {
+            "statement": "Équilibrer la demi-équation du couple Fe3+/Fe2+.",
+            "solution": "Fe3+ + e- = Fe2+ (un seul électron échangé, pas d'oxygène ni d'hydrogène à équilibrer)."
+          },
+          {
+            "statement": "Que signifie un potentiel standard très négatif pour un couple redox ?",
+            "solution": "Cela signifie que le réducteur de ce couple est très puissant (il cède très facilement ses électrons)."
+          }
+        ],
+        "moyen": [
+          {
+            "statement": "Équilibrer la demi-équation du couple Cr2O7 2-/Cr3+ en milieu acide.",
+            "solution": "Cr2O7 2- + 14 H+ + 6 e- = 2 Cr3+ + 7 H2O (2 Cr, 7 O compensés par 7 H2O, 14 H compensés par H+, charge équilibrée par 6 électrons : -2+14-6 = +6 à gauche, +6 à droite)."
+          },
+          {
+            "statement": "On donne les couples I2/I- (n=2) et Fe3+/Fe2+ (n=1). Écrire la réaction bilan équilibrée entre ces deux couples sachant que Fe3+ oxyde I-.",
+            "solution": "On multiplie la demi-équation du fer par 2 : 2 Fe3+ + 2 e- = 2 Fe2+, et I2 + 2 e- = 2 I- s'écrit en sens inverse 2 I- = I2 + 2 e-. En additionnant : 2 Fe3+ + 2 I- → 2 Fe2+ + I2."
+          },
+          {
+            "statement": "Pour la réaction Cu2+ + Zn → Cu + Zn2+ avec n=2, F=96 500 C/mol et E°=1,10 V, calculer ΔrG° en kJ/mol.",
+            "solution": "ΔrG° = -nFE° = -2 × 96500 × 1,10 = -212 300 J/mol ≈ -212,3 kJ/mol (réaction spontanée car négative)."
+          },
+          {
+            "statement": "Sachant que K = 10^(nE°/0,06) à 298 K, calculer K pour la réaction précédente (n=2, E°=1,10 V). Commenter l'ordre de grandeur.",
+            "solution": "log K = nE°/0,06 = 2×1,10/0,06 ≈ 36,7, donc K ≈ 10^36,7, une valeur extrêmement grande : la réaction est quasi totale dans le sens direct."
+          },
+          {
+            "statement": "Deux couples ont pour potentiels standards E°1 = +0,80 V et E°2 = -0,40 V. Utiliser la méthode du gamma pour déterminer le sens spontané de la réaction entre l'oxydant du couple 1 et le réducteur du couple 2.",
+            "solution": "Le couple 1 (E°=+0,80 V) est au-dessus, il porte l'oxydant le plus fort ; le couple 2 (E°=-0,40 V) est en dessous, il porte le réducteur le plus fort. La réaction spontanée est donc Ox1 + Red2 → Red1 + Ox2."
+          },
+          {
+            "statement": "Écrire l'équation de Nernst à 298 K pour le couple MnO4-/Mn2+ (MnO4- + 8H+ + 5e- = Mn2+ + 4H2O).",
+            "solution": "E = E° + (0,06/5) log([MnO4-][H+]^8/[Mn2+])."
+          },
+          {
+            "statement": "On considère le couple Ag+/Ag (E°=+0,80 V). Si [Ag+] diminue fortement par rapport aux conditions standards, comment évolue E ? Justifier avec Nernst.",
+            "solution": "E = E° + 0,06 log[Ag+] (car [Red]=[Ag solide]=1 par convention) ; si [Ag+] diminue, log[Ag+] diminue (devient plus négatif), donc E diminue : le couple devient moins oxydant."
+          },
+          {
+            "statement": "Une pile est formée des couples Ni2+/Ni (E°=-0,25 V) et Ag+/Ag (E°=+0,80 V). Écrire la réaction bilan spontanée équilibrée.",
+            "solution": "Ag+ est l'oxydant le plus fort. Demi-équations : Ag+ + e- = Ag (×2) et Ni = Ni2+ + 2e-. Bilan : 2 Ag+ + Ni → 2 Ag + Ni2+."
+          },
+          {
+            "statement": "Pour la réaction de la question précédente, donner n et la formule de E° en fonction des deux potentiels standards.",
+            "solution": "n = 2 (deux électrons échangés). E° = E°(Ag+/Ag) - E°(Ni2+/Ni) = 0,80 - (-0,25) = 1,05 V."
+          },
+          {
+            "statement": "Expliquer pourquoi on ne peut pas directement comparer Γ à 0 pour savoir si une réaction est spontanée, contrairement à E.",
+            "solution": "Γ est toujours positif par nature (quotient de concentrations), il n'a pas de signe informatif seul ; c'est sa comparaison à K, ou de façon équivalente le signe de E (ou de ΔrG), qui renseigne sur le sens spontané de la réaction."
+          }
+        ],
+        "difficile": [
+          {
+            "statement": "Un couple redox a pour potentiel standard E°=+0,54 V à 298 K et met en jeu n=2 électrons. Calculer la constante d'équilibre K de la réaction associée à ce couple face à H+/H2, puis commenter le sens favorisé.",
+            "solution": "log K = nE°/0,06 = 2×0,54/0,06 = 18, donc K = 10^18. Cette valeur énorme indique que la réaction entre ce couple et H+/H2 est quasi totale dans le sens où l'oxydant du couple étudié oxyde H2, confirmant que E° positif signale un oxydant fort face à H+."
+          },
+          {
+            "statement": "On mélange les couples Cl2/Cl- (E°=+1,36 V, n=2) et MnO4-/Mn2+ (E°=+1,51 V, n=5). Déterminer par la méthode du gamma la réaction spontanée équilibrée, en indiquant le nombre total d'électrons échangés dans le bilan.",
+            "solution": "MnO4-/Mn2+ a le E° le plus élevé, il porte l'oxydant le plus fort (MnO4-). La réaction spontanée oxyde donc Cl- par MnO4-. Demi-équations : MnO4- + 8H+ + 5e- = Mn2+ + 4H2O (×2) et 2Cl- = Cl2 + 2e- (×5). Bilan : 2 MnO4- + 16 H+ + 10 Cl- → 2 Mn2+ + 8 H2O + 5 Cl2. Le nombre d'électrons échangés dans le bilan est n=10 (ppcm de 5 et 2)."
+          },
+          {
+            "statement": "Pour la réaction précédente, si E°total = E°(MnO4-/Mn2+) - E°(Cl2/Cl-) = 0,15 V et n=10, calculer ΔrG° puis K à 298 K.",
+            "solution": "ΔrG° = -nFE° = -10 × 96500 × 0,15 = -144 750 J/mol ≈ -144,8 kJ/mol. log K = nE°/0,06 = 10×0,15/0,06 = 25, donc K = 10^25 : réaction très largement favorisée dans le sens direct."
+          },
+          {
+            "statement": "Un couple Ox/Red isolé a pour E°=0,20 V et n=2. On prépare une solution où [Ox]=0,1 mol/L et [Red]=1×10^-4 mol/L. Calculer le potentiel réel E de ce couple à 298 K.",
+            "solution": "E = E° + (0,06/2) log([Ox]/[Red]) = 0,20 + 0,03 × log(0,1/1e-4) = 0,20 + 0,03 × log(1000) = 0,20 + 0,03×3 = 0,20 + 0,09 = 0,29 V."
+          },
+          {
+            "statement": "Deux couples ont pour potentiels réels (calculés via Nernst dans des conditions non standards) E1=0,45 V et E2=0,60 V. La réaction entre eux est-elle spontanée dans le sens où le couple 2 joue son oxydant ? Justifier via le signe de E(pile).",
+            "solution": "E(pile) = E(couple oxydant) - E(couple réducteur) = E2 - E1 = 0,60 - 0,45 = +0,15 V > 0, donc oui, la réaction est spontanée dans ce sens : l'oxydant du couple 2 réagit avec le réducteur du couple 1."
+          },
+          {
+            "statement": "Démontrer, à partir de ΔrG = -nFE et de ΔrG = ΔrG° + RT ln Γ, que E = E° - (RT/nF) ln Γ.",
+            "solution": "En remplaçant : -nFE = -nFE° + RT ln Γ. En divisant par -nF : E = E° - (RT/(nF)) ln Γ. C'est l'équation de Nernst pour la réaction entre deux couples."
+          },
+          {
+            "statement": "Une pile a un E°=0,32 V et n=2 à 298 K. On la laisse évoluer jusqu'à ce que Γ atteigne 100×K. Que peut-on dire du signe de E dans cet état et du sens d'évolution ultérieur ?",
+            "solution": "E = E° - (0,06/2) log(Γ/K) ... plus simplement : E = E° - 0,03 log(100K/K)×... En fait E = E° - 0,03 log(Γ) + 0,03 log correction : utilisons E = (0,03) log(K/Γ) au lieu de la formule générale : ici Γ=100K donc Γ>K, ce qui correspond à E<0 (le système a dépassé son équilibre), la réaction va donc s'inverser et évoluer dans le sens indirect pour ramener Γ vers K."
+          },
+          {
+            "statement": "On considère un couple Ox/Red avec a=1, b=1, n=1, E°=0,50 V. Calculer la variation de E lorsque le rapport [Ox]/[Red] est multiplié par 10, à 298 K.",
+            "solution": "ΔE = (0,06/1) × log(10) = 0,06 × 1 = 0,06 V. Multiplier le rapport [Ox]/[Red] par 10 augmente E de 0,06 V, ce qui illustre la sensibilité logarithmique du potentiel aux concentrations."
+          },
+          {
+            "statement": "Un exercice de synthèse : équilibrer la réaction entre les couples S4O6 2-/S2O3 2- (n=2, S4O6 2- + 2e- = 2 S2O3 2-) et I2/I- (n=2, I2 + 2e- = 2I-), sachant que I2 est l'oxydant le plus fort.",
+            "solution": "I2 oxyde S2O3 2- : I2 + 2e- = 2I- (sens direct) et 2 S2O3 2- = S4O6 2- + 2e- (sens inverse). Les deux couples ont déjà n=2, pas besoin de facteur multiplicatif. Bilan : I2 + 2 S2O3 2- → 2 I- + S4O6 2- (réaction de dosage classique de l'iode par le thiosulfate)."
+          },
+          {
+            "statement": "Pour la réaction précédente avec E°(I2/I-)=0,54 V et E°(S4O6 2-/S2O3 2-)=0,09 V, n=2, calculer E° puis K à 298 K et conclure sur le caractère quantitatif du dosage.",
+            "solution": "E° = E°(oxydant, I2/I-) - E°(réducteur, S4O6 2-/S2O3 2-) = 0,54 - 0,09 = 0,45 V. log K = nE°/0,06 = 2×0,45/0,06 = 15, K = 10^15, une valeur immense confirmant que la réaction est quantitative, ce qui justifie son usage comme réaction de dosage fiable en TP."
+          }
+        ]
+      }
+    },
+    {
+      "id": "cinetique_chimique",
+      "title": "Cinétique chimique",
+      "difficulty": 2,
+      "intro": "Accroche-toi, on va chronométrer les réactions et apprivoiser leurs vitesses ensemble ! ⏱️✨",
+      "diagram": "flowchart TD\nA[Cinetique chimique] --> B[Vitesse de reaction]\nB --> B1[Definition dCdt]\nB --> B2[Signe reactifs produits]\nA --> C[Loi de vitesse]\nC --> C1[Ordres partiels]\nC --> C2[Ordre global]\nC --> C3[Molecularite et loi Vant Hoff]\nA --> D[Ordre 1]\nD --> D1[Decroissance exponentielle]\nD --> D2[Demi vie constante]\nA --> E[Ordre 2]\nE --> E1[Decroissance hyperbolique]\nE --> E2[Demi vie variable]\nA --> F[Reactions complexes]\nF --> F1[Equilibre dynamique]\nF --> F2[Constante K]\nA --> G[Facteurs cinetiques]\nG --> G1[Temperature Arrhenius]\nG --> G2[Catalyse chimique]\nG --> G3[Energie activation]\n",
+      "course": [
+        {
+          "icon": "🔬",
+          "title": "Qu'est-ce que la vitesse d'une réaction ?",
+          "content": "La cinétique chimique étudie la rapidité avec laquelle un système passe de l'état des réactifs à celui des produits. Pour une réaction générale a A + b B → c C + d D, on définit la vitesse instantanée v comme la variation de concentration d'une espèce par unité de temps, corrigée de son coefficient stœchiométrique : v = -(1/a)·d[A]/dt = -(1/b)·d[B]/dt = +(1/c)·d[C]/dt = +(1/d)·d[D]/dt. L'idée est simple : de la même façon qu'on divise une distance parcourue par le temps pour obtenir une vitesse au sens physique, on divise ici une variation de concentration par le temps. Le point délicat, souvent piégeux en QCM, concerne le signe : les réactifs disparaissent, donc d[A]/dt est négatif, et on ajoute un signe moins pour que la vitesse reste une grandeur positive ; les produits apparaissent, donc leur dérivée est positive et on ne change rien. Le coefficient stœchiométrique sert de facteur de normalisation : si a = 2, il faut consommer deux fois plus de A pour former une même quantité de produit à vitesse de formation égale, donc la vitesse de disparition de A regardée « brute » serait deux fois plus grande sans cette division. Retenez que toutes ces expressions désignent la même vitesse globale v, exprimée en mol·L⁻¹·s⁻¹, quel que soit le composé choisi pour l'observer expérimentalement (par spectrophotométrie, conductimétrie, etc.)."
+        },
+        {
+          "icon": "⭐",
+          "title": "La loi de vitesse et les ordres partiels",
+          "content": "Expérimentalement, on constate souvent que la vitesse peut s'écrire comme un produit de puissances des concentrations : v = k·[A]^α·[B]^β. Le terme k est la constante de vitesse, caractéristique de la réaction et de la température (elle ne dépend ni des concentrations ni du temps). Les exposants α et β sont les ordres partiels par rapport à A et B respectivement : ce sont des grandeurs déterminées expérimentalement (par exemple en traçant des courbes ou en isolant un réactif), et il n'existe aucune formule générale permettant de les prédire à partir de l'équation bilan. Un piège classique consiste à confondre ces ordres partiels avec les coefficients stœchiométriques a et b : ils ne sont égaux que dans le cas très particulier d'une réaction élémentaire (voir bloc suivant). La somme α + β donne l'ordre global de la réaction. Cet ordre global détermine directement l'unité de k : ordre 1 → k en s⁻¹, ordre 2 → k en L·mol⁻¹·s⁻¹, ordre 0 → k en mol·L⁻¹·s⁻¹. Cette histoire d'unités revient très souvent aux examens car elle permet de vérifier a posteriori la cohérence d'un résultat sans même refaire le calcul complet : si on vous donne une valeur de k en L·mol⁻¹·s⁻¹, vous savez immédiatement que la réaction est globalement d'ordre 2."
+        },
+        {
+          "icon": "🧠",
+          "title": "Réaction élémentaire, molécularité et loi de Van't Hoff",
+          "content": "Une réaction élémentaire est une réaction qui se déroule en une seule étape, sans passer par un intermédiaire réactionnel isolable : les réactifs se rencontrent et se transforment directement en produits lors d'un unique acte microscopique. C'est uniquement dans ce cas particulier que la loi de Van't Hoff s'applique : la vitesse s'écrit alors v = k·[A]^a·[B]^b, où les exposants sont exactement les coefficients stœchiométriques de la réaction élémentaire (donc α = a et β = b). On introduit ici la notion de molécularité, définie comme la somme des coefficients stœchiométriques des réactifs impliqués dans l'étape élémentaire (a + b) : une réaction élémentaire unimoléculaire est d'ordre 1, une réaction élémentaire bimoléculaire est d'ordre 2. Les réactions trimoléculaires existent en théorie mais sont extrêmement rares, car la probabilité que trois molécules se rencontrent simultanément avec la bonne orientation est très faible statistiquement. Attention à ne jamais généraliser cette identité entre ordre et stœchiométrie à une réaction globale (qui résulte souvent de plusieurs étapes élémentaires) : dans ce cas, l'ordre global ne peut être déduit que de l'expérience, jamais de la simple lecture de l'équation bilan."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Réaction globale et étape cinétiquement déterminante",
+          "content": "Une réaction observée globalement (celle que l'on écrit dans l'équation bilan) peut en réalité résulter d'un enchaînement de plusieurs réactions élémentaires successives, formant ce qu'on appelle un mécanisme réactionnel. Dans un tel mécanisme, chaque étape élémentaire possède sa propre vitesse, fixée par sa propre constante de vitesse. Parmi ces étapes, celle qui possède la vitesse la plus faible constitue un goulot d'étranglement : c'est l'étape cinétiquement déterminante (ou étape limitante). Comme les étapes suivantes ne peuvent pas aller plus vite que ce que leur fournit l'étape lente, c'est elle qui impose sa loi de vitesse et donc son ordre à la réaction globale observée. Un piège fréquent consiste à croire que l'ordre global d'une réaction complexe se lit directement sur l'équation bilan globale : c'est faux dès que la réaction n'est pas élémentaire. Il faut identifier l'étape limitante (souvent donnée dans l'énoncé) et appliquer la loi de Van't Hoff à cette seule étape pour en déduire la loi de vitesse globale approchée."
+        },
+        {
+          "icon": "🔬",
+          "title": "Réaction d'ordre 1 : mise en équation",
+          "content": "Considérons une réaction où la vitesse ne dépend que de A à la puissance 1 (ordre global 1). On part de v = -(1/a)·d[A]/dt = k[A]. En séparant les variables, on obtient d[A]/[A] = -a·k·dt, que l'on intègre entre l'instant initial (concentration [A]₀) et un instant t (concentration [A]) : ln([A]/[A]₀) = -a·k·t, soit encore ln[A] = ln[A]₀ - a·k·t. Cette relation est fondamentale : elle montre que si l'on trace ln[A] en fonction du temps, on obtient une droite de pente négative égale à -a·k et d'ordonnée à l'origine ln[A]₀. On peut aussi écrire cette loi sous forme exponentielle : [A] = [A]₀·e^(-akt), ce qui correspond à une décroissance exponentielle classique de la concentration au cours du temps. Il n'est pas nécessaire de retenir la démonstration par cœur, mais il faut savoir la refaire rapidement si besoin et surtout reconnaître ces deux formes d'écriture équivalentes, qui sont régulièrement demandées sous forme de QCM ou de tracé de graphique à interpréter."
+        },
+        {
+          "icon": "⭐",
+          "title": "Ordre 1 : temps de demi-réaction et reconnaissance graphique",
+          "content": "Le temps de demi-réaction t½ est défini comme la durée nécessaire pour que la concentration en réactif soit divisée par deux, c'est-à-dire pour atteindre [A] = [A]₀/2. En injectant cette condition dans la loi intégrée d'ordre 1, on obtient t½ = ln(2)/(a·k). La propriété remarquable de cette expression est qu'elle ne dépend absolument pas de la concentration initiale [A]₀ : le temps de demi-réaction est donc une constante caractéristique de la réaction d'ordre 1, quelle que soit la concentration de départ. Concrètement, cela signifie que les périodes successives sont toutes égales entre elles : au bout de t½ on a divisé la concentration par 2, au bout de 2·t½ on l'a divisée par 4, au bout de 3·t½ par 8, et ainsi de suite - un déclin en escalier régulier typique de l'exponentielle. Pour reconnaître à coup sûr une cinétique d'ordre 1, retenez ces trois indices complémentaires : un graphique ln[A] = f(t) linéaire décroissant, un graphique [A] = f(t) en décroissance exponentielle à périodes constantes, et une constante de vitesse k homogène à des s⁻¹."
+        },
+        {
+          "icon": "🔬",
+          "title": "Réaction d'ordre 2 : les deux configurations classiques",
+          "content": "L'ordre 2 global peut se rencontrer sous deux formes typiques. Première configuration : une seule espèce A intervient avec un ordre partiel α = 2, soit v = -(1/a)·d[A]/dt = k[A]². L'intégration donne 1/[A] - 1/[A]₀ = a·k·t, soit 1/[A] = 1/[A]₀ + a·k·t : un tracé de 1/[A] en fonction du temps donne une droite de pente positive a·k. Seconde configuration : deux réactifs A et B interviennent chacun à l'ordre 1 (α = β = 1), soit v = k[A][B]. Un cas particulier très utile survient lorsque [A]₀ = [B]₀ et a = b : les concentrations de A et B évoluent alors de façon rigoureusement identique au cours du temps, ce qui permet de remplacer [B] par [A] dans l'expression de la vitesse, qui devient v = k[A]², se ramenant ainsi mathématiquement au premier cas. Cette astuce de simplification est très fréquemment exploitée dans les exercices pour rendre le problème traitable analytiquement sans connaître séparément l'évolution de B."
+        },
+        {
+          "icon": "⭐",
+          "title": "Ordre 2 : demi-vie variable et déclin hyperbolique",
+          "content": "Contrairement à l'ordre 1, le temps de demi-réaction d'une cinétique d'ordre 2 (cas v = k[A]²) dépend de la concentration initiale : t½ = 1/(a·k·[A]₀). Plus [A]₀ est grand, plus t½ est court, ce qui est logique puisqu'une concentration élevée entraîne davantage de chocs efficaces entre molécules. Une conséquence importante est que les demi-vies successives ne sont pas égales mais doublent à chaque étape : la deuxième demi-vie (pour passer de [A]₀/2 à [A]₀/4) dure deux fois plus longtemps que la première, la troisième quatre fois plus longtemps, etc. Attention à un piège classique d'examen : le temps pour atteindre le quart de la concentration initiale n'est pas 2·t½ (ce serait vrai pour l'ordre 1) mais 3·t½ pour l'ordre 2, car il faut additionner la première demi-vie puis la seconde qui dure le double. Le profil [A] = f(t) prend la forme d'une hyperbole (décroissance plus lente en fin de réaction que l'exponentielle), et l'on reconnaît cet ordre par une droite en traçant 1/[A] = f(t), ainsi que par une constante k exprimée en L·mol⁻¹·s⁻¹."
+        },
+        {
+          "icon": "🧠",
+          "title": "Réactions renversables et constante d'équilibre",
+          "content": "Certaines réactions ne se font pas totalement dans un seul sens : elles sont renversables, c'est-à-dire que les produits peuvent redonner les réactifs, comme dans A ⇌ B avec une constante de vitesse k₁ pour le sens direct et k₋₁ pour le sens inverse. La vitesse nette d'évolution s'écrit alors comme la différence entre la vitesse directe et la vitesse inverse : v = -d[A]/dt = d[B]/dt = k₁[A] - k₋₁[B]. À l'équilibre chimique, le système n'évolue plus macroscopiquement : la vitesse nette devient nulle, ce qui ne signifie pas que les réactions s'arrêtent, mais que les vitesses directe et inverse se compensent exactement (équilibre dynamique). En posant v = 0, on obtient k₁[A]eq = k₋₁[B]eq, d'où la relation essentielle K = [B]eq/[A]eq = k₁/k₋₁, qui relie la constante d'équilibre thermodynamique K au rapport des constantes de vitesse cinétiques. Cette formule fait le pont entre cinétique et thermodynamique et est à connaître parfaitement, car elle est régulièrement demandée sous forme directe en QCM."
+        },
+        {
+          "icon": "🔬",
+          "title": "L'enthalpie libre d'activation : la barrière à franchir",
+          "content": "Pour que des réactifs se transforment en produits, il ne suffit pas que la réaction soit thermodynamiquement favorable : il faut aussi fournir une certaine quantité d'énergie pour atteindre un état de transition instable, situé au sommet d'une « colline énergétique ». Cette énergie nécessaire est appelée enthalpie libre d'activation, notée ΔG°≠, et elle est toujours positive par définition, quelle que soit la réaction considérée (contrairement à l'enthalpie libre de réaction ΔrG°, qui peut être positive ou négative selon que la réaction est thermodynamiquement défavorable ou favorable). Il ne faut surtout pas confondre ces deux grandeurs : ΔG°≠ est une grandeur purement cinétique qui renseigne sur la vitesse de la réaction, alors que ΔrG° est une grandeur thermodynamique qui renseigne sur le sens spontané d'évolution et la position de l'équilibre final. Deux réactions ayant le même ΔrG° (même état final favorisé) peuvent avoir des ΔG°≠ très différents, et donc des vitesses très différentes : c'est tout l'enjeu de la catalyse, qui agit uniquement sur cette barrière cinétique."
+        },
+        {
+          "icon": "🧠",
+          "title": "État de transition versus intermédiaire réactionnel",
+          "content": "Ces deux notions sont fréquemment confondues alors qu'elles décrivent des réalités très différentes. L'état de transition est un point de très haute énergie, purement virtuel et instantané : il correspond au sommet exact de la barrière énergétique, une configuration atomique fugace et non isolable expérimentalement (on ne peut jamais l'isoler dans un flacon). À l'inverse, un intermédiaire réactionnel est une espèce chimique réelle, certes transitoire et souvent très réactive, mais qui correspond à un minimum local d'énergie situé entre deux états de transition successifs sur le profil réactionnel : elle est en principe isolable ou du moins détectable par des techniques physico-chimiques rapides, contrairement à l'état de transition. Sur un profil énergétique à plusieurs étapes, on voit ainsi une alternance de pics (états de transition) et de creux intermédiaires (intermédiaires réactionnels) entre l'état initial et l'état final. Retenir cette distinction est essentiel pour analyser correctement un mécanisme réactionnel en plusieurs étapes et pour ne pas confondre l'étape limitante avec un simple point du diagramme d'énergie."
+        },
+        {
+          "icon": "⭐",
+          "title": "Influence de la température sur la vitesse",
+          "content": "La température est l'un des facteurs cinétiques les plus importants : plus elle augmente, plus la constante de vitesse k augmente, et donc plus la réaction est rapide. L'expression reliant ces grandeurs peut s'écrire k = (kB·T/h)·e^(-ΔG°≠/RT), où kB est la constante de Boltzmann, h la constante de Planck, R la constante des gaz parfaits, et T la température absolue en kelvins (ces constantes sont en général fournies dans l'énoncé, il n'est pas nécessaire de les mémoriser). On comprend intuitivement cette dépendance à l'échelle moléculaire : élever la température augmente l'agitation thermique des particules, ce qui augmente la fréquence des chocs entre molécules et surtout la proportion de chocs suffisamment énergétiques pour franchir la barrière d'activation. Une astuce expérimentale intéressante consiste à tracer ln(k/T) en fonction de 1/T : la pente et l'ordonnée à l'origine de cette droite permettent de remonter respectivement à ΔH°≠ et ΔS°≠, les composantes enthalpique et entropique de la barrière d'activation, via la relation ΔG°≠ = ΔH°≠ - T·ΔS°≠."
+        },
+        {
+          "icon": "⚠️",
+          "title": "La catalyse : accélérer sans changer l'équilibre",
+          "content": "Un catalyseur est une espèce chimique qui accélère une réaction en abaissant son enthalpie libre d'activation ΔG°≠, ce qui augmente mécaniquement la constante de vitesse k (souvent en ouvrant une voie réactionnelle alternative, avec un mécanisme différent comportant une barrière plus basse). Le piège classique à ne jamais oublier : un catalyseur est un accélérateur purement cinétique, il ne modifie en rien la thermodynamique de la réaction. Concrètement, la constante d'équilibre K, l'enthalpie libre de réaction ΔrG° et la composition du système à l'état final restent rigoureusement identiques avec ou sans catalyseur - seul le temps nécessaire pour atteindre cet état final change. Autre point à retenir : un catalyseur est consommé au cours d'une étape du mécanisme réactionnel puis intégralement régénéré à une étape ultérieure, si bien qu'il n'apparaît jamais dans l'équation bilan globale de la réaction (bien qu'il apparaisse dans les étapes élémentaires du mécanisme détaillé). Cette propriété permet d'ailleurs de le distinguer clairement d'un simple réactif ou d'un intermédiaire réactionnel lors de l'analyse d'un mécanisme."
+        }
+      ],
+      "fiche": [
+        "v = -(1/a)·d[A]/dt = -(1/b)·d[B]/dt = +(1/c)·d[C]/dt = +(1/d)·d[D]/dt : signe négatif pour les réactifs, positif pour les produits, vitesse toujours positive.",
+        "Loi de vitesse générale : v = k·[A]^α·[B]^β, avec α et β les ordres partiels déterminés expérimentalement (jamais calculés a priori).",
+        "Ordre global = α + β. Unité de k : s⁻¹ pour l'ordre 1, L·mol⁻¹·s⁻¹ pour l'ordre 2, mol·L⁻¹·s⁻¹ pour l'ordre 0.",
+        "Molécularité = somme des coefficients stœchiométriques des réactifs (a+b) d'une étape élémentaire ; la loi de Van't Hoff (v=k[A]^a[B]^b, avec α=a et β=b) ne s'applique QUE si la réaction est élémentaire.",
+        "Réaction globale complexe = plusieurs étapes élémentaires ; l'étape cinétiquement déterminante est la plus lente et impose l'ordre global observé.",
+        "Ordre 1 : ln[A] = ln[A]₀ - akt, soit [A] = [A]₀·e^(-akt) ; graphe ln[A]=f(t) linéaire décroissant.",
+        "Temps de demi-réaction ordre 1 : t½ = ln(2)/(ak), indépendant de [A]₀ ; périodes successives constantes.",
+        "Ordre 2 (v=k[A]²) : 1/[A] = 1/[A]₀ + akt ; graphe 1/[A]=f(t) linéaire croissant, déclin hyperbolique de [A].",
+        "Temps de demi-réaction ordre 2 : t½ = 1/(ak[A]₀), dépendant de [A]₀ ; les demi-vies successives doublent (t1/4 = 3×t½, pas 2×t½).",
+        "Cas particulier v=k[A][B] avec [A]₀=[B]₀ et a=b : se ramène à v=k[A]², A et B évoluant identiquement.",
+        "Réaction renversable A⇌B : v = k₁[A] - k₋₁[B] ; à l'équilibre v=0 donc K = [B]eq/[A]eq = k₁/k₋₁.",
+        "ΔG°≠ (enthalpie libre d'activation) est toujours positive et purement cinétique ; ΔrG° est thermodynamique et peut être positive ou négative — ne jamais les confondre.",
+        "État de transition = point instable de haute énergie, non isolable ; intermédiaire réactionnel = espèce transitoire plus stable, isolable, minimum local d'énergie entre deux états de transition.",
+        "k = (kBT/h)·e^(-ΔG°≠/RT) : plus ΔG°≠ diminue, plus k augmente ; la température est un facteur cinétique dont l'augmentation accroît l'agitation thermique, le nombre de chocs efficaces, et donc k.",
+        "Catalyseur : diminue ΔG°≠ donc augmente k, MAIS ne modifie jamais K, ΔrG° ni l'état final ; il est régénéré en fin de réaction et n'apparaît pas dans l'équation bilan."
+      ],
+      "resources": [
+        {
+          "icon": "🎥",
+          "title": "Vidéo cours sur la cinétique chimique",
+          "description": "Cherche une vidéo qui trace pas à pas les courbes [A]=f(t), ln[A]=f(t) et 1/[A]=f(t) : visualiser les trois profils côte à côte aide énormément à ne plus les confondre à l'examen.",
+          "url": "https://www.youtube.com/results?search_query=Vid%C3%A9o%20cours%20sur%20la%20cin%C3%A9tique%20chimique%20Cin%C3%A9tique%20chimique"
+        },
+        {
+          "icon": "📘",
+          "title": "Fiche annales sur les ordres de réaction",
+          "description": "Refais un maximum d'annales portant spécifiquement sur la détermination d'un ordre de réaction à partir de données expérimentales (tableaux de concentration/temps) : c'est le type d'exercice le plus fréquent.",
+          "url": "https://www.google.com/search?q=Fiche%20annales%20sur%20les%20ordres%20de%20r%C3%A9action%20Cin%C3%A9tique%20chimique%20PASS"
+        },
+        {
+          "icon": "🧮",
+          "title": "Exercices de calcul de temps de demi-réaction",
+          "description": "Entraîne-toi à retrouver rapidement les formules de t½ pour l'ordre 1 et l'ordre 2 sans les avoir sous les yeux, et à repérer immédiatement lequel dépend de [A]₀.",
+          "url": "https://www.google.com/search?q=Exercices%20de%20calcul%20de%20temps%20de%20demi-r%C3%A9action%20Cin%C3%A9tique%20chimique%20PASS"
+        },
+        {
+          "icon": "📊",
+          "title": "Profil énergétique réactionnel schématisé",
+          "description": "Dessine toi-même un diagramme G°=f(avancement) avec réactifs, état(s) de transition, éventuel intermédiaire et produits, en plaçant ΔG°≠ et ΔrG° : le refaire de mémoire est le meilleur moyen de fixer la notion.",
+          "url": "https://www.google.com/search?q=Profil%20%C3%A9nerg%C3%A9tique%20r%C3%A9actionnel%20sch%C3%A9matis%C3%A9%20Cin%C3%A9tique%20chimique%20PASS"
+        },
+        {
+          "icon": "🗂️",
+          "title": "Tableau récapitulatif ordre 1 vs ordre 2",
+          "description": "Construis ton propre tableau comparatif (loi intégrée, forme du graphe linéarisant, unité de k, dépendance de t½) : le fait de le rédiger toi-même en fixe durablement le contenu.",
+          "url": "https://www.google.com/search?q=Tableau%20r%C3%A9capitulatif%20ordre%201%20vs%20ordre%202%20Cin%C3%A9tique%20chimique%20PASS"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Pour la réaction a A + b B → c C + d D, comment s'exprime correctement la vitesse par rapport à A ?",
+          "options": [
+            "v = -(1/a)·d[A]/dt",
+            "v = +(1/a)·d[A]/dt",
+            "v = -a·d[A]/dt",
+            "v = (1/a)·[A]"
+          ],
+          "correct_index": 0,
+          "explanation": "Bien vu ! 🎀 Comme [A] diminue au cours du temps, d[A]/dt est négatif ; on ajoute un signe moins pour que la vitesse reste positive, et on divise par le coefficient stœchiométrique a."
+        },
+        {
+          "question": "Dans la loi de vitesse v = k[A]^α[B]^β, que représentent α et β ?",
+          "options": [
+            "Les coefficients stœchiométriques de la réaction",
+            "Des ordres partiels déterminés expérimentalement",
+            "Des ordres partiels toujours calculables théoriquement",
+            "La molécularité de la réaction"
+          ],
+          "correct_index": 1,
+          "explanation": "Exactement ! 🌟 Les ordres partiels ne se calculent pas à partir de l'équation bilan : ils sont mesurés expérimentalement et ne coïncident avec les coefficients stœchiométriques que pour une réaction élémentaire."
+        },
+        {
+          "question": "Quelle est l'unité de la constante de vitesse k pour une réaction d'ordre global 2 ?",
+          "options": [
+            "s⁻¹",
+            "mol·L⁻¹·s⁻¹",
+            "L·mol⁻¹·s⁻¹",
+            "sans unité"
+          ],
+          "correct_index": 2,
+          "explanation": "Parfait ! 💫 Pour un ordre global égal à 2, la constante de vitesse s'exprime en L·mol⁻¹·s⁻¹, c'est un classique des QCM."
+        },
+        {
+          "question": "La loi de Van't Hoff (v = k[A]^a[B]^b avec les coefficients stœchiométriques comme exposants) s'applique :",
+          "options": [
+            "À toutes les réactions sans exception",
+            "Uniquement aux réactions d'ordre 2",
+            "Uniquement en présence d'un catalyseur",
+            "Uniquement aux réactions élémentaires"
+          ],
+          "correct_index": 3,
+          "explanation": "Bravo ! 🎯 Cette identité entre ordres partiels et coefficients stœchiométriques n'est valable que pour une réaction élémentaire, c'est-à-dire se déroulant en une seule étape."
+        },
+        {
+          "question": "La molécularité d'une réaction élémentaire correspond à :",
+          "options": [
+            "La somme des coefficients stœchiométriques des réactifs",
+            "L'ordre global de la réaction",
+            "La somme des coefficients stœchiométriques des produits",
+            "Le nombre d'intermédiaires réactionnels"
+          ],
+          "correct_index": 0,
+          "explanation": "Exact ! ✨ La molécularité est la somme des coefficients stœchiométriques des réactifs impliqués dans l'étape élémentaire (a+b), à ne pas confondre avec l'ordre global (α+β)."
+        },
+        {
+          "question": "Dans un mécanisme réactionnel en plusieurs étapes, l'étape cinétiquement déterminante est :",
+          "options": [
+            "La première étape du mécanisme",
+            "L'étape la plus lente",
+            "L'étape la plus rapide",
+            "La dernière étape du mécanisme"
+          ],
+          "correct_index": 1,
+          "explanation": "Bien joué ! 🌸 C'est l'étape la plus lente qui limite la vitesse globale et impose son ordre à la réaction observée, un peu comme le maillon le plus faible d'une chaîne."
+        },
+        {
+          "question": "Pour une réaction d'ordre 1, quel graphique donne une droite ?",
+          "options": [
+            "[A] = f(t)",
+            "1/[A] = f(t)",
+            "ln[A] = f(t)",
+            "[A]² = f(t)"
+          ],
+          "correct_index": 2,
+          "explanation": "Bravo ! 🌟 La loi intégrée d'ordre 1 s'écrit ln[A] = ln[A]₀ - akt : c'est bien ln[A] tracé en fonction du temps qui donne une droite, de pente négative."
+        },
+        {
+          "question": "Le temps de demi-réaction d'une cinétique d'ordre 1 :",
+          "options": [
+            "Dépend de la concentration initiale [A]₀",
+            "Double à chaque demi-vie",
+            "N'existe pas pour l'ordre 1",
+            "Est indépendant de [A]₀"
+          ],
+          "correct_index": 3,
+          "explanation": "Exact ! 💖 t½ = ln(2)/(ak) ne dépend pas de [A]₀ : les périodes successives sont donc constantes pour un ordre 1."
+        },
+        {
+          "question": "Pour une réaction d'ordre 2 du type v = k[A]², quel graphique est linéaire ?",
+          "options": [
+            "1/[A] = f(t)",
+            "[A] = f(t)",
+            "ln[A] = f(t)",
+            "√[A] = f(t)"
+          ],
+          "correct_index": 0,
+          "explanation": "Parfait ! 🎀 La loi intégrée donne 1/[A] = 1/[A]₀ + akt, donc tracer 1/[A] en fonction du temps donne une droite de pente positive akt."
+        },
+        {
+          "question": "Pour une réaction d'ordre 2, comment évoluent les temps de demi-vie successifs ?",
+          "options": [
+            "Ils restent constants",
+            "Ils doublent à chaque fois",
+            "Ils diminuent de moitié à chaque fois",
+            "Ils sont imprévisibles"
+          ],
+          "correct_index": 1,
+          "explanation": "Bien vu ! ✨ Contrairement à l'ordre 1, les demi-vies successives d'un ordre 2 doublent : t1/4 = 3×t½ et non 2×t½, piège classique à retenir."
+        },
+        {
+          "question": "Si [A]₀ = [B]₀ et a = b dans une réaction v = k[A][B], que peut-on écrire ?",
+          "options": [
+            "v = k[A]",
+            "v = k[A]³",
+            "v = k[A]²",
+            "v = k([A]+[B])"
+          ],
+          "correct_index": 2,
+          "explanation": "Exactement ! 🌷 Puisque A et B évoluent de façon identique dans ce cas particulier, on peut remplacer [B] par [A], ce qui donne v = k[A]²."
+        },
+        {
+          "question": "Pour une réaction renversable A ⇌ B de constantes k₁ (directe) et k₋₁ (inverse), la constante d'équilibre K vaut :",
+          "options": [
+            "K = k₁ + k₋₁",
+            "K = k₁ × k₋₁",
+            "K = k₋₁ / k₁",
+            "K = k₁ / k₋₁"
+          ],
+          "correct_index": 3,
+          "explanation": "Bravo ! 🌟 À l'équilibre v=0, donc k₁[A]eq = k₋₁[B]eq, ce qui donne K = [B]eq/[A]eq = k₁/k₋₁."
+        },
+        {
+          "question": "L'enthalpie libre d'activation ΔG°≠ est :",
+          "options": [
+            "Toujours positive",
+            "Toujours négative",
+            "Positive ou négative selon la réaction",
+            "Toujours nulle à l'équilibre"
+          ],
+          "correct_index": 0,
+          "explanation": "Exact ! 💫 ΔG°≠ représente une barrière énergétique à franchir : elle est toujours positive, contrairement à ΔrG° qui peut être positive ou négative."
+        },
+        {
+          "question": "Quelle affirmation distingue correctement l'état de transition de l'intermédiaire réactionnel ?",
+          "options": [
+            "L'état de transition est isolable, l'intermédiaire ne l'est pas",
+            "L'intermédiaire est un minimum local d'énergie, l'état de transition un maximum",
+            "Ce sont deux noms pour la même notion",
+            "L'intermédiaire réactionnel n'existe que dans les réactions d'ordre 1"
+          ],
+          "correct_index": 1,
+          "explanation": "Parfait ! 🎯 L'état de transition correspond à un maximum d'énergie non isolable, tandis que l'intermédiaire réactionnel est un minimum local d'énergie, une espèce transitoire mais plus stable."
+        },
+        {
+          "question": "Une augmentation de la température a pour effet sur la constante de vitesse k :",
+          "options": [
+            "De la diminuer systématiquement",
+            "De ne pas la modifier",
+            "De l'augmenter",
+            "De la rendre négative"
+          ],
+          "correct_index": 2,
+          "explanation": "Bien vu ! 🌸 Plus la température augmente, plus l'agitation thermique et le nombre de chocs efficaces augmentent, ce qui accroît la constante de vitesse k."
+        },
+        {
+          "question": "Qu'est-ce qu'un catalyseur modifie dans une réaction chimique ?",
+          "options": [
+            "Uniquement la constante d'équilibre K",
+            "Uniquement l'enthalpie libre de réaction ΔrG°",
+            "L'état final du système",
+            "Uniquement les paramètres cinétiques (ΔG°≠ et donc k)"
+          ],
+          "correct_index": 3,
+          "explanation": "Exactement ! ✨ Un catalyseur abaisse ΔG°≠ et augmente donc k, mais ne touche jamais à la thermodynamique (K, ΔrG°, état final restent identiques)."
+        },
+        {
+          "question": "Un catalyseur apparaît-il dans l'équation bilan globale d'une réaction ?",
+          "options": [
+            "Non, car il est régénéré en fin de réaction",
+            "Oui, toujours, avec un coefficient stœchiométrique",
+            "Oui, mais uniquement pour les réactions d'ordre 2",
+            "Cela dépend uniquement de la température"
+          ],
+          "correct_index": 0,
+          "explanation": "Bravo ! 🎀 Le catalyseur est consommé puis intégralement régénéré au cours du mécanisme, si bien qu'il n'apparaît pas dans l'équation bilan finale."
+        },
+        {
+          "question": "Pour une réaction élémentaire bimoléculaire, quel est l'ordre global attendu selon Van't Hoff ?",
+          "options": [
+            "Ordre 0",
+            "Ordre 2",
+            "Ordre 1",
+            "Ordre 3"
+          ],
+          "correct_index": 1,
+          "explanation": "Exact ! 🌟 Une réaction élémentaire bimoléculaire (molécularité 2) est d'ordre 2 selon la loi de Van't Hoff, puisque α=a et β=b dans ce cas particulier."
+        }
+      ],
+      "exercises": {
+        "facile": [
+          {
+            "statement": "Pour la réaction 2 A → B, exprimez la vitesse v en fonction de d[A]/dt et de d[B]/dt.",
+            "solution": "v = -(1/2)·d[A]/dt = +d[B]/dt. Le coefficient 2 de A impose la division par 2, tandis que B, de coefficient 1, n'a pas de facteur ; le signe est négatif pour A (réactif) et positif pour B (produit)."
+          },
+          {
+            "statement": "Une réaction admet la loi de vitesse v = k[A]²[B]. Quel est l'ordre partiel par rapport à B et quel est l'ordre global ?",
+            "solution": "L'ordre partiel par rapport à B est 1 (exposant de [B]). L'ordre global est la somme des exposants : 2 + 1 = 3."
+          },
+          {
+            "statement": "Quelle est l'unité de k pour une réaction d'ordre global 1 ?",
+            "solution": "Pour un ordre global 1, k s'exprime en s⁻¹, car la loi de vitesse v=k[A] doit donner v en mol·L⁻¹·s⁻¹ avec [A] en mol·L⁻¹."
+          },
+          {
+            "statement": "Vrai ou faux : la loi de Van't Hoff s'applique à toutes les réactions chimiques, élémentaires ou non. Justifiez.",
+            "solution": "Faux. La loi de Van't Hoff (ordres = coefficients stœchiométriques) ne s'applique qu'aux réactions élémentaires, se déroulant en une seule étape sans intermédiaire réactionnel."
+          },
+          {
+            "statement": "Définissez en une phrase le temps de demi-réaction t½.",
+            "solution": "Le temps de demi-réaction est la durée nécessaire pour que la concentration d'un réactif suivi soit divisée par deux par rapport à sa valeur initiale, soit [A] = [A]₀/2."
+          },
+          {
+            "statement": "Pour une réaction d'ordre 1, si t½ = 10 min, combien de temps faut-il pour que la concentration passe à [A]₀/4 ?",
+            "solution": "Pour l'ordre 1, chaque demi-vie est identique et indépendante de [A]₀ : il faut donc 2 × t½ = 20 min pour atteindre [A]₀/4."
+          },
+          {
+            "statement": "Qu'est-ce qui distingue ΔG°≠ de ΔrG° ? Citez au moins une différence.",
+            "solution": "ΔG°≠ est une grandeur cinétique toujours positive (barrière d'activation), alors que ΔrG° est une grandeur thermodynamique qui peut être positive ou négative selon le sens spontané de la réaction."
+          },
+          {
+            "statement": "Un catalyseur modifie-t-il la constante d'équilibre K d'une réaction ? Répondez et justifiez brièvement.",
+            "solution": "Non. Un catalyseur agit uniquement sur les paramètres cinétiques (il abaisse ΔG°≠ et augmente k) mais laisse strictement inchangés K, ΔrG° et l'état final du système."
+          },
+          {
+            "statement": "Une réaction renversable A ⇌ B a pour constantes de vitesse k₁ = 4×10⁻² s⁻¹ et k₋₁ = 2×10⁻² s⁻¹. Calculez la constante d'équilibre K.",
+            "solution": "K = k₁/k₋₁ = 4×10⁻²/2×10⁻² = 2."
+          },
+          {
+            "statement": "Citez les trois moyens permettant de reconnaître une réaction d'ordre 1.",
+            "solution": "Un graphique ln[A]=f(t) linéaire décroissant ; un graphique [A]=f(t) en décroissance exponentielle à périodes successives constantes ; une constante de vitesse k exprimée en s⁻¹."
+          }
+        ],
+        "moyen": [
+          {
+            "statement": "On étudie la décomposition d'un composé A, d'ordre 1, avec une constante de vitesse k = 2,31×10⁻³ s⁻¹ (a=1). Calculez le temps de demi-réaction t½.",
+            "solution": "t½ = ln(2)/(ak) = 0,693/(1×2,31×10⁻³) ≈ 300 s, soit 5 minutes."
+          },
+          {
+            "statement": "Pour une réaction d'ordre 2 (v=k[A]²) avec k=0,5 L·mol⁻¹·s⁻¹ (a=1) et [A]₀=0,2 mol/L, calculez t½.",
+            "solution": "t½ = 1/(ak[A]₀) = 1/(1×0,5×0,2) = 1/0,1 = 10 s."
+          },
+          {
+            "statement": "Pour la réaction précédente (ordre 2, t½=10 s), quel est le temps nécessaire pour atteindre [A]₀/4 ?",
+            "solution": "Pour l'ordre 2, t1/4 = 3×t½ (et non 2×t½ comme pour l'ordre 1) : t1/4 = 3×10 = 30 s."
+          },
+          {
+            "statement": "On mesure [A]=0,05 mol/L à t=0 puis [A]=0,025 mol/L à t=100 s pour une réaction d'ordre 1 avec a=1. Calculez k.",
+            "solution": "ln([A]/[A]₀)=-akt ⇒ ln(0,025/0,05) = -k×100 ⇒ ln(0,5) = -100k ⇒ -0,693 = -100k ⇒ k ≈ 6,93×10⁻³ s⁻¹."
+          },
+          {
+            "statement": "Pour une réaction A → produits d'ordre 2 (a=1, v=k[A]²), avec [A]₀=0,1 mol/L et k=0,2 L·mol⁻¹·s⁻¹, calculez [A] à t=50 s.",
+            "solution": "1/[A] = 1/[A]₀ + akt = 1/0,1 + 1×0,2×50 = 10 + 10 = 20, donc [A] = 1/20 = 0,05 mol/L."
+          },
+          {
+            "statement": "Un mécanisme en deux étapes présente une première étape lente (k=10⁻⁴ s⁻¹) et une seconde étape rapide (k=10² s⁻¹). Quelle étape détermine la cinétique globale et pourquoi ?",
+            "solution": "La première étape, car c'est l'étape la plus lente (k le plus faible) qui constitue le goulot d'étranglement : elle impose sa vitesse et son ordre à la réaction globale."
+          },
+          {
+            "statement": "Expliquez pourquoi une réaction avec ΔrG°<0 (thermodynamiquement favorable) peut malgré tout être extrêmement lente en pratique.",
+            "solution": "ΔrG°<0 renseigne uniquement sur le caractère spontané et favorable de la réaction (thermodynamique), mais dit rien sur sa vitesse. Si ΔG°≠ (barrière cinétique) est très élevé, la réaction sera lente malgré une thermodynamique favorable : les deux grandeurs sont indépendantes."
+          },
+          {
+            "statement": "Pour une réaction v=k[A][B] avec [A]₀=[B]₀=0,3 mol/L et a=b=1, k=1,2 L·mol⁻¹·s⁻¹, calculez [A] après 2 s.",
+            "solution": "Puisque [A]₀=[B]₀ et a=b, v=k[A]² : 1/[A]=1/[A]₀+akt = 1/0,3 + 1×1,2×2 = 3,33+2,4 = 5,73, donc [A] ≈ 0,175 mol/L."
+          },
+          {
+            "statement": "On trace ln(k/T) en fonction de 1/T pour une réaction. Que peut-on extraire de la pente et de l'ordonnée à l'origine de cette droite ?",
+            "solution": "La pente de cette droite permet de déterminer ΔH°≠ (enthalpie d'activation), et l'ordonnée à l'origine permet de déterminer ΔS°≠ (entropie d'activation), en lien avec ΔG°≠ = ΔH°≠ - TΔS°≠."
+          },
+          {
+            "statement": "Une réaction d'ordre 1 a un k=1,5×10⁻² min⁻¹. Après combien de demi-vies la concentration initiale est-elle inférieure à 10% de sa valeur initiale ?",
+            "solution": "Après n demi-vies, [A]/[A]₀=(1/2)^n. On veut (1/2)^n<0,1, soit n>ln(0,1)/ln(0,5)≈3,32. Il faut donc au moins 4 demi-vies complètes (soit environ 4×t½ avec t½=ln2/k≈46,2 min, donc environ 185 min)."
+          }
+        ],
+        "difficile": [
+          {
+            "statement": "Un mécanisme réactionnel se déroule en deux étapes élémentaires successives : A → I (k1, lente) puis I → P (k2, rapide), où I est un intermédiaire réactionnel. Établissez la loi de vitesse approchée de disparition de A et justifiez l'ordre obtenu.",
+            "solution": "Comme la première étape (formation de I à partir de A) est l'étape limitante (la plus lente), c'est elle qui fixe la cinétique globale. Cette étape étant élémentaire unimoléculaire, elle est d'ordre 1 par rapport à A : v ≈ -d[A]/dt = k1[A]. La réaction globale A → P apparaît donc comme étant globalement d'ordre 1, bien que le mécanisme comporte deux étapes, car la seconde étape (rapide) ne limite pas la vitesse d'ensemble."
+          },
+          {
+            "statement": "Démontrez que pour une réaction d'ordre 2 du type v=k[A]² (a=1), le temps nécessaire pour passer de [A]₀ à [A]₀/4 vaut exactement 3×t½.",
+            "solution": "On a 1/[A] = 1/[A]₀ + kt. Pour [A]=[A]₀/2 (t=t½) : 2/[A]₀ = 1/[A]₀+kt½ ⇒ kt½=1/[A]₀ ⇒ t½=1/(k[A]₀). Pour [A]=[A]₀/4 (t=t1/4) : 4/[A]₀=1/[A]₀+kt1/4 ⇒ kt1/4=3/[A]₀ ⇒ t1/4=3/(k[A]₀)=3×t½. Le résultat est bien démontré indépendamment de la valeur numérique de k et [A]₀."
+          },
+          {
+            "statement": "Un composé A se décompose selon deux voies parallèles indépendantes vers B (k1=2×10⁻³ s⁻¹) et vers C (k2=3×10⁻³ s⁻¹), chacune d'ordre 1 par rapport à A. Déterminez la constante de vitesse apparente k_obs pour la disparition de A et le t½ global.",
+            "solution": "Comme les deux voies consomment A simultanément, on a -d[A]/dt = k1[A]+k2[A] = (k1+k2)[A] = k_obs[A], avec k_obs = k1+k2 = 5×10⁻³ s⁻¹. Le t½ global suit alors la loi d'ordre 1 : t½=ln(2)/k_obs = 0,693/5×10⁻³ ≈ 138,6 s."
+          },
+          {
+            "statement": "Pour une réaction élémentaire A + B → C, on double simultanément [A]₀ et [B]₀ : la vitesse initiale est alors multipliée par 4. Ce résultat est-il cohérent avec la loi de Van't Hoff pour cette réaction élémentaire ? Justifiez.",
+            "solution": "Oui. Pour une réaction élémentaire bimoléculaire A+B→C, la loi de Van't Hoff donne v=k[A][B] (a=b=1). En doublant [A] et [B], le nouveau v' = k(2[A])(2[B]) = 4k[A][B] = 4v : la vitesse est bien multipliée par 4, ce qui est cohérent avec un ordre 1 par rapport à chaque réactif (ordre global 2)."
+          },
+          {
+            "statement": "Deux réactions concurrentes ont pour ΔG°≠ respectifs 50 kJ/mol et 80 kJ/mol à même température. Sans calcul numérique, comparez qualitativement leurs constantes de vitesse et expliquez le rôle d'un catalyseur agissant sur la seconde réaction.",
+            "solution": "Puisque k = (kBT/h)·e^(-ΔG°≠/RT), plus ΔG°≠ est faible, plus le terme exponentiel est proche de 1 et plus k est grand. La réaction à 50 kJ/mol a donc une constante de vitesse bien supérieure à celle à 80 kJ/mol (barrière plus haute = réaction plus lente). Un catalyseur agissant sur la réaction à 80 kJ/mol abaisserait son ΔG°≠ effectif (nouvelle voie réactionnelle), augmentant ainsi k sans changer ΔrG° ni l'état final de cette réaction."
+          },
+          {
+            "statement": "On suit la réaction A → produits et on obtient les données : à t=0, [A]=0,40 mol/L ; à t=20s, [A]=0,20 mol/L ; à t=40s, [A]=0,10 mol/L. Déterminez l'ordre de la réaction et calculez la constante de vitesse (a=1).",
+            "solution": "Les périodes successives (0 à 20s, puis 20 à 40s) sont égales à 20s chacune pour diviser par 2 la concentration : les demi-vies sont constantes, donc la réaction est d'ordre 1. On a t½=20s=ln(2)/k, donc k=ln(2)/20≈0,0347 s⁻¹."
+          },
+          {
+            "statement": "Pour une réaction v=k[A][B] avec a=1, b=2, [A]₀=0,5 mol/L et [B]₀=1,0 mol/L (donc [B]₀=2[A]₀, proportions stœchiométriques), montrez que l'on peut se ramener à une cinétique d'ordre 2 apparent en une seule variable.",
+            "solution": "Comme les réactifs sont en proportions stœchiométriques (b/a=2=[B]₀/[A]₀), à chaque instant [B]=2[A] (car A et B se consomment proportionnellement à a et b). On peut donc écrire v=-d[A]/dt=k[A](2[A])=2k[A]², une loi d'ordre 2 apparent en [A] seul, avec une constante apparente k'=2k."
+          },
+          {
+            "statement": "Justifiez pourquoi l'ordre global d'une réaction ne peut jamais être déduit uniquement de la lecture de l'équation bilan macroscopique, sauf information complémentaire.",
+            "solution": "L'équation bilan macroscopique ne renseigne que sur la stœchiométrie globale (conservation de la matière), qui peut résulter de plusieurs étapes élémentaires successives. Or seule une étape élémentaire suit la loi de Van't Hoff reliant ordre et coefficients stœchiométriques. Sans savoir si la réaction est élémentaire ou complexe (et, si complexe, sans connaître l'étape limitante), il est impossible de déduire l'ordre : il faut une détermination expérimentale ou une donnée sur le mécanisme."
+          },
+          {
+            "statement": "Un catalyseur enzymatique abaisse le ΔG°≠ d'une réaction biologique de 20 kJ/mol par rapport à la réaction non catalysée, à T=310 K (R=8,314 J·mol⁻¹·K⁻¹). Calculez le facteur multiplicatif approximatif appliqué à k (rapport k_cat/k_sans_cat), sachant que le préfacteur kBT/h est identique dans les deux cas.",
+            "solution": "k_cat/k = e^(-ΔG°≠_cat/RT) / e^(-ΔG°≠/RT) = e^((ΔG°≠-ΔG°≠_cat)/RT) = e^(20000/(8,314×310)) = e^(20000/2577) = e^7,76 ≈ 2350. Le catalyseur multiplie donc la constante de vitesse par un facteur d'environ 2350, illustrant l'énorme effet cinétique d'une baisse même modeste de la barrière d'activation."
+          },
+          {
+            "statement": "Montrez que pour une réaction d'ordre 1, le rapport [A](t)/[A](t+t½) est constant et égal à 2, quel que soit l'instant t choisi (propriété d'auto-similarité de l'exponentielle).",
+            "solution": "[A](t)=[A]₀e^(-akt) et [A](t+t½)=[A]₀e^(-ak(t+t½))=[A]₀e^(-akt)·e^(-akt½). Le rapport est donc [A](t)/[A](t+t½) = 1/e^(-akt½) = e^(akt½). Or akt½=ln(2) (par définition de t½ pour l'ordre 1), donc ce rapport vaut e^(ln2)=2, indépendamment de l'instant t choisi : c'est la propriété caractéristique de la décroissance exponentielle, contrairement à l'ordre 2 où ce rapport dépend de t."
+          }
+        ]
+      }
+    },
+    {
+      "id": "chimie_organique",
+      "title": "Chimie organique",
+      "difficulty": 3,
+      "intro": "Prête à dompter les flèches courbes et les mécanismes réactionnels ? On respire, on avance étape par étape ! 🧪✨",
+      "diagram": "flowchart TD\nA[Chimie organique] --> B[Rupture de liaisons]\nB --> B1[Homolyse radicalaire]\nB --> B2[Heterolyse ionique]\nA --> C[Especes reactives]\nC --> C1[Electrophile]\nC --> C2[Nucleophile]\nC --> C3[Nucleofuge]\nA --> D[Composes halogenes]\nD --> D1[Substitution SN1 SN2]\nD --> D2[Elimination E1 E2]\nD --> D3[Activation des alcools]\nA --> E[Carbonyles]\nE --> E1[Addition nucleophile]\nE --> E2[Catalyse acide]\nE --> E3[Catalyse basique]\nA --> F[Nucleophiles neutres]\nF --> F1[Alcools et thiols]\nF --> F2[Amines et imines]\nF --> F3[Ethers et thioethers]\nA --> G[Alcenes]\nG --> G1[Addition electrophile]\nG --> G2[Regle de Markovnikov]",
+      "course": [
+        {
+          "icon": "🔬",
+          "title": "Rupture et formation des liaisons",
+          "content": "Toute la chimie organique repose sur une idée simple : une liaison chimique peut se casser et se reformer, et ce mouvement d'électrons se note avec des flèches courbes. On distingue deux façons de rompre une liaison. La rupture homolytique sépare les deux électrons du doublet, un pour chaque atome, ce qui donne deux radicaux (espèces avec un électron célibataire) ; on la représente avec une demi-flèche, symbolisant le déplacement d'un seul électron. La rupture hétérolytique, beaucoup plus fréquente en chimie organique, envoie les deux électrons du doublet vers un seul des deux atomes, qui devient chargé négativement, l'autre devenant chargé positivement ; on la représente avec une flèche pleine, pour un doublet entier. Cette rupture peut être spontanée, lorsque la polarisation de la liaison est telle qu'un des deux fragments est déjà suffisamment stable pour se former seul (typiquement un carbocation stabilisé), ou concertée, lorsqu'une espèce extérieure vient aider au départ du fragment en formant simultanément une nouvelle liaison. Piège classique : ne confondez jamais le sens de la flèche (elle part toujours d'une source d'électrons, doublet non liant ou liaison, vers une case vide) avec le sens du déplacement des atomes."
+        },
+        {
+          "icon": "⭐",
+          "title": "Électrophile, nucléophile, nucléofuge : le trio à connaître",
+          "content": "Ces trois qualificatifs décrivent le rôle que joue un atome ou une molécule dans une réaction, et il faut savoir les reconnaître sur une structure pour anticiper un mécanisme. L'électrophile est pauvre en électrons : il possède une orbitale vacante (souvent une orbitale antiliante σ* ou π*, parfois une case quantique vide comme sur un carbocation) et 'cherche' à capter un doublet. Plus il est électrodéficient, plus il est réactif, mais un encombrement stérique important gêne l'approche du nucléophile et diminue donc l'électrophilie effective. Le nucléophile est riche en électrons : il possède un doublet non liant ou une liaison π disponible à donner. Sa force augmente avec sa basicité et sa polarisabilité (un gros atome comme le soufre ou l'iode, au nuage électronique déformable, forme plus facilement une liaison naissante), mais diminue avec l'encombrement stérique autour du site donneur. Le nucléofuge (ou groupe partant) est l'espèce qui s'en va en emportant le doublet de la liaison rompue : son aptitude à partir augmente avec sa polarisabilité et diminue avec sa basicité, car un bon nucléofuge est justement une base faible qui accepte bien de porter une charge négative ou de rester chargé. Retenez le contraste : un bon nucléophile est souvent une base forte, alors qu'un bon nucléofuge est une base faible, ce sont des logiques opposées."
+        },
+        {
+          "icon": "🔬",
+          "title": "Les grandes classes de réactions organiques",
+          "content": "On classe les réactions organiques selon leur bilan en liaisons σ et π. La substitution remplace un atome ou groupe d'atomes par un autre : bilan, une liaison σ rompue et une liaison σ formée, le nombre de liaisons ne change pas. L'addition fixe deux groupes sur une insaturation (double ou triple liaison) : bilan, une liaison π rompue et deux liaisons σ formées, on gagne des liaisons donc on part d'une molécule plus insaturée vers une molécule plus saturée. L'élimination fait l'inverse : deux groupes partent pour créer une insaturation, bilan, deux liaisons σ rompues et une liaison π formée. Il existe aussi des réactions d'isomérisation, qui réarrangent la molécule sans changer sa formule brute, avec des mécanismes variés. Un excellent réflexe d'examen consiste à compter les liaisons avant et après la réaction : cela permet souvent de deviner instantanément le type de réaction, même sans connaître le mécanisme exact impliqué."
+        },
+        {
+          "icon": "🧠",
+          "title": "Composés halogénés : carbone α et carbones β",
+          "content": "Un composé halogéné R-X (X = Cl, Br, I, F) possède un carbone électrophile appelé carbone α, rendu électrodéficient par l'effet inductif attracteur de l'halogène. Les carbones directement voisins du carbone α sont appelés carbones β, et leurs hydrogènes sont rendus plus labiles (plus faciles à arracher) par le même effet inductif transmis à travers la chaîne. Cette double fragilité (carbone α électrophile, hydrogènes β acidifiés) explique pourquoi un même composé halogéné peut subir deux types de réactions concurrentes face à un réactif qui est à la fois nucléophile et basique : une attaque sur le carbone α mène à une substitution nucléophile, une attaque (arrachage de proton) sur un hydrogène β mène à une élimination. Concernant l'aptitude nucléofuge des halogénures : I⁻ > Br⁻ > Cl⁻ >> F⁻, car la polarisabilité croît avec la taille de l'atome alors que le fluor, très petit et peu polarisable, reste un très mauvais groupe partant malgré sa forte électronégativité."
+        },
+        {
+          "icon": "➗",
+          "title": "SN2 : mécanisme concerté et inversion de Walden",
+          "content": "La substitution nucléophile bimoléculaire (SN2) se déroule en une seule étape concertée : le nucléophile attaque le carbone électrophile exactement à l'opposé du groupe partant (attaque anti, à 180°), pendant que la liaison C-X se rompt simultanément. La vitesse suit une loi cinétique d'ordre 2, v = k[substrat][nucléophile], car les deux espèces sont impliquées dans l'étape cinétiquement déterminante, qui est ici l'unique étape. Cette géométrie d'attaque unique en anti impose une inversion de configuration au niveau du carbone, appelée inversion de Walden : les trois autres substituants se retournent comme un parapluie qui se retourne dans le vent. La réaction est donc stéréospécifique (un seul stéréoisomère de configuration relative inversée est obtenu). Pour qu'une SN2 soit favorisée, il faut un carbone électrophile peu encombré (méthyle ou primaire de préférence), un nucléophile fort, et un bon groupe partant. Piège fréquent : ne confondez pas inversion de configuration relative et inversion du pouvoir rotatoire (configuration absolue R/S) ; l'un n'implique pas mécaniquement l'autre selon les priorités CIP des substituants."
+        },
+        {
+          "icon": "➗",
+          "title": "SN1 : mécanisme en deux étapes via un carbocation",
+          "content": "La substitution nucléophile monomoléculaire (SN1) se déroule en deux étapes. D'abord, la liaison C-X se rompt spontanément (sans l'aide du nucléophile), formant un carbocation intermédiaire plan ; c'est cette étape, lente, qui est cinétiquement déterminante, d'où une vitesse v = k[substrat], indépendante de la concentration en nucléophile (ordre 1). Ensuite, le nucléophile vient combler l'orbitale p vide du carbocation, qui présente deux faces équivalentes puisque la géométrie est plane (trigonale). L'attaque pouvant se faire des deux côtés du plan avec la même probabilité, on obtient un mélange des deux stéréoisomères possibles en proportions égales : la réaction n'est pas stéréosélective, et si le carbone de départ était le seul centre asymétrique de la molécule, le produit final est un mélange racémique. La SN1 est favorisée par un carbocation stable (tertiaire, allylique, benzylique, stabilisé par mésomérie ou par effet inductif donneur), un solvant polaire (qui stabilise les charges séparées), et ne nécessite pas un nucléophile particulièrement fort puisque le carbocation est très réactif."
+        },
+        {
+          "icon": "➗",
+          "title": "Élimination E1 et E2, règle de Zaïtsev",
+          "content": "Comme pour la substitution, l'élimination possède deux mécanismes symétriques. L'E2 est concertée et bimoléculaire (v = k[substrat][base]) : la base arrache un hydrogène porté par un carbone β pendant que la liaison C-X se rompt simultanément, formant la double liaison en une seule étape. Cela impose une géométrie précise, dite anti-périplanaire (H et X dans le même plan, à l'opposé l'un de l'autre vus en projection de Newman), ce qui rend l'E2 stéréospécifique. L'E1 se déroule en deux étapes comme la SN1 : rupture spontanée de C-X formant un carbocation (étape lente, cinétiquement déterminante, v = k[substrat]), puis arrachage d'un proton β par la base. La rotation libre autour de la liaison C-C dans le carbocation intermédiaire permet de former les deux isomères géométriques E et Z, mais le produit E, plus stable (moins de gêne stérique entre substituants volumineux), est généralement majoritaire : on parle de stéréosélectivité partielle. Dans les deux cas, quand plusieurs hydrogènes β sont disponibles, la règle de Zaïtsev prédit que l'alcène majoritaire est le plus substitué (le carbone β portant le moins d'hydrogènes est celui qui perd son proton), car c'est l'alcène thermodynamiquement le plus stable."
+        },
+        {
+          "icon": "⚠️",
+          "title": "SN1/E1 vs SN2/E2 : quel mécanisme choisir ?",
+          "content": "Cette question revient sans cesse en exercice, voici la logique à suivre. Premier critère, l'encombrement du carbone électrophile : un carbone primaire ou méthylé favorise les mécanismes concertés SN2/E2 (accès facile pour l'attaque en anti), tandis qu'un carbone tertiaire très encombré empêche l'approche du nucléophile en SN2 mais favorise au contraire la formation d'un carbocation stable, donc SN1/E1. Deuxième critère, la force du nucléophile/de la base : un nucléophile fort et peu encombré pousse vers un mécanisme bimoléculaire (SN2 ou E2 selon sa basicité), un nucléophile faible laisse le temps à une ionisation spontanée (SN1/E1). Troisième critère, la nature du solvant : un solvant polaire protique stabilise les intermédiaires chargés et favorise SN1/E1, un solvant polaire aprotique favorise plutôt les mécanismes SN2 en laissant le nucléophile 'nu' et donc très réactif. Enfin, substitution et élimination sont toujours en compétition : un nucléophile qui est aussi une bonne base donnera un mélange des deux types de produits, et la température élevée favorise thermodynamiquement l'élimination (formation d'un gaz ou d'une molécule plus stable, effet entropique favorable)."
+        },
+        {
+          "icon": "🧠",
+          "title": "Activation des alcools",
+          "content": "L'alcool R-OH possède un carbone électrophile modéré, mais son groupe partant naturel, l'ion hydroxyde HO⁻, est une base bien trop forte pour partir spontanément : il faut donc 'activer' l'alcool avant toute substitution ou élimination. Deux stratégies classiques. Première stratégie, l'activation en milieu acide fort : on protone l'oxygène pour former un ion oxonium R-OH2⁺, qui a deux avantages, il renforce l'électrophilie du carbone (effet inductif attracteur de l'oxonium plus fort) et transforme le très mauvais groupe partant HO⁻ en une excellente molécule d'eau H2O, neutre et stable, qui part facilement. Deuxième stratégie, l'activation en ester sulfonique (tosylate, mésylate) : on fait réagir l'alcool avec un chlorure de sulfonyle en présence d'une base faible, via un mécanisme d'addition-élimination, ce qui transforme le -OH en un excellent groupe partant sulfonate, sans passer par un milieu acide fort. Piège classique : ne pas confondre l'activation (qui rend le groupe partant meilleur) avec l'augmentation de la nucléophilie (rôle inverse, joué par les bases sur les nucléophiles)."
+        },
+        {
+          "icon": "🔬",
+          "title": "Addition nucléophile sur aldéhydes et cétones",
+          "content": "La fonction carbonyle C=O est fortement polarisée (oxygène très électronégatif), ce qui rend le carbone électrophile avec, comme orbitale vacante la plus basse en énergie, l'orbitale π* de la double liaison. Un nucléophile attaque ce carbone en rompant la liaison π (rupture concertée avec la formation de la nouvelle liaison σ), tandis que le doublet π part se localiser entièrement sur l'oxygène, qui devient un alcoolate, ensuite protoné pour donner un alcool. La géométrie plane trigonale du carbonyle offre deux faces d'attaque équivalentes, l'addition nucléophile n'est donc pas stéréosélective : elle donne un mélange équimolaire des deux stéréoisomères possibles quand un nouveau centre asymétrique est créé. La vitesse suit une loi d'ordre 2 (v = k[carbonyle][nucléophile]) car l'attaque et la rupture de la liaison π sont concertées dès la première étape. Cette réaction est à la base de nombreuses transformations : formation d'hémiacétals avec les alcools, d'imines avec les amines, d'hydrates avec l'eau, etc."
+        },
+        {
+          "icon": "⭐",
+          "title": "Catalyses acide et basique de l'addition nucléophile",
+          "content": "L'addition nucléophile sur un carbonyle peut être lente si l'électrophile ou le nucléophile n'est pas assez fort ; on peut donc l'accélérer par catalyse. En catalyse acide, on protone (totalement ou partiellement) l'oxygène du carbonyle, ce qui le transforme en oxonium très électroattracteur et renforce fortement l'électrophilie du carbone. Une catalyse acide forte protone complètement, ce qui est efficace mais risque aussi de protoner le nucléophile lui-même s'il est basique, réduisant alors sa réactivité (mauvais choix pour former une imine à partir d'une amine, par exemple) ; une catalyse acide faible ne protone que partiellement, en synchronisant addition nucléophile et transfert de proton, ce qui est la stratégie idéale pour la formation des imines. En catalyse basique, on déprotone au contraire le nucléophile pour le rendre plus riche en électrons et donc plus réactif ; attention, cette voie est incompatible avec une activation ultérieure de l'alcool formé (pas de bon groupe partant en milieu basique). Retenez ce principe général très transposable : la catalyse acide agit sur l'électrophile, la catalyse basique agit sur le nucléophile."
+        },
+        {
+          "icon": "🔬",
+          "title": "Nucléophiles neutres : alcools, thiols et amines",
+          "content": "La force nucléophile de ces espèces dépend à la fois de leur basicité et de leur polarisabilité, deux critères parfois contradictoires. Les alcools (pKa de l'acide conjugué ROH2⁺ autour de -2, pKa de ROH autour de 16) sont des bases faibles, l'espèce prédominante à pH physiologique étant ROH, peu nucléophile. Les thiols, moins basiques que les alcools (S est moins électronégatif, stabilise mieux la charge négative), sont cependant beaucoup plus polarisables grâce au grand volume de l'atome de soufre, ce qui compense largement leur moindre basicité et en fait de meilleurs nucléophiles (et aussi de meilleurs groupes partants) que les alcools. Les amines restent globalement de très bonnes bases (pKa de l'ammonium entre 9 et 11), avec un ordre de basicité typique amine secondaire > tertiaire > primaire > ammoniac en phase aqueuse, sous l'effet combiné de l'inductif donneur des groupes alkyles et de la solvatation (gênée par l'encombrement). Attention aux exceptions : les phénols et les anilines sont nettement moins basiques que leurs homologues aliphatiques car leur doublet est délocalisé dans le cycle aromatique par mésomérie, ce qui le rend moins disponible."
+        },
+        {
+          "icon": "🔬",
+          "title": "Réactivité des amines : N-alkylation et formation d'imines",
+          "content": "Les amines, grâce à leur doublet non liant disponible sur l'azote, jouent un double rôle. D'une part, elles agissent comme nucléophiles dans des substitutions nucléophiles sur des composés halogénés, réaction appelée N-alkylation, formant une amine plus substituée (sel d'ammonium intermédiaire, puis amine neutre après déprotonation) ; cette réaction est en compétition avec la simple réaction acido-basique pour les amines primaires et secondaires qui possèdent encore des hydrogènes labiles. D'autre part, une amine primaire peut réagir avec un aldéhyde ou une cétone via un mécanisme d'addition-élimination : addition nucléophile de l'amine sur le carbonyle (formant un intermédiaire appelé carbinolamine ou aminol), puis élimination d'une molécule d'eau pour former une imine (liaison C=N). Cette séquence doit impérativement se faire en catalyse acide faible : un milieu trop acide protonerait l'amine nucléophile et bloquerait la réaction dès la première étape. Les amines peuvent aussi subir des acylations (formant des amides) ou des sulfonations (formant des sulfamides), toujours par ce même schéma d'addition-élimination, en présence d'une base faible qui neutralise l'acide formé."
+        },
+        {
+          "icon": "🔬",
+          "title": "Addition électrophile sur les alcènes et règle de Markovnikov",
+          "content": "Une double liaison C=C se comporte comme un nucléophile : ses électrons π, disponibles au-dessus et en dessous du plan de la molécule, peuvent attaquer un électrophile. Face à un acide fort H-A (halogénure d'hydrogène par exemple), la réaction se déroule en deux étapes : l'alcène attaque le proton H+ (étape lente, cinétiquement déterminante) pour former un carbocation intermédiaire, puis le nucléophile A⁻ vient se fixer sur ce carbocation. La vitesse globale suit v = k[alcène][HA], un ordre 2. Comme les deux faces du plan de l'alcène sont accessibles de façon équiprobable, des questions de stéréochimie se posent systématiquement. Sur un alcène dissymétrique, la régiochimie est gouvernée par la règle de Markovnikov : le proton H+ se fixe sur le carbone le moins substitué et le nucléophile A⁻ sur le carbone le plus substitué, car c'est ce dernier carbocation, mieux stabilisé (par effet inductif donneur des groupes alkyles ou par mésomérie s'il est en position benzylique ou allylique), qui se forme préférentiellement. Bien retenir : ce n'est pas une règle arbitraire, c'est une conséquence directe de la stabilité relative des carbocations possibles."
+        }
+      ],
+      "fiche": [
+        "Rupture homolytique = un électron pour chaque atome (radicaux, demi-flèche) ; rupture hétérolytique = le doublet part chez un seul atome (ions, flèche pleine).",
+        "Électrophile = pauvre en électrons, orbitale vide, réactivité augmentée par électrodéficience, diminuée par encombrement.",
+        "Nucléophile = riche en électrons, force liée à la basicité et à la polarisabilité, diminuée par l'encombrement stérique.",
+        "Nucléofuge = part avec le doublet, aptitude augmentée par la polarisabilité, diminuée par la basicité (logique inverse du nucléophile).",
+        "Substitution : une σ cassée, une σ formée. Addition : une π cassée, deux σ formées. Élimination : deux σ cassées, une π formée.",
+        "SN2 : mécanisme concerté, attaque anti, ordre 2, inversion de Walden (stéréospécifique), favorisée par carbone peu encombré et nucléophile fort.",
+        "SN1 : deux étapes via carbocation, ordre 1 (dépend du substrat seul), non stéréosélective (racémique si un seul centre asymétrique), favorisée par carbocation stable et solvant polaire.",
+        "E2 concertée (ordre 2, géométrie anti-périplanaire, stéréospécifique) ; E1 en deux étapes via carbocation (ordre 1, produit E majoritaire).",
+        "Règle de Zaïtsev : l'alcène le plus substitué (le plus stable) est majoritaire en élimination. Substitution et élimination restent toujours en compétition, la température élevée favorisant l'élimination.",
+        "Les alcools s'activent en milieu acide fort (oxonium, départ de H2O) ou en ester sulfonique (tosylate/mésylate) pour créer un bon groupe partant.",
+        "Addition nucléophile sur carbonyle : rupture concertée de la liaison π, ordre 2, non stéréosélective (deux faces équivalentes).",
+        "Catalyse acide = active l'électrophile (protonation de l'oxygène) ; catalyse basique = active le nucléophile (déprotonation). La catalyse acide faible est d'ailleurs indispensable pour former une imine, car elle évite de protoner l'amine nucléophile.",
+        "Thiols plus polarisables mais moins basiques que les alcools : meilleurs nucléophiles et meilleurs nucléofuges malgré une basicité plus faible.",
+        "Basicité des amines en solution aqueuse : secondaire > tertiaire > primaire > ammoniac ; anilines et phénols moins basiques par délocalisation mésomère du doublet.",
+        "Addition électrophile sur alcène : ordre 2, carbocation intermédiaire, régiosélectivité gouvernée par la règle de Markovnikov (stabilité du carbocation). Relier systématiquement stéréochimie/régiochimie à la stabilité des intermédiaires (carbocation, alcène) est le fil conducteur du chapitre."
+      ],
+      "resources": [
+        {
+          "icon": "🎥",
+          "title": "Vidéo sur les mécanismes réactionnels",
+          "description": "Cherche une vidéo qui anime les flèches courbes en SN1/SN2/E1/E2 pour bien visualiser le sens de rotation des électrons, c'est souvent plus parlant qu'un schéma statique.",
+          "url": "https://www.youtube.com/results?search_query=est%20souvent%20plus%20parlant%20qu"
+        },
+        {
+          "icon": "📝",
+          "title": "Tableau comparatif SN1/SN2/E1/E2",
+          "description": "Fabrique-toi un tableau à quatre colonnes (ordre cinétique, stéréochimie, facteurs favorisants, exemple type) et complète-le de mémoire régulièrement jusqu'à ce qu'il soit automatique.",
+          "url": "https://www.google.com/search?q=Tableau%20comparatif%20SN1/SN2/E1/E2%20Chimie%20organique%20PASS"
+        },
+        {
+          "icon": "🧩",
+          "title": "Entraînement sur les mécanismes avec flèches",
+          "description": "Reproduis à la main chaque mécanisme du cours sans regarder la correction, en vérifiant que chaque flèche part bien d'un doublet et arrive bien sur une case vide ou un atome accepteur.",
+          "url": "https://www.google.com/search?q=Entra%C3%AEnement%20sur%20les%20m%C3%A9canismes%20avec%20fl%C3%A8ches%20Chimie%20organique%20PASS"
+        },
+        {
+          "icon": "📚",
+          "title": "Annales UE1 chimie organique",
+          "description": "Refais les QCM d'annales des années précédentes sur ce chapitre en chronométrant : la chimie organique demande de la rapidité de raisonnement autant que de la rigueur.",
+          "url": "https://www.google.com/search?q=Annales%20UE1%20chimie%20organique%20Chimie%20organique%20PASS"
+        },
+        {
+          "icon": "🗣️",
+          "title": "Explique le mécanisme à voix haute",
+          "description": "Teste-toi en expliquant à un camarade (ou à toi-même) pourquoi une réaction suit du SN1 plutôt que du SN2 : si l'explication est fluide, la notion est acquise.",
+          "url": "https://www.google.com/search?q=Explique%20le%20m%C3%A9canisme%20%C3%A0%20voix%20haute%20Chimie%20organique%20PASS"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Quelle flèche représente le déplacement d'un doublet d'électrons ?",
+          "options": [
+            "Une flèche pleine",
+            "Une demi-flèche",
+            "Une flèche pointillée",
+            "Aucune flèche n'est utilisée"
+          ],
+          "correct_index": 0,
+          "explanation": "Bien vu si tu as coché la flèche pleine ! 🎯 La demi-flèche représente elle le déplacement d'un seul électron (rupture homolytique)."
+        },
+        {
+          "question": "Qu'est-ce qui caractérise un bon nucléofuge ?",
+          "options": [
+            "Une forte basicité",
+            "Une faible basicité",
+            "Une faible polarisabilité",
+            "Un fort caractère nucléophile"
+          ],
+          "correct_index": 1,
+          "explanation": "Exactement ! 🌟 Un bon nucléofuge est une base faible : il accepte facilement de partir avec le doublet d'électrons sans chercher à le redonner."
+        },
+        {
+          "question": "L'encombrement stérique autour d'un site réactif a quel effet sur son électrophilie ?",
+          "options": [
+            "Il l'augmente toujours",
+            "Il n'a aucun effet",
+            "Il la diminue",
+            "Il la rend imprévisible"
+          ],
+          "correct_index": 2,
+          "explanation": "Oui ! 🧠 Plus le site est encombré, plus il est difficile pour un nucléophile d'atteindre l'orbitale vide, donc l'électrophilie effective diminue."
+        },
+        {
+          "question": "Quel est le bilan en liaisons d'une réaction de substitution ?",
+          "options": [
+            "Une π rompue, deux σ formées",
+            "Deux σ rompues, une π formée",
+            "Une σ rompue, une π formée",
+            "Une σ rompue, une σ formée"
+          ],
+          "correct_index": 3,
+          "explanation": "Bravo ! ⭐ La substitution remplace un groupe par un autre : une liaison σ part, une liaison σ arrive, le nombre total de liaisons ne change pas."
+        },
+        {
+          "question": "Quel mécanisme de substitution nucléophile est concerté et bimoléculaire ?",
+          "options": [
+            "SN2",
+            "SN1",
+            "E1",
+            "E2"
+          ],
+          "correct_index": 0,
+          "explanation": "Parfait ! 🎉 La SN2 se fait en une seule étape, avec attaque du nucléophile en anti du groupe partant, d'où une cinétique d'ordre 2."
+        },
+        {
+          "question": "Quelle est la conséquence stéréochimique d'une SN2 ?",
+          "options": [
+            "Formation d'un mélange racémique",
+            "Inversion de Walden (inversion de configuration relative)",
+            "Rétention totale de configuration",
+            "Formation exclusive de l'isomère Z"
+          ],
+          "correct_index": 1,
+          "explanation": "Exact ! 🔄 L'attaque unique en anti retourne les substituants comme un parapluie, c'est l'inversion de Walden : la réaction est stéréospécifique."
+        },
+        {
+          "question": "Pourquoi une SN1 conduit-elle souvent à un mélange racémique ?",
+          "options": [
+            "Parce que le nucléophile attaque toujours du même côté",
+            "Parce que la réaction est trop rapide pour être stéréosélective",
+            "Parce que le carbocation plan est attaqué avec la même probabilité des deux côtés",
+            "Parce que le groupe partant revient toujours se fixer"
+          ],
+          "correct_index": 2,
+          "explanation": "Bien joué ! 🌸 Le carbocation intermédiaire est plan (orbitale p vide), donc le nucléophile peut l'attaquer des deux côtés avec une probabilité égale."
+        },
+        {
+          "question": "Quel facteur favorise un mécanisme de type SN1/E1 plutôt que SN2/E2 ?",
+          "options": [
+            "Un carbone α très peu encombré (méthyle)",
+            "Un nucléophile très fort et petit",
+            "Un solvant apolaire aprotique",
+            "Un carbocation intermédiaire bien stabilisé"
+          ],
+          "correct_index": 3,
+          "explanation": "Tout à fait ! 💫 Sans un carbocation stable, la rupture spontanée de la liaison C-X n'est pas favorable, donc pas de SN1/E1 possible."
+        },
+        {
+          "question": "Selon la règle de Zaïtsev, quel alcène est majoritairement formé lors d'une élimination ?",
+          "options": [
+            "Le plus substitué (le plus stable)",
+            "Le moins substitué",
+            "Celui de configuration Z uniquement",
+            "Un mélange équimolaire systématique"
+          ],
+          "correct_index": 0,
+          "explanation": "Exactement ! 🎓 L'alcène le plus substitué, donc le plus stable thermodynamiquement, est le produit majoritaire d'une élimination."
+        },
+        {
+          "question": "Quelle géométrie est indispensable pour qu'une élimination E2 se produise ?",
+          "options": [
+            "Synclinale (éclipsée)",
+            "Anti-périplanaire",
+            "Perpendiculaire",
+            "Aucune géométrie particulière n'est requise"
+          ],
+          "correct_index": 1,
+          "explanation": "Bravo ! ⚡ L'hydrogène β et le groupe partant doivent être dans le même plan, à l'opposé, pour permettre le recouvrement orbitalaire nécessaire à la formation de la double liaison."
+        },
+        {
+          "question": "Pourquoi faut-il 'activer' un alcool avant une substitution nucléophile ?",
+          "options": [
+            "Parce que le carbone n'est pas électrophile du tout",
+            "Parce que l'oxygène n'a pas de doublet non liant",
+            "Parce que HO- est un très mauvais groupe partant",
+            "Parce que les alcools ne réagissent jamais avec les nucléophiles"
+          ],
+          "correct_index": 2,
+          "explanation": "Oui ! 🔑 HO- est une base forte, donc un très mauvais nucléofuge ; il faut le transformer en eau (milieu acide) ou en sulfonate pour permettre le départ."
+        },
+        {
+          "question": "Quelle est l'orbitale vacante de plus basse énergie sur un carbone de carbonyle ?",
+          "options": [
+            "L'orbitale σ*",
+            "Une orbitale p pure",
+            "Une orbitale s",
+            "L'orbitale π*"
+          ],
+          "correct_index": 3,
+          "explanation": "Exact ! 🔬 C'est l'orbitale π* de la liaison C=O qui accueille le doublet du nucléophile lors de l'addition nucléophile."
+        },
+        {
+          "question": "Que fait la catalyse acide sur une addition nucléophile sur un carbonyle ?",
+          "options": [
+            "Elle active l'électrophile en protonant l'oxygène du carbonyle",
+            "Elle active le nucléophile en le déprotonant",
+            "Elle bloque totalement la réaction",
+            "Elle transforme le carbonyle en alcène"
+          ],
+          "correct_index": 0,
+          "explanation": "Bien vu ! ✨ La protonation de l'oxygène crée un oxonium très électroattracteur qui renforce l'électrophilie du carbone."
+        },
+        {
+          "question": "Pourquoi utilise-t-on une catalyse acide faible pour former une imine à partir d'une amine et d'un carbonyle ?",
+          "options": [
+            "Parce qu'une catalyse forte est trop lente",
+            "Pour éviter de protoner complètement l'amine nucléophile",
+            "Parce que l'imine ne peut se former qu'en milieu neutre",
+            "Parce que l'eau formée doit rester dans le milieu"
+          ],
+          "correct_index": 1,
+          "explanation": "Exactement ! 🧡 Un acide fort protonerait l'amine et détruirait son caractère nucléophile ; l'acide faible active juste assez le carbonyle sans bloquer l'amine."
+        },
+        {
+          "question": "Pourquoi le thiol est-il un meilleur nucléophile que l'alcool malgré une basicité plus faible ?",
+          "options": [
+            "Parce que le soufre est plus électronégatif que l'oxygène",
+            "Parce que le thiol n'a pas de doublet non liant",
+            "Parce que le soufre est plus polarisable, ce qui compense sa basicité plus faible",
+            "Parce que l'alcool est toujours protoné en solution"
+          ],
+          "correct_index": 2,
+          "explanation": "Bravo ! 🌟 La grande polarisabilité du soufre (gros atome, nuage électronique déformable) compense largement sa moindre basicité par rapport à l'oxygène."
+        },
+        {
+          "question": "Quel est l'ordre de basicité des amines en solution aqueuse ?",
+          "options": [
+            "Primaire > secondaire > tertiaire > ammoniac",
+            "Tertiaire > secondaire > primaire > ammoniac",
+            "Ammoniac > primaire > secondaire > tertiaire",
+            "Secondaire > tertiaire > primaire > ammoniac"
+          ],
+          "correct_index": 3,
+          "explanation": "Exact ! 🎯 C'est l'équilibre entre effet inductif donneur des alkyles et gêne de solvatation par encombrement qui donne cet ordre particulier en phase aqueuse."
+        },
+        {
+          "question": "Pourquoi les anilines sont-elles moins basiques que les amines aliphatiques ?",
+          "options": [
+            "Parce que le doublet de l'azote est délocalisé par mésomérie dans le cycle aromatique",
+            "Parce que l'azote y est chargé positivement en permanence",
+            "Parce que le cycle aromatique est électro-donneur par effet inductif",
+            "Parce que les anilines n'ont pas de doublet non liant"
+          ],
+          "correct_index": 0,
+          "explanation": "Oui ! 📖 La délocalisation du doublet dans le cycle aromatique le rend moins disponible pour capter un proton, d'où une basicité réduite."
+        },
+        {
+          "question": "Selon la règle de Markovnikov, où se fixe le nucléophile A- lors de l'addition de H-A sur un alcène dissymétrique ?",
+          "options": [
+            "Sur le carbone le moins substitué",
+            "Sur le carbone le plus substitué, via le carbocation le plus stable",
+            "Toujours sur le carbone terminal",
+            "Cela dépend uniquement du solvant"
+          ],
+          "correct_index": 1,
+          "explanation": "Parfait ! 🏆 Le proton H+ attaque en premier et forme le carbocation le plus stable, sur lequel A- vient ensuite se fixer préférentiellement."
+        }
+      ],
+      "exercises": {
+        "facile": [
+          {
+            "statement": "Un composé A-B se rompt en donnant deux radicaux A• et B•. S'agit-il d'une rupture homolytique ou hétérolytique ?",
+            "solution": "C'est une rupture homolytique : chaque atome repart avec un électron du doublet, formant deux radicaux neutres. On la note avec des demi-flèches."
+          },
+          {
+            "statement": "Donne la définition d'un électrophile en une phrase.",
+            "solution": "Un électrophile est une espèce pauvre en électrons possédant une orbitale vacante (souvent σ* ou π*), capable d'accepter un doublet d'électrons apporté par un nucléophile."
+          },
+          {
+            "statement": "Classe par ordre croissant d'aptitude nucléofuge : Cl-, Br-, I-, F-.",
+            "solution": "F- < Cl- < Br- < I-, car la polarisabilité (et donc l'aptitude à partir avec le doublet) augmente avec la taille de l'atome, le fluor étant très peu polarisable."
+          },
+          {
+            "statement": "Une réaction transforme un alcène en dérivé dihalogéné par fixation de deux atomes de brome. De quel type de réaction s'agit-il ?",
+            "solution": "C'est une réaction d'addition : la liaison π de l'alcène est rompue et deux nouvelles liaisons σ C-Br sont formées."
+          },
+          {
+            "statement": "Quel est l'ordre cinétique global d'une réaction SN2 ?",
+            "solution": "Ordre global de 2 (réaction bimoléculaire), car la vitesse s'écrit v = k[substrat][nucléophile], les deux espèces participant à l'unique étape cinétiquement déterminante."
+          },
+          {
+            "statement": "Vrai ou faux : la SN1 est stéréosélective.",
+            "solution": "Faux. Le carbocation intermédiaire plan est attaqué avec la même probabilité des deux côtés, donnant un mélange (souvent racémique) des deux stéréoisomères possibles."
+          },
+          {
+            "statement": "Quelle règle permet de prédire l'alcène majoritaire formé lors d'une élimination avec plusieurs hydrogènes β disponibles ?",
+            "solution": "La règle de Zaïtsev : l'alcène majoritaire est celui obtenu par élimination de l'hydrogène porté par le carbone β le plus substitué, formant l'alcène le plus stable."
+          },
+          {
+            "statement": "Pourquoi HO- n'est-il pas un bon groupe partant dans une réaction de substitution nucléophile sur un alcool non activé ?",
+            "solution": "Parce que HO- est une base forte (pKa de H2O environ 15,7), or un bon nucléofuge doit être une base faible ; il faut donc activer l'alcool avant toute substitution."
+          },
+          {
+            "statement": "Quelle orbitale vacante rend le carbone d'un groupement carbonyle électrophile ?",
+            "solution": "L'orbitale π* de la liaison C=O, qui est l'orbitale vacante de plus basse énergie et accueille le doublet du nucléophile lors de l'addition nucléophile."
+          },
+          {
+            "statement": "Entre une amine primaire et une amine tertiaire de structure comparable, laquelle est en général le meilleur nucléophile, et pourquoi ?",
+            "solution": "L'amine primaire, car son doublet non liant est moins encombré stériquement par les substituants alkyles, ce qui facilite l'approche vers l'électrophile."
+          }
+        ],
+        "moyen": [
+          {
+            "statement": "Explique pourquoi un carbone α d'un composé halogéné est électrophile alors que les carbones β portent des hydrogènes plus acides.",
+            "solution": "L'halogène, très électronégatif, exerce un effet inductif attracteur qui appauvrit en électrons le carbone α directement lié à lui, le rendant électrophile. Ce même effet inductif, transmis à travers la liaison Cα-Cβ, fragilise la liaison Cβ-H en polarisant partiellement la densité électronique, rendant ces hydrogènes plus faciles à arracher par une base (plus acides)."
+          },
+          {
+            "statement": "Un substrat R-X tertiaire est mis en présence d'un nucléophile faible dans un solvant polaire protique. Prédis le mécanisme majoritaire (SN1 ou SN2) et justifie.",
+            "solution": "Le mécanisme sera de type SN1. Le carbone tertiaire est trop encombré pour une attaque en anti efficace (défavorise la SN2), mais forme un carbocation tertiaire relativement stable ; de plus le solvant polaire protique stabilise bien les espèces chargées séparées, et un nucléophile faible ne compense pas ce manque de réactivité concertée. Toutes les conditions favorisent donc l'ionisation spontanée typique de la SN1."
+          },
+          {
+            "statement": "Représente le principe de l'inversion de Walden lors d'une SN2 et explique pourquoi elle a lieu.",
+            "solution": "Le nucléophile attaque le carbone électrophile à l'opposé exact du groupe partant, en formant sa liaison dans l'orbitale σ* de la liaison C-X. En repoussant les trois autres substituants comme un parapluie qui se retourne, cette attaque unique en anti provoque une inversion de la configuration relative au niveau du carbone, appelée inversion de Walden ; elle est systématique car il n'existe qu'une seule trajectoire d'attaque possible en SN2."
+          },
+          {
+            "statement": "Un alcool tertiaire est traité par un acide fort HCl concentré. Décris les deux étapes du mécanisme attendu et le produit final probable.",
+            "solution": "Première étape : protonation de l'oxygène de l'alcool par HCl, formant un ion oxonium R-OH2+, ce qui active le groupe partant. Deuxième étape : départ spontané d'une molécule d'eau, formant un carbocation tertiaire stable (typique d'un mécanisme SN1/E1), qui peut ensuite être capté par l'ion chlorure Cl- (substitution, donnant un chlorure tertiaire) ou perdre un proton β (élimination, donnant un alcène, souvent en compétition)."
+          },
+          {
+            "statement": "Une cétone réagit avec une amine primaire en catalyse acide faible. Décris les grandes étapes du mécanisme et le produit final.",
+            "solution": "L'amine, nucléophile, attaque le carbone du carbonyle légèrement activé par protonation partielle de l'oxygène (addition nucléophile), formant un intermédiaire aminoalcool (carbinolamine). Un transfert de proton (catalyse acide) active ensuite le -OH en bon groupe partant, qui part sous forme d'eau (élimination), régénérant une double liaison, cette fois C=N : le produit final est une imine."
+          },
+          {
+            "statement": "Pourquoi la catalyse acide forte n'est-elle pas adaptée à la formation d'une imine à partir d'une amine et d'un aldéhyde ?",
+            "solution": "Une catalyse acide forte protone complètement l'oxygène du carbonyle mais protone aussi, en grande partie, l'amine elle-même (base généralement plus forte que le carbonyle), ce qui désactive son caractère nucléophile et bloque l'addition nucléophile initiale. Seule une catalyse acide faible, qui n'active que partiellement l'électrophile sans neutraliser le nucléophile, permet la réaction."
+          },
+          {
+            "statement": "Un alcène dissymétrique R2C=CH2 réagit avec HBr. Prédis quel carbone reçoit le brome et justifie par la stabilité du carbocation.",
+            "solution": "Le brome se fixe sur le carbone le plus substitué (celui portant les deux groupes R). En effet, le proton H+ s'additionne d'abord sur le carbone le moins substitué (CH2), ce qui génère un carbocation tertiaire sur l'autre carbone, stabilisé par effet inductif donneur des groupes R ; Br- vient ensuite se fixer sur ce carbocation le plus stable, conformément à la règle de Markovnikov."
+          },
+          {
+            "statement": "Explique pourquoi le thioéther R2S, contrairement à l'éther R2O, peut agir comme nucléophile efficace dans une substitution nucléophile sur un composé halogéné.",
+            "solution": "Le soufre, moins électronégatif et bien plus polarisable que l'oxygène, retient son doublet non liant de façon moins stricte et le partage plus facilement pour former une nouvelle liaison. Le thioéther attaque donc le composé halogéné en formant un sulfonium R3S+, un mécanisme peu favorable pour l'éther, dont le doublet de l'oxygène est trop peu disponible (les éthers sont globalement inertes)."
+          },
+          {
+            "statement": "Deux substrats identiques réagissent, l'un en milieu basique fort, l'autre en milieu basique faible, face à un même carbonyle. Compare les deux mécanismes d'addition nucléophile obtenus.",
+            "solution": "En catalyse basique forte, le nucléophile est complètement déprotoné avant d'attaquer le carbonyle : l'addition nucléophile se fait ensuite sur le carbonyle non activé, en une étape séparée de la déprotonation initiale. En catalyse basique faible, la déprotonation n'est que partielle et concertée avec l'attaque nucléophile elle-même : les deux évènements (transfert de proton et addition nucléophile) sont simultanés, ce qui accélère la réaction sans nécessiter une base très forte."
+          },
+          {
+            "statement": "Un même substrat R-X secondaire peut réagir selon SN2, SN1, E2 ou E1 selon les conditions. Donne un exemple de conditions qui favoriseraient chacun des quatre mécanismes.",
+            "solution": "SN2 : nucléophile fort et peu encombré (ex. CH3O-) dans un solvant polaire aprotique. E2 : base forte et encombrée (ex. tert-butoxyde) qui privilégie l'arrachage d'un proton β plutôt que l'attaque du carbone. SN1 : nucléophile faible (ex. H2O) dans un solvant polaire protique, favorisant l'ionisation spontanée. E1 : mêmes conditions que SN1 mais à température plus élevée, qui favorise thermodynamiquement la formation de l'alcène par rapport à la substitution."
+          }
+        ],
+        "difficile": [
+          {
+            "statement": "On traite le 2-bromo-2-méthylbutane par de l'éthanolate de sodium (base forte, peu encombrée mais basique) à chaud. Discute des mécanismes en compétition et prédis le produit majoritaire en argumentant.",
+            "solution": "Le carbone porteur du brome est tertiaire : la SN2 est totalement exclue (encombrement bloquant l'attaque en anti). Restent en compétition SN1/E1 (ionisation spontanée) et E2 (base forte qui arrache directement un proton β de façon concertée). Avec une base aussi forte que l'éthanolate, le mécanisme E2 domine largement sur la voie SN1/E1, même si le carbocation tertiaire serait stable : une base forte favorise cinétiquement l'arrachage direct d'un proton β plutôt que d'attendre une ionisation lente. Le produit majoritaire est donc l'alcène le plus substitué (2-méthyl-2-butène), conformément à la règle de Zaïtsev, obtenu par mécanisme E2, avec formation minoritaire de 2-méthyl-1-butène."
+          },
+          {
+            "statement": "Un chimiste veut synthétiser un acétal stable à partir d'une cétone et de deux équivalents d'un alcool. Décris toutes les étapes du mécanisme en précisant le rôle exact de la catalyse acide à chaque étape, et explique pourquoi une catalyse basique serait inadaptée.",
+            "solution": "Étape 1 : catalyse acide (protonation partielle ou totale de l'oxygène du carbonyle) pour activer l'électrophile, permettant l'addition du premier alcool et la formation d'un hémicétal. Étape 2 : catalyse acide de nouveau nécessaire pour protoner l'hydroxyle de l'hémicétal, le transformant en bon groupe partant (eau), qui part en formant un carbocation oxocarbénium stabilisé par mésomérie avec l'oxygène voisin (mécanisme d'élimination). Étape 3 : addition du second équivalent d'alcool sur ce cation, suivie d'un transfert de proton final pour redonner un catalyseur acide actif et libérer l'acétal neutre. Une catalyse basique serait inadaptée car elle ne permettrait jamais l'activation de l'hydroxyle de l'hémicétal en groupe partant (HO- reste une base forte en milieu basique) : la réaction resterait bloquée à l'étape de l'hémicétal, sans pouvoir avancer vers l'acétal."
+          },
+          {
+            "statement": "Deux carbocations intermédiaires sont envisageables lors de l'addition de HBr sur le 1-phényl-1-propène (Ph-CH=CH-CH3) : l'un benzylique (sur le carbone lié au phényl), l'autre secondaire simple. Justifie lequel se forme préférentiellement et prédis la régiochimie du produit final.",
+            "solution": "Le proton H+ s'additionne préférentiellement de façon à générer le carbocation le plus stable. Le carbocation benzylique (sur le carbone lié au noyau phényl) est stabilisé par délocalisation mésomère du cycle aromatique, en plus de l'effet inductif, ce qui le rend nettement plus stable que le carbocation secondaire simple (stabilisé seulement par effet inductif). Le proton se fixe donc sur le carbone portant le méthyle (CH3-CH=), formant le carbocation benzylique stabilisé sur le carbone lié au phényl, sur lequel Br- vient ensuite se fixer : le produit majoritaire porte le brome sur le carbone benzylique, en cohérence avec la logique de Markovnikov généralisée à la stabilité du carbocation réel plutôt qu'à un simple comptage de substituants alkyles."
+          },
+          {
+            "statement": "Un composé possède un unique centre stéréogène et subit une SN1 suivie, dans les mêmes conditions, d'une nouvelle SN2 sur le produit obtenu. Décris l'évolution de la configuration relative du centre stéréogène étape par étape.",
+            "solution": "Étape SN1 : le carbocation plan intermédiaire est attaqué avec la même probabilité des deux côtés, donnant un mélange racémique 50/50 des deux configurations possibles au niveau de ce centre. Étape SN2 sur ce mélange : chaque énantiomère du mélange racémique subit à son tour une inversion de Walden stricte et systématique (attaque en anti unique), donc chaque configuration s'inverse individuellement en sa configuration opposée. Le résultat final reste un mélange racémique 50/50, mais chaque molécule individuelle a bien subi une inversion nette lors de cette seconde étape, même si le mélange global paraît statistiquement inchangé."
+          },
+          {
+            "statement": "On compare la vitesse de solvolyse (SN1) de trois halogénures : un chlorure primaire, un chlorure allylique primaire et un chlorure tertiaire, dans l'eau. Classe ces trois vitesses et justifie en termes de stabilité de carbocation.",
+            "solution": "Ordre de vitesse : chlorure primaire (le plus lent) < chlorure allylique primaire < chlorure tertiaire (le plus rapide), en toute rigueur cela dépend de la stabilisation relative, mais généralement un carbocation tertiaire (stabilisation inductive de trois groupes alkyles) est plus stable qu'un carbocation allylique primaire (stabilisation mésomère avec la double liaison voisine, délocalisation sur deux positions), lui-même bien plus stable qu'un simple carbocation primaire non stabilisé, qui est très défavorable et empêche quasiment tout mécanisme SN1. La vitesse de la SN1 étant directement corrélée à la facilité de formation du carbocation, cet ordre de stabilité se traduit directement en ordre de vitesse de réaction."
+          },
+          {
+            "statement": "Un dérivé bromé cyclohexanique substitué est traité par une base encombrée. Sachant que la géométrie anti-périplanaire nécessaire à l'E2 impose que H et Br soient tous deux en position axiale sur le cycle, discute des conséquences stéréochimiques possibles selon la conformation chaise disponible.",
+            "solution": "Pour qu'une E2 se produise sur un cyclohexane, il faut impérativement que l'hydrogène arraché et le brome partant soient en position axiale-axiale sur la même face du cycle (anti-périplanaire dans ce système cyclique). Si la conformation chaise la plus stable place le brome en équatorial, le système doit d'abord basculer vers l'autre conformation chaise (moins stable, brome axial) pour permettre la réaction E2, ce qui ralentit la cinétique globale par rapport à un substrat où le brome est déjà axial dans sa conformation la plus stable. Cette exigence géométrique stricte explique pourquoi certains isomères de position sur un cycle réagissent beaucoup plus lentement en E2 que d'autres, malgré une structure électronique très proche."
+          },
+          {
+            "statement": "Explique pourquoi une catalyse basique de l'addition nucléophile sur un carbonyle empêche la formation ultérieure d'un cétal, alors qu'une catalyse acide le permet.",
+            "solution": "La formation d'un cétal nécessite, après l'addition du premier alcool (formant un hémicétal), de transformer l'hydroxyle de l'hémicétal en un bon groupe partant afin qu'il puisse s'éliminer et former un cation oxocarbénium recevant ensuite un second alcool. Cette activation du -OH ne peut se faire qu'en milieu acide (protonation de l'hydroxyle en oxonium, transformant HO- en H2O, bon groupe partant) ; en milieu basique, l'hydroxyle reste HO-, une base bien trop forte pour partir, la réaction reste donc bloquée irrémédiablement au stade de l'hémicétal, sans jamais pouvoir progresser vers le cétal."
+          },
+          {
+            "statement": "Un mélange équimolaire d'un nucléophile fort peu encombré et d'un nucléophile faible très encombré est mis en présence d'un substrat secondaire portant un bon groupe partant, dans un solvant polaire aprotique. Prédis quel mécanisme domine et pourquoi le choix du solvant est déterminant ici.",
+            "solution": "Le solvant polaire aprotique ne solvate pas efficacement les anions (contrairement à un solvant protique qui formerait des liaisons hydrogène stabilisantes autour du nucléophile), ce qui laisse le nucléophile fort 'nu' et donc extrêmement réactif. Dans ces conditions, même sur un substrat secondaire, le mécanisme SN2 avec le nucléophile fort et peu encombré est nettement favorisé cinétiquement par rapport à une ionisation spontanée de type SN1, qui serait au contraire favorisée en solvant polaire protique. Le nucléophile faible encombré ne participe presque pas à la réaction dans ces conditions, sa réactivité étant déjà limitée par son caractère peu nucléophile et son encombrement stérique important."
+          },
+          {
+            "statement": "On observe qu'un composé halogéné tertiaire réagissant en milieu aqueux neutre donne un mélange d'alcool tertiaire (produit de substitution) et d'alcène (produit d'élimination), sans base ni nucléophile ajouté délibérément. Explique l'origine de ces deux produits en mobilisant le rôle de l'eau.",
+            "solution": "En l'absence de tout réactif ajouté, l'eau du solvant joue elle-même les deux rôles à la fois : celui de nucléophile (attaque du carbocation intermédiaire tertiaire pour donner, après déprotonation de l'oxonium formé, l'alcool tertiaire par un mécanisme SN1), et celui de base de Brönsted faible (arrachage d'un proton β sur ce même carbocation intermédiaire pour donner l'alcène par un mécanisme E1). Le carbocation tertiaire, une fois formé par ionisation spontanée du composé halogéné, subit donc les deux voies concurrentes SN1 et E1 simultanément, expliquant l'obtention naturelle d'un mélange des deux produits sans qu'aucun réactif spécifique n'ait été délibérément ajouté."
+          },
+          {
+            "statement": "Compare, en une analyse structurée, les conséquences stéréochimiques respectives d'une SN2, d'une SN1, d'une E2 et d'une addition nucléophile sur un carbonyle, en expliquant à chaque fois l'origine géométrique de la (non-)stéréosélectivité observée.",
+            "solution": "SN2 : stéréospécifique (inversion de Walden systématique), car une seule trajectoire d'attaque anti est géométriquement possible. SN1 : non stéréosélective (mélange racémique si un seul centre asymétrique), car le carbocation intermédiaire plan offre deux faces d'attaque équiprobables. E2 : stéréospécifique, car la géométrie anti-périplanaire impose une orientation relative fixe des substituants dans l'état de transition, déterminant sans ambiguïté la configuration de l'alcène formé. Addition nucléophile sur carbonyle : non stéréosélective en général (mélange équimolaire de stéréoisomères si un centre asymétrique est créé), car la géométrie plane trigonale du carbonyle offre deux faces d'attaque équivalentes, exactement comme pour le carbocation de la SN1. Le point commun structurant : chaque fois qu'un intermédiaire ou un état de transition est plan avec deux faces équivalentes, la réaction perd sa stéréosélectivité ; chaque fois qu'une seule trajectoire géométrique est imposée (anti stricte), la réaction devient stéréospécifique."
+          }
+        ]
+      }
     }
   ]
 }

@@ -97,27 +97,32 @@
         {
           "icon": "📘",
           "title": "Relire le poly de pré-rentrée A2SUP sur les vecteurs et la cinématique",
-          "description": "Avant d'attaquer les forces, il faut être à l'aise avec les vecteurs (norme, projection, produit scalaire) : c'est souvent la vraie source d'erreur sur les exercices de travail et de puissance."
+          "description": "Avant d'attaquer les forces, il faut être à l'aise avec les vecteurs (norme, projection, produit scalaire) : c'est souvent la vraie source d'erreur sur les exercices de travail et de puissance.",
+          "url": "https://www.google.com/search?q=Relire%20le%20poly%20de%20pr%C3%A9-rentr%C3%A9e%20A2SUP%20sur%20les%20vecteurs%20et%20la%20cin%C3%A9matique%20M%C3%A9canique%20%3A%20forces%2C%20%C3%A9nergie%20et%20travail%20PASS"
         },
         {
           "icon": "🎥",
           "title": "Vidéos YouTube sur les lois de Newton et le théorème de l'énergie cinétique",
-          "description": "Cherchez des vidéos avec les mots-clés « lois de Newton PACES PASS » ou « théorème énergie cinétique exercice corrigé » pour voir des bilans de forces résolus pas à pas sur un schéma."
+          "description": "Cherchez des vidéos avec les mots-clés « lois de Newton PACES PASS » ou « théorème énergie cinétique exercice corrigé » pour voir des bilans de forces résolus pas à pas sur un schéma.",
+          "url": "https://www.youtube.com/results?search_query=Vid%C3%A9os%20YouTube%20sur%20les%20lois%20de%20Newton%20et%20le%20th%C3%A9or%C3%A8me%20de%20l%27%C3%A9nergie%20cin%C3%A9tique%20M%C3%A9canique%20%3A%20forces%2C%20%C3%A9nergie%20et%20travail"
         },
         {
           "icon": "✏️",
           "title": "S'entraîner sur des annales de mécanique du point en PASS",
-          "description": "Ce chapitre est très calculatoire : multipliez les exercices dirigés sur les plans inclinés, les ressorts et les chutes avec frottements pour automatiser la mise en équation."
+          "description": "Ce chapitre est très calculatoire : multipliez les exercices dirigés sur les plans inclinés, les ressorts et les chutes avec frottements pour automatiser la mise en équation.",
+          "url": "https://www.google.com/search?q=S%27entra%C3%AEner%20sur%20des%20annales%20de%20m%C3%A9canique%20du%20point%20en%20PASS%20M%C3%A9canique%20%3A%20forces%2C%20%C3%A9nergie%20et%20travail%20PASS"
         },
         {
           "icon": "🧠",
           "title": "Moyen mnémotechnique pour les énergies",
-          "description": "Retenez « C comme Cinétique = vitesse, P comme Potentiel = Position (altitude ou ressort) » pour ne jamais confondre Ec et Ep lors d'un bilan énergétique."
+          "description": "Retenez « C comme Cinétique = vitesse, P comme Potentiel = Position (altitude ou ressort) » pour ne jamais confondre Ec et Ep lors d'un bilan énergétique.",
+          "url": "https://www.google.com/search?q=Moyen%20mn%C3%A9motechnique%20pour%20les%20%C3%A9nergies%20M%C3%A9canique%20%3A%20forces%2C%20%C3%A9nergie%20et%20travail%20PASS"
         },
         {
           "icon": "🔗",
           "title": "Réviser ce chapitre avant l'électrostatique",
-          "description": "Les notions d'énergie potentielle et de force conservative reviennent à l'identique en électrostatique (Ep = qV, F = −dEp/dx) : bien maîtriser ce chapitre facilite grandement le suivant."
+          "description": "Les notions d'énergie potentielle et de force conservative reviennent à l'identique en électrostatique (Ep = qV, F = −dEp/dx) : bien maîtriser ce chapitre facilite grandement le suivant.",
+          "url": "https://www.google.com/search?q=R%C3%A9viser%20ce%20chapitre%20avant%20l%27%C3%A9lectrostatique%20M%C3%A9canique%20%3A%20forces%2C%20%C3%A9nergie%20et%20travail%20PASS"
         }
       ],
       "quiz": [
@@ -420,27 +425,32 @@
         {
           "icon": "📘",
           "title": "Relire le poly de pré-rentrée A2SUP sur les vecteurs et le produit scalaire",
-          "description": "La projection du moment dipolaire sur un axe (utilisée pour l'ECG) repose entièrement sur le produit scalaire : le maîtriser évite beaucoup d'erreurs sur ce chapitre."
+          "description": "La projection du moment dipolaire sur un axe (utilisée pour l'ECG) repose entièrement sur le produit scalaire : le maîtriser évite beaucoup d'erreurs sur ce chapitre.",
+          "url": "https://www.google.com/search?q=Relire%20le%20poly%20de%20pr%C3%A9-rentr%C3%A9e%20A2SUP%20sur%20les%20vecteurs%20et%20le%20produit%20scalaire%20%C3%89lectrostatique%20et%20biopotentiels%20%28ECG%29%20PASS"
         },
         {
           "icon": "🔗",
           "title": "Revoir le chapitre mécanique (forces conservatives) avant celui-ci",
-          "description": "Les formules Ep = qV et F = −dEp/dr sont l'exact décalque de ce qui a été vu en mécanique (Ep = mgz, F = −dEp/dx) : les réviser ensemble aide à mémoriser la logique commune."
+          "description": "Les formules Ep = qV et F = −dEp/dr sont l'exact décalque de ce qui a été vu en mécanique (Ep = mgz, F = −dEp/dx) : les réviser ensemble aide à mémoriser la logique commune.",
+          "url": "https://www.google.com/search?q=Revoir%20le%20chapitre%20m%C3%A9canique%20%28forces%20conservatives%29%20avant%20celui-ci%20%C3%89lectrostatique%20et%20biopotentiels%20%28ECG%29%20PASS"
         },
         {
           "icon": "🎥",
           "title": "Vidéos YouTube sur le triangle d'Einthoven et la lecture de l'ECG",
-          "description": "Cherchez « triangle d'Einthoven physique » ou « vecteur cardiaque ECG PASS » pour visualiser comment le dipôle cardiaque tourne au cours du cycle et génère les différentes ondes (P, QRS, T)."
+          "description": "Cherchez « triangle d'Einthoven physique » ou « vecteur cardiaque ECG PASS » pour visualiser comment le dipôle cardiaque tourne au cours du cycle et génère les différentes ondes (P, QRS, T).",
+          "url": "https://www.youtube.com/results?search_query=Vid%C3%A9os%20YouTube%20sur%20le%20triangle%20d%27Einthoven%20et%20la%20lecture%20de%20l%27ECG%20%C3%89lectrostatique%20et%20biopotentiels%20%28ECG%29"
         },
         {
           "icon": "✏️",
           "title": "S'entraîner sur des exercices dirigés de condensateurs et dipôles",
-          "description": "Multipliez les exercices de calcul de champ, potentiel et énergie stockée dans un condensateur : ce sont des calculs répétitifs qui deviennent rapides une fois automatisés."
+          "description": "Multipliez les exercices de calcul de champ, potentiel et énergie stockée dans un condensateur : ce sont des calculs répétitifs qui deviennent rapides une fois automatisés.",
+          "url": "https://www.google.com/search?q=S%27entra%C3%AEner%20sur%20des%20exercices%20dirig%C3%A9s%20de%20condensateurs%20et%20dip%C3%B4les%20%C3%89lectrostatique%20et%20biopotentiels%20%28ECG%29%20PASS"
         },
         {
           "icon": "🧠",
           "title": "Moyen mnémotechnique pour les densités de charge",
-          "description": "λ (Ligne), σ (Surface), ρ (Rho comme le volume, cf. masse volumique) : associez chaque lettre grecque à la dimension géométrique correspondante pour ne plus jamais les confondre."
+          "description": "λ (Ligne), σ (Surface), ρ (Rho comme le volume, cf. masse volumique) : associez chaque lettre grecque à la dimension géométrique correspondante pour ne plus jamais les confondre.",
+          "url": "https://www.google.com/search?q=Moyen%20mn%C3%A9motechnique%20pour%20les%20densit%C3%A9s%20de%20charge%20%C3%89lectrostatique%20et%20biopotentiels%20%28ECG%29%20PASS"
         }
       ],
       "quiz": [
@@ -721,27 +731,32 @@
         {
           "icon": "🔗",
           "title": "Réviser la loi des gaz parfaits et les unités de pression avant ce chapitre",
-          "description": "Les conversions d'unités de pression (Pa, mmHg, atm, bar) reviennent constamment ici comme dans le chapitre sur les gaz : les avoir déjà automatisées fait gagner un temps précieux."
+          "description": "Les conversions d'unités de pression (Pa, mmHg, atm, bar) reviennent constamment ici comme dans le chapitre sur les gaz : les avoir déjà automatisées fait gagner un temps précieux.",
+          "url": "https://www.google.com/search?q=R%C3%A9viser%20la%20loi%20des%20gaz%20parfaits%20et%20les%20unit%C3%A9s%20de%20pression%20avant%20ce%20chapitre%20M%C3%A9canique%20des%20fluides%20%3A%20hydrostatique%2C%20hydrodynamique%20et%20viscosit%C3%A9%20PASS"
         },
         {
           "icon": "🎥",
           "title": "Vidéos YouTube sur la loi de Poiseuille et l'effet Venturi",
-          "description": "Cherchez « loi de Poiseuille exercice PASS » et « effet Venturi sténose artérielle » pour visualiser concrètement pourquoi le rayon d'un vaisseau a un impact aussi fort sur la résistance à l'écoulement."
+          "description": "Cherchez « loi de Poiseuille exercice PASS » et « effet Venturi sténose artérielle » pour visualiser concrètement pourquoi le rayon d'un vaisseau a un impact aussi fort sur la résistance à l'écoulement.",
+          "url": "https://www.youtube.com/results?search_query=un%20vaisseau%20a%20un%20impact%20aussi%20fort%20sur%20la%20r%C3%A9sistance%20%C3%A0%20l"
         },
         {
           "icon": "✏️",
           "title": "S'entraîner sur des annales d'hémodynamique (circuits série/parallèle)",
-          "description": "Ce chapitre est un grand classique des annales de PASS : multipliez les exercices combinant Bernoulli et Poiseuille sur des réseaux de tuyaux en série et en parallèle, à l'image du réseau vasculaire."
+          "description": "Ce chapitre est un grand classique des annales de PASS : multipliez les exercices combinant Bernoulli et Poiseuille sur des réseaux de tuyaux en série et en parallèle, à l'image du réseau vasculaire.",
+          "url": "https://www.google.com/search?q=S%27entra%C3%AEner%20sur%20des%20annales%20d%27h%C3%A9modynamique%20%28circuits%20s%C3%A9rie/parall%C3%A8le%29%20M%C3%A9canique%20des%20fluides%20%3A%20hydrostatique%2C%20hydrodynamique%20et%20viscosit%C3%A9%20PASS"
         },
         {
           "icon": "🧠",
           "title": "Moyen mnémotechnique pour choisir la bonne loi",
-          "description": "« Parfait = Bernoulli (énergie conservée), Visqueux = Poiseuille (énergie perdue) » : relisez systématiquement l'énoncé pour repérer le mot clé qui indique la loi à utiliser."
+          "description": "« Parfait = Bernoulli (énergie conservée), Visqueux = Poiseuille (énergie perdue) » : relisez systématiquement l'énoncé pour repérer le mot clé qui indique la loi à utiliser.",
+          "url": "https://www.google.com/search?q=Moyen%20mn%C3%A9motechnique%20pour%20choisir%20la%20bonne%20loi%20M%C3%A9canique%20des%20fluides%20%3A%20hydrostatique%2C%20hydrodynamique%20et%20viscosit%C3%A9%20PASS"
         },
         {
           "icon": "📘",
           "title": "Relire le poly de pré-rentrée A2SUP sur les dérivées et intégrales simples",
-          "description": "Les relations Q = Sv et Δp = RQ manipulent des grandeurs proportionnelles simples, mais la manipulation d'unités composées (Pa·s, m³·s⁻¹) mérite d'être révisée pour éviter les erreurs de calcul."
+          "description": "Les relations Q = Sv et Δp = RQ manipulent des grandeurs proportionnelles simples, mais la manipulation d'unités composées (Pa·s, m³·s⁻¹) mérite d'être révisée pour éviter les erreurs de calcul.",
+          "url": "https://www.google.com/search?q=Relire%20le%20poly%20de%20pr%C3%A9-rentr%C3%A9e%20A2SUP%20sur%20les%20d%C3%A9riv%C3%A9es%20et%20int%C3%A9grales%20simples%20M%C3%A9canique%20des%20fluides%20%3A%20hydrostatique%2C%20hydrodynamique%20et%20viscosit%C3%A9%20PASS"
         }
       ],
       "quiz": [
@@ -1033,27 +1048,32 @@
         {
           "icon": "📘",
           "title": "Relire le poly de pré-rentrée A2SUP sur les logarithmes et puissances de 10",
-          "description": "Le calcul du niveau sonore en décibels nécessite une bonne maîtrise du logarithme décimal : revoir ses propriétés (log(a×b), log(aⁿ)) avant ce chapitre évite bien des erreurs de calcul."
+          "description": "Le calcul du niveau sonore en décibels nécessite une bonne maîtrise du logarithme décimal : revoir ses propriétés (log(a×b), log(aⁿ)) avant ce chapitre évite bien des erreurs de calcul.",
+          "url": "https://www.google.com/search?q=Relire%20le%20poly%20de%20pr%C3%A9-rentr%C3%A9e%20A2SUP%20sur%20les%20logarithmes%20et%20puissances%20de%2010%20Gaz%20parfaits%20et%20ondes%20acoustiques%20PASS"
         },
         {
           "icon": "🎥",
           "title": "Vidéos YouTube sur le calcul du niveau sonore et sur l'effet Doppler",
-          "description": "Cherchez « décibels calcul PASS » et « effet Doppler échographie » pour bien visualiser la différence entre grandeur physique (intensité) et grandeur perçue (niveau sonore), ainsi que le principe du Doppler."
+          "description": "Cherchez « décibels calcul PASS » et « effet Doppler échographie » pour bien visualiser la différence entre grandeur physique (intensité) et grandeur perçue (niveau sonore), ainsi que le principe du Doppler.",
+          "url": "https://www.youtube.com/results?search_query=Vid%C3%A9os%20YouTube%20sur%20le%20calcul%20du%20niveau%20sonore%20et%20sur%20l%27effet%20Doppler%20Gaz%20parfaits%20et%20ondes%20acoustiques"
         },
         {
           "icon": "✏️",
           "title": "S'entraîner sur des annales mêlant gaz parfaits et pressions partielles",
-          "description": "Multipliez les exercices de conversion d'unités de pression et de calcul de pressions partielles en contexte respiratoire : c'est un classique des sujets de concours PASS/LAS."
+          "description": "Multipliez les exercices de conversion d'unités de pression et de calcul de pressions partielles en contexte respiratoire : c'est un classique des sujets de concours PASS/LAS.",
+          "url": "https://www.google.com/search?q=S%27entra%C3%AEner%20sur%20des%20annales%20m%C3%AAlant%20gaz%20parfaits%20et%20pressions%20partielles%20Gaz%20parfaits%20et%20ondes%20acoustiques%20PASS"
         },
         {
           "icon": "🧠",
           "title": "Moyen mnémotechnique pour les transformations de gaz",
-          "description": "« Iso-therme, iso-bare, iso-chore » : gardez la grandeur qui NE porte PAS le préfixe « iso » comme variable, et la grandeur nommée comme constante (isotherme = température constante, etc.)."
+          "description": "« Iso-therme, iso-bare, iso-chore » : gardez la grandeur qui NE porte PAS le préfixe « iso » comme variable, et la grandeur nommée comme constante (isotherme = température constante, etc.).",
+          "url": "https://www.google.com/search?q=Moyen%20mn%C3%A9motechnique%20pour%20les%20transformations%20de%20gaz%20Gaz%20parfaits%20et%20ondes%20acoustiques%20PASS"
         },
         {
           "icon": "🔗",
           "title": "Réviser le chapitre sur la mécanique des fluides avant celui-ci",
-          "description": "Les notions de pression et de conservation de l'énergie vues en hydrodynamique (Bernoulli) éclairent la façon dont la pression d'un gaz est reliée à l'agitation moléculaire et à l'écoulement."
+          "description": "Les notions de pression et de conservation de l'énergie vues en hydrodynamique (Bernoulli) éclairent la façon dont la pression d'un gaz est reliée à l'agitation moléculaire et à l'écoulement.",
+          "url": "https://www.google.com/search?q=R%C3%A9viser%20le%20chapitre%20sur%20la%20m%C3%A9canique%20des%20fluides%20avant%20celui-ci%20Gaz%20parfaits%20et%20ondes%20acoustiques%20PASS"
         }
       ],
       "quiz": [

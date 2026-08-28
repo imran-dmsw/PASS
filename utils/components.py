@@ -58,10 +58,17 @@ def render_fiche(fiche_points: list) -> None:
 
 
 def render_resource(resource: dict) -> None:
+    url = resource.get("url")
+    link_html = (
+        f'<a href="{url}" target="_blank" rel="noopener noreferrer" class="kawaii-resource-link">Ouvrir la recherche ↗</a>'
+        if url
+        else ""
+    )
     html(f"""<div class="kawaii-card">
 <div class="kawaii-icon" style="background:var(--sky-tint); color:#2B8FB0;">{resource.get('icon', '🔗')}</div>
 <h4 style="margin:0 0 .3rem;">{resource['title']}</h4>
-<p style="margin:0; font-size:.92rem; line-height:1.6; color:var(--text-soft);">{resource['description']}</p>
+<p style="margin:0 0 .6rem; font-size:.92rem; line-height:1.6; color:var(--text-soft);">{resource['description']}</p>
+{link_html}
 </div>""")
 
 

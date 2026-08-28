@@ -101,27 +101,32 @@
         {
           "icon": "🎥",
           "title": "Vidéos sur le cycle cardiaque",
-          "description": "Cherche sur YouTube des animations avec les mots-clés « cycle cardiaque systole diastole animation » pour bien visualiser l'ouverture/fermeture successive des valves et le trajet du sang."
+          "description": "Cherche sur YouTube des animations avec les mots-clés « cycle cardiaque systole diastole animation » pour bien visualiser l'ouverture/fermeture successive des valves et le trajet du sang.",
+          "url": "https://www.youtube.com/results?search_query=Vid%C3%A9os%20sur%20le%20cycle%20cardiaque%20Le%20syst%C3%A8me%20cardiovasculaire"
         },
         {
           "icon": "🖍️",
           "title": "Schéma à légender du cœur",
-          "description": "Entraîne-toi à dessiner et légender de mémoire une coupe frontale du cœur (4 cavités, 4 valves, gros vaisseaux) : c'est l'exercice le plus rentable pour fixer l'anatomie."
+          "description": "Entraîne-toi à dessiner et légender de mémoire une coupe frontale du cœur (4 cavités, 4 valves, gros vaisseaux) : c'est l'exercice le plus rentable pour fixer l'anatomie.",
+          "url": "https://www.google.com/search?q=Sch%C3%A9ma%20%C3%A0%20l%C3%A9gender%20du%20c%C5%93ur%20Le%20syst%C3%A8me%20cardiovasculaire%20PASS"
         },
         {
           "icon": "🧩",
           "title": "Relis l'ECG en parallèle du cycle cardiaque",
-          "description": "Superpose mentalement (ou sur papier) la courbe de pression ventriculaire, l'ECG et l'ouverture des valves sur un même axe temporel : cela aide énormément à comprendre pourquoi QRS précède l'éjection."
+          "description": "Superpose mentalement (ou sur papier) la courbe de pression ventriculaire, l'ECG et l'ouverture des valves sur un même axe temporel : cela aide énormément à comprendre pourquoi QRS précède l'éjection.",
+          "url": "https://www.google.com/search?q=Relis%20l%27ECG%20en%20parall%C3%A8le%20du%20cycle%20cardiaque%20Le%20syst%C3%A8me%20cardiovasculaire%20PASS"
         },
         {
           "icon": "🔁",
           "title": "Technique de mémorisation par phrase",
-          "description": "Utilise des phrases mnémotechniques courtes pour l'ordre de conduction électrique (sinusal → AV → His → Purkinje) et pour l'ordre des valves (AV avant sigmoïde), en les répétant à voix haute plusieurs fois."
+          "description": "Utilise des phrases mnémotechniques courtes pour l'ordre de conduction électrique (sinusal → AV → His → Purkinje) et pour l'ordre des valves (AV avant sigmoïde), en les répétant à voix haute plusieurs fois.",
+          "url": "https://www.google.com/search?q=Technique%20de%20m%C3%A9morisation%20par%20phrase%20Le%20syst%C3%A8me%20cardiovasculaire%20PASS"
         },
         {
           "icon": "📊",
           "title": "Tableau comparatif artères/veines/capillaires",
-          "description": "Construis toi-même un tableau à trois colonnes (paroi, pression, rôle, présence de valvules) pour comparer artères, veines et capillaires : très utile pour les QCM pièges sur la structure vasculaire."
+          "description": "Construis toi-même un tableau à trois colonnes (paroi, pression, rôle, présence de valvules) pour comparer artères, veines et capillaires : très utile pour les QCM pièges sur la structure vasculaire.",
+          "url": "https://www.google.com/search?q=Tableau%20comparatif%20art%C3%A8res/veines/capillaires%20Le%20syst%C3%A8me%20cardiovasculaire%20PASS"
         }
       ],
       "quiz": [
@@ -422,27 +427,32 @@
         {
           "icon": "🎥",
           "title": "Vidéos sur le potentiel d'action",
-          "description": "Recherche sur YouTube « potentiel d'action neurone animation canaux sodium potassium » pour visualiser précisément l'ouverture séquentielle des canaux Na+ et K+ pendant le PA."
+          "description": "Recherche sur YouTube « potentiel d'action neurone animation canaux sodium potassium » pour visualiser précisément l'ouverture séquentielle des canaux Na+ et K+ pendant le PA.",
+          "url": "https://www.youtube.com/results?search_query=action%20neurone%20animation%20canaux%20sodium%20potassium%20%C2%BB%20pour%20visualiser%20pr%C3%A9cis%C3%A9ment%20l"
         },
         {
           "icon": "📈",
           "title": "Trace la courbe du potentiel d'action toi-même",
-          "description": "Redessine à main levée la courbe potentiel/temps du PA en annotant chaque phase (repos, seuil, dépolarisation, repolarisation, hyperpolarisation) : c'est un excellent exercice actif pour ne plus confondre les phases."
+          "description": "Redessine à main levée la courbe potentiel/temps du PA en annotant chaque phase (repos, seuil, dépolarisation, repolarisation, hyperpolarisation) : c'est un excellent exercice actif pour ne plus confondre les phases.",
+          "url": "https://www.google.com/search?q=Trace%20la%20courbe%20du%20potentiel%20d%27action%20toi-m%C3%AAme%20Le%20syst%C3%A8me%20nerveux%20et%20le%20neurone%20PASS"
         },
         {
           "icon": "🧠",
           "title": "Fiche comparative synapse vs PA",
-          "description": "Fais un tableau à deux colonnes « potentiel d'action » vs « potentiel post-synaptique » (amplitude fixe ou graduée, sommable ou non, décrémentiel ou non) pour bien fixer la différence, source classique d'erreur en QCM."
+          "description": "Fais un tableau à deux colonnes « potentiel d'action » vs « potentiel post-synaptique » (amplitude fixe ou graduée, sommable ou non, décrémentiel ou non) pour bien fixer la différence, source classique d'erreur en QCM.",
+          "url": "https://www.google.com/search?q=Fiche%20comparative%20synapse%20vs%20PA%20Le%20syst%C3%A8me%20nerveux%20et%20le%20neurone%20PASS"
         },
         {
           "icon": "🔁",
           "title": "Cartes mémo neurotransmetteurs",
-          "description": "Crée des petites fiches (papier ou appli de flashcards) associant chaque neurotransmetteur (glutamate, GABA, acétylcholine, dopamine, sérotonine) à son effet principal (excitateur/inhibiteur) et à un exemple physiologique ou clinique."
+          "description": "Crée des petites fiches (papier ou appli de flashcards) associant chaque neurotransmetteur (glutamate, GABA, acétylcholine, dopamine, sérotonine) à son effet principal (excitateur/inhibiteur) et à un exemple physiologique ou clinique.",
+          "url": "https://www.google.com/search?q=Cartes%20m%C3%A9mo%20neurotransmetteurs%20Le%20syst%C3%A8me%20nerveux%20et%20le%20neurone%20PASS"
         },
         {
           "icon": "📚",
           "title": "Revoir le chapitre cardiovasculaire en lien",
-          "description": "Relis la partie « innervation autonome du cœur » du chapitre cardiovasculaire juste après ce chapitre : elle illustre concrètement les effets du sympathique et du parasympathique vus ici."
+          "description": "Relis la partie « innervation autonome du cœur » du chapitre cardiovasculaire juste après ce chapitre : elle illustre concrètement les effets du sympathique et du parasympathique vus ici.",
+          "url": "https://www.google.com/search?q=Revoir%20le%20chapitre%20cardiovasculaire%20en%20lien%20Le%20syst%C3%A8me%20nerveux%20et%20le%20neurone%20PASS"
         }
       ],
       "quiz": [
@@ -738,27 +748,32 @@
         {
           "icon": "🎥",
           "title": "Vidéos sur la mécanique ventilatoire",
-          "description": "Cherche sur YouTube « mécanique ventilatoire pression intrapleurale animation » pour bien visualiser les variations de pression lors de l'inspiration et de l'expiration."
+          "description": "Cherche sur YouTube « mécanique ventilatoire pression intrapleurale animation » pour bien visualiser les variations de pression lors de l'inspiration et de l'expiration.",
+          "url": "https://www.youtube.com/results?search_query=inspiration%20et%20de%20l"
         },
         {
           "icon": "🖍️",
           "title": "Schéma des volumes pulmonaires",
-          "description": "Entraîne-toi à redessiner le diagramme classique en escalier des volumes et capacités pulmonaires (VT, VRI, VRE, VR, CV, CPT) sans le regarder, puis vérifie : c'est l'outil le plus efficace pour ce chapitre."
+          "description": "Entraîne-toi à redessiner le diagramme classique en escalier des volumes et capacités pulmonaires (VT, VRI, VRE, VR, CV, CPT) sans le regarder, puis vérifie : c'est l'outil le plus efficace pour ce chapitre.",
+          "url": "https://www.google.com/search?q=Sch%C3%A9ma%20des%20volumes%20pulmonaires%20Le%20syst%C3%A8me%20respiratoire%20PASS"
         },
         {
           "icon": "🔁",
           "title": "Mnémotechnique Bohr/Haldane",
-          "description": "Répète à voix haute la phrase « Bohr lâche l'O2, Haldane lâche le CO2 » plusieurs fois par jour pendant quelques jours pour l'ancrer durablement en mémoire à long terme."
+          "description": "Répète à voix haute la phrase « Bohr lâche l'O2, Haldane lâche le CO2 » plusieurs fois par jour pendant quelques jours pour l'ancrer durablement en mémoire à long terme.",
+          "url": "https://www.google.com/search?q=Mn%C3%A9motechnique%20Bohr/Haldane%20Le%20syst%C3%A8me%20respiratoire%20PASS"
         },
         {
           "icon": "🧩",
           "title": "Comparer avec le chapitre cardiovasculaire",
-          "description": "Relis le bloc sur le transport du CO2 et de l'O2 juste après avoir révisé la partie cardiovasculaire sur la circulation pulmonaire : les deux chapitres s'articulent directement autour des veines et artères pulmonaires."
+          "description": "Relis le bloc sur le transport du CO2 et de l'O2 juste après avoir révisé la partie cardiovasculaire sur la circulation pulmonaire : les deux chapitres s'articulent directement autour des veines et artères pulmonaires.",
+          "url": "https://www.google.com/search?q=Comparer%20avec%20le%20chapitre%20cardiovasculaire%20Le%20syst%C3%A8me%20respiratoire%20PASS"
         },
         {
           "icon": "📊",
           "title": "Tableau obstructif vs restrictif",
-          "description": "Construis un petit tableau comparant pathologies obstructives (asthme, BPCO : VEMS diminué) et restrictives (fibrose : CV et CPT diminuées) pour éviter les confusions fréquentes en QCM de physiologie respiratoire."
+          "description": "Construis un petit tableau comparant pathologies obstructives (asthme, BPCO : VEMS diminué) et restrictives (fibrose : CV et CPT diminuées) pour éviter les confusions fréquentes en QCM de physiologie respiratoire.",
+          "url": "https://www.google.com/search?q=Tableau%20obstructif%20vs%20restrictif%20Le%20syst%C3%A8me%20respiratoire%20PASS"
         }
       ],
       "quiz": [

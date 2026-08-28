@@ -140,6 +140,16 @@ def inject_kawaii_theme() -> None:
         .kawaii-stars {{ color: var(--yellow); letter-spacing: 2px; font-size: 1.05rem; }}
         .kawaii-stars .off {{ color: #F0E4D0; }}
 
+        .kawaii-resource-link {{
+            display: inline-flex; align-items: center; gap: 0.3rem;
+            font-family: "Quicksand", sans-serif; font-weight: 700; font-size: 0.85rem;
+            color: var(--pink-deep) !important;
+            background: var(--pink-tint);
+            padding: 0.4rem 0.9rem; border-radius: 999px;
+            text-decoration: none !important;
+        }}
+        .kawaii-resource-link:hover {{ background: var(--pink); color: white !important; }}
+
         .mascot-bubble {{
             display: flex; gap: 0.8rem; align-items: flex-start;
             background: var(--lavender-tint);

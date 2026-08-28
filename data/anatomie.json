@@ -16,6 +16,11 @@
           "content": "Le cœur est un muscle strié cardiaque creux, situé dans le médiastin, comportant quatre cavités : deux oreillettes (atriums) et deux ventricules, séparés par le septum interatrial et le septum interventriculaire. Les valves atrioventriculaires (tricuspide à droite, mitrale ou bicuspide à gauche) empêchent le reflux du sang des ventricules vers les oreillettes ; les valves sigmoïdes (pulmonaire et aortique) empêchent le reflux depuis les artères vers les ventricules."
         },
         {
+          "icon": "🔬",
+          "title": "Parois cardiaques et péricarde",
+          "content": "La paroi du cœur comprend trois tuniques : l'endocarde (endothélium interne en contact avec le sang), le myocarde (muscle cardiaque contractile, plus épais au ventricule gauche pour générer une forte pression systémique) et l'épicarde (feuillet viscéral séreux). Le cœur est enveloppé par le péricarde, formé d'un sac fibreux externe et d'un feuillet séreux (pariétal et viscéral) délimitant la cavité péricardique, qui contient un film de liquide lubrifiant limitant les frottements lors des battements."
+        },
+        {
           "icon": "⭐",
           "title": "Deux circulations",
           "content": "La grande circulation (systémique) part du ventricule gauche, irrigue tout l'organisme via l'aorte, puis revient au cœur par les veines caves vers l'oreillette droite. La petite circulation (pulmonaire) part du ventricule droit, traverse les poumons via les artères pulmonaires (sang désoxygéné) pour s'oxygéner, puis revient à l'oreillette gauche par les veines pulmonaires (sang oxygéné)."
@@ -31,6 +36,11 @@
           "content": "Le cycle cardiaque comprend trois phases : la systole atriale (contraction des oreillettes, remplissage final des ventricules), la systole ventriculaire (contraction des ventricules, éjection du sang vers les artères) et la diastole générale (relâchement complet, remplissage passif des cavités)."
         },
         {
+          "icon": "⭐",
+          "title": "Système cardionecteur (conduction électrique)",
+          "content": "L'activité électrique spontanée naît dans le nœud sinusal (ou sino-atrial, situé dans l'oreillette droite), véritable pacemaker naturel (environ 60-100 impulsions/min), se propage aux oreillettes puis au nœud atrioventriculaire (qui ralentit l'influx pour laisser le temps aux oreillettes de se vider), avant de descendre par le faisceau de His puis ses branches vers le réseau de Purkinje qui dépolarise rapidement l'ensemble des ventricules."
+        },
+        {
           "icon": "➗",
           "title": "ECG normal",
           "content": "L'électrocardiogramme enregistre l'activité électrique cardiaque : l'onde P correspond à la dépolarisation atriale, le complexe QRS à la dépolarisation ventriculaire (il masque la repolarisation atriale), et l'onde T à la repolarisation ventriculaire. L'intervalle PR normal est de 0,12 à 0,20 seconde."
@@ -41,6 +51,26 @@
           "content": "La pression artérielle (PA = Qc x RVP, résistances vasculaires périphériques) est régulée à court terme par le baroréflexe (barorécepteurs aortiques et carotidiens sensibles à l'étirement de la paroi vasculaire) et à moyen/long terme par le système rénine-angiotensine-aldostérone (SRAA), qui agit sur la volémie et la vasoconstriction."
         },
         {
+          "icon": "🔬",
+          "title": "Les vaisseaux sanguins : structure et rôle",
+          "content": "Les artères ont une paroi épaisse à trois tuniques (intima, media riche en fibres musculaires lisses et élastiques, adventice) adaptée à la haute pression ; les artérioles régulent finement les résistances périphériques par vasomotricité. Les capillaires, à paroi unicellulaire (un seul endothélium), sont le siège des échanges avec les tissus. Les veines ont une paroi plus fine, une lumière plus large, et possèdent des valvules anti-reflux, notamment dans les membres inférieurs, où le retour veineux dépend aussi de la pompe musculaire du mollet."
+        },
+        {
+          "icon": "⭐",
+          "title": "Innervation autonome du cœur",
+          "content": "Le système nerveux sympathique (via la noradrénaline, récepteurs bêta-1) augmente la fréquence cardiaque (effet chronotrope positif), la force de contraction (effet inotrope positif) et la vitesse de conduction (effet dromotrope positif). Le système parasympathique (nerf vague/X, acétylcholine, récepteurs muscariniques) ralentit la fréquence cardiaque (effet chronotrope négatif), en agissant surtout sur le nœud sinusal et le nœud atrioventriculaire. Au repos, le tonus vagal est dominant."
+        },
+        {
+          "icon": "➗",
+          "title": "Pressions artérielles et pouls",
+          "content": "La pression artérielle systolique (PAS, environ 120 mmHg) correspond au pic de pression lors de l'éjection ventriculaire ; la pression artérielle diastolique (PAD, environ 80 mmHg) correspond à la pression minimale entre deux systoles. La pression différentielle (ou pression pulsée) est PAS - PAD, et la pression artérielle moyenne (PAM) se calcule approximativement par PAM = PAD + 1/3 (PAS - PAD), reflétant la pression de perfusion tissulaire moyenne."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Facteurs de risque cardiovasculaire et applications cliniques",
+          "content": "L'athérosclérose (dépôt de plaques lipidiques dans la paroi artérielle) est favorisée par l'hypertension artérielle, le tabac, le diabète, l'hypercholestérolémie et la sédentarité ; elle peut évoluer vers l'angine de poitrine, l'infarctus du myocarde (occlusion coronarienne) ou l'accident vasculaire cérébral. L'insuffisance cardiaque correspond à l'incapacité du cœur à assurer un débit suffisant pour les besoins de l'organisme, avec retentissement possible en amont (œdèmes, dyspnée)."
+        },
+        {
           "icon": "🧠",
           "title": "Astuce mémo valves",
           "content": "Pour retenir la disposition des valves : à droite « Tricuspide puis Pulmonaire », à gauche « Mitrale puis Aortique ». Le sang traverse toujours une valve atrioventriculaire avant une valve sigmoïde (artérielle), jamais l'inverse."
@@ -49,6 +79,49 @@
           "icon": "⚠️",
           "title": "Piège classique",
           "content": "Erreur fréquente : penser que les artères transportent toujours du sang oxygéné et les veines du sang désoxygéné. C'est faux pour la circulation pulmonaire : l'artère pulmonaire transporte du sang désoxygéné (du ventricule droit vers les poumons) et les veines pulmonaires transportent du sang oxygéné (des poumons vers l'oreillette gauche)."
+        }
+      ],
+      "fiche": [
+        "4 cavités : 2 oreillettes + 2 ventricules, séparées par les septums interatrial et interventriculaire",
+        "Valves AV : Tricuspide (droite), Mitrale/bicuspide (gauche) ; valves sigmoïdes : Pulmonaire, Aortique",
+        "Grande circulation = VG → organisme → VC → OD ; petite circulation = VD → poumons → VP → OG",
+        "Qc = FC x VES ≈ 70 bpm x 70 mL ≈ 5 L/min au repos",
+        "Cycle cardiaque : systole atriale → systole ventriculaire → diastole générale",
+        "Nœud sinusal (pacemaker naturel) → nœud AV (ralentit) → faisceau de His → réseau de Purkinje",
+        "ECG : onde P = dépolarisation atriale, QRS = dépolarisation ventriculaire, onde T = repolarisation ventriculaire",
+        "PR normal : 0,12 à 0,20 s",
+        "PA = Qc x RVP ; régulation courte durée = baroréflexe, longue durée = SRAA",
+        "Sympathique (noradrénaline, bêta-1) : ↑FC, ↑force, ↑conduction ; Parasympathique (vague, ACh) : ↓FC",
+        "PA normale ≈ 120/80 mmHg ; PAM ≈ PAD + 1/3(PAS-PAD)",
+        "Capillaires = paroi unicellulaire, seul lieu d'échange avec les tissus",
+        "Piège : l'artère pulmonaire transporte du sang désoxygéné, les veines pulmonaires du sang oxygéné",
+        "Veine cave supérieure = tête/cou/MS ; veine cave inférieure = abdomen/MI, toutes deux → OD"
+      ],
+      "resources": [
+        {
+          "icon": "🎥",
+          "title": "Vidéos sur le cycle cardiaque",
+          "description": "Cherche sur YouTube des animations avec les mots-clés « cycle cardiaque systole diastole animation » pour bien visualiser l'ouverture/fermeture successive des valves et le trajet du sang."
+        },
+        {
+          "icon": "🖍️",
+          "title": "Schéma à légender du cœur",
+          "description": "Entraîne-toi à dessiner et légender de mémoire une coupe frontale du cœur (4 cavités, 4 valves, gros vaisseaux) : c'est l'exercice le plus rentable pour fixer l'anatomie."
+        },
+        {
+          "icon": "🧩",
+          "title": "Relis l'ECG en parallèle du cycle cardiaque",
+          "description": "Superpose mentalement (ou sur papier) la courbe de pression ventriculaire, l'ECG et l'ouverture des valves sur un même axe temporel : cela aide énormément à comprendre pourquoi QRS précède l'éjection."
+        },
+        {
+          "icon": "🔁",
+          "title": "Technique de mémorisation par phrase",
+          "description": "Utilise des phrases mnémotechniques courtes pour l'ordre de conduction électrique (sinusal → AV → His → Purkinje) et pour l'ordre des valves (AV avant sigmoïde), en les répétant à voix haute plusieurs fois."
+        },
+        {
+          "icon": "📊",
+          "title": "Tableau comparatif artères/veines/capillaires",
+          "description": "Construis toi-même un tableau à trois colonnes (paroi, pression, rôle, présence de valvules) pour comparer artères, veines et capillaires : très utile pour les QCM pièges sur la structure vasculaire."
         }
       ],
       "quiz": [
@@ -264,6 +337,11 @@
           "content": "Le neurone est l'unité fonctionnelle du système nerveux. Il comprend un corps cellulaire (soma) contenant le noyau, des dendrites qui reçoivent les signaux, et un axone qui conduit l'influx nerveux jusqu'aux terminaisons synaptiques. Chez de nombreux neurones, l'axone est entouré d'une gaine de myéline (formée par les oligodendrocytes dans le SNC et les cellules de Schwann dans le SNP), interrompue régulièrement par les nœuds de Ranvier."
         },
         {
+          "icon": "🔬",
+          "title": "Les cellules gliales",
+          "content": "Les cellules gliales soutiennent et protègent les neurones sans conduire d'influx nerveux elles-mêmes. Dans le SNC : les astrocytes (soutien métabolique, barrière hémato-encéphalique), les oligodendrocytes (myélinisation), la microglie (défense immunitaire, phagocytose). Dans le SNP : les cellules de Schwann (myélinisation) et les cellules satellites (entourent les corps cellulaires ganglionnaires). Les cellules gliales sont environ aussi nombreuses, voire plus nombreuses, que les neurones."
+        },
+        {
           "icon": "➗",
           "title": "Potentiel de repos",
           "content": "Au repos, la membrane du neurone présente une différence de potentiel d'environ -70 mV (intérieur négatif par rapport à l'extérieur), maintenue grâce à la pompe Na+/K+ ATPase (qui expulse 3 Na+ pour 2 K+ importés à chaque cycle) et à une perméabilité membranaire plus élevée pour le K+ que pour le Na+ au repos."
@@ -274,9 +352,19 @@
           "content": "Lorsque la dépolarisation atteint un seuil (environ -55 mV), un potentiel d'action est déclenché : ouverture des canaux Na+ voltage-dépendants (dépolarisation rapide jusqu'à environ +30 mV), puis ouverture des canaux K+ voltage-dépendants et fermeture des canaux Na+ (repolarisation), suivies souvent d'une brève hyperpolarisation. Le potentiel d'action obéit à la loi du tout ou rien : son amplitude ne dépend pas de l'intensité du stimulus."
         },
         {
+          "icon": "⭐",
+          "title": "Périodes réfractaires",
+          "content": "Après le déclenchement d'un potentiel d'action, la période réfractaire absolue correspond à un intervalle pendant lequel aucun nouveau potentiel d'action ne peut être généré, quelle que soit l'intensité du stimulus (canaux Na+ inactivés). Elle est suivie d'une période réfractaire relative, où un potentiel d'action peut être déclenché mais nécessite un stimulus plus intense que la normale. Ces périodes garantissent la propagation unidirectionnelle de l'influx et limitent la fréquence maximale de décharge du neurone."
+        },
+        {
           "icon": "🔬",
           "title": "La synapse chimique",
           "content": "Au niveau de la synapse chimique, l'arrivée du potentiel d'action dans le bouton synaptique provoque l'entrée de Ca2+ et la libération de neurotransmetteurs (acétylcholine, glutamate, GABA, dopamine, sérotonine...) contenus dans des vésicules synaptiques, par exocytose dans la fente synaptique. Ces neurotransmetteurs se fixent sur des récepteurs post-synaptiques spécifiques, générant un potentiel post-synaptique excitateur ou inhibiteur."
+        },
+        {
+          "icon": "➗",
+          "title": "Sommation synaptique",
+          "content": "Un seul potentiel post-synaptique est en général insuffisant pour déclencher un potentiel d'action : les potentiels post-synaptiques excitateurs (PPSE) et inhibiteurs (PPSI) se somment. La sommation temporelle correspond à l'addition de PPSE/PPSI successifs provenant d'une même synapse rapprochée dans le temps ; la sommation spatiale correspond à l'addition de PPSE/PPSI simultanés provenant de synapses différentes. Le neurone post-synaptique intègre ainsi l'ensemble des signaux reçus avant de décider de générer ou non un potentiel d'action au niveau du cône d'implantation axonal."
         },
         {
           "icon": "⭐",
@@ -284,9 +372,24 @@
           "content": "Le système nerveux central (SNC) comprend l'encéphale et la moelle épinière. Le système nerveux périphérique (SNP) comprend les nerfs crâniens et rachidiens ainsi que les ganglions. Le SNP se subdivise en système nerveux somatique (volontaire, muscles squelettiques) et système nerveux autonome ou végétatif (involontaire, subdivisé en sympathique et parasympathique)."
         },
         {
+          "icon": "🧠",
+          "title": "Sympathique versus parasympathique : effets comparés",
+          "content": "Le système sympathique prépare l'organisme à l'action (« combat-fuite ») : augmentation de la fréquence cardiaque, dilatation bronchique et pupillaire, inhibition de la digestion, libération d'adrénaline par la médullosurrénale. Le système parasympathique favorise le repos et la digestion (« repos-digestion ») : ralentissement cardiaque, stimulation des sécrétions digestives et de la motilité intestinale, contraction pupillaire. Les deux systèmes agissent en permanence de façon antagoniste et complémentaire sur la plupart des organes."
+        },
+        {
           "icon": "➗",
           "title": "Vitesse de conduction",
           "content": "La vitesse de conduction de l'influx nerveux dépend du diamètre de l'axone et de la présence de myéline. Dans les fibres myélinisées, la conduction est saltatoire (le potentiel d'action « saute » d'un nœud de Ranvier à l'autre), ce qui accélère la conduction jusqu'à environ 100 m/s, contre moins de 2 m/s pour les fibres amyéliniques."
+        },
+        {
+          "icon": "🔬",
+          "title": "Réflexe et arc réflexe",
+          "content": "Le réflexe est une réponse motrice rapide, involontaire et stéréotypée à un stimulus, dont le circuit nerveux (arc réflexe) comprend un récepteur sensoriel, une voie afférente (neurone sensitif), un centre d'intégration (souvent la moelle épinière, sans passage obligatoire par l'encéphale), une voie efférente (neurone moteur) et un effecteur (muscle ou glande). Le réflexe myotatique (ex : réflexe rotulien) est l'exemple classique de réflexe monosynaptique."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Neurotransmission et pharmacologie de base",
+          "content": "Après avoir agi sur les récepteurs post-synaptiques, le neurotransmetteur est éliminé de la fente synaptique par recapture présynaptique (ex : sérotonine, dopamine, noradrénaline), par dégradation enzymatique (ex : l'acétylcholinestérase dégrade l'acétylcholine) ou par diffusion. De nombreux médicaments et toxiques agissent sur ces étapes : inhibiteurs de recapture de la sérotonine (antidépresseurs), inhibiteurs de l'acétylcholinestérase, agonistes ou antagonistes des récepteurs."
         },
         {
           "icon": "🧠",
@@ -297,6 +400,49 @@
           "icon": "⚠️",
           "title": "Piège classique",
           "content": "Erreur fréquente : confondre le potentiel d'action (toujours de même amplitude, loi du tout ou rien, non décrémentiel) avec le potentiel post-synaptique ou le potentiel récepteur (graduables, sommables et décrémentiels avec la distance). Autre piège : le système parasympathique n'est pas « l'inverse anatomique » mais fonctionnel du sympathique — les deux coexistent en permanence et s'équilibrent."
+        }
+      ],
+      "fiche": [
+        "Neurone = soma + dendrites (réception) + axone (conduction) ; myéline = oligodendrocytes (SNC) / Schwann (SNP)",
+        "Cellules gliales : astrocytes, oligodendrocytes, microglie (SNC) ; Schwann, cellules satellites (SNP)",
+        "Potentiel de repos ≈ -70 mV, maintenu par la pompe Na+/K+ ATPase (3 Na+ dehors / 2 K+ dedans)",
+        "Seuil de déclenchement du PA ≈ -55 mV ; pic ≈ +30 mV ; loi du tout ou rien",
+        "PA : entrée Na+ (dépolarisation) → sortie K+ (repolarisation) → hyperpolarisation transitoire",
+        "Période réfractaire absolue (aucun PA possible) puis relative (PA possible si stimulus plus fort)",
+        "Synapse chimique : PA → entrée Ca2+ → exocytose des vésicules → neurotransmetteur → récepteur post-synaptique",
+        "PPSE/PPSI gradués et sommables (sommation temporelle et spatiale), contrairement au PA",
+        "SNC = encéphale + moelle épinière ; SNP = nerfs crâniens/rachidiens + ganglions",
+        "SNP somatique = volontaire ; SNA (autonome) = sympathique (combat-fuite) + parasympathique (repos-digestion)",
+        "Conduction saltatoire (fibres myélinisées, jusqu'à ~100 m/s) vs conduction continue (amyélinique, <2 m/s)",
+        "Glutamate = principal excitateur du SNC ; GABA = principal inhibiteur du SNC",
+        "Arc réflexe : récepteur → voie afférente → centre d'intégration → voie efférente → effecteur",
+        "Acétylcholinestérase dégrade l'acétylcholine dans la fente synaptique"
+      ],
+      "resources": [
+        {
+          "icon": "🎥",
+          "title": "Vidéos sur le potentiel d'action",
+          "description": "Recherche sur YouTube « potentiel d'action neurone animation canaux sodium potassium » pour visualiser précisément l'ouverture séquentielle des canaux Na+ et K+ pendant le PA."
+        },
+        {
+          "icon": "📈",
+          "title": "Trace la courbe du potentiel d'action toi-même",
+          "description": "Redessine à main levée la courbe potentiel/temps du PA en annotant chaque phase (repos, seuil, dépolarisation, repolarisation, hyperpolarisation) : c'est un excellent exercice actif pour ne plus confondre les phases."
+        },
+        {
+          "icon": "🧠",
+          "title": "Fiche comparative synapse vs PA",
+          "description": "Fais un tableau à deux colonnes « potentiel d'action » vs « potentiel post-synaptique » (amplitude fixe ou graduée, sommable ou non, décrémentiel ou non) pour bien fixer la différence, source classique d'erreur en QCM."
+        },
+        {
+          "icon": "🔁",
+          "title": "Cartes mémo neurotransmetteurs",
+          "description": "Crée des petites fiches (papier ou appli de flashcards) associant chaque neurotransmetteur (glutamate, GABA, acétylcholine, dopamine, sérotonine) à son effet principal (excitateur/inhibiteur) et à un exemple physiologique ou clinique."
+        },
+        {
+          "icon": "📚",
+          "title": "Revoir le chapitre cardiovasculaire en lien",
+          "description": "Relis la partie « innervation autonome du cœur » du chapitre cardiovasculaire juste après ce chapitre : elle illustre concrètement les effets du sympathique et du parasympathique vus ici."
         }
       ],
       "quiz": [
@@ -512,9 +658,19 @@
           "content": "Les voies aériennes supérieures (fosses nasales, pharynx, larynx) réchauffent, humidifient et filtrent l'air inspiré. Les voies aériennes inférieures comprennent la trachée, qui se divise en bronches souches, puis en bronches lobaires et bronchioles, jusqu'aux bronchioles terminales et respiratoires, se terminant par les alvéoles pulmonaires, siège des échanges gazeux."
         },
         {
+          "icon": "🔬",
+          "title": "Structure de l'alvéole et surfactant",
+          "content": "L'alvéole pulmonaire est tapissée de pneumocytes de type I (fins, assurant la majorité de la surface d'échange) et de pneumocytes de type II (plus volumineux, producteurs du surfactant, un mélange de phospholipides qui réduit la tension superficielle du film liquide alvéolaire). Le surfactant empêche le collapsus des petites alvéoles en fin d'expiration ; son absence ou son insuffisance (ex : prématurité) provoque une détresse respiratoire."
+        },
+        {
           "icon": "⭐",
           "title": "Mécanique ventilatoire",
           "content": "L'inspiration est un phénomène actif : la contraction du diaphragme et des muscles intercostaux externes augmente le volume thoracique, ce qui abaisse la pression intrapleurale et intra-alvéolaire en dessous de la pression atmosphérique, permettant l'entrée d'air. L'expiration au repos est passive, liée au relâchement musculaire et au retour élastique du poumon et de la cage thoracique."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Muscles accessoires et ventilation forcée",
+          "content": "Lors d'un effort ou d'une détresse respiratoire, des muscles accessoires interviennent : à l'inspiration forcée, les scalènes et les sterno-cléido-mastoïdiens élèvent la cage thoracique ; à l'expiration forcée, les muscles abdominaux et les intercostaux internes se contractent activement pour diminuer le volume thoracique au-delà du simple relâchement passif."
         },
         {
           "icon": "➗",
@@ -537,14 +693,72 @@
           "content": "Le CO2 est transporté sous trois formes : dissous dans le plasma (environ 7 %), lié à l'hémoglobine sous forme de composés carbaminés (environ 20-23 %), et surtout sous forme de bicarbonate (HCO3-, environ 70 %), après hydratation par l'anhydrase carbonique dans les globules rouges."
         },
         {
+          "icon": "⭐",
+          "title": "Régulation nerveuse de la respiration",
+          "content": "Le rythme respiratoire de base est généré par des centres bulbaires (groupe respiratoire dorsal, initiateur de l'inspiration, et groupe respiratoire ventral, impliqué notamment dans l'expiration active), sous l'influence modulatrice du centre pneumotaxique protubérantiel. Les chimiorécepteurs centraux (bulbaires, sensibles au pH du liquide céphalorachidien reflétant la PaCO2) et les chimiorécepteurs périphériques (corpuscules aortiques et carotidiens, sensibles à la PaO2, la PaCO2 et le pH sanguin) ajustent la ventilation en permanence. C'est surtout l'augmentation de la PaCO2 (hypercapnie), bien plus que la baisse de la PaO2, qui stimule normalement la ventilation."
+        },
+        {
           "icon": "🧠",
           "title": "Astuce mémo effets Bohr/Haldane",
           "content": "Effet Bohr : plus de CO2/H+ (pH plus bas) diminue l'affinité de l'hémoglobine pour l'O2, ce qui favorise la libération d'O2 dans les tissus actifs. Effet Haldane : l'oxygénation de l'hémoglobine au niveau pulmonaire diminue son affinité pour le CO2, favorisant sa libération vers les alvéoles. Retiens : « Bohr aide à lâcher l'O2 dans les tissus, Haldane aide à lâcher le CO2 dans les poumons »."
         },
         {
+          "icon": "➗",
+          "title": "Ventilation alvéolaire et rapport ventilation/perfusion",
+          "content": "La ventilation alvéolaire (VA) correspond à la fraction du volume courant qui atteint réellement les alvéoles fonctionnelles : VA = (VT - espace mort) x fréquence respiratoire. Un échange gazeux efficace nécessite un bon appariement entre la ventilation alvéolaire (V) et la perfusion capillaire (Q) : un rapport V/Q normal est proche de 0,8. Un déséquilibre (zone ventilée mais non perfusée, ou perfusée mais non ventilée) altère l'oxygénation du sang, comme dans l'embolie pulmonaire ou l'asthme."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Applications cliniques respiratoires",
+          "content": "L'asthme se caractérise par une bronchoconstriction réversible et une inflammation des voies aériennes, augmentant les résistances à l'écoulement de l'air. La bronchopneumopathie chronique obstructive (BPCO) associe une obstruction chronique peu réversible des voies aériennes, souvent liée au tabagisme. Ces pathologies obstructives diminuent le volume expiratoire maximal en une seconde (VEMS) plus que la capacité vitale, à la différence des pathologies restrictives (ex : fibrose pulmonaire) qui réduisent la capacité vitale et la CPT."
+        },
+        {
           "icon": "⚠️",
           "title": "Piège classique",
           "content": "Ne pas confondre l'espace mort anatomique (volume des voies aériennes de conduction ne participant pas aux échanges gazeux, environ 150 mL) et l'espace mort physiologique (espace mort anatomique + alvéoles ventilées mais non ou mal perfusées). Autre piège : la capacité vitale (CV) ne comprend PAS le volume résiduel, contrairement à la capacité pulmonaire totale (CPT = CV + VR)."
+        }
+      ],
+      "fiche": [
+        "Voies : fosses nasales → pharynx → larynx → trachée → bronches → bronchioles → alvéoles",
+        "Alvéole : pneumocytes I (échange) et II (surfactant, évite le collapsus alvéolaire)",
+        "Inspiration = active (diaphragme + intercostaux externes) ; expiration au repos = passive",
+        "VT ≈ 500 mL ; VR ≈ 1200 mL ; CV = VT+VRI+VRE ≈ 3,5-5 L ; CPT = CV+VR ≈ 5-6 L",
+        "Échanges gazeux = diffusion simple selon les gradients de pression partielle (PAO2 ≈ 100 mmHg)",
+        "O2 transporté à 98% par l'hémoglobine ; courbe de dissociation Hb-O2 sigmoïde, P50 ≈ 26-27 mmHg",
+        "CO2 transporté : 70% bicarbonate, 20-23% carbaminohémoglobine, 7% dissous",
+        "Effet Bohr : ↑CO2/H+ → ↓affinité Hb-O2 → libération d'O2 dans les tissus",
+        "Effet Haldane : Hb oxygénée → ↓affinité pour le CO2 → libération de CO2 dans les poumons",
+        "Centres bulbaires (dorsal/ventral) + centre pneumotaxique protubérantiel régulent le rythme respiratoire",
+        "Stimulus principal de la ventilation = hypercapnie (↑PaCO2), pas l'hypoxie",
+        "Espace mort anatomique ≈ 150 mL ; espace mort physiologique = anatomique + alvéoles non perfusées",
+        "Fréquence respiratoire normale au repos : 12-16 cycles/min",
+        "Anhydrase carbonique catalyse CO2 + H2O ↔ HCO3- + H+ dans les globules rouges"
+      ],
+      "resources": [
+        {
+          "icon": "🎥",
+          "title": "Vidéos sur la mécanique ventilatoire",
+          "description": "Cherche sur YouTube « mécanique ventilatoire pression intrapleurale animation » pour bien visualiser les variations de pression lors de l'inspiration et de l'expiration."
+        },
+        {
+          "icon": "🖍️",
+          "title": "Schéma des volumes pulmonaires",
+          "description": "Entraîne-toi à redessiner le diagramme classique en escalier des volumes et capacités pulmonaires (VT, VRI, VRE, VR, CV, CPT) sans le regarder, puis vérifie : c'est l'outil le plus efficace pour ce chapitre."
+        },
+        {
+          "icon": "🔁",
+          "title": "Mnémotechnique Bohr/Haldane",
+          "description": "Répète à voix haute la phrase « Bohr lâche l'O2, Haldane lâche le CO2 » plusieurs fois par jour pendant quelques jours pour l'ancrer durablement en mémoire à long terme."
+        },
+        {
+          "icon": "🧩",
+          "title": "Comparer avec le chapitre cardiovasculaire",
+          "description": "Relis le bloc sur le transport du CO2 et de l'O2 juste après avoir révisé la partie cardiovasculaire sur la circulation pulmonaire : les deux chapitres s'articulent directement autour des veines et artères pulmonaires."
+        },
+        {
+          "icon": "📊",
+          "title": "Tableau obstructif vs restrictif",
+          "description": "Construis un petit tableau comparant pathologies obstructives (asthme, BPCO : VEMS diminué) et restrictives (fibrose : CV et CPT diminuées) pour éviter les confusions fréquentes en QCM de physiologie respiratoire."
         }
       ],
       "quiz": [

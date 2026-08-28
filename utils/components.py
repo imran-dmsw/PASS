@@ -41,6 +41,30 @@ def render_course_block(block: dict) -> None:
 </div>""")
 
 
+def render_fiche(fiche_points: list) -> None:
+    """Fiche de révision condensée : une seule card 'pense-bête' avec les
+    points essentiels à relire juste avant le quiz ou l'examen."""
+    if not fiche_points:
+        html("""<div class="kawaii-card">
+<p style="color:var(--text-soft); margin:0;">Pas encore de fiche condensée ici, reviens bientôt ! 🌸</p>
+</div>""")
+        return
+    items = "".join(f'<li style="margin-bottom:.5rem; line-height:1.5;">{point}</li>' for point in fiche_points)
+    html(f"""<div class="kawaii-card" style="background:var(--yellow-tint);">
+<div class="kawaii-icon" style="background:white; color:#B98A1C;">📝</div>
+<h4 style="margin:0 0 .6rem;">À retenir absolument</h4>
+<ul style="margin:0; padding-left:1.2rem; font-size:.95rem;">{items}</ul>
+</div>""")
+
+
+def render_resource(resource: dict) -> None:
+    html(f"""<div class="kawaii-card">
+<div class="kawaii-icon" style="background:var(--sky-tint); color:#2B8FB0;">{resource.get('icon', '🔗')}</div>
+<h4 style="margin:0 0 .3rem;">{resource['title']}</h4>
+<p style="margin:0; font-size:.92rem; line-height:1.6; color:var(--text-soft);">{resource['description']}</p>
+</div>""")
+
+
 def render_ue_home_card(ue_data: dict) -> None:
     tint_bg, tint_text = TINTS.get(ue_data.get("tint", "pink"), TINTS["pink"])
     n_chapters = len(ue_data["chapters"])

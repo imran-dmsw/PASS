@@ -2,6 +2,8 @@
 
 import random
 
+from utils.config import STUDENT_NAME
+
 _BASE_HEAD = """
 <svg width="{size}" height="{size}" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
   <ellipse cx="60" cy="102" rx="30" ry="8" fill="#F7739F" opacity=".12"/>
@@ -55,13 +57,13 @@ def mascot_svg(mood: str = "happy", size: int = 100) -> str:
 
 
 GREETINGS = [
-    "Prêt·e à faire fondre quelques neurones aujourd'hui ? 🌸🧠",
+    f"Prête à faire fondre quelques neurones aujourd'hui, {STUDENT_NAME} ? 🌸🧠",
     "Un petit quiz par jour éloigne le trou de mémoire ! ✨",
-    "Dr. Mochi a préparé des fiches toutes douces pour toi aujourd'hui 🐱💕",
+    f"Dr. Mochi a préparé des fiches toutes douces pour toi aujourd'hui, {STUDENT_NAME} 🐱💕",
     "Chaque révision est une étoile de plus dans ta collection ⭐",
-    "Tu peux le faire, courage petit·e futur·e médecin ! 🌸",
+    f"Tu peux le faire, courage future médecin, {STUDENT_NAME} ! 🌸",
     "Aujourd'hui, on avance pas à pas — même un petit quiz compte ! 🎀",
-    "Respire, révise, ronronne. On y va en douceur 🐾",
+    f"Respire, révise, ronronne, {STUDENT_NAME}. On y va en douceur 🐾",
 ]
 
 CORRECT_MESSAGES = [
@@ -96,18 +98,18 @@ def score_reaction(ratio: float):
     """Retourne (titre, message, mood) pour l'écran de score final, selon le ratio de réussite."""
     if ratio >= 0.8:
         return (
-            "Excellent·e ! 🎉",
-            "Tu maîtrises ce chapitre à merveille, continue comme ça, futur·e médecin ! 🌸👩‍⚕️",
+            "Excellente ! 🎉",
+            f"Tu maîtrises ce chapitre à merveille, continue comme ça, {STUDENT_NAME}, future médecin ! 🌸👩‍⚕️",
             "bravo",
         )
     if ratio >= 0.5:
         return (
             "Bon travail ! 💮",
-            "Tu es sur la bonne voie, encore un peu de pratique et ce sera parfait ✨",
+            f"Tu es sur la bonne voie, {STUDENT_NAME}, encore un peu de pratique et ce sera parfait ✨",
             "happy",
         )
     return (
         "Courage ! 💪",
-        "Ce chapitre est corsé, relis la fiche de cours et retente le quiz, tu vas progresser 🐰💕",
+        f"Ce chapitre est corsé, {STUDENT_NAME} — relis la fiche puis le cours, et retente le quiz, tu vas progresser 🐰💕",
         "encourage",
     )

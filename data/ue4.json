@@ -21,6 +21,11 @@
           "content": "La quantité de mouvement d'un système de masse m et de vitesse v est p = mv (en kg·m·s⁻¹). Le principe d'inertie (1ère loi) énonce que la somme des forces appliquées à un système immobile ou en MRU est nulle : ΣF = 0. Réciproquement, si ΣF = 0 le système est immobile ou en MRU. Le principe fondamental de la dynamique (2ème loi) relie la résultante des forces à la variation de quantité de mouvement : ΣF = dp/dt, ce qui donne, pour une masse constante, la relation la plus utilisée en physique : ΣF = m·a."
         },
         {
+          "icon": "🔬",
+          "title": "La troisième loi de Newton (action-réaction)",
+          "content": "Si un système A exerce une force F(A→B) sur un système B, alors B exerce sur A une force F(B→A) exactement opposée : F(B→A) = −F(A→B). Ces deux forces ont la même norme, la même droite d'action, mais des sens opposés, et surtout elles s'appliquent sur deux systèmes différents (elles ne se compensent donc jamais dans le bilan des forces d'un même système). Exemple médical classique : lors de la marche, le pied pousse le sol vers l'arrière, et le sol repousse le pied (donc le corps) vers l'avant."
+        },
+        {
           "icon": "➗",
           "title": "Les énergies mécaniques",
           "content": "L'énergie cinétique, liée au mouvement, vaut Ec = ½mv². L'énergie potentielle de pesanteur, liée à l'altitude z dans un champ de pesanteur g, vaut Epp = mgz. L'énergie potentielle élastique d'un ressort de raideur k, de longueur l et de longueur à vide l₀ (avec x = l − l₀ l'allongement), vaut Epe = ½kx². Cette énergie est associée à une force de rappel de norme F = k·x, toujours dirigée vers la position de repos du ressort. L'énergie mécanique totale est la somme de l'énergie cinétique et de toutes les énergies potentielles du système : Em = Ec + ΣEp."
@@ -29,6 +34,11 @@
           "icon": "🔬",
           "title": "Travail d'une force",
           "content": "Le travail W d'une force mesure son action sur un système lors d'un déplacement ; il s'exprime en joules (J). Pour un déplacement infinitésimal dl formant un angle θ avec la force F, le travail élémentaire vaut dW = F·dl = F×dl×cos(θ). Un travail est moteur si dW > 0 (la force accélère le système), résistif si dW < 0 (elle le freine), et nul si dW = 0. Sur un trajet macroscopique entre A et B, le travail total s'obtient en sommant (intégrant) tous les travaux élémentaires : WAB = ∫[A→B] F·dl. Cas particulier utile en biophysique : le travail d'une force de pression exercée sur un volume qui varie de dV a pour valeur absolue |dW| = p×|dV|."
+        },
+        {
+          "icon": "🧠",
+          "title": "Travail du poids et de la réaction normale",
+          "content": "Le travail du poids entre deux points A et B ne dépend que de la différence d'altitude, jamais du chemin suivi : W(poids) = mg(zA − zB) (positif si le système descend, négatif s'il monte). C'est la preuve directe que le poids est une force conservative. À l'inverse, le travail de la réaction normale d'un support (perpendiculaire au déplacement) est toujours nul, puisque F et dl sont perpendiculaires (cos 90° = 0). Le travail des frottements, lui, est toujours résistif (négatif) et dépend du chemin parcouru : ce n'est jamais une force conservative."
         },
         {
           "icon": "⭐",
@@ -41,9 +51,73 @@
           "content": "Une force est dite conservative lorsque le travail qu'elle produit ne dépend pas du chemin suivi ; elle dérive alors toujours d'une énergie potentielle selon F = −dEp/dx. Si un système n'est soumis qu'à des forces conservatives, son énergie mécanique se conserve : Em = Ec + Ep = constante, ce qui entraîne WAB = −ΔEp. C'est le cas idéal d'une chute libre sans frottement : toute l'énergie potentielle de pesanteur perdue se retrouve intégralement en énergie cinétique."
         },
         {
+          "icon": "➗",
+          "title": "Bilan d'énergie en présence de frottements",
+          "content": "Quand des forces non conservatives (frottements, résistance de l'air) interviennent, l'énergie mécanique n'est plus conservée : ΔEm = Em,B − Em,A = W(non conservatives), toujours négatif puisque les frottements dissipent de l'énergie (généralement sous forme de chaleur). C'est le théorème de l'énergie mécanique, complémentaire du théorème de l'énergie cinétique : ce dernier reste toujours vrai (ΔEc = W total), tandis que la variation d'énergie mécanique ne fait intervenir que les forces non conservatives."
+        },
+        {
+          "icon": "⭐",
+          "title": "Chute libre et mouvement des projectiles",
+          "content": "En chute libre verticale sans frottement, l'accélération est constante et égale à g (≈ 9,81 m·s⁻², orientée vers le bas). En intégrant a = g, on obtient la vitesse v(t) = v₀ + gt puis la position z(t) = z₀ + v₀t + ½gt². Pour un projectile lancé avec une vitesse initiale ayant une composante horizontale, le mouvement se décompose en deux directions indépendantes : horizontalement, vitesse constante (aucune force ne s'y exerce) ; verticalement, chute libre classique. C'est le principe de décomposition du mouvement, très utile pour tout mouvement à deux dimensions."
+        },
+        {
+          "icon": "🧠",
+          "title": "Applications médicales : biomécanique et chocs",
+          "content": "Ces notions de mécanique sont à la base de l'étude des chocs et traumatismes : lors d'une chute, l'énergie cinétique acquise doit être dissipée (par déformation, freinage) lors de l'impact, ce qui explique le rôle protecteur des surfaces amortissantes (elles augmentent la durée d'application de la force et donc diminuent son intensité, à variation de quantité de mouvement Δp égale : Δp = F×Δt, théorème de la quantité de mouvement ou de l'impulsion). C'est le même principe qui justifie les airbags, les tapis de réception en sport, ou le rembourrage des casques."
+        },
+        {
           "icon": "⚠️",
           "title": "Pièges classiques",
           "content": "Ne confondez pas le théorème de l'énergie cinétique (toujours vrai, quelle que soit la nature des forces) avec la conservation de l'énergie mécanique (valable uniquement si toutes les forces sont conservatives, donc jamais en présence de frottements). Attention également aux unités : le newton (N) est un kg·m·s⁻², le joule (J) un kg·m²·s⁻², le watt (W) un kg·m²·s⁻³. Enfin, l'analyse dimensionnelle permet de vérifier qu'une formule est homogène, mais ne garantit jamais l'exactitude de ses coefficients numériques sans dimension."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Erreurs fréquentes de signe et de vecteurs",
+          "content": "Erreur classique n°1 : oublier que le travail et la puissance sont des produits scalaires (F·dl, F·v), donc peuvent être négatifs si l'angle entre les deux vecteurs dépasse 90°. Erreur n°2 : confondre une force et une énergie dans les unités (le newton n'est pas le joule). Erreur n°3 : appliquer la formule d'énergie mécanique conservée alors qu'un énoncé mentionne explicitement des frottements ou une résistance de l'air — dans ce cas, c'est le théorème de l'énergie cinétique (ou le bilan d'énergie mécanique avec le travail des frottements) qu'il faut utiliser."
+        }
+      ],
+      "fiche": [
+        "v = d(OM)/dt ; a = dv/dt = d²(OM)/dt²",
+        "Principe d'inertie : système immobile ou en MRU ⟺ ΣF = 0",
+        "PFD (masse constante) : ΣF = m·a = dp/dt, avec p = mv",
+        "Action-réaction : F(B→A) = −F(A→B), s'appliquent sur des systèmes différents",
+        "Ec = ½mv² ; Epp = mgz ; Epe = ½kx² (x = allongement) ; Em = Ec + ΣEp",
+        "Force de rappel élastique : F = k×x",
+        "Travail élémentaire : dW = F·dl = F×dl×cos(θ) ; WAB = ∫F·dl",
+        "Travail du poids : W = mg(zA−zB) (conservatif) ; travail de la normale = 0",
+        "Puissance : P = dW/dt = F·v (en watts, 1 W = 1 J·s⁻¹)",
+        "Théorème de l'énergie cinétique : ΔEc = W(total des forces), TOUJOURS vrai",
+        "Force conservative : F = −dEp/dx ; si toutes les forces sont conservatives, Em = cste",
+        "Avec frottements : ΔEm = W(forces non conservatives) < 0",
+        "Chute libre : a = g constant ; v(t) = v₀+gt ; z(t) = z₀+v₀t+½gt²",
+        "Impulsion : Δp = F×Δt (utile pour les chocs et l'effet amortisseur)",
+        "Unités : N = kg·m·s⁻² ; J = kg·m²·s⁻² ; W = kg·m²·s⁻³"
+      ],
+      "resources": [
+        {
+          "icon": "📘",
+          "title": "Relire le poly de pré-rentrée A2SUP sur les vecteurs et la cinématique",
+          "description": "Avant d'attaquer les forces, il faut être à l'aise avec les vecteurs (norme, projection, produit scalaire) : c'est souvent la vraie source d'erreur sur les exercices de travail et de puissance."
+        },
+        {
+          "icon": "🎥",
+          "title": "Vidéos YouTube sur les lois de Newton et le théorème de l'énergie cinétique",
+          "description": "Cherchez des vidéos avec les mots-clés « lois de Newton PACES PASS » ou « théorème énergie cinétique exercice corrigé » pour voir des bilans de forces résolus pas à pas sur un schéma."
+        },
+        {
+          "icon": "✏️",
+          "title": "S'entraîner sur des annales de mécanique du point en PASS",
+          "description": "Ce chapitre est très calculatoire : multipliez les exercices dirigés sur les plans inclinés, les ressorts et les chutes avec frottements pour automatiser la mise en équation."
+        },
+        {
+          "icon": "🧠",
+          "title": "Moyen mnémotechnique pour les énergies",
+          "description": "Retenez « C comme Cinétique = vitesse, P comme Potentiel = Position (altitude ou ressort) » pour ne jamais confondre Ec et Ep lors d'un bilan énergétique."
+        },
+        {
+          "icon": "🔗",
+          "title": "Réviser ce chapitre avant l'électrostatique",
+          "description": "Les notions d'énergie potentielle et de force conservative reviennent à l'identique en électrostatique (Ep = qV, F = −dEp/dx) : bien maîtriser ce chapitre facilite grandement le suivant."
         }
       ],
       "quiz": [
@@ -280,9 +354,19 @@
           "content": "L'énergie potentielle électrostatique d'une charge test q dans le champ d'une charge Q vaut Ep = qQ/(4πεr). Le potentiel électrostatique V, propriété d'un point de l'espace indépendante de la charge test, vaut V = Q/(4πεr) pour une charge ponctuelle. Les deux grandeurs sont reliées par Ep = qV. Le champ dérive du potentiel selon E = −dV/dr : le champ pointe toujours vers les potentiels décroissants."
         },
         {
+          "icon": "🧠",
+          "title": "Principe de superposition",
+          "content": "Le champ, le potentiel et l'énergie potentielle créés par plusieurs charges en un même point s'obtiennent en additionnant vectoriellement (pour le champ) ou algébriquement (pour le potentiel et l'énergie, qui sont des scalaires) les contributions de chaque charge prise séparément : Etot = ΣEi et Vtot = ΣVi. Ce principe de superposition est la clé pour traiter tout système à plusieurs charges, y compris le dipôle électrique."
+        },
+        {
           "icon": "🔬",
           "title": "Le dipôle électrique",
           "content": "Un dipôle électrique est formé de deux charges opposées (+q et −q) séparées d'une distance a. Le vecteur moment dipolaire p, orienté de la charge négative vers la charge positive, a pour norme ||p|| = q×a et s'exprime en C·m. À grande distance (r ≫ a), le potentiel créé par le dipôle en un point M vaut V(r) = p×cos(θ)/(4πεr²), où θ est l'angle entre p et la direction du point M : il décroît en 1/r², contrairement au potentiel d'une charge ponctuelle qui décroît en 1/r."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Dipôle dans un champ électrique extérieur",
+          "content": "Placé dans un champ électrique extérieur uniforme E, un dipôle de moment p subit un couple de forces qui tend à l'aligner avec le champ (les deux charges opposées subissent des forces opposées, créant un moment de rotation, mais aucune force résultante nette si E est uniforme). L'énergie potentielle d'interaction du dipôle avec le champ vaut Ep = −p·E = −p×E×cos(θ) : elle est minimale (le plus stable) quand p est aligné avec E."
         },
         {
           "icon": "⭐",
@@ -290,14 +374,73 @@
           "content": "Un condensateur plan est formé de deux plaques parallèles portant des charges opposées, chacune de densité surfacique σ = Q/S. Le champ électrique entre les plaques est uniforme et vaut E = σ/ε = Q/(εS), orienté de la plaque positive vers la négative ; il est nul à l'extérieur. Le potentiel décroît linéairement entre les plaques, avec une différence de potentiel |ΔV| = E×h (h étant la distance entre les plaques). La capacité C = |Q/ΔV| = εS/h ne dépend que de la géométrie du condensateur (surface, écartement, milieu isolant), jamais de la charge ou de la tension appliquées."
         },
         {
+          "icon": "➗",
+          "title": "Énergie stockée dans un condensateur",
+          "content": "Un condensateur chargé stocke une énergie électrostatique Ee = ½CΔV² = ½QΔV = Q²/(2C). Cette énergie est utilisée en médecine dans les défibrillateurs cardiaques : le condensateur se charge lentement (faible puissance) puis se décharge quasi instantanément dans le thorax du patient (grande puissance sur un temps très court), délivrant l'énergie électrique nécessaire pour resynchroniser l'activité électrique du cœur."
+        },
+        {
           "icon": "🧠",
           "title": "Membrane biologique et électrocardiogramme (ECG)",
           "content": "Une membrane plasmique se comporte comme un condensateur : au repos, l'intérieur de la cellule (chargé négativement) et l'extérieur (chargé positivement) forment les deux « plaques ». La dépolarisation, qui inverse cette répartition de charges, se propage le long des neurones ou du muscle cardiaque ; la myéline accélère cette propagation en forçant le courant à sauter entre les zones non myélinisées (conduction saltatoire). Dans le cœur, la dépolarisation qui se propage définit à chaque instant un dipôle cardiaque de moment dipolaire p. L'ECG mesure, via des électrodes placées sur les poignets et la cheville (triangle d'Einthoven, sommets R, L, F), des différences de potentiel proportionnelles à la projection de p sur différents axes : par exemple VI = VL − VR est proportionnelle à la projection de p sur l'axe reliant les électrodes R et L."
         },
         {
+          "icon": "⭐",
+          "title": "Potentiel de repos et potentiel d'action",
+          "content": "Le potentiel de repos transmembranaire d'une cellule excitable est d'environ −70 mV (intérieur négatif par rapport à l'extérieur), maintenu par la répartition inégale des ions (Na⁺, K⁺) de part et d'autre de la membrane et par les pompes ioniques actives. Lors d'un potentiel d'action, une entrée massive de Na⁺ dépolarise transitoirement la membrane (le potentiel devient positif), avant une repolarisation liée à la sortie de K⁺ qui ramène le potentiel vers sa valeur de repos. C'est cette succession de dépolarisations/repolarisations, propagée de cellule en cellule, qui génère le signal électrique enregistré par l'ECG."
+        },
+        {
+          "icon": "🔬",
+          "title": "Les trois dérivations bipolaires d'Einthoven",
+          "content": "Le triangle d'Einthoven relie trois électrodes : bras droit (R), bras gauche (L) et jambe gauche (F). Trois différences de potentiel bipolaires sont mesurées : DI = VL − VR, DII = VF − VR, DIII = VF − VL. La loi d'Einthoven relie ces trois dérivations entre elles : DII = DI + DIII (loi des mailles appliquée aux potentiels), ce qui permet de vérifier la cohérence d'un tracé ECG."
+        },
+        {
           "icon": "⚠️",
           "title": "Pièges classiques",
           "content": "Ne confondez pas le potentiel d'une charge ponctuelle (en 1/r) et celui d'un dipôle (en 1/r²) : ce sont deux situations géométriques différentes. Ne confondez pas non plus le potentiel électrique (propriété d'un point de l'espace) et l'énergie potentielle électrostatique (propriété d'une charge placée en ce point). Enfin, gardez en tête que la capacité d'un condensateur est une grandeur purement géométrique : si on augmente la tension, la charge stockée augmente proportionnellement, mais la capacité, elle, ne change pas."
+        }
+      ],
+      "fiche": [
+        "Champ d'une charge ponctuelle : E = Q/(4πεr²) ; force de Coulomb : Fe = qQ/(4πεr²)",
+        "Charge élémentaire e ≈ 1,6×10⁻¹⁹ C ; proton +e, électron −e",
+        "Densités : λ = dq/dl (C·m⁻¹), σ = dq/dS (C·m⁻²), ρ = dq/dV (C·m⁻³)",
+        "Potentiel d'une charge ponctuelle : V = Q/(4πεr) (décroît en 1/r)",
+        "Ep = qV ; E = −dV/dr (champ dirigé vers les potentiels décroissants)",
+        "Superposition : Etot = ΣEi (vecteurs) ; Vtot = ΣVi (scalaires)",
+        "Moment dipolaire : ||p|| = q×a, orienté de − vers + ; V(dipôle) en 1/r²",
+        "Énergie d'un dipôle dans un champ : Ep = −p·E, minimale si p aligné avec E",
+        "Condensateur plan : E = σ/ε = Q/(εS) ; C = εS/h (dépend uniquement de la géométrie)",
+        "Énergie stockée : Ee = ½CΔV² = ½QΔV = Q²/(2C)",
+        "Membrane au repos : extérieur +, intérieur −, potentiel de repos ≈ −70 mV",
+        "Potentiel d'action : dépolarisation (entrée Na⁺) puis repolarisation (sortie K⁺)",
+        "Triangle d'Einthoven : DI = VL−VR, DII = VF−VR, DIII = VF−VL",
+        "Loi d'Einthoven : DII = DI + DIII",
+        "Dérivations ECG ∝ projection du moment dipolaire cardiaque p sur l'axe des électrodes"
+      ],
+      "resources": [
+        {
+          "icon": "📘",
+          "title": "Relire le poly de pré-rentrée A2SUP sur les vecteurs et le produit scalaire",
+          "description": "La projection du moment dipolaire sur un axe (utilisée pour l'ECG) repose entièrement sur le produit scalaire : le maîtriser évite beaucoup d'erreurs sur ce chapitre."
+        },
+        {
+          "icon": "🔗",
+          "title": "Revoir le chapitre mécanique (forces conservatives) avant celui-ci",
+          "description": "Les formules Ep = qV et F = −dEp/dr sont l'exact décalque de ce qui a été vu en mécanique (Ep = mgz, F = −dEp/dx) : les réviser ensemble aide à mémoriser la logique commune."
+        },
+        {
+          "icon": "🎥",
+          "title": "Vidéos YouTube sur le triangle d'Einthoven et la lecture de l'ECG",
+          "description": "Cherchez « triangle d'Einthoven physique » ou « vecteur cardiaque ECG PASS » pour visualiser comment le dipôle cardiaque tourne au cours du cycle et génère les différentes ondes (P, QRS, T)."
+        },
+        {
+          "icon": "✏️",
+          "title": "S'entraîner sur des exercices dirigés de condensateurs et dipôles",
+          "description": "Multipliez les exercices de calcul de champ, potentiel et énergie stockée dans un condensateur : ce sont des calculs répétitifs qui deviennent rapides une fois automatisés."
+        },
+        {
+          "icon": "🧠",
+          "title": "Moyen mnémotechnique pour les densités de charge",
+          "description": "λ (Ligne), σ (Surface), ρ (Rho comme le volume, cf. masse volumique) : associez chaque lettre grecque à la dimension géométrique correspondante pour ne plus jamais les confondre."
         }
       ],
       "quiz": [
@@ -507,6 +650,11 @@
           "content": "En contexte médical, on définit la tension T comme la différence entre la pression du sang et la pression atmosphérique : T = psang − patm. Par exemple, une tension mesurée à 120 mmHg correspond en réalité à une pression sanguine absolue de 120 + 760 = 880 mmHg, puisque patm ≈ 760 mmHg au niveau de la mer."
         },
         {
+          "icon": "🧠",
+          "title": "Principe de Pascal et vases communicants",
+          "content": "Le principe de Pascal énonce que toute variation de pression appliquée en un point d'un fluide incompressible se transmet intégralement en tout point de ce fluide (c'est le principe des systèmes hydrauliques comme le vérin ou la seringue). Conséquence directe de la loi de l'hydrostatique : dans des vases communicants remplis d'un même fluide au repos, la surface libre du liquide s'établit à la même altitude dans toutes les branches, quelle que soit leur forme ou leur section."
+        },
+        {
           "icon": "➗",
           "title": "Débit et conservation dans un écoulement",
           "content": "Le débit volumique Q (en m³·s⁻¹) d'un fluide s'écoulant dans un tuyau de section S à la vitesse v vaut Q = Sv. Dans un circuit en série, le débit se conserve : Q1 = Q2, soit S1v1 = S2v2 ; quand la section diminue, la vitesse augmente (effet Venturi). Dans un circuit en parallèle (comme le réseau artériel qui se subdivise en artérioles puis en capillaires), le débit total est la somme des débits de chaque branche : Qtot = ΣQi."
@@ -515,6 +663,11 @@
           "icon": "🔬",
           "title": "Loi de Bernoulli (fluide parfait)",
           "content": "Pour un fluide parfait (sans frottement) en écoulement, l'énergie totale (pression + énergie potentielle de pesanteur + énergie cinétique, par unité de volume) se conserve entre deux points A et B : pA + ρgzA + ½ρvA² = pB + ρgzB + ½ρvB². Une pompe, qui apporte de l'énergie au fluide, introduit une surpression Δπ à ajouter du côté amont de l'écoulement ; sa puissance délivrée vaut Ppompe = Δπ×Q."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Application de Bernoulli : effet Venturi et sténoses vasculaires",
+          "content": "Lorsqu'un fluide traverse un rétrécissement de section (sténose artérielle, par exemple), sa vitesse augmente localement pour conserver le débit (effet Venturi). D'après Bernoulli, à altitude constante, une vitesse plus élevée s'accompagne d'une pression plus faible : la pression chute donc au niveau du rétrécissement, ce qui explique pourquoi une plaque d'athérome sévère peut favoriser un collapsus local du vaisseau (aspiration de la paroi vers l'intérieur)."
         },
         {
           "icon": "⭐",
@@ -527,9 +680,68 @@
           "content": "La puissance dissipée par les frottements visqueux vaut Pdissipée = Δp×Q = RQ². Pour des tuyaux en série, les pertes de charge s'additionnent et la résistance équivalente est Req = ΣRi. Pour des tuyaux en parallèle (dérivation), c'est l'inverse des résistances qui s'additionne : 1/Req = Σ(1/Ri), ce qui diminue toujours la résistance équivalente par rapport à chaque branche individuelle. C'est exactement l'analogie utilisée pour modéliser la circulation sanguine dans le réseau vasculaire."
         },
         {
+          "icon": "➗",
+          "title": "Nombre de Reynolds et régimes d'écoulement",
+          "content": "Le nombre de Reynolds Re = ρvD/η (sans dimension, avec D le diamètre du tuyau) permet de prévoir le régime d'écoulement d'un fluide. Pour Re inférieur à une valeur critique (~2000 pour un tuyau cylindrique), l'écoulement est laminaire (les couches de fluide glissent régulièrement les unes sur les autres, la loi de Poiseuille s'applique). Au-delà, l'écoulement devient turbulent (tourbillons, mélange désordonné), ce qui augmente fortement les pertes de charge et génère des bruits (souffles cardiaques, bruits de Korotkoff lors de la mesure de la tension artérielle)."
+        },
+        {
+          "icon": "🔬",
+          "title": "Sédimentation et viscosité",
+          "content": "La viscosité η d'un fluide (en Pa·s ou poiseuille, Pl) traduit sa résistance interne à l'écoulement : plus elle est élevée, plus les couches de fluide adjacentes freinent mutuellement leur glissement. Elle intervient aussi dans la vitesse de sédimentation d'une particule dans un fluide (loi de Stokes), pertinente par exemple pour comprendre la vitesse de sédimentation des globules rouges (VS), un examen biologique courant."
+        },
+        {
           "icon": "⚠️",
           "title": "Pièges classiques",
           "content": "Le rayon a du tuyau intervient à la puissance 4 dans la résistance hydraulique (R ∝ 1/a⁴) : une petite variation de rayon a donc un effet considérable sur la résistance à l'écoulement, ce qui est capital pour comprendre la vasoconstriction et la vasodilatation. Attention également à ne pas confondre la perte de charge Δp (toujours positive par convention) avec la variation réelle de pression totale, qui peut être modifiée par d'autres effets (vitesse, altitude) selon Bernoulli."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Bien choisir entre Bernoulli et Poiseuille",
+          "content": "Erreur fréquente : utiliser Bernoulli (conservation de l'énergie, fluide parfait sans perte) alors que l'énoncé évoque explicitement la viscosité ou des frottements — il faut alors utiliser Poiseuille (avec perte de charge Δp = RQ). Inversement, si le fluide est qualifié de « parfait » ou si aucune viscosité n'est donnée, c'est Bernoulli qu'il faut mobiliser. Un exercice peut aussi combiner les deux : une portion sans frottement (Bernoulli) suivie d'une portion visqueuse (Poiseuille)."
+        }
+      ],
+      "fiche": [
+        "Pression p = F/S (Pa) ; hydrostatique : pA − pB = ρg(zB − zA)",
+        "Tension artérielle T = psang − patm ; patm ≈ 760 mmHg = 1 atm = 10⁵ Pa",
+        "Principe de Pascal : une variation de pression se transmet intégralement dans tout le fluide",
+        "Débit : Q = S×v ; série : Q1=Q2 (effet Venturi) ; parallèle : Qtot = ΣQi",
+        "Bernoulli (fluide parfait) : p + ρgz + ½ρv² = constante le long de l'écoulement",
+        "Effet Venturi : section ↓ ⟹ vitesse ↑ ⟹ pression ↓ (risque de collapsus sur sténose)",
+        "Puissance d'une pompe : Ppompe = Δπ×Q",
+        "Profil parabolique en fluide visqueux : vmax au centre, v=0 aux parois ; v̄ = vmax/2",
+        "Résistance hydraulique (Poiseuille) : R = 8ηL/(πa⁴) ; Δp = R×Q",
+        "R ∝ 1/a⁴ : diviser le rayon par 2 multiplie R par 16",
+        "Puissance dissipée par frottement : Pdissipée = Δp×Q = R×Q²",
+        "Série : Req = ΣRi ; Parallèle : 1/Req = Σ(1/Ri)",
+        "Nombre de Reynolds Re = ρvD/η : Re faible ⟹ laminaire, Re élevé (>~2000) ⟹ turbulent",
+        "Turbulence = pertes de charge accrues + bruits (souffles, bruits de Korotkoff)",
+        "Viscosité η (Pa·s) intervient aussi dans la sédimentation (ex : vitesse de sédimentation)"
+      ],
+      "resources": [
+        {
+          "icon": "🔗",
+          "title": "Réviser la loi des gaz parfaits et les unités de pression avant ce chapitre",
+          "description": "Les conversions d'unités de pression (Pa, mmHg, atm, bar) reviennent constamment ici comme dans le chapitre sur les gaz : les avoir déjà automatisées fait gagner un temps précieux."
+        },
+        {
+          "icon": "🎥",
+          "title": "Vidéos YouTube sur la loi de Poiseuille et l'effet Venturi",
+          "description": "Cherchez « loi de Poiseuille exercice PASS » et « effet Venturi sténose artérielle » pour visualiser concrètement pourquoi le rayon d'un vaisseau a un impact aussi fort sur la résistance à l'écoulement."
+        },
+        {
+          "icon": "✏️",
+          "title": "S'entraîner sur des annales d'hémodynamique (circuits série/parallèle)",
+          "description": "Ce chapitre est un grand classique des annales de PASS : multipliez les exercices combinant Bernoulli et Poiseuille sur des réseaux de tuyaux en série et en parallèle, à l'image du réseau vasculaire."
+        },
+        {
+          "icon": "🧠",
+          "title": "Moyen mnémotechnique pour choisir la bonne loi",
+          "description": "« Parfait = Bernoulli (énergie conservée), Visqueux = Poiseuille (énergie perdue) » : relisez systématiquement l'énoncé pour repérer le mot clé qui indique la loi à utiliser."
+        },
+        {
+          "icon": "📘",
+          "title": "Relire le poly de pré-rentrée A2SUP sur les dérivées et intégrales simples",
+          "description": "Les relations Q = Sv et Δp = RQ manipulent des grandeurs proportionnelles simples, mais la manipulation d'unités composées (Pa·s, m³·s⁻¹) mérite d'être révisée pour éviter les erreurs de calcul."
         }
       ],
       "quiz": [
@@ -755,14 +967,29 @@
           "content": "Un gaz parfait est un gaz suffisamment dilué pour que les interactions entre ses molécules soient négligeables. Il vérifie la loi des gaz parfaits : pV = nRT = NkT, avec p la pression (Pa), V le volume (m³), T la température en kelvins (K), n la quantité de matière (mol) et N le nombre de molécules. R = 8,314 J·K⁻¹·mol⁻¹ est la constante des gaz parfaits, et k = R/NA ≈ 1,38×10⁻²³ J·K⁻¹ est la constante de Boltzmann. Pour convertir une température en kelvins : T(K) = T(°C) + 273,15. À température constante entre deux états, pV reste constant : p1V1 = p2V2."
         },
         {
+          "icon": "🧠",
+          "title": "Transformations usuelles d'un gaz parfait",
+          "content": "En plus de la transformation isotherme (T constante, loi de Boyle-Mariotte p1V1 = p2V2), on distingue la transformation isobare (p constante, où V/T reste constant) et la transformation isochore (V constant, où p/T reste constant). Ces trois cas particuliers découlent tous directement de pV = nRT en fixant l'une des trois grandeurs, et permettent de retrouver rapidement l'évolution d'un gaz lors d'exercices de respiration ou de variation d'altitude."
+        },
+        {
           "icon": "🔬",
           "title": "Loi de Dalton et pressions partielles",
           "content": "Dans un mélange de plusieurs espèces gazeuses, chaque espèce i contribue à la pression totale à hauteur de sa proportion dans le mélange : c'est sa pression partielle pi. La loi de Dalton énonce que la pression totale est la somme des pressions partielles : ptot = Σpi, avec pi/ptot = ni/ntot = Ni/Ntot. Par exemple, l'air étant composé d'environ 20 % de dioxygène, la pression partielle du dioxygène vaut environ pO2 = 0,2×patm."
         },
         {
+          "icon": "⚠️",
+          "title": "Application médicale : pressions partielles et respiration",
+          "content": "La pression partielle en dioxygène (pO2) et en dioxyde de carbone (pCO2) dans l'air alvéolaire et dans le sang gouverne les échanges gazeux au niveau pulmonaire : le gaz diffuse toujours du compartiment où sa pression partielle est la plus élevée vers celui où elle est la plus faible. En altitude, la pression atmosphérique totale diminue, ce qui diminue proportionnellement la pO2 de l'air inspiré (puisque la proportion de dioxygène, elle, reste d'environ 20 %), expliquant l'hypoxie d'altitude."
+        },
+        {
           "icon": "⭐",
           "title": "Ondes mécaniques et célérité",
           "content": "Une onde mécanique est la propagation d'une perturbation (variation locale de pression, de vitesse...) qui transporte de l'énergie mais pas de matière. On distingue les ondes transversales (perturbation perpendiculaire à la direction de propagation) des ondes longitudinales (perturbation dans la même direction que la propagation) : les ondes sonores sont longitudinales. La célérité c d'une onde est reliée à sa longueur d'onde λ, sa période T et sa fréquence ν par c = λ/T = λν."
+        },
+        {
+          "icon": "➗",
+          "title": "Fréquence, période et domaine audible",
+          "content": "La période T (en secondes) est le temps que met le phénomène périodique à se reproduire à l'identique ; la fréquence ν = 1/T (en hertz, Hz) est le nombre d'oscillations par seconde. L'oreille humaine perçoit les sons dont la fréquence est comprise approximativement entre 20 Hz et 20 000 Hz : en dessous, ce sont des infrasons, au-dessus des ultrasons (utilisés par exemple en imagerie médicale, échographie)."
         },
         {
           "icon": "🧠",
@@ -773,6 +1000,60 @@
           "icon": "⚠️",
           "title": "Impédance acoustique et changement de milieu",
           "content": "L'impédance acoustique d'un milieu, Z = ρc (avec ρ la masse volumique et c la célérité du son dans ce milieu), caractérise sa résistance au passage d'une onde sonore. À l'interface entre deux milieux d'impédances Z1 et Z2, une partie de l'onde est transmise (coefficient T = 4Z1Z2/(Z1+Z2)²) et une partie est réfléchie (coefficient R = (Z1−Z2)²/(Z1+Z2)²), avec toujours R + T = 1 (conservation de l'énergie). Attention : lors d'un changement de milieu, la fréquence de l'onde reste constante, mais sa célérité (et donc sa longueur d'onde) peut varier."
+        },
+        {
+          "icon": "🔬",
+          "title": "Application médicale : échographie et effet Doppler",
+          "content": "L'échographie exploite la réflexion partielle des ultrasons aux interfaces entre tissus d'impédances acoustiques différentes (peau, muscle, os, air) pour reconstituer une image : plus la différence d'impédance est grande, plus le signal réfléchi est fort (c'est pourquoi l'air, très différent des tissus mous, empêche l'échographie de fonctionner correctement sans gel de contact). L'effet Doppler, quant à lui, correspond au décalage de fréquence perçu d'une onde émise par une source en mouvement (par exemple les globules rouges en écoulement) : il permet de mesurer des vitesses d'écoulement sanguin (échographie Doppler)."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Pièges classiques",
+          "content": "Ne confondez pas la période T (en secondes, temps d'un cycle) et la fréquence ν = 1/T (en Hz, nombre de cycles par seconde). Ne confondez pas non plus l'intensité sonore I (grandeur physique en W·m⁻²) et le niveau sonore L (grandeur perceptive en dB, échelle logarithmique) : une multiplication de l'intensité par 10 correspond à une augmentation du niveau sonore de seulement 10 dB, jamais une multiplication par 10 du niveau en dB."
+        }
+      ],
+      "fiche": [
+        "n = N/NA (NA ≈ 6,02×10²³ mol⁻¹) ou n = m/M",
+        "1 bar = 1 atm = 760 mmHg = 10⁵ Pa",
+        "Gaz parfait : pV = nRT = NkT ; R ≈ 8,314 J·K⁻¹·mol⁻¹ ; k = R/NA ≈ 1,38×10⁻²³ J·K⁻¹",
+        "T(K) = T(°C) + 273,15",
+        "Isotherme : p1V1 = p2V2 ; isobare : V/T = cste ; isochore : p/T = cste",
+        "Loi de Dalton : ptot = Σpi, avec pi/ptot = ni/ntot",
+        "Échanges gazeux : le gaz diffuse des hautes pO2/pCO2 vers les basses",
+        "Onde sonore = onde mécanique longitudinale (pas de transport de matière)",
+        "c = λ/T = λ×ν ; domaine audible humain ≈ 20 Hz – 20 000 Hz",
+        "Intensité source ponctuelle : I = P/(4πr²) (atténuation en 1/r²)",
+        "Niveau sonore : L = 10×log(I/Iref), Iref = 10⁻¹² W·m⁻²",
+        "Sons incohérents : additionner les intensités, PAS les dB directement",
+        "Impédance acoustique : Z = ρ×c",
+        "À une interface : R + T = 1 (R et T = coefficients de réflexion/transmission en énergie)",
+        "Changement de milieu : fréquence constante, célérité et longueur d'onde peuvent varier"
+      ],
+      "resources": [
+        {
+          "icon": "📘",
+          "title": "Relire le poly de pré-rentrée A2SUP sur les logarithmes et puissances de 10",
+          "description": "Le calcul du niveau sonore en décibels nécessite une bonne maîtrise du logarithme décimal : revoir ses propriétés (log(a×b), log(aⁿ)) avant ce chapitre évite bien des erreurs de calcul."
+        },
+        {
+          "icon": "🎥",
+          "title": "Vidéos YouTube sur le calcul du niveau sonore et sur l'effet Doppler",
+          "description": "Cherchez « décibels calcul PASS » et « effet Doppler échographie » pour bien visualiser la différence entre grandeur physique (intensité) et grandeur perçue (niveau sonore), ainsi que le principe du Doppler."
+        },
+        {
+          "icon": "✏️",
+          "title": "S'entraîner sur des annales mêlant gaz parfaits et pressions partielles",
+          "description": "Multipliez les exercices de conversion d'unités de pression et de calcul de pressions partielles en contexte respiratoire : c'est un classique des sujets de concours PASS/LAS."
+        },
+        {
+          "icon": "🧠",
+          "title": "Moyen mnémotechnique pour les transformations de gaz",
+          "description": "« Iso-therme, iso-bare, iso-chore » : gardez la grandeur qui NE porte PAS le préfixe « iso » comme variable, et la grandeur nommée comme constante (isotherme = température constante, etc.)."
+        },
+        {
+          "icon": "🔗",
+          "title": "Réviser le chapitre sur la mécanique des fluides avant celui-ci",
+          "description": "Les notions de pression et de conservation de l'énergie vues en hydrodynamique (Bernoulli) éclairent la façon dont la pression d'un gaz est reliée à l'agitation moléculaire et à l'écoulement."
         }
       ],
       "quiz": [

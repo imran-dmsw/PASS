@@ -3,6 +3,7 @@
 import streamlit as st
 
 from utils.components import render_mascot_bubble, render_ue_home_card
+from utils.config import STUDENT_NAME
 from utils.data_loader import AVAILABLE_UES, BONUS_MODULES, load_ue
 from utils.html import html
 from utils.mascot import pick_greeting
@@ -10,7 +11,7 @@ from utils.progress import init_progress, total_stars_earned
 from utils.theme import inject_kawaii_theme
 
 st.set_page_config(
-    page_title="PASS Révision Kawaii",
+    page_title=f"PASS Kawaii · {STUDENT_NAME}",
     page_icon="🌸",
     layout="centered",
 )
@@ -18,13 +19,13 @@ st.set_page_config(
 inject_kawaii_theme()
 init_progress()
 
-html("""<div style="text-align:center; padding: 1rem 0 1.5rem;">
-<span class="kawaii-badge">✨ Révisions PASS</span>
-<h1 style="margin:.6rem 0 .3rem;">Bienvenue dans ton cocon de révision 🌸</h1>
+html(f"""<div style="text-align:center; padding: 1rem 0 1.5rem;">
+<span class="kawaii-badge">✨ Révisions PASS de {STUDENT_NAME}</span>
+<h1 style="margin:.6rem 0 .3rem;">Bienvenue dans ton cocon de révision, {STUDENT_NAME} 🌸</h1>
 <p style="color:var(--text-soft);">Des fiches de cours toutes douces et des quiz pour cartonner au concours 💮</p>
 </div>""")
 
-render_mascot_bubble("Coucou, futur·e médecin ! 🐱", pick_greeting(), mood="happy")
+render_mascot_bubble(f"Coucou, {STUDENT_NAME} ! 🐱", pick_greeting(), mood="happy")
 
 stars = total_stars_earned()
 html(f"""<div class="kawaii-card" style="text-align:center;">

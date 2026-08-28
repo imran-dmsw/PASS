@@ -1,10 +1,12 @@
-"""Rendu générique d'une page UE (cours + quiz). Chaque page pages/*.py appelle
-render_ue_page(ue_id) : pour ajouter une UE, il suffit d'ajouter data/ueX.json
-et un fichier pages/X_emoji_Nom.py de quelques lignes (voir pages/1_🧪_UE1_Chimie.py)."""
+"""Rendu générique d'une page UE (cours + fiche + quiz + ressources). Chaque
+page pages/*.py appelle render_ue_page(ue_id) : pour ajouter une UE, il suffit
+d'ajouter data/ueX.json et un fichier pages/X_emoji_Nom.py de quelques lignes
+(voir pages/1_🧪_UE1_Chimie.py)."""
 
 import streamlit as st
 
-from utils.components import render_course_block, render_mascot_bubble
+from utils.components import render_course_block, render_fiche, render_mascot_bubble, render_resource
+from utils.config import STUDENT_NAME
 from utils.data_loader import load_ue
 from utils.html import html
 from utils.progress import mastery_ratio, record_quiz_result, render_hearts, render_stars
@@ -39,13 +41,18 @@ def render_ue_page(ue_id: str) -> None:
         html(render_hearts(ratio))
 
     if chapter.get("intro"):
-        render_mascot_bubble("Dr. Mochi te souffle 🐱", chapter["intro"], mood="happy")
+        render_mascot_bubble(f"Dr. Mochi te souffle, {STUDENT_NAME} 🐱", chapter["intro"], mood="happy")
 
-    tab_cours, tab_quiz = st.tabs(["📖 Fiche de cours", "📝 Quiz"])
+    tab_cours, tab_fiche, tab_quiz, tab_ressources = st.tabs(
+        ["📖 Cours", "📝 Fiche", "🧠 Quiz", "🔗 Ressources"]
+    )
 
     with tab_cours:
         for block in chapter["course"]:
             render_course_block(block)
+
+    with tab_fiche:
+        render_fiche(chapter.get("fiche", []))
 
     with tab_quiz:
         quiz_key = f"quiz_{ue_id}_{chapter['id']}"
@@ -54,3 +61,10 @@ def render_ue_page(ue_id: str) -> None:
             record_quiz_result(ue_id, chapter_id, score, total)
 
         run_quiz(chapter["quiz"], quiz_key, on_finish=_on_finish, title=chapter["title"])
+
+    with tab_ressources:
+        resources = chapter.get("resources", [])
+        if not resources:
+            st.info("Pas encore de ressources ici, reviens bientôt ! 🌸")
+        for resource in resources:
+            render_resource(resource)

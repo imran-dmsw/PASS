@@ -22,8 +22,28 @@
         },
         {
           "icon": "🔬",
+          "title": "Stéréochimie : séries D/L et énantiomères",
+          "content": "Le carbone asymétrique le plus éloigné de la fonction carbonyle définit l'appartenance à la série D ou L (par comparaison au glycéraldéhyde de référence) : si l'OH de ce carbone est à droite en projection de Fischer, l'ose est de série D. Les oses naturels du métabolisme humain sont presque tous de série D. Deux oses images l'un de l'autre dans un miroir, non superposables, sont des énantiomères (ex. D-glucose et L-glucose). Deux oses qui ne diffèrent que par la configuration d'un seul carbone asymétrique sont des épimères (ex. glucose et galactose sont épimères en C4 ; glucose et mannose en C2)."
+        },
+        {
+          "icon": "➗",
+          "title": "Cyclisation des oses et anomérie",
+          "content": "En solution aqueuse, les oses à partir de 5 carbones se cyclisent majoritairement (réaction intramoléculaire entre le carbonyle et un hydroxyle) : cycle furanose (5 sommets, ex. fructose) ou pyranose (6 sommets, ex. glucose). La cyclisation crée un nouveau carbone asymétrique, le carbone anomérique (C1 pour un aldose), générant deux anomères α et β qui s'interconvertissent en solution : c'est le phénomène de mutarotation."
+        },
+        {
+          "icon": "🔬",
+          "title": "Les principaux osides : disaccharides et polysaccharides",
+          "content": "Le maltose (glucose-glucose, liaison α1-4) provient de l'hydrolyse de l'amidon ; le lactose (galactose-glucose, liaison β1-4) est le sucre du lait ; le saccharose (glucose-fructose, liaison α1-β2) est le sucre de table, un diholoside non réducteur car les deux carbones anomériques sont engagés dans la liaison. Le glycogène (réserve glucidique animale, hépatique et musculaire) et l'amidon (réserve végétale) sont des polymères de glucose branchés (liaisons α1-4 et α1-6) ; la cellulose, polymère de glucose en liaisons β1-4, est non digestible par l'homme faute de cellulase."
+        },
+        {
+          "icon": "🔬",
           "title": "Les glycoprotéines",
           "content": "Une glycoprotéine est une protéine sur laquelle sont greffés de façon covalente un ou plusieurs oligosaccharides. La N-glycosylation fixe la chaîne glucidique sur la chaîne latérale d'une asparagine (liaison N-glycosidique) ; la O-glycosylation la fixe sur celle d'une sérine ou d'une thréonine (liaison O-glycosidique)."
+        },
+        {
+          "icon": "⭐",
+          "title": "Rôles biologiques des glucides",
+          "content": "Au-delà du rôle énergétique (glucose, principal carburant cellulaire, seul substrat des globules rouges et principal du cerveau) et du rôle de réserve (glycogène), les glucides assurent un rôle structural (paroi végétale, exosquelette des insectes via la chitine) et un rôle de reconnaissance cellulaire : les groupes sanguins ABO sont déterminés par des oligosaccharides portés par des glycoprotéines et glycolipides membranaires, servant de déterminants antigéniques."
         },
         {
           "icon": "⭐",
@@ -36,6 +56,16 @@
           "content": "Un acide gras est une molécule amphipathique formée d'une longue chaîne hydrocarbonée (nombre pair de carbones, de 4 à 24) portant une fonction acide carboxylique terminale. Les acides gras saturés ne comportent aucune double liaison (ex. acide palmitique en C16, acide stéarique en C18). Les acides gras insaturés comportent une ou plusieurs doubles liaisons, numérotées soit depuis le carboxyle (nomenclature Δ), soit depuis le méthyle terminal (nomenclature ω, qui définit les familles ω3 et ω6)."
         },
         {
+          "icon": "🔬",
+          "title": "Triglycérides, phospholipides et cholestérol",
+          "content": "Les triglycérides (ou triacylglycérols) sont formés de glycérol estérifié par 3 acides gras : c'est la forme de stockage énergétique lipidique majeure (tissu adipeux). Les glycérophospholipides (lipides complexes membranaires) portent un glycérol estérifié par 2 acides gras et un groupement phosphate lié à une tête polaire (choline, sérine, éthanolamine...), leur conférant leur caractère amphipathique essentiel à la formation des membranes biologiques en bicouche. Le cholestérol, stérol à noyau cyclopentanoperhydrophénanthrène, module la fluidité membranaire et sert de précurseur aux hormones stéroïdes, aux acides biliaires et à la vitamine D."
+        },
+        {
+          "icon": "⭐",
+          "title": "Organisation membranaire et amphipathie",
+          "content": "En milieu aqueux, les lipides amphipathiques s'auto-organisent spontanément pour minimiser le contact des chaînes hydrophobes avec l'eau : bicouche lipidique (membranes biologiques, têtes polaires vers l'extérieur), micelles (une seule couche, cœur hydrophobe, utile à l'absorption intestinale des lipides avec les sels biliaires), ou liposomes (vésicules à bicouche fermée, utilisés comme vecteurs pharmaceutiques)."
+        },
+        {
           "icon": "🧠",
           "title": "Astuce mémo : acides gras essentiels",
           "content": "Les acides gras insaturés des familles ω3 et ω6 ne peuvent pas être synthétisés par l'organisme humain : ce sont des acides gras essentiels, qui doivent obligatoirement provenir de l'alimentation. Retenez : « oméga = obligatoirement mangé » !"
@@ -44,6 +74,55 @@
           "icon": "⚠️",
           "title": "Piège classique",
           "content": "Ne confondez pas ose (monosaccharide simple, non hydrolysable) et oside (polysaccharide, hydrolysable en plusieurs oses). De même, la N-glycosylation se fait toujours sur une asparagine, jamais sur une lysine : c'est la O-glycosylation qui concerne la sérine et la thréonine."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Piège : épimère vs énantiomère, saturé vs essentiel",
+          "content": "Deux épimères ne diffèrent que par UN carbone asymétrique (ils ne sont pas des images miroir complètes), alors que deux énantiomères sont images miroir sur TOUS les carbones asymétriques. Autre confusion fréquente : un acide gras insaturé n'est pas forcément essentiel (ex. l'acide oléique ω9 est insaturé mais synthétisable par l'organisme) ; seuls les ω3 et ω6 sont essentiels car l'homme ne possède pas les désaturases nécessaires à leur fabrication au-delà du carbone 9."
+        }
+      ],
+      "fiche": [
+        "Ose : Cn(H2O)n, n ≥ 3, non hydrolysable ; oside = plusieurs oses liés, hydrolysable.",
+        "Aldose ← glycéraldéhyde (aldéhyde) ; cétose ← dihydroxyacétone (cétone).",
+        "Série D/L définie par le carbone asymétrique le plus éloigné du carbonyle.",
+        "Épimères : diffèrent par 1 seul carbone (glucose/galactose en C4, glucose/mannose en C2).",
+        "Cyclisation ⇒ carbone anomérique ⇒ anomères α/β ⇒ mutarotation.",
+        "Maltose = glc-glc α1-4 ; lactose = gal-glc β1-4 ; saccharose = glc-fru (non réducteur).",
+        "Glycogène/amidon = réserve glucidique (α1-4 + α1-6) ; cellulose = structure (β1-4, non digestible).",
+        "N-glycosylation → asparagine ; O-glycosylation → sérine/thréonine.",
+        "Glucides = énergie, réserve, structure, ET reconnaissance cellulaire (groupes sanguins ABO).",
+        "Lipide simple = ester acide gras + alcool, uniquement C, H, O.",
+        "Acide gras : nombre pair de C (4 à 24), COOH terminal ; saturé = 0 double liaison.",
+        "Nomenclature Δ depuis le COOH ; nomenclature ω depuis le méthyle terminal.",
+        "Acides gras essentiels = ω3 et ω6 uniquement (pas ω9, ex. oléique, qui est synthétisable).",
+        "Triglycéride = glycérol + 3 AG (réserve) ; glycérophospholipide = glycérol + 2 AG + phosphate + tête polaire (membrane).",
+        "Amphipathie ⇒ bicouche, micelle ou liposome en milieu aqueux."
+      ],
+      "resources": [
+        {
+          "icon": "📘",
+          "title": "Relire le poly de pré-rentrée A2SUP sur les glucides",
+          "description": "Reprendre en particulier les schémas de projection de Fischer et de Haworth pour bien visualiser la cyclisation et l'anomérie, souvent source d'erreurs en QCM."
+        },
+        {
+          "icon": "🎥",
+          "title": "Vidéos YouTube ciblées",
+          "description": "Chercher « projection de Fischer glucides PACES/PASS » et « membrane phospholipidique bicouche animation » pour visualiser en 3D ce qui reste abstrait sur le papier."
+        },
+        {
+          "icon": "📝",
+          "title": "Annales PASS/PACES UE2",
+          "description": "S'entraîner sur les QCM d'annales portant sur la nomenclature des acides gras (Δ vs ω) et la distinction ose/oside, deux thèmes très récurrents aux concours."
+        },
+        {
+          "icon": "🧠",
+          "title": "Technique de mémorisation : tableau comparatif",
+          "description": "Construire un tableau à deux colonnes « glucides / lipides » avec rôles, unités de base et exemples, pour fixer les grandes catégories avant de rentrer dans le détail des exceptions."
+        },
+        {
+          "icon": "🔗",
+          "title": "Faire le lien avec le chapitre sur l'enzymologie",
+          "description": "Revoir ce chapitre avant celui sur les enzymes, car la structure du glucose et des liaisons osidiques réapparaît dans les exemples d'hydrolases (ex. amylase, lactase)."
         }
       ],
       "quiz": [
@@ -260,8 +339,18 @@
         },
         {
           "icon": "⭐",
+          "title": "Chiralité : la série L des acides aminés",
+          "content": "Le carbone α est asymétrique pour tous les acides aminés sauf la glycine (dont la chaîne latérale est un simple hydrogène). Les acides aminés protéiques appartiennent tous à la série L (par analogie stéréochimique avec le L-glycéraldéhyde), contrairement aux oses qui sont majoritairement de série D : c'est un point de comparaison classique en QCM entre les deux chapitres."
+        },
+        {
+          "icon": "⭐",
           "title": "Ampholyte et zwitterion",
           "content": "Un acide aminé est un ampholyte : il porte à la fois une fonction acide (le carboxyle) et une fonction basique (l'amine). À pH physiologique, il existe sous forme de zwitterion, c'est-à-dire qu'il porte deux charges opposées (-NH3+ et -COO-) pour une charge globale neutre. Certains acides aminés, comme l'histidine, portent en plus une fonction ionisable sur leur chaîne latérale et ne sont donc plus de simples zwitterions à pH physiologique."
+        },
+        {
+          "icon": "➗",
+          "title": "pHi et courbe de titration",
+          "content": "Le pH isoélectrique (pHi) est le pH auquel la charge globale nette d'un acide aminé est nulle. Pour un acide aminé neutre (sans fonction ionisable sur R), le pHi se calcule comme la moyenne des deux pKa (pHi = (pKa1 + pKa2)/2). Pour un acide aminé acide (Asp, Glu) ou basique (Lys, Arg, His), il faut utiliser la moyenne des deux pKa encadrant la forme neutre, ce qui déplace le pHi respectivement vers des valeurs plus faibles ou plus élevées que la moyenne générale d'environ 6."
         },
         {
           "icon": "⭐",
@@ -279,6 +368,11 @@
           "content": "La liaison peptidique unit le carboxyle d'un acide aminé à l'amine du suivant par une réaction de condensation, avec libération d'une molécule d'eau. Elle possède un caractère partiel de double liaison (résonance), ce qui la rend rigide (pas de libre rotation), plane (les quatre atomes de la liaison et les deux carbones α voisins sont coplanaires) et polaire. Une chaîne se lit toujours de l'extrémité N-terminale (amine libre) vers l'extrémité C-terminale (carboxyle libre)."
         },
         {
+          "icon": "➗",
+          "title": "Angles phi/psi et conformation de la chaîne",
+          "content": "Bien que la liaison peptidique elle-même soit rigide, la chaîne polypeptidique conserve une flexibilité au niveau des liaisons adjacentes au carbone α : l'angle phi (φ) autour de la liaison N-Cα et l'angle psi (ψ) autour de la liaison Cα-C peuvent tourner librement, sous réserve de contraintes stériques (représentées par le diagramme de Ramachandran). Ce sont ces rotations qui permettent le repliement en structures secondaires comme l'hélice α ou le feuillet β."
+        },
+        {
           "icon": "⭐",
           "title": "Structures secondaires : hélice α et feuillet β",
           "content": "La structure secondaire décrit l'agencement tridimensionnel local d'un segment de chaîne, stabilisé par des liaisons hydrogène entre groupements de la liaison peptidique. L'hélice α est une structure périodique (3,6 résidus par tour) stabilisée par des liaisons hydrogène intracaténaires, les chaînes latérales étant orientées vers l'extérieur. Le feuillet β est formé de plusieurs brins reliés par des liaisons hydrogène interbrins, parallèles ou antiparallèles (ces dernières étant plus stables) ; les chaînes latérales de résidus consécutifs alternent de part et d'autre du plan du feuillet."
@@ -289,9 +383,63 @@
           "content": "La structure tertiaire est le repliement tridimensionnel global d'une chaîne polypeptidique, organisée en domaines (unités structurales et fonctionnelles de 30 à 500 résidus), stabilisés par des liaisons faibles et par des liaisons covalentes comme les ponts disulfure entre cystéines. La structure quaternaire est l'assemblage de plusieurs chaînes polypeptidiques (sous-unités), identiques (homomère) ou différentes (hétéromère) ; un pont disulfure entre deux sous-unités distinctes est dit intercaténaire, par opposition à un pont intracaténaire au sein d'une même chaîne."
         },
         {
+          "icon": "🔬",
+          "title": "Dénaturation et repliement des protéines",
+          "content": "La dénaturation est la perte des structures secondaires, tertiaires et quaternaires (rupture des liaisons faibles et parfois des ponts disulfure) sous l'effet de la chaleur, d'un pH extrême, ou de certains agents chimiques (urée), sans rupture de la structure primaire (la séquence en acides aminés est conservée). Le repliement natif d'une protéine peut être spontané (information contenue dans la séquence primaire, dogme d'Anfinsen) ou assisté par des protéines chaperonnes qui empêchent les agrégations non spécifiques."
+        },
+        {
           "icon": "⚠️",
           "title": "Piège classique",
           "content": "Ne confondez pas domaine (notion structurale : ensemble organisé de structures secondaires ayant souvent une fonction propre) et sous-unité/monomère (notion liée à la continuité de la chaîne polypeptidique) : une sous-unité peut contenir plusieurs domaines de fonctions différentes. Attention aussi : le pont disulfure est une liaison covalente forte, alors que les liaisons hydrogène qui stabilisent surtout les structures secondaires sont des liaisons faibles."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Piège : structure primaire jamais détruite",
+          "content": "Un piège classique consiste à affirmer qu'une dénaturation détruit « toute » la structure de la protéine : c'est faux, la structure primaire (séquence d'acides aminés reliés par liaisons peptidiques covalentes) résiste à la dénaturation. Seules les structures secondaire, tertiaire et quaternaire, maintenues par des liaisons faibles, sont perdues."
+        }
+      ],
+      "fiche": [
+        "Acide aminé = Cα + NH2 + COOH + H + R ; 21e acide aminé = sélénocystéine.",
+        "Tous les acides aminés protéiques sont de série L (sauf glycine, non chirale).",
+        "Ampholyte à pH physiologique = zwitterion (NH3+ / COO-), charge globale nulle.",
+        "pHi neutre = (pKa1+pKa2)/2 ; pHi acide < 6 ; pHi basique > 6.",
+        "AA essentiels : Leu, Thr, Lys, Trp, Phe, Val, Met, Ile (+ His, Arg semi-essentiels).",
+        "AA aromatiques UV : Phe ~260 nm, Tyr/Trp ~280 nm → dosage protéine à 280 nm.",
+        "Liaison peptidique = condensation + H2O ; rigide, plane, polaire (résonance).",
+        "Sens de lecture toujours N-ter → C-ter.",
+        "Angles phi/psi (Cα) = seule flexibilité de la chaîne, cartographiés par Ramachandran.",
+        "Hélice α : 3,6 résidus/tour, H intracaténaires ; feuillet β : H interbrins, antiparallèle plus stable.",
+        "Domaine (30-500 aa, structural/fonctionnel) ≠ sous-unité (chaîne entière).",
+        "Pont disulfure intracaténaire (même chaîne) vs intercaténaire (chaînes différentes) = liaison covalente forte.",
+        "Homomère (sous-unités identiques) vs hétéromère (différentes).",
+        "Dénaturation = perte structures 2aire/3aire/4aire (liaisons faibles), structure primaire intacte.",
+        "Repliement natif = information dans la séquence primaire (Anfinsen) ± chaperonnes."
+      ],
+      "resources": [
+        {
+          "icon": "📘",
+          "title": "Relire la partie « acides aminés » du poly A2SUP",
+          "description": "Se concentrer sur les tableaux de classification (polarité, charge, aromaticité) et les refaire de mémoire pour vérifier leur bonne mémorisation."
+        },
+        {
+          "icon": "🎥",
+          "title": "Vidéos sur le repliement protéique",
+          "description": "Rechercher sur YouTube « diagramme de Ramachandran expliqué » et « hélice alpha feuillet beta animation 3D » pour mieux visualiser la géométrie moléculaire."
+        },
+        {
+          "icon": "📝",
+          "title": "Annales PASS/PACES sur le calcul de pHi",
+          "description": "S'entraîner spécifiquement sur des exercices de calcul de pHi à partir de pKa donnés (acides aminés neutres, acides et basiques), un classique des QCM de calcul en UE2."
+        },
+        {
+          "icon": "🧠",
+          "title": "Moyen mnémotechnique pour les acides aminés essentiels",
+          "description": "Utiliser une phrase mnémotechnique regroupant Leucine, Thréonine, Lysine, Tryptophane, Phénylalanine, Valine, Méthionine, Isoleucine pour les retenir dans l'ordre sans en oublier."
+        },
+        {
+          "icon": "🔗",
+          "title": "Faire le lien avec le chapitre d'enzymologie",
+          "description": "Revoir les structures secondaires et le site actif de ce chapitre juste avant d'attaquer l'enzymologie, car le repliement protéique conditionne la formation du site actif enzymatique."
         }
       ],
       "quiz": [
@@ -527,9 +675,19 @@
           "content": "Le Km (constante de Michaelis) est la concentration de substrat pour laquelle v = Vmax/2 ; c'est un reflet de l'affinité enzyme-substrat, indépendant des concentrations d'enzyme et de substrat : plus le Km est faible, plus l'affinité est grande. Le kcat (constante catalytique) est le nombre de molécules de produit formées par molécule d'enzyme et par unité de temps à saturation en substrat (Vmax = kcat × [E]totale). Le rapport kcat/Km, appelé efficacité catalytique, permet de comparer différents couples enzyme-substrat lorsque [S] << Km."
         },
         {
+          "icon": "🧠",
+          "title": "Linéarisation de Lineweaver-Burk : construction et lecture",
+          "content": "La représentation en double inverse (1/v en fonction de 1/[S]) transforme l'hyperbole de Michaelis-Menten en une droite, plus facile à exploiter graphiquement. L'équation s'écrit 1/v = (Km/Vmax) × 1/[S] + 1/Vmax. L'ordonnée à l'origine (1/[S] = 0) vaut 1/Vmax, l'abscisse à l'origine (1/v = 0) vaut -1/Km, et la pente de la droite vaut Km/Vmax. Cette méthode permet de déterminer Km et Vmax expérimentalement avec plus de précision qu'en lisant directement l'hyperbole."
+        },
+        {
           "icon": "🔬",
           "title": "Le site actif",
           "content": "Le site actif regroupe le site de liaison (fixation du substrat) et le site catalytique (transformation du substrat), pouvant être confondus ou distincts selon les enzymes. Deux modèles expliquent la fixation du substrat : le modèle clé-serrure de Fischer (complémentarité rigide préexistante) et le modèle de l'ajustement induit de Koshland (remodelage du site actif lors de l'interaction, plus réaliste). Le site actif ne représente qu'une faible fraction du volume de l'enzyme et ne forme que des liaisons faibles (non covalentes) avec le substrat."
+        },
+        {
+          "icon": "⭐",
+          "title": "Facteurs influençant l'activité enzymatique",
+          "content": "L'activité enzymatique dépend fortement de la température (augmentation jusqu'à un optimum, puis chute brutale par dénaturation au-delà) et du pH (courbe en cloche, chaque enzyme ayant un pH optimal propre à son environnement physiologique, ex. pepsine active à pH acide gastrique, trypsine à pH basique intestinal). La présence d'activateurs (souvent des ions métalliques, cofacteurs) peut être indispensable à l'activité catalytique."
         },
         {
           "icon": "⭐",
@@ -537,9 +695,63 @@
           "content": "L'inhibiteur compétitif se fixe sur le site de liaison du substrat, sur l'enzyme libre : il augmente le Km apparent (affinité apparente diminuée) sans changer la Vmax ; son effet est levé par excès de substrat. L'inhibiteur non compétitif se fixe sur un site distinct, sur l'enzyme libre ou sur le complexe ES : il diminue la Vmax apparente sans changer le Km. L'inhibiteur incompétitif se fixe uniquement sur le complexe ES : il diminue à la fois le Km apparent (affinité apparente augmentée) et la Vmax apparente."
         },
         {
+          "icon": "🔬",
+          "title": "Régulation de l'activité enzymatique",
+          "content": "Au-delà de l'inhibition par des molécules exogènes, la cellule régule ses enzymes de façon physiologique par rétro-inhibition (le produit final d'une voie métabolique inhibe une enzyme en amont, souvent allostérique), par modification covalente réversible (phosphorylation/déphosphorylation par des kinases et phosphatases) et par régulation allostérique (fixation d'un effecteur sur un site distinct du site actif, modifiant la conformation et l'affinité de l'enzyme, souvent de façon coopérative entre sous-unités)."
+        },
+        {
           "icon": "⚠️",
           "title": "Piège classique",
           "content": "Ne confondez pas l'inhibition réversible (liaisons faibles, levée possible par dialyse, installation rapide) et l'inhibition irréversible (liaison covalente, complexe indissociable, installation lente sur plusieurs minutes — exemple : l'aspirine). Attention aussi : un Km faible signifie une AFFINITÉ FORTE, et la Vmax dépend de la concentration totale d'enzyme, contrairement au Km qui en est indépendant."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Piège : inhibition incompétitive vs non compétitive",
+          "content": "Ne confondez pas incompétitif (se fixe uniquement sur ES, diminue Km apparent ET Vmax apparente) et non compétitif (se fixe sur E libre ou ES, diminue seulement la Vmax apparente sans toucher au Km). L'incompétitif est plus rare aux examens mais souvent piégeux car il modifie les DEUX paramètres dans le même sens (diminution), contrairement au compétitif qui ne touche qu'au Km (dans le sens opposé, l'augmentation)."
+        }
+      ],
+      "fiche": [
+        "Enzyme = catalyseur cinétique (accélère l'équilibre, ne le déplace pas).",
+        "Catalyse ⇒ baisse de l'enthalpie libre d'activation (ΔG‡).",
+        "7 classes EC : oxydoréductases, transférases, hydrolases, lyases, isomérases, ligases, translocases.",
+        "Apoenzyme (inactive) + cofacteur = holoenzyme (active) ; co-substrat (faible) vs groupement prosthétique (covalent).",
+        "E + S ⇌ ES → E + P ; courbe primaire [P]=f(t) ; courbe secondaire Vi=f([S]) = hyperbole.",
+        "Km = [S] à v=Vmax/2 ; Km faible = forte affinité ; Km indépendant de [E].",
+        "Vmax = kcat × [E]tot ; efficacité catalytique = kcat/Km.",
+        "Lineweaver-Burk : 1/v = (Km/Vmax)(1/[S]) + 1/Vmax ; ordonnée=1/Vmax, abscisse=-1/Km.",
+        "Site actif = site de liaison + site catalytique ; modèles clé-serrure (Fischer) vs ajustement induit (Koshland).",
+        "Activité enzymatique dépend de T° et pH (optimum propre à chaque enzyme).",
+        "Compétitif : fixe E libre, site substrat → Km↑, Vmax=.",
+        "Non compétitif : fixe E ou ES, site différent → Vmax↓, Km=.",
+        "Incompétitif : fixe ES seulement → Km↓ et Vmax↓.",
+        "Irréversible : liaison covalente, indissociable, installation lente (ex. aspirine).",
+        "Régulation physiologique : rétro-inhibition, phosphorylation/déphosphorylation, allostérie coopérative."
+      ],
+      "resources": [
+        {
+          "icon": "📘",
+          "title": "Relire le poly A2SUP sur la cinétique enzymatique",
+          "description": "Revoir en détail la construction pas à pas de la courbe de Lineweaver-Burk à partir de données expérimentales, un exercice fréquent en QCM de calcul."
+        },
+        {
+          "icon": "🎥",
+          "title": "Vidéos sur les courbes de Michaelis-Menten",
+          "description": "Chercher sur YouTube « cinétique enzymatique Michaelis-Menten expliquée » et « inhibition compétitive non compétitive Lineweaver-Burk » pour visualiser le déplacement des droites selon le type d'inhibiteur."
+        },
+        {
+          "icon": "📝",
+          "title": "Annales PASS/PACES sur les types d'inhibition",
+          "description": "S'entraîner sur des séries de QCM demandant de reconnaître un type d'inhibiteur à partir d'un graphique de Lineweaver-Burk : c'est l'un des exercices les plus fréquents du concours."
+        },
+        {
+          "icon": "🧠",
+          "title": "Tableau récapitulatif à refaire de mémoire",
+          "description": "Construire un tableau comparatif compétitif/non compétitif/incompétitif/irréversible avec les colonnes « site de fixation », « effet sur Km », « effet sur Vmax », et le reproduire sans support jusqu'à l'automatisme."
+        },
+        {
+          "icon": "🔗",
+          "title": "Revoir le chapitre sur les acides aminés avant celui-ci",
+          "description": "Le site actif et sa spécificité reposent sur le repliement tertiaire de la protéine enzymatique ; une bonne maîtrise des structures protéiques facilite la compréhension du modèle de Koshland."
         }
       ],
       "quiz": [
@@ -783,6 +995,11 @@
         },
         {
           "icon": "🔬",
+          "title": "Réplication de l'ADN",
+          "content": "La réplication est semi-conservative : chaque brin parental sert de matrice à la synthèse d'un nouveau brin complémentaire, si bien que chaque molécule fille contient un brin ancien et un brin nouveau. Elle débute au niveau d'origines de réplication et progresse via une fourche de réplication. Le brin précoce est synthétisé en continu dans le sens 5'→3' ; le brin tardif est synthétisé de façon discontinue, sous forme de fragments d'Okazaki, car l'ADN polymérase ne peut synthétiser que dans le sens 5'→3', jamais 3'→5'."
+        },
+        {
+          "icon": "🔬",
           "title": "La transcription : de l'ADN à l'ARN pré-messager",
           "content": "La transcription se déroule dans le noyau en 4 étapes. L'initiation implique la fixation de facteurs de transcription sur la séquence promotrice (TATA box, îlots CpG) qui recrutent l'ARN polymérase II. L'élongation se fait toujours dans le sens 5'→3' à partir du brin matrice (antisens), produisant un ARN de séquence identique au brin codant (sens), à ceci près que la thymine est remplacée par l'uracile. La terminaison a lieu au niveau du signal AATAAA, qui déclenche le clivage et l'ajout d'une queue poly-A par la poly-A polymérase (PAP), stabilisée par les protéines PABP."
         },
@@ -797,9 +1014,19 @@
           "content": "La traduction a lieu dans le cytosol, sur les ribosomes, et permet de synthétiser une protéine à partir de l'ARNm. Le code génétique est lu par triplets de nucléotides (codons) ; il est dégénéré (64 codons pour 20 acides aminés, un acide aminé pouvant être codé par plusieurs codons) mais non ambigu (un codon ne code jamais qu'un seul acide aminé). Le codon AUG initie la traduction (méthionine) ; UAA, UAG et UGA sont des codons stop. Le ribosome possède trois sites : A (accueil d'un nouvel ARNt-aminoacyl), P (portage de la chaîne peptidique en formation) et E (sortie de l'ARNt déchargé)."
         },
         {
+          "icon": "🔬",
+          "title": "Les 3 étapes de la traduction",
+          "content": "L'initiation assemble la petite sous-unité ribosomique, l'ARNt initiateur (méthionine) et l'ARNm au niveau du codon AUG, avant recrutement de la grande sous-unité. L'élongation répète un cycle en trois temps : entrée d'un ARNt-aminoacyl dans le site A (reconnaissance codon-anticodon), formation de la liaison peptidique (catalysée par l'ARN ribosomique, activité peptidyl-transférase), puis translocation du ribosome d'un codon vers l'aval. La terminaison survient lorsqu'un codon stop entre dans le site A, reconnu non par un ARNt mais par des facteurs de libération (release factors) qui provoquent l'hydrolyse et la libération de la chaîne polypeptidique."
+        },
+        {
           "icon": "⭐",
           "title": "Mutations et systèmes de réparation",
           "content": "Une mutation peut être une insertion, une délétion ou un mésappariement (transition : purine-purine ou pyrimidine-pyrimidine ; transversion : purine-pyrimidine). Selon son effet sur la protéine, elle peut être silencieuse (même acide aminé), faux-sens (acide aminé différent) ou non-sens (codon stop prématuré, protéine tronquée). Trois systèmes de réparation principaux corrigent ces erreurs : le MMR (mismatch repair, mésappariements de réplication), le NER (nucleotide excision repair, dimères de thymine et grosses lésions), et le BER (base excision repair, bases désaminées, via une ADN glycosylase)."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Insertions/délétions et décalage du cadre de lecture",
+          "content": "Une insertion ou une délétion d'un nombre de nucléotides non multiple de 3 provoque un décalage du cadre de lecture (frameshift) : tous les codons situés en aval de la mutation sont modifiés, ce qui altère profondément la protéine, souvent jusqu'à un codon stop prématuré. À l'inverse, une insertion ou délétion d'un multiple de 3 nucléotides n'entraîne l'ajout ou la perte que d'un ou plusieurs acides aminés, sans décaler le reste de la lecture."
         },
         {
           "icon": "🔬",
@@ -810,6 +1037,60 @@
           "icon": "➗",
           "title": "PCR, RT-PCR, PCR-RFLP et séquençage de Sanger",
           "content": "La PCR amplifie exponentiellement une séquence d'ADN cible (×2 par cycle) grâce à une ADN polymérase, deux amorces (forward et reverse) délimitant la région, et un cycle en 3 étapes : dénaturation (95°C), hybridation des amorces (50-60°C) et élongation (72°C). La RT-PCR ajoute une étape préalable de reverse transcription pour obtenir un ADNc à partir d'un ARN matrice. La PCR-RFLP utilise des enzymes de restriction pour détecter une mutation ponctuelle connue en comparant les profils de digestion. Le séquençage de Sanger utilise des ddNTP marqués, dépourvus du groupement 3'-OH, qui interrompent la synthèse dès leur incorporation, permettant de reconstituer la séquence nucléotidique."
+        },
+        {
+          "icon": "🧠",
+          "title": "Western blot : détection d'une protéine",
+          "content": "Le Western blot, à ne pas confondre avec le Southern (ADN) et le Northern (ARN), détecte spécifiquement une protéine d'intérêt : après extraction protéique, séparation par électrophorèse (souvent SDS-PAGE, qui sépare selon la taille en dénaturant les protéines) et transfert sur membrane, la révélation se fait grâce à un anticorps spécifique de la protéine cible, et non par une sonde nucléique. Astuce mnémotechnique : « SNOW DROP » — Southern=DNA, Northern=RNA, Western=Protein."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Piège : sens de lecture et synthèse toujours 5'→3'",
+          "content": "Un piège fréquent consiste à inverser les sens : la synthèse (réplication, transcription) se fait TOUJOURS dans le sens 5'→3' sur le nouveau brin, ce qui impose que la matrice soit lue dans le sens 3'→5'. Ne confondez pas non plus brin matrice (antisens, lu 3'→5', sert de modèle) et brin codant (sens, 5'→3', de même séquence que l'ARNm à quelques U/T près)."
+        }
+      ],
+      "fiche": [
+        "Nucléotide = base azotée + sucre (C5) + phosphate. Purines (A,G) = 2 cycles ; pyrimidines (C,T,U) = 1 cycle.",
+        "T exclusif ADN, U exclusif ARN. G≡C (3 liaisons H) ; A=T ou A=U (2 liaisons H).",
+        "ADN = 2 brins antiparallèles complémentaires ; 1 tour = 10 pb, 34 Å, diamètre 20 Å.",
+        "Réplication semi-conservative ; brin précoce continu, brin tardif discontinu (fragments d'Okazaki).",
+        "Synthèse (ADN pol, ARN pol) toujours 5'→3' ; matrice lue 3'→5'.",
+        "Transcription : promoteur (TATA box) → ARN pol II → terminaison via AATAAA → queue poly-A (PAP/PABP).",
+        "Maturation ARN = coiffe 5' (guanosine méthylée) + épissage (spliceosome, exons gardés, introns retirés).",
+        "Code génétique : triplet = codon ; dégénéré mais non ambigu ; AUG = start (Met) ; UAA/UAG/UGA = stop.",
+        "Ribosome : site A (entrée ARNt), site P (peptidyl), site E (sortie).",
+        "Mutation : transition (purine-purine/pyrimidine-pyrimidine) vs transversion (purine-pyrimidine).",
+        "Effet : silencieuse (même aa), faux-sens (aa différent), non-sens (stop prématuré).",
+        "Insertion/délétion non multiple de 3 = décalage du cadre de lecture (frameshift).",
+        "Réparation : MMR (mésappariements réplication), NER (dimères T, grosses lésions), BER (bases désaminées).",
+        "Southern=ADN, Northern=ARN, Western=Protéine (mnémo SNOW DROP).",
+        "PCR : dénaturation 95°C, hybridation 50-60°C, élongation 72°C ; amplification ×2^n."
+      ],
+      "resources": [
+        {
+          "icon": "📘",
+          "title": "Relire le poly A2SUP sur la transcription/traduction",
+          "description": "Refaire le schéma complet du dogme central (ADN → ARN → protéine) en indiquant à chaque étape le sens de lecture et les enzymes impliquées, pour bien fixer la chronologie."
+        },
+        {
+          "icon": "🎥",
+          "title": "Vidéos d'animation sur la réplication et l'épissage",
+          "description": "Chercher sur YouTube « réplication ADN fourche de réplication animation » et « épissage alternatif spliceosome » pour visualiser des mécanismes difficiles à se représenter uniquement à l'écrit."
+        },
+        {
+          "icon": "📝",
+          "title": "Annales PASS/PACES sur PCR et Southern/Northern/Western blot",
+          "description": "S'entraîner sur des QCM comparant les différentes techniques de biologie moléculaire (PCR, RT-PCR, blots) : les questions de concours aiment tester la confusion entre ces méthodes proches."
+        },
+        {
+          "icon": "🧠",
+          "title": "Fiche mnémotechnique des mutations",
+          "description": "Construire une fiche avec trois colonnes silencieuse/faux-sens/non-sens et un exemple de séquence pour chacune, à réviser juste avant le quiz pour ne plus hésiter entre les trois."
+        },
+        {
+          "icon": "🔗",
+          "title": "Revoir le chapitre sur les acides aminés et la liaison peptidique",
+          "description": "La traduction aboutit à la formation de liaisons peptidiques entre acides aminés : revoir ce mécanisme du chapitre 2 aide à comprendre l'activité peptidyl-transférase du ribosome."
         }
       ],
       "quiz": [

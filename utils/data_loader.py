@@ -11,7 +11,7 @@ _DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file_
 
 # UE officielles de Paris Cité, remplies a partir des vrais polys de pre-rentree A2SUP.
 # A completer au fur et a mesure si d'autres UE (SHS, ...) sont fournies.
-AVAILABLE_UES = ["ue1", "ue2", "ue3", "ue4", "ue5"]
+AVAILABLE_UES = ["ue1", "ue2", "ue3", "ue4", "ue5", "ue6"]
 
 # Module bonus hors numerotation officielle (pas de poly source pour le valider).
 BONUS_MODULES = ["anatomie"]

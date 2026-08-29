@@ -43,6 +43,7 @@ PAGE_MAP = {
     "ue4": "pages/4_⚛️_UE4_Physique.py",
     "ue5": "pages/5_🧫_UE5_HistoEmbryo.py",
     "ue6": "pages/6_🏥_UE6_SantePublique.py",
+    "ue7": "pages/7_🧭_UE7_SHS.py",
 }
 
 for ue_id in AVAILABLE_UES:

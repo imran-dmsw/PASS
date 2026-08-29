@@ -16,6 +16,7 @@ from utils.config import STUDENT_NAME
 from utils.data_loader import load_ue
 from utils.diagrams import render_diagram
 from utils.html import html
+from utils.illustrations import render_illustration
 from utils.progress import mastery_ratio, record_quiz_result, render_hearts, render_stars
 from utils.quiz_engine import run_quiz
 from utils.theme import TINTS, inject_kawaii_theme
@@ -55,6 +56,7 @@ def render_ue_page(ue_id: str) -> None:
     )
 
     with tab_cours:
+        render_illustration(chapter["id"], chapter["title"])
         for block in chapter["course"]:
             render_course_block(block)
 

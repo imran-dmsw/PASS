@@ -41,6 +41,7 @@ PAGE_MAP = {
     "ue2": "pages/2_🧬_UE2_Biochimie.py",
     "ue3": "pages/3_🧠_UE3_BioCell.py",
     "ue4": "pages/4_⚛️_UE4_Physique.py",
+    "ue5": "pages/5_🧫_UE5_HistoEmbryo.py",
 }
 
 for ue_id in AVAILABLE_UES:
